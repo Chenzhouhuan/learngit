@@ -1,0 +1,237 @@
+\hypertarget{classmuduo_1_1InetAddress}{}\section{Inet\+Address类 参考}
+\label{classmuduo_1_1InetAddress}\index{Inet\+Address@{Inet\+Address}}
+
+
+{\ttfamily \#include $<$Inet\+Address.\+h$>$}
+
+
+
+类 Inet\+Address 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classmuduo_1_1InetAddress__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Inet\+Address 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classmuduo_1_1InetAddress__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1InetAddress_a292e10332bd93f9262a79103d270fc54}{Inet\+Address} (uint16\+\_\+t port)
+\item 
+\hyperlink{classmuduo_1_1InetAddress_ad4031243c174a53e1d2ff57e97f8226b}{Inet\+Address} (const std\+::string \&ip, uint16\+\_\+t port)
+\item 
+\hyperlink{classmuduo_1_1InetAddress_a8d41e312d44ecfdf968e66a26fea15ab}{Inet\+Address} (const struct sockaddr\+\_\+in \&addr)
+\item 
+std\+::string \hyperlink{classmuduo_1_1InetAddress_afe6339cb39e2b7972bccd0f1418a062c}{to\+Host\+Port} () const
+\item 
+const struct sockaddr\+\_\+in \& \hyperlink{classmuduo_1_1InetAddress_a1878fa474832ba9fa73958124c0404cc}{get\+Sock\+Addr\+Inet} () const
+\item 
+void \hyperlink{classmuduo_1_1InetAddress_ac40372dd403192210eddb5e699a420c7}{set\+Sock\+Addr\+Inet} (const struct sockaddr\+\_\+in \&addr)
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+struct sockaddr\+\_\+in \hyperlink{classmuduo_1_1InetAddress_a6d6d32117d52a72865bf26dc7e0bc646}{addr\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Wrapper of sockaddr\+\_\+in.
+
+This is an P\+OD interface class. 
+
+在文件 Inet\+Address.\+h 第 16 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1InetAddress_a292e10332bd93f9262a79103d270fc54}\label{classmuduo_1_1InetAddress_a292e10332bd93f9262a79103d270fc54}} 
+\index{muduo\+::\+Inet\+Address@{muduo\+::\+Inet\+Address}!Inet\+Address@{Inet\+Address}}
+\index{Inet\+Address@{Inet\+Address}!muduo\+::\+Inet\+Address@{muduo\+::\+Inet\+Address}}
+\subsubsection{\texorpdfstring{Inet\+Address()}{InetAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1InetAddress}{Inet\+Address} (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs an endpoint with given port number. Mostly used in \hyperlink{classmuduo_1_1TcpServer}{Tcp\+Server} listening. 
+
+在文件 Inet\+Address.\+cc 第 16 行定义.
+
+
+
+参考 Inet\+Address\+::addr\+\_\+, muduo\+::sockets\+::host\+To\+Network16(), muduo\+::sockets\+::host\+To\+Network32() , 以及 k\+Inaddr\+Any.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1InetAddress_a292e10332bd93f9262a79103d270fc54_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1InetAddress_ad4031243c174a53e1d2ff57e97f8226b}\label{classmuduo_1_1InetAddress_ad4031243c174a53e1d2ff57e97f8226b}} 
+\index{muduo\+::\+Inet\+Address@{muduo\+::\+Inet\+Address}!Inet\+Address@{Inet\+Address}}
+\index{Inet\+Address@{Inet\+Address}!muduo\+::\+Inet\+Address@{muduo\+::\+Inet\+Address}}
+\subsubsection{\texorpdfstring{Inet\+Address()}{InetAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1InetAddress}{Inet\+Address} (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ip,  }\item[{uint16\+\_\+t}]{port }\end{DoxyParamCaption})}
+
+Constructs an endpoint with given ip and port. {\ttfamily ip} should be \char`\"{}1.\+2.\+3.\+4\char`\"{} 
+
+在文件 Inet\+Address.\+cc 第 23 行定义.
+
+
+
+参考 Inet\+Address\+::addr\+\_\+ , 以及 muduo\+::sockets\+::from\+Host\+Port().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1InetAddress_ad4031243c174a53e1d2ff57e97f8226b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1InetAddress_a8d41e312d44ecfdf968e66a26fea15ab}\label{classmuduo_1_1InetAddress_a8d41e312d44ecfdf968e66a26fea15ab}} 
+\index{muduo\+::\+Inet\+Address@{muduo\+::\+Inet\+Address}!Inet\+Address@{Inet\+Address}}
+\index{Inet\+Address@{Inet\+Address}!muduo\+::\+Inet\+Address@{muduo\+::\+Inet\+Address}}
+\subsubsection{\texorpdfstring{Inet\+Address()}{InetAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1InetAddress}{Inet\+Address} (\begin{DoxyParamCaption}\item[{const struct sockaddr\+\_\+in \&}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs an endpoint with given struct {\ttfamily sockaddr\+\_\+in} Mostly used when accepting new connections 
+
+在文件 Inet\+Address.\+h 第 30 行定义.
+
+
+
+参考 Inet\+Address\+::to\+Host\+Port().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1InetAddress_a8d41e312d44ecfdf968e66a26fea15ab_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1InetAddress_a1878fa474832ba9fa73958124c0404cc}\label{classmuduo_1_1InetAddress_a1878fa474832ba9fa73958124c0404cc}} 
+\index{muduo\+::\+Inet\+Address@{muduo\+::\+Inet\+Address}!get\+Sock\+Addr\+Inet@{get\+Sock\+Addr\+Inet}}
+\index{get\+Sock\+Addr\+Inet@{get\+Sock\+Addr\+Inet}!muduo\+::\+Inet\+Address@{muduo\+::\+Inet\+Address}}
+\subsubsection{\texorpdfstring{get\+Sock\+Addr\+Inet()}{getSockAddrInet()}}
+{\footnotesize\ttfamily const struct sockaddr\+\_\+in\& get\+Sock\+Addr\+Inet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Inet\+Address.\+h 第 37 行定义.
+
+
+
+参考 Inet\+Address\+::addr\+\_\+.
+
+
+
+参考自 Socket\+::bind\+Address() , 以及 Connector\+::connect().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1InetAddress_a1878fa474832ba9fa73958124c0404cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1InetAddress_ac40372dd403192210eddb5e699a420c7}\label{classmuduo_1_1InetAddress_ac40372dd403192210eddb5e699a420c7}} 
+\index{muduo\+::\+Inet\+Address@{muduo\+::\+Inet\+Address}!set\+Sock\+Addr\+Inet@{set\+Sock\+Addr\+Inet}}
+\index{set\+Sock\+Addr\+Inet@{set\+Sock\+Addr\+Inet}!muduo\+::\+Inet\+Address@{muduo\+::\+Inet\+Address}}
+\subsubsection{\texorpdfstring{set\+Sock\+Addr\+Inet()}{setSockAddrInet()}}
+{\footnotesize\ttfamily void set\+Sock\+Addr\+Inet (\begin{DoxyParamCaption}\item[{const struct sockaddr\+\_\+in \&}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Inet\+Address.\+h 第 38 行定义.
+
+
+
+参考 Inet\+Address\+::addr\+\_\+.
+
+
+
+参考自 Socket\+::accept().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1InetAddress_ac40372dd403192210eddb5e699a420c7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1InetAddress_afe6339cb39e2b7972bccd0f1418a062c}\label{classmuduo_1_1InetAddress_afe6339cb39e2b7972bccd0f1418a062c}} 
+\index{muduo\+::\+Inet\+Address@{muduo\+::\+Inet\+Address}!to\+Host\+Port@{to\+Host\+Port}}
+\index{to\+Host\+Port@{to\+Host\+Port}!muduo\+::\+Inet\+Address@{muduo\+::\+Inet\+Address}}
+\subsubsection{\texorpdfstring{to\+Host\+Port()}{toHostPort()}}
+{\footnotesize\ttfamily std\+::string to\+Host\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+在文件 Inet\+Address.\+cc 第 28 行定义.
+
+
+
+参考 Inet\+Address\+::addr\+\_\+ , 以及 muduo\+::sockets\+::to\+Host\+Port().
+
+
+
+参考自 Inet\+Address\+::\+Inet\+Address(), Tcp\+Client\+::new\+Connection(), Tcp\+Server\+::new\+Connection() , 以及 Connector\+::retry().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1InetAddress_afe6339cb39e2b7972bccd0f1418a062c_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1InetAddress_afe6339cb39e2b7972bccd0f1418a062c_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1InetAddress_a6d6d32117d52a72865bf26dc7e0bc646}\label{classmuduo_1_1InetAddress_a6d6d32117d52a72865bf26dc7e0bc646}} 
+\index{muduo\+::\+Inet\+Address@{muduo\+::\+Inet\+Address}!addr\+\_\+@{addr\+\_\+}}
+\index{addr\+\_\+@{addr\+\_\+}!muduo\+::\+Inet\+Address@{muduo\+::\+Inet\+Address}}
+\subsubsection{\texorpdfstring{addr\+\_\+}{addr\_}}
+{\footnotesize\ttfamily struct sockaddr\+\_\+in addr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Inet\+Address.\+h 第 41 行定义.
+
+
+
+参考自 Inet\+Address\+::get\+Sock\+Addr\+Inet(), Inet\+Address\+::\+Inet\+Address(), Inet\+Address\+::set\+Sock\+Addr\+Inet() , 以及 Inet\+Address\+::to\+Host\+Port().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{InetAddress_8h}{Inet\+Address.\+h}\item 
+src/\hyperlink{InetAddress_8cc}{Inet\+Address.\+cc}\end{DoxyCompactItemize}

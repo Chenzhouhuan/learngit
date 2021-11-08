@@ -1,0 +1,4 @@
+<map id="hostToNetwork64" name="hostToNetwork64">
+<area shape="rect" id="node2" href="$classmuduo_1_1net_1_1Buffer.html#a7e283b380d5c67b86e150324bbb0546a" title="muduo::net::Buffer\l::appendInt64" alt="" coords="188,5,331,47"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1net_1_1Buffer.html#a1c260d8fb7c6194ce8ca9859718239d3" title="muduo::net::Buffer\l::prependInt64" alt="" coords="188,71,331,112"/>
+</map>

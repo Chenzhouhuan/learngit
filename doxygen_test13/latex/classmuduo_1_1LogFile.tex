@@ -1,0 +1,250 @@
+\hypertarget{classmuduo_1_1LogFile}{}\section{Log\+File类 参考}
+\label{classmuduo_1_1LogFile}\index{Log\+File@{Log\+File}}
+
+
+{\ttfamily \#include $<$Log\+File.\+h$>$}
+
+
+
+类 Log\+File 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classmuduo_1_1LogFile__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Log\+File 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{classmuduo_1_1LogFile__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1LogFile_a1d0d3a0ba969ef3f1471af62aed2f1f6}{Log\+File} (const string \&basename, off\+\_\+t roll\+Size, bool thread\+Safe=true, int flush\+Interval=3, int check\+EveryN=1024)
+\item 
+\hyperlink{classmuduo_1_1LogFile_a9789bd34990afddd14d01824e61da5bf}{$\sim$\+Log\+File} ()
+\item 
+void \hyperlink{classmuduo_1_1LogFile_a14dd7b692df8633d1e5053d3499a24d3}{append} (const char $\ast$logline, int len)
+\item 
+void \hyperlink{classmuduo_1_1LogFile_adac116554b543b7c4228c018a85882f5}{flush} ()
+\item 
+bool \hyperlink{classmuduo_1_1LogFile_a2bfc99f988c026eb098feccf974c607f}{roll\+File} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmuduo_1_1LogFile_a85c3e488a17ea1be47a6076be65555f6}{append\+\_\+unlocked} (const char $\ast$logline, int len)
+\end{DoxyCompactItemize}
+\subsection*{静态 Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static string \hyperlink{classmuduo_1_1LogFile_a1f85038b0d321b9c1bd0b4823675928f}{get\+Log\+File\+Name} (const string \&basename, time\+\_\+t $\ast$now)
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+const string \hyperlink{classmuduo_1_1LogFile_a13e75d6811d8c75146c98ff19a60aaa2}{basename\+\_\+}
+\item 
+const off\+\_\+t \hyperlink{classmuduo_1_1LogFile_a72b49897d1dce777946cab0186c07b3b}{roll\+Size\+\_\+}
+\item 
+const int \hyperlink{classmuduo_1_1LogFile_a5014f30709157722cd5b45a4096add3b}{flush\+Interval\+\_\+}
+\item 
+const int \hyperlink{classmuduo_1_1LogFile_af28df14a2094fcaa8678019193af9980}{check\+Every\+N\+\_\+}
+\item 
+int \hyperlink{classmuduo_1_1LogFile_a9acf5084c965a76d24ec228412256bc3}{count\+\_\+}
+\item 
+std\+::unique\+\_\+ptr$<$ Mutex\+Lock $>$ \hyperlink{classmuduo_1_1LogFile_a7ab6af9f2792620f0435aa53adc4e42b}{mutex\+\_\+}
+\item 
+time\+\_\+t \hyperlink{classmuduo_1_1LogFile_a89cc5f58496ca774ea8c752113a0640d}{start\+Of\+Period\+\_\+}
+\item 
+time\+\_\+t \hyperlink{classmuduo_1_1LogFile_a6f1ebe127ae831aacb7f4e96824985ad}{last\+Roll\+\_\+}
+\item 
+time\+\_\+t \hyperlink{classmuduo_1_1LogFile_a1260b5b02152747773bfe1c6085a8af9}{last\+Flush\+\_\+}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classmuduo_1_1FileUtil_1_1AppendFile}{File\+Util\+::\+Append\+File} $>$ \hyperlink{classmuduo_1_1LogFile_a1dd855a8bfbb820c9954f6d5a7647849}{file\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{classmuduo_1_1LogFile_aaabf583843acb84a712a959bc753a1df}{k\+Roll\+Per\+Seconds\+\_\+} = 60$\ast$60$\ast$24
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 Log\+File.\+h 第 22 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1LogFile_a1d0d3a0ba969ef3f1471af62aed2f1f6}\label{classmuduo_1_1LogFile_a1d0d3a0ba969ef3f1471af62aed2f1f6}} 
+\index{muduo\+::\+Log\+File@{muduo\+::\+Log\+File}!Log\+File@{Log\+File}}
+\index{Log\+File@{Log\+File}!muduo\+::\+Log\+File@{muduo\+::\+Log\+File}}
+\subsubsection{\texorpdfstring{Log\+File()}{LogFile()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1LogFile}{Log\+File} (\begin{DoxyParamCaption}\item[{const string \&}]{basename,  }\item[{off\+\_\+t}]{roll\+Size,  }\item[{bool}]{thread\+Safe = {\ttfamily true},  }\item[{int}]{flush\+Interval = {\ttfamily 3},  }\item[{int}]{check\+EveryN = {\ttfamily 1024} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmuduo_1_1LogFile_a9789bd34990afddd14d01824e61da5bf}\label{classmuduo_1_1LogFile_a9789bd34990afddd14d01824e61da5bf}} 
+\index{muduo\+::\+Log\+File@{muduo\+::\+Log\+File}!````~Log\+File@{$\sim$\+Log\+File}}
+\index{````~Log\+File@{$\sim$\+Log\+File}!muduo\+::\+Log\+File@{muduo\+::\+Log\+File}}
+\subsubsection{\texorpdfstring{$\sim$\+Log\+File()}{~LogFile()}}
+{\footnotesize\ttfamily $\sim$\hyperlink{classmuduo_1_1LogFile}{Log\+File} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1LogFile_a14dd7b692df8633d1e5053d3499a24d3}\label{classmuduo_1_1LogFile_a14dd7b692df8633d1e5053d3499a24d3}} 
+\index{muduo\+::\+Log\+File@{muduo\+::\+Log\+File}!append@{append}}
+\index{append@{append}!muduo\+::\+Log\+File@{muduo\+::\+Log\+File}}
+\subsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily void append (\begin{DoxyParamCaption}\item[{const char $\ast$}]{logline,  }\item[{int}]{len }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmuduo_1_1LogFile_a85c3e488a17ea1be47a6076be65555f6}\label{classmuduo_1_1LogFile_a85c3e488a17ea1be47a6076be65555f6}} 
+\index{muduo\+::\+Log\+File@{muduo\+::\+Log\+File}!append\+\_\+unlocked@{append\+\_\+unlocked}}
+\index{append\+\_\+unlocked@{append\+\_\+unlocked}!muduo\+::\+Log\+File@{muduo\+::\+Log\+File}}
+\subsubsection{\texorpdfstring{append\+\_\+unlocked()}{append\_unlocked()}}
+{\footnotesize\ttfamily void append\+\_\+unlocked (\begin{DoxyParamCaption}\item[{const char $\ast$}]{logline,  }\item[{int}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmuduo_1_1LogFile_adac116554b543b7c4228c018a85882f5}\label{classmuduo_1_1LogFile_adac116554b543b7c4228c018a85882f5}} 
+\index{muduo\+::\+Log\+File@{muduo\+::\+Log\+File}!flush@{flush}}
+\index{flush@{flush}!muduo\+::\+Log\+File@{muduo\+::\+Log\+File}}
+\subsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily void flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmuduo_1_1LogFile_a1f85038b0d321b9c1bd0b4823675928f}\label{classmuduo_1_1LogFile_a1f85038b0d321b9c1bd0b4823675928f}} 
+\index{muduo\+::\+Log\+File@{muduo\+::\+Log\+File}!get\+Log\+File\+Name@{get\+Log\+File\+Name}}
+\index{get\+Log\+File\+Name@{get\+Log\+File\+Name}!muduo\+::\+Log\+File@{muduo\+::\+Log\+File}}
+\subsubsection{\texorpdfstring{get\+Log\+File\+Name()}{getLogFileName()}}
+{\footnotesize\ttfamily static string get\+Log\+File\+Name (\begin{DoxyParamCaption}\item[{const string \&}]{basename,  }\item[{time\+\_\+t $\ast$}]{now }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmuduo_1_1LogFile_a2bfc99f988c026eb098feccf974c607f}\label{classmuduo_1_1LogFile_a2bfc99f988c026eb098feccf974c607f}} 
+\index{muduo\+::\+Log\+File@{muduo\+::\+Log\+File}!roll\+File@{roll\+File}}
+\index{roll\+File@{roll\+File}!muduo\+::\+Log\+File@{muduo\+::\+Log\+File}}
+\subsubsection{\texorpdfstring{roll\+File()}{rollFile()}}
+{\footnotesize\ttfamily bool roll\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1LogFile_a13e75d6811d8c75146c98ff19a60aaa2}\label{classmuduo_1_1LogFile_a13e75d6811d8c75146c98ff19a60aaa2}} 
+\index{muduo\+::\+Log\+File@{muduo\+::\+Log\+File}!basename\+\_\+@{basename\+\_\+}}
+\index{basename\+\_\+@{basename\+\_\+}!muduo\+::\+Log\+File@{muduo\+::\+Log\+File}}
+\subsubsection{\texorpdfstring{basename\+\_\+}{basename\_}}
+{\footnotesize\ttfamily const string basename\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Log\+File.\+h 第 41 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1LogFile_af28df14a2094fcaa8678019193af9980}\label{classmuduo_1_1LogFile_af28df14a2094fcaa8678019193af9980}} 
+\index{muduo\+::\+Log\+File@{muduo\+::\+Log\+File}!check\+Every\+N\+\_\+@{check\+Every\+N\+\_\+}}
+\index{check\+Every\+N\+\_\+@{check\+Every\+N\+\_\+}!muduo\+::\+Log\+File@{muduo\+::\+Log\+File}}
+\subsubsection{\texorpdfstring{check\+Every\+N\+\_\+}{checkEveryN\_}}
+{\footnotesize\ttfamily const int check\+Every\+N\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Log\+File.\+h 第 44 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1LogFile_a9acf5084c965a76d24ec228412256bc3}\label{classmuduo_1_1LogFile_a9acf5084c965a76d24ec228412256bc3}} 
+\index{muduo\+::\+Log\+File@{muduo\+::\+Log\+File}!count\+\_\+@{count\+\_\+}}
+\index{count\+\_\+@{count\+\_\+}!muduo\+::\+Log\+File@{muduo\+::\+Log\+File}}
+\subsubsection{\texorpdfstring{count\+\_\+}{count\_}}
+{\footnotesize\ttfamily int count\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Log\+File.\+h 第 46 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1LogFile_a1dd855a8bfbb820c9954f6d5a7647849}\label{classmuduo_1_1LogFile_a1dd855a8bfbb820c9954f6d5a7647849}} 
+\index{muduo\+::\+Log\+File@{muduo\+::\+Log\+File}!file\+\_\+@{file\+\_\+}}
+\index{file\+\_\+@{file\+\_\+}!muduo\+::\+Log\+File@{muduo\+::\+Log\+File}}
+\subsubsection{\texorpdfstring{file\+\_\+}{file\_}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{classmuduo_1_1FileUtil_1_1AppendFile}{File\+Util\+::\+Append\+File}$>$ file\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Log\+File.\+h 第 52 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1LogFile_a5014f30709157722cd5b45a4096add3b}\label{classmuduo_1_1LogFile_a5014f30709157722cd5b45a4096add3b}} 
+\index{muduo\+::\+Log\+File@{muduo\+::\+Log\+File}!flush\+Interval\+\_\+@{flush\+Interval\+\_\+}}
+\index{flush\+Interval\+\_\+@{flush\+Interval\+\_\+}!muduo\+::\+Log\+File@{muduo\+::\+Log\+File}}
+\subsubsection{\texorpdfstring{flush\+Interval\+\_\+}{flushInterval\_}}
+{\footnotesize\ttfamily const int flush\+Interval\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Log\+File.\+h 第 43 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1LogFile_aaabf583843acb84a712a959bc753a1df}\label{classmuduo_1_1LogFile_aaabf583843acb84a712a959bc753a1df}} 
+\index{muduo\+::\+Log\+File@{muduo\+::\+Log\+File}!k\+Roll\+Per\+Seconds\+\_\+@{k\+Roll\+Per\+Seconds\+\_\+}}
+\index{k\+Roll\+Per\+Seconds\+\_\+@{k\+Roll\+Per\+Seconds\+\_\+}!muduo\+::\+Log\+File@{muduo\+::\+Log\+File}}
+\subsubsection{\texorpdfstring{k\+Roll\+Per\+Seconds\+\_\+}{kRollPerSeconds\_}}
+{\footnotesize\ttfamily const int k\+Roll\+Per\+Seconds\+\_\+ = 60$\ast$60$\ast$24\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 Log\+File.\+h 第 54 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1LogFile_a1260b5b02152747773bfe1c6085a8af9}\label{classmuduo_1_1LogFile_a1260b5b02152747773bfe1c6085a8af9}} 
+\index{muduo\+::\+Log\+File@{muduo\+::\+Log\+File}!last\+Flush\+\_\+@{last\+Flush\+\_\+}}
+\index{last\+Flush\+\_\+@{last\+Flush\+\_\+}!muduo\+::\+Log\+File@{muduo\+::\+Log\+File}}
+\subsubsection{\texorpdfstring{last\+Flush\+\_\+}{lastFlush\_}}
+{\footnotesize\ttfamily time\+\_\+t last\+Flush\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Log\+File.\+h 第 51 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1LogFile_a6f1ebe127ae831aacb7f4e96824985ad}\label{classmuduo_1_1LogFile_a6f1ebe127ae831aacb7f4e96824985ad}} 
+\index{muduo\+::\+Log\+File@{muduo\+::\+Log\+File}!last\+Roll\+\_\+@{last\+Roll\+\_\+}}
+\index{last\+Roll\+\_\+@{last\+Roll\+\_\+}!muduo\+::\+Log\+File@{muduo\+::\+Log\+File}}
+\subsubsection{\texorpdfstring{last\+Roll\+\_\+}{lastRoll\_}}
+{\footnotesize\ttfamily time\+\_\+t last\+Roll\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Log\+File.\+h 第 50 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1LogFile_a7ab6af9f2792620f0435aa53adc4e42b}\label{classmuduo_1_1LogFile_a7ab6af9f2792620f0435aa53adc4e42b}} 
+\index{muduo\+::\+Log\+File@{muduo\+::\+Log\+File}!mutex\+\_\+@{mutex\+\_\+}}
+\index{mutex\+\_\+@{mutex\+\_\+}!muduo\+::\+Log\+File@{muduo\+::\+Log\+File}}
+\subsubsection{\texorpdfstring{mutex\+\_\+}{mutex\_}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$Mutex\+Lock$>$ mutex\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Log\+File.\+h 第 48 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1LogFile_a72b49897d1dce777946cab0186c07b3b}\label{classmuduo_1_1LogFile_a72b49897d1dce777946cab0186c07b3b}} 
+\index{muduo\+::\+Log\+File@{muduo\+::\+Log\+File}!roll\+Size\+\_\+@{roll\+Size\+\_\+}}
+\index{roll\+Size\+\_\+@{roll\+Size\+\_\+}!muduo\+::\+Log\+File@{muduo\+::\+Log\+File}}
+\subsubsection{\texorpdfstring{roll\+Size\+\_\+}{rollSize\_}}
+{\footnotesize\ttfamily const off\+\_\+t roll\+Size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Log\+File.\+h 第 42 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1LogFile_a89cc5f58496ca774ea8c752113a0640d}\label{classmuduo_1_1LogFile_a89cc5f58496ca774ea8c752113a0640d}} 
+\index{muduo\+::\+Log\+File@{muduo\+::\+Log\+File}!start\+Of\+Period\+\_\+@{start\+Of\+Period\+\_\+}}
+\index{start\+Of\+Period\+\_\+@{start\+Of\+Period\+\_\+}!muduo\+::\+Log\+File@{muduo\+::\+Log\+File}}
+\subsubsection{\texorpdfstring{start\+Of\+Period\+\_\+}{startOfPeriod\_}}
+{\footnotesize\ttfamily time\+\_\+t start\+Of\+Period\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Log\+File.\+h 第 49 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/muduo/base/\hyperlink{LogFile_8h}{Log\+File.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="networkToHost32" name="networkToHost32">
+<area shape="rect" id="node2" href="$classmuduo_1_1net_1_1Buffer.html#afefe12caa1ed837ffb7e967d44e19af9" title="muduo::net::Buffer\l::peekInt32" alt="" coords="188,5,331,47"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1net_1_1Buffer.html#adbc23fa2b53ee3f0bd8cc0af521900d4" title="muduo::net::Buffer\l::readInt32" alt="" coords="379,5,521,47"/>
+</map>

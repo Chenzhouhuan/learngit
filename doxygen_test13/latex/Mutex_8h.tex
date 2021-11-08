@@ -1,0 +1,315 @@
+\hypertarget{Mutex_8h}{}\section{lib/muduo/base/\+Mutex.h 文件参考}
+\label{Mutex_8h}\index{lib/muduo/base/\+Mutex.\+h@{lib/muduo/base/\+Mutex.\+h}}
+{\ttfamily \#include \char`\"{}muduo/base/\+Current\+Thread.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}muduo/base/noncopyable.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$pthread.\+h$>$}\newline
+Mutex.\+h 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Mutex_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Mutex_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmuduo_1_1MutexLockGuard}{Mutex\+Lock\+Guard}
+\end{DoxyCompactItemize}
+\subsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemuduo}{muduo}
+\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(x)
+\item 
+\#define \hyperlink{Mutex_8h_ac1ae149203e2d006d2a4739cbe22b048}{C\+A\+P\+A\+B\+I\+L\+I\+TY}(x)~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(capability(x))
+\item 
+\#define \hyperlink{Mutex_8h_aaa22d969a29cc5260e8c65e42bcfc253}{S\+C\+O\+P\+E\+D\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY}~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(scoped\+\_\+lockable)
+\item 
+\#define \hyperlink{Mutex_8h_a4bc26ad7e8bc853ad3f58a8a343c952e}{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}(x)~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(guarded\+\_\+by(x))
+\item 
+\#define \hyperlink{Mutex_8h_ac50ea92afc792eaa17777dc6009e31c0}{P\+T\+\_\+\+G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}(x)~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(pt\+\_\+guarded\+\_\+by(x))
+\item 
+\#define \hyperlink{Mutex_8h_aabfe9909811c29995cc731bd19a2d544}{A\+C\+Q\+U\+I\+R\+E\+D\+\_\+\+B\+E\+F\+O\+RE}(...)~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(acquired\+\_\+before(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))
+\item 
+\#define \hyperlink{Mutex_8h_a34e7a4489fb62749ebbfd249ac6c5544}{A\+C\+Q\+U\+I\+R\+E\+D\+\_\+\+A\+F\+T\+ER}(...)~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(acquired\+\_\+after(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))
+\item 
+\#define \hyperlink{Mutex_8h_a96848b74000220f6531e6f7ba197a296}{R\+E\+Q\+U\+I\+R\+ES}(...)~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(requires\+\_\+capability(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))
+\item 
+\#define \hyperlink{Mutex_8h_ad8125cc8b9da0da1fc586ca0004d19da}{R\+E\+Q\+U\+I\+R\+E\+S\+\_\+\+S\+H\+A\+R\+ED}(...)~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(requires\+\_\+shared\+\_\+capability(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))
+\item 
+\#define \hyperlink{Mutex_8h_aa826316eb51d0a47bf60521c39469bed}{A\+C\+Q\+U\+I\+RE}(...)~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(acquire\+\_\+capability(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))
+\item 
+\#define \hyperlink{Mutex_8h_a03538b67a3c435c72dd463ab234b1913}{A\+C\+Q\+U\+I\+R\+E\+\_\+\+S\+H\+A\+R\+ED}(...)~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(acquire\+\_\+shared\+\_\+capability(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))
+\item 
+\#define \hyperlink{Mutex_8h_a59a3415d4063936405dfca342973c2ea}{R\+E\+L\+E\+A\+SE}(...)~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(release\+\_\+capability(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))
+\item 
+\#define \hyperlink{Mutex_8h_a7aadf538f5e00720d3d0aaed62d0e9ab}{R\+E\+L\+E\+A\+S\+E\+\_\+\+S\+H\+A\+R\+ED}(...)~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(release\+\_\+shared\+\_\+capability(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))
+\item 
+\#define \hyperlink{Mutex_8h_afcd0980dda8acd3847986ab553f7c6d0}{T\+R\+Y\+\_\+\+A\+C\+Q\+U\+I\+RE}(...)~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(try\+\_\+acquire\+\_\+capability(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))
+\item 
+\#define \hyperlink{Mutex_8h_ab4bd0ef1c042ed9adc35c045573c5431}{T\+R\+Y\+\_\+\+A\+C\+Q\+U\+I\+R\+E\+\_\+\+S\+H\+A\+R\+ED}(...)~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(try\+\_\+acquire\+\_\+shared\+\_\+capability(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))
+\item 
+\#define \hyperlink{Mutex_8h_a2132e8ff6b6fd74f456ceb76bf7b7401}{E\+X\+C\+L\+U\+D\+ES}(...)~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(locks\+\_\+excluded(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))
+\item 
+\#define \hyperlink{Mutex_8h_a0ac43e8fa9cb59a93dde7d27e77297e9}{A\+S\+S\+E\+R\+T\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY}(x)~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(assert\+\_\+capability(x))
+\item 
+\#define \hyperlink{Mutex_8h_a61cf67970496ed765bdbe7ff90cf94a6}{A\+S\+S\+E\+R\+T\+\_\+\+S\+H\+A\+R\+E\+D\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY}(x)~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(assert\+\_\+shared\+\_\+capability(x))
+\item 
+\#define \hyperlink{Mutex_8h_aa96911138a435675f82f670951e7ffce}{R\+E\+T\+U\+R\+N\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY}(x)~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(lock\+\_\+returned(x))
+\item 
+\#define \hyperlink{Mutex_8h_ab8ec653d80c013941ef73e4c80cd44cf}{N\+O\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+S\+A\+F\+E\+T\+Y\+\_\+\+A\+N\+A\+L\+Y\+S\+IS}~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(no\+\_\+thread\+\_\+safety\+\_\+analysis)
+\item 
+\#define \hyperlink{Mutex_8h_afdccff146b6b59efa9bad6ae9fc5718d}{M\+C\+H\+E\+CK}(ret)
+\item 
+\#define \hyperlink{Mutex_8h_a806dfb55a955e810753c36673a199aed}{Mutex\+Lock\+Guard}(x)~error \char`\"{}Missing guard object name\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{Mutex_8h_aa826316eb51d0a47bf60521c39469bed}\label{Mutex_8h_aa826316eb51d0a47bf60521c39469bed}} 
+\index{Mutex.\+h@{Mutex.\+h}!A\+C\+Q\+U\+I\+RE@{A\+C\+Q\+U\+I\+RE}}
+\index{A\+C\+Q\+U\+I\+RE@{A\+C\+Q\+U\+I\+RE}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{A\+C\+Q\+U\+I\+RE}{ACQUIRE}}
+{\footnotesize\ttfamily \#define A\+C\+Q\+U\+I\+RE(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(acquire\+\_\+capability(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))}
+
+
+
+在文件 Mutex.\+h 第 49 行定义.
+
+\mbox{\Hypertarget{Mutex_8h_a03538b67a3c435c72dd463ab234b1913}\label{Mutex_8h_a03538b67a3c435c72dd463ab234b1913}} 
+\index{Mutex.\+h@{Mutex.\+h}!A\+C\+Q\+U\+I\+R\+E\+\_\+\+S\+H\+A\+R\+ED@{A\+C\+Q\+U\+I\+R\+E\+\_\+\+S\+H\+A\+R\+ED}}
+\index{A\+C\+Q\+U\+I\+R\+E\+\_\+\+S\+H\+A\+R\+ED@{A\+C\+Q\+U\+I\+R\+E\+\_\+\+S\+H\+A\+R\+ED}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{A\+C\+Q\+U\+I\+R\+E\+\_\+\+S\+H\+A\+R\+ED}{ACQUIRE\_SHARED}}
+{\footnotesize\ttfamily \#define A\+C\+Q\+U\+I\+R\+E\+\_\+\+S\+H\+A\+R\+ED(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(acquire\+\_\+shared\+\_\+capability(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))}
+
+
+
+在文件 Mutex.\+h 第 52 行定义.
+
+\mbox{\Hypertarget{Mutex_8h_a34e7a4489fb62749ebbfd249ac6c5544}\label{Mutex_8h_a34e7a4489fb62749ebbfd249ac6c5544}} 
+\index{Mutex.\+h@{Mutex.\+h}!A\+C\+Q\+U\+I\+R\+E\+D\+\_\+\+A\+F\+T\+ER@{A\+C\+Q\+U\+I\+R\+E\+D\+\_\+\+A\+F\+T\+ER}}
+\index{A\+C\+Q\+U\+I\+R\+E\+D\+\_\+\+A\+F\+T\+ER@{A\+C\+Q\+U\+I\+R\+E\+D\+\_\+\+A\+F\+T\+ER}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{A\+C\+Q\+U\+I\+R\+E\+D\+\_\+\+A\+F\+T\+ER}{ACQUIRED\_AFTER}}
+{\footnotesize\ttfamily \#define A\+C\+Q\+U\+I\+R\+E\+D\+\_\+\+A\+F\+T\+ER(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(acquired\+\_\+after(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))}
+
+
+
+在文件 Mutex.\+h 第 40 行定义.
+
+\mbox{\Hypertarget{Mutex_8h_aabfe9909811c29995cc731bd19a2d544}\label{Mutex_8h_aabfe9909811c29995cc731bd19a2d544}} 
+\index{Mutex.\+h@{Mutex.\+h}!A\+C\+Q\+U\+I\+R\+E\+D\+\_\+\+B\+E\+F\+O\+RE@{A\+C\+Q\+U\+I\+R\+E\+D\+\_\+\+B\+E\+F\+O\+RE}}
+\index{A\+C\+Q\+U\+I\+R\+E\+D\+\_\+\+B\+E\+F\+O\+RE@{A\+C\+Q\+U\+I\+R\+E\+D\+\_\+\+B\+E\+F\+O\+RE}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{A\+C\+Q\+U\+I\+R\+E\+D\+\_\+\+B\+E\+F\+O\+RE}{ACQUIRED\_BEFORE}}
+{\footnotesize\ttfamily \#define A\+C\+Q\+U\+I\+R\+E\+D\+\_\+\+B\+E\+F\+O\+RE(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(acquired\+\_\+before(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))}
+
+
+
+在文件 Mutex.\+h 第 37 行定义.
+
+\mbox{\Hypertarget{Mutex_8h_a0ac43e8fa9cb59a93dde7d27e77297e9}\label{Mutex_8h_a0ac43e8fa9cb59a93dde7d27e77297e9}} 
+\index{Mutex.\+h@{Mutex.\+h}!A\+S\+S\+E\+R\+T\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY@{A\+S\+S\+E\+R\+T\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY}}
+\index{A\+S\+S\+E\+R\+T\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY@{A\+S\+S\+E\+R\+T\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{A\+S\+S\+E\+R\+T\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY}{ASSERT\_CAPABILITY}}
+{\footnotesize\ttfamily \#define A\+S\+S\+E\+R\+T\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(assert\+\_\+capability(x))}
+
+
+
+在文件 Mutex.\+h 第 70 行定义.
+
+\mbox{\Hypertarget{Mutex_8h_a61cf67970496ed765bdbe7ff90cf94a6}\label{Mutex_8h_a61cf67970496ed765bdbe7ff90cf94a6}} 
+\index{Mutex.\+h@{Mutex.\+h}!A\+S\+S\+E\+R\+T\+\_\+\+S\+H\+A\+R\+E\+D\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY@{A\+S\+S\+E\+R\+T\+\_\+\+S\+H\+A\+R\+E\+D\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY}}
+\index{A\+S\+S\+E\+R\+T\+\_\+\+S\+H\+A\+R\+E\+D\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY@{A\+S\+S\+E\+R\+T\+\_\+\+S\+H\+A\+R\+E\+D\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{A\+S\+S\+E\+R\+T\+\_\+\+S\+H\+A\+R\+E\+D\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY}{ASSERT\_SHARED\_CAPABILITY}}
+{\footnotesize\ttfamily \#define A\+S\+S\+E\+R\+T\+\_\+\+S\+H\+A\+R\+E\+D\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(assert\+\_\+shared\+\_\+capability(x))}
+
+
+
+在文件 Mutex.\+h 第 73 行定义.
+
+\mbox{\Hypertarget{Mutex_8h_ac1ae149203e2d006d2a4739cbe22b048}\label{Mutex_8h_ac1ae149203e2d006d2a4739cbe22b048}} 
+\index{Mutex.\+h@{Mutex.\+h}!C\+A\+P\+A\+B\+I\+L\+I\+TY@{C\+A\+P\+A\+B\+I\+L\+I\+TY}}
+\index{C\+A\+P\+A\+B\+I\+L\+I\+TY@{C\+A\+P\+A\+B\+I\+L\+I\+TY}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{C\+A\+P\+A\+B\+I\+L\+I\+TY}{CAPABILITY}}
+{\footnotesize\ttfamily \#define C\+A\+P\+A\+B\+I\+L\+I\+TY(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(capability(x))}
+
+
+
+在文件 Mutex.\+h 第 25 行定义.
+
+\mbox{\Hypertarget{Mutex_8h_a2132e8ff6b6fd74f456ceb76bf7b7401}\label{Mutex_8h_a2132e8ff6b6fd74f456ceb76bf7b7401}} 
+\index{Mutex.\+h@{Mutex.\+h}!E\+X\+C\+L\+U\+D\+ES@{E\+X\+C\+L\+U\+D\+ES}}
+\index{E\+X\+C\+L\+U\+D\+ES@{E\+X\+C\+L\+U\+D\+ES}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+C\+L\+U\+D\+ES}{EXCLUDES}}
+{\footnotesize\ttfamily \#define E\+X\+C\+L\+U\+D\+ES(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(locks\+\_\+excluded(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))}
+
+
+
+在文件 Mutex.\+h 第 67 行定义.
+
+\mbox{\Hypertarget{Mutex_8h_a4bc26ad7e8bc853ad3f58a8a343c952e}\label{Mutex_8h_a4bc26ad7e8bc853ad3f58a8a343c952e}} 
+\index{Mutex.\+h@{Mutex.\+h}!G\+U\+A\+R\+D\+E\+D\+\_\+\+BY@{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}}
+\index{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY@{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}{GUARDED\_BY}}
+{\footnotesize\ttfamily \#define G\+U\+A\+R\+D\+E\+D\+\_\+\+BY(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(guarded\+\_\+by(x))}
+
+
+
+在文件 Mutex.\+h 第 31 行定义.
+
+\mbox{\Hypertarget{Mutex_8h_afdccff146b6b59efa9bad6ae9fc5718d}\label{Mutex_8h_afdccff146b6b59efa9bad6ae9fc5718d}} 
+\index{Mutex.\+h@{Mutex.\+h}!M\+C\+H\+E\+CK@{M\+C\+H\+E\+CK}}
+\index{M\+C\+H\+E\+CK@{M\+C\+H\+E\+CK}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{M\+C\+H\+E\+CK}{MCHECK}}
+{\footnotesize\ttfamily \#define M\+C\+H\+E\+CK(\begin{DoxyParamCaption}\item[{}]{ret }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+(\{ \_\_typeof\_\_ (ret) errnum = (ret);         \(\backslash\)
+                       assert(errnum == 0); (void) errnum;\})
+\end{DoxyCode}
+
+
+在文件 Mutex.\+h 第 102 行定义.
+
+
+
+参考自 Condition\+::\+Condition(), Condition\+::notify(), Condition\+::notify\+All(), Thread\+Local$<$ T $>$\+::\+Thread\+Local(), Thread\+Local$<$ T $>$\+::value(), Condition\+::wait(), Condition\+::$\sim$\+Condition() , 以及 Thread\+Local$<$ T $>$\+::$\sim$\+Thread\+Local().
+
+\mbox{\Hypertarget{Mutex_8h_a806dfb55a955e810753c36673a199aed}\label{Mutex_8h_a806dfb55a955e810753c36673a199aed}} 
+\index{Mutex.\+h@{Mutex.\+h}!Mutex\+Lock\+Guard@{Mutex\+Lock\+Guard}}
+\index{Mutex\+Lock\+Guard@{Mutex\+Lock\+Guard}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{Mutex\+Lock\+Guard}{MutexLockGuard}}
+{\footnotesize\ttfamily \#define Mutex\+Lock\+Guard(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~error \char`\"{}Missing guard object name\char`\"{}}
+
+
+
+在文件 Mutex.\+h 第 231 行定义.
+
+\mbox{\Hypertarget{Mutex_8h_ab8ec653d80c013941ef73e4c80cd44cf}\label{Mutex_8h_ab8ec653d80c013941ef73e4c80cd44cf}} 
+\index{Mutex.\+h@{Mutex.\+h}!N\+O\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+S\+A\+F\+E\+T\+Y\+\_\+\+A\+N\+A\+L\+Y\+S\+IS@{N\+O\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+S\+A\+F\+E\+T\+Y\+\_\+\+A\+N\+A\+L\+Y\+S\+IS}}
+\index{N\+O\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+S\+A\+F\+E\+T\+Y\+\_\+\+A\+N\+A\+L\+Y\+S\+IS@{N\+O\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+S\+A\+F\+E\+T\+Y\+\_\+\+A\+N\+A\+L\+Y\+S\+IS}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{N\+O\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+S\+A\+F\+E\+T\+Y\+\_\+\+A\+N\+A\+L\+Y\+S\+IS}{NO\_THREAD\_SAFETY\_ANALYSIS}}
+{\footnotesize\ttfamily \#define N\+O\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+S\+A\+F\+E\+T\+Y\+\_\+\+A\+N\+A\+L\+Y\+S\+IS~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(no\+\_\+thread\+\_\+safety\+\_\+analysis)}
+
+
+
+在文件 Mutex.\+h 第 79 行定义.
+
+\mbox{\Hypertarget{Mutex_8h_ac50ea92afc792eaa17777dc6009e31c0}\label{Mutex_8h_ac50ea92afc792eaa17777dc6009e31c0}} 
+\index{Mutex.\+h@{Mutex.\+h}!P\+T\+\_\+\+G\+U\+A\+R\+D\+E\+D\+\_\+\+BY@{P\+T\+\_\+\+G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}}
+\index{P\+T\+\_\+\+G\+U\+A\+R\+D\+E\+D\+\_\+\+BY@{P\+T\+\_\+\+G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{P\+T\+\_\+\+G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}{PT\_GUARDED\_BY}}
+{\footnotesize\ttfamily \#define P\+T\+\_\+\+G\+U\+A\+R\+D\+E\+D\+\_\+\+BY(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(pt\+\_\+guarded\+\_\+by(x))}
+
+
+
+在文件 Mutex.\+h 第 34 行定义.
+
+\mbox{\Hypertarget{Mutex_8h_a59a3415d4063936405dfca342973c2ea}\label{Mutex_8h_a59a3415d4063936405dfca342973c2ea}} 
+\index{Mutex.\+h@{Mutex.\+h}!R\+E\+L\+E\+A\+SE@{R\+E\+L\+E\+A\+SE}}
+\index{R\+E\+L\+E\+A\+SE@{R\+E\+L\+E\+A\+SE}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{R\+E\+L\+E\+A\+SE}{RELEASE}}
+{\footnotesize\ttfamily \#define R\+E\+L\+E\+A\+SE(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(release\+\_\+capability(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))}
+
+
+
+在文件 Mutex.\+h 第 55 行定义.
+
+\mbox{\Hypertarget{Mutex_8h_a7aadf538f5e00720d3d0aaed62d0e9ab}\label{Mutex_8h_a7aadf538f5e00720d3d0aaed62d0e9ab}} 
+\index{Mutex.\+h@{Mutex.\+h}!R\+E\+L\+E\+A\+S\+E\+\_\+\+S\+H\+A\+R\+ED@{R\+E\+L\+E\+A\+S\+E\+\_\+\+S\+H\+A\+R\+ED}}
+\index{R\+E\+L\+E\+A\+S\+E\+\_\+\+S\+H\+A\+R\+ED@{R\+E\+L\+E\+A\+S\+E\+\_\+\+S\+H\+A\+R\+ED}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{R\+E\+L\+E\+A\+S\+E\+\_\+\+S\+H\+A\+R\+ED}{RELEASE\_SHARED}}
+{\footnotesize\ttfamily \#define R\+E\+L\+E\+A\+S\+E\+\_\+\+S\+H\+A\+R\+ED(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(release\+\_\+shared\+\_\+capability(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))}
+
+
+
+在文件 Mutex.\+h 第 58 行定义.
+
+\mbox{\Hypertarget{Mutex_8h_a96848b74000220f6531e6f7ba197a296}\label{Mutex_8h_a96848b74000220f6531e6f7ba197a296}} 
+\index{Mutex.\+h@{Mutex.\+h}!R\+E\+Q\+U\+I\+R\+ES@{R\+E\+Q\+U\+I\+R\+ES}}
+\index{R\+E\+Q\+U\+I\+R\+ES@{R\+E\+Q\+U\+I\+R\+ES}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{R\+E\+Q\+U\+I\+R\+ES}{REQUIRES}}
+{\footnotesize\ttfamily \#define R\+E\+Q\+U\+I\+R\+ES(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(requires\+\_\+capability(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))}
+
+
+
+在文件 Mutex.\+h 第 43 行定义.
+
+
+
+参考自 Thread\+Pool\+::name().
+
+\mbox{\Hypertarget{Mutex_8h_ad8125cc8b9da0da1fc586ca0004d19da}\label{Mutex_8h_ad8125cc8b9da0da1fc586ca0004d19da}} 
+\index{Mutex.\+h@{Mutex.\+h}!R\+E\+Q\+U\+I\+R\+E\+S\+\_\+\+S\+H\+A\+R\+ED@{R\+E\+Q\+U\+I\+R\+E\+S\+\_\+\+S\+H\+A\+R\+ED}}
+\index{R\+E\+Q\+U\+I\+R\+E\+S\+\_\+\+S\+H\+A\+R\+ED@{R\+E\+Q\+U\+I\+R\+E\+S\+\_\+\+S\+H\+A\+R\+ED}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{R\+E\+Q\+U\+I\+R\+E\+S\+\_\+\+S\+H\+A\+R\+ED}{REQUIRES\_SHARED}}
+{\footnotesize\ttfamily \#define R\+E\+Q\+U\+I\+R\+E\+S\+\_\+\+S\+H\+A\+R\+ED(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(requires\+\_\+shared\+\_\+capability(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))}
+
+
+
+在文件 Mutex.\+h 第 46 行定义.
+
+\mbox{\Hypertarget{Mutex_8h_aa96911138a435675f82f670951e7ffce}\label{Mutex_8h_aa96911138a435675f82f670951e7ffce}} 
+\index{Mutex.\+h@{Mutex.\+h}!R\+E\+T\+U\+R\+N\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY@{R\+E\+T\+U\+R\+N\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY}}
+\index{R\+E\+T\+U\+R\+N\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY@{R\+E\+T\+U\+R\+N\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{R\+E\+T\+U\+R\+N\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY}{RETURN\_CAPABILITY}}
+{\footnotesize\ttfamily \#define R\+E\+T\+U\+R\+N\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(lock\+\_\+returned(x))}
+
+
+
+在文件 Mutex.\+h 第 76 行定义.
+
+\mbox{\Hypertarget{Mutex_8h_aaa22d969a29cc5260e8c65e42bcfc253}\label{Mutex_8h_aaa22d969a29cc5260e8c65e42bcfc253}} 
+\index{Mutex.\+h@{Mutex.\+h}!S\+C\+O\+P\+E\+D\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY@{S\+C\+O\+P\+E\+D\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY}}
+\index{S\+C\+O\+P\+E\+D\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY@{S\+C\+O\+P\+E\+D\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{S\+C\+O\+P\+E\+D\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY}{SCOPED\_CAPABILITY}}
+{\footnotesize\ttfamily \#define S\+C\+O\+P\+E\+D\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(scoped\+\_\+lockable)}
+
+
+
+在文件 Mutex.\+h 第 28 行定义.
+
+\mbox{\Hypertarget{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}\label{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}} 
+\index{Mutex.\+h@{Mutex.\+h}!T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+@{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}}
+\index{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+@{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}{THREAD\_ANNOTATION\_ATTRIBUTE\_\_}}
+{\footnotesize\ttfamily \#define T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+
+
+在文件 Mutex.\+h 第 22 行定义.
+
+\mbox{\Hypertarget{Mutex_8h_afcd0980dda8acd3847986ab553f7c6d0}\label{Mutex_8h_afcd0980dda8acd3847986ab553f7c6d0}} 
+\index{Mutex.\+h@{Mutex.\+h}!T\+R\+Y\+\_\+\+A\+C\+Q\+U\+I\+RE@{T\+R\+Y\+\_\+\+A\+C\+Q\+U\+I\+RE}}
+\index{T\+R\+Y\+\_\+\+A\+C\+Q\+U\+I\+RE@{T\+R\+Y\+\_\+\+A\+C\+Q\+U\+I\+RE}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{T\+R\+Y\+\_\+\+A\+C\+Q\+U\+I\+RE}{TRY\_ACQUIRE}}
+{\footnotesize\ttfamily \#define T\+R\+Y\+\_\+\+A\+C\+Q\+U\+I\+RE(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(try\+\_\+acquire\+\_\+capability(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))}
+
+
+
+在文件 Mutex.\+h 第 61 行定义.
+
+\mbox{\Hypertarget{Mutex_8h_ab4bd0ef1c042ed9adc35c045573c5431}\label{Mutex_8h_ab4bd0ef1c042ed9adc35c045573c5431}} 
+\index{Mutex.\+h@{Mutex.\+h}!T\+R\+Y\+\_\+\+A\+C\+Q\+U\+I\+R\+E\+\_\+\+S\+H\+A\+R\+ED@{T\+R\+Y\+\_\+\+A\+C\+Q\+U\+I\+R\+E\+\_\+\+S\+H\+A\+R\+ED}}
+\index{T\+R\+Y\+\_\+\+A\+C\+Q\+U\+I\+R\+E\+\_\+\+S\+H\+A\+R\+ED@{T\+R\+Y\+\_\+\+A\+C\+Q\+U\+I\+R\+E\+\_\+\+S\+H\+A\+R\+ED}!Mutex.\+h@{Mutex.\+h}}
+\subsubsection{\texorpdfstring{T\+R\+Y\+\_\+\+A\+C\+Q\+U\+I\+R\+E\+\_\+\+S\+H\+A\+R\+ED}{TRY\_ACQUIRE\_SHARED}}
+{\footnotesize\ttfamily \#define T\+R\+Y\+\_\+\+A\+C\+Q\+U\+I\+R\+E\+\_\+\+S\+H\+A\+R\+ED(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{Mutex_8h_a19418637cb3d49d320fcd59e73cc1eb2}{T\+H\+R\+E\+A\+D\+\_\+\+A\+N\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+}(try\+\_\+acquire\+\_\+shared\+\_\+capability(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))}
+
+
+
+在文件 Mutex.\+h 第 64 行定义.
+

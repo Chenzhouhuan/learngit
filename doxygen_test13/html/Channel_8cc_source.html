@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: src/Channel.cc 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Channel_8cc_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Channel.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Channel_8cc.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../lib/Channel.h&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;../lib/EventLoop.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Logging_8h.html">muduo/base/Logging.h</a>&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;poll.h&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacemuduo.html">muduo</a>;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classmuduo_1_1Channel.html#a7873ae2887674cb643986d9f04745444">Channel::kNoneEvent</a> = 0;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classmuduo_1_1Channel.html#a7a33491041233f79f0686805e1844694">Channel::kReadEvent</a> = POLLIN | POLLPRI;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classmuduo_1_1Channel.html#a050e3f1da6130199bfa2619a60e43f3b">Channel::kWriteEvent</a> = POLLOUT;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classmuduo_1_1Channel.html#a51d49371e765dcf30535b38b68bb80b6">   15</a></span>&#160;<a class="code" href="classmuduo_1_1Channel.html#a51d49371e765dcf30535b38b68bb80b6">Channel::Channel</a>(<a class="code" href="classmuduo_1_1EventLoop.html">EventLoop</a>* loop, <span class="keywordtype">int</span> fdArg)</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;: loop_(loop),</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  fd_(fdArg),</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  events_(0),</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  revents_(0),</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  index_(-1),</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  eventHandling_(false){}</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classmuduo_1_1Channel.html#aad279ec58dddf879ac20651fceffd4cf">   23</a></span>&#160;<a class="code" href="classmuduo_1_1Channel.html#aad279ec58dddf879ac20651fceffd4cf">Channel::~Channel</a>(){</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    assert(!<a class="code" href="classmuduo_1_1Channel.html#adde382716a55887e3b6e9cec9d615380">eventHandling_</a>); <span class="comment">//防止意外被析构掉  </span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                             <span class="comment">//Prevent accidental destructions</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classmuduo_1_1Channel.html#ac5c54df7ed3b930268c8d7752c101725">   28</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classmuduo_1_1Channel.html#ac5c54df7ed3b930268c8d7752c101725">Channel::update</a>(){</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classmuduo_1_1Channel.html#a19968f50018d32ac31f5cba0195591ac">loop_</a>-&gt;<a class="code" href="classmuduo_1_1EventLoop.html#acaa4a191936aacf608d279a6f343d533">updateChannel</a>(<span class="keyword">this</span>);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classmuduo_1_1Channel.html#a3574bf44b16f2a7e9a172972f5197310">   32</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classmuduo_1_1Channel.html#a3574bf44b16f2a7e9a172972f5197310">Channel::handlEvent</a>(<a class="code" href="classmuduo_1_1Timestamp.html">Timestamp</a> receiveTime){</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classmuduo_1_1Channel.html#adde382716a55887e3b6e9cec9d615380">eventHandling_</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classmuduo_1_1Channel.html#a57a0ca4614e5a2696d0dc1ca7e6cc72d">revents_</a> &amp; POLLNVAL){</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="Logging_8h.html#aea3f57d6dcc5b4ac957e2679e87dde27">LOG_WARN</a> &lt;&lt; <span class="stringliteral">&quot;Channel::handle_event() POLLNVAL&quot;</span>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span>((<a class="code" href="classmuduo_1_1Channel.html#a57a0ca4614e5a2696d0dc1ca7e6cc72d">revents_</a> &amp; POLLHUP) &amp;&amp; !(<a class="code" href="classmuduo_1_1Channel.html#a57a0ca4614e5a2696d0dc1ca7e6cc72d">revents_</a> &amp; POLLIN)){</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="Logging_8h.html#aea3f57d6dcc5b4ac957e2679e87dde27">LOG_WARN</a> &lt;&lt; <span class="stringliteral">&quot;Channel::handle_event() POLLHUP&quot;</span>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classmuduo_1_1Channel.html#a97e25dcb601312c3c9b94e4cfa56865c">closeCallback_</a>) <a class="code" href="classmuduo_1_1Channel.html#a97e25dcb601312c3c9b94e4cfa56865c">closeCallback_</a>();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classmuduo_1_1Channel.html#a57a0ca4614e5a2696d0dc1ca7e6cc72d">revents_</a> &amp; (POLLERR | POLLNVAL)){</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classmuduo_1_1Channel.html#a8790ab985c8b1ca29f4eed435635b4b0">errorCallback_</a>) <a class="code" href="classmuduo_1_1Channel.html#a8790ab985c8b1ca29f4eed435635b4b0">errorCallback_</a>();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classmuduo_1_1Channel.html#a57a0ca4614e5a2696d0dc1ca7e6cc72d">revents_</a> &amp; (POLLIN | POLLPRI | POLLRDHUP)){</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classmuduo_1_1Channel.html#a48142903e7199fc704ef449f4a7c75ee">readCallback_</a>) <a class="code" href="classmuduo_1_1Channel.html#a48142903e7199fc704ef449f4a7c75ee">readCallback_</a>(receiveTime);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classmuduo_1_1Channel.html#a57a0ca4614e5a2696d0dc1ca7e6cc72d">revents_</a> &amp; POLLOUT){</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classmuduo_1_1Channel.html#a1d5ee91b83f4499ea0a52c5491113169">writeCallback_</a>) <a class="code" href="classmuduo_1_1Channel.html#a1d5ee91b83f4499ea0a52c5491113169">writeCallback_</a>();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classmuduo_1_1Channel.html#adde382716a55887e3b6e9cec9d615380">eventHandling_</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div><div class="ttc" id="classmuduo_1_1Channel_html_a050e3f1da6130199bfa2619a60e43f3b"><div class="ttname"><a href="classmuduo_1_1Channel.html#a050e3f1da6130199bfa2619a60e43f3b">muduo::Channel::kWriteEvent</a></div><div class="ttdeci">static const int kWriteEvent</div><div class="ttdef"><b>Definition:</b> <a href="Channel_8h_source.html#l00048">Channel.h:48</a></div></div>
+<div class="ttc" id="Logging_8h_html"><div class="ttname"><a href="Logging_8h.html">Logging.h</a></div></div>
+<div class="ttc" id="classmuduo_1_1Channel_html_aad279ec58dddf879ac20651fceffd4cf"><div class="ttname"><a href="classmuduo_1_1Channel.html#aad279ec58dddf879ac20651fceffd4cf">muduo::Channel::~Channel</a></div><div class="ttdeci">~Channel()</div><div class="ttdef"><b>Definition:</b> <a href="Channel_8cc_source.html#l00023">Channel.cc:23</a></div></div>
+<div class="ttc" id="classmuduo_1_1Channel_html_adde382716a55887e3b6e9cec9d615380"><div class="ttname"><a href="classmuduo_1_1Channel.html#adde382716a55887e3b6e9cec9d615380">muduo::Channel::eventHandling_</a></div><div class="ttdeci">bool eventHandling_</div><div class="ttdef"><b>Definition:</b> <a href="Channel_8h_source.html#l00056">Channel.h:56</a></div></div>
+<div class="ttc" id="Logging_8h_html_aea3f57d6dcc5b4ac957e2679e87dde27"><div class="ttname"><a href="Logging_8h.html#aea3f57d6dcc5b4ac957e2679e87dde27">LOG_WARN</a></div><div class="ttdeci">#define LOG_WARN</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00130">Logging.h:130</a></div></div>
+<div class="ttc" id="namespacemuduo_html"><div class="ttname"><a href="namespacemuduo.html">muduo</a></div><div class="ttdef"><b>Definition:</b> <a href="Acceptor_8h_source.html#l00010">Acceptor.h:10</a></div></div>
+<div class="ttc" id="classmuduo_1_1Channel_html_a48142903e7199fc704ef449f4a7c75ee"><div class="ttname"><a href="classmuduo_1_1Channel.html#a48142903e7199fc704ef449f4a7c75ee">muduo::Channel::readCallback_</a></div><div class="ttdeci">ReadEventCallback readCallback_</div><div class="ttdef"><b>Definition:</b> <a href="Channel_8h_source.html#l00058">Channel.h:58</a></div></div>
+<div class="ttc" id="classmuduo_1_1EventLoop_html"><div class="ttname"><a href="classmuduo_1_1EventLoop.html">muduo::EventLoop</a></div><div class="ttdef"><b>Definition:</b> <a href="EventLoop_8h_source.html#l00022">EventLoop.h:22</a></div></div>
+<div class="ttc" id="classmuduo_1_1Channel_html_a51d49371e765dcf30535b38b68bb80b6"><div class="ttname"><a href="classmuduo_1_1Channel.html#a51d49371e765dcf30535b38b68bb80b6">muduo::Channel::Channel</a></div><div class="ttdeci">Channel(EventLoop *loop, int fd)</div><div class="ttdef"><b>Definition:</b> <a href="Channel_8cc_source.html#l00015">Channel.cc:15</a></div></div>
+<div class="ttc" id="classmuduo_1_1EventLoop_html_acaa4a191936aacf608d279a6f343d533"><div class="ttname"><a href="classmuduo_1_1EventLoop.html#acaa4a191936aacf608d279a6f343d533">muduo::EventLoop::updateChannel</a></div><div class="ttdeci">void updateChannel(Channel *channel)</div><div class="ttdef"><b>Definition:</b> <a href="EventLoop_8cc_source.html#l00139">EventLoop.cc:139</a></div></div>
+<div class="ttc" id="classmuduo_1_1Channel_html_a57a0ca4614e5a2696d0dc1ca7e6cc72d"><div class="ttname"><a href="classmuduo_1_1Channel.html#a57a0ca4614e5a2696d0dc1ca7e6cc72d">muduo::Channel::revents_</a></div><div class="ttdeci">int revents_</div><div class="ttdef"><b>Definition:</b> <a href="Channel_8h_source.html#l00053">Channel.h:53</a></div></div>
+<div class="ttc" id="classmuduo_1_1Channel_html_a19968f50018d32ac31f5cba0195591ac"><div class="ttname"><a href="classmuduo_1_1Channel.html#a19968f50018d32ac31f5cba0195591ac">muduo::Channel::loop_</a></div><div class="ttdeci">EventLoop * loop_</div><div class="ttdef"><b>Definition:</b> <a href="Channel_8h_source.html#l00050">Channel.h:50</a></div></div>
+<div class="ttc" id="classmuduo_1_1Channel_html_a7873ae2887674cb643986d9f04745444"><div class="ttname"><a href="classmuduo_1_1Channel.html#a7873ae2887674cb643986d9f04745444">muduo::Channel::kNoneEvent</a></div><div class="ttdeci">static const int kNoneEvent</div><div class="ttdef"><b>Definition:</b> <a href="Channel_8h_source.html#l00046">Channel.h:46</a></div></div>
+<div class="ttc" id="classmuduo_1_1Channel_html_ac5c54df7ed3b930268c8d7752c101725"><div class="ttname"><a href="classmuduo_1_1Channel.html#ac5c54df7ed3b930268c8d7752c101725">muduo::Channel::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition:</b> <a href="Channel_8cc_source.html#l00028">Channel.cc:28</a></div></div>
+<div class="ttc" id="classmuduo_1_1Channel_html_a97e25dcb601312c3c9b94e4cfa56865c"><div class="ttname"><a href="classmuduo_1_1Channel.html#a97e25dcb601312c3c9b94e4cfa56865c">muduo::Channel::closeCallback_</a></div><div class="ttdeci">EventCallback closeCallback_</div><div class="ttdef"><b>Definition:</b> <a href="Channel_8h_source.html#l00061">Channel.h:61</a></div></div>
+<div class="ttc" id="classmuduo_1_1Channel_html_a1d5ee91b83f4499ea0a52c5491113169"><div class="ttname"><a href="classmuduo_1_1Channel.html#a1d5ee91b83f4499ea0a52c5491113169">muduo::Channel::writeCallback_</a></div><div class="ttdeci">EventCallback writeCallback_</div><div class="ttdef"><b>Definition:</b> <a href="Channel_8h_source.html#l00059">Channel.h:59</a></div></div>
+<div class="ttc" id="classmuduo_1_1Channel_html_a3574bf44b16f2a7e9a172972f5197310"><div class="ttname"><a href="classmuduo_1_1Channel.html#a3574bf44b16f2a7e9a172972f5197310">muduo::Channel::handlEvent</a></div><div class="ttdeci">void handlEvent(Timestamp receiveTime)</div><div class="ttdef"><b>Definition:</b> <a href="Channel_8cc_source.html#l00032">Channel.cc:32</a></div></div>
+<div class="ttc" id="classmuduo_1_1Channel_html_a7a33491041233f79f0686805e1844694"><div class="ttname"><a href="classmuduo_1_1Channel.html#a7a33491041233f79f0686805e1844694">muduo::Channel::kReadEvent</a></div><div class="ttdeci">static const int kReadEvent</div><div class="ttdef"><b>Definition:</b> <a href="Channel_8h_source.html#l00047">Channel.h:47</a></div></div>
+<div class="ttc" id="classmuduo_1_1Timestamp_html"><div class="ttname"><a href="classmuduo_1_1Timestamp.html">muduo::Timestamp</a></div><div class="ttdef"><b>Definition:</b> <a href="Timestamp_8h_source.html#l00023">Timestamp.h:23</a></div></div>
+<div class="ttc" id="classmuduo_1_1Channel_html_a8790ab985c8b1ca29f4eed435635b4b0"><div class="ttname"><a href="classmuduo_1_1Channel.html#a8790ab985c8b1ca29f4eed435635b4b0">muduo::Channel::errorCallback_</a></div><div class="ttdeci">EventCallback errorCallback_</div><div class="ttdef"><b>Definition:</b> <a href="Channel_8h_source.html#l00060">Channel.h:60</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="Channel_8cc.html">Channel.cc</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

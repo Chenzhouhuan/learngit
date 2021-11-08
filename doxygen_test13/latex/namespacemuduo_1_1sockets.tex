@@ -1,0 +1,552 @@
+\hypertarget{namespacemuduo_1_1sockets}{}\section{muduo\+:\+:sockets 命名空间参考}
+\label{namespacemuduo_1_1sockets}\index{muduo\+::sockets@{muduo\+::sockets}}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \hyperlink{namespacemuduo_1_1sockets_a6cf7699b950ed4dfbc170a6ff9f71450}{host\+To\+Network64} (uint64\+\_\+t host64)
+\item 
+uint32\+\_\+t \hyperlink{namespacemuduo_1_1sockets_a937a8685473c938d339f02a8c6d395b6}{host\+To\+Network32} (uint32\+\_\+t host32)
+\item 
+uint16\+\_\+t \hyperlink{namespacemuduo_1_1sockets_a2c7a9f8e753e01c481aaf287251fa18e}{host\+To\+Network16} (uint16\+\_\+t host16)
+\item 
+uint64\+\_\+t \hyperlink{namespacemuduo_1_1sockets_ae5a926be124d52254860b4e93a5d1f31}{network\+To\+Host64} (uint64\+\_\+t net64)
+\item 
+uint32\+\_\+t \hyperlink{namespacemuduo_1_1sockets_a5846c926ef43813d8b8440b6b3a43633}{network\+To\+Host32} (uint32\+\_\+t net32)
+\item 
+uint16\+\_\+t \hyperlink{namespacemuduo_1_1sockets_aeeb31294e44fee5ecfc4b32f420f6d5d}{network\+To\+Host16} (uint16\+\_\+t net16)
+\item 
+int \hyperlink{namespacemuduo_1_1sockets_a91269e56d86b2e78e693b330e5c665aa}{create\+Nonblocking\+Or\+Die} ()
+\item 
+int \hyperlink{namespacemuduo_1_1sockets_a349a8d2188d9632596b2e5213cb16436}{connect} (int sockfd, const struct sockaddr\+\_\+in \&addr)
+\item 
+void \hyperlink{namespacemuduo_1_1sockets_a8fe4065cd24e49e158dd1c16cd693ae1}{bind\+Or\+Die} (int sockfd, const struct sockaddr\+\_\+in \&addr)
+\item 
+void \hyperlink{namespacemuduo_1_1sockets_a379cec5f383764a3696d9615bd344529}{listen\+Or\+Die} (int sockfd)
+\item 
+int \hyperlink{namespacemuduo_1_1sockets_a5fe7cd11cb2662939917285c51b3f992}{accept} (int sockfd, struct sockaddr\+\_\+in $\ast$addr)
+\item 
+void \hyperlink{namespacemuduo_1_1sockets_acb275b6d8b5979229bae664cb7ee14da}{close} (int sockfd)
+\item 
+void \hyperlink{namespacemuduo_1_1sockets_a549ec5e856fec6f111aeb481cca9e622}{shutdown\+Write} (int sockfd)
+\item 
+void \hyperlink{namespacemuduo_1_1sockets_adbdc909d04fd53860d9175b51755b0ae}{to\+Host\+Port} (char $\ast$buf, size\+\_\+t size, const struct sockaddr\+\_\+in \&addr)
+\item 
+void \hyperlink{namespacemuduo_1_1sockets_ae40b8bfde260835c9034bfaea0fb4ee0}{from\+Host\+Port} (const char $\ast$ip, uint16\+\_\+t port, struct sockaddr\+\_\+in $\ast$addr)
+\item 
+struct sockaddr\+\_\+in \hyperlink{namespacemuduo_1_1sockets_a4b4793e2d3f77da7bab38cfb52274075}{get\+Local\+Addr} (int sockfd)
+\item 
+struct sockaddr\+\_\+in \hyperlink{namespacemuduo_1_1sockets_ad095a2bf0c44507c945d04f8346f2817}{get\+Peer\+Addr} (int sockfd)
+\item 
+int \hyperlink{namespacemuduo_1_1sockets_a80bd626331e049209f59d11c80a8b539}{get\+Socket\+Error} (int sockfd)
+\item 
+bool \hyperlink{namespacemuduo_1_1sockets_ae3b7d08b5cb176e9d67580a0a1fd57fb}{is\+Self\+Connect} (int sockfd)
+\end{DoxyCompactItemize}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{namespacemuduo_1_1sockets_a5fe7cd11cb2662939917285c51b3f992}\label{namespacemuduo_1_1sockets_a5fe7cd11cb2662939917285c51b3f992}} 
+\index{muduo\+::sockets@{muduo\+::sockets}!accept@{accept}}
+\index{accept@{accept}!muduo\+::sockets@{muduo\+::sockets}}
+\subsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily int accept (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{struct sockaddr\+\_\+in $\ast$}]{addr }\end{DoxyParamCaption})}
+
+
+
+在文件 Sockets\+Ops.\+cc 第 78 行定义.
+
+
+
+参考 L\+O\+G\+\_\+\+F\+A\+T\+AL, L\+O\+G\+\_\+\+S\+Y\+S\+E\+RR , 以及 muduo\+::net\+::sockets\+::sockaddr\+\_\+cast().
+
+
+
+参考自 Socket\+::accept() , 以及 network\+To\+Host16().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{namespacemuduo_1_1sockets_a5fe7cd11cb2662939917285c51b3f992_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1sockets_a5fe7cd11cb2662939917285c51b3f992_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1sockets_a8fe4065cd24e49e158dd1c16cd693ae1}\label{namespacemuduo_1_1sockets_a8fe4065cd24e49e158dd1c16cd693ae1}} 
+\index{muduo\+::sockets@{muduo\+::sockets}!bind\+Or\+Die@{bind\+Or\+Die}}
+\index{bind\+Or\+Die@{bind\+Or\+Die}!muduo\+::sockets@{muduo\+::sockets}}
+\subsubsection{\texorpdfstring{bind\+Or\+Die()}{bindOrDie()}}
+{\footnotesize\ttfamily void bind\+Or\+Die (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{const struct sockaddr\+\_\+in \&}]{addr }\end{DoxyParamCaption})}
+
+
+
+在文件 Sockets\+Ops.\+cc 第 64 行定义.
+
+
+
+参考 L\+O\+G\+\_\+\+S\+Y\+S\+F\+A\+T\+AL , 以及 muduo\+::net\+::sockets\+::sockaddr\+\_\+cast().
+
+
+
+参考自 Socket\+::bind\+Address() , 以及 network\+To\+Host16().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{namespacemuduo_1_1sockets_a8fe4065cd24e49e158dd1c16cd693ae1_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1sockets_a8fe4065cd24e49e158dd1c16cd693ae1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1sockets_acb275b6d8b5979229bae664cb7ee14da}\label{namespacemuduo_1_1sockets_acb275b6d8b5979229bae664cb7ee14da}} 
+\index{muduo\+::sockets@{muduo\+::sockets}!close@{close}}
+\index{close@{close}!muduo\+::sockets@{muduo\+::sockets}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void close (\begin{DoxyParamCaption}\item[{int}]{sockfd }\end{DoxyParamCaption})}
+
+
+
+在文件 Sockets\+Ops.\+cc 第 125 行定义.
+
+
+
+参考 L\+O\+G\+\_\+\+S\+Y\+S\+E\+RR.
+
+
+
+参考自 Connector\+::connect(), Connector\+::handle\+Write(), Acceptor\+::handl\+Read(), network\+To\+Host16(), Connector\+::retry(), E\+Poller\+::$\sim$\+E\+Poller(), Event\+Loop\+::$\sim$\+Event\+Loop(), Socket\+::$\sim$\+Socket() , 以及 Timer\+Queue\+::$\sim$\+Timer\+Queue().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1sockets_acb275b6d8b5979229bae664cb7ee14da_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1sockets_a349a8d2188d9632596b2e5213cb16436}\label{namespacemuduo_1_1sockets_a349a8d2188d9632596b2e5213cb16436}} 
+\index{muduo\+::sockets@{muduo\+::sockets}!connect@{connect}}
+\index{connect@{connect}!muduo\+::sockets@{muduo\+::sockets}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily int connect (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{const struct sockaddr\+\_\+in \&}]{addr }\end{DoxyParamCaption})}
+
+
+
+在文件 Sockets\+Ops.\+cc 第 60 行定义.
+
+
+
+参考 muduo\+::net\+::sockets\+::sockaddr\+\_\+cast().
+
+
+
+参考自 Connector\+::connect() , 以及 network\+To\+Host16().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{namespacemuduo_1_1sockets_a349a8d2188d9632596b2e5213cb16436_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1sockets_a349a8d2188d9632596b2e5213cb16436_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1sockets_a91269e56d86b2e78e693b330e5c665aa}\label{namespacemuduo_1_1sockets_a91269e56d86b2e78e693b330e5c665aa}} 
+\index{muduo\+::sockets@{muduo\+::sockets}!create\+Nonblocking\+Or\+Die@{create\+Nonblocking\+Or\+Die}}
+\index{create\+Nonblocking\+Or\+Die@{create\+Nonblocking\+Or\+Die}!muduo\+::sockets@{muduo\+::sockets}}
+\subsubsection{\texorpdfstring{create\+Nonblocking\+Or\+Die()}{createNonblockingOrDie()}}
+{\footnotesize\ttfamily int create\+Nonblocking\+Or\+Die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a non-\/blocking socket file descriptor, abort if any error. 
+
+在文件 Sockets\+Ops.\+cc 第 42 行定义.
+
+
+
+参考 L\+O\+G\+\_\+\+S\+Y\+S\+F\+A\+T\+AL.
+
+
+
+参考自 Connector\+::connect() , 以及 network\+To\+Host16().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1sockets_a91269e56d86b2e78e693b330e5c665aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1sockets_ae40b8bfde260835c9034bfaea0fb4ee0}\label{namespacemuduo_1_1sockets_ae40b8bfde260835c9034bfaea0fb4ee0}} 
+\index{muduo\+::sockets@{muduo\+::sockets}!from\+Host\+Port@{from\+Host\+Port}}
+\index{from\+Host\+Port@{from\+Host\+Port}!muduo\+::sockets@{muduo\+::sockets}}
+\subsubsection{\texorpdfstring{from\+Host\+Port()}{fromHostPort()}}
+{\footnotesize\ttfamily void from\+Host\+Port (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ip,  }\item[{uint16\+\_\+t}]{port,  }\item[{struct sockaddr\+\_\+in $\ast$}]{addr }\end{DoxyParamCaption})}
+
+
+
+在文件 Sockets\+Ops.\+cc 第 150 行定义.
+
+
+
+参考 muduo\+::net\+::sockets\+::host\+To\+Network16() , 以及 L\+O\+G\+\_\+\+S\+Y\+S\+E\+RR.
+
+
+
+参考自 Inet\+Address\+::\+Inet\+Address() , 以及 network\+To\+Host16().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{namespacemuduo_1_1sockets_ae40b8bfde260835c9034bfaea0fb4ee0_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1sockets_ae40b8bfde260835c9034bfaea0fb4ee0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1sockets_a4b4793e2d3f77da7bab38cfb52274075}\label{namespacemuduo_1_1sockets_a4b4793e2d3f77da7bab38cfb52274075}} 
+\index{muduo\+::sockets@{muduo\+::sockets}!get\+Local\+Addr@{get\+Local\+Addr}}
+\index{get\+Local\+Addr@{get\+Local\+Addr}!muduo\+::sockets@{muduo\+::sockets}}
+\subsubsection{\texorpdfstring{get\+Local\+Addr()}{getLocalAddr()}}
+{\footnotesize\ttfamily struct sockaddr\+\_\+in get\+Local\+Addr (\begin{DoxyParamCaption}\item[{int}]{sockfd }\end{DoxyParamCaption})}
+
+
+
+在文件 Sockets\+Ops.\+cc 第 162 行定义.
+
+
+
+参考 L\+O\+G\+\_\+\+S\+Y\+S\+E\+RR , 以及 muduo\+::net\+::sockets\+::sockaddr\+\_\+cast().
+
+
+
+参考自 is\+Self\+Connect(), Tcp\+Client\+::new\+Connection() , 以及 Tcp\+Server\+::new\+Connection().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{namespacemuduo_1_1sockets_a4b4793e2d3f77da7bab38cfb52274075_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1sockets_a4b4793e2d3f77da7bab38cfb52274075_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1sockets_ad095a2bf0c44507c945d04f8346f2817}\label{namespacemuduo_1_1sockets_ad095a2bf0c44507c945d04f8346f2817}} 
+\index{muduo\+::sockets@{muduo\+::sockets}!get\+Peer\+Addr@{get\+Peer\+Addr}}
+\index{get\+Peer\+Addr@{get\+Peer\+Addr}!muduo\+::sockets@{muduo\+::sockets}}
+\subsubsection{\texorpdfstring{get\+Peer\+Addr()}{getPeerAddr()}}
+{\footnotesize\ttfamily struct sockaddr\+\_\+in get\+Peer\+Addr (\begin{DoxyParamCaption}\item[{int}]{sockfd }\end{DoxyParamCaption})}
+
+
+
+在文件 Sockets\+Ops.\+cc 第 172 行定义.
+
+
+
+参考 L\+O\+G\+\_\+\+S\+Y\+S\+E\+RR , 以及 muduo\+::net\+::sockets\+::sockaddr\+\_\+cast().
+
+
+
+参考自 is\+Self\+Connect() , 以及 Tcp\+Client\+::new\+Connection().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{namespacemuduo_1_1sockets_ad095a2bf0c44507c945d04f8346f2817_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1sockets_ad095a2bf0c44507c945d04f8346f2817_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1sockets_a80bd626331e049209f59d11c80a8b539}\label{namespacemuduo_1_1sockets_a80bd626331e049209f59d11c80a8b539}} 
+\index{muduo\+::sockets@{muduo\+::sockets}!get\+Socket\+Error@{get\+Socket\+Error}}
+\index{get\+Socket\+Error@{get\+Socket\+Error}!muduo\+::sockets@{muduo\+::sockets}}
+\subsubsection{\texorpdfstring{get\+Socket\+Error()}{getSocketError()}}
+{\footnotesize\ttfamily int get\+Socket\+Error (\begin{DoxyParamCaption}\item[{int}]{sockfd }\end{DoxyParamCaption})}
+
+
+
+在文件 Sockets\+Ops.\+cc 第 182 行定义.
+
+
+
+参考自 Connector\+::handle\+Error(), Tcp\+Connection\+::handle\+Error(), Connector\+::handle\+Write() , 以及 network\+To\+Host16().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1sockets_a80bd626331e049209f59d11c80a8b539_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1sockets_a2c7a9f8e753e01c481aaf287251fa18e}\label{namespacemuduo_1_1sockets_a2c7a9f8e753e01c481aaf287251fa18e}} 
+\index{muduo\+::sockets@{muduo\+::sockets}!host\+To\+Network16@{host\+To\+Network16}}
+\index{host\+To\+Network16@{host\+To\+Network16}!muduo\+::sockets@{muduo\+::sockets}}
+\subsubsection{\texorpdfstring{host\+To\+Network16()}{hostToNetwork16()}}
+{\footnotesize\ttfamily uint16\+\_\+t muduo\+::sockets\+::host\+To\+Network16 (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{host16 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Sockets\+Ops.\+h 第 20 行定义.
+
+
+
+参考自 Inet\+Address\+::\+Inet\+Address().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{namespacemuduo_1_1sockets_a2c7a9f8e753e01c481aaf287251fa18e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1sockets_a937a8685473c938d339f02a8c6d395b6}\label{namespacemuduo_1_1sockets_a937a8685473c938d339f02a8c6d395b6}} 
+\index{muduo\+::sockets@{muduo\+::sockets}!host\+To\+Network32@{host\+To\+Network32}}
+\index{host\+To\+Network32@{host\+To\+Network32}!muduo\+::sockets@{muduo\+::sockets}}
+\subsubsection{\texorpdfstring{host\+To\+Network32()}{hostToNetwork32()}}
+{\footnotesize\ttfamily uint32\+\_\+t muduo\+::sockets\+::host\+To\+Network32 (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{host32 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Sockets\+Ops.\+h 第 16 行定义.
+
+
+
+参考自 Inet\+Address\+::\+Inet\+Address().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{namespacemuduo_1_1sockets_a937a8685473c938d339f02a8c6d395b6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1sockets_a6cf7699b950ed4dfbc170a6ff9f71450}\label{namespacemuduo_1_1sockets_a6cf7699b950ed4dfbc170a6ff9f71450}} 
+\index{muduo\+::sockets@{muduo\+::sockets}!host\+To\+Network64@{host\+To\+Network64}}
+\index{host\+To\+Network64@{host\+To\+Network64}!muduo\+::sockets@{muduo\+::sockets}}
+\subsubsection{\texorpdfstring{host\+To\+Network64()}{hostToNetwork64()}}
+{\footnotesize\ttfamily uint64\+\_\+t muduo\+::sockets\+::host\+To\+Network64 (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{host64 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Sockets\+Ops.\+h 第 12 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_1_1sockets_ae3b7d08b5cb176e9d67580a0a1fd57fb}\label{namespacemuduo_1_1sockets_ae3b7d08b5cb176e9d67580a0a1fd57fb}} 
+\index{muduo\+::sockets@{muduo\+::sockets}!is\+Self\+Connect@{is\+Self\+Connect}}
+\index{is\+Self\+Connect@{is\+Self\+Connect}!muduo\+::sockets@{muduo\+::sockets}}
+\subsubsection{\texorpdfstring{is\+Self\+Connect()}{isSelfConnect()}}
+{\footnotesize\ttfamily bool is\+Self\+Connect (\begin{DoxyParamCaption}\item[{int}]{sockfd }\end{DoxyParamCaption})}
+
+
+
+在文件 Sockets\+Ops.\+cc 第 198 行定义.
+
+
+
+参考 get\+Local\+Addr() , 以及 get\+Peer\+Addr().
+
+
+
+参考自 Connector\+::handle\+Write() , 以及 network\+To\+Host16().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1sockets_ae3b7d08b5cb176e9d67580a0a1fd57fb_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1sockets_ae3b7d08b5cb176e9d67580a0a1fd57fb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1sockets_a379cec5f383764a3696d9615bd344529}\label{namespacemuduo_1_1sockets_a379cec5f383764a3696d9615bd344529}} 
+\index{muduo\+::sockets@{muduo\+::sockets}!listen\+Or\+Die@{listen\+Or\+Die}}
+\index{listen\+Or\+Die@{listen\+Or\+Die}!muduo\+::sockets@{muduo\+::sockets}}
+\subsubsection{\texorpdfstring{listen\+Or\+Die()}{listenOrDie()}}
+{\footnotesize\ttfamily void listen\+Or\+Die (\begin{DoxyParamCaption}\item[{int}]{sockfd }\end{DoxyParamCaption})}
+
+
+
+在文件 Sockets\+Ops.\+cc 第 71 行定义.
+
+
+
+参考 L\+O\+G\+\_\+\+S\+Y\+S\+F\+A\+T\+AL.
+
+
+
+参考自 Socket\+::listen() , 以及 network\+To\+Host16().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1sockets_a379cec5f383764a3696d9615bd344529_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1sockets_aeeb31294e44fee5ecfc4b32f420f6d5d}\label{namespacemuduo_1_1sockets_aeeb31294e44fee5ecfc4b32f420f6d5d}} 
+\index{muduo\+::sockets@{muduo\+::sockets}!network\+To\+Host16@{network\+To\+Host16}}
+\index{network\+To\+Host16@{network\+To\+Host16}!muduo\+::sockets@{muduo\+::sockets}}
+\subsubsection{\texorpdfstring{network\+To\+Host16()}{networkToHost16()}}
+{\footnotesize\ttfamily uint16\+\_\+t muduo\+::sockets\+::network\+To\+Host16 (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{net16 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Sockets\+Ops.\+h 第 32 行定义.
+
+
+
+参考 accept(), bind\+Or\+Die(), close(), connect(), create\+Nonblocking\+Or\+Die(), from\+Host\+Port(), get\+Socket\+Error(), is\+Self\+Connect(), listen\+Or\+Die(), shutdown\+Write() , 以及 to\+Host\+Port().
+
+
+
+参考自 to\+Host\+Port().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1sockets_aeeb31294e44fee5ecfc4b32f420f6d5d_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1sockets_aeeb31294e44fee5ecfc4b32f420f6d5d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1sockets_a5846c926ef43813d8b8440b6b3a43633}\label{namespacemuduo_1_1sockets_a5846c926ef43813d8b8440b6b3a43633}} 
+\index{muduo\+::sockets@{muduo\+::sockets}!network\+To\+Host32@{network\+To\+Host32}}
+\index{network\+To\+Host32@{network\+To\+Host32}!muduo\+::sockets@{muduo\+::sockets}}
+\subsubsection{\texorpdfstring{network\+To\+Host32()}{networkToHost32()}}
+{\footnotesize\ttfamily uint32\+\_\+t muduo\+::sockets\+::network\+To\+Host32 (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{net32 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Sockets\+Ops.\+h 第 28 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_1_1sockets_ae5a926be124d52254860b4e93a5d1f31}\label{namespacemuduo_1_1sockets_ae5a926be124d52254860b4e93a5d1f31}} 
+\index{muduo\+::sockets@{muduo\+::sockets}!network\+To\+Host64@{network\+To\+Host64}}
+\index{network\+To\+Host64@{network\+To\+Host64}!muduo\+::sockets@{muduo\+::sockets}}
+\subsubsection{\texorpdfstring{network\+To\+Host64()}{networkToHost64()}}
+{\footnotesize\ttfamily uint64\+\_\+t muduo\+::sockets\+::network\+To\+Host64 (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{net64 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Sockets\+Ops.\+h 第 24 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_1_1sockets_a549ec5e856fec6f111aeb481cca9e622}\label{namespacemuduo_1_1sockets_a549ec5e856fec6f111aeb481cca9e622}} 
+\index{muduo\+::sockets@{muduo\+::sockets}!shutdown\+Write@{shutdown\+Write}}
+\index{shutdown\+Write@{shutdown\+Write}!muduo\+::sockets@{muduo\+::sockets}}
+\subsubsection{\texorpdfstring{shutdown\+Write()}{shutdownWrite()}}
+{\footnotesize\ttfamily void shutdown\+Write (\begin{DoxyParamCaption}\item[{int}]{sockfd }\end{DoxyParamCaption})}
+
+
+
+在文件 Sockets\+Ops.\+cc 第 131 行定义.
+
+
+
+参考 L\+O\+G\+\_\+\+S\+Y\+S\+E\+RR.
+
+
+
+参考自 network\+To\+Host16() , 以及 Socket\+::shutdown\+Write().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1sockets_a549ec5e856fec6f111aeb481cca9e622_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1sockets_adbdc909d04fd53860d9175b51755b0ae}\label{namespacemuduo_1_1sockets_adbdc909d04fd53860d9175b51755b0ae}} 
+\index{muduo\+::sockets@{muduo\+::sockets}!to\+Host\+Port@{to\+Host\+Port}}
+\index{to\+Host\+Port@{to\+Host\+Port}!muduo\+::sockets@{muduo\+::sockets}}
+\subsubsection{\texorpdfstring{to\+Host\+Port()}{toHostPort()}}
+{\footnotesize\ttfamily void to\+Host\+Port (\begin{DoxyParamCaption}\item[{char $\ast$}]{buf,  }\item[{size\+\_\+t}]{size,  }\item[{const struct sockaddr\+\_\+in \&}]{addr }\end{DoxyParamCaption})}
+
+
+
+在文件 Sockets\+Ops.\+cc 第 137 行定义.
+
+
+
+参考 network\+To\+Host16().
+
+
+
+参考自 network\+To\+Host16() , 以及 Inet\+Address\+::to\+Host\+Port().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1sockets_adbdc909d04fd53860d9175b51755b0ae_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1sockets_adbdc909d04fd53860d9175b51755b0ae_icgraph}
+\end{center}
+\end{figure}

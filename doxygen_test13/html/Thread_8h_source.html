@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: lib/muduo/base/Thread.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Thread_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Thread.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Thread_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Use of this source code is governed by a BSD-style license</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// that can be found in the License file.</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Author: Shuo Chen (chenshuo at chenshuo dot com)</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef MUDUO_BASE_THREAD_H</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define MUDUO_BASE_THREAD_H</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Atomic_8h.html">muduo/base/Atomic.h</a>&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CountDownLatch_8h.html">muduo/base/CountDownLatch.h</a>&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Types_8h.html">muduo/base/Types.h</a>&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;pthread.h&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemuduo.html">muduo</a></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classmuduo_1_1Thread.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmuduo_1_1Thread.html">Thread</a> : <a class="code" href="classmuduo_1_1noncopyable.html">noncopyable</a></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; <span class="keyword">public</span>:</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classmuduo_1_1Thread.html#a72bd31ac00c06074792e7cff0c8e3022">   23</a></span>&#160;  <span class="keyword">typedef</span> std::function&lt;void ()&gt; <a class="code" href="classmuduo_1_1Thread.html#a72bd31ac00c06074792e7cff0c8e3022">ThreadFunc</a>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classmuduo_1_1Thread.html#a2c3b1a6d86c989182ca7a9bb1aba48b3">Thread</a>(ThreadFunc, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code" href="classmuduo_1_1Thread.html#a47f4f0a66d5a539e687100dc65462ced">name</a> = <span class="keywordtype">string</span>());</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="comment">// FIXME: make it movable in C++11</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="classmuduo_1_1Thread.html#a87a9c69a69ee4b13cb1ec5772f6d32ad">~Thread</a>();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmuduo_1_1Thread.html#a60de64d75454385b23995437f1d72669">start</a>();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classmuduo_1_1Thread.html#ac942067a7e5a314610c1e89ff801f3bd">join</a>(); <span class="comment">// return pthread_join()</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classmuduo_1_1Thread.html#ae64a8595ddd43477f87ff91d9f051058">   32</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classmuduo_1_1Thread.html#ae64a8595ddd43477f87ff91d9f051058">started</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmuduo_1_1Thread.html#a5ad69cfc4163d7797bc0f0d7eadb95a7">started_</a>; }</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="comment">// pthread_t pthreadId() const { return pthreadId_; }</span></div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classmuduo_1_1Thread.html#a1cab09936ca9d7d85a156634a27f8be4">   34</a></span>&#160;  pid_t <a class="code" href="classmuduo_1_1Thread.html#a1cab09936ca9d7d85a156634a27f8be4">tid</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmuduo_1_1Thread.html#ad3941d2816d56fc00acc575589d1bf4d">tid_</a>; }</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classmuduo_1_1Thread.html#a47f4f0a66d5a539e687100dc65462ced">   35</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code" href="classmuduo_1_1Thread.html#a47f4f0a66d5a539e687100dc65462ced">name</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmuduo_1_1Thread.html#a79cfd788b219a7f48068d0e96e5e8e77">name_</a>; }</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classmuduo_1_1Thread.html#a2191877eb828575b4a698e5b1009923d">   37</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classmuduo_1_1Thread.html#a2191877eb828575b4a698e5b1009923d">numCreated</a>() { <span class="keywordflow">return</span> <a class="code" href="classmuduo_1_1Thread.html#a2742b202c5dc4f5f9e2c60798b7ada26">numCreated_</a>.<a class="code" href="classmuduo_1_1detail_1_1AtomicIntegerT.html#af6ea056c8af82f08af9fd0d857967f9b">get</a>(); }</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; <span class="keyword">private</span>:</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmuduo_1_1Thread.html#a7ac088202ebd97d9b4f69b46341a3142">setDefaultName</a>();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classmuduo_1_1Thread.html#a5ad69cfc4163d7797bc0f0d7eadb95a7">   42</a></span>&#160;  <span class="keywordtype">bool</span>       <a class="code" href="classmuduo_1_1Thread.html#a5ad69cfc4163d7797bc0f0d7eadb95a7">started_</a>;</div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classmuduo_1_1Thread.html#a6abe498e0c9cb2cc340db85c691527fb">   43</a></span>&#160;  <span class="keywordtype">bool</span>       <a class="code" href="classmuduo_1_1Thread.html#a6abe498e0c9cb2cc340db85c691527fb">joined_</a>;</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classmuduo_1_1Thread.html#a1cddcc9b885ebd90a657e65ef5386e45">   44</a></span>&#160;  pthread_t  <a class="code" href="classmuduo_1_1Thread.html#a1cddcc9b885ebd90a657e65ef5386e45">pthreadId_</a>;</div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classmuduo_1_1Thread.html#ad3941d2816d56fc00acc575589d1bf4d">   45</a></span>&#160;  pid_t      <a class="code" href="classmuduo_1_1Thread.html#ad3941d2816d56fc00acc575589d1bf4d">tid_</a>;</div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classmuduo_1_1Thread.html#a8d48c0bb2a39f7e2f47bcdb994b1ffa5">   46</a></span>&#160;  ThreadFunc <a class="code" href="classmuduo_1_1Thread.html#a8d48c0bb2a39f7e2f47bcdb994b1ffa5">func_</a>;</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classmuduo_1_1Thread.html#a79cfd788b219a7f48068d0e96e5e8e77">   47</a></span>&#160;  <span class="keywordtype">string</span>     <a class="code" href="classmuduo_1_1Thread.html#a79cfd788b219a7f48068d0e96e5e8e77">name_</a>;</div><div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classmuduo_1_1Thread.html#a192dc9b859fde65e1f303e900e00d12a">   48</a></span>&#160;  <a class="code" href="classmuduo_1_1CountDownLatch.html">CountDownLatch</a> <a class="code" href="classmuduo_1_1Thread.html#a192dc9b859fde65e1f303e900e00d12a">latch_</a>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classmuduo_1_1Thread.html#a2742b202c5dc4f5f9e2c60798b7ada26">   50</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="classmuduo_1_1detail_1_1AtomicIntegerT.html">AtomicInt32</a> <a class="code" href="classmuduo_1_1Thread.html#a2742b202c5dc4f5f9e2c60798b7ada26">numCreated_</a>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}  <span class="comment">// namespace muduo</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif  // MUDUO_BASE_THREAD_H</span></div><div class="ttc" id="classmuduo_1_1Thread_html_a8d48c0bb2a39f7e2f47bcdb994b1ffa5"><div class="ttname"><a href="classmuduo_1_1Thread.html#a8d48c0bb2a39f7e2f47bcdb994b1ffa5">muduo::Thread::func_</a></div><div class="ttdeci">ThreadFunc func_</div><div class="ttdef"><b>Definition:</b> <a href="Thread_8h_source.html#l00046">Thread.h:46</a></div></div>
+<div class="ttc" id="classmuduo_1_1detail_1_1AtomicIntegerT_html_af6ea056c8af82f08af9fd0d857967f9b"><div class="ttname"><a href="classmuduo_1_1detail_1_1AtomicIntegerT.html#af6ea056c8af82f08af9fd0d857967f9b">muduo::detail::AtomicIntegerT::get</a></div><div class="ttdeci">T get()</div><div class="ttdef"><b>Definition:</b> <a href="Atomic_8h_source.html#l00039">Atomic.h:39</a></div></div>
+<div class="ttc" id="classmuduo_1_1Thread_html_a1cddcc9b885ebd90a657e65ef5386e45"><div class="ttname"><a href="classmuduo_1_1Thread.html#a1cddcc9b885ebd90a657e65ef5386e45">muduo::Thread::pthreadId_</a></div><div class="ttdeci">pthread_t pthreadId_</div><div class="ttdef"><b>Definition:</b> <a href="Thread_8h_source.html#l00044">Thread.h:44</a></div></div>
+<div class="ttc" id="Types_8h_html"><div class="ttname"><a href="Types_8h.html">Types.h</a></div></div>
+<div class="ttc" id="classmuduo_1_1Thread_html_a47f4f0a66d5a539e687100dc65462ced"><div class="ttname"><a href="classmuduo_1_1Thread.html#a47f4f0a66d5a539e687100dc65462ced">muduo::Thread::name</a></div><div class="ttdeci">const string &amp; name() const</div><div class="ttdef"><b>Definition:</b> <a href="Thread_8h_source.html#l00035">Thread.h:35</a></div></div>
+<div class="ttc" id="classmuduo_1_1Thread_html_a5ad69cfc4163d7797bc0f0d7eadb95a7"><div class="ttname"><a href="classmuduo_1_1Thread.html#a5ad69cfc4163d7797bc0f0d7eadb95a7">muduo::Thread::started_</a></div><div class="ttdeci">bool started_</div><div class="ttdef"><b>Definition:</b> <a href="Thread_8h_source.html#l00042">Thread.h:42</a></div></div>
+<div class="ttc" id="classmuduo_1_1Thread_html_a2742b202c5dc4f5f9e2c60798b7ada26"><div class="ttname"><a href="classmuduo_1_1Thread.html#a2742b202c5dc4f5f9e2c60798b7ada26">muduo::Thread::numCreated_</a></div><div class="ttdeci">static AtomicInt32 numCreated_</div><div class="ttdef"><b>Definition:</b> <a href="Thread_8h_source.html#l00050">Thread.h:50</a></div></div>
+<div class="ttc" id="classmuduo_1_1Thread_html"><div class="ttname"><a href="classmuduo_1_1Thread.html">muduo::Thread</a></div><div class="ttdef"><b>Definition:</b> <a href="Thread_8h_source.html#l00020">Thread.h:20</a></div></div>
+<div class="ttc" id="classmuduo_1_1Thread_html_a1cab09936ca9d7d85a156634a27f8be4"><div class="ttname"><a href="classmuduo_1_1Thread.html#a1cab09936ca9d7d85a156634a27f8be4">muduo::Thread::tid</a></div><div class="ttdeci">pid_t tid() const</div><div class="ttdef"><b>Definition:</b> <a href="Thread_8h_source.html#l00034">Thread.h:34</a></div></div>
+<div class="ttc" id="CountDownLatch_8h_html"><div class="ttname"><a href="CountDownLatch_8h.html">CountDownLatch.h</a></div></div>
+<div class="ttc" id="classmuduo_1_1Thread_html_a87a9c69a69ee4b13cb1ec5772f6d32ad"><div class="ttname"><a href="classmuduo_1_1Thread.html#a87a9c69a69ee4b13cb1ec5772f6d32ad">muduo::Thread::~Thread</a></div><div class="ttdeci">~Thread()</div></div>
+<div class="ttc" id="classmuduo_1_1CountDownLatch_html"><div class="ttname"><a href="classmuduo_1_1CountDownLatch.html">muduo::CountDownLatch</a></div><div class="ttdef"><b>Definition:</b> <a href="CountDownLatch_8h_source.html#l00015">CountDownLatch.h:15</a></div></div>
+<div class="ttc" id="classmuduo_1_1Thread_html_ac942067a7e5a314610c1e89ff801f3bd"><div class="ttname"><a href="classmuduo_1_1Thread.html#ac942067a7e5a314610c1e89ff801f3bd">muduo::Thread::join</a></div><div class="ttdeci">int join()</div></div>
+<div class="ttc" id="classmuduo_1_1Thread_html_a2191877eb828575b4a698e5b1009923d"><div class="ttname"><a href="classmuduo_1_1Thread.html#a2191877eb828575b4a698e5b1009923d">muduo::Thread::numCreated</a></div><div class="ttdeci">static int numCreated()</div><div class="ttdef"><b>Definition:</b> <a href="Thread_8h_source.html#l00037">Thread.h:37</a></div></div>
+<div class="ttc" id="namespacemuduo_html"><div class="ttname"><a href="namespacemuduo.html">muduo</a></div><div class="ttdef"><b>Definition:</b> <a href="Acceptor_8h_source.html#l00010">Acceptor.h:10</a></div></div>
+<div class="ttc" id="classmuduo_1_1Thread_html_a7ac088202ebd97d9b4f69b46341a3142"><div class="ttname"><a href="classmuduo_1_1Thread.html#a7ac088202ebd97d9b4f69b46341a3142">muduo::Thread::setDefaultName</a></div><div class="ttdeci">void setDefaultName()</div></div>
+<div class="ttc" id="classmuduo_1_1Thread_html_a72bd31ac00c06074792e7cff0c8e3022"><div class="ttname"><a href="classmuduo_1_1Thread.html#a72bd31ac00c06074792e7cff0c8e3022">muduo::Thread::ThreadFunc</a></div><div class="ttdeci">std::function&lt; void()&gt; ThreadFunc</div><div class="ttdef"><b>Definition:</b> <a href="Thread_8h_source.html#l00023">Thread.h:23</a></div></div>
+<div class="ttc" id="classmuduo_1_1Thread_html_ae64a8595ddd43477f87ff91d9f051058"><div class="ttname"><a href="classmuduo_1_1Thread.html#ae64a8595ddd43477f87ff91d9f051058">muduo::Thread::started</a></div><div class="ttdeci">bool started() const</div><div class="ttdef"><b>Definition:</b> <a href="Thread_8h_source.html#l00032">Thread.h:32</a></div></div>
+<div class="ttc" id="classmuduo_1_1Thread_html_a79cfd788b219a7f48068d0e96e5e8e77"><div class="ttname"><a href="classmuduo_1_1Thread.html#a79cfd788b219a7f48068d0e96e5e8e77">muduo::Thread::name_</a></div><div class="ttdeci">string name_</div><div class="ttdef"><b>Definition:</b> <a href="Thread_8h_source.html#l00047">Thread.h:47</a></div></div>
+<div class="ttc" id="Atomic_8h_html"><div class="ttname"><a href="Atomic_8h.html">Atomic.h</a></div></div>
+<div class="ttc" id="classmuduo_1_1Thread_html_a2c3b1a6d86c989182ca7a9bb1aba48b3"><div class="ttname"><a href="classmuduo_1_1Thread.html#a2c3b1a6d86c989182ca7a9bb1aba48b3">muduo::Thread::Thread</a></div><div class="ttdeci">Thread(ThreadFunc, const string &amp;name=string())</div></div>
+<div class="ttc" id="classmuduo_1_1Thread_html_a60de64d75454385b23995437f1d72669"><div class="ttname"><a href="classmuduo_1_1Thread.html#a60de64d75454385b23995437f1d72669">muduo::Thread::start</a></div><div class="ttdeci">void start()</div></div>
+<div class="ttc" id="classmuduo_1_1noncopyable_html"><div class="ttname"><a href="classmuduo_1_1noncopyable.html">muduo::noncopyable</a></div><div class="ttdef"><b>Definition:</b> <a href="noncopyable_8h_source.html#l00007">noncopyable.h:7</a></div></div>
+<div class="ttc" id="classmuduo_1_1detail_1_1AtomicIntegerT_html"><div class="ttname"><a href="classmuduo_1_1detail_1_1AtomicIntegerT.html">muduo::detail::AtomicIntegerT&lt; int32_t &gt;</a></div></div>
+<div class="ttc" id="classmuduo_1_1Thread_html_ad3941d2816d56fc00acc575589d1bf4d"><div class="ttname"><a href="classmuduo_1_1Thread.html#ad3941d2816d56fc00acc575589d1bf4d">muduo::Thread::tid_</a></div><div class="ttdeci">pid_t tid_</div><div class="ttdef"><b>Definition:</b> <a href="Thread_8h_source.html#l00045">Thread.h:45</a></div></div>
+<div class="ttc" id="classmuduo_1_1Thread_html_a6abe498e0c9cb2cc340db85c691527fb"><div class="ttname"><a href="classmuduo_1_1Thread.html#a6abe498e0c9cb2cc340db85c691527fb">muduo::Thread::joined_</a></div><div class="ttdeci">bool joined_</div><div class="ttdef"><b>Definition:</b> <a href="Thread_8h_source.html#l00043">Thread.h:43</a></div></div>
+<div class="ttc" id="classmuduo_1_1Thread_html_a192dc9b859fde65e1f303e900e00d12a"><div class="ttname"><a href="classmuduo_1_1Thread.html#a192dc9b859fde65e1f303e900e00d12a">muduo::Thread::latch_</a></div><div class="ttdeci">CountDownLatch latch_</div><div class="ttdef"><b>Definition:</b> <a href="Thread_8h_source.html#l00048">Thread.h:48</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_e3b32e68f04aa7e841009dd52d1d0488.html">muduo</a></li><li class="navelem"><a class="el" href="dir_9dc812d0f010bb69297de7069e5ca985.html">base</a></li><li class="navelem"><a class="el" href="Thread_8h.html">Thread.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

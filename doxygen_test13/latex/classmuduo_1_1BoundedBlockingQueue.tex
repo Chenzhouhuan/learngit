@@ -1,0 +1,223 @@
+\hypertarget{classmuduo_1_1BoundedBlockingQueue}{}\section{Bounded\+Blocking\+Queue$<$ T $>$ 模板类 参考}
+\label{classmuduo_1_1BoundedBlockingQueue}\index{Bounded\+Blocking\+Queue$<$ T $>$@{Bounded\+Blocking\+Queue$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Bounded\+Blocking\+Queue.\+h$>$}
+
+
+
+类 Bounded\+Blocking\+Queue$<$ T $>$ 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classmuduo_1_1BoundedBlockingQueue__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Bounded\+Blocking\+Queue$<$ T $>$ 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classmuduo_1_1BoundedBlockingQueue__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1BoundedBlockingQueue_a2fe33813e688d6e4afd6c3505e70fcbb}{Bounded\+Blocking\+Queue} (int max\+Size)
+\item 
+void \hyperlink{classmuduo_1_1BoundedBlockingQueue_a9b315be92f51608e0d347f1fe77b8e3f}{put} (const T \&x)
+\item 
+void \hyperlink{classmuduo_1_1BoundedBlockingQueue_ae3d9a92b70266faafd1600ba3442607d}{put} (T \&\&x)
+\item 
+T \hyperlink{classmuduo_1_1BoundedBlockingQueue_a926c690dfed431d9d806584f3d996e07}{take} ()
+\item 
+bool \hyperlink{classmuduo_1_1BoundedBlockingQueue_a644718bb2fb240de962dc3c9a1fdf0dc}{empty} () const
+\item 
+bool \hyperlink{classmuduo_1_1BoundedBlockingQueue_a8abf3cf65268916fe1f1660fd9efd90a}{full} () const
+\item 
+size\+\_\+t \hyperlink{classmuduo_1_1BoundedBlockingQueue_a259cb5a711406a8c3e5d937eb9350cca}{size} () const
+\item 
+size\+\_\+t \hyperlink{classmuduo_1_1BoundedBlockingQueue_a7223528283cd4e5872e0cc716bf9bd9d}{capacity} () const
+\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1Condition}{Condition} not\+Empty\+\_\+ \hyperlink{classmuduo_1_1BoundedBlockingQueue_adc809585805fc6f065fa7414c29ab2af}{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY} (\hyperlink{classmuduo_1_1BoundedBlockingQueue_a6e1bf1809a42f40f1a21178dc6620a6f}{mutex\+\_\+})
+\item 
+\hyperlink{classmuduo_1_1Condition}{Condition} not\+Full\+\_\+ \hyperlink{classmuduo_1_1BoundedBlockingQueue_aa1da415b15700639c638f90b2cd4850a}{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY} (\hyperlink{classmuduo_1_1BoundedBlockingQueue_a6e1bf1809a42f40f1a21178dc6620a6f}{mutex\+\_\+})
+\item 
+boost\+::circular\+\_\+buffer$<$ T $>$ queue\+\_\+ \hyperlink{classmuduo_1_1BoundedBlockingQueue_ac0626cf28b612809461c2b6c818b2476}{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY} (\hyperlink{classmuduo_1_1BoundedBlockingQueue_a6e1bf1809a42f40f1a21178dc6620a6f}{mutex\+\_\+})
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+Mutex\+Lock \hyperlink{classmuduo_1_1BoundedBlockingQueue_a6e1bf1809a42f40f1a21178dc6620a6f}{mutex\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$typename T$>$\newline
+class muduo\+::\+Bounded\+Blocking\+Queue$<$ T $>$}
+
+
+
+在文件 Bounded\+Blocking\+Queue.\+h 第 19 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1BoundedBlockingQueue_a2fe33813e688d6e4afd6c3505e70fcbb}\label{classmuduo_1_1BoundedBlockingQueue_a2fe33813e688d6e4afd6c3505e70fcbb}} 
+\index{muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}!Bounded\+Blocking\+Queue@{Bounded\+Blocking\+Queue}}
+\index{Bounded\+Blocking\+Queue@{Bounded\+Blocking\+Queue}!muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}}
+\subsubsection{\texorpdfstring{Bounded\+Blocking\+Queue()}{BoundedBlockingQueue()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1BoundedBlockingQueue}{Bounded\+Blocking\+Queue} (\begin{DoxyParamCaption}\item[{int}]{max\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+在文件 Bounded\+Blocking\+Queue.\+h 第 22 行定义.
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1BoundedBlockingQueue_a7223528283cd4e5872e0cc716bf9bd9d}\label{classmuduo_1_1BoundedBlockingQueue_a7223528283cd4e5872e0cc716bf9bd9d}} 
+\index{muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}!capacity@{capacity}}
+\index{capacity@{capacity}!muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}}
+\subsubsection{\texorpdfstring{capacity()}{capacity()}}
+{\footnotesize\ttfamily size\+\_\+t capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Bounded\+Blocking\+Queue.\+h 第 86 行定义.
+
+
+
+参考 Bounded\+Blocking\+Queue$<$ T $>$\+::mutex\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1BoundedBlockingQueue_a644718bb2fb240de962dc3c9a1fdf0dc}\label{classmuduo_1_1BoundedBlockingQueue_a644718bb2fb240de962dc3c9a1fdf0dc}} 
+\index{muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}!empty@{empty}}
+\index{empty@{empty}!muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily bool empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Bounded\+Blocking\+Queue.\+h 第 68 行定义.
+
+
+
+参考 Bounded\+Blocking\+Queue$<$ T $>$\+::mutex\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1BoundedBlockingQueue_a8abf3cf65268916fe1f1660fd9efd90a}\label{classmuduo_1_1BoundedBlockingQueue_a8abf3cf65268916fe1f1660fd9efd90a}} 
+\index{muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}!full@{full}}
+\index{full@{full}!muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}}
+\subsubsection{\texorpdfstring{full()}{full()}}
+{\footnotesize\ttfamily bool full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Bounded\+Blocking\+Queue.\+h 第 74 行定义.
+
+
+
+参考 Bounded\+Blocking\+Queue$<$ T $>$\+::mutex\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1BoundedBlockingQueue_adc809585805fc6f065fa7414c29ab2af}\label{classmuduo_1_1BoundedBlockingQueue_adc809585805fc6f065fa7414c29ab2af}} 
+\index{muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}!G\+U\+A\+R\+D\+E\+D\+\_\+\+BY@{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}}
+\index{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY@{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}!muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}}
+\subsubsection{\texorpdfstring{G\+U\+A\+R\+D\+E\+D\+\_\+\+B\+Y()}{GUARDED\_BY()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Condition}{Condition} not\+Empty\+\_\+ G\+U\+A\+R\+D\+E\+D\+\_\+\+BY (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1BoundedBlockingQueue_a6e1bf1809a42f40f1a21178dc6620a6f}{mutex\+\_\+}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmuduo_1_1BoundedBlockingQueue_aa1da415b15700639c638f90b2cd4850a}\label{classmuduo_1_1BoundedBlockingQueue_aa1da415b15700639c638f90b2cd4850a}} 
+\index{muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}!G\+U\+A\+R\+D\+E\+D\+\_\+\+BY@{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}}
+\index{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY@{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}!muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}}
+\subsubsection{\texorpdfstring{G\+U\+A\+R\+D\+E\+D\+\_\+\+B\+Y()}{GUARDED\_BY()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Condition}{Condition} not\+Full\+\_\+ G\+U\+A\+R\+D\+E\+D\+\_\+\+BY (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1BoundedBlockingQueue_a6e1bf1809a42f40f1a21178dc6620a6f}{mutex\+\_\+}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmuduo_1_1BoundedBlockingQueue_ac0626cf28b612809461c2b6c818b2476}\label{classmuduo_1_1BoundedBlockingQueue_ac0626cf28b612809461c2b6c818b2476}} 
+\index{muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}!G\+U\+A\+R\+D\+E\+D\+\_\+\+BY@{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}}
+\index{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY@{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}!muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}}
+\subsubsection{\texorpdfstring{G\+U\+A\+R\+D\+E\+D\+\_\+\+B\+Y()}{GUARDED\_BY()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily boost\+::circular\+\_\+buffer$<$T$>$ queue\+\_\+ G\+U\+A\+R\+D\+E\+D\+\_\+\+BY (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1BoundedBlockingQueue_a6e1bf1809a42f40f1a21178dc6620a6f}{mutex\+\_\+}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmuduo_1_1BoundedBlockingQueue_a9b315be92f51608e0d347f1fe77b8e3f}\label{classmuduo_1_1BoundedBlockingQueue_a9b315be92f51608e0d347f1fe77b8e3f}} 
+\index{muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}!put@{put}}
+\index{put@{put}!muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}}
+\subsubsection{\texorpdfstring{put()}{put()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void put (\begin{DoxyParamCaption}\item[{const T \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Bounded\+Blocking\+Queue.\+h 第 30 行定义.
+
+
+
+参考 Bounded\+Blocking\+Queue$<$ T $>$\+::mutex\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1BoundedBlockingQueue_ae3d9a92b70266faafd1600ba3442607d}\label{classmuduo_1_1BoundedBlockingQueue_ae3d9a92b70266faafd1600ba3442607d}} 
+\index{muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}!put@{put}}
+\index{put@{put}!muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}}
+\subsubsection{\texorpdfstring{put()}{put()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void put (\begin{DoxyParamCaption}\item[{T \&\&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Bounded\+Blocking\+Queue.\+h 第 42 行定义.
+
+
+
+参考 Bounded\+Blocking\+Queue$<$ T $>$\+::mutex\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1BoundedBlockingQueue_a259cb5a711406a8c3e5d937eb9350cca}\label{classmuduo_1_1BoundedBlockingQueue_a259cb5a711406a8c3e5d937eb9350cca}} 
+\index{muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}!size@{size}}
+\index{size@{size}!muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Bounded\+Blocking\+Queue.\+h 第 80 行定义.
+
+
+
+参考 Bounded\+Blocking\+Queue$<$ T $>$\+::mutex\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1BoundedBlockingQueue_a926c690dfed431d9d806584f3d996e07}\label{classmuduo_1_1BoundedBlockingQueue_a926c690dfed431d9d806584f3d996e07}} 
+\index{muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}!take@{take}}
+\index{take@{take}!muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}}
+\subsubsection{\texorpdfstring{take()}{take()}}
+{\footnotesize\ttfamily T take (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Bounded\+Blocking\+Queue.\+h 第 54 行定义.
+
+
+
+参考 Bounded\+Blocking\+Queue$<$ T $>$\+::mutex\+\_\+.
+
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1BoundedBlockingQueue_a6e1bf1809a42f40f1a21178dc6620a6f}\label{classmuduo_1_1BoundedBlockingQueue_a6e1bf1809a42f40f1a21178dc6620a6f}} 
+\index{muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}!mutex\+\_\+@{mutex\+\_\+}}
+\index{mutex\+\_\+@{mutex\+\_\+}!muduo\+::\+Bounded\+Blocking\+Queue@{muduo\+::\+Bounded\+Blocking\+Queue}}
+\subsubsection{\texorpdfstring{mutex\+\_\+}{mutex\_}}
+{\footnotesize\ttfamily Mutex\+Lock mutex\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+
+
+
+在文件 Bounded\+Blocking\+Queue.\+h 第 93 行定义.
+
+
+
+参考自 Bounded\+Blocking\+Queue$<$ T $>$\+::capacity(), Bounded\+Blocking\+Queue$<$ T $>$\+::empty(), Bounded\+Blocking\+Queue$<$ T $>$\+::full(), Bounded\+Blocking\+Queue$<$ T $>$\+::put(), Bounded\+Blocking\+Queue$<$ T $>$\+::size() , 以及 Bounded\+Blocking\+Queue$<$ T $>$\+::take().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/muduo/base/\hyperlink{BoundedBlockingQueue_8h}{Bounded\+Blocking\+Queue.\+h}\end{DoxyCompactItemize}

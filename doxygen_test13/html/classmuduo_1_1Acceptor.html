@@ -1,0 +1,574 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: Acceptor类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmuduo_1_1Acceptor.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classmuduo_1_1Acceptor-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Acceptor类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Acceptor_8h_source.html">Acceptor.h</a>&gt;</code></p>
+<div class="dynheader">
+类 Acceptor 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Acceptor__inherit__graph.png" border="0" usemap="#Acceptor_inherit__map" alt="Inheritance graph"/></div>
+<map name="Acceptor_inherit__map" id="Acceptor_inherit__map">
+</map>
+</div>
+<div class="dynheader">
+Acceptor 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Acceptor__coll__graph.png" border="0" usemap="#Acceptor_coll__map" alt="Collaboration graph"/></div>
+<map name="Acceptor_coll__map" id="Acceptor_coll__map">
+<area shape="rect" id="node3" href="classmuduo_1_1Socket.html" title="{Socket\n|&#45; sockfd_\l|+ Socket()\l+ ~Socket()\l+ fd()\l+ bindAddress()\l+ listen()\l+ accept()\l+ setReuseAddr()\l+ shutdownWrite()\l+ setTcpNoDelay()\l}" alt="" coords="28,901,172,1096"/>
+<area shape="rect" id="node4" href="classmuduo_1_1Channel.html" title="{Channel\n|&#45; fd_\l&#45; events_\l&#45; revents_\l&#45; index_\l&#45; eventHandling_\l&#45; readCallback_\l&#45; writeCallback_\l&#45; errorCallback_\l&#45; closeCallback_\l&#45; kNoneEvent\l&#45; kReadEvent\l&#45; kWriteEvent\l|+ Channel()\l+ ~Channel()\l+ handlEvent()\l+ setReadCallback()\l+ setWriteCallback()\l+ setErrorCallback()\l+ setCloseCallback()\l+ fd()\l+ events()\l+ set_revents()\l和 9 更多...\l&#45; update()\l}" alt="" coords="198,1120,357,1520"/>
+<area shape="rect" id="node5" href="classmuduo_1_1EventLoop.html" title="{EventLoop\n|&#45; looping_\l&#45; quit_\l&#45; callingPendingFunctors_\l&#45; threadId_\l&#45; poller_\l&#45; timerQueue_\l&#45; wakeupFd_\l&#45; wakeupChannel_\l&#45; activeChannels_\l&#45; mutex_\l&#45; pendingFunctors_\l|+ EventLoop()\l+ ~EventLoop()\l+ loop()\l+ quit()\l+ pollReturnTime()\l+ runInLoop()\l+ queueInLoop()\l+ runAt()\l+ runAfter()\l+ runEvery()\l和 6 更多...\l&#45; abortNotInLoopThread()\l&#45; handleRead()\l&#45; doPendingFunctors()\l}" alt="" coords="230,463,416,877"/>
+<area shape="rect" id="node6" href="classmuduo_1_1Timestamp.html" title="{Timestamp\n|+ kMicroSecondsPerSecond\l&#45; microSecondsSinceEpoch_\l|+ Timestamp()\l+ Timestamp()\l+ swap()\l+ toString()\l+ toFormattedString()\l+ valid()\l+ microSecondsSinceEpoch()\l+ secondsSinceEpoch()\l+ now()\l+ invalid()\l+ fromUnixTime()\l+ fromUnixTime()\l}" alt="" coords="217,147,429,400"/>
+<area shape="rect" id="node7" href="classmuduo_1_1copyable.html" title="{copyable\n||# copyable()\l# ~copyable()\l}" alt="" coords="102,5,219,97"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ad9da8988c47fddac6b0b91e01e154814"><td class="memItemLeft" align="right" valign="top">typedef boost::function&lt; void(int sockfd, const <a class="el" href="classmuduo_1_1InetAddress.html">InetAddress</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Acceptor.html#ad9da8988c47fddac6b0b91e01e154814">NewConnectionCallback</a></td></tr>
+<tr class="separator:ad9da8988c47fddac6b0b91e01e154814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a034c2e4c8c39c67bcaa4a47a6fa906fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Acceptor.html#a034c2e4c8c39c67bcaa4a47a6fa906fd">Acceptor</a> (<a class="el" href="classmuduo_1_1EventLoop.html">EventLoop</a> *loop, const <a class="el" href="classmuduo_1_1InetAddress.html">InetAddress</a> &amp;listenAddr)</td></tr>
+<tr class="separator:a034c2e4c8c39c67bcaa4a47a6fa906fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30908d8d30b5333e6288a7430d598cb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Acceptor.html#a30908d8d30b5333e6288a7430d598cb1">setNewConnectionCallback</a> (const <a class="el" href="classmuduo_1_1Acceptor.html#ad9da8988c47fddac6b0b91e01e154814">NewConnectionCallback</a> &amp;cb)</td></tr>
+<tr class="separator:a30908d8d30b5333e6288a7430d598cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43301d614b7aaae820d7ddd7033984f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Acceptor.html#a43301d614b7aaae820d7ddd7033984f5">listenning</a> () const</td></tr>
+<tr class="separator:a43301d614b7aaae820d7ddd7033984f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a458bbe4cf81360301586b2e62a7f9dd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Acceptor.html#a458bbe4cf81360301586b2e62a7f9dd2">listen</a> ()</td></tr>
+<tr class="separator:a458bbe4cf81360301586b2e62a7f9dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a3459892d34c1eb51b40a53b8062237ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Acceptor.html#a3459892d34c1eb51b40a53b8062237ca">handlRead</a> ()</td></tr>
+<tr class="separator:a3459892d34c1eb51b40a53b8062237ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a19968f50018d32ac31f5cba0195591ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1EventLoop.html">EventLoop</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Acceptor.html#a19968f50018d32ac31f5cba0195591ac">loop_</a></td></tr>
+<tr class="separator:a19968f50018d32ac31f5cba0195591ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b8432787de199c64a25108a26d4690d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1Socket.html">Socket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Acceptor.html#a5b8432787de199c64a25108a26d4690d">acceptSocket_</a></td></tr>
+<tr class="separator:a5b8432787de199c64a25108a26d4690d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32c277ec09ca9c780ddc51b21278c317"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1Channel.html">Channel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Acceptor.html#a32c277ec09ca9c780ddc51b21278c317">acceptChannel_</a></td></tr>
+<tr class="separator:a32c277ec09ca9c780ddc51b21278c317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a315d8356d0420fe5a89dc67f49c82617"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1Acceptor.html#ad9da8988c47fddac6b0b91e01e154814">NewConnectionCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Acceptor.html#a315d8356d0420fe5a89dc67f49c82617">newConnectionCallback_</a></td></tr>
+<tr class="separator:a315d8356d0420fe5a89dc67f49c82617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4e1fb2da4efe5a7bcfff6c2434f966d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Acceptor.html#af4e1fb2da4efe5a7bcfff6c2434f966d">listenning_</a></td></tr>
+<tr class="separator:af4e1fb2da4efe5a7bcfff6c2434f966d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><a class="el" href="classmuduo_1_1Acceptor.html">Acceptor</a> of incoming TCP connections. </p>
+
+<p class="definition">在文件 <a class="el" href="Acceptor_8h_source.html">Acceptor.h</a> 第 <a class="el" href="Acceptor_8h_source.html#l00018">18</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="ad9da8988c47fddac6b0b91e01e154814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9da8988c47fddac6b0b91e01e154814">&#9670;&nbsp;</a></span>NewConnectionCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::function&lt;void(int sockfd, const <a class="el" href="classmuduo_1_1InetAddress.html">InetAddress</a>&amp;)&gt; <a class="el" href="classmuduo_1_1Acceptor.html#ad9da8988c47fddac6b0b91e01e154814">NewConnectionCallback</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Acceptor_8h_source.html">Acceptor.h</a> 第 <a class="el" href="Acceptor_8h_source.html#l00020">20</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a034c2e4c8c39c67bcaa4a47a6fa906fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a034c2e4c8c39c67bcaa4a47a6fa906fd">&#9670;&nbsp;</a></span>Acceptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1Acceptor.html">Acceptor</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1EventLoop.html">EventLoop</a> *&#160;</td>
+          <td class="paramname"><em>loop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmuduo_1_1InetAddress.html">InetAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>listenAddr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Acceptor_8cc_source.html">Acceptor.cc</a> 第 <a class="el" href="Acceptor_8cc_source.html#l00012">12</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Acceptor_8h_source.html#l00039">Acceptor::acceptChannel_</a>, <a class="el" href="Acceptor_8h_source.html#l00038">Acceptor::acceptSocket_</a>, <a class="el" href="Socket_8cc_source.html#l00016">Socket::bindAddress()</a>, <a class="el" href="Acceptor_8cc_source.html#l00029">Acceptor::handlRead()</a>, <a class="el" href="Channel_8h_source.html#l00022">Channel::setReadCallback()</a> , 以及 <a class="el" href="Socket_8cc_source.html#l00034">Socket::setReuseAddr()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Acceptor_a034c2e4c8c39c67bcaa4a47a6fa906fd_cgraph.png" border="0" usemap="#classmuduo_1_1Acceptor_a034c2e4c8c39c67bcaa4a47a6fa906fd_cgraph" alt=""/></div>
+<map name="classmuduo_1_1Acceptor_a034c2e4c8c39c67bcaa4a47a6fa906fd_cgraph" id="classmuduo_1_1Acceptor_a034c2e4c8c39c67bcaa4a47a6fa906fd_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1Socket.html#a5676ae95e49d9927ccf9cf7255521689" title="abort if address in use " alt="" coords="151,71,357,98"/>
+<area shape="rect" id="node6" href="classmuduo_1_1Acceptor.html#a3459892d34c1eb51b40a53b8062237ca" title="handlRead" alt="" coords="209,153,299,179"/>
+<area shape="rect" id="node18" href="classmuduo_1_1Channel.html#a98320338d5a728a36dd017a9c083c129" title="muduo::Channel::setReadCallback" alt="" coords="132,203,376,230"/>
+<area shape="rect" id="node19" href="classmuduo_1_1Socket.html#add291e612aa85998f66e8dd002a942ff" title="muduo::Socket::setReuseAddr" alt="" coords="146,254,362,281"/>
+<area shape="rect" id="node3" href="namespacemuduo_1_1sockets.html#a8fe4065cd24e49e158dd1c16cd693ae1" title="muduo::sockets::bindOrDie" alt="" coords="666,65,865,91"/>
+<area shape="rect" id="node5" href="classmuduo_1_1InetAddress.html#a1878fa474832ba9fa73958124c0404cc" title="muduo::InetAddress\l::getSockAddrInet" alt="" coords="443,5,595,47"/>
+<area shape="rect" id="node4" href="namespacemuduo_1_1net_1_1sockets.html#ad69bf980a58ef6798c4e1dbe5497d52c" title="muduo::net::sockets\l::sockaddr_cast" alt="" coords="952,57,1107,99"/>
+<area shape="rect" id="node7" href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::EventLoop::assert\lInLoopThread" alt="" coords="424,233,615,275"/>
+<area shape="rect" id="node14" href="classmuduo_1_1Socket.html#a4f91f07f92cd51f6d6d4214af1e9b73f" title="muduo::Socket::accept" alt="" coords="434,127,605,154"/>
+<area shape="rect" id="node17" href="namespacemuduo_1_1sockets.html#acb275b6d8b5979229bae664cb7ee14da" title="muduo::sockets::close" alt="" coords="436,178,603,205"/>
+<area shape="rect" id="node8" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="muduo::EventLoop::isInLoop\lThread" alt="" coords="663,233,868,275"/>
+<area shape="rect" id="node11" href="classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="muduo::EventLoop::abortNot\lInLoopThread" alt="" coords="925,292,1133,333"/>
+<area shape="rect" id="node9" href="namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="1191,270,1384,297"/>
+<area shape="rect" id="node12" href="classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="muduo::EventLoop::handleRead" alt="" coords="916,123,1143,150"/>
+<area shape="rect" id="node13" href="classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="muduo::EventLoop::doPending\lFunctors" alt="" coords="920,175,1139,216"/>
+<area shape="rect" id="node10" href="namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="1432,263,1600,304"/>
+<area shape="rect" id="node15" href="namespacemuduo_1_1sockets.html#a5fe7cd11cb2662939917285c51b3f992" title="muduo::sockets::accept" alt="" coords="677,182,853,209"/>
+<area shape="rect" id="node16" href="classmuduo_1_1InetAddress.html#ac40372dd403192210eddb5e699a420c7" title="muduo::InetAddress\l::setSockAddrInet" alt="" coords="689,116,841,157"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a3459892d34c1eb51b40a53b8062237ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3459892d34c1eb51b40a53b8062237ca">&#9670;&nbsp;</a></span>handlRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handlRead </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Acceptor_8cc_source.html">Acceptor.cc</a> 第 <a class="el" href="Acceptor_8cc_source.html#l00029">29</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Socket_8cc_source.html#l00024">Socket::accept()</a>, <a class="el" href="Acceptor_8h_source.html#l00038">Acceptor::acceptSocket_</a>, <a class="el" href="EventLoop_8h_source.html#l00069">EventLoop::assertInLoopThread()</a>, <a class="el" href="SocketsOps_8cc_source.html#l00125">muduo::sockets::close()</a>, <a class="el" href="Acceptor_8h_source.html#l00037">Acceptor::loop_</a> , 以及 <a class="el" href="Acceptor_8h_source.html#l00040">Acceptor::newConnectionCallback_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="Acceptor_8cc_source.html#l00012">Acceptor::Acceptor()</a> , 以及 <a class="el" href="Acceptor_8h_source.html#l00028">Acceptor::listenning()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Acceptor_a3459892d34c1eb51b40a53b8062237ca_cgraph.png" border="0" usemap="#classmuduo_1_1Acceptor_a3459892d34c1eb51b40a53b8062237ca_cgraph" alt=""/></div>
+<map name="classmuduo_1_1Acceptor_a3459892d34c1eb51b40a53b8062237ca_cgraph" id="classmuduo_1_1Acceptor_a3459892d34c1eb51b40a53b8062237ca_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1Socket.html#a4f91f07f92cd51f6d6d4214af1e9b73f" title="muduo::Socket::accept" alt="" coords="154,71,325,98"/>
+<area shape="rect" id="node6" href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::EventLoop::assert\lInLoopThread" alt="" coords="144,123,335,164"/>
+<area shape="rect" id="node13" href="namespacemuduo_1_1sockets.html#acb275b6d8b5979229bae664cb7ee14da" title="muduo::sockets::close" alt="" coords="156,189,323,215"/>
+<area shape="rect" id="node3" href="namespacemuduo_1_1sockets.html#a5fe7cd11cb2662939917285c51b3f992" title="muduo::sockets::accept" alt="" coords="397,13,573,39"/>
+<area shape="rect" id="node5" href="classmuduo_1_1InetAddress.html#ac40372dd403192210eddb5e699a420c7" title="muduo::InetAddress\l::setSockAddrInet" alt="" coords="409,64,561,105"/>
+<area shape="rect" id="node4" href="namespacemuduo_1_1net_1_1sockets.html#ad69bf980a58ef6798c4e1dbe5497d52c" title="muduo::net::sockets\l::sockaddr_cast" alt="" coords="672,5,827,47"/>
+<area shape="rect" id="node7" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="muduo::EventLoop::isInLoop\lThread" alt="" coords="383,181,588,223"/>
+<area shape="rect" id="node10" href="classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="muduo::EventLoop::abortNot\lInLoopThread" alt="" coords="645,123,853,164"/>
+<area shape="rect" id="node8" href="namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="911,159,1104,186"/>
+<area shape="rect" id="node11" href="classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="muduo::EventLoop::handleRead" alt="" coords="636,239,863,266"/>
+<area shape="rect" id="node12" href="classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="muduo::EventLoop::doPending\lFunctors" alt="" coords="640,291,859,332"/>
+<area shape="rect" id="node9" href="namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="1152,152,1320,193"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Acceptor_a3459892d34c1eb51b40a53b8062237ca_icgraph.png" border="0" usemap="#classmuduo_1_1Acceptor_a3459892d34c1eb51b40a53b8062237ca_icgraph" alt=""/></div>
+<map name="classmuduo_1_1Acceptor_a3459892d34c1eb51b40a53b8062237ca_icgraph" id="classmuduo_1_1Acceptor_a3459892d34c1eb51b40a53b8062237ca_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1Acceptor.html#a034c2e4c8c39c67bcaa4a47a6fa906fd" title="Acceptor" alt="" coords="148,5,227,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1Acceptor.html#a43301d614b7aaae820d7ddd7033984f5" title="listenning" alt="" coords="144,56,231,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a458bbe4cf81360301586b2e62a7f9dd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a458bbe4cf81360301586b2e62a7f9dd2">&#9670;&nbsp;</a></span>listen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void listen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Acceptor_8cc_source.html">Acceptor.cc</a> 第 <a class="el" href="Acceptor_8cc_source.html#l00022">22</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Acceptor_8h_source.html#l00039">Acceptor::acceptChannel_</a>, <a class="el" href="Acceptor_8h_source.html#l00038">Acceptor::acceptSocket_</a>, <a class="el" href="EventLoop_8h_source.html#l00069">EventLoop::assertInLoopThread()</a>, <a class="el" href="Channel_8h_source.html#l00032">Channel::enableReading()</a>, <a class="el" href="Socket_8cc_source.html#l00020">Socket::listen()</a>, <a class="el" href="Acceptor_8h_source.html#l00041">Acceptor::listenning_</a> , 以及 <a class="el" href="Acceptor_8h_source.html#l00037">Acceptor::loop_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="Acceptor_8h_source.html#l00028">Acceptor::listenning()</a> , 以及 <a class="el" href="TcpServer_8cc_source.html#l00031">TcpServer::start()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Acceptor_a458bbe4cf81360301586b2e62a7f9dd2_cgraph.png" border="0" usemap="#classmuduo_1_1Acceptor_a458bbe4cf81360301586b2e62a7f9dd2_cgraph" alt=""/></div>
+<map name="classmuduo_1_1Acceptor_a458bbe4cf81360301586b2e62a7f9dd2_cgraph" id="classmuduo_1_1Acceptor_a458bbe4cf81360301586b2e62a7f9dd2_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::EventLoop::assert\lInLoopThread" alt="" coords="899,35,1089,76"/>
+<area shape="rect" id="node9" href="classmuduo_1_1Channel.html#ad31f735a6d5ad83203d977ad8eafb223" title="muduo::Channel::enableReading" alt="" coords="112,86,344,113"/>
+<area shape="rect" id="node13" href="classmuduo_1_1Socket.html#a458bbe4cf81360301586b2e62a7f9dd2" title="abort if address in use " alt="" coords="147,137,309,163"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="muduo::EventLoop::isInLoop\lThread" alt="" coords="1145,64,1351,105"/>
+<area shape="rect" id="node6" href="classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="muduo::EventLoop::abortNot\lInLoopThread" alt="" coords="1408,5,1616,47"/>
+<area shape="rect" id="node4" href="namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="1673,42,1867,69"/>
+<area shape="rect" id="node7" href="classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="muduo::EventLoop::handleRead" alt="" coords="1399,122,1625,149"/>
+<area shape="rect" id="node8" href="classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="muduo::EventLoop::doPending\lFunctors" alt="" coords="1403,173,1621,215"/>
+<area shape="rect" id="node5" href="namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="1915,35,2083,76"/>
+<area shape="rect" id="node10" href="classmuduo_1_1Channel.html#ac5c54df7ed3b930268c8d7752c101725" title="muduo::Channel::update" alt="" coords="405,86,586,113"/>
+<area shape="rect" id="node11" href="classmuduo_1_1EventLoop.html#acaa4a191936aacf608d279a6f343d533" title="muduo::EventLoop::update\lChannel" alt="" coords="647,79,843,120"/>
+<area shape="rect" id="node12" href="classmuduo_1_1Channel.html#a2e24e2ab7ada4682fdf49cc835d85e8d" title="muduo::Channel::ownerLoop" alt="" coords="891,115,1097,142"/>
+<area shape="rect" id="node14" href="namespacemuduo_1_1sockets.html#a379cec5f383764a3696d9615bd344529" title="muduo::sockets::listenOrDie" alt="" coords="392,137,599,163"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Acceptor_a458bbe4cf81360301586b2e62a7f9dd2_icgraph.png" border="0" usemap="#classmuduo_1_1Acceptor_a458bbe4cf81360301586b2e62a7f9dd2_icgraph" alt=""/></div>
+<map name="classmuduo_1_1Acceptor_a458bbe4cf81360301586b2e62a7f9dd2_icgraph" id="classmuduo_1_1Acceptor_a458bbe4cf81360301586b2e62a7f9dd2_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1Acceptor.html#a43301d614b7aaae820d7ddd7033984f5" title="listenning" alt="" coords="157,5,243,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1TcpServer.html#a60de64d75454385b23995437f1d72669" title="muduo::TcpServer::start" alt="" coords="112,56,288,83"/>
+<area shape="rect" id="node4" href="test9_8cc.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="336,56,391,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a43301d614b7aaae820d7ddd7033984f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43301d614b7aaae820d7ddd7033984f5">&#9670;&nbsp;</a></span>listenning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool listenning </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Acceptor_8h_source.html">Acceptor.h</a> 第 <a class="el" href="Acceptor_8h_source.html#l00028">28</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Acceptor_8cc_source.html#l00029">Acceptor::handlRead()</a>, <a class="el" href="Acceptor_8cc_source.html#l00022">Acceptor::listen()</a> , 以及 <a class="el" href="Acceptor_8h_source.html#l00041">Acceptor::listenning_</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Acceptor_a43301d614b7aaae820d7ddd7033984f5_cgraph.png" border="0" usemap="#classmuduo_1_1Acceptor_a43301d614b7aaae820d7ddd7033984f5_cgraph" alt=""/></div>
+<map name="classmuduo_1_1Acceptor_a43301d614b7aaae820d7ddd7033984f5_cgraph" id="classmuduo_1_1Acceptor_a43301d614b7aaae820d7ddd7033984f5_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1Acceptor.html#a3459892d34c1eb51b40a53b8062237ca" title="handlRead" alt="" coords="140,166,231,193"/>
+<area shape="rect" id="node15" href="classmuduo_1_1Acceptor.html#a458bbe4cf81360301586b2e62a7f9dd2" title="listen" alt="" coords="156,246,215,273"/>
+<area shape="rect" id="node3" href="classmuduo_1_1Socket.html#a4f91f07f92cd51f6d6d4214af1e9b73f" title="muduo::Socket::accept" alt="" coords="309,71,480,98"/>
+<area shape="rect" id="node7" href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::EventLoop::assert\lInLoopThread" alt="" coords="1065,224,1256,265"/>
+<area shape="rect" id="node14" href="namespacemuduo_1_1sockets.html#acb275b6d8b5979229bae664cb7ee14da" title="muduo::sockets::close" alt="" coords="311,181,478,207"/>
+<area shape="rect" id="node4" href="namespacemuduo_1_1sockets.html#a5fe7cd11cb2662939917285c51b3f992" title="muduo::sockets::accept" alt="" coords="574,13,750,39"/>
+<area shape="rect" id="node6" href="classmuduo_1_1InetAddress.html#ac40372dd403192210eddb5e699a420c7" title="muduo::InetAddress\l::setSockAddrInet" alt="" coords="586,64,738,105"/>
+<area shape="rect" id="node5" href="namespacemuduo_1_1net_1_1sockets.html#ad69bf980a58ef6798c4e1dbe5497d52c" title="muduo::net::sockets\l::sockaddr_cast" alt="" coords="834,5,989,47"/>
+<area shape="rect" id="node8" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="muduo::EventLoop::isInLoop\lThread" alt="" coords="1312,253,1517,295"/>
+<area shape="rect" id="node11" href="classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="muduo::EventLoop::abortNot\lInLoopThread" alt="" coords="1575,195,1783,236"/>
+<area shape="rect" id="node9" href="namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="1840,231,2033,258"/>
+<area shape="rect" id="node12" href="classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="muduo::EventLoop::handleRead" alt="" coords="1565,311,1792,338"/>
+<area shape="rect" id="node13" href="classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="muduo::EventLoop::doPending\lFunctors" alt="" coords="1569,363,1788,404"/>
+<area shape="rect" id="node10" href="namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="2081,224,2249,265"/>
+<area shape="rect" id="node16" href="classmuduo_1_1Channel.html#ad31f735a6d5ad83203d977ad8eafb223" title="muduo::Channel::enableReading" alt="" coords="279,285,511,311"/>
+<area shape="rect" id="node20" href="classmuduo_1_1Socket.html#a458bbe4cf81360301586b2e62a7f9dd2" title="abort if address in use " alt="" coords="313,335,476,362"/>
+<area shape="rect" id="node17" href="classmuduo_1_1Channel.html#ac5c54df7ed3b930268c8d7752c101725" title="muduo::Channel::update" alt="" coords="571,289,753,315"/>
+<area shape="rect" id="node18" href="classmuduo_1_1EventLoop.html#acaa4a191936aacf608d279a6f343d533" title="muduo::EventLoop::update\lChannel" alt="" coords="813,283,1009,324"/>
+<area shape="rect" id="node19" href="classmuduo_1_1Channel.html#a2e24e2ab7ada4682fdf49cc835d85e8d" title="muduo::Channel::ownerLoop" alt="" coords="1057,319,1264,346"/>
+<area shape="rect" id="node21" href="namespacemuduo_1_1sockets.html#a379cec5f383764a3696d9615bd344529" title="muduo::sockets::listenOrDie" alt="" coords="559,339,765,366"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a30908d8d30b5333e6288a7430d598cb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30908d8d30b5333e6288a7430d598cb1">&#9670;&nbsp;</a></span>setNewConnectionCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setNewConnectionCallback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmuduo_1_1Acceptor.html#ad9da8988c47fddac6b0b91e01e154814">NewConnectionCallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Acceptor_8h_source.html">Acceptor.h</a> 第 <a class="el" href="Acceptor_8h_source.html#l00024">24</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Acceptor_8h_source.html#l00040">Acceptor::newConnectionCallback_</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a32c277ec09ca9c780ddc51b21278c317"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32c277ec09ca9c780ddc51b21278c317">&#9670;&nbsp;</a></span>acceptChannel_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1Channel.html">Channel</a> acceptChannel_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Acceptor_8h_source.html">Acceptor.h</a> 第 <a class="el" href="Acceptor_8h_source.html#l00039">39</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="Acceptor_8cc_source.html#l00012">Acceptor::Acceptor()</a> , 以及 <a class="el" href="Acceptor_8cc_source.html#l00022">Acceptor::listen()</a>.</p>
+
+</div>
+</div>
+<a id="a5b8432787de199c64a25108a26d4690d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b8432787de199c64a25108a26d4690d">&#9670;&nbsp;</a></span>acceptSocket_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1Socket.html">Socket</a> acceptSocket_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Acceptor_8h_source.html">Acceptor.h</a> 第 <a class="el" href="Acceptor_8h_source.html#l00038">38</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="Acceptor_8cc_source.html#l00012">Acceptor::Acceptor()</a>, <a class="el" href="Acceptor_8cc_source.html#l00029">Acceptor::handlRead()</a> , 以及 <a class="el" href="Acceptor_8cc_source.html#l00022">Acceptor::listen()</a>.</p>
+
+</div>
+</div>
+<a id="af4e1fb2da4efe5a7bcfff6c2434f966d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4e1fb2da4efe5a7bcfff6c2434f966d">&#9670;&nbsp;</a></span>listenning_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool listenning_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Acceptor_8h_source.html">Acceptor.h</a> 第 <a class="el" href="Acceptor_8h_source.html#l00041">41</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="Acceptor_8cc_source.html#l00022">Acceptor::listen()</a> , 以及 <a class="el" href="Acceptor_8h_source.html#l00028">Acceptor::listenning()</a>.</p>
+
+</div>
+</div>
+<a id="a19968f50018d32ac31f5cba0195591ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19968f50018d32ac31f5cba0195591ac">&#9670;&nbsp;</a></span>loop_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1EventLoop.html">EventLoop</a>* loop_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Acceptor_8h_source.html">Acceptor.h</a> 第 <a class="el" href="Acceptor_8h_source.html#l00037">37</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="Acceptor_8cc_source.html#l00029">Acceptor::handlRead()</a> , 以及 <a class="el" href="Acceptor_8cc_source.html#l00022">Acceptor::listen()</a>.</p>
+
+</div>
+</div>
+<a id="a315d8356d0420fe5a89dc67f49c82617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a315d8356d0420fe5a89dc67f49c82617">&#9670;&nbsp;</a></span>newConnectionCallback_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1Acceptor.html#ad9da8988c47fddac6b0b91e01e154814">NewConnectionCallback</a> newConnectionCallback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Acceptor_8h_source.html">Acceptor.h</a> 第 <a class="el" href="Acceptor_8h_source.html#l00040">40</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="Acceptor_8cc_source.html#l00029">Acceptor::handlRead()</a> , 以及 <a class="el" href="Acceptor_8h_source.html#l00024">Acceptor::setNewConnectionCallback()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>lib/<a class="el" href="Acceptor_8h_source.html">Acceptor.h</a></li>
+<li>src/<a class="el" href="Acceptor_8cc_source.html">Acceptor.cc</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemuduo.html">muduo</a></li><li class="navelem"><a class="el" href="classmuduo_1_1Acceptor.html">Acceptor</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

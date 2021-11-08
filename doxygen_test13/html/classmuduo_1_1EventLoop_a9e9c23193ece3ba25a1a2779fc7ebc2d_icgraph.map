@@ -1,0 +1,51 @@
+<map id="assertInLoopThread" name="assertInLoopThread">
+<area shape="rect" id="node2" href="$classmuduo_1_1TimerQueue.html#adff791c94ab893d2adae1eafe03713ad" title="muduo::TimerQueue::\laddTimerInLoop" alt="" coords="509,15,671,57"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1Poller.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::Poller::assertInLoop\lThread" alt="" coords="214,241,417,282"/>
+<area shape="rect" id="node7" href="$classmuduo_1_1EPoller.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::EPoller::assertIn\lLoopThread" alt="" coords="225,335,405,377"/>
+<area shape="rect" id="node10" href="$classmuduo_1_1TimerQueue.html#abc59bed63190c00d9aab9281a543ea58" title="muduo::TimerQueue::\lcancelInLoop" alt="" coords="234,401,397,442"/>
+<area shape="rect" id="node12" href="$classmuduo_1_1TcpConnection.html#afff2c1576d605dda12f87d2b32d5c1a2" title="muduo::TcpConnection\l::connectDestoryed" alt="" coords="971,793,1140,834"/>
+<area shape="rect" id="node15" href="$classmuduo_1_1TcpClient.html#ad9661c3f05443256c9439f812d1a7691" title="Not thread safe, but in loop " alt="" coords="1215,1091,1407,1133"/>
+<area shape="rect" id="node17" href="$classmuduo_1_1TcpClient.html#ae2e5d102f7a519e65019cd5f09acea72" title="Not thread safe, but in loop " alt="" coords="1483,1153,1725,1180"/>
+<area shape="rect" id="node19" href="$classmuduo_1_1TcpServer.html#a38345725075c2bf845af025c2567d977" title="Not thread safe, but in loop " alt="" coords="1213,734,1409,775"/>
+<area shape="rect" id="node21" href="$classmuduo_1_1TcpConnection.html#a2e1f9742dac98a0c3e5a5509920934ae" title="muduo::TcpConnection\l::connectEstablished" alt="" coords="971,883,1140,925"/>
+<area shape="rect" id="node22" href="$classmuduo_1_1TcpServer.html#a6e7510f45cfa67ddc79aa8689fd79562" title="Not thread safe, but in loop " alt="" coords="1188,917,1435,944"/>
+<area shape="rect" id="node24" href="$classmuduo_1_1EventLoopThreadPool.html#ad79a4dd0cdd1358bfde1170759543c7d" title="muduo::EventLoopThreadPool\l::getNextLoop" alt="" coords="207,1274,423,1315"/>
+<area shape="rect" id="node26" href="$classmuduo_1_1TcpConnection.html#a2cb2baff35786f9caa991e3c47908d91" title="muduo::TcpConnection\l::handleClose" alt="" coords="231,747,400,789"/>
+<area shape="rect" id="node30" href="$classmuduo_1_1TimerQueue.html#a231ec0ec0313193a59b3f1326328ae50" title="muduo::TimerQueue::\lhandleRead" alt="" coords="757,110,919,151"/>
+<area shape="rect" id="node32" href="$classmuduo_1_1TcpConnection.html#ae1d79ff6580eaced59a900144818150d" title="muduo::TcpConnection\l::handleWrite" alt="" coords="505,838,675,879"/>
+<area shape="rect" id="node33" href="$classmuduo_1_1Acceptor.html#a3459892d34c1eb51b40a53b8062237ca" title="muduo::Acceptor::handlRead" alt="" coords="211,1340,419,1367"/>
+<area shape="rect" id="node36" href="$classmuduo_1_1TimerQueue.html#ac4bdfea344ee2a30857d2eabadfef399" title="muduo::TimerQueue::\linsert" alt="" coords="234,81,397,122"/>
+<area shape="rect" id="node38" href="$classmuduo_1_1Acceptor.html#a458bbe4cf81360301586b2e62a7f9dd2" title="muduo::Acceptor::listen" alt="" coords="227,1391,403,1417"/>
+<area shape="rect" id="node40" href="$classmuduo_1_1EventLoop.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="290,1441,341,1468"/>
+<area shape="rect" id="node43" href="$classmuduo_1_1EventLoop.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="removeChannel" alt="" coords="253,619,378,645"/>
+<area shape="rect" id="node45" href="$classmuduo_1_1Connector.html#a22ee094ca3f45aa4156b97d34fe678bf" title="muduo::Connector::restart" alt="" coords="494,1559,686,1585"/>
+<area shape="rect" id="node46" href="$classmuduo_1_1TcpConnection.html#a016986a5f7c6f0d415e25b4b6bdbf481" title="muduo::TcpConnection\l::sendInLoop" alt="" coords="231,939,400,981"/>
+<area shape="rect" id="node47" href="$classmuduo_1_1TcpConnection.html#a4f988229386dc4e5f80cca96e096e074" title="muduo::TcpConnection\l::shutdownInLoop" alt="" coords="231,874,400,915"/>
+<area shape="rect" id="node48" href="$classmuduo_1_1EventLoopThreadPool.html#a60de64d75454385b23995437f1d72669" title="muduo::EventLoopThreadPool\l::start" alt="" coords="207,1209,423,1250"/>
+<area shape="rect" id="node49" href="$classmuduo_1_1Connector.html#ad289b54db652dcb10f835f3613e68fdb" title="muduo::Connector::startInLoop" alt="" coords="204,1496,427,1523"/>
+<area shape="rect" id="node50" href="$classmuduo_1_1EventLoop.html#acaa4a191936aacf608d279a6f343d533" title="updateChannel" alt="" coords="255,679,375,705"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1TimerQueue.html#af1bd2f1010adf1a82120c708b7a1ba22" title="muduo::TimerQueue::\laddTimer" alt="" coords="757,15,919,57"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1Poller.html#acaa4a191936aacf608d279a6f343d533" title="muduo::Poller::updateChannel" alt="" coords="481,248,699,275"/>
+<area shape="rect" id="node6" href="$classmuduo_1_1Poller.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="muduo::Poller::removeChannel" alt="" coords="479,197,701,224"/>
+<area shape="rect" id="node8" href="$classmuduo_1_1EPoller.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="muduo::EPoller::removeChannel" alt="" coords="475,349,705,376"/>
+<area shape="rect" id="node9" href="$classmuduo_1_1EPoller.html#acaa4a191936aacf608d279a6f343d533" title="muduo::EPoller::updateChannel" alt="" coords="477,299,703,325"/>
+<area shape="rect" id="node11" href="$classmuduo_1_1TimerQueue.html#af8b24b02bbff6a657fa5b0190bef9b9b" title="muduo::TimerQueue::\lcancel" alt="" coords="509,401,671,442"/>
+<area shape="rect" id="node13" href="$classmuduo_1_1TcpConnection.html#acb32ba0eda160676b4fc98d756ee3515" title="Internal use only. " alt="" coords="1227,851,1396,893"/>
+<area shape="rect" id="node14" href="$namespacemuduo_1_1detail.html#ae3e6bfc20f665df13eeb2ebc3c91abce" title="muduo::detail::removeConnection" alt="" coords="1190,800,1433,827"/>
+<area shape="rect" id="node16" href="$classmuduo_1_1TcpClient.html#a94b31be320453fc8aeae81b25934b43f" title="muduo::TcpClient::setWrite\lCompleteCallback" alt="" coords="1776,1091,1972,1133"/>
+<area shape="rect" id="node18" href="$classmuduo_1_1TcpClient.html#a8d68694b0595253edef974e8ee289d4c" title="muduo::TcpClient::TcpClient" alt="" coords="1773,1157,1975,1184"/>
+<area shape="rect" id="node20" href="$classmuduo_1_1TcpServer.html#a94b31be320453fc8aeae81b25934b43f" title="muduo::TcpServer::setWrite\lCompleteCallback" alt="" coords="1504,793,1704,834"/>
+<area shape="rect" id="node23" href="$classmuduo_1_1TcpServer.html#aca9a1702da801c3275b2e70d233cc0c7" title="muduo::TcpServer::TcpServer" alt="" coords="1499,917,1709,944"/>
+<area shape="rect" id="node25" href="$classmuduo_1_1EventLoopThreadPool.html#a83bb28d139df96ba9fc449b4643f2c36" title="muduo::EventLoopThreadPool\l::setThreadNum" alt="" coords="482,1215,698,1257"/>
+<area shape="rect" id="node27" href="$classmuduo_1_1TcpConnection.html#a5cefef7ea6272b740592d9dfecbd6c20" title="muduo::TcpConnection\l::setState" alt="" coords="753,838,923,879"/>
+<area shape="rect" id="node28" href="$classmuduo_1_1TcpConnection.html#a239881b2e3d5499da8745fba1bd82e08" title="muduo::TcpConnection\l::TcpConnection" alt="" coords="753,721,923,762"/>
+<area shape="rect" id="node29" href="$classmuduo_1_1TcpConnection.html#afca05707020dd916739c07555d4769a0" title="muduo::TcpConnection\l::handleRead" alt="" coords="505,721,675,762"/>
+<area shape="rect" id="node31" href="$classmuduo_1_1TimerQueue.html#a7ad41aed2409f7d424fd9cf7c0c5eac8" title="muduo::TimerQueue::\lTimerQueue" alt="" coords="974,110,1137,151"/>
+<area shape="rect" id="node34" href="$classmuduo_1_1Acceptor.html#a034c2e4c8c39c67bcaa4a47a6fa906fd" title="muduo::Acceptor::Acceptor" alt="" coords="491,1289,689,1316"/>
+<area shape="rect" id="node35" href="$classmuduo_1_1Acceptor.html#a43301d614b7aaae820d7ddd7033984f5" title="muduo::Acceptor::listenning" alt="" coords="488,1340,692,1367"/>
+<area shape="rect" id="node37" href="$classmuduo_1_1TimerQueue.html#ac59fd8ddc045aae320982a0913993237" title="muduo::TimerQueue::\lreset" alt="" coords="509,81,671,122"/>
+<area shape="rect" id="node39" href="$classmuduo_1_1TcpServer.html#a60de64d75454385b23995437f1d72669" title="muduo::TcpServer::start" alt="" coords="502,1391,678,1417"/>
+<area shape="rect" id="node41" href="$classmuduo_1_1EventLoopThread.html#a539feb3c59a20db3b260b312fa7dea34" title="muduo::EventLoopThread\l::threadFunc" alt="" coords="496,1493,684,1534"/>
+<area shape="rect" id="node42" href="$test13_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="563,1441,617,1468"/>
+<area shape="rect" id="node44" href="$classmuduo_1_1EventLoop.html#a5c4a9a6cf52fc408cdd33c8445fb5127" title="pollReturnTime" alt="" coords="529,619,651,645"/>
+</map>

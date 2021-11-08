@@ -1,0 +1,353 @@
+\hypertarget{classmuduo_1_1net_1_1HttpResponse}{}\section{Http\+Response类 参考}
+\label{classmuduo_1_1net_1_1HttpResponse}\index{Http\+Response@{Http\+Response}}
+
+
+{\ttfamily \#include $<$Http\+Response.\+h$>$}
+
+
+
+类 Http\+Response 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classmuduo_1_1net_1_1HttpResponse__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Http\+Response 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{classmuduo_1_1net_1_1HttpResponse__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12cc}{Http\+Status\+Code} \{ \newline
+\hyperlink{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12cca8e792321b79a4aa90e75bd3fcc2e4141}{k\+Unknown}, 
+\hyperlink{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12ccacc16172506513cb34185a4ad8cc52a74}{k200\+Ok} = 200, 
+\hyperlink{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12cca91181029534d5b787040014b7bcd44b5}{k301\+Moved\+Permanently} = 301, 
+\hyperlink{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12ccafd0f0a5c71ac33577ba3595a4c3e36f2}{k400\+Bad\+Request} = 400, 
+\newline
+\hyperlink{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12ccaa600536cd5144b0769bb47ee6029d955}{k404\+Not\+Found} = 404
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1net_1_1HttpResponse_ad347f66c2e5e163d88120c59e56dd27f}{Http\+Response} (bool close)
+\item 
+void \hyperlink{classmuduo_1_1net_1_1HttpResponse_ad1aabf915b59756bb018249928221787}{set\+Status\+Code} (\hyperlink{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12cc}{Http\+Status\+Code} code)
+\item 
+void \hyperlink{classmuduo_1_1net_1_1HttpResponse_abb542ea3323fddfbcc172c75fe4e6015}{set\+Status\+Message} (const string \&\hyperlink{test13_8cc_a36bd74109f547f7f8198faf5a12d2879}{message})
+\item 
+void \hyperlink{classmuduo_1_1net_1_1HttpResponse_a8edbcd81fcbbafb46b9d95f56d2a6567}{set\+Close\+Connection} (bool on)
+\item 
+bool \hyperlink{classmuduo_1_1net_1_1HttpResponse_ab8fae68a967e14c3eb49839bb7e37e8c}{close\+Connection} () const
+\item 
+void \hyperlink{classmuduo_1_1net_1_1HttpResponse_a1d3cf167b4c287497e4c38c78a0f1809}{set\+Content\+Type} (const string \&content\+Type)
+\item 
+void \hyperlink{classmuduo_1_1net_1_1HttpResponse_a999431a881eda9ce08a1077445f0da57}{add\+Header} (const string \&key, const string \&value)
+\item 
+void \hyperlink{classmuduo_1_1net_1_1HttpResponse_a8c51abf32832a62b037331cfa6d762cb}{set\+Body} (const string \&body)
+\item 
+void \hyperlink{classmuduo_1_1net_1_1HttpResponse_ad653b5453eec08dd28444d57bfc2b94b}{append\+To\+Buffer} (\hyperlink{classmuduo_1_1net_1_1Buffer}{Buffer} $\ast$output) const
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ string, string $>$ \hyperlink{classmuduo_1_1net_1_1HttpResponse_a5399fcc713a2d468facbbcc1e84999cf}{headers\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12cc}{Http\+Status\+Code} \hyperlink{classmuduo_1_1net_1_1HttpResponse_a24a07a498fb950d72850091c0306c939}{status\+Code\+\_\+}
+\item 
+string \hyperlink{classmuduo_1_1net_1_1HttpResponse_a2f9afda0b0e65abfe8f2525de3db81b1}{status\+Message\+\_\+}
+\item 
+bool \hyperlink{classmuduo_1_1net_1_1HttpResponse_a18563cbdd30986ec38ffaac652078389}{close\+Connection\+\_\+}
+\item 
+string \hyperlink{classmuduo_1_1net_1_1HttpResponse_a72879b508873c81ba40a4919bc67ab7f}{body\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+
+
+在文件 Http\+Response.\+h 第 25 行定义.
+
+
+
+\subsection{成员枚举类型说明}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12cc}\label{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12cc}} 
+\index{muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}!Http\+Status\+Code@{Http\+Status\+Code}}
+\index{Http\+Status\+Code@{Http\+Status\+Code}!muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}}
+\subsubsection{\texorpdfstring{Http\+Status\+Code}{HttpStatusCode}}
+{\footnotesize\ttfamily enum \hyperlink{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12cc}{Http\+Status\+Code}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Unknown@{k\+Unknown}!muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}}\index{muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}!k\+Unknown@{k\+Unknown}}}\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12cca8e792321b79a4aa90e75bd3fcc2e4141}\label{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12cca8e792321b79a4aa90e75bd3fcc2e4141}} 
+k\+Unknown&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k200\+Ok@{k200\+Ok}!muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}}\index{muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}!k200\+Ok@{k200\+Ok}}}\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12ccacc16172506513cb34185a4ad8cc52a74}\label{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12ccacc16172506513cb34185a4ad8cc52a74}} 
+k200\+Ok&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k301\+Moved\+Permanently@{k301\+Moved\+Permanently}!muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}}\index{muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}!k301\+Moved\+Permanently@{k301\+Moved\+Permanently}}}\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12cca91181029534d5b787040014b7bcd44b5}\label{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12cca91181029534d5b787040014b7bcd44b5}} 
+k301\+Moved\+Permanently&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k400\+Bad\+Request@{k400\+Bad\+Request}!muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}}\index{muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}!k400\+Bad\+Request@{k400\+Bad\+Request}}}\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12ccafd0f0a5c71ac33577ba3595a4c3e36f2}\label{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12ccafd0f0a5c71ac33577ba3595a4c3e36f2}} 
+k400\+Bad\+Request&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k404\+Not\+Found@{k404\+Not\+Found}!muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}}\index{muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}!k404\+Not\+Found@{k404\+Not\+Found}}}\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12ccaa600536cd5144b0769bb47ee6029d955}\label{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12ccaa600536cd5144b0769bb47ee6029d955}} 
+k404\+Not\+Found&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 Http\+Response.\+h 第 28 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpResponse_ad347f66c2e5e163d88120c59e56dd27f}\label{classmuduo_1_1net_1_1HttpResponse_ad347f66c2e5e163d88120c59e56dd27f}} 
+\index{muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}!Http\+Response@{Http\+Response}}
+\index{Http\+Response@{Http\+Response}!muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}}
+\subsubsection{\texorpdfstring{Http\+Response()}{HttpResponse()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1net_1_1HttpResponse}{Http\+Response} (\begin{DoxyParamCaption}\item[{bool}]{close }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+在文件 Http\+Response.\+h 第 37 行定义.
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpResponse_a999431a881eda9ce08a1077445f0da57}\label{classmuduo_1_1net_1_1HttpResponse_a999431a881eda9ce08a1077445f0da57}} 
+\index{muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}!add\+Header@{add\+Header}}
+\index{add\+Header@{add\+Header}!muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}}
+\subsubsection{\texorpdfstring{add\+Header()}{addHeader()}}
+{\footnotesize\ttfamily void add\+Header (\begin{DoxyParamCaption}\item[{const string \&}]{key,  }\item[{const string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Http\+Response.\+h 第 59 行定义.
+
+
+
+参考 Http\+Response\+::headers\+\_\+.
+
+
+
+参考自 Http\+Response\+::set\+Content\+Type().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{classmuduo_1_1net_1_1HttpResponse_a999431a881eda9ce08a1077445f0da57_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpResponse_ad653b5453eec08dd28444d57bfc2b94b}\label{classmuduo_1_1net_1_1HttpResponse_ad653b5453eec08dd28444d57bfc2b94b}} 
+\index{muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}!append\+To\+Buffer@{append\+To\+Buffer}}
+\index{append\+To\+Buffer@{append\+To\+Buffer}!muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}}
+\subsubsection{\texorpdfstring{append\+To\+Buffer()}{appendToBuffer()}}
+{\footnotesize\ttfamily void append\+To\+Buffer (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1net_1_1Buffer}{Buffer} $\ast$}]{output }\end{DoxyParamCaption}) const}
+
+
+
+参考自 Http\+Response\+::set\+Body().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classmuduo_1_1net_1_1HttpResponse_ad653b5453eec08dd28444d57bfc2b94b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpResponse_ab8fae68a967e14c3eb49839bb7e37e8c}\label{classmuduo_1_1net_1_1HttpResponse_ab8fae68a967e14c3eb49839bb7e37e8c}} 
+\index{muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}!close\+Connection@{close\+Connection}}
+\index{close\+Connection@{close\+Connection}!muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}}
+\subsubsection{\texorpdfstring{close\+Connection()}{closeConnection()}}
+{\footnotesize\ttfamily bool close\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Http\+Response.\+h 第 52 行定义.
+
+
+
+参考 Http\+Response\+::close\+Connection\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpResponse_a8c51abf32832a62b037331cfa6d762cb}\label{classmuduo_1_1net_1_1HttpResponse_a8c51abf32832a62b037331cfa6d762cb}} 
+\index{muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}!set\+Body@{set\+Body}}
+\index{set\+Body@{set\+Body}!muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}}
+\subsubsection{\texorpdfstring{set\+Body()}{setBody()}}
+{\footnotesize\ttfamily void set\+Body (\begin{DoxyParamCaption}\item[{const string \&}]{body }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Http\+Response.\+h 第 62 行定义.
+
+
+
+参考 Http\+Response\+::append\+To\+Buffer() , 以及 Http\+Response\+::body\+\_\+.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classmuduo_1_1net_1_1HttpResponse_a8c51abf32832a62b037331cfa6d762cb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpResponse_a8edbcd81fcbbafb46b9d95f56d2a6567}\label{classmuduo_1_1net_1_1HttpResponse_a8edbcd81fcbbafb46b9d95f56d2a6567}} 
+\index{muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}!set\+Close\+Connection@{set\+Close\+Connection}}
+\index{set\+Close\+Connection@{set\+Close\+Connection}!muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}}
+\subsubsection{\texorpdfstring{set\+Close\+Connection()}{setCloseConnection()}}
+{\footnotesize\ttfamily void set\+Close\+Connection (\begin{DoxyParamCaption}\item[{bool}]{on }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Http\+Response.\+h 第 49 行定义.
+
+
+
+参考 Http\+Response\+::close\+Connection\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpResponse_a1d3cf167b4c287497e4c38c78a0f1809}\label{classmuduo_1_1net_1_1HttpResponse_a1d3cf167b4c287497e4c38c78a0f1809}} 
+\index{muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}!set\+Content\+Type@{set\+Content\+Type}}
+\index{set\+Content\+Type@{set\+Content\+Type}!muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}}
+\subsubsection{\texorpdfstring{set\+Content\+Type()}{setContentType()}}
+{\footnotesize\ttfamily void set\+Content\+Type (\begin{DoxyParamCaption}\item[{const string \&}]{content\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Http\+Response.\+h 第 55 行定义.
+
+
+
+参考 Http\+Response\+::add\+Header().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{classmuduo_1_1net_1_1HttpResponse_a1d3cf167b4c287497e4c38c78a0f1809_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpResponse_ad1aabf915b59756bb018249928221787}\label{classmuduo_1_1net_1_1HttpResponse_ad1aabf915b59756bb018249928221787}} 
+\index{muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}!set\+Status\+Code@{set\+Status\+Code}}
+\index{set\+Status\+Code@{set\+Status\+Code}!muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}}
+\subsubsection{\texorpdfstring{set\+Status\+Code()}{setStatusCode()}}
+{\footnotesize\ttfamily void set\+Status\+Code (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12cc}{Http\+Status\+Code}}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Http\+Response.\+h 第 43 行定义.
+
+
+
+参考 Http\+Response\+::status\+Code\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpResponse_abb542ea3323fddfbcc172c75fe4e6015}\label{classmuduo_1_1net_1_1HttpResponse_abb542ea3323fddfbcc172c75fe4e6015}} 
+\index{muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}!set\+Status\+Message@{set\+Status\+Message}}
+\index{set\+Status\+Message@{set\+Status\+Message}!muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}}
+\subsubsection{\texorpdfstring{set\+Status\+Message()}{setStatusMessage()}}
+{\footnotesize\ttfamily void set\+Status\+Message (\begin{DoxyParamCaption}\item[{const string \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Http\+Response.\+h 第 46 行定义.
+
+
+
+参考 message , 以及 Http\+Response\+::status\+Message\+\_\+.
+
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpResponse_a72879b508873c81ba40a4919bc67ab7f}\label{classmuduo_1_1net_1_1HttpResponse_a72879b508873c81ba40a4919bc67ab7f}} 
+\index{muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}!body\+\_\+@{body\+\_\+}}
+\index{body\+\_\+@{body\+\_\+}!muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}}
+\subsubsection{\texorpdfstring{body\+\_\+}{body\_}}
+{\footnotesize\ttfamily string body\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Http\+Response.\+h 第 73 行定义.
+
+
+
+参考自 Http\+Response\+::set\+Body().
+
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpResponse_a18563cbdd30986ec38ffaac652078389}\label{classmuduo_1_1net_1_1HttpResponse_a18563cbdd30986ec38ffaac652078389}} 
+\index{muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}!close\+Connection\+\_\+@{close\+Connection\+\_\+}}
+\index{close\+Connection\+\_\+@{close\+Connection\+\_\+}!muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}}
+\subsubsection{\texorpdfstring{close\+Connection\+\_\+}{closeConnection\_}}
+{\footnotesize\ttfamily bool close\+Connection\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Http\+Response.\+h 第 72 行定义.
+
+
+
+参考自 Http\+Response\+::close\+Connection() , 以及 Http\+Response\+::set\+Close\+Connection().
+
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpResponse_a5399fcc713a2d468facbbcc1e84999cf}\label{classmuduo_1_1net_1_1HttpResponse_a5399fcc713a2d468facbbcc1e84999cf}} 
+\index{muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}!headers\+\_\+@{headers\+\_\+}}
+\index{headers\+\_\+@{headers\+\_\+}!muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}}
+\subsubsection{\texorpdfstring{headers\+\_\+}{headers\_}}
+{\footnotesize\ttfamily std\+::map$<$string, string$>$ headers\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Http\+Response.\+h 第 68 行定义.
+
+
+
+参考自 Http\+Response\+::add\+Header().
+
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpResponse_a24a07a498fb950d72850091c0306c939}\label{classmuduo_1_1net_1_1HttpResponse_a24a07a498fb950d72850091c0306c939}} 
+\index{muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}!status\+Code\+\_\+@{status\+Code\+\_\+}}
+\index{status\+Code\+\_\+@{status\+Code\+\_\+}!muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}}
+\subsubsection{\texorpdfstring{status\+Code\+\_\+}{statusCode\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1net_1_1HttpResponse_ab80f66127508dfced7a0fe1929fe12cc}{Http\+Status\+Code} status\+Code\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Http\+Response.\+h 第 69 行定义.
+
+
+
+参考自 Http\+Response\+::set\+Status\+Code().
+
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpResponse_a2f9afda0b0e65abfe8f2525de3db81b1}\label{classmuduo_1_1net_1_1HttpResponse_a2f9afda0b0e65abfe8f2525de3db81b1}} 
+\index{muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}!status\+Message\+\_\+@{status\+Message\+\_\+}}
+\index{status\+Message\+\_\+@{status\+Message\+\_\+}!muduo\+::net\+::\+Http\+Response@{muduo\+::net\+::\+Http\+Response}}
+\subsubsection{\texorpdfstring{status\+Message\+\_\+}{statusMessage\_}}
+{\footnotesize\ttfamily string status\+Message\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Http\+Response.\+h 第 71 行定义.
+
+
+
+参考自 Http\+Response\+::set\+Status\+Message().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/muduo/net/http/\hyperlink{HttpResponse_8h}{Http\+Response.\+h}\end{DoxyCompactItemize}

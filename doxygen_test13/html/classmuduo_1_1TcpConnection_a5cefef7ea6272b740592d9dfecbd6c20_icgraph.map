@@ -1,0 +1,18 @@
+<map id="setState" name="setState">
+<area shape="rect" id="node2" href="$classmuduo_1_1TcpConnection.html#afff2c1576d605dda12f87d2b32d5c1a2" title="connectDestoryed" alt="" coords="133,173,273,199"/>
+<area shape="rect" id="node15" href="$classmuduo_1_1TcpConnection.html#a2e1f9742dac98a0c3e5a5509920934ae" title="connectEstablished" alt="" coords="129,261,277,287"/>
+<area shape="rect" id="node16" href="$classmuduo_1_1TcpConnection.html#a7861ee1569802186a619778efc85af13" title="shutdown" alt="" coords="161,311,246,338"/>
+<area shape="rect" id="node3" href="$namespacemuduo_1_1detail.html#ae3e6bfc20f665df13eeb2ebc3c91abce" title="muduo::detail::removeConnection" alt="" coords="325,122,568,149"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1TcpClient.html#ad9661c3f05443256c9439f812d1a7691" title="Not thread safe, but in loop " alt="" coords="351,56,543,97"/>
+<area shape="rect" id="node9" href="$classmuduo_1_1TcpServer.html#a38345725075c2bf845af025c2567d977" title="Not thread safe, but in loop " alt="" coords="349,224,545,265"/>
+<area shape="rect" id="node14" href="$classmuduo_1_1TcpConnection.html#acb32ba0eda160676b4fc98d756ee3515" title="Internal use only. " alt="" coords="379,173,514,199"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1TcpClient.html#a01845d2886f327b9c8cb5df03cb00d7c" title="muduo::TcpClient::\l~TcpClient" alt="" coords="666,115,809,156"/>
+<area shape="rect" id="node6" href="$classmuduo_1_1TcpClient.html#ae2e5d102f7a519e65019cd5f09acea72" title="Not thread safe, but in loop " alt="" coords="616,63,859,90"/>
+<area shape="rect" id="node7" href="$classmuduo_1_1TcpClient.html#a94b31be320453fc8aeae81b25934b43f" title="muduo::TcpClient::setWrite\lCompleteCallback" alt="" coords="932,5,1128,47"/>
+<area shape="rect" id="node8" href="$classmuduo_1_1TcpClient.html#a8d68694b0595253edef974e8ee289d4c" title="muduo::TcpClient::TcpClient" alt="" coords="929,71,1131,98"/>
+<area shape="rect" id="node10" href="$classmuduo_1_1TcpServer.html#a94b31be320453fc8aeae81b25934b43f" title="muduo::TcpServer::setWrite\lCompleteCallback" alt="" coords="1206,225,1406,267"/>
+<area shape="rect" id="node11" href="$classmuduo_1_1TcpServer.html#ad9661c3f05443256c9439f812d1a7691" title="Thread safe " alt="" coords="639,232,835,273"/>
+<area shape="rect" id="node12" href="$classmuduo_1_1TcpServer.html#a6e7510f45cfa67ddc79aa8689fd79562" title="Not thread safe, but in loop " alt="" coords="907,287,1153,314"/>
+<area shape="rect" id="node13" href="$classmuduo_1_1TcpServer.html#aca9a1702da801c3275b2e70d233cc0c7" title="muduo::TcpServer::TcpServer" alt="" coords="1201,291,1411,318"/>
+<area shape="rect" id="node17" href="$classmuduo_1_1TcpConnection.html#aa0fd96bc25e3d509fb54028c2e4b91f6" title="connected" alt="" coords="402,349,491,375"/>
+</map>

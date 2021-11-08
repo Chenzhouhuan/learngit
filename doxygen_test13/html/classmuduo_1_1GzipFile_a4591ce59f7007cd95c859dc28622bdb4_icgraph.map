@@ -1,0 +1,6 @@
+<map id="GzipFile" name="GzipFile">
+<area shape="rect" id="node2" href="$classmuduo_1_1GzipFile.html#a9c729746e69ca041b116552594ddb70a" title="openForAppend" alt="" coords="151,5,273,32"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1GzipFile.html#a0a3314e3024363b639db1f864586647a" title="openForRead" alt="" coords="159,56,265,83"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1GzipFile.html#afc3a38fb0012c6e377aca37925f98c4f" title="openForWriteExclusive" alt="" coords="127,107,297,133"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1GzipFile.html#ab3ebedf22d289ebd69792c1590035b57" title="openForWriteTruncate" alt="" coords="131,157,293,184"/>
+</map>

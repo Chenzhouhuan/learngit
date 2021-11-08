@@ -1,0 +1,58 @@
+\hypertarget{muduo_2net_2Callbacks_8h}{}\section{lib/muduo/net/\+Callbacks.h 文件参考}
+\label{muduo_2net_2Callbacks_8h}\index{lib/muduo/net/\+Callbacks.\+h@{lib/muduo/net/\+Callbacks.\+h}}
+{\ttfamily \#include \char`\"{}muduo/base/\+Timestamp.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+Callbacks.\+h 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{muduo_2net_2Callbacks_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{muduo_2net_2Callbacks_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemuduo}{muduo}
+\item 
+ \hyperlink{namespacemuduo_1_1net}{muduo\+::net}
+\end{DoxyCompactItemize}
+\subsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ Tcp\+Connection $>$ \hyperlink{namespacemuduo_1_1net_ab91a46e9290926aa692450e46cfc9039}{Tcp\+Connection\+Ptr}
+\item 
+typedef std\+::function$<$ void()$>$ \hyperlink{namespacemuduo_1_1net_ad4bd8788fd4c609b90c78920572bec50}{Timer\+Callback}
+\item 
+typedef std\+::function$<$ void(const Tcp\+Connection\+Ptr \&)$>$ \hyperlink{namespacemuduo_1_1net_a78754792e997a13cb10908eb7ec508b2}{Connection\+Callback}
+\item 
+typedef std\+::function$<$ void(const Tcp\+Connection\+Ptr \&)$>$ \hyperlink{namespacemuduo_1_1net_a5a393be65a093bad5f5a6b8340ce8c88}{Close\+Callback}
+\item 
+typedef std\+::function$<$ void(const Tcp\+Connection\+Ptr \&)$>$ \hyperlink{namespacemuduo_1_1net_a525c3730bfefb763975b035ebc88a63d}{Write\+Complete\+Callback}
+\item 
+typedef std\+::function$<$ void(const Tcp\+Connection\+Ptr \&, size\+\_\+t)$>$ \hyperlink{namespacemuduo_1_1net_a503c5e91d2e84874e83e9a6cbfb4a47b}{High\+Water\+Mark\+Callback}
+\item 
+typedef std\+::function$<$ void(const Tcp\+Connection\+Ptr \&, Buffer $\ast$, Timestamp)$>$ \hyperlink{namespacemuduo_1_1net_acaa802028467a41738aeb49699e85285}{Message\+Callback}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespacemuduo_a98789775449e36c3c0c26004e19ef6bc}{get\+\_\+pointer} (const std\+::shared\+\_\+ptr$<$ T $>$ \&ptr)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespacemuduo_aedcb2cb9b3d8f7bdfabeadec584a691c}{get\+\_\+pointer} (const std\+::unique\+\_\+ptr$<$ T $>$ \&ptr)
+\item 
+{\footnotesize template$<$typename To , typename From $>$ }\\inline \+::std\+::shared\+\_\+ptr$<$ To $>$ \hyperlink{namespacemuduo_a1836aa0a42711172d5598fbfda6fb588}{down\+\_\+pointer\+\_\+cast} (const \+::std\+::shared\+\_\+ptr$<$ From $>$ \&f)
+\item 
+void \hyperlink{namespacemuduo_1_1net_a74d4cd57249902f889bfecb4bad7847d}{default\+Connection\+Callback} (const Tcp\+Connection\+Ptr \&conn)
+\item 
+void \hyperlink{namespacemuduo_1_1net_abea01f500af8f956edd6649639937508}{default\+Message\+Callback} (const Tcp\+Connection\+Ptr \&conn, Buffer $\ast$buffer, Timestamp receive\+Time)
+\end{DoxyCompactItemize}

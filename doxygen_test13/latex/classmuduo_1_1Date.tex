@@ -1,0 +1,374 @@
+\hypertarget{classmuduo_1_1Date}{}\section{Date类 参考}
+\label{classmuduo_1_1Date}\index{Date@{Date}}
+
+
+{\ttfamily \#include $<$Date.\+h$>$}
+
+
+
+类 Date 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classmuduo_1_1Date__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Date 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classmuduo_1_1Date__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmuduo_1_1Date_1_1YearMonthDay}{Year\+Month\+Day}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1Date_aff49fc2cda4491ff4457ca481bb8edf9}{Date} ()
+\item 
+\hyperlink{classmuduo_1_1Date_a9bc88fd74d1980ea8e7a86db85b5a3e7}{Date} (int \hyperlink{classmuduo_1_1Date_a1b5cb174b9b809888ca1cadfb32791f4}{year}, int \hyperlink{classmuduo_1_1Date_a9418bae7320038816691fbb13ce3b90a}{month}, int \hyperlink{classmuduo_1_1Date_a912344e9b0a67db916e2bac3c43337dc}{day})
+\item 
+\hyperlink{classmuduo_1_1Date_aeadd49d9f6ac56d1cf22bd65367f4fd0}{Date} (int julian\+Day\+Num)
+\item 
+\hyperlink{classmuduo_1_1Date_ae8448dcfa75348c590441b5994472e4f}{Date} (const struct tm \&)
+\item 
+void \hyperlink{classmuduo_1_1Date_aaedebe3a1effa7b1145ea3b56dbb036a}{swap} (\hyperlink{classmuduo_1_1Date}{Date} \&that)
+\item 
+bool \hyperlink{classmuduo_1_1Date_a315419f26d3c59fa143b49b90a019049}{valid} () const
+\item 
+string \hyperlink{classmuduo_1_1Date_aa9bd4dc5b8cade6a8e0c8e1a613b6d39}{to\+Iso\+String} () const
+\item 
+struct \hyperlink{structmuduo_1_1Date_1_1YearMonthDay}{Year\+Month\+Day} \hyperlink{classmuduo_1_1Date_ae6a6f4dbc56d9751b6c96d1756a0cece}{year\+Month\+Day} () const
+\item 
+int \hyperlink{classmuduo_1_1Date_a1b5cb174b9b809888ca1cadfb32791f4}{year} () const
+\item 
+int \hyperlink{classmuduo_1_1Date_a9418bae7320038816691fbb13ce3b90a}{month} () const
+\item 
+int \hyperlink{classmuduo_1_1Date_a912344e9b0a67db916e2bac3c43337dc}{day} () const
+\item 
+int \hyperlink{classmuduo_1_1Date_a7b32d82997343aa47bf42a65566d2cd3}{week\+Day} () const
+\item 
+int \hyperlink{classmuduo_1_1Date_a65f8b93cc331cca79e2d364710128383}{julian\+Day\+Number} () const
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{classmuduo_1_1Date_af827c6ba7aa684c3b7b969e412cdaf62}{k\+Days\+Per\+Week} = 7
+\item 
+static const int \hyperlink{classmuduo_1_1Date_a49e2c65ade1eb84c87543cb878f5ae13}{k\+Julian\+Day\+Of1970\+\_\+01\+\_\+01}
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classmuduo_1_1Date_a3ac459925d74b2967686d6d9178c107f}{julian\+Day\+Number\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+\hyperlink{classmuduo_1_1Date}{Date} in Gregorian calendar.
+
+This class is immutable. It\textquotesingle{}s recommended to pass it by value, since it\textquotesingle{}s passed in register on x64. 
+
+在文件 Date.\+h 第 23 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Date_aff49fc2cda4491ff4457ca481bb8edf9}\label{classmuduo_1_1Date_aff49fc2cda4491ff4457ca481bb8edf9}} 
+\index{muduo\+::\+Date@{muduo\+::\+Date}!Date@{Date}}
+\index{Date@{Date}!muduo\+::\+Date@{muduo\+::\+Date}}
+\subsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Date}{Date} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constucts an invalid \hyperlink{classmuduo_1_1Date}{Date}. 
+
+在文件 Date.\+h 第 42 行定义.
+
+
+
+参考 Date\+::\+Year\+Month\+Day\+::day, Date\+::\+Year\+Month\+Day\+::month , 以及 Date\+::\+Year\+Month\+Day\+::year.
+
+
+
+参考自 Date\+::\+Date().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classmuduo_1_1Date_aff49fc2cda4491ff4457ca481bb8edf9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Date_a9bc88fd74d1980ea8e7a86db85b5a3e7}\label{classmuduo_1_1Date_a9bc88fd74d1980ea8e7a86db85b5a3e7}} 
+\index{muduo\+::\+Date@{muduo\+::\+Date}!Date@{Date}}
+\index{Date@{Date}!muduo\+::\+Date@{muduo\+::\+Date}}
+\subsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Date}{Date} (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{int}]{month,  }\item[{int}]{day }\end{DoxyParamCaption})}
+
+Constucts a yyyy-\/mm-\/dd \hyperlink{classmuduo_1_1Date}{Date}.
+
+1 $<$= month $<$= 12 \mbox{\Hypertarget{classmuduo_1_1Date_aeadd49d9f6ac56d1cf22bd65367f4fd0}\label{classmuduo_1_1Date_aeadd49d9f6ac56d1cf22bd65367f4fd0}} 
+\index{muduo\+::\+Date@{muduo\+::\+Date}!Date@{Date}}
+\index{Date@{Date}!muduo\+::\+Date@{muduo\+::\+Date}}
+\subsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Date}{Date} (\begin{DoxyParamCaption}\item[{int}]{julian\+Day\+Num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+Constucts a \hyperlink{classmuduo_1_1Date}{Date} from Julian Day Number. 
+
+在文件 Date.\+h 第 55 行定义.
+
+
+
+参考 Date\+::\+Date().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classmuduo_1_1Date_aeadd49d9f6ac56d1cf22bd65367f4fd0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Date_ae8448dcfa75348c590441b5994472e4f}\label{classmuduo_1_1Date_ae8448dcfa75348c590441b5994472e4f}} 
+\index{muduo\+::\+Date@{muduo\+::\+Date}!Date@{Date}}
+\index{Date@{Date}!muduo\+::\+Date@{muduo\+::\+Date}}
+\subsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Date}{Date} (\begin{DoxyParamCaption}\item[{const struct tm \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constucts a \hyperlink{classmuduo_1_1Date}{Date} from struct tm 
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Date_a912344e9b0a67db916e2bac3c43337dc}\label{classmuduo_1_1Date_a912344e9b0a67db916e2bac3c43337dc}} 
+\index{muduo\+::\+Date@{muduo\+::\+Date}!day@{day}}
+\index{day@{day}!muduo\+::\+Date@{muduo\+::\+Date}}
+\subsubsection{\texorpdfstring{day()}{day()}}
+{\footnotesize\ttfamily int day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Date.\+h 第 90 行定义.
+
+
+
+参考 Date\+::\+Year\+Month\+Day\+::day , 以及 Date\+::year\+Month\+Day().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{classmuduo_1_1Date_a912344e9b0a67db916e2bac3c43337dc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Date_a65f8b93cc331cca79e2d364710128383}\label{classmuduo_1_1Date_a65f8b93cc331cca79e2d364710128383}} 
+\index{muduo\+::\+Date@{muduo\+::\+Date}!julian\+Day\+Number@{julian\+Day\+Number}}
+\index{julian\+Day\+Number@{julian\+Day\+Number}!muduo\+::\+Date@{muduo\+::\+Date}}
+\subsubsection{\texorpdfstring{julian\+Day\+Number()}{julianDayNumber()}}
+{\footnotesize\ttfamily int julian\+Day\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Date.\+h 第 101 行定义.
+
+
+
+参考 Date\+::julian\+Day\+Number\+\_\+.
+
+
+
+参考自 muduo\+::operator$<$() , 以及 muduo\+::operator==().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{classmuduo_1_1Date_a65f8b93cc331cca79e2d364710128383_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Date_a9418bae7320038816691fbb13ce3b90a}\label{classmuduo_1_1Date_a9418bae7320038816691fbb13ce3b90a}} 
+\index{muduo\+::\+Date@{muduo\+::\+Date}!month@{month}}
+\index{month@{month}!muduo\+::\+Date@{muduo\+::\+Date}}
+\subsubsection{\texorpdfstring{month()}{month()}}
+{\footnotesize\ttfamily int month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Date.\+h 第 85 行定义.
+
+
+
+参考 Date\+::\+Year\+Month\+Day\+::month , 以及 Date\+::year\+Month\+Day().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classmuduo_1_1Date_a9418bae7320038816691fbb13ce3b90a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Date_aaedebe3a1effa7b1145ea3b56dbb036a}\label{classmuduo_1_1Date_aaedebe3a1effa7b1145ea3b56dbb036a}} 
+\index{muduo\+::\+Date@{muduo\+::\+Date}!swap@{swap}}
+\index{swap@{swap}!muduo\+::\+Date@{muduo\+::\+Date}}
+\subsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void swap (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Date}{Date} \&}]{that }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Date.\+h 第 66 行定义.
+
+
+
+参考 Date\+::julian\+Day\+Number\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1Date_aa9bd4dc5b8cade6a8e0c8e1a613b6d39}\label{classmuduo_1_1Date_aa9bd4dc5b8cade6a8e0c8e1a613b6d39}} 
+\index{muduo\+::\+Date@{muduo\+::\+Date}!to\+Iso\+String@{to\+Iso\+String}}
+\index{to\+Iso\+String@{to\+Iso\+String}!muduo\+::\+Date@{muduo\+::\+Date}}
+\subsubsection{\texorpdfstring{to\+Iso\+String()}{toIsoString()}}
+{\footnotesize\ttfamily string to\+Iso\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Converts to yyyy-\/mm-\/dd format. 
+
+参考自 Date\+::valid().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classmuduo_1_1Date_aa9bd4dc5b8cade6a8e0c8e1a613b6d39_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Date_a315419f26d3c59fa143b49b90a019049}\label{classmuduo_1_1Date_a315419f26d3c59fa143b49b90a019049}} 
+\index{muduo\+::\+Date@{muduo\+::\+Date}!valid@{valid}}
+\index{valid@{valid}!muduo\+::\+Date@{muduo\+::\+Date}}
+\subsubsection{\texorpdfstring{valid()}{valid()}}
+{\footnotesize\ttfamily bool valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Date.\+h 第 71 行定义.
+
+
+
+参考 Date\+::julian\+Day\+Number\+\_\+ , 以及 Date\+::to\+Iso\+String().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classmuduo_1_1Date_a315419f26d3c59fa143b49b90a019049_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Date_a7b32d82997343aa47bf42a65566d2cd3}\label{classmuduo_1_1Date_a7b32d82997343aa47bf42a65566d2cd3}} 
+\index{muduo\+::\+Date@{muduo\+::\+Date}!week\+Day@{week\+Day}}
+\index{week\+Day@{week\+Day}!muduo\+::\+Date@{muduo\+::\+Date}}
+\subsubsection{\texorpdfstring{week\+Day()}{weekDay()}}
+{\footnotesize\ttfamily int week\+Day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Date.\+h 第 96 行定义.
+
+
+
+参考 Date\+::julian\+Day\+Number\+\_\+ , 以及 Date\+::k\+Days\+Per\+Week.
+
+\mbox{\Hypertarget{classmuduo_1_1Date_a1b5cb174b9b809888ca1cadfb32791f4}\label{classmuduo_1_1Date_a1b5cb174b9b809888ca1cadfb32791f4}} 
+\index{muduo\+::\+Date@{muduo\+::\+Date}!year@{year}}
+\index{year@{year}!muduo\+::\+Date@{muduo\+::\+Date}}
+\subsubsection{\texorpdfstring{year()}{year()}}
+{\footnotesize\ttfamily int year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Date.\+h 第 80 行定义.
+
+
+
+参考 Date\+::\+Year\+Month\+Day\+::year , 以及 Date\+::year\+Month\+Day().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classmuduo_1_1Date_a1b5cb174b9b809888ca1cadfb32791f4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Date_ae6a6f4dbc56d9751b6c96d1756a0cece}\label{classmuduo_1_1Date_ae6a6f4dbc56d9751b6c96d1756a0cece}} 
+\index{muduo\+::\+Date@{muduo\+::\+Date}!year\+Month\+Day@{year\+Month\+Day}}
+\index{year\+Month\+Day@{year\+Month\+Day}!muduo\+::\+Date@{muduo\+::\+Date}}
+\subsubsection{\texorpdfstring{year\+Month\+Day()}{yearMonthDay()}}
+{\footnotesize\ttfamily struct \hyperlink{structmuduo_1_1Date_1_1YearMonthDay}{Year\+Month\+Day} year\+Month\+Day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+参考自 Date\+::day(), Date\+::month() , 以及 Date\+::year().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classmuduo_1_1Date_ae6a6f4dbc56d9751b6c96d1756a0cece_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1Date_a3ac459925d74b2967686d6d9178c107f}\label{classmuduo_1_1Date_a3ac459925d74b2967686d6d9178c107f}} 
+\index{muduo\+::\+Date@{muduo\+::\+Date}!julian\+Day\+Number\+\_\+@{julian\+Day\+Number\+\_\+}}
+\index{julian\+Day\+Number\+\_\+@{julian\+Day\+Number\+\_\+}!muduo\+::\+Date@{muduo\+::\+Date}}
+\subsubsection{\texorpdfstring{julian\+Day\+Number\+\_\+}{julianDayNumber\_}}
+{\footnotesize\ttfamily int julian\+Day\+Number\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Date.\+h 第 104 行定义.
+
+
+
+参考自 Date\+::julian\+Day\+Number(), Date\+::swap(), Date\+::valid() , 以及 Date\+::week\+Day().
+
+\mbox{\Hypertarget{classmuduo_1_1Date_af827c6ba7aa684c3b7b969e412cdaf62}\label{classmuduo_1_1Date_af827c6ba7aa684c3b7b969e412cdaf62}} 
+\index{muduo\+::\+Date@{muduo\+::\+Date}!k\+Days\+Per\+Week@{k\+Days\+Per\+Week}}
+\index{k\+Days\+Per\+Week@{k\+Days\+Per\+Week}!muduo\+::\+Date@{muduo\+::\+Date}}
+\subsubsection{\texorpdfstring{k\+Days\+Per\+Week}{kDaysPerWeek}}
+{\footnotesize\ttfamily const int k\+Days\+Per\+Week = 7\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+在文件 Date.\+h 第 36 行定义.
+
+
+
+参考自 Date\+::week\+Day().
+
+\mbox{\Hypertarget{classmuduo_1_1Date_a49e2c65ade1eb84c87543cb878f5ae13}\label{classmuduo_1_1Date_a49e2c65ade1eb84c87543cb878f5ae13}} 
+\index{muduo\+::\+Date@{muduo\+::\+Date}!k\+Julian\+Day\+Of1970\+\_\+01\+\_\+01@{k\+Julian\+Day\+Of1970\+\_\+01\+\_\+01}}
+\index{k\+Julian\+Day\+Of1970\+\_\+01\+\_\+01@{k\+Julian\+Day\+Of1970\+\_\+01\+\_\+01}!muduo\+::\+Date@{muduo\+::\+Date}}
+\subsubsection{\texorpdfstring{k\+Julian\+Day\+Of1970\+\_\+01\+\_\+01}{kJulianDayOf1970\_01\_01}}
+{\footnotesize\ttfamily const int k\+Julian\+Day\+Of1970\+\_\+01\+\_\+01\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+在文件 Date.\+h 第 37 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/muduo/base/\hyperlink{Date_8h}{Date.\+h}\end{DoxyCompactItemize}

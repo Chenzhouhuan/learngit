@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: EventLoopThread类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmuduo_1_1EventLoopThread.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classmuduo_1_1EventLoopThread-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">EventLoopThread类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="EventLoopThread_8h_source.html">EventLoopThread.h</a>&gt;</code></p>
+<div class="dynheader">
+类 EventLoopThread 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoopThread__inherit__graph.png" border="0" usemap="#EventLoopThread_inherit__map" alt="Inheritance graph"/></div>
+<map name="EventLoopThread_inherit__map" id="EventLoopThread_inherit__map">
+</map>
+</div>
+<div class="dynheader">
+EventLoopThread 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoopThread__coll__graph.png" border="0" usemap="#EventLoopThread_coll__map" alt="Collaboration graph"/></div>
+<map name="EventLoopThread_coll__map" id="EventLoopThread_coll__map">
+<area shape="rect" id="node3" href="classmuduo_1_1Condition.html" title="{Condition\n|&#45; mutex_\l&#45; pcond_\l|+ Condition()\l+ ~Condition()\l+ wait()\l+ waitForSeconds()\l+ notify()\l+ notifyAll()\l}" alt="" coords="23,437,173,603"/>
+<area shape="rect" id="node4" href="classmuduo_1_1Thread.html" title="{Thread\n|&#45; started_\l&#45; joined_\l&#45; pthreadId_\l&#45; tid_\l&#45; func_\l|+ Thread()\l+ ~Thread()\l+ start()\l+ join()\l+ started()\l+ tid()\l+ name()\l+ numCreated()\l&#45; setDefaultName()\l}" alt="" coords="412,707,560,961"/>
+<area shape="rect" id="node5" href="classmuduo_1_1detail_1_1AtomicIntegerT.html" title="{AtomicIntegerT\&lt; T \&gt;\n||+ AtomicIntegerT()\l+ get()\l+ getAndAdd()\l+ addAndGet()\l+ incrementAndGet()\l+ decrementAndGet()\l+ add()\l+ increment()\l+ decrement()\l+ getAndSet()\l}" alt="" coords="218,182,383,391"/>
+<area shape="rect" id="node7" href="classmuduo_1_1CountDownLatch.html" title="{CountDownLatch\n|&#45; mutex_\l|+ CountDownLatch()\l+ wait()\l+ countDown()\l+ getCount()\l&#45; GUARDED_BY()\l&#45; GUARDED_BY()\l}" alt="" coords="407,211,565,362"/>
+<area shape="rect" id="node9" href="classmuduo_1_1EventLoop.html" title="{EventLoop\n|&#45; looping_\l&#45; quit_\l&#45; callingPendingFunctors_\l&#45; threadId_\l&#45; poller_\l&#45; timerQueue_\l&#45; wakeupFd_\l&#45; wakeupChannel_\l&#45; activeChannels_\l&#45; mutex_\l&#45; pendingFunctors_\l|+ EventLoop()\l+ ~EventLoop()\l+ loop()\l+ quit()\l+ pollReturnTime()\l+ runInLoop()\l+ queueInLoop()\l+ runAt()\l+ runAfter()\l+ runEvery()\l和 6 更多...\l&#45; abortNotInLoopThread()\l&#45; handleRead()\l&#45; doPendingFunctors()\l}" alt="" coords="690,627,877,1041"/>
+<area shape="rect" id="node10" href="classmuduo_1_1Timestamp.html" title="{Timestamp\n|+ kMicroSecondsPerSecond\l&#45; microSecondsSinceEpoch_\l|+ Timestamp()\l+ Timestamp()\l+ swap()\l+ toString()\l+ toFormattedString()\l+ valid()\l+ microSecondsSinceEpoch()\l+ secondsSinceEpoch()\l+ now()\l+ invalid()\l+ fromUnixTime()\l+ fromUnixTime()\l}" alt="" coords="769,160,981,413"/>
+<area shape="rect" id="node11" href="classmuduo_1_1copyable.html" title="{copyable\n||# copyable()\l# ~copyable()\l}" alt="" coords="830,5,947,97"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa866d54bfe4557884ede5d7800865753"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoopThread.html#aa866d54bfe4557884ede5d7800865753">EventLoopThread</a> ()</td></tr>
+<tr class="separator:aa866d54bfe4557884ede5d7800865753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af946ac1087e0c7617b0704ebde55332c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoopThread.html#af946ac1087e0c7617b0704ebde55332c">~EventLoopThread</a> ()</td></tr>
+<tr class="separator:af946ac1087e0c7617b0704ebde55332c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a223c4c7a43f7d8c3e41071315efa78d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1EventLoop.html">EventLoop</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoopThread.html#a223c4c7a43f7d8c3e41071315efa78d1">startLoop</a> ()</td></tr>
+<tr class="separator:a223c4c7a43f7d8c3e41071315efa78d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a539feb3c59a20db3b260b312fa7dea34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoopThread.html#a539feb3c59a20db3b260b312fa7dea34">threadFunc</a> ()</td></tr>
+<tr class="separator:a539feb3c59a20db3b260b312fa7dea34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a19968f50018d32ac31f5cba0195591ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1EventLoop.html">EventLoop</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoopThread.html#a19968f50018d32ac31f5cba0195591ac">loop_</a></td></tr>
+<tr class="separator:a19968f50018d32ac31f5cba0195591ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bead9a84f504b31f1abe7b85e3443cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoopThread.html#a1bead9a84f504b31f1abe7b85e3443cb">exiting_</a></td></tr>
+<tr class="separator:a1bead9a84f504b31f1abe7b85e3443cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad920b8087250a686bfa5a9805170974a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1Thread.html">Thread</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoopThread.html#ad920b8087250a686bfa5a9805170974a">thread_</a></td></tr>
+<tr class="separator:ad920b8087250a686bfa5a9805170974a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1bf1809a42f40f1a21178dc6620a6f"><td class="memItemLeft" align="right" valign="top">MutexLock&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoopThread.html#a6e1bf1809a42f40f1a21178dc6620a6f">mutex_</a></td></tr>
+<tr class="separator:a6e1bf1809a42f40f1a21178dc6620a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab88e8d399cbe9cffda0afb02110faa59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1Condition.html">Condition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoopThread.html#ab88e8d399cbe9cffda0afb02110faa59">cond_</a></td></tr>
+<tr class="separator:ab88e8d399cbe9cffda0afb02110faa59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="EventLoopThread_8h_source.html">EventLoopThread.h</a> 第 <a class="el" href="EventLoopThread_8h_source.html#l00014">14</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="aa866d54bfe4557884ede5d7800865753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa866d54bfe4557884ede5d7800865753">&#9670;&nbsp;</a></span>EventLoopThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1EventLoopThread.html">EventLoopThread</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoopThread_8cc_source.html">EventLoopThread.cc</a> 第 <a class="el" href="EventLoopThread_8cc_source.html#l00009">9</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af946ac1087e0c7617b0704ebde55332c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af946ac1087e0c7617b0704ebde55332c">&#9670;&nbsp;</a></span>~EventLoopThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="classmuduo_1_1EventLoopThread.html">EventLoopThread</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoopThread_8cc_source.html">EventLoopThread.cc</a> 第 <a class="el" href="EventLoopThread_8cc_source.html#l00016">16</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="EventLoopThread_8h_source.html#l00025">EventLoopThread::exiting_</a>, <a class="el" href="classmuduo_1_1Thread.html#ac942067a7e5a314610c1e89ff801f3bd">Thread::join()</a>, <a class="el" href="EventLoopThread_8h_source.html#l00024">EventLoopThread::loop_</a>, <a class="el" href="EventLoop_8cc_source.html#l00089">EventLoop::quit()</a> , 以及 <a class="el" href="EventLoopThread_8h_source.html#l00026">EventLoopThread::thread_</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoopThread_af946ac1087e0c7617b0704ebde55332c_cgraph.png" border="0" usemap="#classmuduo_1_1EventLoopThread_af946ac1087e0c7617b0704ebde55332c_cgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoopThread_af946ac1087e0c7617b0704ebde55332c_cgraph" id="classmuduo_1_1EventLoopThread_af946ac1087e0c7617b0704ebde55332c_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1Thread.html#ac942067a7e5a314610c1e89ff801f3bd" title="muduo::Thread::join" alt="" coords="212,79,364,106"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoop.html#a2463a3acef2df4c951ce942a3229e44e" title="muduo::EventLoop::quit" alt="" coords="200,130,376,157"/>
+<area shape="rect" id="node4" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="muduo::EventLoop::isInLoop\lThread" alt="" coords="424,93,629,135"/>
+<area shape="rect" id="node10" href="classmuduo_1_1EventLoop.html#ae674290a26ecbd622c5160e38e8a4fe9" title="muduo::EventLoop::wakeup" alt="" coords="425,159,628,186"/>
+<area shape="rect" id="node5" href="classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="muduo::EventLoop::abortNot\lInLoopThread" alt="" coords="687,5,895,47"/>
+<area shape="rect" id="node6" href="namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="952,42,1145,69"/>
+<area shape="rect" id="node8" href="classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="muduo::EventLoop::doPending\lFunctors" alt="" coords="681,123,900,164"/>
+<area shape="rect" id="node9" href="classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="muduo::EventLoop::handleRead" alt="" coords="677,189,904,215"/>
+<area shape="rect" id="node7" href="namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="1193,35,1361,76"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a223c4c7a43f7d8c3e41071315efa78d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a223c4c7a43f7d8c3e41071315efa78d1">&#9670;&nbsp;</a></span>startLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1EventLoop.html">EventLoop</a> * startLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoopThread_8cc_source.html">EventLoopThread.cc</a> 第 <a class="el" href="EventLoopThread_8cc_source.html#l00022">22</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="EventLoopThread_8h_source.html#l00028">EventLoopThread::cond_</a>, <a class="el" href="EventLoopThread_8h_source.html#l00024">EventLoopThread::loop_</a>, <a class="el" href="EventLoopThread_8h_source.html#l00027">EventLoopThread::mutex_</a>, <a class="el" href="classmuduo_1_1Thread.html#a60de64d75454385b23995437f1d72669">Thread::start()</a>, <a class="el" href="Thread_8h_source.html#l00032">Thread::started()</a>, <a class="el" href="EventLoopThread_8h_source.html#l00026">EventLoopThread::thread_</a> , 以及 <a class="el" href="Condition_8h_source.html#l00030">Condition::wait()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoopThreadPool_8cc_source.html#l00018">EventLoopThreadPool::start()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoopThread_a223c4c7a43f7d8c3e41071315efa78d1_cgraph.png" border="0" usemap="#classmuduo_1_1EventLoopThread_a223c4c7a43f7d8c3e41071315efa78d1_cgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoopThread_a223c4c7a43f7d8c3e41071315efa78d1_cgraph" id="classmuduo_1_1EventLoopThread_a223c4c7a43f7d8c3e41071315efa78d1_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1Thread.html#a60de64d75454385b23995437f1d72669" title="muduo::Thread::start" alt="" coords="144,5,303,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1Thread.html#ae64a8595ddd43477f87ff91d9f051058" title="muduo::Thread::started" alt="" coords="136,56,311,83"/>
+<area shape="rect" id="node4" href="classmuduo_1_1Condition.html#aa3b21853f890838c88d047d6c2786917" title="muduo::Condition::wait" alt="" coords="137,107,310,133"/>
+<area shape="rect" id="node5" href="classmuduo_1_1Condition.html#a73adc43213ab6f784ca7c47923907ac2" title="muduo::Condition::waitFor\lSeconds" alt="" coords="359,99,552,141"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoopThread_a223c4c7a43f7d8c3e41071315efa78d1_icgraph.png" border="0" usemap="#classmuduo_1_1EventLoopThread_a223c4c7a43f7d8c3e41071315efa78d1_icgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoopThread_a223c4c7a43f7d8c3e41071315efa78d1_icgraph" id="classmuduo_1_1EventLoopThread_a223c4c7a43f7d8c3e41071315efa78d1_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoopThreadPool.html#a60de64d75454385b23995437f1d72669" title="muduo::EventLoopThreadPool\l::start" alt="" coords="136,5,352,47"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoopThreadPool.html#a83bb28d139df96ba9fc449b4643f2c36" title="muduo::EventLoopThreadPool\l::setThreadNum" alt="" coords="400,5,616,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a539feb3c59a20db3b260b312fa7dea34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a539feb3c59a20db3b260b312fa7dea34">&#9670;&nbsp;</a></span>threadFunc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void threadFunc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoopThread_8cc_source.html">EventLoopThread.cc</a> 第 <a class="el" href="EventLoopThread_8cc_source.html#l00038">38</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="EventLoopThread_8h_source.html#l00028">EventLoopThread::cond_</a>, <a class="el" href="EventLoop_8cc_source.html#l00068">EventLoop::loop()</a>, <a class="el" href="EventLoopThread_8h_source.html#l00024">EventLoopThread::loop_</a>, <a class="el" href="EventLoopThread_8h_source.html#l00027">EventLoopThread::mutex_</a> , 以及 <a class="el" href="Condition_8h_source.html#l00039">Condition::notify()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoopThread_a539feb3c59a20db3b260b312fa7dea34_cgraph.png" border="0" usemap="#classmuduo_1_1EventLoopThread_a539feb3c59a20db3b260b312fa7dea34_cgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoopThread_a539feb3c59a20db3b260b312fa7dea34_cgraph" id="classmuduo_1_1EventLoopThread_a539feb3c59a20db3b260b312fa7dea34_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#afe461d27b9c48d5921c00d521181f12f" title="muduo::EventLoop::loop" alt="" coords="149,127,327,154"/>
+<area shape="rect" id="node10" href="classmuduo_1_1Condition.html#a7ff19734eb024bd6f3e2ad95647b1b27" title="muduo::Condition::notify" alt="" coords="147,178,329,205"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::EventLoop::assert\lInLoopThread" alt="" coords="377,77,568,119"/>
+<area shape="rect" id="node8" href="classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="muduo::EventLoop::doPending\lFunctors" alt="" coords="873,173,1092,215"/>
+<area shape="rect" id="node4" href="classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="muduo::EventLoop::abortNot\lInLoopThread" alt="" coords="879,5,1087,47"/>
+<area shape="rect" id="node7" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="muduo::EventLoop::isInLoop\lThread" alt="" coords="616,77,821,119"/>
+<area shape="rect" id="node5" href="namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="1144,42,1337,69"/>
+<area shape="rect" id="node6" href="namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="1385,35,1553,76"/>
+<area shape="rect" id="node9" href="classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="muduo::EventLoop::handleRead" alt="" coords="869,122,1096,149"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="ab88e8d399cbe9cffda0afb02110faa59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab88e8d399cbe9cffda0afb02110faa59">&#9670;&nbsp;</a></span>cond_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1Condition.html">Condition</a> cond_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoopThread_8h_source.html">EventLoopThread.h</a> 第 <a class="el" href="EventLoopThread_8h_source.html#l00028">28</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoopThread_8cc_source.html#l00022">EventLoopThread::startLoop()</a> , 以及 <a class="el" href="EventLoopThread_8cc_source.html#l00038">EventLoopThread::threadFunc()</a>.</p>
+
+</div>
+</div>
+<a id="a1bead9a84f504b31f1abe7b85e3443cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bead9a84f504b31f1abe7b85e3443cb">&#9670;&nbsp;</a></span>exiting_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool exiting_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoopThread_8h_source.html">EventLoopThread.h</a> 第 <a class="el" href="EventLoopThread_8h_source.html#l00025">25</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoopThread_8cc_source.html#l00016">EventLoopThread::~EventLoopThread()</a>.</p>
+
+</div>
+</div>
+<a id="a19968f50018d32ac31f5cba0195591ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19968f50018d32ac31f5cba0195591ac">&#9670;&nbsp;</a></span>loop_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1EventLoop.html">EventLoop</a>* loop_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoopThread_8h_source.html">EventLoopThread.h</a> 第 <a class="el" href="EventLoopThread_8h_source.html#l00024">24</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoopThread_8cc_source.html#l00022">EventLoopThread::startLoop()</a>, <a class="el" href="EventLoopThread_8cc_source.html#l00038">EventLoopThread::threadFunc()</a> , 以及 <a class="el" href="EventLoopThread_8cc_source.html#l00016">EventLoopThread::~EventLoopThread()</a>.</p>
+
+</div>
+</div>
+<a id="a6e1bf1809a42f40f1a21178dc6620a6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e1bf1809a42f40f1a21178dc6620a6f">&#9670;&nbsp;</a></span>mutex_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MutexLock mutex_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoopThread_8h_source.html">EventLoopThread.h</a> 第 <a class="el" href="EventLoopThread_8h_source.html#l00027">27</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoopThread_8cc_source.html#l00022">EventLoopThread::startLoop()</a> , 以及 <a class="el" href="EventLoopThread_8cc_source.html#l00038">EventLoopThread::threadFunc()</a>.</p>
+
+</div>
+</div>
+<a id="ad920b8087250a686bfa5a9805170974a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad920b8087250a686bfa5a9805170974a">&#9670;&nbsp;</a></span>thread_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1Thread.html">Thread</a> thread_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoopThread_8h_source.html">EventLoopThread.h</a> 第 <a class="el" href="EventLoopThread_8h_source.html#l00026">26</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoopThread_8cc_source.html#l00022">EventLoopThread::startLoop()</a> , 以及 <a class="el" href="EventLoopThread_8cc_source.html#l00016">EventLoopThread::~EventLoopThread()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>lib/<a class="el" href="EventLoopThread_8h_source.html">EventLoopThread.h</a></li>
+<li>src/<a class="el" href="EventLoopThread_8cc_source.html">EventLoopThread.cc</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemuduo.html">muduo</a></li><li class="navelem"><a class="el" href="classmuduo_1_1EventLoopThread.html">EventLoopThread</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+\hypertarget{TimerQueue_8cc}{}\section{src/\+Timer\+Queue.cc 文件参考}
+\label{TimerQueue_8cc}\index{src/\+Timer\+Queue.\+cc@{src/\+Timer\+Queue.\+cc}}
+{\ttfamily \#include \char`\"{}../lib/\+Timer\+Queue.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}muduo/base/\+Logging.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../lib/\+Event\+Loop.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../lib/\+Timer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../lib/\+Timer\+Id.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$boost/bind.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/foreach.\+hpp$>$}\newline
+{\ttfamily \#include $<$sys/timerfd.\+h$>$}\newline
+Timer\+Queue.\+cc 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{TimerQueue_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemuduo}{muduo}
+\item 
+ \hyperlink{namespacemuduo_1_1detail}{muduo\+::detail}
+\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{TimerQueue_8cc_aeb7e7a856ab7a794b05b6b63ef36ea3e}{\+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+L\+I\+M\+I\+T\+\_\+\+M\+A\+C\+R\+OS}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespacemuduo_1_1detail_af278c30c3aaaf596fb0d2211bac2ff52}{create\+Timerfd} ()
+\item 
+struct timespec \hyperlink{namespacemuduo_1_1detail_a14924335d79da967a69c650af3002c77}{how\+Much\+Time\+From\+Now} (\hyperlink{classmuduo_1_1Timestamp}{Timestamp} when)
+\item 
+void \hyperlink{namespacemuduo_1_1detail_a08d79eafe298b7df1941adb4105bf75a}{read\+Timerfd} (int timerfd, \hyperlink{classmuduo_1_1Timestamp}{Timestamp} now)
+\item 
+void \hyperlink{namespacemuduo_1_1detail_a2a30bb501e8d9bb2da91ab353d1bc6fd}{reset\+Timerfd} (int timerfd, \hyperlink{classmuduo_1_1Timestamp}{Timestamp} expiration)
+\end{DoxyCompactItemize}
+
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{TimerQueue_8cc_aeb7e7a856ab7a794b05b6b63ef36ea3e}\label{TimerQueue_8cc_aeb7e7a856ab7a794b05b6b63ef36ea3e}} 
+\index{Timer\+Queue.\+cc@{Timer\+Queue.\+cc}!\+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+L\+I\+M\+I\+T\+\_\+\+M\+A\+C\+R\+OS@{\+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+L\+I\+M\+I\+T\+\_\+\+M\+A\+C\+R\+OS}}
+\index{\+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+L\+I\+M\+I\+T\+\_\+\+M\+A\+C\+R\+OS@{\+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+L\+I\+M\+I\+T\+\_\+\+M\+A\+C\+R\+OS}!Timer\+Queue.\+cc@{Timer\+Queue.\+cc}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+L\+I\+M\+I\+T\+\_\+\+M\+A\+C\+R\+OS}{\_\_STDC\_LIMIT\_MACROS}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+L\+I\+M\+I\+T\+\_\+\+M\+A\+C\+R\+OS}
+
+
+
+在文件 Timer\+Queue.\+cc 第 1 行定义.
+

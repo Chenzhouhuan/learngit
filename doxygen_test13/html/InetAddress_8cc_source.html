@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: src/InetAddress.cc 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('InetAddress_8cc_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">InetAddress.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="InetAddress_8cc.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../lib/InetAddress.h&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;../lib/SocketsOps.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;strings.h&gt;</span> <span class="comment">//bzero</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;netinet/in.h&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;boost/static_assert.hpp&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacemuduo.html">muduo</a>;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="InetAddress_8cc.html#a5d7bee25b99b4514b5f278c1515cbe3f">   11</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> in_addr_t <a class="code" href="InetAddress_8cc.html#a5d7bee25b99b4514b5f278c1515cbe3f">kInaddrAny</a> = INADDR_ANY;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<a class="code" href="InetAddress_8cc.html#a93a12319df07ea8be8030bb451847cc5">BOOST_STATIC_ASSERT</a>(<span class="keyword">sizeof</span>(<a class="code" href="classmuduo_1_1InetAddress.html">InetAddress</a>) == <span class="keyword">sizeof</span>(<span class="keyword">struct</span> sockaddr_in)); <span class="comment">//在编译期间就需要确认某些表达式是否是我们所期望的那样</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                                                                        <span class="comment">//At compile time we need to verify that certain expressions are as expected</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classmuduo_1_1InetAddress.html#a292e10332bd93f9262a79103d270fc54">   16</a></span>&#160;<a class="code" href="classmuduo_1_1InetAddress.html#a292e10332bd93f9262a79103d270fc54">InetAddress::InetAddress</a>(uint16_t port){</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    bzero(&amp;<a class="code" href="classmuduo_1_1InetAddress.html#a6d6d32117d52a72865bf26dc7e0bc646">addr_</a>, <span class="keyword">sizeof</span> <a class="code" href="classmuduo_1_1InetAddress.html#a6d6d32117d52a72865bf26dc7e0bc646">addr_</a>);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classmuduo_1_1InetAddress.html#a6d6d32117d52a72865bf26dc7e0bc646">addr_</a>.sin_family = AF_INET;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classmuduo_1_1InetAddress.html#a6d6d32117d52a72865bf26dc7e0bc646">addr_</a>.sin_addr.s_addr = <a class="code" href="namespacemuduo_1_1sockets.html#a937a8685473c938d339f02a8c6d395b6">sockets::hostToNetwork32</a>(<a class="code" href="InetAddress_8cc.html#a5d7bee25b99b4514b5f278c1515cbe3f">kInaddrAny</a>);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classmuduo_1_1InetAddress.html#a6d6d32117d52a72865bf26dc7e0bc646">addr_</a>.sin_port = <a class="code" href="namespacemuduo_1_1sockets.html#a2c7a9f8e753e01c481aaf287251fa18e">sockets::hostToNetwork16</a>(port);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classmuduo_1_1InetAddress.html#ad4031243c174a53e1d2ff57e97f8226b">   23</a></span>&#160;<a class="code" href="classmuduo_1_1InetAddress.html#a292e10332bd93f9262a79103d270fc54">InetAddress::InetAddress</a>(<span class="keyword">const</span> std::string&amp; ip, uint16_t port){</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    bzero(&amp;<a class="code" href="classmuduo_1_1InetAddress.html#a6d6d32117d52a72865bf26dc7e0bc646">addr_</a>, <span class="keyword">sizeof</span> <a class="code" href="classmuduo_1_1InetAddress.html#a6d6d32117d52a72865bf26dc7e0bc646">addr_</a>);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="namespacemuduo_1_1sockets.html#ae40b8bfde260835c9034bfaea0fb4ee0">sockets::fromHostPort</a>(ip.c_str(), port, &amp;<a class="code" href="classmuduo_1_1InetAddress.html#a6d6d32117d52a72865bf26dc7e0bc646">addr_</a>);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classmuduo_1_1InetAddress.html#afe6339cb39e2b7972bccd0f1418a062c">   28</a></span>&#160;std::string <a class="code" href="classmuduo_1_1InetAddress.html#afe6339cb39e2b7972bccd0f1418a062c">InetAddress::toHostPort</a>()<span class="keyword"> const</span>{</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">char</span> buf[32];</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="namespacemuduo_1_1sockets.html#adbdc909d04fd53860d9175b51755b0ae">sockets::toHostPort</a>(buf, <span class="keyword">sizeof</span> buf, <a class="code" href="classmuduo_1_1InetAddress.html#a6d6d32117d52a72865bf26dc7e0bc646">addr_</a>);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> buf;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div><div class="ttc" id="InetAddress_8cc_html_a5d7bee25b99b4514b5f278c1515cbe3f"><div class="ttname"><a href="InetAddress_8cc.html#a5d7bee25b99b4514b5f278c1515cbe3f">kInaddrAny</a></div><div class="ttdeci">static const in_addr_t kInaddrAny</div><div class="ttdef"><b>Definition:</b> <a href="InetAddress_8cc_source.html#l00011">InetAddress.cc:11</a></div></div>
+<div class="ttc" id="classmuduo_1_1InetAddress_html"><div class="ttname"><a href="classmuduo_1_1InetAddress.html">muduo::InetAddress</a></div><div class="ttdef"><b>Definition:</b> <a href="InetAddress_8h_source.html#l00016">InetAddress.h:16</a></div></div>
+<div class="ttc" id="namespacemuduo_html"><div class="ttname"><a href="namespacemuduo.html">muduo</a></div><div class="ttdef"><b>Definition:</b> <a href="Acceptor_8h_source.html#l00010">Acceptor.h:10</a></div></div>
+<div class="ttc" id="classmuduo_1_1InetAddress_html_a6d6d32117d52a72865bf26dc7e0bc646"><div class="ttname"><a href="classmuduo_1_1InetAddress.html#a6d6d32117d52a72865bf26dc7e0bc646">muduo::InetAddress::addr_</a></div><div class="ttdeci">struct sockaddr_in addr_</div><div class="ttdef"><b>Definition:</b> <a href="InetAddress_8h_source.html#l00041">InetAddress.h:41</a></div></div>
+<div class="ttc" id="classmuduo_1_1InetAddress_html_a292e10332bd93f9262a79103d270fc54"><div class="ttname"><a href="classmuduo_1_1InetAddress.html#a292e10332bd93f9262a79103d270fc54">muduo::InetAddress::InetAddress</a></div><div class="ttdeci">InetAddress(uint16_t port)</div><div class="ttdef"><b>Definition:</b> <a href="InetAddress_8cc_source.html#l00016">InetAddress.cc:16</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_ae40b8bfde260835c9034bfaea0fb4ee0"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#ae40b8bfde260835c9034bfaea0fb4ee0">muduo::sockets::fromHostPort</a></div><div class="ttdeci">void fromHostPort(const char *ip, uint16_t port, struct sockaddr_in *addr)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8cc_source.html#l00150">SocketsOps.cc:150</a></div></div>
+<div class="ttc" id="classmuduo_1_1InetAddress_html_afe6339cb39e2b7972bccd0f1418a062c"><div class="ttname"><a href="classmuduo_1_1InetAddress.html#afe6339cb39e2b7972bccd0f1418a062c">muduo::InetAddress::toHostPort</a></div><div class="ttdeci">std::string toHostPort() const</div><div class="ttdef"><b>Definition:</b> <a href="InetAddress_8cc_source.html#l00028">InetAddress.cc:28</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_a2c7a9f8e753e01c481aaf287251fa18e"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#a2c7a9f8e753e01c481aaf287251fa18e">muduo::sockets::hostToNetwork16</a></div><div class="ttdeci">uint16_t hostToNetwork16(uint16_t host16)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8h_source.html#l00020">SocketsOps.h:20</a></div></div>
+<div class="ttc" id="InetAddress_8cc_html_a93a12319df07ea8be8030bb451847cc5"><div class="ttname"><a href="InetAddress_8cc.html#a93a12319df07ea8be8030bb451847cc5">BOOST_STATIC_ASSERT</a></div><div class="ttdeci">BOOST_STATIC_ASSERT(sizeof(InetAddress)==sizeof(struct sockaddr_in))</div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_a937a8685473c938d339f02a8c6d395b6"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#a937a8685473c938d339f02a8c6d395b6">muduo::sockets::hostToNetwork32</a></div><div class="ttdeci">uint32_t hostToNetwork32(uint32_t host32)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8h_source.html#l00016">SocketsOps.h:16</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_adbdc909d04fd53860d9175b51755b0ae"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#adbdc909d04fd53860d9175b51755b0ae">muduo::sockets::toHostPort</a></div><div class="ttdeci">void toHostPort(char *buf, size_t size, const struct sockaddr_in &amp;addr)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8cc_source.html#l00137">SocketsOps.cc:137</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="InetAddress_8cc.html">InetAddress.cc</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

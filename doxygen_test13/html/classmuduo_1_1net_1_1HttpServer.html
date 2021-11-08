@@ -1,0 +1,567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: HttpServer类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmuduo_1_1net_1_1HttpServer.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classmuduo_1_1net_1_1HttpServer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">HttpServer类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="HttpServer_8h_source.html">HttpServer.h</a>&gt;</code></p>
+<div class="dynheader">
+类 HttpServer 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1HttpServer__inherit__graph.png" border="0" usemap="#HttpServer_inherit__map" alt="Inheritance graph"/></div>
+<map name="HttpServer_inherit__map" id="HttpServer_inherit__map">
+<area shape="rect" id="node2" href="classmuduo_1_1noncopyable.html" title="{noncopyable\n||+ noncopyable()\l+ operator=()\l# noncopyable()\l# ~noncopyable()\l}" alt="" coords="10,5,151,127"/>
+</map>
+</div>
+<div class="dynheader">
+HttpServer 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1HttpServer__coll__graph.png" border="0" usemap="#HttpServer_coll__map" alt="Collaboration graph"/></div>
+<map name="HttpServer_coll__map" id="HttpServer_coll__map">
+<area shape="rect" id="node2" href="classmuduo_1_1noncopyable.html" title="{noncopyable\n||+ noncopyable()\l+ operator=()\l# noncopyable()\l# ~noncopyable()\l}" alt="" coords="294,213,435,334"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1TcpServer.html" title="{TcpServer\n|&#45; acceptor_\l&#45; threadPool_\l&#45; connectionCallback_\l&#45; messageCallback_\l&#45; writeCompleteCallback_\l&#45; threadInitCallback_\l&#45; nextConnId_\l&#45; connections_\l|+ TcpServer()\l+ ~TcpServer()\l+ ipPort()\l+ name()\l+ getLoop()\l+ setThreadNum()\l+ setThreadInitCallback()\l+ threadPool()\l+ start()\l+ setConnectionCallback()\l+ setMessageCallback()\l+ setWriteCompleteCallback()\l&#45; newConnection()\l&#45; removeConnection()\l&#45; removeConnectionInLoop()\l}" alt="" coords="126,1079,346,1465"/>
+<area shape="rect" id="node4" href="classmuduo_1_1detail_1_1AtomicIntegerT.html" title="{AtomicIntegerT\&lt; int32_t \&gt;\n|&#45; value_\l|+ AtomicIntegerT()\l+ get()\l+ getAndAdd()\l+ addAndGet()\l+ incrementAndGet()\l+ decrementAndGet()\l+ add()\l+ increment()\l+ decrement()\l+ getAndSet()\l}" alt="" coords="266,602,463,811"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1EventLoop.html" title="{EventLoop\n|&#45; looping_\l&#45; quit_\l&#45; eventHandling_\l&#45; callingPendingFunctors_\l&#45; iteration_\l&#45; threadId_\l&#45; poller_\l&#45; timerQueue_\l&#45; wakeupFd_\l&#45; wakeupChannel_\l&#45; context_\l&#45; activeChannels_\l&#45; mutex_\l|+ EventLoop()\l+ ~EventLoop()\l+ loop()\l+ quit()\l+ pollReturnTime()\l+ iteration()\l+ runInLoop()\l+ queueInLoop()\l+ queueSize()\l+ runAt()\l和 13 更多...\l+ getEventLoopOfCurrentThread()\l&#45; abortNotInLoopThread()\l&#45; handleRead()\l&#45; doPendingFunctors()\l&#45; printActiveChannels()\l&#45; GUARDED_BY()\l}" alt="" coords="488,463,732,951"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1Channel.html" title="{Channel\n|&#45; fd_\l&#45; events_\l&#45; revents_\l&#45; index_\l&#45; logHup_\l&#45; tie_\l&#45; tied_\l&#45; eventHandling_\l&#45; addedToLoop_\l&#45; readCallback_\l&#45; writeCallback_\l&#45; closeCallback_\l&#45; errorCallback_\l&#45; kNoneEvent\l&#45; kReadEvent\l&#45; kWriteEvent\l|+ Channel()\l+ ~Channel()\l+ handleEvent()\l+ setReadCallback()\l+ setWriteCallback()\l+ setCloseCallback()\l+ setErrorCallback()\l+ tie()\l+ fd()\l+ events()\l和 16 更多...\l&#45; update()\l&#45; handleEventWithGuard()\l&#45; eventsToString()\l}" alt="" coords="609,1028,800,1516"/>
+<area shape="rect" id="node7" href="classmuduo_1_1Timestamp.html" title="{Timestamp\n|+ kMicroSecondsPerSecond\l&#45; microSecondsSinceEpoch_\l|+ Timestamp()\l+ Timestamp()\l+ swap()\l+ toString()\l+ toFormattedString()\l+ valid()\l+ microSecondsSinceEpoch()\l+ secondsSinceEpoch()\l+ now()\l+ invalid()\l+ fromUnixTime()\l+ fromUnixTime()\l}" alt="" coords="708,147,920,400"/>
+<area shape="rect" id="node8" href="classmuduo_1_1copyable.html" title="{copyable\n||# copyable()\l# ~copyable()\l}" alt="" coords="592,5,710,97"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ab343d6a3f751b7fb50940f92c64b6578"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const <a class="el" href="classmuduo_1_1net_1_1HttpRequest.html">HttpRequest</a> &amp;, <a class="el" href="classmuduo_1_1net_1_1HttpResponse.html">HttpResponse</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpServer.html#ab343d6a3f751b7fb50940f92c64b6578">HttpCallback</a></td></tr>
+<tr class="separator:ab343d6a3f751b7fb50940f92c64b6578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a497e7b9c047a6b99d3727de450774988"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpServer.html#a497e7b9c047a6b99d3727de450774988">HttpServer</a> (<a class="el" href="classmuduo_1_1net_1_1EventLoop.html">EventLoop</a> *loop, const <a class="el" href="classmuduo_1_1net_1_1InetAddress.html">InetAddress</a> &amp;listenAddr, const string &amp;name, <a class="el" href="classmuduo_1_1net_1_1TcpServer.html#a0e65ad13124ea2cb5e255b640464e35f">TcpServer::Option</a> option=<a class="el" href="classmuduo_1_1net_1_1TcpServer.html#a0e65ad13124ea2cb5e255b640464e35fa5ddf56db99b3883a1c729e8b6873bbf5">TcpServer::kNoReusePort</a>)</td></tr>
+<tr class="separator:a497e7b9c047a6b99d3727de450774988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef1cbfe0592e8196e6c81b4db82a39ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1net_1_1EventLoop.html">EventLoop</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpServer.html#aef1cbfe0592e8196e6c81b4db82a39ce">getLoop</a> () const</td></tr>
+<tr class="separator:aef1cbfe0592e8196e6c81b4db82a39ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac46810c8853d92daeea2753cc270dccb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpServer.html#ac46810c8853d92daeea2753cc270dccb">setHttpCallback</a> (const <a class="el" href="classmuduo_1_1net_1_1HttpServer.html#ab343d6a3f751b7fb50940f92c64b6578">HttpCallback</a> &amp;cb)</td></tr>
+<tr class="memdesc:ac46810c8853d92daeea2753cc270dccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not thread safe, callback be registered before calling <a class="el" href="classmuduo_1_1net_1_1HttpServer.html#a60de64d75454385b23995437f1d72669">start()</a>.  <a href="#ac46810c8853d92daeea2753cc270dccb">更多...</a><br /></td></tr>
+<tr class="separator:ac46810c8853d92daeea2753cc270dccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83bb28d139df96ba9fc449b4643f2c36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpServer.html#a83bb28d139df96ba9fc449b4643f2c36">setThreadNum</a> (int numThreads)</td></tr>
+<tr class="separator:a83bb28d139df96ba9fc449b4643f2c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60de64d75454385b23995437f1d72669"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpServer.html#a60de64d75454385b23995437f1d72669">start</a> ()</td></tr>
+<tr class="separator:a60de64d75454385b23995437f1d72669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:ae085355191b9979cba83ee65fb969fcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpServer.html#ae085355191b9979cba83ee65fb969fcb">onConnection</a> (const <a class="el" href="namespacemuduo_1_1net.html#ab91a46e9290926aa692450e46cfc9039">TcpConnectionPtr</a> &amp;conn)</td></tr>
+<tr class="separator:ae085355191b9979cba83ee65fb969fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affde82cb1aeae31f8ce39103fa4cd358"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpServer.html#affde82cb1aeae31f8ce39103fa4cd358">onMessage</a> (const <a class="el" href="namespacemuduo_1_1net.html#ab91a46e9290926aa692450e46cfc9039">TcpConnectionPtr</a> &amp;conn, <a class="el" href="classmuduo_1_1net_1_1Buffer.html">Buffer</a> *buf, <a class="el" href="classmuduo_1_1Timestamp.html">Timestamp</a> receiveTime)</td></tr>
+<tr class="separator:affde82cb1aeae31f8ce39103fa4cd358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39f88c74f26fed6e5d98de09075f4c1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpServer.html#a39f88c74f26fed6e5d98de09075f4c1b">onRequest</a> (const <a class="el" href="namespacemuduo_1_1net.html#ab91a46e9290926aa692450e46cfc9039">TcpConnectionPtr</a> &amp;, const <a class="el" href="classmuduo_1_1net_1_1HttpRequest.html">HttpRequest</a> &amp;)</td></tr>
+<tr class="separator:a39f88c74f26fed6e5d98de09075f4c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmuduo_1_1noncopyable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmuduo_1_1noncopyable')"><img src="closed.png" alt="-"/>&#160;Private 成员函数 继承自 <a class="el" href="classmuduo_1_1noncopyable.html">noncopyable</a></td></tr>
+<tr class="memitem:aaefac0158453c4de9989d742a02fdc61 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1noncopyable.html#aaefac0158453c4de9989d742a02fdc61">noncopyable</a> (const <a class="el" href="classmuduo_1_1noncopyable.html">noncopyable</a> &amp;)=delete</td></tr>
+<tr class="separator:aaefac0158453c4de9989d742a02fdc61 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfca16bbe6126971c0c9959e573df923 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1noncopyable.html#adfca16bbe6126971c0c9959e573df923">operator=</a> (const <a class="el" href="classmuduo_1_1noncopyable.html">noncopyable</a> &amp;)=delete</td></tr>
+<tr class="separator:adfca16bbe6126971c0c9959e573df923 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a7cb0757f3a96b9862062e348f20577 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1noncopyable.html#a9a7cb0757f3a96b9862062e348f20577">noncopyable</a> ()=default</td></tr>
+<tr class="separator:a9a7cb0757f3a96b9862062e348f20577 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60dec0098f04c2bedcf32fc41e8bd203 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1noncopyable.html#a60dec0098f04c2bedcf32fc41e8bd203">~noncopyable</a> ()=default</td></tr>
+<tr class="separator:a60dec0098f04c2bedcf32fc41e8bd203 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a5fa2c354b57a31cc2b5ed74583f853ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1net_1_1TcpServer.html">TcpServer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpServer.html#a5fa2c354b57a31cc2b5ed74583f853ad">server_</a></td></tr>
+<tr class="separator:a5fa2c354b57a31cc2b5ed74583f853ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab296b28a88834c853b076a5a25ba76a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1net_1_1HttpServer.html#ab343d6a3f751b7fb50940f92c64b6578">HttpCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpServer.html#ab296b28a88834c853b076a5a25ba76a7">httpCallback_</a></td></tr>
+<tr class="separator:ab296b28a88834c853b076a5a25ba76a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>A simple embeddable HTTP server designed for report status of a program. It is not a fully HTTP 1.1 compliant server, but provides minimum features that can communicate with HttpClient and Web browser. It is synchronous, just like Java Servlet. </p>
+
+<p class="definition">在文件 <a class="el" href="HttpServer_8h_source.html">HttpServer.h</a> 第 <a class="el" href="HttpServer_8h_source.html#l00028">28</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="ab343d6a3f751b7fb50940f92c64b6578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab343d6a3f751b7fb50940f92c64b6578">&#9670;&nbsp;</a></span>HttpCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::function&lt;void (const <a class="el" href="classmuduo_1_1net_1_1HttpRequest.html">HttpRequest</a>&amp;, <a class="el" href="classmuduo_1_1net_1_1HttpResponse.html">HttpResponse</a>*)&gt; <a class="el" href="classmuduo_1_1net_1_1HttpServer.html#ab343d6a3f751b7fb50940f92c64b6578">HttpCallback</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="HttpServer_8h_source.html">HttpServer.h</a> 第 <a class="el" href="HttpServer_8h_source.html#l00032">32</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a497e7b9c047a6b99d3727de450774988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a497e7b9c047a6b99d3727de450774988">&#9670;&nbsp;</a></span>HttpServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1net_1_1HttpServer.html">HttpServer</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1net_1_1EventLoop.html">EventLoop</a> *&#160;</td>
+          <td class="paramname"><em>loop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmuduo_1_1net_1_1InetAddress.html">InetAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>listenAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1net_1_1TcpServer.html#a0e65ad13124ea2cb5e255b640464e35f">TcpServer::Option</a>&#160;</td>
+          <td class="paramname"><em>option</em> = <code><a class="el" href="classmuduo_1_1net_1_1TcpServer.html#a0e65ad13124ea2cb5e255b640464e35fa5ddf56db99b3883a1c729e8b6873bbf5">TcpServer::kNoReusePort</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aef1cbfe0592e8196e6c81b4db82a39ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef1cbfe0592e8196e6c81b4db82a39ce">&#9670;&nbsp;</a></span>getLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1net_1_1EventLoop.html">EventLoop</a>* getLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="HttpServer_8h_source.html">HttpServer.h</a> 第 <a class="el" href="HttpServer_8h_source.html#l00039">39</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2TcpServer_8h_source.html#l00052">TcpServer::getLoop()</a> , 以及 <a class="el" href="HttpServer_8h_source.html#l00061">HttpServer::server_</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1HttpServer_aef1cbfe0592e8196e6c81b4db82a39ce_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1HttpServer_aef1cbfe0592e8196e6c81b4db82a39ce_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1HttpServer_aef1cbfe0592e8196e6c81b4db82a39ce_cgraph" id="classmuduo_1_1net_1_1HttpServer_aef1cbfe0592e8196e6c81b4db82a39ce_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1TcpServer.html#aef1cbfe0592e8196e6c81b4db82a39ce" title="muduo::net::TcpServer\l::getLoop" alt="" coords="128,39,295,80"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1TcpServer.html#a83bb28d139df96ba9fc449b4643f2c36" title="muduo::net::TcpServer\l::setThreadNum" alt="" coords="343,5,509,47"/>
+<area shape="rect" id="node4" href="namespacemuduo_1_1ProcessInfo.html#a120db223841da7c65566c1fb2a06befa" title="muduo::ProcessInfo\l::numThreads" alt="" coords="351,71,501,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae085355191b9979cba83ee65fb969fcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae085355191b9979cba83ee65fb969fcb">&#9670;&nbsp;</a></span>onConnection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onConnection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacemuduo_1_1net.html#ab91a46e9290926aa692450e46cfc9039">TcpConnectionPtr</a> &amp;&#160;</td>
+          <td class="paramname"><em>conn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="HttpServer_8h_source.html#l00047">HttpServer::setThreadNum()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1HttpServer_ae085355191b9979cba83ee65fb969fcb_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1HttpServer_ae085355191b9979cba83ee65fb969fcb_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1HttpServer_ae085355191b9979cba83ee65fb969fcb_icgraph" id="classmuduo_1_1net_1_1HttpServer_ae085355191b9979cba83ee65fb969fcb_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1HttpServer.html#a83bb28d139df96ba9fc449b4643f2c36" title="setThreadNum" alt="" coords="164,5,283,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="affde82cb1aeae31f8ce39103fa4cd358"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affde82cb1aeae31f8ce39103fa4cd358">&#9670;&nbsp;</a></span>onMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onMessage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacemuduo_1_1net.html#ab91a46e9290926aa692450e46cfc9039">TcpConnectionPtr</a> &amp;&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1net_1_1Buffer.html">Buffer</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1Timestamp.html">Timestamp</a>&#160;</td>
+          <td class="paramname"><em>receiveTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="HttpServer_8h_source.html#l00047">HttpServer::setThreadNum()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1HttpServer_affde82cb1aeae31f8ce39103fa4cd358_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1HttpServer_affde82cb1aeae31f8ce39103fa4cd358_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1HttpServer_affde82cb1aeae31f8ce39103fa4cd358_icgraph" id="classmuduo_1_1net_1_1HttpServer_affde82cb1aeae31f8ce39103fa4cd358_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1HttpServer.html#a83bb28d139df96ba9fc449b4643f2c36" title="setThreadNum" alt="" coords="148,5,267,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a39f88c74f26fed6e5d98de09075f4c1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39f88c74f26fed6e5d98de09075f4c1b">&#9670;&nbsp;</a></span>onRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onRequest </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacemuduo_1_1net.html#ab91a46e9290926aa692450e46cfc9039">TcpConnectionPtr</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmuduo_1_1net_1_1HttpRequest.html">HttpRequest</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="HttpServer_8h_source.html#l00047">HttpServer::setThreadNum()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1HttpServer_a39f88c74f26fed6e5d98de09075f4c1b_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1HttpServer_a39f88c74f26fed6e5d98de09075f4c1b_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1HttpServer_a39f88c74f26fed6e5d98de09075f4c1b_icgraph" id="classmuduo_1_1net_1_1HttpServer_a39f88c74f26fed6e5d98de09075f4c1b_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1HttpServer.html#a83bb28d139df96ba9fc449b4643f2c36" title="setThreadNum" alt="" coords="144,5,263,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac46810c8853d92daeea2753cc270dccb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac46810c8853d92daeea2753cc270dccb">&#9670;&nbsp;</a></span>setHttpCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setHttpCallback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmuduo_1_1net_1_1HttpServer.html#ab343d6a3f751b7fb50940f92c64b6578">HttpCallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Not thread safe, callback be registered before calling <a class="el" href="classmuduo_1_1net_1_1HttpServer.html#a60de64d75454385b23995437f1d72669">start()</a>. </p>
+
+<p class="definition">在文件 <a class="el" href="HttpServer_8h_source.html">HttpServer.h</a> 第 <a class="el" href="HttpServer_8h_source.html#l00042">42</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="HttpServer_8h_source.html#l00062">HttpServer::httpCallback_</a>.</p>
+
+</div>
+</div>
+<a id="a83bb28d139df96ba9fc449b4643f2c36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83bb28d139df96ba9fc449b4643f2c36">&#9670;&nbsp;</a></span>setThreadNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setThreadNum </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numThreads</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="HttpServer_8h_source.html">HttpServer.h</a> 第 <a class="el" href="HttpServer_8h_source.html#l00047">47</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="classmuduo_1_1net_1_1HttpServer.html#ae085355191b9979cba83ee65fb969fcb">HttpServer::onConnection()</a>, <a class="el" href="classmuduo_1_1net_1_1HttpServer.html#affde82cb1aeae31f8ce39103fa4cd358">HttpServer::onMessage()</a>, <a class="el" href="classmuduo_1_1net_1_1HttpServer.html#a39f88c74f26fed6e5d98de09075f4c1b">HttpServer::onRequest()</a>, <a class="el" href="HttpServer_8h_source.html#l00061">HttpServer::server_</a>, <a class="el" href="classmuduo_1_1net_1_1TcpServer.html#a83bb28d139df96ba9fc449b4643f2c36">TcpServer::setThreadNum()</a> , 以及 <a class="el" href="classmuduo_1_1net_1_1HttpServer.html#a60de64d75454385b23995437f1d72669">HttpServer::start()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1HttpServer_a83bb28d139df96ba9fc449b4643f2c36_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1HttpServer_a83bb28d139df96ba9fc449b4643f2c36_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1HttpServer_a83bb28d139df96ba9fc449b4643f2c36_cgraph" id="classmuduo_1_1net_1_1HttpServer_a83bb28d139df96ba9fc449b4643f2c36_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1HttpServer.html#ae085355191b9979cba83ee65fb969fcb" title="onConnection" alt="" coords="200,5,311,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1HttpServer.html#affde82cb1aeae31f8ce39103fa4cd358" title="onMessage" alt="" coords="208,56,303,83"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1HttpServer.html#a39f88c74f26fed6e5d98de09075f4c1b" title="onRequest" alt="" coords="210,107,301,133"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1TcpServer.html#a83bb28d139df96ba9fc449b4643f2c36" title="muduo::net::TcpServer\l::setThreadNum" alt="" coords="172,158,339,199"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1HttpServer.html#a60de64d75454385b23995437f1d72669" title="start" alt="" coords="229,224,281,251"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a60de64d75454385b23995437f1d72669"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60de64d75454385b23995437f1d72669">&#9670;&nbsp;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="HttpServer_8h_source.html#l00047">HttpServer::setThreadNum()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1HttpServer_a60de64d75454385b23995437f1d72669_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1HttpServer_a60de64d75454385b23995437f1d72669_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1HttpServer_a60de64d75454385b23995437f1d72669_icgraph" id="classmuduo_1_1net_1_1HttpServer_a60de64d75454385b23995437f1d72669_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1HttpServer.html#a83bb28d139df96ba9fc449b4643f2c36" title="setThreadNum" alt="" coords="105,5,224,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="ab296b28a88834c853b076a5a25ba76a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab296b28a88834c853b076a5a25ba76a7">&#9670;&nbsp;</a></span>httpCallback_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1net_1_1HttpServer.html#ab343d6a3f751b7fb50940f92c64b6578">HttpCallback</a> httpCallback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="HttpServer_8h_source.html">HttpServer.h</a> 第 <a class="el" href="HttpServer_8h_source.html#l00062">62</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="HttpServer_8h_source.html#l00042">HttpServer::setHttpCallback()</a>.</p>
+
+</div>
+</div>
+<a id="a5fa2c354b57a31cc2b5ed74583f853ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fa2c354b57a31cc2b5ed74583f853ad">&#9670;&nbsp;</a></span>server_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1net_1_1TcpServer.html">TcpServer</a> server_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="HttpServer_8h_source.html">HttpServer.h</a> 第 <a class="el" href="HttpServer_8h_source.html#l00061">61</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="HttpServer_8h_source.html#l00039">HttpServer::getLoop()</a> , 以及 <a class="el" href="HttpServer_8h_source.html#l00047">HttpServer::setThreadNum()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>lib/muduo/net/http/<a class="el" href="HttpServer_8h_source.html">HttpServer.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemuduo.html">muduo</a></li><li class="navelem"><a class="el" href="namespacemuduo_1_1net.html">net</a></li><li class="navelem"><a class="el" href="classmuduo_1_1net_1_1HttpServer.html">HttpServer</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

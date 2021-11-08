@@ -1,0 +1,4 @@
+<map id="networkToHost16" name="networkToHost16">
+<area shape="rect" id="node2" href="$classmuduo_1_1net_1_1Buffer.html#af9c96d31bad4ac1ff73d31672bc324c3" title="muduo::net::Buffer\l::peekInt16" alt="" coords="188,5,331,47"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1net_1_1Buffer.html#a7cf018b7a5d7bed8aa4d201e4399fce0" title="muduo::net::Buffer\l::readInt16" alt="" coords="379,5,521,47"/>
+</map>

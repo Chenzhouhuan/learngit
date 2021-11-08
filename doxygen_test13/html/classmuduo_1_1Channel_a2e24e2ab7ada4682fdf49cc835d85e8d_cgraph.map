@@ -1,0 +1,11 @@
+<map id="ownerLoop" name="ownerLoop">
+<area shape="rect" id="node2" href="$classmuduo_1_1Channel.html#ac5c54df7ed3b930268c8d7752c101725" title="update" alt="" coords="147,17,213,43"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1EventLoop.html#acaa4a191936aacf608d279a6f343d533" title="muduo::EventLoop::update\lChannel" alt="" coords="261,35,457,76"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::EventLoop::assert\lInLoopThread" alt="" coords="505,35,696,76"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="muduo::EventLoop::isInLoop\lThread" alt="" coords="744,64,949,105"/>
+<area shape="rect" id="node8" href="$classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="muduo::EventLoop::abortNot\lInLoopThread" alt="" coords="1007,5,1215,47"/>
+<area shape="rect" id="node6" href="$namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="1272,42,1465,69"/>
+<area shape="rect" id="node9" href="$classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="muduo::EventLoop::handleRead" alt="" coords="997,122,1224,149"/>
+<area shape="rect" id="node10" href="$classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="muduo::EventLoop::doPending\lFunctors" alt="" coords="1001,173,1220,215"/>
+<area shape="rect" id="node7" href="$namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="1513,35,1681,76"/>
+</map>

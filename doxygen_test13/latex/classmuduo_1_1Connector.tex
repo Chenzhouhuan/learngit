@@ -1,0 +1,777 @@
+\hypertarget{classmuduo_1_1Connector}{}\section{Connector类 参考}
+\label{classmuduo_1_1Connector}\index{Connector@{Connector}}
+
+
+{\ttfamily \#include $<$Connector.\+h$>$}
+
+
+
+类 Connector 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{classmuduo_1_1Connector__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Connector 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmuduo_1_1Connector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::function$<$ void(int sockfd)$>$ \hyperlink{classmuduo_1_1Connector_a74d0c9e28e41cb2b3310e0c1d3671710}{New\+Connection\+Callback}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1Connector_a7158c067ded62b1c9e827754c5758a17}{Connector} (\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$loop, const \hyperlink{classmuduo_1_1InetAddress}{Inet\+Address} \&server\+Addr)
+\item 
+\hyperlink{classmuduo_1_1Connector_a3ee3948f23cf15142798ae0031f6b692}{$\sim$\+Connector} ()
+\item 
+void \hyperlink{classmuduo_1_1Connector_a30908d8d30b5333e6288a7430d598cb1}{set\+New\+Connection\+Callback} (const \hyperlink{classmuduo_1_1Connector_a74d0c9e28e41cb2b3310e0c1d3671710}{New\+Connection\+Callback} \&cb)
+\item 
+void \hyperlink{classmuduo_1_1Connector_a60de64d75454385b23995437f1d72669}{start} ()
+\item 
+void \hyperlink{classmuduo_1_1Connector_a22ee094ca3f45aa4156b97d34fe678bf}{restart} ()
+\item 
+void \hyperlink{classmuduo_1_1Connector_a8c528baf37154d347366083f0f816846}{stop} ()
+\item 
+const \hyperlink{classmuduo_1_1InetAddress}{Inet\+Address} \& \hyperlink{classmuduo_1_1Connector_a1d3e517d3d87311eb4cb5d51d5a0ce81}{server\+Address} () const
+\end{DoxyCompactItemize}
+\subsection*{Private 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classmuduo_1_1Connector_a808e5cd4979462d3bbe3070d7d147444}{States} \{ \hyperlink{classmuduo_1_1Connector_a808e5cd4979462d3bbe3070d7d147444a5f4e8711c6f39bc392c23dfacf44c953}{k\+Disconnected}, 
+\hyperlink{classmuduo_1_1Connector_a808e5cd4979462d3bbe3070d7d147444adddfdd7363e62a5f443716e15d0bc1ff}{k\+Connecting}, 
+\hyperlink{classmuduo_1_1Connector_a808e5cd4979462d3bbe3070d7d147444acb7fe9fd788a796e7d827c0303dcd405}{k\+Connected}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmuduo_1_1Connector_ab987a8e9ac6b0ad825674ec2131921af}{set\+State} (\hyperlink{classmuduo_1_1Connector_a808e5cd4979462d3bbe3070d7d147444}{States} s)
+\item 
+void \hyperlink{classmuduo_1_1Connector_ad289b54db652dcb10f835f3613e68fdb}{start\+In\+Loop} ()
+\item 
+void \hyperlink{classmuduo_1_1Connector_a1396bf9b5defe9fa844a63b5cd40ac0e}{connect} ()
+\item 
+void \hyperlink{classmuduo_1_1Connector_a2e3471f37486a133ee848ea72ed7efc2}{connecting} (int sockfd)
+\item 
+void \hyperlink{classmuduo_1_1Connector_ae1d79ff6580eaced59a900144818150d}{handle\+Write} ()
+\item 
+void \hyperlink{classmuduo_1_1Connector_a70b275e63748ddd6da7d2171c540ccff}{handle\+Error} ()
+\item 
+void \hyperlink{classmuduo_1_1Connector_a6a23d487c31355d8663ccdd4cbf4f499}{retry} (int sockfd)
+\item 
+int \hyperlink{classmuduo_1_1Connector_abf9772658904f185215158e0dbdf9610}{remove\+And\+Reset\+Channel} ()
+\item 
+void \hyperlink{classmuduo_1_1Connector_aeb215fb4b2ea3598389e881b87a49631}{reset\+Channel} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$ \hyperlink{classmuduo_1_1Connector_a19968f50018d32ac31f5cba0195591ac}{loop\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1InetAddress}{Inet\+Address} \hyperlink{classmuduo_1_1Connector_a70de848a60434ed7c6f33ba257fdbbfe}{server\+Addr\+\_\+}
+\item 
+bool \hyperlink{classmuduo_1_1Connector_ab4b9ce5dfde7fe6c5954a376aac00190}{connect\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1Connector_a808e5cd4979462d3bbe3070d7d147444}{States} \hyperlink{classmuduo_1_1Connector_a69e113af7e38a28d7e9cbcd1dc0836e3}{state\+\_\+}
+\item 
+boost\+::scoped\+\_\+ptr$<$ \hyperlink{classmuduo_1_1Channel}{Channel} $>$ \hyperlink{classmuduo_1_1Connector_a8375a127884b4155e4d0ff8604bb0b9a}{channel\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1Connector_a74d0c9e28e41cb2b3310e0c1d3671710}{New\+Connection\+Callback} \hyperlink{classmuduo_1_1Connector_a315d8356d0420fe5a89dc67f49c82617}{new\+Connection\+Callback\+\_\+}
+\item 
+int \hyperlink{classmuduo_1_1Connector_a22e73d8243605061d5201effe673e2bc}{retry\+Delay\+Ms\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1TimerId}{Timer\+Id} \hyperlink{classmuduo_1_1Connector_a6e461b999972c0c7798da0070b41d931}{timer\+Id\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{classmuduo_1_1Connector_a4238c23fd75230d429c3273ef4a91bef}{k\+Max\+Retry\+Delay\+Ms} = 30$\ast$1000
+\item 
+static const int \hyperlink{classmuduo_1_1Connector_abaa28ed649f43db991c045b039984aa2}{k\+Init\+Retry\+Delay\+Ms} = 500
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 Connector.\+h 第 18 行定义.
+
+
+
+\subsection{成员类型定义说明}
+\mbox{\Hypertarget{classmuduo_1_1Connector_a74d0c9e28e41cb2b3310e0c1d3671710}\label{classmuduo_1_1Connector_a74d0c9e28e41cb2b3310e0c1d3671710}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!New\+Connection\+Callback@{New\+Connection\+Callback}}
+\index{New\+Connection\+Callback@{New\+Connection\+Callback}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{New\+Connection\+Callback}{NewConnectionCallback}}
+{\footnotesize\ttfamily typedef boost\+::function$<$void (int sockfd)$>$ \hyperlink{classmuduo_1_1Connector_a74d0c9e28e41cb2b3310e0c1d3671710}{New\+Connection\+Callback}}
+
+
+
+在文件 Connector.\+h 第 20 行定义.
+
+
+
+\subsection{成员枚举类型说明}
+\mbox{\Hypertarget{classmuduo_1_1Connector_a808e5cd4979462d3bbe3070d7d147444}\label{classmuduo_1_1Connector_a808e5cd4979462d3bbe3070d7d147444}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!States@{States}}
+\index{States@{States}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{States}{States}}
+{\footnotesize\ttfamily enum \hyperlink{classmuduo_1_1Connector_a808e5cd4979462d3bbe3070d7d147444}{States}\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Disconnected@{k\+Disconnected}!muduo\+::\+Connector@{muduo\+::\+Connector}}\index{muduo\+::\+Connector@{muduo\+::\+Connector}!k\+Disconnected@{k\+Disconnected}}}\mbox{\Hypertarget{classmuduo_1_1Connector_a808e5cd4979462d3bbe3070d7d147444a5f4e8711c6f39bc392c23dfacf44c953}\label{classmuduo_1_1Connector_a808e5cd4979462d3bbe3070d7d147444a5f4e8711c6f39bc392c23dfacf44c953}} 
+k\+Disconnected&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Connecting@{k\+Connecting}!muduo\+::\+Connector@{muduo\+::\+Connector}}\index{muduo\+::\+Connector@{muduo\+::\+Connector}!k\+Connecting@{k\+Connecting}}}\mbox{\Hypertarget{classmuduo_1_1Connector_a808e5cd4979462d3bbe3070d7d147444adddfdd7363e62a5f443716e15d0bc1ff}\label{classmuduo_1_1Connector_a808e5cd4979462d3bbe3070d7d147444adddfdd7363e62a5f443716e15d0bc1ff}} 
+k\+Connecting&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Connected@{k\+Connected}!muduo\+::\+Connector@{muduo\+::\+Connector}}\index{muduo\+::\+Connector@{muduo\+::\+Connector}!k\+Connected@{k\+Connected}}}\mbox{\Hypertarget{classmuduo_1_1Connector_a808e5cd4979462d3bbe3070d7d147444acb7fe9fd788a796e7d827c0303dcd405}\label{classmuduo_1_1Connector_a808e5cd4979462d3bbe3070d7d147444acb7fe9fd788a796e7d827c0303dcd405}} 
+k\+Connected&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 Connector.\+h 第 34 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Connector_a7158c067ded62b1c9e827754c5758a17}\label{classmuduo_1_1Connector_a7158c067ded62b1c9e827754c5758a17}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!Connector@{Connector}}
+\index{Connector@{Connector}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{Connector()}{Connector()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Connector}{Connector} (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$}]{loop,  }\item[{const \hyperlink{classmuduo_1_1InetAddress}{Inet\+Address} \&}]{server\+Addr }\end{DoxyParamCaption})}
+
+
+
+在文件 Connector.\+cc 第 17 行定义.
+
+
+
+参考 L\+O\+G\+\_\+\+D\+E\+B\+UG.
+
+\mbox{\Hypertarget{classmuduo_1_1Connector_a3ee3948f23cf15142798ae0031f6b692}\label{classmuduo_1_1Connector_a3ee3948f23cf15142798ae0031f6b692}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!````~Connector@{$\sim$\+Connector}}
+\index{````~Connector@{$\sim$\+Connector}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{$\sim$\+Connector()}{~Connector()}}
+{\footnotesize\ttfamily $\sim$\hyperlink{classmuduo_1_1Connector}{Connector} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 Connector.\+cc 第 27 行定义.
+
+
+
+参考 Event\+Loop\+::cancel(), Connector\+::channel\+\_\+, L\+O\+G\+\_\+\+D\+E\+B\+UG, Connector\+::loop\+\_\+ , 以及 Connector\+::timer\+Id\+\_\+.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{classmuduo_1_1Connector_a3ee3948f23cf15142798ae0031f6b692_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Connector_a1396bf9b5defe9fa844a63b5cd40ac0e}\label{classmuduo_1_1Connector_a1396bf9b5defe9fa844a63b5cd40ac0e}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!connect@{connect}}
+\index{connect@{connect}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily void connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Connector.\+cc 第 48 行定义.
+
+
+
+参考 muduo\+::sockets\+::close(), muduo\+::sockets\+::connect(), Connector\+::connecting(), muduo\+::sockets\+::create\+Nonblocking\+Or\+Die(), Inet\+Address\+::get\+Sock\+Addr\+Inet(), L\+O\+G\+\_\+\+S\+Y\+S\+E\+RR, Connector\+::retry() , 以及 Connector\+::server\+Addr\+\_\+.
+
+
+
+参考自 Connector\+::set\+State() , 以及 Connector\+::start\+In\+Loop().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Connector_a1396bf9b5defe9fa844a63b5cd40ac0e_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Connector_a1396bf9b5defe9fa844a63b5cd40ac0e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Connector_a2e3471f37486a133ee848ea72ed7efc2}\label{classmuduo_1_1Connector_a2e3471f37486a133ee848ea72ed7efc2}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!connecting@{connecting}}
+\index{connecting@{connecting}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{connecting()}{connecting()}}
+{\footnotesize\ttfamily void connecting (\begin{DoxyParamCaption}\item[{int}]{sockfd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Connector.\+cc 第 99 行定义.
+
+
+
+参考 Connector\+::channel\+\_\+, Connector\+::handle\+Error(), Connector\+::handle\+Write(), Connector\+::k\+Connecting, Connector\+::loop\+\_\+ , 以及 Connector\+::set\+State().
+
+
+
+参考自 Connector\+::connect() , 以及 Connector\+::set\+State().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Connector_a2e3471f37486a133ee848ea72ed7efc2_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Connector_a2e3471f37486a133ee848ea72ed7efc2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Connector_a70b275e63748ddd6da7d2171c540ccff}\label{classmuduo_1_1Connector_a70b275e63748ddd6da7d2171c540ccff}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!handle\+Error@{handle\+Error}}
+\index{handle\+Error@{handle\+Error}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{handle\+Error()}{handleError()}}
+{\footnotesize\ttfamily void handle\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Connector.\+cc 第 148 行定义.
+
+
+
+参考 muduo\+::sockets\+::get\+Socket\+Error(), Connector\+::k\+Connecting, L\+O\+G\+\_\+\+E\+R\+R\+OR, L\+O\+G\+\_\+\+T\+R\+A\+CE, Connector\+::remove\+And\+Reset\+Channel(), Connector\+::retry(), Connector\+::state\+\_\+ , 以及 muduo\+::strerror\+\_\+tl().
+
+
+
+参考自 Connector\+::connecting() , 以及 Connector\+::set\+State().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Connector_a70b275e63748ddd6da7d2171c540ccff_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Connector_a70b275e63748ddd6da7d2171c540ccff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Connector_ae1d79ff6580eaced59a900144818150d}\label{classmuduo_1_1Connector_ae1d79ff6580eaced59a900144818150d}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!handle\+Write@{handle\+Write}}
+\index{handle\+Write@{handle\+Write}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{handle\+Write()}{handleWrite()}}
+{\footnotesize\ttfamily void handle\+Write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Connector.\+cc 第 122 行定义.
+
+
+
+参考 muduo\+::sockets\+::close(), Connector\+::connect\+\_\+, muduo\+::sockets\+::get\+Socket\+Error(), muduo\+::sockets\+::is\+Self\+Connect(), Connector\+::k\+Connected, Connector\+::k\+Connecting, Connector\+::k\+Disconnected, L\+O\+G\+\_\+\+T\+R\+A\+CE, L\+O\+G\+\_\+\+W\+A\+RN, Connector\+::new\+Connection\+Callback\+\_\+, Connector\+::remove\+And\+Reset\+Channel(), Connector\+::retry(), Connector\+::set\+State(), Connector\+::state\+\_\+ , 以及 muduo\+::strerror\+\_\+tl().
+
+
+
+参考自 Connector\+::connecting() , 以及 Connector\+::set\+State().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Connector_ae1d79ff6580eaced59a900144818150d_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Connector_ae1d79ff6580eaced59a900144818150d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Connector_abf9772658904f185215158e0dbdf9610}\label{classmuduo_1_1Connector_abf9772658904f185215158e0dbdf9610}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!remove\+And\+Reset\+Channel@{remove\+And\+Reset\+Channel}}
+\index{remove\+And\+Reset\+Channel@{remove\+And\+Reset\+Channel}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{remove\+And\+Reset\+Channel()}{removeAndResetChannel()}}
+{\footnotesize\ttfamily int remove\+And\+Reset\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Connector.\+cc 第 109 行定义.
+
+
+
+参考 Connector\+::channel\+\_\+, muduo\+::get\+\_\+pointer(), Connector\+::loop\+\_\+, Event\+Loop\+::queue\+In\+Loop(), Event\+Loop\+::remove\+Channel() , 以及 Connector\+::reset\+Channel().
+
+
+
+参考自 Connector\+::handle\+Error(), Connector\+::handle\+Write() , 以及 Connector\+::set\+State().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Connector_abf9772658904f185215158e0dbdf9610_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Connector_abf9772658904f185215158e0dbdf9610_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Connector_aeb215fb4b2ea3598389e881b87a49631}\label{classmuduo_1_1Connector_aeb215fb4b2ea3598389e881b87a49631}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!reset\+Channel@{reset\+Channel}}
+\index{reset\+Channel@{reset\+Channel}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{reset\+Channel()}{resetChannel()}}
+{\footnotesize\ttfamily void reset\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Connector.\+cc 第 118 行定义.
+
+
+
+参考 Connector\+::channel\+\_\+.
+
+
+
+参考自 Connector\+::remove\+And\+Reset\+Channel() , 以及 Connector\+::set\+State().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Connector_aeb215fb4b2ea3598389e881b87a49631_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Connector_a22ee094ca3f45aa4156b97d34fe678bf}\label{classmuduo_1_1Connector_a22ee094ca3f45aa4156b97d34fe678bf}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!restart@{restart}}
+\index{restart@{restart}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily void restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 Connector.\+cc 第 86 行定义.
+
+
+
+参考 Event\+Loop\+::assert\+In\+Loop\+Thread(), Connector\+::connect\+\_\+, Connector\+::k\+Disconnected, Connector\+::k\+Init\+Retry\+Delay\+Ms, Connector\+::loop\+\_\+, Connector\+::retry\+Delay\+Ms\+\_\+, Connector\+::set\+State() , 以及 Connector\+::start\+In\+Loop().
+
+
+
+参考自 Connector\+::set\+New\+Connection\+Callback().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Connector_a22ee094ca3f45aa4156b97d34fe678bf_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{classmuduo_1_1Connector_a22ee094ca3f45aa4156b97d34fe678bf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Connector_a6a23d487c31355d8663ccdd4cbf4f499}\label{classmuduo_1_1Connector_a6a23d487c31355d8663ccdd4cbf4f499}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!retry@{retry}}
+\index{retry@{retry}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{retry()}{retry()}}
+{\footnotesize\ttfamily void retry (\begin{DoxyParamCaption}\item[{int}]{sockfd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Connector.\+cc 第 158 行定义.
+
+
+
+参考 muduo\+::sockets\+::close(), Connector\+::connect\+\_\+, Connector\+::k\+Disconnected, Connector\+::k\+Max\+Retry\+Delay\+Ms, L\+O\+G\+\_\+\+D\+E\+B\+UG, L\+O\+G\+\_\+\+I\+N\+FO, Connector\+::loop\+\_\+, Connector\+::retry\+Delay\+Ms\+\_\+, Event\+Loop\+::run\+After(), Connector\+::server\+Addr\+\_\+, Connector\+::set\+State(), Connector\+::start\+In\+Loop(), Connector\+::timer\+Id\+\_\+ , 以及 Inet\+Address\+::to\+Host\+Port().
+
+
+
+参考自 Connector\+::connect(), Connector\+::handle\+Error(), Connector\+::handle\+Write() , 以及 Connector\+::set\+State().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Connector_a6a23d487c31355d8663ccdd4cbf4f499_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Connector_a6a23d487c31355d8663ccdd4cbf4f499_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Connector_a1d3e517d3d87311eb4cb5d51d5a0ce81}\label{classmuduo_1_1Connector_a1d3e517d3d87311eb4cb5d51d5a0ce81}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!server\+Address@{server\+Address}}
+\index{server\+Address@{server\+Address}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{server\+Address()}{serverAddress()}}
+{\footnotesize\ttfamily const \hyperlink{classmuduo_1_1InetAddress}{Inet\+Address}\& server\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Connector.\+h 第 31 行定义.
+
+
+
+参考 Connector\+::server\+Addr\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1Connector_a30908d8d30b5333e6288a7430d598cb1}\label{classmuduo_1_1Connector_a30908d8d30b5333e6288a7430d598cb1}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!set\+New\+Connection\+Callback@{set\+New\+Connection\+Callback}}
+\index{set\+New\+Connection\+Callback@{set\+New\+Connection\+Callback}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{set\+New\+Connection\+Callback()}{setNewConnectionCallback()}}
+{\footnotesize\ttfamily void set\+New\+Connection\+Callback (\begin{DoxyParamCaption}\item[{const \hyperlink{classmuduo_1_1Connector_a74d0c9e28e41cb2b3310e0c1d3671710}{New\+Connection\+Callback} \&}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Connector.\+h 第 25 行定义.
+
+
+
+参考 Connector\+::new\+Connection\+Callback\+\_\+, Connector\+::restart(), Connector\+::start() , 以及 Connector\+::stop().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Connector_a30908d8d30b5333e6288a7430d598cb1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Connector_ab987a8e9ac6b0ad825674ec2131921af}\label{classmuduo_1_1Connector_ab987a8e9ac6b0ad825674ec2131921af}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!set\+State@{set\+State}}
+\index{set\+State@{set\+State}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{set\+State()}{setState()}}
+{\footnotesize\ttfamily void set\+State (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Connector_a808e5cd4979462d3bbe3070d7d147444}{States}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 Connector.\+h 第 38 行定义.
+
+
+
+参考 Connector\+::connect(), Connector\+::connecting(), Connector\+::handle\+Error(), Connector\+::handle\+Write(), Connector\+::remove\+And\+Reset\+Channel(), Connector\+::reset\+Channel(), Connector\+::retry(), Connector\+::start\+In\+Loop() , 以及 Connector\+::state\+\_\+.
+
+
+
+参考自 Connector\+::connecting(), Connector\+::handle\+Write(), Connector\+::restart() , 以及 Connector\+::retry().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Connector_ab987a8e9ac6b0ad825674ec2131921af_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Connector_ab987a8e9ac6b0ad825674ec2131921af_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Connector_a60de64d75454385b23995437f1d72669}\label{classmuduo_1_1Connector_a60de64d75454385b23995437f1d72669}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!start@{start}}
+\index{start@{start}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 Connector.\+cc 第 33 行定义.
+
+
+
+参考 Connector\+::connect\+\_\+, Connector\+::loop\+\_\+, Event\+Loop\+::run\+In\+Loop() , 以及 Connector\+::start\+In\+Loop().
+
+
+
+参考自 Connector\+::set\+New\+Connection\+Callback().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Connector_a60de64d75454385b23995437f1d72669_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{classmuduo_1_1Connector_a60de64d75454385b23995437f1d72669_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Connector_ad289b54db652dcb10f835f3613e68fdb}\label{classmuduo_1_1Connector_ad289b54db652dcb10f835f3613e68fdb}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!start\+In\+Loop@{start\+In\+Loop}}
+\index{start\+In\+Loop@{start\+In\+Loop}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{start\+In\+Loop()}{startInLoop()}}
+{\footnotesize\ttfamily void start\+In\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Connector.\+cc 第 38 行定义.
+
+
+
+参考 Event\+Loop\+::assert\+In\+Loop\+Thread(), Connector\+::connect(), Connector\+::connect\+\_\+, Connector\+::k\+Disconnected, L\+O\+G\+\_\+\+D\+E\+B\+UG, Connector\+::loop\+\_\+ , 以及 Connector\+::state\+\_\+.
+
+
+
+参考自 Connector\+::restart(), Connector\+::retry(), Connector\+::set\+State() , 以及 Connector\+::start().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Connector_ad289b54db652dcb10f835f3613e68fdb_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Connector_ad289b54db652dcb10f835f3613e68fdb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Connector_a8c528baf37154d347366083f0f816846}\label{classmuduo_1_1Connector_a8c528baf37154d347366083f0f816846}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!stop@{stop}}
+\index{stop@{stop}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 Connector.\+cc 第 94 行定义.
+
+
+
+参考 Event\+Loop\+::cancel(), Connector\+::connect\+\_\+, Connector\+::loop\+\_\+ , 以及 Connector\+::timer\+Id\+\_\+.
+
+
+
+参考自 Connector\+::set\+New\+Connection\+Callback().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{classmuduo_1_1Connector_a8c528baf37154d347366083f0f816846_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{classmuduo_1_1Connector_a8c528baf37154d347366083f0f816846_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1Connector_a8375a127884b4155e4d0ff8604bb0b9a}\label{classmuduo_1_1Connector_a8375a127884b4155e4d0ff8604bb0b9a}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!channel\+\_\+@{channel\+\_\+}}
+\index{channel\+\_\+@{channel\+\_\+}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{channel\+\_\+}{channel\_}}
+{\footnotesize\ttfamily boost\+::scoped\+\_\+ptr$<$\hyperlink{classmuduo_1_1Channel}{Channel}$>$ channel\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Connector.\+h 第 52 行定义.
+
+
+
+参考自 Connector\+::connecting(), Connector\+::remove\+And\+Reset\+Channel(), Connector\+::reset\+Channel() , 以及 Connector\+::$\sim$\+Connector().
+
+\mbox{\Hypertarget{classmuduo_1_1Connector_ab4b9ce5dfde7fe6c5954a376aac00190}\label{classmuduo_1_1Connector_ab4b9ce5dfde7fe6c5954a376aac00190}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!connect\+\_\+@{connect\+\_\+}}
+\index{connect\+\_\+@{connect\+\_\+}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{connect\+\_\+}{connect\_}}
+{\footnotesize\ttfamily bool connect\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Connector.\+h 第 50 行定义.
+
+
+
+参考自 Connector\+::handle\+Write(), Connector\+::restart(), Connector\+::retry(), Connector\+::start(), Connector\+::start\+In\+Loop() , 以及 Connector\+::stop().
+
+\mbox{\Hypertarget{classmuduo_1_1Connector_abaa28ed649f43db991c045b039984aa2}\label{classmuduo_1_1Connector_abaa28ed649f43db991c045b039984aa2}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!k\+Init\+Retry\+Delay\+Ms@{k\+Init\+Retry\+Delay\+Ms}}
+\index{k\+Init\+Retry\+Delay\+Ms@{k\+Init\+Retry\+Delay\+Ms}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{k\+Init\+Retry\+Delay\+Ms}{kInitRetryDelayMs}}
+{\footnotesize\ttfamily const int k\+Init\+Retry\+Delay\+Ms = 500\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 Connector.\+h 第 36 行定义.
+
+
+
+参考自 Connector\+::restart().
+
+\mbox{\Hypertarget{classmuduo_1_1Connector_a4238c23fd75230d429c3273ef4a91bef}\label{classmuduo_1_1Connector_a4238c23fd75230d429c3273ef4a91bef}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!k\+Max\+Retry\+Delay\+Ms@{k\+Max\+Retry\+Delay\+Ms}}
+\index{k\+Max\+Retry\+Delay\+Ms@{k\+Max\+Retry\+Delay\+Ms}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{k\+Max\+Retry\+Delay\+Ms}{kMaxRetryDelayMs}}
+{\footnotesize\ttfamily const int k\+Max\+Retry\+Delay\+Ms = 30$\ast$1000\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 Connector.\+h 第 35 行定义.
+
+
+
+参考自 Connector\+::retry().
+
+\mbox{\Hypertarget{classmuduo_1_1Connector_a19968f50018d32ac31f5cba0195591ac}\label{classmuduo_1_1Connector_a19968f50018d32ac31f5cba0195591ac}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!loop\+\_\+@{loop\+\_\+}}
+\index{loop\+\_\+@{loop\+\_\+}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{loop\+\_\+}{loop\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1EventLoop}{Event\+Loop}$\ast$ loop\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Connector.\+h 第 48 行定义.
+
+
+
+参考自 Connector\+::connecting(), Connector\+::remove\+And\+Reset\+Channel(), Connector\+::restart(), Connector\+::retry(), Connector\+::start(), Connector\+::start\+In\+Loop(), Connector\+::stop() , 以及 Connector\+::$\sim$\+Connector().
+
+\mbox{\Hypertarget{classmuduo_1_1Connector_a315d8356d0420fe5a89dc67f49c82617}\label{classmuduo_1_1Connector_a315d8356d0420fe5a89dc67f49c82617}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!new\+Connection\+Callback\+\_\+@{new\+Connection\+Callback\+\_\+}}
+\index{new\+Connection\+Callback\+\_\+@{new\+Connection\+Callback\+\_\+}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{new\+Connection\+Callback\+\_\+}{newConnectionCallback\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Connector_a74d0c9e28e41cb2b3310e0c1d3671710}{New\+Connection\+Callback} new\+Connection\+Callback\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Connector.\+h 第 53 行定义.
+
+
+
+参考自 Connector\+::handle\+Write() , 以及 Connector\+::set\+New\+Connection\+Callback().
+
+\mbox{\Hypertarget{classmuduo_1_1Connector_a22e73d8243605061d5201effe673e2bc}\label{classmuduo_1_1Connector_a22e73d8243605061d5201effe673e2bc}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!retry\+Delay\+Ms\+\_\+@{retry\+Delay\+Ms\+\_\+}}
+\index{retry\+Delay\+Ms\+\_\+@{retry\+Delay\+Ms\+\_\+}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{retry\+Delay\+Ms\+\_\+}{retryDelayMs\_}}
+{\footnotesize\ttfamily int retry\+Delay\+Ms\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Connector.\+h 第 54 行定义.
+
+
+
+参考自 Connector\+::restart() , 以及 Connector\+::retry().
+
+\mbox{\Hypertarget{classmuduo_1_1Connector_a70de848a60434ed7c6f33ba257fdbbfe}\label{classmuduo_1_1Connector_a70de848a60434ed7c6f33ba257fdbbfe}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!server\+Addr\+\_\+@{server\+Addr\+\_\+}}
+\index{server\+Addr\+\_\+@{server\+Addr\+\_\+}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{server\+Addr\+\_\+}{serverAddr\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1InetAddress}{Inet\+Address} server\+Addr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Connector.\+h 第 49 行定义.
+
+
+
+参考自 Connector\+::connect(), Connector\+::retry() , 以及 Connector\+::server\+Address().
+
+\mbox{\Hypertarget{classmuduo_1_1Connector_a69e113af7e38a28d7e9cbcd1dc0836e3}\label{classmuduo_1_1Connector_a69e113af7e38a28d7e9cbcd1dc0836e3}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!state\+\_\+@{state\+\_\+}}
+\index{state\+\_\+@{state\+\_\+}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{state\+\_\+}{state\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Connector_a808e5cd4979462d3bbe3070d7d147444}{States} state\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Connector.\+h 第 51 行定义.
+
+
+
+参考自 Connector\+::handle\+Error(), Connector\+::handle\+Write(), Connector\+::set\+State() , 以及 Connector\+::start\+In\+Loop().
+
+\mbox{\Hypertarget{classmuduo_1_1Connector_a6e461b999972c0c7798da0070b41d931}\label{classmuduo_1_1Connector_a6e461b999972c0c7798da0070b41d931}} 
+\index{muduo\+::\+Connector@{muduo\+::\+Connector}!timer\+Id\+\_\+@{timer\+Id\+\_\+}}
+\index{timer\+Id\+\_\+@{timer\+Id\+\_\+}!muduo\+::\+Connector@{muduo\+::\+Connector}}
+\subsubsection{\texorpdfstring{timer\+Id\+\_\+}{timerId\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1TimerId}{Timer\+Id} timer\+Id\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Connector.\+h 第 55 行定义.
+
+
+
+参考自 Connector\+::retry(), Connector\+::stop() , 以及 Connector\+::$\sim$\+Connector().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{Connector_8h}{Connector.\+h}\item 
+src/\hyperlink{Connector_8cc}{Connector.\+cc}\end{DoxyCompactItemize}

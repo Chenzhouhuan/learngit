@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: lib/Callbacks.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Callbacks_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Callbacks.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Callbacks_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MUDUO_NET_CALLBACKS_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MUDUO_NET_CALLBACKS_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;boost/function.hpp&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;boost/shared_ptr.hpp&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Timestamp_8h.html">muduo/base/Timestamp.h</a>&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemuduo.html">muduo</a>{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// All client visible callbacks go here.</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>Buffer;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespacemuduo.html#a40c45128e9700d337d92f3cbb8dd4a0a">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmuduo_1_1TcpConnection.html">TcpConnection</a>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">typedef</span> boost::shared_ptr&lt;TcpConnection&gt; <a class="code" href="namespacemuduo.html#a40c45128e9700d337d92f3cbb8dd4a0a">TcpConnectionPtr</a>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespacemuduo.html#a5f7453c2a15825e79bddf5deaec707bf">   17</a></span>&#160;<span class="keyword">typedef</span> boost::function&lt;void()&gt; <a class="code" href="namespacemuduo.html#a5f7453c2a15825e79bddf5deaec707bf">TimerCallback</a>;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespacemuduo.html#ac7f7b0c9c9e96123dfea3fe120a2c404">   18</a></span>&#160;<span class="keyword">typedef</span> boost::function&lt;void(const TcpConnectionPtr&amp;)&gt; <a class="code" href="namespacemuduo.html#ac7f7b0c9c9e96123dfea3fe120a2c404">ConnectionCallback</a>;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespacemuduo.html#ab8a96fa483cffe150618e01058e6fc1b">   19</a></span>&#160;<span class="keyword">typedef</span> boost::function&lt;void(const TcpConnectionPtr&amp;, Buffer* buf,Timestamp)&gt; <a class="code" href="namespacemuduo.html#ab8a96fa483cffe150618e01058e6fc1b">MessageCallback</a>;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="namespacemuduo.html#a605eda27d048a69607942b95735d7087">   20</a></span>&#160;<span class="keyword">typedef</span> boost::function&lt;void (const TcpConnectionPtr&amp;)&gt; <a class="code" href="namespacemuduo.html#a605eda27d048a69607942b95735d7087">WriteCompleteCallback</a>;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="namespacemuduo.html#ab2469aa3fe08794ee43a3d8f69bff30f">   21</a></span>&#160;<span class="keyword">typedef</span> boost::function&lt;void(const TcpConnectionPtr&amp;)&gt; <a class="code" href="namespacemuduo.html#ab2469aa3fe08794ee43a3d8f69bff30f">CloseCallback</a>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif //MUDUO_NET_CALLBACKS_H</span></div><div class="ttc" id="namespacemuduo_html_a40c45128e9700d337d92f3cbb8dd4a0a"><div class="ttname"><a href="namespacemuduo.html#a40c45128e9700d337d92f3cbb8dd4a0a">muduo::TcpConnectionPtr</a></div><div class="ttdeci">boost::shared_ptr&lt; TcpConnection &gt; TcpConnectionPtr</div><div class="ttdef"><b>Definition:</b> <a href="Callbacks_8h_source.html#l00014">Callbacks.h:14</a></div></div>
+<div class="ttc" id="namespacemuduo_html_ac7f7b0c9c9e96123dfea3fe120a2c404"><div class="ttname"><a href="namespacemuduo.html#ac7f7b0c9c9e96123dfea3fe120a2c404">muduo::ConnectionCallback</a></div><div class="ttdeci">boost::function&lt; void(const TcpConnectionPtr &amp;)&gt; ConnectionCallback</div><div class="ttdef"><b>Definition:</b> <a href="Callbacks_8h_source.html#l00018">Callbacks.h:18</a></div></div>
+<div class="ttc" id="namespacemuduo_html"><div class="ttname"><a href="namespacemuduo.html">muduo</a></div><div class="ttdef"><b>Definition:</b> <a href="Acceptor_8h_source.html#l00010">Acceptor.h:10</a></div></div>
+<div class="ttc" id="classmuduo_1_1TcpConnection_html"><div class="ttname"><a href="classmuduo_1_1TcpConnection.html">muduo::TcpConnection</a></div><div class="ttdef"><b>Definition:</b> <a href="TcpConnection_8h_source.html#l00023">TcpConnection.h:23</a></div></div>
+<div class="ttc" id="namespacemuduo_html_ab8a96fa483cffe150618e01058e6fc1b"><div class="ttname"><a href="namespacemuduo.html#ab8a96fa483cffe150618e01058e6fc1b">muduo::MessageCallback</a></div><div class="ttdeci">boost::function&lt; void(const TcpConnectionPtr &amp;, Buffer *buf, Timestamp)&gt; MessageCallback</div><div class="ttdef"><b>Definition:</b> <a href="Callbacks_8h_source.html#l00019">Callbacks.h:19</a></div></div>
+<div class="ttc" id="namespacemuduo_html_ab2469aa3fe08794ee43a3d8f69bff30f"><div class="ttname"><a href="namespacemuduo.html#ab2469aa3fe08794ee43a3d8f69bff30f">muduo::CloseCallback</a></div><div class="ttdeci">boost::function&lt; void(const TcpConnectionPtr &amp;)&gt; CloseCallback</div><div class="ttdef"><b>Definition:</b> <a href="Callbacks_8h_source.html#l00021">Callbacks.h:21</a></div></div>
+<div class="ttc" id="namespacemuduo_html_a605eda27d048a69607942b95735d7087"><div class="ttname"><a href="namespacemuduo.html#a605eda27d048a69607942b95735d7087">muduo::WriteCompleteCallback</a></div><div class="ttdeci">boost::function&lt; void(const TcpConnectionPtr &amp;)&gt; WriteCompleteCallback</div><div class="ttdef"><b>Definition:</b> <a href="Callbacks_8h_source.html#l00020">Callbacks.h:20</a></div></div>
+<div class="ttc" id="Timestamp_8h_html"><div class="ttname"><a href="Timestamp_8h.html">Timestamp.h</a></div></div>
+<div class="ttc" id="namespacemuduo_html_a5f7453c2a15825e79bddf5deaec707bf"><div class="ttname"><a href="namespacemuduo.html#a5f7453c2a15825e79bddf5deaec707bf">muduo::TimerCallback</a></div><div class="ttdeci">boost::function&lt; void()&gt; TimerCallback</div><div class="ttdef"><b>Definition:</b> <a href="Callbacks_8h_source.html#l00017">Callbacks.h:17</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="Callbacks_8h.html">Callbacks.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

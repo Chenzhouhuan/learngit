@@ -1,0 +1,10 @@
+<map id="readInt64" name="readInt64">
+<area shape="rect" id="node2" href="$classmuduo_1_1net_1_1Buffer.html#a78f18c2f695bc9fb75781596a16d9416" title="peekInt64" alt="" coords="147,85,234,111"/>
+<area shape="rect" id="node7" href="$classmuduo_1_1net_1_1Buffer.html#a31eaec053434837ca42b6abc4319f0ee" title="retrieveInt64" alt="" coords="137,147,244,174"/>
+<area shape="rect" id="node3" href="$namespacemuduo_1_1net_1_1sockets.html#a590d67f0a8d4f8ff19462c08ebfb99b0" title="muduo::net::sockets\l::networkToHost64" alt="" coords="292,5,447,47"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="342,71,397,98"/>
+<area shape="rect" id="node6" href="$classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="495,122,611,149"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="523,71,582,98"/>
+<area shape="rect" id="node8" href="$classmuduo_1_1net_1_1Buffer.html#a25a9cdb4fcb89f6e3ff071517bdc09e8" title="retrieve" alt="" coords="333,173,406,199"/>
+<area shape="rect" id="node9" href="$classmuduo_1_1net_1_1Buffer.html#af505ce71f8935bcfaa932d304c295173" title="retrieveAll" alt="" coords="507,173,598,199"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="set_index" name="set_index">
+<area shape="rect" id="node2" href="$classmuduo_1_1EPoller.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="muduo::EPoller::removeChannel" alt="" coords="139,5,369,32"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1Poller.html#acaa4a191936aacf608d279a6f343d533" title="muduo::Poller::updateChannel" alt="" coords="145,56,363,83"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1EPoller.html#acaa4a191936aacf608d279a6f343d533" title="muduo::EPoller::updateChannel" alt="" coords="141,107,367,133"/>
+</map>

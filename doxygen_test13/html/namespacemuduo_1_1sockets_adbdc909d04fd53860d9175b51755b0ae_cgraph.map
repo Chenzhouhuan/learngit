@@ -1,0 +1,17 @@
+<map id="toHostPort" name="toHostPort">
+<area shape="rect" id="node2" href="$namespacemuduo_1_1sockets.html#aeeb31294e44fee5ecfc4b32f420f6d5d" title="networkToHost16" alt="" coords="144,220,279,247"/>
+<area shape="rect" id="node3" href="$namespacemuduo_1_1sockets.html#a5fe7cd11cb2662939917285c51b3f992" title="accept" alt="" coords="601,5,666,32"/>
+<area shape="rect" id="node5" href="$namespacemuduo_1_1sockets.html#a8fe4065cd24e49e158dd1c16cd693ae1" title="bindOrDie" alt="" coords="590,68,677,95"/>
+<area shape="rect" id="node6" href="$namespacemuduo_1_1sockets.html#acb275b6d8b5979229bae664cb7ee14da" title="close" alt="" coords="389,93,445,120"/>
+<area shape="rect" id="node7" href="$namespacemuduo_1_1sockets.html#a349a8d2188d9632596b2e5213cb16436" title="connect" alt="" coords="597,144,670,171"/>
+<area shape="rect" id="node8" href="$namespacemuduo_1_1sockets.html#a91269e56d86b2e78e693b330e5c665aa" title="createNonblockingOrDie" alt="" coords="327,195,508,221"/>
+<area shape="rect" id="node9" href="$namespacemuduo_1_1sockets.html#ae40b8bfde260835c9034bfaea0fb4ee0" title="fromHostPort" alt="" coords="363,245,472,272"/>
+<area shape="rect" id="node11" href="$namespacemuduo_1_1sockets.html#a80bd626331e049209f59d11c80a8b539" title="getSocketError" alt="" coords="358,296,477,323"/>
+<area shape="rect" id="node12" href="$namespacemuduo_1_1sockets.html#ae3b7d08b5cb176e9d67580a0a1fd57fb" title="isSelfConnect" alt="" coords="362,347,473,373"/>
+<area shape="rect" id="node15" href="$namespacemuduo_1_1sockets.html#a379cec5f383764a3696d9615bd344529" title="listenOrDie" alt="" coords="370,397,465,424"/>
+<area shape="rect" id="node16" href="$namespacemuduo_1_1sockets.html#a549ec5e856fec6f111aeb481cca9e622" title="shutdownWrite" alt="" coords="358,448,477,475"/>
+<area shape="rect" id="node4" href="$namespacemuduo_1_1net_1_1sockets.html#ad69bf980a58ef6798c4e1dbe5497d52c" title="muduo::net::sockets\l::sockaddr_cast" alt="" coords="759,137,913,178"/>
+<area shape="rect" id="node10" href="$namespacemuduo_1_1net_1_1sockets.html#ae117e4d96b27b387f167e75fb17c1834" title="muduo::net::sockets\l::hostToNetwork16" alt="" coords="556,230,711,271"/>
+<area shape="rect" id="node13" href="$namespacemuduo_1_1sockets.html#a4b4793e2d3f77da7bab38cfb52274075" title="getLocalAddr" alt="" coords="580,296,687,323"/>
+<area shape="rect" id="node14" href="$namespacemuduo_1_1sockets.html#ad095a2bf0c44507c945d04f8346f2817" title="getPeerAddr" alt="" coords="582,347,685,373"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="update" name="update">
+<area shape="rect" id="node2" href="$classmuduo_1_1net_1_1Channel.html#a238885c747f586049b766fa4fcd5ec12" title="disableAll" alt="" coords="137,5,224,32"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1net_1_1Channel.html#aa27263032d6b3a79edb4e99537293c37" title="disableReading" alt="" coords="120,56,241,83"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1net_1_1Channel.html#a97cbc4c0678234e62a4a9d906e064cdf" title="disableWriting" alt="" coords="123,107,238,133"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1net_1_1Channel.html#ad31f735a6d5ad83203d977ad8eafb223" title="enableReading" alt="" coords="121,157,240,184"/>
+<area shape="rect" id="node6" href="$classmuduo_1_1net_1_1Channel.html#af1dff4317f202ed06097a1425a4dca6d" title="enableWriting" alt="" coords="125,208,237,235"/>
+<area shape="rect" id="node7" href="$classmuduo_1_1net_1_1Channel.html#a2e24e2ab7ada4682fdf49cc835d85e8d" title="ownerLoop" alt="" coords="134,259,227,285"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="accept" name="accept">
+<area shape="rect" id="node2" href="$namespacemuduo_1_1sockets.html#a5fe7cd11cb2662939917285c51b3f992" title="muduo::sockets::accept" alt="" coords="119,13,295,39"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1InetAddress.html#ac40372dd403192210eddb5e699a420c7" title="muduo::InetAddress\l::setSockAddrInet" alt="" coords="131,64,283,105"/>
+<area shape="rect" id="node3" href="$namespacemuduo_1_1net_1_1sockets.html#ad69bf980a58ef6798c4e1dbe5497d52c" title="muduo::net::sockets\l::sockaddr_cast" alt="" coords="343,5,497,47"/>
+</map>

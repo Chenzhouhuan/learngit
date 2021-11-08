@@ -1,0 +1,2069 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: TcpConnection类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmuduo_1_1net_1_1TcpConnection.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-types">Private 类型</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classmuduo_1_1net_1_1TcpConnection-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">TcpConnection类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a>&gt;</code></p>
+<div class="dynheader">
+类 TcpConnection 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1TcpConnection__inherit__graph.png" border="0" usemap="#TcpConnection_inherit__map" alt="Inheritance graph"/></div>
+<map name="TcpConnection_inherit__map" id="TcpConnection_inherit__map">
+<area shape="rect" id="node2" href="classmuduo_1_1noncopyable.html" title="{noncopyable\n||+ noncopyable()\l+ operator=()\l# noncopyable()\l# ~noncopyable()\l}" alt="" coords="5,5,147,127"/>
+</map>
+</div>
+<div class="dynheader">
+TcpConnection 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1TcpConnection__coll__graph.png" border="0" usemap="#TcpConnection_coll__map" alt="Collaboration graph"/></div>
+<map name="TcpConnection_coll__map" id="TcpConnection_coll__map">
+<area shape="rect" id="node2" href="classmuduo_1_1noncopyable.html" title="{noncopyable\n||+ noncopyable()\l+ operator=()\l# noncopyable()\l# ~noncopyable()\l}" alt="" coords="775,213,917,334"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1EventLoop.html" title="{EventLoop\n|&#45; looping_\l&#45; quit_\l&#45; eventHandling_\l&#45; callingPendingFunctors_\l&#45; iteration_\l&#45; threadId_\l&#45; poller_\l&#45; timerQueue_\l&#45; wakeupFd_\l&#45; wakeupChannel_\l&#45; context_\l&#45; activeChannels_\l&#45; mutex_\l|+ EventLoop()\l+ ~EventLoop()\l+ loop()\l+ quit()\l+ pollReturnTime()\l+ iteration()\l+ runInLoop()\l+ queueInLoop()\l+ queueSize()\l+ runAt()\l和 13 更多...\l+ getEventLoopOfCurrentThread()\l&#45; abortNotInLoopThread()\l&#45; handleRead()\l&#45; doPendingFunctors()\l&#45; printActiveChannels()\l&#45; GUARDED_BY()\l}" alt="" coords="724,789,968,1277"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Channel.html" title="{Channel\n|&#45; fd_\l&#45; events_\l&#45; revents_\l&#45; index_\l&#45; logHup_\l&#45; tie_\l&#45; tied_\l&#45; eventHandling_\l&#45; addedToLoop_\l&#45; readCallback_\l&#45; writeCallback_\l&#45; closeCallback_\l&#45; errorCallback_\l&#45; kNoneEvent\l&#45; kReadEvent\l&#45; kWriteEvent\l|+ Channel()\l+ ~Channel()\l+ handleEvent()\l+ setReadCallback()\l+ setWriteCallback()\l+ setCloseCallback()\l+ setErrorCallback()\l+ tie()\l+ fd()\l+ events()\l和 16 更多...\l&#45; update()\l&#45; handleEventWithGuard()\l&#45; eventsToString()\l}" alt="" coords="751,1369,941,1857"/>
+<area shape="rect" id="node6" href="classmuduo_1_1Timestamp.html" title="{Timestamp\n|+ kMicroSecondsPerSecond\l&#45; microSecondsSinceEpoch_\l|+ Timestamp()\l+ Timestamp()\l+ swap()\l+ toString()\l+ toFormattedString()\l+ valid()\l+ microSecondsSinceEpoch()\l+ secondsSinceEpoch()\l+ now()\l+ invalid()\l+ fromUnixTime()\l+ fromUnixTime()\l}" alt="" coords="264,147,476,400"/>
+<area shape="rect" id="node7" href="classmuduo_1_1copyable.html" title="{copyable\n||# copyable()\l# ~copyable()\l}" alt="" coords="149,5,266,97"/>
+<area shape="rect" id="node10" href="classmuduo_1_1net_1_1InetAddress.html" title="{InetAddress\n|+ addr_\l+ addr6_\l&#45; @1\l|+ InetAddress()\l+ InetAddress()\l+ InetAddress()\l+ InetAddress()\l+ family()\l+ toIp()\l+ toIpPort()\l+ toPort()\l+ getSockAddr()\l+ setSockAddrInet6()\l+ ipNetEndian()\l+ portNetEndian()\l+ setScopeId()\l+ resolve()\l}" alt="" coords="5,446,167,743"/>
+<area shape="rect" id="node11" href="classmuduo_1_1net_1_1Buffer.html" title="{Buffer\n|+ kCheapPrepend\l+ kInitialSize\l&#45; buffer_\l&#45; readerIndex_\l&#45; writerIndex_\l&#45; kCRLF\l|+ Buffer()\l+ swap()\l+ readableBytes()\l+ writableBytes()\l+ prependableBytes()\l+ peek()\l+ findCRLF()\l+ findCRLF()\l+ findEOL()\l+ findEOL()\l和 38 更多...\l&#45; begin()\l&#45; begin()\l&#45; makeSpace()\l}" alt="" coords="174,424,339,765"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a2603ff299e8c8769208e266171558556"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a2603ff299e8c8769208e266171558556">TcpConnection</a> (<a class="el" href="classmuduo_1_1net_1_1EventLoop.html">EventLoop</a> *loop, const string &amp;<a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a47f4f0a66d5a539e687100dc65462ced">name</a>, int sockfd, const <a class="el" href="classmuduo_1_1net_1_1InetAddress.html">InetAddress</a> &amp;localAddr, const <a class="el" href="classmuduo_1_1net_1_1InetAddress.html">InetAddress</a> &amp;peerAddr)</td></tr>
+<tr class="separator:a2603ff299e8c8769208e266171558556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a3551d2f9a37ccec8f9cb913e73878a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a0a3551d2f9a37ccec8f9cb913e73878a">~TcpConnection</a> ()</td></tr>
+<tr class="separator:a0a3551d2f9a37ccec8f9cb913e73878a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef1cbfe0592e8196e6c81b4db82a39ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1net_1_1EventLoop.html">EventLoop</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#aef1cbfe0592e8196e6c81b4db82a39ce">getLoop</a> () const</td></tr>
+<tr class="separator:aef1cbfe0592e8196e6c81b4db82a39ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f4f0a66d5a539e687100dc65462ced"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a47f4f0a66d5a539e687100dc65462ced">name</a> () const</td></tr>
+<tr class="separator:a47f4f0a66d5a539e687100dc65462ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4044c56d2e5bcc7549f5f8f2f2eae975"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmuduo_1_1net_1_1InetAddress.html">InetAddress</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a4044c56d2e5bcc7549f5f8f2f2eae975">localAddress</a> () const</td></tr>
+<tr class="separator:a4044c56d2e5bcc7549f5f8f2f2eae975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fcf3842d90c471bb6939afd04bba128"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmuduo_1_1net_1_1InetAddress.html">InetAddress</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a4fcf3842d90c471bb6939afd04bba128">peerAddress</a> () const</td></tr>
+<tr class="separator:a4fcf3842d90c471bb6939afd04bba128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0fd96bc25e3d509fb54028c2e4b91f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#aa0fd96bc25e3d509fb54028c2e4b91f6">connected</a> () const</td></tr>
+<tr class="separator:aa0fd96bc25e3d509fb54028c2e4b91f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69413dc574470cdba5981d3e05250f7b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a69413dc574470cdba5981d3e05250f7b">disconnected</a> () const</td></tr>
+<tr class="separator:a69413dc574470cdba5981d3e05250f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1de4ddf8b40138039f3382ec9c4a0366"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a1de4ddf8b40138039f3382ec9c4a0366">getTcpInfo</a> (struct tcp_info *) const</td></tr>
+<tr class="separator:a1de4ddf8b40138039f3382ec9c4a0366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60514adf97e4a2d28f74ff39a5275bde"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a60514adf97e4a2d28f74ff39a5275bde">getTcpInfoString</a> () const</td></tr>
+<tr class="separator:a60514adf97e4a2d28f74ff39a5275bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c8ef4c9c94e6ccd8cb7233d6ecb9834"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a9c8ef4c9c94e6ccd8cb7233d6ecb9834">send</a> (const void *<a class="el" href="test13_8cc.html#a36bd74109f547f7f8198faf5a12d2879">message</a>, int len)</td></tr>
+<tr class="separator:a9c8ef4c9c94e6ccd8cb7233d6ecb9834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6204afa3a5014326827f59119b62e0f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a6204afa3a5014326827f59119b62e0f2">send</a> (const <a class="el" href="classmuduo_1_1StringPiece.html">StringPiece</a> &amp;<a class="el" href="test13_8cc.html#a36bd74109f547f7f8198faf5a12d2879">message</a>)</td></tr>
+<tr class="separator:a6204afa3a5014326827f59119b62e0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d6542b89b04de2d77fc25b34ccb9dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a92d6542b89b04de2d77fc25b34ccb9dc">send</a> (<a class="el" href="classmuduo_1_1net_1_1Buffer.html">Buffer</a> *<a class="el" href="test13_8cc.html#a36bd74109f547f7f8198faf5a12d2879">message</a>)</td></tr>
+<tr class="separator:a92d6542b89b04de2d77fc25b34ccb9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7861ee1569802186a619778efc85af13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a7861ee1569802186a619778efc85af13">shutdown</a> ()</td></tr>
+<tr class="separator:a7861ee1569802186a619778efc85af13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba4cd267f7415c7ae91516b4545eda4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a0ba4cd267f7415c7ae91516b4545eda4">forceClose</a> ()</td></tr>
+<tr class="separator:a0ba4cd267f7415c7ae91516b4545eda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1400e984896abdc7b716ebaa8a6ea694"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a1400e984896abdc7b716ebaa8a6ea694">forceCloseWithDelay</a> (double seconds)</td></tr>
+<tr class="separator:a1400e984896abdc7b716ebaa8a6ea694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7419d5072b837a2ba3cc5aac85015212"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a7419d5072b837a2ba3cc5aac85015212">setTcpNoDelay</a> (bool on)</td></tr>
+<tr class="separator:a7419d5072b837a2ba3cc5aac85015212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb6cbd3d3abf25782d51457ab157b24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a2fb6cbd3d3abf25782d51457ab157b24">startRead</a> ()</td></tr>
+<tr class="separator:a2fb6cbd3d3abf25782d51457ab157b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36b0d441712db3b0e94cead68e9ff10a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a36b0d441712db3b0e94cead68e9ff10a">stopRead</a> ()</td></tr>
+<tr class="separator:a36b0d441712db3b0e94cead68e9ff10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1585484cec92cacd15885c798456205"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#ad1585484cec92cacd15885c798456205">isReading</a> () const</td></tr>
+<tr class="separator:ad1585484cec92cacd15885c798456205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a332ba7a521a446572051bc6939f4c4fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a332ba7a521a446572051bc6939f4c4fa">setContext</a> (const boost::any &amp;context)</td></tr>
+<tr class="separator:a332ba7a521a446572051bc6939f4c4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6a547152bf0e64f8e18dc7146094e1f"><td class="memItemLeft" align="right" valign="top">const boost::any &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#aa6a547152bf0e64f8e18dc7146094e1f">getContext</a> () const</td></tr>
+<tr class="separator:aa6a547152bf0e64f8e18dc7146094e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca752855bdbb8cc6b18d05be1286b8f1"><td class="memItemLeft" align="right" valign="top">boost::any *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#aca752855bdbb8cc6b18d05be1286b8f1">getMutableContext</a> ()</td></tr>
+<tr class="separator:aca752855bdbb8cc6b18d05be1286b8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb0008856a8495adb08c8cb7fe65c2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#abbb0008856a8495adb08c8cb7fe65c2c">setConnectionCallback</a> (const <a class="el" href="namespacemuduo_1_1net.html#a78754792e997a13cb10908eb7ec508b2">ConnectionCallback</a> &amp;cb)</td></tr>
+<tr class="separator:abbb0008856a8495adb08c8cb7fe65c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a67f11f92b4cdc6f6c66b861f81cb08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a0a67f11f92b4cdc6f6c66b861f81cb08">setMessageCallback</a> (const <a class="el" href="namespacemuduo_1_1net.html#acaa802028467a41738aeb49699e85285">MessageCallback</a> &amp;cb)</td></tr>
+<tr class="separator:a0a67f11f92b4cdc6f6c66b861f81cb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b31be320453fc8aeae81b25934b43f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a94b31be320453fc8aeae81b25934b43f">setWriteCompleteCallback</a> (const <a class="el" href="namespacemuduo_1_1net.html#a525c3730bfefb763975b035ebc88a63d">WriteCompleteCallback</a> &amp;cb)</td></tr>
+<tr class="separator:a94b31be320453fc8aeae81b25934b43f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad44c03a6a6e2c20c87f2b8d296d42d2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#ad44c03a6a6e2c20c87f2b8d296d42d2b">setHighWaterMarkCallback</a> (const <a class="el" href="namespacemuduo_1_1net.html#a503c5e91d2e84874e83e9a6cbfb4a47b">HighWaterMarkCallback</a> &amp;cb, size_t highWaterMark)</td></tr>
+<tr class="separator:ad44c03a6a6e2c20c87f2b8d296d42d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ba1453f8cf1f70df7cc2d1d0e6a53f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1net_1_1Buffer.html">Buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a7ba1453f8cf1f70df7cc2d1d0e6a53f5">inputBuffer</a> ()</td></tr>
+<tr class="memdesc:a7ba1453f8cf1f70df7cc2d1d0e6a53f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advanced interface  <a href="#a7ba1453f8cf1f70df7cc2d1d0e6a53f5">更多...</a><br /></td></tr>
+<tr class="separator:a7ba1453f8cf1f70df7cc2d1d0e6a53f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c97bb56837570d8964143833ad2e6a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1net_1_1Buffer.html">Buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a0c97bb56837570d8964143833ad2e6a0">outputBuffer</a> ()</td></tr>
+<tr class="separator:a0c97bb56837570d8964143833ad2e6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb32ba0eda160676b4fc98d756ee3515"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#acb32ba0eda160676b4fc98d756ee3515">setCloseCallback</a> (const <a class="el" href="namespacemuduo_1_1net.html#a5a393be65a093bad5f5a6b8340ce8c88">CloseCallback</a> &amp;cb)</td></tr>
+<tr class="memdesc:acb32ba0eda160676b4fc98d756ee3515"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal use only.  <a href="#acb32ba0eda160676b4fc98d756ee3515">更多...</a><br /></td></tr>
+<tr class="separator:acb32ba0eda160676b4fc98d756ee3515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e1f9742dac98a0c3e5a5509920934ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a2e1f9742dac98a0c3e5a5509920934ae">connectEstablished</a> ()</td></tr>
+<tr class="separator:a2e1f9742dac98a0c3e5a5509920934ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde4a0b4bc840b44bfbf326bde562d3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#acde4a0b4bc840b44bfbf326bde562d3e">connectDestroyed</a> ()</td></tr>
+<tr class="separator:acde4a0b4bc840b44bfbf326bde562d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private 类型</h2></td></tr>
+<tr class="memitem:a8cf72f776f4277c8138a1beaf5185325"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a8cf72f776f4277c8138a1beaf5185325">StateE</a> { <a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a8cf72f776f4277c8138a1beaf5185325a5f4e8711c6f39bc392c23dfacf44c953">kDisconnected</a>, 
+<a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a8cf72f776f4277c8138a1beaf5185325adddfdd7363e62a5f443716e15d0bc1ff">kConnecting</a>, 
+<a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a8cf72f776f4277c8138a1beaf5185325acb7fe9fd788a796e7d827c0303dcd405">kConnected</a>, 
+<a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a8cf72f776f4277c8138a1beaf5185325a8fd5c7ab5a7aa063f1072c29b949f558">kDisconnecting</a>
+ }</td></tr>
+<tr class="separator:a8cf72f776f4277c8138a1beaf5185325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:afca05707020dd916739c07555d4769a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#afca05707020dd916739c07555d4769a0">handleRead</a> (<a class="el" href="classmuduo_1_1Timestamp.html">Timestamp</a> receiveTime)</td></tr>
+<tr class="separator:afca05707020dd916739c07555d4769a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1d79ff6580eaced59a900144818150d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#ae1d79ff6580eaced59a900144818150d">handleWrite</a> ()</td></tr>
+<tr class="separator:ae1d79ff6580eaced59a900144818150d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cb2baff35786f9caa991e3c47908d91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a2cb2baff35786f9caa991e3c47908d91">handleClose</a> ()</td></tr>
+<tr class="separator:a2cb2baff35786f9caa991e3c47908d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70b275e63748ddd6da7d2171c540ccff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a70b275e63748ddd6da7d2171c540ccff">handleError</a> ()</td></tr>
+<tr class="separator:a70b275e63748ddd6da7d2171c540ccff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14a35c653309480bcd7320757152a413"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a14a35c653309480bcd7320757152a413">sendInLoop</a> (const <a class="el" href="classmuduo_1_1StringPiece.html">StringPiece</a> &amp;<a class="el" href="test13_8cc.html#a36bd74109f547f7f8198faf5a12d2879">message</a>)</td></tr>
+<tr class="separator:a14a35c653309480bcd7320757152a413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ba157deb66ada06a5527acad42d9fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#ac1ba157deb66ada06a5527acad42d9fc">sendInLoop</a> (const void *<a class="el" href="test13_8cc.html#a36bd74109f547f7f8198faf5a12d2879">message</a>, size_t len)</td></tr>
+<tr class="separator:ac1ba157deb66ada06a5527acad42d9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f988229386dc4e5f80cca96e096e074"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a4f988229386dc4e5f80cca96e096e074">shutdownInLoop</a> ()</td></tr>
+<tr class="separator:a4f988229386dc4e5f80cca96e096e074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57afbf2f587b14c9544d81629527b907"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a57afbf2f587b14c9544d81629527b907">forceCloseInLoop</a> ()</td></tr>
+<tr class="separator:a57afbf2f587b14c9544d81629527b907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cefef7ea6272b740592d9dfecbd6c20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a5cefef7ea6272b740592d9dfecbd6c20">setState</a> (<a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a8cf72f776f4277c8138a1beaf5185325">StateE</a> s)</td></tr>
+<tr class="separator:a5cefef7ea6272b740592d9dfecbd6c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5814262e3c9cdcdeb4b25e9b18f9b44"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#ad5814262e3c9cdcdeb4b25e9b18f9b44">stateToString</a> () const</td></tr>
+<tr class="separator:ad5814262e3c9cdcdeb4b25e9b18f9b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a813d02ba7cf0a0263aca2ae970676f44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a813d02ba7cf0a0263aca2ae970676f44">startReadInLoop</a> ()</td></tr>
+<tr class="separator:a813d02ba7cf0a0263aca2ae970676f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a8c5f0e39e33c4088dbeef5c2a4864"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#ab1a8c5f0e39e33c4088dbeef5c2a4864">stopReadInLoop</a> ()</td></tr>
+<tr class="separator:ab1a8c5f0e39e33c4088dbeef5c2a4864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmuduo_1_1noncopyable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmuduo_1_1noncopyable')"><img src="closed.png" alt="-"/>&#160;Private 成员函数 继承自 <a class="el" href="classmuduo_1_1noncopyable.html">noncopyable</a></td></tr>
+<tr class="memitem:aaefac0158453c4de9989d742a02fdc61 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1noncopyable.html#aaefac0158453c4de9989d742a02fdc61">noncopyable</a> (const <a class="el" href="classmuduo_1_1noncopyable.html">noncopyable</a> &amp;)=delete</td></tr>
+<tr class="separator:aaefac0158453c4de9989d742a02fdc61 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfca16bbe6126971c0c9959e573df923 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1noncopyable.html#adfca16bbe6126971c0c9959e573df923">operator=</a> (const <a class="el" href="classmuduo_1_1noncopyable.html">noncopyable</a> &amp;)=delete</td></tr>
+<tr class="separator:adfca16bbe6126971c0c9959e573df923 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a7cb0757f3a96b9862062e348f20577 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1noncopyable.html#a9a7cb0757f3a96b9862062e348f20577">noncopyable</a> ()=default</td></tr>
+<tr class="separator:a9a7cb0757f3a96b9862062e348f20577 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60dec0098f04c2bedcf32fc41e8bd203 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1noncopyable.html#a60dec0098f04c2bedcf32fc41e8bd203">~noncopyable</a> ()=default</td></tr>
+<tr class="separator:a60dec0098f04c2bedcf32fc41e8bd203 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a19968f50018d32ac31f5cba0195591ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1net_1_1EventLoop.html">EventLoop</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a19968f50018d32ac31f5cba0195591ac">loop_</a></td></tr>
+<tr class="separator:a19968f50018d32ac31f5cba0195591ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a957ab180ea6fccb9f64da8218db44728"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a957ab180ea6fccb9f64da8218db44728">name_</a></td></tr>
+<tr class="separator:a957ab180ea6fccb9f64da8218db44728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cfda1cf6d6cc44073a58722892cca7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a8cf72f776f4277c8138a1beaf5185325">StateE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a4cfda1cf6d6cc44073a58722892cca7d">state_</a></td></tr>
+<tr class="separator:a4cfda1cf6d6cc44073a58722892cca7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b4a188052329d2e29817977476a7e17"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a1b4a188052329d2e29817977476a7e17">reading_</a></td></tr>
+<tr class="separator:a1b4a188052329d2e29817977476a7e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70a8d655d9dbcef5b77137fc3fb5a175"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classmuduo_1_1Socket.html">Socket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a70a8d655d9dbcef5b77137fc3fb5a175">socket_</a></td></tr>
+<tr class="separator:a70a8d655d9dbcef5b77137fc3fb5a175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a633bc86acce0a144116c7d4002e256e2"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classmuduo_1_1net_1_1Channel.html">Channel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a633bc86acce0a144116c7d4002e256e2">channel_</a></td></tr>
+<tr class="separator:a633bc86acce0a144116c7d4002e256e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88a239b30ae68b6ad7f7abeb25776b1e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmuduo_1_1net_1_1InetAddress.html">InetAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a88a239b30ae68b6ad7f7abeb25776b1e">localAddr_</a></td></tr>
+<tr class="separator:a88a239b30ae68b6ad7f7abeb25776b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10cc5d13ba24f9bbd98242c330bd50b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmuduo_1_1net_1_1InetAddress.html">InetAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#af10cc5d13ba24f9bbd98242c330bd50b">peerAddr_</a></td></tr>
+<tr class="separator:af10cc5d13ba24f9bbd98242c330bd50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4ac7fea1abbcfb56d481dbe8ffb37e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemuduo_1_1net.html#a78754792e997a13cb10908eb7ec508b2">ConnectionCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#ae4ac7fea1abbcfb56d481dbe8ffb37e7">connectionCallback_</a></td></tr>
+<tr class="separator:ae4ac7fea1abbcfb56d481dbe8ffb37e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d5ea21d215329779698e634e5e7755"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemuduo_1_1net.html#acaa802028467a41738aeb49699e85285">MessageCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#aa4d5ea21d215329779698e634e5e7755">messageCallback_</a></td></tr>
+<tr class="separator:aa4d5ea21d215329779698e634e5e7755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525f0d11cfa2e271600caa30407b6150"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemuduo_1_1net.html#a525c3730bfefb763975b035ebc88a63d">WriteCompleteCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a525f0d11cfa2e271600caa30407b6150">writeCompleteCallback_</a></td></tr>
+<tr class="separator:a525f0d11cfa2e271600caa30407b6150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70760fcf5021313fa48be2025b751d46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemuduo_1_1net.html#a503c5e91d2e84874e83e9a6cbfb4a47b">HighWaterMarkCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a70760fcf5021313fa48be2025b751d46">highWaterMarkCallback_</a></td></tr>
+<tr class="separator:a70760fcf5021313fa48be2025b751d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ea87dce1e6aaa022507ff52bc7360b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemuduo_1_1net.html#a5a393be65a093bad5f5a6b8340ce8c88">CloseCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#af4ea87dce1e6aaa022507ff52bc7360b">closeCallback_</a></td></tr>
+<tr class="separator:af4ea87dce1e6aaa022507ff52bc7360b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae83db1125e4affc6e1002849c7a56968"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#ae83db1125e4affc6e1002849c7a56968">highWaterMark_</a></td></tr>
+<tr class="separator:ae83db1125e4affc6e1002849c7a56968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5466c35e5bfc020933095af435e30c80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1net_1_1Buffer.html">Buffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a5466c35e5bfc020933095af435e30c80">inputBuffer_</a></td></tr>
+<tr class="separator:a5466c35e5bfc020933095af435e30c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de4fbd6e5608f695dd0b9f02897f297"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1net_1_1Buffer.html">Buffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a0de4fbd6e5608f695dd0b9f02897f297">outputBuffer_</a></td></tr>
+<tr class="separator:a0de4fbd6e5608f695dd0b9f02897f297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71712b023252fc8c769607fc03cce727"><td class="memItemLeft" align="right" valign="top">boost::any&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a71712b023252fc8c769607fc03cce727">context_</a></td></tr>
+<tr class="separator:a71712b023252fc8c769607fc03cce727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>TCP connection, for both client and server usage.</p>
+<p>This is an interface class, so don't expose too much details. </p>
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00041">41</a> 行定义.</p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a8cf72f776f4277c8138a1beaf5185325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cf72f776f4277c8138a1beaf5185325">&#9670;&nbsp;</a></span>StateE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a8cf72f776f4277c8138a1beaf5185325">StateE</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a8cf72f776f4277c8138a1beaf5185325a5f4e8711c6f39bc392c23dfacf44c953"></a>kDisconnected&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8cf72f776f4277c8138a1beaf5185325adddfdd7363e62a5f443716e15d0bc1ff"></a>kConnecting&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8cf72f776f4277c8138a1beaf5185325acb7fe9fd788a796e7d827c0303dcd405"></a>kConnected&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8cf72f776f4277c8138a1beaf5185325a8fd5c7ab5a7aa063f1072c29b949f558"></a>kDisconnecting&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00118">118</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a2603ff299e8c8769208e266171558556"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2603ff299e8c8769208e266171558556">&#9670;&nbsp;</a></span>TcpConnection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html">TcpConnection</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1net_1_1EventLoop.html">EventLoop</a> *&#160;</td>
+          <td class="paramname"><em>loop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sockfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmuduo_1_1net_1_1InetAddress.html">InetAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>localAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmuduo_1_1net_1_1InetAddress.html">InetAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>peerAddr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs a <a class="el" href="classmuduo_1_1net_1_1TcpConnection.html">TcpConnection</a> with a connected sockfd</p>
+<p>User should not create this object. </p>
+
+</div>
+</div>
+<a id="a0a3551d2f9a37ccec8f9cb913e73878a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a3551d2f9a37ccec8f9cb913e73878a">&#9670;&nbsp;</a></span>~TcpConnection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="classmuduo_1_1net_1_1TcpConnection.html">TcpConnection</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="acde4a0b4bc840b44bfbf326bde562d3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acde4a0b4bc840b44bfbf326bde562d3e">&#9670;&nbsp;</a></span>connectDestroyed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void connectDestroyed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00109">TcpConnection::setCloseCallback()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1TcpConnection_acde4a0b4bc840b44bfbf326bde562d3e_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1TcpConnection_acde4a0b4bc840b44bfbf326bde562d3e_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1TcpConnection_acde4a0b4bc840b44bfbf326bde562d3e_icgraph" id="classmuduo_1_1net_1_1TcpConnection_acde4a0b4bc840b44bfbf326bde562d3e_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1TcpConnection.html#acb32ba0eda160676b4fc98d756ee3515" title="Internal use only. " alt="" coords="193,5,328,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa0fd96bc25e3d509fb54028c2e4b91f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0fd96bc25e3d509fb54028c2e4b91f6">&#9670;&nbsp;</a></span>connected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool connected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00059">59</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00118">TcpConnection::kConnected</a> , 以及 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00136">TcpConnection::state_</a>.</p>
+
+</div>
+</div>
+<a id="a2e1f9742dac98a0c3e5a5509920934ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e1f9742dac98a0c3e5a5509920934ae">&#9670;&nbsp;</a></span>connectEstablished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void connectEstablished </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00109">TcpConnection::setCloseCallback()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1TcpConnection_a2e1f9742dac98a0c3e5a5509920934ae_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1TcpConnection_a2e1f9742dac98a0c3e5a5509920934ae_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1TcpConnection_a2e1f9742dac98a0c3e5a5509920934ae_icgraph" id="classmuduo_1_1net_1_1TcpConnection_a2e1f9742dac98a0c3e5a5509920934ae_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1TcpConnection.html#acb32ba0eda160676b4fc98d756ee3515" title="Internal use only. " alt="" coords="201,5,336,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a69413dc574470cdba5981d3e05250f7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69413dc574470cdba5981d3e05250f7b">&#9670;&nbsp;</a></span>disconnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool disconnected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00060">60</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a0ba4cd267f7415c7ae91516b4545eda4">TcpConnection::forceClose()</a>, <a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a1400e984896abdc7b716ebaa8a6ea694">TcpConnection::forceCloseWithDelay()</a>, <a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a1de4ddf8b40138039f3382ec9c4a0366">TcpConnection::getTcpInfo()</a>, <a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a60514adf97e4a2d28f74ff39a5275bde">TcpConnection::getTcpInfoString()</a>, <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00118">TcpConnection::kDisconnected</a>, <a class="el" href="test13_8cc_source.html#l00014">message</a>, <a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a9c8ef4c9c94e6ccd8cb7233d6ecb9834">TcpConnection::send()</a>, <a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a7419d5072b837a2ba3cc5aac85015212">TcpConnection::setTcpNoDelay()</a>, <a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a7861ee1569802186a619778efc85af13">TcpConnection::shutdown()</a>, <a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a2fb6cbd3d3abf25782d51457ab157b24">TcpConnection::startRead()</a>, <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00136">TcpConnection::state_</a> , 以及 <a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a36b0d441712db3b0e94cead68e9ff10a">TcpConnection::stopRead()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1TcpConnection_a69413dc574470cdba5981d3e05250f7b_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1TcpConnection_a69413dc574470cdba5981d3e05250f7b_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1TcpConnection_a69413dc574470cdba5981d3e05250f7b_cgraph" id="classmuduo_1_1net_1_1TcpConnection_a69413dc574470cdba5981d3e05250f7b_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1TcpConnection.html#a0ba4cd267f7415c7ae91516b4545eda4" title="forceClose" alt="" coords="195,5,286,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1TcpConnection.html#a1400e984896abdc7b716ebaa8a6ea694" title="forceCloseWithDelay" alt="" coords="161,56,320,83"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1TcpConnection.html#a1de4ddf8b40138039f3382ec9c4a0366" title="getTcpInfo" alt="" coords="196,107,285,133"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1TcpConnection.html#a60514adf97e4a2d28f74ff39a5275bde" title="getTcpInfoString" alt="" coords="177,157,304,184"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1TcpConnection.html#a9c8ef4c9c94e6ccd8cb7233d6ecb9834" title="send" alt="" coords="214,208,267,235"/>
+<area shape="rect" id="node7" href="classmuduo_1_1net_1_1TcpConnection.html#a7419d5072b837a2ba3cc5aac85015212" title="setTcpNoDelay" alt="" coords="181,259,300,285"/>
+<area shape="rect" id="node8" href="classmuduo_1_1net_1_1TcpConnection.html#a7861ee1569802186a619778efc85af13" title="shutdown" alt="" coords="198,309,283,336"/>
+<area shape="rect" id="node9" href="classmuduo_1_1net_1_1TcpConnection.html#a2fb6cbd3d3abf25782d51457ab157b24" title="startRead" alt="" coords="199,360,283,387"/>
+<area shape="rect" id="node10" href="classmuduo_1_1net_1_1TcpConnection.html#a36b0d441712db3b0e94cead68e9ff10a" title="stopRead" alt="" coords="199,411,282,437"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0ba4cd267f7415c7ae91516b4545eda4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ba4cd267f7415c7ae91516b4545eda4">&#9670;&nbsp;</a></span>forceClose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void forceClose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00060">TcpConnection::disconnected()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1TcpConnection_a0ba4cd267f7415c7ae91516b4545eda4_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1TcpConnection_a0ba4cd267f7415c7ae91516b4545eda4_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1TcpConnection_a0ba4cd267f7415c7ae91516b4545eda4_icgraph" id="classmuduo_1_1net_1_1TcpConnection_a0ba4cd267f7415c7ae91516b4545eda4_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1TcpConnection.html#a69413dc574470cdba5981d3e05250f7b" title="disconnected" alt="" coords="144,5,252,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a57afbf2f587b14c9544d81629527b907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57afbf2f587b14c9544d81629527b907">&#9670;&nbsp;</a></span>forceCloseInLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void forceCloseInLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1400e984896abdc7b716ebaa8a6ea694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1400e984896abdc7b716ebaa8a6ea694">&#9670;&nbsp;</a></span>forceCloseWithDelay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void forceCloseWithDelay </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>seconds</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00060">TcpConnection::disconnected()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1TcpConnection_a1400e984896abdc7b716ebaa8a6ea694_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1TcpConnection_a1400e984896abdc7b716ebaa8a6ea694_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1TcpConnection_a1400e984896abdc7b716ebaa8a6ea694_icgraph" id="classmuduo_1_1net_1_1TcpConnection_a1400e984896abdc7b716ebaa8a6ea694_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1TcpConnection.html#a69413dc574470cdba5981d3e05250f7b" title="disconnected" alt="" coords="212,5,320,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa6a547152bf0e64f8e18dc7146094e1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6a547152bf0e64f8e18dc7146094e1f">&#9670;&nbsp;</a></span>getContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const boost::any&amp; getContext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00083">83</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00151">TcpConnection::context_</a>.</p>
+
+</div>
+</div>
+<a id="aef1cbfe0592e8196e6c81b4db82a39ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef1cbfe0592e8196e6c81b4db82a39ce">&#9670;&nbsp;</a></span>getLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1net_1_1EventLoop.html">EventLoop</a>* getLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00055">55</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00134">TcpConnection::loop_</a>.</p>
+
+</div>
+</div>
+<a id="aca752855bdbb8cc6b18d05be1286b8f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca752855bdbb8cc6b18d05be1286b8f1">&#9670;&nbsp;</a></span>getMutableContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::any* getMutableContext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00086">86</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00151">TcpConnection::context_</a>.</p>
+
+</div>
+</div>
+<a id="a1de4ddf8b40138039f3382ec9c4a0366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1de4ddf8b40138039f3382ec9c4a0366">&#9670;&nbsp;</a></span>getTcpInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool getTcpInfo </td>
+          <td>(</td>
+          <td class="paramtype">struct tcp_info *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00060">TcpConnection::disconnected()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1TcpConnection_a1de4ddf8b40138039f3382ec9c4a0366_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1TcpConnection_a1de4ddf8b40138039f3382ec9c4a0366_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1TcpConnection_a1de4ddf8b40138039f3382ec9c4a0366_icgraph" id="classmuduo_1_1net_1_1TcpConnection_a1de4ddf8b40138039f3382ec9c4a0366_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1TcpConnection.html#a69413dc574470cdba5981d3e05250f7b" title="disconnected" alt="" coords="143,5,251,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a60514adf97e4a2d28f74ff39a5275bde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60514adf97e4a2d28f74ff39a5275bde">&#9670;&nbsp;</a></span>getTcpInfoString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string getTcpInfoString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00060">TcpConnection::disconnected()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1TcpConnection_a60514adf97e4a2d28f74ff39a5275bde_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1TcpConnection_a60514adf97e4a2d28f74ff39a5275bde_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1TcpConnection_a60514adf97e4a2d28f74ff39a5275bde_icgraph" id="classmuduo_1_1net_1_1TcpConnection_a60514adf97e4a2d28f74ff39a5275bde_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1TcpConnection.html#a69413dc574470cdba5981d3e05250f7b" title="disconnected" alt="" coords="180,5,288,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2cb2baff35786f9caa991e3c47908d91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cb2baff35786f9caa991e3c47908d91">&#9670;&nbsp;</a></span>handleClose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleClose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a70b275e63748ddd6da7d2171c540ccff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70b275e63748ddd6da7d2171c540ccff">&#9670;&nbsp;</a></span>handleError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleError </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afca05707020dd916739c07555d4769a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afca05707020dd916739c07555d4769a0">&#9670;&nbsp;</a></span>handleRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleRead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1Timestamp.html">Timestamp</a>&#160;</td>
+          <td class="paramname"><em>receiveTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1d79ff6580eaced59a900144818150d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1d79ff6580eaced59a900144818150d">&#9670;&nbsp;</a></span>handleWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleWrite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ba1453f8cf1f70df7cc2d1d0e6a53f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ba1453f8cf1f70df7cc2d1d0e6a53f5">&#9670;&nbsp;</a></span>inputBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1net_1_1Buffer.html">Buffer</a>* inputBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Advanced interface </p>
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00102">102</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00149">TcpConnection::inputBuffer_</a>.</p>
+
+</div>
+</div>
+<a id="ad1585484cec92cacd15885c798456205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1585484cec92cacd15885c798456205">&#9670;&nbsp;</a></span>isReading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isReading </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00078">78</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00137">TcpConnection::reading_</a>.</p>
+
+</div>
+</div>
+<a id="a4044c56d2e5bcc7549f5f8f2f2eae975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4044c56d2e5bcc7549f5f8f2f2eae975">&#9670;&nbsp;</a></span>localAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmuduo_1_1net_1_1InetAddress.html">InetAddress</a>&amp; localAddress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00057">57</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00141">TcpConnection::localAddr_</a>.</p>
+
+</div>
+</div>
+<a id="a47f4f0a66d5a539e687100dc65462ced"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47f4f0a66d5a539e687100dc65462ced">&#9670;&nbsp;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string&amp; name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00056">56</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00135">TcpConnection::name_</a>.</p>
+
+</div>
+</div>
+<a id="a0c97bb56837570d8964143833ad2e6a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c97bb56837570d8964143833ad2e6a0">&#9670;&nbsp;</a></span>outputBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1net_1_1Buffer.html">Buffer</a>* outputBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00105">105</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00150">TcpConnection::outputBuffer_</a>.</p>
+
+</div>
+</div>
+<a id="a4fcf3842d90c471bb6939afd04bba128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fcf3842d90c471bb6939afd04bba128">&#9670;&nbsp;</a></span>peerAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmuduo_1_1net_1_1InetAddress.html">InetAddress</a>&amp; peerAddress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00058">58</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00142">TcpConnection::peerAddr_</a>.</p>
+
+</div>
+</div>
+<a id="a9c8ef4c9c94e6ccd8cb7233d6ecb9834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c8ef4c9c94e6ccd8cb7233d6ecb9834">&#9670;&nbsp;</a></span>send() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void send </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00060">TcpConnection::disconnected()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1TcpConnection_a9c8ef4c9c94e6ccd8cb7233d6ecb9834_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1TcpConnection_a9c8ef4c9c94e6ccd8cb7233d6ecb9834_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1TcpConnection_a9c8ef4c9c94e6ccd8cb7233d6ecb9834_icgraph" id="classmuduo_1_1net_1_1TcpConnection_a9c8ef4c9c94e6ccd8cb7233d6ecb9834_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1TcpConnection.html#a69413dc574470cdba5981d3e05250f7b" title="disconnected" alt="" coords="107,5,215,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6204afa3a5014326827f59119b62e0f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6204afa3a5014326827f59119b62e0f2">&#9670;&nbsp;</a></span>send() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void send </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmuduo_1_1StringPiece.html">StringPiece</a> &amp;&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a92d6542b89b04de2d77fc25b34ccb9dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92d6542b89b04de2d77fc25b34ccb9dc">&#9670;&nbsp;</a></span>send() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void send </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1net_1_1Buffer.html">Buffer</a> *&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14a35c653309480bcd7320757152a413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14a35c653309480bcd7320757152a413">&#9670;&nbsp;</a></span>sendInLoop() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sendInLoop </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmuduo_1_1StringPiece.html">StringPiece</a> &amp;&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac1ba157deb66ada06a5527acad42d9fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1ba157deb66ada06a5527acad42d9fc">&#9670;&nbsp;</a></span>sendInLoop() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sendInLoop </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb32ba0eda160676b4fc98d756ee3515"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb32ba0eda160676b4fc98d756ee3515">&#9670;&nbsp;</a></span>setCloseCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setCloseCallback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacemuduo_1_1net.html#a5a393be65a093bad5f5a6b8340ce8c88">CloseCallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Internal use only. </p>
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00109">109</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00147">TcpConnection::closeCallback_</a>, <a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#acde4a0b4bc840b44bfbf326bde562d3e">TcpConnection::connectDestroyed()</a> , 以及 <a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a2e1f9742dac98a0c3e5a5509920934ae">TcpConnection::connectEstablished()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1TcpConnection_acb32ba0eda160676b4fc98d756ee3515_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1TcpConnection_acb32ba0eda160676b4fc98d756ee3515_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1TcpConnection_acb32ba0eda160676b4fc98d756ee3515_cgraph" id="classmuduo_1_1net_1_1TcpConnection_acb32ba0eda160676b4fc98d756ee3515_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1TcpConnection.html#acde4a0b4bc840b44bfbf326bde562d3e" title="connectDestroyed" alt="" coords="192,5,332,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1TcpConnection.html#a2e1f9742dac98a0c3e5a5509920934ae" title="connectEstablished" alt="" coords="188,56,336,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abbb0008856a8495adb08c8cb7fe65c2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbb0008856a8495adb08c8cb7fe65c2c">&#9670;&nbsp;</a></span>setConnectionCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setConnectionCallback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacemuduo_1_1net.html#a78754792e997a13cb10908eb7ec508b2">ConnectionCallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00089">89</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00143">TcpConnection::connectionCallback_</a>.</p>
+
+</div>
+</div>
+<a id="a332ba7a521a446572051bc6939f4c4fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a332ba7a521a446572051bc6939f4c4fa">&#9670;&nbsp;</a></span>setContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setContext </td>
+          <td>(</td>
+          <td class="paramtype">const boost::any &amp;&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00080">80</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00151">TcpConnection::context_</a>.</p>
+
+</div>
+</div>
+<a id="ad44c03a6a6e2c20c87f2b8d296d42d2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad44c03a6a6e2c20c87f2b8d296d42d2b">&#9670;&nbsp;</a></span>setHighWaterMarkCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setHighWaterMarkCallback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacemuduo_1_1net.html#a503c5e91d2e84874e83e9a6cbfb4a47b">HighWaterMarkCallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>highWaterMark</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00098">98</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00148">TcpConnection::highWaterMark_</a> , 以及 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00146">TcpConnection::highWaterMarkCallback_</a>.</p>
+
+</div>
+</div>
+<a id="a0a67f11f92b4cdc6f6c66b861f81cb08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a67f11f92b4cdc6f6c66b861f81cb08">&#9670;&nbsp;</a></span>setMessageCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setMessageCallback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacemuduo_1_1net.html#acaa802028467a41738aeb49699e85285">MessageCallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00092">92</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00144">TcpConnection::messageCallback_</a>.</p>
+
+</div>
+</div>
+<a id="a5cefef7ea6272b740592d9dfecbd6c20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cefef7ea6272b740592d9dfecbd6c20">&#9670;&nbsp;</a></span>setState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a8cf72f776f4277c8138a1beaf5185325">StateE</a>&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00129">129</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a813d02ba7cf0a0263aca2ae970676f44">TcpConnection::startReadInLoop()</a>, <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00136">TcpConnection::state_</a>, <a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#ad5814262e3c9cdcdeb4b25e9b18f9b44">TcpConnection::stateToString()</a> , 以及 <a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#ab1a8c5f0e39e33c4088dbeef5c2a4864">TcpConnection::stopReadInLoop()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1TcpConnection_a5cefef7ea6272b740592d9dfecbd6c20_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1TcpConnection_a5cefef7ea6272b740592d9dfecbd6c20_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1TcpConnection_a5cefef7ea6272b740592d9dfecbd6c20_cgraph" id="classmuduo_1_1net_1_1TcpConnection_a5cefef7ea6272b740592d9dfecbd6c20_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1TcpConnection.html#a813d02ba7cf0a0263aca2ae970676f44" title="startReadInLoop" alt="" coords="129,5,256,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1TcpConnection.html#ad5814262e3c9cdcdeb4b25e9b18f9b44" title="stateToString" alt="" coords="139,56,246,83"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1TcpConnection.html#ab1a8c5f0e39e33c4088dbeef5c2a4864" title="stopReadInLoop" alt="" coords="130,107,255,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7419d5072b837a2ba3cc5aac85015212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7419d5072b837a2ba3cc5aac85015212">&#9670;&nbsp;</a></span>setTcpNoDelay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setTcpNoDelay </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00060">TcpConnection::disconnected()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1TcpConnection_a7419d5072b837a2ba3cc5aac85015212_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1TcpConnection_a7419d5072b837a2ba3cc5aac85015212_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1TcpConnection_a7419d5072b837a2ba3cc5aac85015212_icgraph" id="classmuduo_1_1net_1_1TcpConnection_a7419d5072b837a2ba3cc5aac85015212_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1TcpConnection.html#a69413dc574470cdba5981d3e05250f7b" title="disconnected" alt="" coords="172,5,280,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a94b31be320453fc8aeae81b25934b43f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94b31be320453fc8aeae81b25934b43f">&#9670;&nbsp;</a></span>setWriteCompleteCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setWriteCompleteCallback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacemuduo_1_1net.html#a525c3730bfefb763975b035ebc88a63d">WriteCompleteCallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00095">95</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00145">TcpConnection::writeCompleteCallback_</a>.</p>
+
+</div>
+</div>
+<a id="a7861ee1569802186a619778efc85af13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7861ee1569802186a619778efc85af13">&#9670;&nbsp;</a></span>shutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void shutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00060">TcpConnection::disconnected()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1TcpConnection_a7861ee1569802186a619778efc85af13_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1TcpConnection_a7861ee1569802186a619778efc85af13_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1TcpConnection_a7861ee1569802186a619778efc85af13_icgraph" id="classmuduo_1_1net_1_1TcpConnection_a7861ee1569802186a619778efc85af13_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1TcpConnection.html#a69413dc574470cdba5981d3e05250f7b" title="disconnected" alt="" coords="139,5,247,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4f988229386dc4e5f80cca96e096e074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f988229386dc4e5f80cca96e096e074">&#9670;&nbsp;</a></span>shutdownInLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void shutdownInLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2fb6cbd3d3abf25782d51457ab157b24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fb6cbd3d3abf25782d51457ab157b24">&#9670;&nbsp;</a></span>startRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void startRead </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00060">TcpConnection::disconnected()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1TcpConnection_a2fb6cbd3d3abf25782d51457ab157b24_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1TcpConnection_a2fb6cbd3d3abf25782d51457ab157b24_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1TcpConnection_a2fb6cbd3d3abf25782d51457ab157b24_icgraph" id="classmuduo_1_1net_1_1TcpConnection_a2fb6cbd3d3abf25782d51457ab157b24_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1TcpConnection.html#a69413dc574470cdba5981d3e05250f7b" title="disconnected" alt="" coords="137,5,245,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a813d02ba7cf0a0263aca2ae970676f44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a813d02ba7cf0a0263aca2ae970676f44">&#9670;&nbsp;</a></span>startReadInLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void startReadInLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00129">TcpConnection::setState()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1TcpConnection_a813d02ba7cf0a0263aca2ae970676f44_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1TcpConnection_a813d02ba7cf0a0263aca2ae970676f44_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1TcpConnection_a813d02ba7cf0a0263aca2ae970676f44_icgraph" id="classmuduo_1_1net_1_1TcpConnection_a813d02ba7cf0a0263aca2ae970676f44_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1TcpConnection.html#a5cefef7ea6272b740592d9dfecbd6c20" title="setState" alt="" coords="180,5,256,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad5814262e3c9cdcdeb4b25e9b18f9b44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5814262e3c9cdcdeb4b25e9b18f9b44">&#9670;&nbsp;</a></span>stateToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* stateToString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00129">TcpConnection::setState()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1TcpConnection_ad5814262e3c9cdcdeb4b25e9b18f9b44_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1TcpConnection_ad5814262e3c9cdcdeb4b25e9b18f9b44_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1TcpConnection_ad5814262e3c9cdcdeb4b25e9b18f9b44_icgraph" id="classmuduo_1_1net_1_1TcpConnection_ad5814262e3c9cdcdeb4b25e9b18f9b44_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1TcpConnection.html#a5cefef7ea6272b740592d9dfecbd6c20" title="setState" alt="" coords="160,5,236,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a36b0d441712db3b0e94cead68e9ff10a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36b0d441712db3b0e94cead68e9ff10a">&#9670;&nbsp;</a></span>stopRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stopRead </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00060">TcpConnection::disconnected()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1TcpConnection_a36b0d441712db3b0e94cead68e9ff10a_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1TcpConnection_a36b0d441712db3b0e94cead68e9ff10a_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1TcpConnection_a36b0d441712db3b0e94cead68e9ff10a_icgraph" id="classmuduo_1_1net_1_1TcpConnection_a36b0d441712db3b0e94cead68e9ff10a_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1TcpConnection.html#a69413dc574470cdba5981d3e05250f7b" title="disconnected" alt="" coords="136,5,244,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab1a8c5f0e39e33c4088dbeef5c2a4864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1a8c5f0e39e33c4088dbeef5c2a4864">&#9670;&nbsp;</a></span>stopReadInLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stopReadInLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00129">TcpConnection::setState()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1TcpConnection_ab1a8c5f0e39e33c4088dbeef5c2a4864_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1TcpConnection_ab1a8c5f0e39e33c4088dbeef5c2a4864_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1TcpConnection_ab1a8c5f0e39e33c4088dbeef5c2a4864_icgraph" id="classmuduo_1_1net_1_1TcpConnection_ab1a8c5f0e39e33c4088dbeef5c2a4864_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1TcpConnection.html#a5cefef7ea6272b740592d9dfecbd6c20" title="setState" alt="" coords="179,5,255,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a633bc86acce0a144116c7d4002e256e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a633bc86acce0a144116c7d4002e256e2">&#9670;&nbsp;</a></span>channel_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classmuduo_1_1net_1_1Channel.html">Channel</a>&gt; channel_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00140">140</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af4ea87dce1e6aaa022507ff52bc7360b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ea87dce1e6aaa022507ff52bc7360b">&#9670;&nbsp;</a></span>closeCallback_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemuduo_1_1net.html#a5a393be65a093bad5f5a6b8340ce8c88">CloseCallback</a> closeCallback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00147">147</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00109">TcpConnection::setCloseCallback()</a>.</p>
+
+</div>
+</div>
+<a id="ae4ac7fea1abbcfb56d481dbe8ffb37e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4ac7fea1abbcfb56d481dbe8ffb37e7">&#9670;&nbsp;</a></span>connectionCallback_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemuduo_1_1net.html#a78754792e997a13cb10908eb7ec508b2">ConnectionCallback</a> connectionCallback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00143">143</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00089">TcpConnection::setConnectionCallback()</a>.</p>
+
+</div>
+</div>
+<a id="a71712b023252fc8c769607fc03cce727"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71712b023252fc8c769607fc03cce727">&#9670;&nbsp;</a></span>context_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::any context_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00151">151</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00083">TcpConnection::getContext()</a>, <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00086">TcpConnection::getMutableContext()</a> , 以及 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00080">TcpConnection::setContext()</a>.</p>
+
+</div>
+</div>
+<a id="ae83db1125e4affc6e1002849c7a56968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae83db1125e4affc6e1002849c7a56968">&#9670;&nbsp;</a></span>highWaterMark_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t highWaterMark_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00148">148</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00098">TcpConnection::setHighWaterMarkCallback()</a>.</p>
+
+</div>
+</div>
+<a id="a70760fcf5021313fa48be2025b751d46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70760fcf5021313fa48be2025b751d46">&#9670;&nbsp;</a></span>highWaterMarkCallback_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemuduo_1_1net.html#a503c5e91d2e84874e83e9a6cbfb4a47b">HighWaterMarkCallback</a> highWaterMarkCallback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00146">146</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00098">TcpConnection::setHighWaterMarkCallback()</a>.</p>
+
+</div>
+</div>
+<a id="a5466c35e5bfc020933095af435e30c80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5466c35e5bfc020933095af435e30c80">&#9670;&nbsp;</a></span>inputBuffer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1net_1_1Buffer.html">Buffer</a> inputBuffer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00149">149</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00102">TcpConnection::inputBuffer()</a>.</p>
+
+</div>
+</div>
+<a id="a88a239b30ae68b6ad7f7abeb25776b1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88a239b30ae68b6ad7f7abeb25776b1e">&#9670;&nbsp;</a></span>localAddr_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmuduo_1_1net_1_1InetAddress.html">InetAddress</a> localAddr_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00141">141</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00057">TcpConnection::localAddress()</a>.</p>
+
+</div>
+</div>
+<a id="a19968f50018d32ac31f5cba0195591ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19968f50018d32ac31f5cba0195591ac">&#9670;&nbsp;</a></span>loop_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1net_1_1EventLoop.html">EventLoop</a>* loop_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00134">134</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00055">TcpConnection::getLoop()</a>.</p>
+
+</div>
+</div>
+<a id="aa4d5ea21d215329779698e634e5e7755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4d5ea21d215329779698e634e5e7755">&#9670;&nbsp;</a></span>messageCallback_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemuduo_1_1net.html#acaa802028467a41738aeb49699e85285">MessageCallback</a> messageCallback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00144">144</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00092">TcpConnection::setMessageCallback()</a>.</p>
+
+</div>
+</div>
+<a id="a957ab180ea6fccb9f64da8218db44728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a957ab180ea6fccb9f64da8218db44728">&#9670;&nbsp;</a></span>name_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string name_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00135">135</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00056">TcpConnection::name()</a>.</p>
+
+</div>
+</div>
+<a id="a0de4fbd6e5608f695dd0b9f02897f297"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0de4fbd6e5608f695dd0b9f02897f297">&#9670;&nbsp;</a></span>outputBuffer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1net_1_1Buffer.html">Buffer</a> outputBuffer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00150">150</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00105">TcpConnection::outputBuffer()</a>.</p>
+
+</div>
+</div>
+<a id="af10cc5d13ba24f9bbd98242c330bd50b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af10cc5d13ba24f9bbd98242c330bd50b">&#9670;&nbsp;</a></span>peerAddr_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmuduo_1_1net_1_1InetAddress.html">InetAddress</a> peerAddr_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00142">142</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00058">TcpConnection::peerAddress()</a>.</p>
+
+</div>
+</div>
+<a id="a1b4a188052329d2e29817977476a7e17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b4a188052329d2e29817977476a7e17">&#9670;&nbsp;</a></span>reading_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool reading_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00137">137</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00078">TcpConnection::isReading()</a>.</p>
+
+</div>
+</div>
+<a id="a70a8d655d9dbcef5b77137fc3fb5a175"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70a8d655d9dbcef5b77137fc3fb5a175">&#9670;&nbsp;</a></span>socket_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classmuduo_1_1Socket.html">Socket</a>&gt; socket_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00139">139</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4cfda1cf6d6cc44073a58722892cca7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cfda1cf6d6cc44073a58722892cca7d">&#9670;&nbsp;</a></span>state_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html#a8cf72f776f4277c8138a1beaf5185325">StateE</a> state_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00136">136</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00059">TcpConnection::connected()</a>, <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00060">TcpConnection::disconnected()</a> , 以及 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00129">TcpConnection::setState()</a>.</p>
+
+</div>
+</div>
+<a id="a525f0d11cfa2e271600caa30407b6150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a525f0d11cfa2e271600caa30407b6150">&#9670;&nbsp;</a></span>writeCompleteCallback_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemuduo_1_1net.html#a525c3730bfefb763975b035ebc88a63d">WriteCompleteCallback</a> writeCompleteCallback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a> 第 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00145">145</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2TcpConnection_8h_source.html#l00095">TcpConnection::setWriteCompleteCallback()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>lib/muduo/net/<a class="el" href="muduo_2net_2TcpConnection_8h_source.html">TcpConnection.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemuduo.html">muduo</a></li><li class="navelem"><a class="el" href="namespacemuduo_1_1net.html">net</a></li><li class="navelem"><a class="el" href="classmuduo_1_1net_1_1TcpConnection.html">TcpConnection</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

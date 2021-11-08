@@ -1,0 +1,72 @@
+\hypertarget{EPoller_8cc}{}\section{src/\+E\+Poller.cc 文件参考}
+\label{EPoller_8cc}\index{src/\+E\+Poller.\+cc@{src/\+E\+Poller.\+cc}}
+{\ttfamily \#include \char`\"{}../lib/\+E\+Poller.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../lib/\+Channel.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../lib/muduo/base/\+Logging.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$boost/static\+\_\+assert.\+hpp$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$poll.\+h$>$}\newline
+{\ttfamily \#include $<$sys/epoll.\+h$>$}\newline
+E\+Poller.\+cc 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{EPoller_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{EPoller_8cc_a77d6c65c066d994801cbb16b74efd55f}{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (E\+P\+O\+L\+L\+IN==P\+O\+L\+L\+IN)
+\item 
+\hyperlink{EPoller_8cc_a270c50959912ca88bc04e76d48fa21fa}{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (E\+P\+O\+L\+L\+P\+RI==P\+O\+L\+L\+P\+RI)
+\item 
+\hyperlink{EPoller_8cc_a51919c9657948b0c59c4e29fab338157}{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (E\+P\+O\+L\+L\+O\+UT==P\+O\+L\+L\+O\+UT)
+\item 
+\hyperlink{EPoller_8cc_ade3f646e8224583a09e2f2732a007a11}{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (E\+P\+O\+L\+L\+R\+D\+H\+UP==P\+O\+L\+L\+R\+D\+H\+UP)
+\item 
+\hyperlink{EPoller_8cc_a83964d5ad01e03f6c6ada982a9199845}{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (E\+P\+O\+L\+L\+E\+RR==P\+O\+L\+L\+E\+RR)
+\item 
+\hyperlink{EPoller_8cc_a9e215565d349d5ef0db1e60e9c591d6c}{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (E\+P\+O\+L\+L\+H\+UP==P\+O\+L\+L\+H\+UP)
+\end{DoxyCompactItemize}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{EPoller_8cc_a77d6c65c066d994801cbb16b74efd55f}\label{EPoller_8cc_a77d6c65c066d994801cbb16b74efd55f}} 
+\index{E\+Poller.\+cc@{E\+Poller.\+cc}!B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT@{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT}}
+\index{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT@{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT}!E\+Poller.\+cc@{E\+Poller.\+cc}}
+\subsubsection{\texorpdfstring{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T()}{BOOST\_STATIC\_ASSERT()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT (\begin{DoxyParamCaption}\item[{E\+P\+O\+L\+L\+IN}]{ = {\ttfamily =POLLIN} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{EPoller_8cc_a270c50959912ca88bc04e76d48fa21fa}\label{EPoller_8cc_a270c50959912ca88bc04e76d48fa21fa}} 
+\index{E\+Poller.\+cc@{E\+Poller.\+cc}!B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT@{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT}}
+\index{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT@{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT}!E\+Poller.\+cc@{E\+Poller.\+cc}}
+\subsubsection{\texorpdfstring{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T()}{BOOST\_STATIC\_ASSERT()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT (\begin{DoxyParamCaption}\item[{E\+P\+O\+L\+L\+P\+RI}]{ = {\ttfamily =POLLPRI} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{EPoller_8cc_a51919c9657948b0c59c4e29fab338157}\label{EPoller_8cc_a51919c9657948b0c59c4e29fab338157}} 
+\index{E\+Poller.\+cc@{E\+Poller.\+cc}!B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT@{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT}}
+\index{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT@{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT}!E\+Poller.\+cc@{E\+Poller.\+cc}}
+\subsubsection{\texorpdfstring{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T()}{BOOST\_STATIC\_ASSERT()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT (\begin{DoxyParamCaption}\item[{E\+P\+O\+L\+L\+O\+UT}]{ = {\ttfamily =POLLOUT} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{EPoller_8cc_ade3f646e8224583a09e2f2732a007a11}\label{EPoller_8cc_ade3f646e8224583a09e2f2732a007a11}} 
+\index{E\+Poller.\+cc@{E\+Poller.\+cc}!B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT@{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT}}
+\index{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT@{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT}!E\+Poller.\+cc@{E\+Poller.\+cc}}
+\subsubsection{\texorpdfstring{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T()}{BOOST\_STATIC\_ASSERT()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT (\begin{DoxyParamCaption}\item[{E\+P\+O\+L\+L\+R\+D\+H\+UP}]{ = {\ttfamily =POLLRDHUP} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{EPoller_8cc_a83964d5ad01e03f6c6ada982a9199845}\label{EPoller_8cc_a83964d5ad01e03f6c6ada982a9199845}} 
+\index{E\+Poller.\+cc@{E\+Poller.\+cc}!B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT@{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT}}
+\index{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT@{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT}!E\+Poller.\+cc@{E\+Poller.\+cc}}
+\subsubsection{\texorpdfstring{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T()}{BOOST\_STATIC\_ASSERT()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT (\begin{DoxyParamCaption}\item[{E\+P\+O\+L\+L\+E\+RR}]{ = {\ttfamily =POLLERR} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{EPoller_8cc_a9e215565d349d5ef0db1e60e9c591d6c}\label{EPoller_8cc_a9e215565d349d5ef0db1e60e9c591d6c}} 
+\index{E\+Poller.\+cc@{E\+Poller.\+cc}!B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT@{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT}}
+\index{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT@{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT}!E\+Poller.\+cc@{E\+Poller.\+cc}}
+\subsubsection{\texorpdfstring{B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T()}{BOOST\_STATIC\_ASSERT()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT (\begin{DoxyParamCaption}\item[{E\+P\+O\+L\+L\+H\+UP}]{ = {\ttfamily =POLLHUP} }\end{DoxyParamCaption})}
+

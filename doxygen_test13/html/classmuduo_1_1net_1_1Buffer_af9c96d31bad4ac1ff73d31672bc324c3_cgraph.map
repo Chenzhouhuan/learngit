@@ -1,0 +1,6 @@
+<map id="peekInt16" name="peekInt16">
+<area shape="rect" id="node2" href="$namespacemuduo_1_1net_1_1sockets.html#a0f7768ebfa264d5c4eaf377297bab244" title="muduo::net::sockets\l::networkToHost16" alt="" coords="140,5,295,47"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="190,71,245,98"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="159,122,275,149"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="343,71,401,98"/>
+</map>

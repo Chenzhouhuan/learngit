@@ -1,0 +1,24 @@
+<map id="addTimer" name="addTimer">
+<area shape="rect" id="node2" href="$classmuduo_1_1TimerQueue.html#adff791c94ab893d2adae1eafe03713ad" title="addTimerInLoop" alt="" coords="137,122,264,149"/>
+<area shape="rect" id="node12" href="$classmuduo_1_1Timer.html#a99f306fa27f00a90b51f028787651b30" title="muduo::Timer::sequence" alt="" coords="601,122,783,149"/>
+<area shape="rect" id="node21" href="$classmuduo_1_1EventLoop.html#acf6a4570703c6edf29ae2d28cf6767cb" title="muduo::EventLoop::runInLoop" alt="" coords="312,274,527,301"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::EventLoop::assert\lInLoopThread" alt="" coords="597,173,787,215"/>
+<area shape="rect" id="node10" href="$classmuduo_1_1TimerQueue.html#ac4bdfea344ee2a30857d2eabadfef399" title="insert" alt="" coords="390,122,449,149"/>
+<area shape="rect" id="node11" href="$classmuduo_1_1Timer.html#afa0ac5aa813b96802d509cf972054108" title="muduo::Timer::expiration" alt="" coords="599,71,785,98"/>
+<area shape="rect" id="node18" href="$namespacemuduo_1_1detail.html#a2a30bb501e8d9bb2da91ab353d1bc6fd" title="muduo::detail::resetTimerfd" alt="" coords="317,17,521,43"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="muduo::EventLoop::abortNot\lInLoopThread" alt="" coords="1120,173,1328,215"/>
+<area shape="rect" id="node7" href="$classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="muduo::EventLoop::isInLoop\lThread" alt="" coords="857,232,1063,273"/>
+<area shape="rect" id="node5" href="$namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="1413,210,1606,237"/>
+<area shape="rect" id="node6" href="$namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="1681,203,1849,244"/>
+<area shape="rect" id="node8" href="$classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="muduo::EventLoop::doPending\lFunctors" alt="" coords="1115,341,1333,383"/>
+<area shape="rect" id="node9" href="$classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="muduo::EventLoop::handleRead" alt="" coords="1111,290,1337,317"/>
+<area shape="rect" id="node13" href="$classmuduo_1_1Timer.html#af96f08cc8d7b3f18df9ce1a305d56ae9" title="muduo::Timer::restart" alt="" coords="878,118,1042,145"/>
+<area shape="rect" id="node14" href="$namespacemuduo.html#a4c4a0e85f7b5c4056878cd7cf26a83cb" title="muduo::addTime" alt="" coords="1158,67,1290,94"/>
+<area shape="rect" id="node17" href="$classmuduo_1_1Timestamp.html#a1aa83f32d706090ef354b182460d27aa" title="muduo::Timestamp::invalid" alt="" coords="1123,118,1325,145"/>
+<area shape="rect" id="node15" href="$classmuduo_1_1Timestamp.html#a8a0616b73c803b94f5c0e9d00fa96fb4" title="muduo::Timestamp::microSeconds\lSinceEpoch" alt="" coords="1385,17,1633,59"/>
+<area shape="rect" id="node16" href="$classmuduo_1_1Timestamp.html#a3ccb273b45fb16b1b14de8a4c8b44e3b" title="muduo::Timestamp::Timestamp" alt="" coords="1394,106,1625,133"/>
+<area shape="rect" id="node19" href="$namespacemuduo_1_1detail.html#a14924335d79da967a69c650af3002c77" title="muduo::detail::howMuchTime\lFromNow" alt="" coords="585,5,799,47"/>
+<area shape="rect" id="node20" href="$classmuduo_1_1Timestamp.html#a3bca3b2a36424e36b3d2c772fa7d5772" title="muduo::Timestamp::now" alt="" coords="868,63,1052,90"/>
+<area shape="rect" id="node22" href="$classmuduo_1_1EventLoop.html#a7d2b6939f8f94715d253c0d4c6cee207" title="muduo::EventLoop::queueInLoop" alt="" coords="575,290,809,317"/>
+<area shape="rect" id="node23" href="$classmuduo_1_1EventLoop.html#ae674290a26ecbd622c5160e38e8a4fe9" title="muduo::EventLoop::wakeup" alt="" coords="859,298,1061,325"/>
+</map>

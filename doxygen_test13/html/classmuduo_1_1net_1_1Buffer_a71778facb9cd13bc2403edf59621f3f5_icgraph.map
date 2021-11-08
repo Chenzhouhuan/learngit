@@ -1,0 +1,6 @@
+<map id="beginWrite" name="beginWrite">
+<area shape="rect" id="node2" href="$classmuduo_1_1net_1_1Buffer.html#adece1d853752b95184d19c78228a0c39" title="append" alt="" coords="162,5,233,32"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1net_1_1Buffer.html#a757db069730494fc47e500b29851c6c5" title="findCRLF" alt="" coords="158,56,237,83"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1net_1_1Buffer.html#a29e5dd77acbc70bc4f98301eb84a29f4" title="findEOL" alt="" coords="162,107,233,133"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1net_1_1Buffer.html#abffa19bdb1fbf4ac36fe0f2375bee1e5" title="retrieveUntil" alt="" coords="145,157,249,184"/>
+</map>

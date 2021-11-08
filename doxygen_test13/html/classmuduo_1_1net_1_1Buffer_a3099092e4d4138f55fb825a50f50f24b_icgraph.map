@@ -1,0 +1,6 @@
+<map id="prepend" name="prepend">
+<area shape="rect" id="node2" href="$classmuduo_1_1net_1_1Buffer.html#a1c47f5d97958f529ef78f0ba283e33d0" title="prependInt16" alt="" coords="128,5,236,32"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1net_1_1Buffer.html#a280f25c26e5867377de5c0c31dbc06c1" title="prependInt32" alt="" coords="128,56,236,83"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1net_1_1Buffer.html#a1c260d8fb7c6194ce8ca9859718239d3" title="prependInt64" alt="" coords="128,107,236,133"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1net_1_1Buffer.html#aa9b0f2527792514135d94b7f141f4039" title="prependInt8" alt="" coords="132,157,232,184"/>
+</map>

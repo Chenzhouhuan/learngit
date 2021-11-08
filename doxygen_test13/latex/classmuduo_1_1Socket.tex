@@ -1,0 +1,364 @@
+\hypertarget{classmuduo_1_1Socket}{}\section{Socket类 参考}
+\label{classmuduo_1_1Socket}\index{Socket@{Socket}}
+
+
+{\ttfamily \#include $<$Socket.\+h$>$}
+
+
+
+类 Socket 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classmuduo_1_1Socket__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Socket 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classmuduo_1_1Socket__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1Socket_ad649516e0d40b6d9485a8218125414a4}{Socket} (int sockfd)
+\item 
+\hyperlink{classmuduo_1_1Socket_af387aca495ea9a25c511cd7d02d997bb}{$\sim$\+Socket} ()
+\item 
+int \hyperlink{classmuduo_1_1Socket_ace5c4071ee8893901bb818bbcab739b2}{fd} () const
+\item 
+void \hyperlink{classmuduo_1_1Socket_a5676ae95e49d9927ccf9cf7255521689}{bind\+Address} (const \hyperlink{classmuduo_1_1InetAddress}{Inet\+Address} \&localaddr)
+\begin{DoxyCompactList}\small\item\em abort if address in use \end{DoxyCompactList}\item 
+void \hyperlink{classmuduo_1_1Socket_a458bbe4cf81360301586b2e62a7f9dd2}{listen} ()
+\begin{DoxyCompactList}\small\item\em abort if address in use \end{DoxyCompactList}\item 
+int \hyperlink{classmuduo_1_1Socket_a4f91f07f92cd51f6d6d4214af1e9b73f}{accept} (\hyperlink{classmuduo_1_1InetAddress}{Inet\+Address} $\ast$peeraddr)
+\item 
+void \hyperlink{classmuduo_1_1Socket_add291e612aa85998f66e8dd002a942ff}{set\+Reuse\+Addr} (bool on)
+\item 
+void \hyperlink{classmuduo_1_1Socket_a214a4d8c48e77393446932b95ebdf306}{shutdown\+Write} ()
+\item 
+void \hyperlink{classmuduo_1_1Socket_a7419d5072b837a2ba3cc5aac85015212}{set\+Tcp\+No\+Delay} (bool on)
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{classmuduo_1_1Socket_ad56487222e0d1634d397b788af212ffa}{sockfd\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Wrapper of socket file descriptor.
+
+It closes the sockfd when desctructs. It\textquotesingle{}s thread safe, all operations are delagated to OS. 
+
+在文件 Socket.\+h 第 15 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Socket_ad649516e0d40b6d9485a8218125414a4}\label{classmuduo_1_1Socket_ad649516e0d40b6d9485a8218125414a4}} 
+\index{muduo\+::\+Socket@{muduo\+::\+Socket}!Socket@{Socket}}
+\index{Socket@{Socket}!muduo\+::\+Socket@{muduo\+::\+Socket}}
+\subsubsection{\texorpdfstring{Socket()}{Socket()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Socket}{Socket} (\begin{DoxyParamCaption}\item[{int}]{sockfd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+在文件 Socket.\+h 第 17 行定义.
+
+
+
+参考 Socket\+::$\sim$\+Socket().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Socket_ad649516e0d40b6d9485a8218125414a4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Socket_af387aca495ea9a25c511cd7d02d997bb}\label{classmuduo_1_1Socket_af387aca495ea9a25c511cd7d02d997bb}} 
+\index{muduo\+::\+Socket@{muduo\+::\+Socket}!````~Socket@{$\sim$\+Socket}}
+\index{````~Socket@{$\sim$\+Socket}!muduo\+::\+Socket@{muduo\+::\+Socket}}
+\subsubsection{\texorpdfstring{$\sim$\+Socket()}{~Socket()}}
+{\footnotesize\ttfamily $\sim$\hyperlink{classmuduo_1_1Socket}{Socket} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 Socket.\+cc 第 12 行定义.
+
+
+
+参考 muduo\+::sockets\+::close() , 以及 Socket\+::sockfd\+\_\+.
+
+
+
+参考自 Socket\+::\+Socket().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{classmuduo_1_1Socket_af387aca495ea9a25c511cd7d02d997bb_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classmuduo_1_1Socket_af387aca495ea9a25c511cd7d02d997bb_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Socket_a4f91f07f92cd51f6d6d4214af1e9b73f}\label{classmuduo_1_1Socket_a4f91f07f92cd51f6d6d4214af1e9b73f}} 
+\index{muduo\+::\+Socket@{muduo\+::\+Socket}!accept@{accept}}
+\index{accept@{accept}!muduo\+::\+Socket@{muduo\+::\+Socket}}
+\subsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily int accept (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1InetAddress}{Inet\+Address} $\ast$}]{peeraddr }\end{DoxyParamCaption})}
+
+On success, returns a non-\/negative integer that is a descriptor for the accepted socket, which has been set to non-\/blocking and close-\/on-\/exec. $\ast$peeraddr is assigned. On error, -\/1 is returned, and $\ast$peeraddr is untouched. 
+
+在文件 Socket.\+cc 第 24 行定义.
+
+
+
+参考 muduo\+::sockets\+::accept(), Inet\+Address\+::set\+Sock\+Addr\+Inet() , 以及 Socket\+::sockfd\+\_\+.
+
+
+
+参考自 Socket\+::fd() , 以及 Acceptor\+::handl\+Read().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Socket_a4f91f07f92cd51f6d6d4214af1e9b73f_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Socket_a4f91f07f92cd51f6d6d4214af1e9b73f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Socket_a5676ae95e49d9927ccf9cf7255521689}\label{classmuduo_1_1Socket_a5676ae95e49d9927ccf9cf7255521689}} 
+\index{muduo\+::\+Socket@{muduo\+::\+Socket}!bind\+Address@{bind\+Address}}
+\index{bind\+Address@{bind\+Address}!muduo\+::\+Socket@{muduo\+::\+Socket}}
+\subsubsection{\texorpdfstring{bind\+Address()}{bindAddress()}}
+{\footnotesize\ttfamily void bind\+Address (\begin{DoxyParamCaption}\item[{const \hyperlink{classmuduo_1_1InetAddress}{Inet\+Address} \&}]{localaddr }\end{DoxyParamCaption})}
+
+
+
+abort if address in use 
+
+
+
+在文件 Socket.\+cc 第 16 行定义.
+
+
+
+参考 muduo\+::sockets\+::bind\+Or\+Die(), Inet\+Address\+::get\+Sock\+Addr\+Inet() , 以及 Socket\+::sockfd\+\_\+.
+
+
+
+参考自 Acceptor\+::\+Acceptor() , 以及 Socket\+::fd().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Socket_a5676ae95e49d9927ccf9cf7255521689_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{classmuduo_1_1Socket_a5676ae95e49d9927ccf9cf7255521689_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Socket_ace5c4071ee8893901bb818bbcab739b2}\label{classmuduo_1_1Socket_ace5c4071ee8893901bb818bbcab739b2}} 
+\index{muduo\+::\+Socket@{muduo\+::\+Socket}!fd@{fd}}
+\index{fd@{fd}!muduo\+::\+Socket@{muduo\+::\+Socket}}
+\subsubsection{\texorpdfstring{fd()}{fd()}}
+{\footnotesize\ttfamily int fd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Socket.\+h 第 22 行定义.
+
+
+
+参考 Socket\+::accept(), Socket\+::bind\+Address(), Socket\+::listen(), Socket\+::set\+Reuse\+Addr(), Socket\+::set\+Tcp\+No\+Delay(), Socket\+::shutdown\+Write() , 以及 Socket\+::sockfd\+\_\+.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Socket_ace5c4071ee8893901bb818bbcab739b2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Socket_a458bbe4cf81360301586b2e62a7f9dd2}\label{classmuduo_1_1Socket_a458bbe4cf81360301586b2e62a7f9dd2}} 
+\index{muduo\+::\+Socket@{muduo\+::\+Socket}!listen@{listen}}
+\index{listen@{listen}!muduo\+::\+Socket@{muduo\+::\+Socket}}
+\subsubsection{\texorpdfstring{listen()}{listen()}}
+{\footnotesize\ttfamily void listen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+abort if address in use 
+
+
+
+在文件 Socket.\+cc 第 20 行定义.
+
+
+
+参考 muduo\+::sockets\+::listen\+Or\+Die() , 以及 Socket\+::sockfd\+\_\+.
+
+
+
+参考自 Socket\+::fd() , 以及 Acceptor\+::listen().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{classmuduo_1_1Socket_a458bbe4cf81360301586b2e62a7f9dd2_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Socket_a458bbe4cf81360301586b2e62a7f9dd2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Socket_add291e612aa85998f66e8dd002a942ff}\label{classmuduo_1_1Socket_add291e612aa85998f66e8dd002a942ff}} 
+\index{muduo\+::\+Socket@{muduo\+::\+Socket}!set\+Reuse\+Addr@{set\+Reuse\+Addr}}
+\index{set\+Reuse\+Addr@{set\+Reuse\+Addr}!muduo\+::\+Socket@{muduo\+::\+Socket}}
+\subsubsection{\texorpdfstring{set\+Reuse\+Addr()}{setReuseAddr()}}
+{\footnotesize\ttfamily void set\+Reuse\+Addr (\begin{DoxyParamCaption}\item[{bool}]{on }\end{DoxyParamCaption})}
+
+Enable/disable S\+O\+\_\+\+R\+E\+U\+S\+E\+A\+D\+DR 
+
+在文件 Socket.\+cc 第 34 行定义.
+
+
+
+参考 Socket\+::sockfd\+\_\+.
+
+
+
+参考自 Acceptor\+::\+Acceptor() , 以及 Socket\+::fd().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{classmuduo_1_1Socket_add291e612aa85998f66e8dd002a942ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Socket_a7419d5072b837a2ba3cc5aac85015212}\label{classmuduo_1_1Socket_a7419d5072b837a2ba3cc5aac85015212}} 
+\index{muduo\+::\+Socket@{muduo\+::\+Socket}!set\+Tcp\+No\+Delay@{set\+Tcp\+No\+Delay}}
+\index{set\+Tcp\+No\+Delay@{set\+Tcp\+No\+Delay}!muduo\+::\+Socket@{muduo\+::\+Socket}}
+\subsubsection{\texorpdfstring{set\+Tcp\+No\+Delay()}{setTcpNoDelay()}}
+{\footnotesize\ttfamily void set\+Tcp\+No\+Delay (\begin{DoxyParamCaption}\item[{bool}]{on }\end{DoxyParamCaption})}
+
+Enable/disable T\+C\+P\+\_\+\+N\+O\+D\+E\+L\+AY (disable/enable Nagle\textquotesingle{}s algorithm). 
+
+在文件 Socket.\+cc 第 44 行定义.
+
+
+
+参考 Socket\+::sockfd\+\_\+.
+
+
+
+参考自 Socket\+::fd().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classmuduo_1_1Socket_a7419d5072b837a2ba3cc5aac85015212_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Socket_a214a4d8c48e77393446932b95ebdf306}\label{classmuduo_1_1Socket_a214a4d8c48e77393446932b95ebdf306}} 
+\index{muduo\+::\+Socket@{muduo\+::\+Socket}!shutdown\+Write@{shutdown\+Write}}
+\index{shutdown\+Write@{shutdown\+Write}!muduo\+::\+Socket@{muduo\+::\+Socket}}
+\subsubsection{\texorpdfstring{shutdown\+Write()}{shutdownWrite()}}
+{\footnotesize\ttfamily void shutdown\+Write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 Socket.\+cc 第 40 行定义.
+
+
+
+参考 muduo\+::sockets\+::shutdown\+Write() , 以及 Socket\+::sockfd\+\_\+.
+
+
+
+参考自 Socket\+::fd().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Socket_a214a4d8c48e77393446932b95ebdf306_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classmuduo_1_1Socket_a214a4d8c48e77393446932b95ebdf306_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1Socket_ad56487222e0d1634d397b788af212ffa}\label{classmuduo_1_1Socket_ad56487222e0d1634d397b788af212ffa}} 
+\index{muduo\+::\+Socket@{muduo\+::\+Socket}!sockfd\+\_\+@{sockfd\+\_\+}}
+\index{sockfd\+\_\+@{sockfd\+\_\+}!muduo\+::\+Socket@{muduo\+::\+Socket}}
+\subsubsection{\texorpdfstring{sockfd\+\_\+}{sockfd\_}}
+{\footnotesize\ttfamily const int sockfd\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Socket.\+h 第 47 行定义.
+
+
+
+参考自 Socket\+::accept(), Socket\+::bind\+Address(), Socket\+::fd(), Socket\+::listen(), Socket\+::set\+Reuse\+Addr(), Socket\+::set\+Tcp\+No\+Delay(), Socket\+::shutdown\+Write() , 以及 Socket\+::$\sim$\+Socket().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{Socket_8h}{Socket.\+h}\item 
+src/\hyperlink{Socket_8cc}{Socket.\+cc}\end{DoxyCompactItemize}

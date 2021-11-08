@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: lib/muduo/net/inspect/Inspector.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Inspector_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Inspector.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Inspector_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2010, Shuo Chen.  All rights reserved.</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// http://code.google.com/p/muduo/</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Use of this source code is governed by a BSD-style license</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// that can be found in the License file.</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// Author: Shuo Chen (chenshuo at chenshuo dot com)</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This is a public header file, it must only include public header files.</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef MUDUO_NET_INSPECT_INSPECTOR_H</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define MUDUO_NET_INSPECT_INSPECTOR_H</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Mutex_8h.html">muduo/base/Mutex.h</a>&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="HttpRequest_8h.html">muduo/net/http/HttpRequest.h</a>&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="HttpServer_8h.html">muduo/net/http/HttpServer.h</a>&quot;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemuduo.html">muduo</a></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>net</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span>ProcessInspector;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span>PerformanceInspector;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span>SystemInspector;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// An internal inspector of the running process, usually a singleton.</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// Better to run in a seperated thread, as some method may block for seconds</span></div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classmuduo_1_1net_1_1Inspector.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmuduo_1_1net_1_1Inspector.html">Inspector</a> : <a class="code" href="classmuduo_1_1noncopyable.html">noncopyable</a></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; <span class="keyword">public</span>:</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classmuduo_1_1net_1_1Inspector.html#aa22799cd3b4f56688d431d68c2d014a0">   34</a></span>&#160;  <span class="keyword">typedef</span> std::vector&lt;string&gt; <a class="code" href="classmuduo_1_1net_1_1Inspector.html#aa22799cd3b4f56688d431d68c2d014a0">ArgList</a>;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classmuduo_1_1net_1_1Inspector.html#a9b3d030deba315670a7da29b78586217">   35</a></span>&#160;  <span class="keyword">typedef</span> std::function&lt;string (HttpRequest::Method, const ArgList&amp; args)&gt; <a class="code" href="classmuduo_1_1net_1_1Inspector.html#a9b3d030deba315670a7da29b78586217">Callback</a>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="classmuduo_1_1net_1_1Inspector.html#a42616b7b1bc438718f4924033c1f3267">Inspector</a>(<a class="code" href="classmuduo_1_1net_1_1EventLoop.html">EventLoop</a>* loop,</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keyword">const</span> <a class="code" href="classmuduo_1_1net_1_1InetAddress.html">InetAddress</a>&amp; httpAddr,</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code" href="namespacemuduo_1_1CurrentThread.html#adc8b0cfe3a876d8edf272f982ea2c014">name</a>);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="classmuduo_1_1net_1_1Inspector.html#ad5c735d364e9c38d5a9e8b3dc6755e83">~Inspector</a>();</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmuduo_1_1net_1_1Inspector.html#a687e88cdd98d2de0f634f45b37dadc03">add</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; module,</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; command,</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;           <span class="keyword">const</span> Callback&amp; cb,</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; help);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> <span class="keyword">remove</span>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; module, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; command);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; <span class="keyword">private</span>:</div><div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classmuduo_1_1net_1_1Inspector.html#a00ae736a47d9b5825c815a1c8aeeaeab">   49</a></span>&#160;  <span class="keyword">typedef</span> std::map&lt;string, Callback&gt; <a class="code" href="classmuduo_1_1net_1_1Inspector.html#a00ae736a47d9b5825c815a1c8aeeaeab">CommandList</a>;</div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classmuduo_1_1net_1_1Inspector.html#a45483c7152afba31eaf21e58681f619e">   50</a></span>&#160;  <span class="keyword">typedef</span> std::map&lt;string, string&gt; <a class="code" href="classmuduo_1_1net_1_1Inspector.html#a45483c7152afba31eaf21e58681f619e">HelpList</a>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmuduo_1_1net_1_1Inspector.html#a60de64d75454385b23995437f1d72669">start</a>();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmuduo_1_1net_1_1Inspector.html#ab4136340ef5241a1d886a2fdb6a64f81">onRequest</a>(<span class="keyword">const</span> <a class="code" href="classmuduo_1_1net_1_1HttpRequest.html">HttpRequest</a>&amp; req, <a class="code" href="classmuduo_1_1net_1_1HttpResponse.html">HttpResponse</a>* resp);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classmuduo_1_1net_1_1Inspector.html#a8d24f403adf7c4ea3786080f597fa97a">   55</a></span>&#160;  <a class="code" href="classmuduo_1_1net_1_1HttpServer.html">HttpServer</a> <a class="code" href="classmuduo_1_1net_1_1Inspector.html#a8d24f403adf7c4ea3786080f597fa97a">server_</a>;</div><div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classmuduo_1_1net_1_1Inspector.html#afc3a071a43d239bd23e8b3ee3a36267e">   56</a></span>&#160;  std::unique_ptr&lt;ProcessInspector&gt; <a class="code" href="classmuduo_1_1net_1_1Inspector.html#afc3a071a43d239bd23e8b3ee3a36267e">processInspector_</a>;</div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classmuduo_1_1net_1_1Inspector.html#a847b65dbf1b06feec2eb1c950e99086b">   57</a></span>&#160;  std::unique_ptr&lt;PerformanceInspector&gt; <a class="code" href="classmuduo_1_1net_1_1Inspector.html#a847b65dbf1b06feec2eb1c950e99086b">performanceInspector_</a>;</div><div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classmuduo_1_1net_1_1Inspector.html#a538656ca5a8c83dc0b19a638118d6d24">   58</a></span>&#160;  std::unique_ptr&lt;SystemInspector&gt; <a class="code" href="classmuduo_1_1net_1_1Inspector.html#a538656ca5a8c83dc0b19a638118d6d24">systemInspector_</a>;</div><div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classmuduo_1_1net_1_1Inspector.html#a6e1bf1809a42f40f1a21178dc6620a6f">   59</a></span>&#160;  MutexLock <a class="code" href="classmuduo_1_1net_1_1Inspector.html#a6e1bf1809a42f40f1a21178dc6620a6f">mutex_</a>;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  std::map&lt;string, CommandList&gt; modules_ <a class="code" href="classmuduo_1_1net_1_1Inspector.html#aedb5a31b0b75a5278a89c02d9e9e55d0">GUARDED_BY</a>(mutex_);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  std::map&lt;string, HelpList&gt; helps_ <a class="code" href="classmuduo_1_1net_1_1Inspector.html#aedb5a31b0b75a5278a89c02d9e9e55d0">GUARDED_BY</a>(mutex_);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}  <span class="comment">// namespace net</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}  <span class="comment">// namespace muduo</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif  // MUDUO_NET_INSPECT_INSPECTOR_H</span></div><div class="ttc" id="classmuduo_1_1net_1_1Inspector_html_afc3a071a43d239bd23e8b3ee3a36267e"><div class="ttname"><a href="classmuduo_1_1net_1_1Inspector.html#afc3a071a43d239bd23e8b3ee3a36267e">muduo::net::Inspector::processInspector_</a></div><div class="ttdeci">std::unique_ptr&lt; ProcessInspector &gt; processInspector_</div><div class="ttdef"><b>Definition:</b> <a href="Inspector_8h_source.html#l00056">Inspector.h:56</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1Inspector_html_aedb5a31b0b75a5278a89c02d9e9e55d0"><div class="ttname"><a href="classmuduo_1_1net_1_1Inspector.html#aedb5a31b0b75a5278a89c02d9e9e55d0">muduo::net::Inspector::GUARDED_BY</a></div><div class="ttdeci">std::map&lt; string, CommandList &gt; modules_ GUARDED_BY(mutex_)</div></div>
+<div class="ttc" id="HttpRequest_8h_html"><div class="ttname"><a href="HttpRequest_8h.html">HttpRequest.h</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1Inspector_html_a45483c7152afba31eaf21e58681f619e"><div class="ttname"><a href="classmuduo_1_1net_1_1Inspector.html#a45483c7152afba31eaf21e58681f619e">muduo::net::Inspector::HelpList</a></div><div class="ttdeci">std::map&lt; string, string &gt; HelpList</div><div class="ttdef"><b>Definition:</b> <a href="Inspector_8h_source.html#l00050">Inspector.h:50</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1Inspector_html_a847b65dbf1b06feec2eb1c950e99086b"><div class="ttname"><a href="classmuduo_1_1net_1_1Inspector.html#a847b65dbf1b06feec2eb1c950e99086b">muduo::net::Inspector::performanceInspector_</a></div><div class="ttdeci">std::unique_ptr&lt; PerformanceInspector &gt; performanceInspector_</div><div class="ttdef"><b>Definition:</b> <a href="Inspector_8h_source.html#l00057">Inspector.h:57</a></div></div>
+<div class="ttc" id="HttpServer_8h_html"><div class="ttname"><a href="HttpServer_8h.html">HttpServer.h</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1HttpServer_html"><div class="ttname"><a href="classmuduo_1_1net_1_1HttpServer.html">muduo::net::HttpServer</a></div><div class="ttdef"><b>Definition:</b> <a href="HttpServer_8h_source.html#l00028">HttpServer.h:28</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1CurrentThread_html_adc8b0cfe3a876d8edf272f982ea2c014"><div class="ttname"><a href="namespacemuduo_1_1CurrentThread.html#adc8b0cfe3a876d8edf272f982ea2c014">muduo::CurrentThread::name</a></div><div class="ttdeci">const char * name()</div><div class="ttdef"><b>Definition:</b> <a href="CurrentThread_8h_source.html#l00041">CurrentThread.h:41</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1Inspector_html_ad5c735d364e9c38d5a9e8b3dc6755e83"><div class="ttname"><a href="classmuduo_1_1net_1_1Inspector.html#ad5c735d364e9c38d5a9e8b3dc6755e83">muduo::net::Inspector::~Inspector</a></div><div class="ttdeci">~Inspector()</div></div>
+<div class="ttc" id="namespacemuduo_html"><div class="ttname"><a href="namespacemuduo.html">muduo</a></div><div class="ttdef"><b>Definition:</b> <a href="Acceptor_8h_source.html#l00010">Acceptor.h:10</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1HttpRequest_html"><div class="ttname"><a href="classmuduo_1_1net_1_1HttpRequest.html">muduo::net::HttpRequest</a></div><div class="ttdef"><b>Definition:</b> <a href="HttpRequest_8h_source.html#l00027">HttpRequest.h:27</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1EventLoop_html"><div class="ttname"><a href="classmuduo_1_1net_1_1EventLoop.html">muduo::net::EventLoop</a></div><div class="ttdef"><b>Definition:</b> <a href="muduo_2net_2EventLoop_8h_source.html#l00039">EventLoop.h:39</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1Inspector_html_a538656ca5a8c83dc0b19a638118d6d24"><div class="ttname"><a href="classmuduo_1_1net_1_1Inspector.html#a538656ca5a8c83dc0b19a638118d6d24">muduo::net::Inspector::systemInspector_</a></div><div class="ttdeci">std::unique_ptr&lt; SystemInspector &gt; systemInspector_</div><div class="ttdef"><b>Definition:</b> <a href="Inspector_8h_source.html#l00058">Inspector.h:58</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1Inspector_html_a687e88cdd98d2de0f634f45b37dadc03"><div class="ttname"><a href="classmuduo_1_1net_1_1Inspector.html#a687e88cdd98d2de0f634f45b37dadc03">muduo::net::Inspector::add</a></div><div class="ttdeci">void add(const string &amp;module, const string &amp;command, const Callback &amp;cb, const string &amp;help)</div><div class="ttdoc">Add a Callback for handling the special uri : /mudule/command </div></div>
+<div class="ttc" id="Mutex_8h_html"><div class="ttname"><a href="Mutex_8h.html">Mutex.h</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1Inspector_html_a60de64d75454385b23995437f1d72669"><div class="ttname"><a href="classmuduo_1_1net_1_1Inspector.html#a60de64d75454385b23995437f1d72669">muduo::net::Inspector::start</a></div><div class="ttdeci">void start()</div></div>
+<div class="ttc" id="classmuduo_1_1noncopyable_html"><div class="ttname"><a href="classmuduo_1_1noncopyable.html">muduo::noncopyable</a></div><div class="ttdef"><b>Definition:</b> <a href="noncopyable_8h_source.html#l00007">noncopyable.h:7</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1Inspector_html_a00ae736a47d9b5825c815a1c8aeeaeab"><div class="ttname"><a href="classmuduo_1_1net_1_1Inspector.html#a00ae736a47d9b5825c815a1c8aeeaeab">muduo::net::Inspector::CommandList</a></div><div class="ttdeci">std::map&lt; string, Callback &gt; CommandList</div><div class="ttdef"><b>Definition:</b> <a href="Inspector_8h_source.html#l00049">Inspector.h:49</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1Inspector_html_a8d24f403adf7c4ea3786080f597fa97a"><div class="ttname"><a href="classmuduo_1_1net_1_1Inspector.html#a8d24f403adf7c4ea3786080f597fa97a">muduo::net::Inspector::server_</a></div><div class="ttdeci">HttpServer server_</div><div class="ttdef"><b>Definition:</b> <a href="Inspector_8h_source.html#l00055">Inspector.h:55</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1Inspector_html"><div class="ttname"><a href="classmuduo_1_1net_1_1Inspector.html">muduo::net::Inspector</a></div><div class="ttdef"><b>Definition:</b> <a href="Inspector_8h_source.html#l00031">Inspector.h:31</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1InetAddress_html"><div class="ttname"><a href="classmuduo_1_1net_1_1InetAddress.html">muduo::net::InetAddress</a></div><div class="ttdef"><b>Definition:</b> <a href="muduo_2net_2InetAddress_8h_source.html#l00032">InetAddress.h:32</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1Inspector_html_ab4136340ef5241a1d886a2fdb6a64f81"><div class="ttname"><a href="classmuduo_1_1net_1_1Inspector.html#ab4136340ef5241a1d886a2fdb6a64f81">muduo::net::Inspector::onRequest</a></div><div class="ttdeci">void onRequest(const HttpRequest &amp;req, HttpResponse *resp)</div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1Inspector_html_a42616b7b1bc438718f4924033c1f3267"><div class="ttname"><a href="classmuduo_1_1net_1_1Inspector.html#a42616b7b1bc438718f4924033c1f3267">muduo::net::Inspector::Inspector</a></div><div class="ttdeci">Inspector(EventLoop *loop, const InetAddress &amp;httpAddr, const string &amp;name)</div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1Inspector_html_a9b3d030deba315670a7da29b78586217"><div class="ttname"><a href="classmuduo_1_1net_1_1Inspector.html#a9b3d030deba315670a7da29b78586217">muduo::net::Inspector::Callback</a></div><div class="ttdeci">std::function&lt; string(HttpRequest::Method, const ArgList &amp;args)&gt; Callback</div><div class="ttdef"><b>Definition:</b> <a href="Inspector_8h_source.html#l00035">Inspector.h:35</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1Inspector_html_aa22799cd3b4f56688d431d68c2d014a0"><div class="ttname"><a href="classmuduo_1_1net_1_1Inspector.html#aa22799cd3b4f56688d431d68c2d014a0">muduo::net::Inspector::ArgList</a></div><div class="ttdeci">std::vector&lt; string &gt; ArgList</div><div class="ttdef"><b>Definition:</b> <a href="Inspector_8h_source.html#l00034">Inspector.h:34</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1Inspector_html_a6e1bf1809a42f40f1a21178dc6620a6f"><div class="ttname"><a href="classmuduo_1_1net_1_1Inspector.html#a6e1bf1809a42f40f1a21178dc6620a6f">muduo::net::Inspector::mutex_</a></div><div class="ttdeci">MutexLock mutex_</div><div class="ttdef"><b>Definition:</b> <a href="Inspector_8h_source.html#l00059">Inspector.h:59</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1HttpResponse_html"><div class="ttname"><a href="classmuduo_1_1net_1_1HttpResponse.html">muduo::net::HttpResponse</a></div><div class="ttdef"><b>Definition:</b> <a href="HttpResponse_8h_source.html#l00025">HttpResponse.h:25</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_e3b32e68f04aa7e841009dd52d1d0488.html">muduo</a></li><li class="navelem"><a class="el" href="dir_d7c6d3fc8ffe3f4fe08283d9a46c8dda.html">net</a></li><li class="navelem"><a class="el" href="dir_0d36f27456dd640b2b1496589ebed7ce.html">inspect</a></li><li class="navelem"><a class="el" href="Inspector_8h.html">Inspector.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

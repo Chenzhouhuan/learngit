@@ -1,0 +1,1631 @@
+\hypertarget{classmuduo_1_1net_1_1Buffer}{}\section{Buffer类 参考}
+\label{classmuduo_1_1net_1_1Buffer}\index{Buffer@{Buffer}}
+
+
+{\ttfamily \#include $<$Buffer.\+h$>$}
+
+
+
+类 Buffer 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classmuduo_1_1net_1_1Buffer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Buffer 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classmuduo_1_1net_1_1Buffer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1net_1_1Buffer_a3189a466a75c249c9371b74325e4fc53}{Buffer} (size\+\_\+t initial\+Size=\hyperlink{classmuduo_1_1net_1_1Buffer_a50181a12c6e534352c6c3cf9e0d8b331}{k\+Initial\+Size})
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_a5a6560acf9880bf7a3b210c07bb3db2e}{swap} (\hyperlink{classmuduo_1_1net_1_1Buffer}{Buffer} \&rhs)
+\item 
+size\+\_\+t \hyperlink{classmuduo_1_1net_1_1Buffer_afba1d23196411daa43950fdbbff6d724}{readable\+Bytes} () const
+\item 
+size\+\_\+t \hyperlink{classmuduo_1_1net_1_1Buffer_a998888da42aba8e7ff1977405f7c33e3}{writable\+Bytes} () const
+\item 
+size\+\_\+t \hyperlink{classmuduo_1_1net_1_1Buffer_ad738bbd8321f518ca5cdfac842993d04}{prependable\+Bytes} () const
+\item 
+const char $\ast$ \hyperlink{classmuduo_1_1net_1_1Buffer_ad1339d8b1a42e9762ae6cd3add003706}{peek} () const
+\item 
+const char $\ast$ \hyperlink{classmuduo_1_1net_1_1Buffer_a757db069730494fc47e500b29851c6c5}{find\+C\+R\+LF} () const
+\item 
+const char $\ast$ \hyperlink{classmuduo_1_1net_1_1Buffer_ac0c8bd8a269f6d31932e0f7bab608fdf}{find\+C\+R\+LF} (const char $\ast$start) const
+\item 
+const char $\ast$ \hyperlink{classmuduo_1_1net_1_1Buffer_acf4decda782c75e8f198c95de2958409}{find\+E\+OL} () const
+\item 
+const char $\ast$ \hyperlink{classmuduo_1_1net_1_1Buffer_a29e5dd77acbc70bc4f98301eb84a29f4}{find\+E\+OL} (const char $\ast$start) const
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_a25a9cdb4fcb89f6e3ff071517bdc09e8}{retrieve} (size\+\_\+t len)
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_abffa19bdb1fbf4ac36fe0f2375bee1e5}{retrieve\+Until} (const char $\ast$end)
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_a31eaec053434837ca42b6abc4319f0ee}{retrieve\+Int64} ()
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_a703d91e23ca1b8ab42350d8a9aa67de1}{retrieve\+Int32} ()
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_a78a272f407b370f1a5e0d30d0bdcf131}{retrieve\+Int16} ()
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_a4605c83f07f06cc12d0ab3a2d54be43e}{retrieve\+Int8} ()
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_af505ce71f8935bcfaa932d304c295173}{retrieve\+All} ()
+\item 
+string \hyperlink{classmuduo_1_1net_1_1Buffer_ac902667b575515cba5b54ddf3a5d10aa}{retrieve\+All\+As\+String} ()
+\item 
+string \hyperlink{classmuduo_1_1net_1_1Buffer_a2f372acde2975d2cd9a7633148db7e7f}{retrieve\+As\+String} (size\+\_\+t len)
+\item 
+\hyperlink{classmuduo_1_1StringPiece}{String\+Piece} \hyperlink{classmuduo_1_1net_1_1Buffer_a78096dee3d0826efb63a5b814eef37c4}{to\+String\+Piece} () const
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_af02baace4e1946f318dfa5c4d5d4bb3c}{append} (const \hyperlink{classmuduo_1_1StringPiece}{String\+Piece} \&str)
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_adece1d853752b95184d19c78228a0c39}{append} (const char $\ast$data, size\+\_\+t len)
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_af4c97664922a815eb9aa9dfe78686007}{append} (const void $\ast$data, size\+\_\+t len)
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_a1185aa5bbe069f50c8d46a9f8d5aac32}{ensure\+Writable\+Bytes} (size\+\_\+t len)
+\item 
+char $\ast$ \hyperlink{classmuduo_1_1net_1_1Buffer_a71778facb9cd13bc2403edf59621f3f5}{begin\+Write} ()
+\item 
+const char $\ast$ \hyperlink{classmuduo_1_1net_1_1Buffer_a46f79eca290d4d4cee634e3c1b50c57d}{begin\+Write} () const
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_ae29d7ca8954d0ec7da6363221c80a245}{has\+Written} (size\+\_\+t len)
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_a851a742d16106f81629a5315d80e0616}{unwrite} (size\+\_\+t len)
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_a7e283b380d5c67b86e150324bbb0546a}{append\+Int64} (int64\+\_\+t x)
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_a93760f95378988318124352dbf222e67}{append\+Int32} (int32\+\_\+t x)
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_a4d4daf38d824d3773fa5d711ffd536e1}{append\+Int16} (int16\+\_\+t x)
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_a9dca0171bcc73c002095487c464bad28}{append\+Int8} (int8\+\_\+t x)
+\item 
+int64\+\_\+t \hyperlink{classmuduo_1_1net_1_1Buffer_a5b815d6984b81ae01f581f799c48582f}{read\+Int64} ()
+\item 
+int32\+\_\+t \hyperlink{classmuduo_1_1net_1_1Buffer_adbc23fa2b53ee3f0bd8cc0af521900d4}{read\+Int32} ()
+\item 
+int16\+\_\+t \hyperlink{classmuduo_1_1net_1_1Buffer_a7cf018b7a5d7bed8aa4d201e4399fce0}{read\+Int16} ()
+\item 
+int8\+\_\+t \hyperlink{classmuduo_1_1net_1_1Buffer_a24c9f312341ccfb47ae7a007ae32c39f}{read\+Int8} ()
+\item 
+int64\+\_\+t \hyperlink{classmuduo_1_1net_1_1Buffer_a78f18c2f695bc9fb75781596a16d9416}{peek\+Int64} () const
+\item 
+int32\+\_\+t \hyperlink{classmuduo_1_1net_1_1Buffer_afefe12caa1ed837ffb7e967d44e19af9}{peek\+Int32} () const
+\item 
+int16\+\_\+t \hyperlink{classmuduo_1_1net_1_1Buffer_af9c96d31bad4ac1ff73d31672bc324c3}{peek\+Int16} () const
+\item 
+int8\+\_\+t \hyperlink{classmuduo_1_1net_1_1Buffer_a28a767d788ebbb53bef6c939cfa8b5fb}{peek\+Int8} () const
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_a1c260d8fb7c6194ce8ca9859718239d3}{prepend\+Int64} (int64\+\_\+t x)
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_a280f25c26e5867377de5c0c31dbc06c1}{prepend\+Int32} (int32\+\_\+t x)
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_a1c47f5d97958f529ef78f0ba283e33d0}{prepend\+Int16} (int16\+\_\+t x)
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_aa9b0f2527792514135d94b7f141f4039}{prepend\+Int8} (int8\+\_\+t x)
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_a3099092e4d4138f55fb825a50f50f24b}{prepend} (const void $\ast$data, size\+\_\+t len)
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_a69095875ff26fe7eff163afde6eb7c9e}{shrink} (size\+\_\+t reserve)
+\item 
+size\+\_\+t \hyperlink{classmuduo_1_1net_1_1Buffer_add5064782687c36289ea4905a58caef2}{internal\+Capacity} () const
+\item 
+ssize\+\_\+t \hyperlink{classmuduo_1_1net_1_1Buffer_abf4ee68d9e5290cdfb7f3854387f0576}{read\+Fd} (int fd, int $\ast$saved\+Errno)
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t \hyperlink{classmuduo_1_1net_1_1Buffer_a7c7e801837b45cd542d00cc5ec88dcb1}{k\+Cheap\+Prepend} = 8
+\item 
+static const size\+\_\+t \hyperlink{classmuduo_1_1net_1_1Buffer_a50181a12c6e534352c6c3cf9e0d8b331}{k\+Initial\+Size} = 1024
+\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{classmuduo_1_1net_1_1Buffer_ad431daee7daddf53f8aca682ddf3c940}{begin} ()
+\item 
+const char $\ast$ \hyperlink{classmuduo_1_1net_1_1Buffer_a5386e98f71cb440232f0c41041f50af4}{begin} () const
+\item 
+void \hyperlink{classmuduo_1_1net_1_1Buffer_a83d5a5ce302569b35df7743314578791}{make\+Space} (size\+\_\+t len)
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ char $>$ \hyperlink{classmuduo_1_1net_1_1Buffer_a906f9199a48e49dfaa86ba3e8edd0269}{buffer\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmuduo_1_1net_1_1Buffer_a8af076cf34524e62b7392ca568468a7d}{reader\+Index\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmuduo_1_1net_1_1Buffer_a642726abccc15af160d55735b2ed5d9a}{writer\+Index\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static const char \hyperlink{classmuduo_1_1net_1_1Buffer_aba43e9a92549451389054f6cd4aec2b4}{k\+C\+R\+LF} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A buffer class modeled after org.\+jboss.\+netty.\+buffer.\+Channel\+Buffer
+
+
+\begin{DoxyCode}
++-------------------+------------------+------------------+
+| prependable bytes |  readable bytes  |  writable bytes  |
+|                   |     (CONTENT)    |                  |
++-------------------+------------------+------------------+
+|                   |                  |                  |
+0      <=      readerIndex   <=   writerIndex    <=     size
+\end{DoxyCode}
+ 
+
+在文件 Buffer.\+h 第 42 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a3189a466a75c249c9371b74325e4fc53}\label{classmuduo_1_1net_1_1Buffer_a3189a466a75c249c9371b74325e4fc53}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{Buffer()}{Buffer()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1net_1_1Buffer}{Buffer} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{initial\+Size = {\ttfamily \hyperlink{classmuduo_1_1net_1_1Buffer_a50181a12c6e534352c6c3cf9e0d8b331}{k\+Initial\+Size}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+在文件 Buffer.\+h 第 48 行定义.
+
+
+
+参考 Buffer\+::prependable\+Bytes(), Buffer\+::readable\+Bytes() , 以及 Buffer\+::writable\+Bytes().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{classmuduo_1_1net_1_1Buffer_a3189a466a75c249c9371b74325e4fc53_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_af02baace4e1946f318dfa5c4d5d4bb3c}\label{classmuduo_1_1net_1_1Buffer_af02baace4e1946f318dfa5c4d5d4bb3c}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!append@{append}}
+\index{append@{append}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{append()}{append()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void append (\begin{DoxyParamCaption}\item[{const \hyperlink{classmuduo_1_1StringPiece}{String\+Piece} \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 177 行定义.
+
+
+
+参考 String\+Piece\+::data() , 以及 String\+Piece\+::size().
+
+
+
+参考自 Buffer\+::append(), Buffer\+::append\+Int16(), Buffer\+::append\+Int32(), Buffer\+::append\+Int64(), Buffer\+::append\+Int8() , 以及 Buffer\+::shrink().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{classmuduo_1_1net_1_1Buffer_af02baace4e1946f318dfa5c4d5d4bb3c_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classmuduo_1_1net_1_1Buffer_af02baace4e1946f318dfa5c4d5d4bb3c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_adece1d853752b95184d19c78228a0c39}\label{classmuduo_1_1net_1_1Buffer_adece1d853752b95184d19c78228a0c39}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!append@{append}}
+\index{append@{append}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{append()}{append()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void append (\begin{DoxyParamCaption}\item[{const char $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 182 行定义.
+
+
+
+参考 Buffer\+::begin\+Write(), Buffer\+::ensure\+Writable\+Bytes() , 以及 Buffer\+::has\+Written().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_adece1d853752b95184d19c78228a0c39_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_af4c97664922a815eb9aa9dfe78686007}\label{classmuduo_1_1net_1_1Buffer_af4c97664922a815eb9aa9dfe78686007}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!append@{append}}
+\index{append@{append}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{append()}{append()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void append (\begin{DoxyParamCaption}\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 189 行定义.
+
+
+
+参考 Buffer\+::append().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_af4c97664922a815eb9aa9dfe78686007_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a4d4daf38d824d3773fa5d711ffd536e1}\label{classmuduo_1_1net_1_1Buffer_a4d4daf38d824d3773fa5d711ffd536e1}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!append\+Int16@{append\+Int16}}
+\index{append\+Int16@{append\+Int16}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{append\+Int16()}{appendInt16()}}
+{\footnotesize\ttfamily void append\+Int16 (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 239 行定义.
+
+
+
+参考 Buffer\+::append() , 以及 muduo\+::net\+::sockets\+::host\+To\+Network16().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a4d4daf38d824d3773fa5d711ffd536e1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a93760f95378988318124352dbf222e67}\label{classmuduo_1_1net_1_1Buffer_a93760f95378988318124352dbf222e67}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!append\+Int32@{append\+Int32}}
+\index{append\+Int32@{append\+Int32}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{append\+Int32()}{appendInt32()}}
+{\footnotesize\ttfamily void append\+Int32 (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Append int32\+\_\+t using network endian 
+
+在文件 Buffer.\+h 第 233 行定义.
+
+
+
+参考 Buffer\+::append() , 以及 muduo\+::net\+::sockets\+::host\+To\+Network32().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a93760f95378988318124352dbf222e67_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a7e283b380d5c67b86e150324bbb0546a}\label{classmuduo_1_1net_1_1Buffer_a7e283b380d5c67b86e150324bbb0546a}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!append\+Int64@{append\+Int64}}
+\index{append\+Int64@{append\+Int64}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{append\+Int64()}{appendInt64()}}
+{\footnotesize\ttfamily void append\+Int64 (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Append int64\+\_\+t using network endian 
+
+在文件 Buffer.\+h 第 224 行定义.
+
+
+
+参考 Buffer\+::append() , 以及 muduo\+::net\+::sockets\+::host\+To\+Network64().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a7e283b380d5c67b86e150324bbb0546a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a9dca0171bcc73c002095487c464bad28}\label{classmuduo_1_1net_1_1Buffer_a9dca0171bcc73c002095487c464bad28}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!append\+Int8@{append\+Int8}}
+\index{append\+Int8@{append\+Int8}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{append\+Int8()}{appendInt8()}}
+{\footnotesize\ttfamily void append\+Int8 (\begin{DoxyParamCaption}\item[{int8\+\_\+t}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 245 行定义.
+
+
+
+参考 Buffer\+::append().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a9dca0171bcc73c002095487c464bad28_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_ad431daee7daddf53f8aca682ddf3c940}\label{classmuduo_1_1net_1_1Buffer_ad431daee7daddf53f8aca682ddf3c940}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!begin@{begin}}
+\index{begin@{begin}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily char$\ast$ begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 Buffer.\+h 第 384 行定义.
+
+
+
+参考 Buffer\+::buffer\+\_\+.
+
+
+
+参考自 Buffer\+::begin\+Write(), Buffer\+::make\+Space(), Buffer\+::peek() , 以及 Buffer\+::prepend().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_ad431daee7daddf53f8aca682ddf3c940_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a5386e98f71cb440232f0c41041f50af4}\label{classmuduo_1_1net_1_1Buffer_a5386e98f71cb440232f0c41041f50af4}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!begin@{begin}}
+\index{begin@{begin}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const char$\ast$ begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 Buffer.\+h 第 387 行定义.
+
+
+
+参考 Buffer\+::buffer\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a71778facb9cd13bc2403edf59621f3f5}\label{classmuduo_1_1net_1_1Buffer_a71778facb9cd13bc2403edf59621f3f5}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!begin\+Write@{begin\+Write}}
+\index{begin\+Write@{begin\+Write}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{begin\+Write()}{beginWrite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily char$\ast$ begin\+Write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 203 行定义.
+
+
+
+参考 Buffer\+::begin() , 以及 Buffer\+::writer\+Index\+\_\+.
+
+
+
+参考自 Buffer\+::append(), Buffer\+::find\+C\+R\+L\+F(), Buffer\+::find\+E\+O\+L() , 以及 Buffer\+::retrieve\+Until().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classmuduo_1_1net_1_1Buffer_a71778facb9cd13bc2403edf59621f3f5_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{classmuduo_1_1net_1_1Buffer_a71778facb9cd13bc2403edf59621f3f5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a46f79eca290d4d4cee634e3c1b50c57d}\label{classmuduo_1_1net_1_1Buffer_a46f79eca290d4d4cee634e3c1b50c57d}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!begin\+Write@{begin\+Write}}
+\index{begin\+Write@{begin\+Write}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{begin\+Write()}{beginWrite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const char$\ast$ begin\+Write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 206 行定义.
+
+
+
+参考 Buffer\+::begin() , 以及 Buffer\+::writer\+Index\+\_\+.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classmuduo_1_1net_1_1Buffer_a46f79eca290d4d4cee634e3c1b50c57d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a1185aa5bbe069f50c8d46a9f8d5aac32}\label{classmuduo_1_1net_1_1Buffer_a1185aa5bbe069f50c8d46a9f8d5aac32}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!ensure\+Writable\+Bytes@{ensure\+Writable\+Bytes}}
+\index{ensure\+Writable\+Bytes@{ensure\+Writable\+Bytes}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{ensure\+Writable\+Bytes()}{ensureWritableBytes()}}
+{\footnotesize\ttfamily void ensure\+Writable\+Bytes (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 194 行定义.
+
+
+
+参考 Buffer\+::make\+Space() , 以及 Buffer\+::writable\+Bytes().
+
+
+
+参考自 Buffer\+::append() , 以及 Buffer\+::shrink().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a1185aa5bbe069f50c8d46a9f8d5aac32_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{classmuduo_1_1net_1_1Buffer_a1185aa5bbe069f50c8d46a9f8d5aac32_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a757db069730494fc47e500b29851c6c5}\label{classmuduo_1_1net_1_1Buffer_a757db069730494fc47e500b29851c6c5}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!find\+C\+R\+LF@{find\+C\+R\+LF}}
+\index{find\+C\+R\+LF@{find\+C\+R\+LF}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{find\+C\+R\+L\+F()}{findCRLF()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const char$\ast$ find\+C\+R\+LF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 80 行定义.
+
+
+
+参考 Buffer\+::begin\+Write(), Buffer\+::k\+C\+R\+LF , 以及 Buffer\+::peek().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classmuduo_1_1net_1_1Buffer_a757db069730494fc47e500b29851c6c5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_ac0c8bd8a269f6d31932e0f7bab608fdf}\label{classmuduo_1_1net_1_1Buffer_ac0c8bd8a269f6d31932e0f7bab608fdf}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!find\+C\+R\+LF@{find\+C\+R\+LF}}
+\index{find\+C\+R\+LF@{find\+C\+R\+LF}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{find\+C\+R\+L\+F()}{findCRLF()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const char$\ast$ find\+C\+R\+LF (\begin{DoxyParamCaption}\item[{const char $\ast$}]{start }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 87 行定义.
+
+
+
+参考 Buffer\+::begin\+Write(), Buffer\+::k\+C\+R\+LF , 以及 Buffer\+::peek().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classmuduo_1_1net_1_1Buffer_ac0c8bd8a269f6d31932e0f7bab608fdf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_acf4decda782c75e8f198c95de2958409}\label{classmuduo_1_1net_1_1Buffer_acf4decda782c75e8f198c95de2958409}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!find\+E\+OL@{find\+E\+OL}}
+\index{find\+E\+OL@{find\+E\+OL}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{find\+E\+O\+L()}{findEOL()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const char$\ast$ find\+E\+OL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 96 行定义.
+
+
+
+参考 Buffer\+::peek() , 以及 Buffer\+::readable\+Bytes().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classmuduo_1_1net_1_1Buffer_acf4decda782c75e8f198c95de2958409_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a29e5dd77acbc70bc4f98301eb84a29f4}\label{classmuduo_1_1net_1_1Buffer_a29e5dd77acbc70bc4f98301eb84a29f4}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!find\+E\+OL@{find\+E\+OL}}
+\index{find\+E\+OL@{find\+E\+OL}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{find\+E\+O\+L()}{findEOL()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const char$\ast$ find\+E\+OL (\begin{DoxyParamCaption}\item[{const char $\ast$}]{start }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 102 行定义.
+
+
+
+参考 Buffer\+::begin\+Write() , 以及 Buffer\+::peek().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classmuduo_1_1net_1_1Buffer_a29e5dd77acbc70bc4f98301eb84a29f4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_ae29d7ca8954d0ec7da6363221c80a245}\label{classmuduo_1_1net_1_1Buffer_ae29d7ca8954d0ec7da6363221c80a245}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!has\+Written@{has\+Written}}
+\index{has\+Written@{has\+Written}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{has\+Written()}{hasWritten()}}
+{\footnotesize\ttfamily void has\+Written (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 209 行定义.
+
+
+
+参考 Buffer\+::writable\+Bytes() , 以及 Buffer\+::writer\+Index\+\_\+.
+
+
+
+参考自 Buffer\+::append().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{classmuduo_1_1net_1_1Buffer_ae29d7ca8954d0ec7da6363221c80a245_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classmuduo_1_1net_1_1Buffer_ae29d7ca8954d0ec7da6363221c80a245_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_add5064782687c36289ea4905a58caef2}\label{classmuduo_1_1net_1_1Buffer_add5064782687c36289ea4905a58caef2}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!internal\+Capacity@{internal\+Capacity}}
+\index{internal\+Capacity@{internal\+Capacity}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{internal\+Capacity()}{internalCapacity()}}
+{\footnotesize\ttfamily size\+\_\+t internal\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 371 行定义.
+
+
+
+参考 Buffer\+::buffer\+\_\+ , 以及 Buffer\+::read\+Fd().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{classmuduo_1_1net_1_1Buffer_add5064782687c36289ea4905a58caef2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a83d5a5ce302569b35df7743314578791}\label{classmuduo_1_1net_1_1Buffer_a83d5a5ce302569b35df7743314578791}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!make\+Space@{make\+Space}}
+\index{make\+Space@{make\+Space}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{make\+Space()}{makeSpace()}}
+{\footnotesize\ttfamily void make\+Space (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 Buffer.\+h 第 390 行定义.
+
+
+
+参考 Buffer\+::begin(), Buffer\+::buffer\+\_\+, Buffer\+::k\+Cheap\+Prepend, Buffer\+::prependable\+Bytes(), Buffer\+::readable\+Bytes(), Buffer\+::reader\+Index\+\_\+, Buffer\+::writable\+Bytes() , 以及 Buffer\+::writer\+Index\+\_\+.
+
+
+
+参考自 Buffer\+::ensure\+Writable\+Bytes().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{classmuduo_1_1net_1_1Buffer_a83d5a5ce302569b35df7743314578791_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a83d5a5ce302569b35df7743314578791_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_ad1339d8b1a42e9762ae6cd3add003706}\label{classmuduo_1_1net_1_1Buffer_ad1339d8b1a42e9762ae6cd3add003706}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!peek@{peek}}
+\index{peek@{peek}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily const char$\ast$ peek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 77 行定义.
+
+
+
+参考 Buffer\+::begin() , 以及 Buffer\+::reader\+Index\+\_\+.
+
+
+
+参考自 Buffer\+::find\+C\+R\+L\+F(), Buffer\+::find\+E\+O\+L(), Buffer\+::peek\+Int16(), Buffer\+::peek\+Int32(), Buffer\+::peek\+Int64(), Buffer\+::peek\+Int8(), Buffer\+::retrieve\+As\+String(), Buffer\+::retrieve\+Until() , 以及 Buffer\+::to\+String\+Piece().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{classmuduo_1_1net_1_1Buffer_ad1339d8b1a42e9762ae6cd3add003706_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_ad1339d8b1a42e9762ae6cd3add003706_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_af9c96d31bad4ac1ff73d31672bc324c3}\label{classmuduo_1_1net_1_1Buffer_af9c96d31bad4ac1ff73d31672bc324c3}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!peek\+Int16@{peek\+Int16}}
+\index{peek\+Int16@{peek\+Int16}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{peek\+Int16()}{peekInt16()}}
+{\footnotesize\ttfamily int16\+\_\+t peek\+Int16 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 310 行定义.
+
+
+
+参考 muduo\+::net\+::sockets\+::network\+To\+Host16(), Buffer\+::peek() , 以及 Buffer\+::readable\+Bytes().
+
+
+
+参考自 Buffer\+::read\+Int16().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_af9c96d31bad4ac1ff73d31672bc324c3_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{classmuduo_1_1net_1_1Buffer_af9c96d31bad4ac1ff73d31672bc324c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_afefe12caa1ed837ffb7e967d44e19af9}\label{classmuduo_1_1net_1_1Buffer_afefe12caa1ed837ffb7e967d44e19af9}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!peek\+Int32@{peek\+Int32}}
+\index{peek\+Int32@{peek\+Int32}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{peek\+Int32()}{peekInt32()}}
+{\footnotesize\ttfamily int32\+\_\+t peek\+Int32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Peek int32\+\_\+t from network endian
+
+Require\+: buf-\/$>$\hyperlink{classmuduo_1_1net_1_1Buffer_afba1d23196411daa43950fdbbff6d724}{readable\+Bytes()} $>$= sizeof(int32\+\_\+t) 
+
+在文件 Buffer.\+h 第 302 行定义.
+
+
+
+参考 muduo\+::net\+::sockets\+::network\+To\+Host32(), Buffer\+::peek() , 以及 Buffer\+::readable\+Bytes().
+
+
+
+参考自 Buffer\+::read\+Int32().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_afefe12caa1ed837ffb7e967d44e19af9_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{classmuduo_1_1net_1_1Buffer_afefe12caa1ed837ffb7e967d44e19af9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a78f18c2f695bc9fb75781596a16d9416}\label{classmuduo_1_1net_1_1Buffer_a78f18c2f695bc9fb75781596a16d9416}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!peek\+Int64@{peek\+Int64}}
+\index{peek\+Int64@{peek\+Int64}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{peek\+Int64()}{peekInt64()}}
+{\footnotesize\ttfamily int64\+\_\+t peek\+Int64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Peek int64\+\_\+t from network endian
+
+Require\+: buf-\/$>$\hyperlink{classmuduo_1_1net_1_1Buffer_afba1d23196411daa43950fdbbff6d724}{readable\+Bytes()} $>$= sizeof(int64\+\_\+t) 
+
+在文件 Buffer.\+h 第 290 行定义.
+
+
+
+参考 muduo\+::net\+::sockets\+::network\+To\+Host64(), Buffer\+::peek() , 以及 Buffer\+::readable\+Bytes().
+
+
+
+参考自 Buffer\+::read\+Int64().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a78f18c2f695bc9fb75781596a16d9416_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{classmuduo_1_1net_1_1Buffer_a78f18c2f695bc9fb75781596a16d9416_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a28a767d788ebbb53bef6c939cfa8b5fb}\label{classmuduo_1_1net_1_1Buffer_a28a767d788ebbb53bef6c939cfa8b5fb}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!peek\+Int8@{peek\+Int8}}
+\index{peek\+Int8@{peek\+Int8}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{peek\+Int8()}{peekInt8()}}
+{\footnotesize\ttfamily int8\+\_\+t peek\+Int8 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 318 行定义.
+
+
+
+参考 Buffer\+::peek() , 以及 Buffer\+::readable\+Bytes().
+
+
+
+参考自 Buffer\+::read\+Int8().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classmuduo_1_1net_1_1Buffer_a28a767d788ebbb53bef6c939cfa8b5fb_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classmuduo_1_1net_1_1Buffer_a28a767d788ebbb53bef6c939cfa8b5fb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a3099092e4d4138f55fb825a50f50f24b}\label{classmuduo_1_1net_1_1Buffer_a3099092e4d4138f55fb825a50f50f24b}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!prepend@{prepend}}
+\index{prepend@{prepend}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{prepend()}{prepend()}}
+{\footnotesize\ttfamily void prepend (\begin{DoxyParamCaption}\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 354 行定义.
+
+
+
+参考 Buffer\+::begin(), Buffer\+::prependable\+Bytes() , 以及 Buffer\+::reader\+Index\+\_\+.
+
+
+
+参考自 Buffer\+::prepend\+Int16(), Buffer\+::prepend\+Int32(), Buffer\+::prepend\+Int64() , 以及 Buffer\+::prepend\+Int8().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{classmuduo_1_1net_1_1Buffer_a3099092e4d4138f55fb825a50f50f24b_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classmuduo_1_1net_1_1Buffer_a3099092e4d4138f55fb825a50f50f24b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_ad738bbd8321f518ca5cdfac842993d04}\label{classmuduo_1_1net_1_1Buffer_ad738bbd8321f518ca5cdfac842993d04}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!prependable\+Bytes@{prependable\+Bytes}}
+\index{prependable\+Bytes@{prependable\+Bytes}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{prependable\+Bytes()}{prependableBytes()}}
+{\footnotesize\ttfamily size\+\_\+t prependable\+Bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 74 行定义.
+
+
+
+参考 Buffer\+::reader\+Index\+\_\+.
+
+
+
+参考自 Buffer\+::\+Buffer(), Buffer\+::make\+Space() , 以及 Buffer\+::prepend().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_ad738bbd8321f518ca5cdfac842993d04_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a1c47f5d97958f529ef78f0ba283e33d0}\label{classmuduo_1_1net_1_1Buffer_a1c47f5d97958f529ef78f0ba283e33d0}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!prepend\+Int16@{prepend\+Int16}}
+\index{prepend\+Int16@{prepend\+Int16}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{prepend\+Int16()}{prependInt16()}}
+{\footnotesize\ttfamily void prepend\+Int16 (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 343 行定义.
+
+
+
+参考 muduo\+::net\+::sockets\+::host\+To\+Network16() , 以及 Buffer\+::prepend().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a1c47f5d97958f529ef78f0ba283e33d0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a280f25c26e5867377de5c0c31dbc06c1}\label{classmuduo_1_1net_1_1Buffer_a280f25c26e5867377de5c0c31dbc06c1}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!prepend\+Int32@{prepend\+Int32}}
+\index{prepend\+Int32@{prepend\+Int32}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{prepend\+Int32()}{prependInt32()}}
+{\footnotesize\ttfamily void prepend\+Int32 (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prepend int32\+\_\+t using network endian 
+
+在文件 Buffer.\+h 第 337 行定义.
+
+
+
+参考 muduo\+::net\+::sockets\+::host\+To\+Network32() , 以及 Buffer\+::prepend().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a280f25c26e5867377de5c0c31dbc06c1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a1c260d8fb7c6194ce8ca9859718239d3}\label{classmuduo_1_1net_1_1Buffer_a1c260d8fb7c6194ce8ca9859718239d3}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!prepend\+Int64@{prepend\+Int64}}
+\index{prepend\+Int64@{prepend\+Int64}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{prepend\+Int64()}{prependInt64()}}
+{\footnotesize\ttfamily void prepend\+Int64 (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prepend int64\+\_\+t using network endian 
+
+在文件 Buffer.\+h 第 328 行定义.
+
+
+
+参考 muduo\+::net\+::sockets\+::host\+To\+Network64() , 以及 Buffer\+::prepend().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a1c260d8fb7c6194ce8ca9859718239d3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_aa9b0f2527792514135d94b7f141f4039}\label{classmuduo_1_1net_1_1Buffer_aa9b0f2527792514135d94b7f141f4039}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!prepend\+Int8@{prepend\+Int8}}
+\index{prepend\+Int8@{prepend\+Int8}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{prepend\+Int8()}{prependInt8()}}
+{\footnotesize\ttfamily void prepend\+Int8 (\begin{DoxyParamCaption}\item[{int8\+\_\+t}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 349 行定义.
+
+
+
+参考 Buffer\+::prepend().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_aa9b0f2527792514135d94b7f141f4039_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_afba1d23196411daa43950fdbbff6d724}\label{classmuduo_1_1net_1_1Buffer_afba1d23196411daa43950fdbbff6d724}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!readable\+Bytes@{readable\+Bytes}}
+\index{readable\+Bytes@{readable\+Bytes}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{readable\+Bytes()}{readableBytes()}}
+{\footnotesize\ttfamily size\+\_\+t readable\+Bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 68 行定义.
+
+
+
+参考 Buffer\+::reader\+Index\+\_\+ , 以及 Buffer\+::writer\+Index\+\_\+.
+
+
+
+参考自 Buffer\+::\+Buffer(), Buffer\+::find\+E\+O\+L(), Buffer\+::make\+Space(), Buffer\+::peek\+Int16(), Buffer\+::peek\+Int32(), Buffer\+::peek\+Int64(), Buffer\+::peek\+Int8(), Buffer\+::retrieve(), Buffer\+::retrieve\+All\+As\+String(), Buffer\+::retrieve\+As\+String(), Buffer\+::shrink(), Buffer\+::to\+String\+Piece() , 以及 Buffer\+::unwrite().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_afba1d23196411daa43950fdbbff6d724_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_abf4ee68d9e5290cdfb7f3854387f0576}\label{classmuduo_1_1net_1_1Buffer_abf4ee68d9e5290cdfb7f3854387f0576}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!read\+Fd@{read\+Fd}}
+\index{read\+Fd@{read\+Fd}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{read\+Fd()}{readFd()}}
+{\footnotesize\ttfamily ssize\+\_\+t read\+Fd (\begin{DoxyParamCaption}\item[{int}]{fd,  }\item[{int $\ast$}]{saved\+Errno }\end{DoxyParamCaption})}
+
+Read data directly into buffer.
+
+It may implement with readv(2) \begin{DoxyReturn}{返回}
+result of read(2), {\ttfamily errno} is saved 
+\end{DoxyReturn}
+
+
+参考自 Buffer\+::internal\+Capacity().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{classmuduo_1_1net_1_1Buffer_abf4ee68d9e5290cdfb7f3854387f0576_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a7cf018b7a5d7bed8aa4d201e4399fce0}\label{classmuduo_1_1net_1_1Buffer_a7cf018b7a5d7bed8aa4d201e4399fce0}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!read\+Int16@{read\+Int16}}
+\index{read\+Int16@{read\+Int16}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{read\+Int16()}{readInt16()}}
+{\footnotesize\ttfamily int16\+\_\+t read\+Int16 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 272 行定义.
+
+
+
+参考 Buffer\+::peek\+Int16() , 以及 Buffer\+::retrieve\+Int16().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a7cf018b7a5d7bed8aa4d201e4399fce0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_adbc23fa2b53ee3f0bd8cc0af521900d4}\label{classmuduo_1_1net_1_1Buffer_adbc23fa2b53ee3f0bd8cc0af521900d4}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!read\+Int32@{read\+Int32}}
+\index{read\+Int32@{read\+Int32}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{read\+Int32()}{readInt32()}}
+{\footnotesize\ttfamily int32\+\_\+t read\+Int32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Read int32\+\_\+t from network endian
+
+Require\+: buf-\/$>$\hyperlink{classmuduo_1_1net_1_1Buffer_afba1d23196411daa43950fdbbff6d724}{readable\+Bytes()} $>$= sizeof(int32\+\_\+t) 
+
+在文件 Buffer.\+h 第 265 行定义.
+
+
+
+参考 Buffer\+::peek\+Int32() , 以及 Buffer\+::retrieve\+Int32().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_adbc23fa2b53ee3f0bd8cc0af521900d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a5b815d6984b81ae01f581f799c48582f}\label{classmuduo_1_1net_1_1Buffer_a5b815d6984b81ae01f581f799c48582f}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!read\+Int64@{read\+Int64}}
+\index{read\+Int64@{read\+Int64}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{read\+Int64()}{readInt64()}}
+{\footnotesize\ttfamily int64\+\_\+t read\+Int64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Read int64\+\_\+t from network endian
+
+Require\+: buf-\/$>$\hyperlink{classmuduo_1_1net_1_1Buffer_afba1d23196411daa43950fdbbff6d724}{readable\+Bytes()} $>$= sizeof(int32\+\_\+t) 
+
+在文件 Buffer.\+h 第 254 行定义.
+
+
+
+参考 Buffer\+::peek\+Int64() , 以及 Buffer\+::retrieve\+Int64().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a5b815d6984b81ae01f581f799c48582f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a24c9f312341ccfb47ae7a007ae32c39f}\label{classmuduo_1_1net_1_1Buffer_a24c9f312341ccfb47ae7a007ae32c39f}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!read\+Int8@{read\+Int8}}
+\index{read\+Int8@{read\+Int8}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{read\+Int8()}{readInt8()}}
+{\footnotesize\ttfamily int8\+\_\+t read\+Int8 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 279 行定义.
+
+
+
+参考 Buffer\+::peek\+Int8() , 以及 Buffer\+::retrieve\+Int8().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a24c9f312341ccfb47ae7a007ae32c39f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a25a9cdb4fcb89f6e3ff071517bdc09e8}\label{classmuduo_1_1net_1_1Buffer_a25a9cdb4fcb89f6e3ff071517bdc09e8}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!retrieve@{retrieve}}
+\index{retrieve@{retrieve}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{retrieve()}{retrieve()}}
+{\footnotesize\ttfamily void retrieve (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 113 行定义.
+
+
+
+参考 Buffer\+::readable\+Bytes(), Buffer\+::reader\+Index\+\_\+ , 以及 Buffer\+::retrieve\+All().
+
+
+
+参考自 Buffer\+::retrieve\+As\+String(), Buffer\+::retrieve\+Int16(), Buffer\+::retrieve\+Int32(), Buffer\+::retrieve\+Int64(), Buffer\+::retrieve\+Int8() , 以及 Buffer\+::retrieve\+Until().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{classmuduo_1_1net_1_1Buffer_a25a9cdb4fcb89f6e3ff071517bdc09e8_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a25a9cdb4fcb89f6e3ff071517bdc09e8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_af505ce71f8935bcfaa932d304c295173}\label{classmuduo_1_1net_1_1Buffer_af505ce71f8935bcfaa932d304c295173}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!retrieve\+All@{retrieve\+All}}
+\index{retrieve\+All@{retrieve\+All}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{retrieve\+All()}{retrieveAll()}}
+{\footnotesize\ttfamily void retrieve\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 153 行定义.
+
+
+
+参考 Buffer\+::k\+Cheap\+Prepend, Buffer\+::reader\+Index\+\_\+ , 以及 Buffer\+::writer\+Index\+\_\+.
+
+
+
+参考自 Buffer\+::retrieve().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_af505ce71f8935bcfaa932d304c295173_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_ac902667b575515cba5b54ddf3a5d10aa}\label{classmuduo_1_1net_1_1Buffer_ac902667b575515cba5b54ddf3a5d10aa}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!retrieve\+All\+As\+String@{retrieve\+All\+As\+String}}
+\index{retrieve\+All\+As\+String@{retrieve\+All\+As\+String}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{retrieve\+All\+As\+String()}{retrieveAllAsString()}}
+{\footnotesize\ttfamily string retrieve\+All\+As\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 159 行定义.
+
+
+
+参考 Buffer\+::readable\+Bytes() , 以及 Buffer\+::retrieve\+As\+String().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_ac902667b575515cba5b54ddf3a5d10aa_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a2f372acde2975d2cd9a7633148db7e7f}\label{classmuduo_1_1net_1_1Buffer_a2f372acde2975d2cd9a7633148db7e7f}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!retrieve\+As\+String@{retrieve\+As\+String}}
+\index{retrieve\+As\+String@{retrieve\+As\+String}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{retrieve\+As\+String()}{retrieveAsString()}}
+{\footnotesize\ttfamily string retrieve\+As\+String (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 164 行定义.
+
+
+
+参考 Buffer\+::peek(), Buffer\+::readable\+Bytes() , 以及 Buffer\+::retrieve().
+
+
+
+参考自 Buffer\+::retrieve\+All\+As\+String().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a2f372acde2975d2cd9a7633148db7e7f_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{classmuduo_1_1net_1_1Buffer_a2f372acde2975d2cd9a7633148db7e7f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a78a272f407b370f1a5e0d30d0bdcf131}\label{classmuduo_1_1net_1_1Buffer_a78a272f407b370f1a5e0d30d0bdcf131}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!retrieve\+Int16@{retrieve\+Int16}}
+\index{retrieve\+Int16@{retrieve\+Int16}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{retrieve\+Int16()}{retrieveInt16()}}
+{\footnotesize\ttfamily void retrieve\+Int16 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 143 行定义.
+
+
+
+参考 Buffer\+::retrieve().
+
+
+
+参考自 Buffer\+::read\+Int16().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a78a272f407b370f1a5e0d30d0bdcf131_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classmuduo_1_1net_1_1Buffer_a78a272f407b370f1a5e0d30d0bdcf131_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a703d91e23ca1b8ab42350d8a9aa67de1}\label{classmuduo_1_1net_1_1Buffer_a703d91e23ca1b8ab42350d8a9aa67de1}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!retrieve\+Int32@{retrieve\+Int32}}
+\index{retrieve\+Int32@{retrieve\+Int32}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{retrieve\+Int32()}{retrieveInt32()}}
+{\footnotesize\ttfamily void retrieve\+Int32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 138 行定义.
+
+
+
+参考 Buffer\+::retrieve().
+
+
+
+参考自 Buffer\+::read\+Int32().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a703d91e23ca1b8ab42350d8a9aa67de1_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classmuduo_1_1net_1_1Buffer_a703d91e23ca1b8ab42350d8a9aa67de1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a31eaec053434837ca42b6abc4319f0ee}\label{classmuduo_1_1net_1_1Buffer_a31eaec053434837ca42b6abc4319f0ee}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!retrieve\+Int64@{retrieve\+Int64}}
+\index{retrieve\+Int64@{retrieve\+Int64}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{retrieve\+Int64()}{retrieveInt64()}}
+{\footnotesize\ttfamily void retrieve\+Int64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 133 行定义.
+
+
+
+参考 Buffer\+::retrieve().
+
+
+
+参考自 Buffer\+::read\+Int64().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a31eaec053434837ca42b6abc4319f0ee_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classmuduo_1_1net_1_1Buffer_a31eaec053434837ca42b6abc4319f0ee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a4605c83f07f06cc12d0ab3a2d54be43e}\label{classmuduo_1_1net_1_1Buffer_a4605c83f07f06cc12d0ab3a2d54be43e}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!retrieve\+Int8@{retrieve\+Int8}}
+\index{retrieve\+Int8@{retrieve\+Int8}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{retrieve\+Int8()}{retrieveInt8()}}
+{\footnotesize\ttfamily void retrieve\+Int8 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 148 行定义.
+
+
+
+参考 Buffer\+::retrieve().
+
+
+
+参考自 Buffer\+::read\+Int8().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a4605c83f07f06cc12d0ab3a2d54be43e_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classmuduo_1_1net_1_1Buffer_a4605c83f07f06cc12d0ab3a2d54be43e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_abffa19bdb1fbf4ac36fe0f2375bee1e5}\label{classmuduo_1_1net_1_1Buffer_abffa19bdb1fbf4ac36fe0f2375bee1e5}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!retrieve\+Until@{retrieve\+Until}}
+\index{retrieve\+Until@{retrieve\+Until}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{retrieve\+Until()}{retrieveUntil()}}
+{\footnotesize\ttfamily void retrieve\+Until (\begin{DoxyParamCaption}\item[{const char $\ast$}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 126 行定义.
+
+
+
+参考 Buffer\+::begin\+Write(), Buffer\+::peek() , 以及 Buffer\+::retrieve().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_abffa19bdb1fbf4ac36fe0f2375bee1e5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a69095875ff26fe7eff163afde6eb7c9e}\label{classmuduo_1_1net_1_1Buffer_a69095875ff26fe7eff163afde6eb7c9e}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!shrink@{shrink}}
+\index{shrink@{shrink}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{shrink()}{shrink()}}
+{\footnotesize\ttfamily void shrink (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{reserve }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 362 行定义.
+
+
+
+参考 Buffer\+::append(), Buffer\+::ensure\+Writable\+Bytes(), Buffer\+::readable\+Bytes(), Buffer\+::swap() , 以及 Buffer\+::to\+String\+Piece().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a69095875ff26fe7eff163afde6eb7c9e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a5a6560acf9880bf7a3b210c07bb3db2e}\label{classmuduo_1_1net_1_1Buffer_a5a6560acf9880bf7a3b210c07bb3db2e}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!swap@{swap}}
+\index{swap@{swap}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void swap (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1net_1_1Buffer}{Buffer} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 61 行定义.
+
+
+
+参考 Buffer\+::buffer\+\_\+, Buffer\+::reader\+Index\+\_\+ , 以及 Buffer\+::writer\+Index\+\_\+.
+
+
+
+参考自 Buffer\+::shrink().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classmuduo_1_1net_1_1Buffer_a5a6560acf9880bf7a3b210c07bb3db2e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a78096dee3d0826efb63a5b814eef37c4}\label{classmuduo_1_1net_1_1Buffer_a78096dee3d0826efb63a5b814eef37c4}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!to\+String\+Piece@{to\+String\+Piece}}
+\index{to\+String\+Piece@{to\+String\+Piece}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{to\+String\+Piece()}{toStringPiece()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1StringPiece}{String\+Piece} to\+String\+Piece (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 172 行定义.
+
+
+
+参考 Buffer\+::peek() , 以及 Buffer\+::readable\+Bytes().
+
+
+
+参考自 Buffer\+::shrink().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a78096dee3d0826efb63a5b814eef37c4_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{classmuduo_1_1net_1_1Buffer_a78096dee3d0826efb63a5b814eef37c4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a851a742d16106f81629a5315d80e0616}\label{classmuduo_1_1net_1_1Buffer_a851a742d16106f81629a5315d80e0616}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!unwrite@{unwrite}}
+\index{unwrite@{unwrite}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{unwrite()}{unwrite()}}
+{\footnotesize\ttfamily void unwrite (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 215 行定义.
+
+
+
+参考 Buffer\+::readable\+Bytes() , 以及 Buffer\+::writer\+Index\+\_\+.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classmuduo_1_1net_1_1Buffer_a851a742d16106f81629a5315d80e0616_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a998888da42aba8e7ff1977405f7c33e3}\label{classmuduo_1_1net_1_1Buffer_a998888da42aba8e7ff1977405f7c33e3}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!writable\+Bytes@{writable\+Bytes}}
+\index{writable\+Bytes@{writable\+Bytes}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{writable\+Bytes()}{writableBytes()}}
+{\footnotesize\ttfamily size\+\_\+t writable\+Bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Buffer.\+h 第 71 行定义.
+
+
+
+参考 Buffer\+::buffer\+\_\+ , 以及 Buffer\+::writer\+Index\+\_\+.
+
+
+
+参考自 Buffer\+::\+Buffer(), Buffer\+::ensure\+Writable\+Bytes(), Buffer\+::has\+Written() , 以及 Buffer\+::make\+Space().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1Buffer_a998888da42aba8e7ff1977405f7c33e3_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a906f9199a48e49dfaa86ba3e8edd0269}\label{classmuduo_1_1net_1_1Buffer_a906f9199a48e49dfaa86ba3e8edd0269}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!buffer\+\_\+@{buffer\+\_\+}}
+\index{buffer\+\_\+@{buffer\+\_\+}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{buffer\+\_\+}{buffer\_}}
+{\footnotesize\ttfamily std\+::vector$<$char$>$ buffer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Buffer.\+h 第 412 行定义.
+
+
+
+参考自 Buffer\+::begin(), Buffer\+::internal\+Capacity(), Buffer\+::make\+Space(), Buffer\+::swap() , 以及 Buffer\+::writable\+Bytes().
+
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a7c7e801837b45cd542d00cc5ec88dcb1}\label{classmuduo_1_1net_1_1Buffer_a7c7e801837b45cd542d00cc5ec88dcb1}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!k\+Cheap\+Prepend@{k\+Cheap\+Prepend}}
+\index{k\+Cheap\+Prepend@{k\+Cheap\+Prepend}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{k\+Cheap\+Prepend}{kCheapPrepend}}
+{\footnotesize\ttfamily const size\+\_\+t k\+Cheap\+Prepend = 8\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+在文件 Buffer.\+h 第 45 行定义.
+
+
+
+参考自 Buffer\+::make\+Space() , 以及 Buffer\+::retrieve\+All().
+
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_aba43e9a92549451389054f6cd4aec2b4}\label{classmuduo_1_1net_1_1Buffer_aba43e9a92549451389054f6cd4aec2b4}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!k\+C\+R\+LF@{k\+C\+R\+LF}}
+\index{k\+C\+R\+LF@{k\+C\+R\+LF}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{k\+C\+R\+LF}{kCRLF}}
+{\footnotesize\ttfamily const char k\+C\+R\+LF\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 Buffer.\+h 第 416 行定义.
+
+
+
+参考自 Buffer\+::find\+C\+R\+L\+F().
+
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a50181a12c6e534352c6c3cf9e0d8b331}\label{classmuduo_1_1net_1_1Buffer_a50181a12c6e534352c6c3cf9e0d8b331}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!k\+Initial\+Size@{k\+Initial\+Size}}
+\index{k\+Initial\+Size@{k\+Initial\+Size}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{k\+Initial\+Size}{kInitialSize}}
+{\footnotesize\ttfamily const size\+\_\+t k\+Initial\+Size = 1024\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+在文件 Buffer.\+h 第 46 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a8af076cf34524e62b7392ca568468a7d}\label{classmuduo_1_1net_1_1Buffer_a8af076cf34524e62b7392ca568468a7d}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!reader\+Index\+\_\+@{reader\+Index\+\_\+}}
+\index{reader\+Index\+\_\+@{reader\+Index\+\_\+}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{reader\+Index\+\_\+}{readerIndex\_}}
+{\footnotesize\ttfamily size\+\_\+t reader\+Index\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Buffer.\+h 第 413 行定义.
+
+
+
+参考自 Buffer\+::make\+Space(), Buffer\+::peek(), Buffer\+::prepend(), Buffer\+::prependable\+Bytes(), Buffer\+::readable\+Bytes(), Buffer\+::retrieve(), Buffer\+::retrieve\+All() , 以及 Buffer\+::swap().
+
+\mbox{\Hypertarget{classmuduo_1_1net_1_1Buffer_a642726abccc15af160d55735b2ed5d9a}\label{classmuduo_1_1net_1_1Buffer_a642726abccc15af160d55735b2ed5d9a}} 
+\index{muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}!writer\+Index\+\_\+@{writer\+Index\+\_\+}}
+\index{writer\+Index\+\_\+@{writer\+Index\+\_\+}!muduo\+::net\+::\+Buffer@{muduo\+::net\+::\+Buffer}}
+\subsubsection{\texorpdfstring{writer\+Index\+\_\+}{writerIndex\_}}
+{\footnotesize\ttfamily size\+\_\+t writer\+Index\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Buffer.\+h 第 414 行定义.
+
+
+
+参考自 Buffer\+::begin\+Write(), Buffer\+::has\+Written(), Buffer\+::make\+Space(), Buffer\+::readable\+Bytes(), Buffer\+::retrieve\+All(), Buffer\+::swap(), Buffer\+::unwrite() , 以及 Buffer\+::writable\+Bytes().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/muduo/net/\hyperlink{muduo_2net_2Buffer_8h}{Buffer.\+h}\end{DoxyCompactItemize}

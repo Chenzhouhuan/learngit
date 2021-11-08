@@ -1,0 +1,96 @@
+\hypertarget{EventLoop_8cc}{}\section{src/\+Event\+Loop.cc 文件参考}
+\label{EventLoop_8cc}\index{src/\+Event\+Loop.\+cc@{src/\+Event\+Loop.\+cc}}
+{\ttfamily \#include \char`\"{}../lib/\+Event\+Loop.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../lib/\+Channel.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../lib/\+E\+Poller.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../lib/\+Timer\+Queue.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}muduo/base/\+Logging.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$boost/bind.\+hpp$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$signal.\+h$>$}\newline
+{\ttfamily \#include $<$sys/eventfd.\+h$>$}\newline
+Event\+Loop.\+cc 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{EventLoop_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classIgnoreSigPipe}{Ignore\+Sig\+Pipe}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{EventLoop_8cc_ab049bcc150ef06671cfe2753b94dba05}{create\+Eventfd} ()
+\end{DoxyCompactItemize}
+\subsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+thread \hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$ \hyperlink{EventLoop_8cc_ac0505571a1805388d4cf5f8cd6cdf625}{t\+\_\+loop\+In\+This\+Thread} = 0
+\item 
+const int \hyperlink{EventLoop_8cc_aadf64cafb3b17c5f9fd42db3c481210d}{k\+Poll\+Time\+Ms} = 10000
+\item 
+\hyperlink{classIgnoreSigPipe}{Ignore\+Sig\+Pipe} \hyperlink{EventLoop_8cc_ae79f7ae38df1f5fa6f0c80f3c3948188}{init\+Obj}
+\end{DoxyCompactItemize}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{EventLoop_8cc_ab049bcc150ef06671cfe2753b94dba05}\label{EventLoop_8cc_ab049bcc150ef06671cfe2753b94dba05}} 
+\index{Event\+Loop.\+cc@{Event\+Loop.\+cc}!create\+Eventfd@{create\+Eventfd}}
+\index{create\+Eventfd@{create\+Eventfd}!Event\+Loop.\+cc@{Event\+Loop.\+cc}}
+\subsubsection{\texorpdfstring{create\+Eventfd()}{createEventfd()}}
+{\footnotesize\ttfamily static int create\+Eventfd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+在文件 Event\+Loop.\+cc 第 20 行定义.
+
+
+
+参考 L\+O\+G\+\_\+\+S\+Y\+S\+E\+RR.
+
+
+
+\subsection{变量说明}
+\mbox{\Hypertarget{EventLoop_8cc_ae79f7ae38df1f5fa6f0c80f3c3948188}\label{EventLoop_8cc_ae79f7ae38df1f5fa6f0c80f3c3948188}} 
+\index{Event\+Loop.\+cc@{Event\+Loop.\+cc}!init\+Obj@{init\+Obj}}
+\index{init\+Obj@{init\+Obj}!Event\+Loop.\+cc@{Event\+Loop.\+cc}}
+\subsubsection{\texorpdfstring{init\+Obj}{initObj}}
+{\footnotesize\ttfamily \hyperlink{classIgnoreSigPipe}{Ignore\+Sig\+Pipe} init\+Obj}
+
+
+
+在文件 Event\+Loop.\+cc 第 34 行定义.
+
+\mbox{\Hypertarget{EventLoop_8cc_aadf64cafb3b17c5f9fd42db3c481210d}\label{EventLoop_8cc_aadf64cafb3b17c5f9fd42db3c481210d}} 
+\index{Event\+Loop.\+cc@{Event\+Loop.\+cc}!k\+Poll\+Time\+Ms@{k\+Poll\+Time\+Ms}}
+\index{k\+Poll\+Time\+Ms@{k\+Poll\+Time\+Ms}!Event\+Loop.\+cc@{Event\+Loop.\+cc}}
+\subsubsection{\texorpdfstring{k\+Poll\+Time\+Ms}{kPollTimeMs}}
+{\footnotesize\ttfamily const int k\+Poll\+Time\+Ms = 10000}
+
+
+
+在文件 Event\+Loop.\+cc 第 18 行定义.
+
+
+
+参考自 Event\+Loop\+::loop().
+
+\mbox{\Hypertarget{EventLoop_8cc_ac0505571a1805388d4cf5f8cd6cdf625}\label{EventLoop_8cc_ac0505571a1805388d4cf5f8cd6cdf625}} 
+\index{Event\+Loop.\+cc@{Event\+Loop.\+cc}!t\+\_\+loop\+In\+This\+Thread@{t\+\_\+loop\+In\+This\+Thread}}
+\index{t\+\_\+loop\+In\+This\+Thread@{t\+\_\+loop\+In\+This\+Thread}!Event\+Loop.\+cc@{Event\+Loop.\+cc}}
+\subsubsection{\texorpdfstring{t\+\_\+loop\+In\+This\+Thread}{t\_loopInThisThread}}
+{\footnotesize\ttfamily \+\_\+\+\_\+thread \hyperlink{classmuduo_1_1EventLoop}{Event\+Loop}$\ast$ t\+\_\+loop\+In\+This\+Thread = 0}
+
+
+
+在文件 Event\+Loop.\+cc 第 17 行定义.
+
+
+
+参考自 Event\+Loop\+::\+Event\+Loop() , 以及 Event\+Loop\+::$\sim$\+Event\+Loop().
+

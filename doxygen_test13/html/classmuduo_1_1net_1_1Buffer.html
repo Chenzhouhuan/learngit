@@ -1,0 +1,2801 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: Buffer类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmuduo_1_1net_1_1Buffer.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#pri-static-attribs">静态 Private 属性</a> &#124;
+<a href="classmuduo_1_1net_1_1Buffer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Buffer类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a>&gt;</code></p>
+<div class="dynheader">
+类 Buffer 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer__inherit__graph.png" border="0" usemap="#Buffer_inherit__map" alt="Inheritance graph"/></div>
+<map name="Buffer_inherit__map" id="Buffer_inherit__map">
+<area shape="rect" id="node2" href="classmuduo_1_1copyable.html" title="{copyable\n||# copyable()\l# ~copyable()\l}" alt="" coords="29,5,147,97"/>
+</map>
+</div>
+<div class="dynheader">
+Buffer 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer__coll__graph.png" border="0" usemap="#Buffer_coll__map" alt="Collaboration graph"/></div>
+<map name="Buffer_coll__map" id="Buffer_coll__map">
+<area shape="rect" id="node2" href="classmuduo_1_1copyable.html" title="{copyable\n||# copyable()\l# ~copyable()\l}" alt="" coords="29,5,147,97"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a3189a466a75c249c9371b74325e4fc53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a3189a466a75c249c9371b74325e4fc53">Buffer</a> (size_t initialSize=<a class="el" href="classmuduo_1_1net_1_1Buffer.html#a50181a12c6e534352c6c3cf9e0d8b331">kInitialSize</a>)</td></tr>
+<tr class="separator:a3189a466a75c249c9371b74325e4fc53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a6560acf9880bf7a3b210c07bb3db2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a5a6560acf9880bf7a3b210c07bb3db2e">swap</a> (<a class="el" href="classmuduo_1_1net_1_1Buffer.html">Buffer</a> &amp;rhs)</td></tr>
+<tr class="separator:a5a6560acf9880bf7a3b210c07bb3db2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afba1d23196411daa43950fdbbff6d724"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724">readableBytes</a> () const</td></tr>
+<tr class="separator:afba1d23196411daa43950fdbbff6d724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a998888da42aba8e7ff1977405f7c33e3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a998888da42aba8e7ff1977405f7c33e3">writableBytes</a> () const</td></tr>
+<tr class="separator:a998888da42aba8e7ff1977405f7c33e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad738bbd8321f518ca5cdfac842993d04"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#ad738bbd8321f518ca5cdfac842993d04">prependableBytes</a> () const</td></tr>
+<tr class="separator:ad738bbd8321f518ca5cdfac842993d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1339d8b1a42e9762ae6cd3add003706"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706">peek</a> () const</td></tr>
+<tr class="separator:ad1339d8b1a42e9762ae6cd3add003706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757db069730494fc47e500b29851c6c5"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a757db069730494fc47e500b29851c6c5">findCRLF</a> () const</td></tr>
+<tr class="separator:a757db069730494fc47e500b29851c6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c8bd8a269f6d31932e0f7bab608fdf"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#ac0c8bd8a269f6d31932e0f7bab608fdf">findCRLF</a> (const char *start) const</td></tr>
+<tr class="separator:ac0c8bd8a269f6d31932e0f7bab608fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf4decda782c75e8f198c95de2958409"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#acf4decda782c75e8f198c95de2958409">findEOL</a> () const</td></tr>
+<tr class="separator:acf4decda782c75e8f198c95de2958409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e5dd77acbc70bc4f98301eb84a29f4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a29e5dd77acbc70bc4f98301eb84a29f4">findEOL</a> (const char *start) const</td></tr>
+<tr class="separator:a29e5dd77acbc70bc4f98301eb84a29f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25a9cdb4fcb89f6e3ff071517bdc09e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a25a9cdb4fcb89f6e3ff071517bdc09e8">retrieve</a> (size_t len)</td></tr>
+<tr class="separator:a25a9cdb4fcb89f6e3ff071517bdc09e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abffa19bdb1fbf4ac36fe0f2375bee1e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#abffa19bdb1fbf4ac36fe0f2375bee1e5">retrieveUntil</a> (const char *end)</td></tr>
+<tr class="separator:abffa19bdb1fbf4ac36fe0f2375bee1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31eaec053434837ca42b6abc4319f0ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a31eaec053434837ca42b6abc4319f0ee">retrieveInt64</a> ()</td></tr>
+<tr class="separator:a31eaec053434837ca42b6abc4319f0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a703d91e23ca1b8ab42350d8a9aa67de1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a703d91e23ca1b8ab42350d8a9aa67de1">retrieveInt32</a> ()</td></tr>
+<tr class="separator:a703d91e23ca1b8ab42350d8a9aa67de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a272f407b370f1a5e0d30d0bdcf131"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a78a272f407b370f1a5e0d30d0bdcf131">retrieveInt16</a> ()</td></tr>
+<tr class="separator:a78a272f407b370f1a5e0d30d0bdcf131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4605c83f07f06cc12d0ab3a2d54be43e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a4605c83f07f06cc12d0ab3a2d54be43e">retrieveInt8</a> ()</td></tr>
+<tr class="separator:a4605c83f07f06cc12d0ab3a2d54be43e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af505ce71f8935bcfaa932d304c295173"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#af505ce71f8935bcfaa932d304c295173">retrieveAll</a> ()</td></tr>
+<tr class="separator:af505ce71f8935bcfaa932d304c295173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac902667b575515cba5b54ddf3a5d10aa"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#ac902667b575515cba5b54ddf3a5d10aa">retrieveAllAsString</a> ()</td></tr>
+<tr class="separator:ac902667b575515cba5b54ddf3a5d10aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f372acde2975d2cd9a7633148db7e7f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a2f372acde2975d2cd9a7633148db7e7f">retrieveAsString</a> (size_t len)</td></tr>
+<tr class="separator:a2f372acde2975d2cd9a7633148db7e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78096dee3d0826efb63a5b814eef37c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1StringPiece.html">StringPiece</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a78096dee3d0826efb63a5b814eef37c4">toStringPiece</a> () const</td></tr>
+<tr class="separator:a78096dee3d0826efb63a5b814eef37c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02baace4e1946f318dfa5c4d5d4bb3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#af02baace4e1946f318dfa5c4d5d4bb3c">append</a> (const <a class="el" href="classmuduo_1_1StringPiece.html">StringPiece</a> &amp;str)</td></tr>
+<tr class="separator:af02baace4e1946f318dfa5c4d5d4bb3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adece1d853752b95184d19c78228a0c39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#adece1d853752b95184d19c78228a0c39">append</a> (const char *data, size_t len)</td></tr>
+<tr class="separator:adece1d853752b95184d19c78228a0c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4c97664922a815eb9aa9dfe78686007"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#af4c97664922a815eb9aa9dfe78686007">append</a> (const void *data, size_t len)</td></tr>
+<tr class="separator:af4c97664922a815eb9aa9dfe78686007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1185aa5bbe069f50c8d46a9f8d5aac32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a1185aa5bbe069f50c8d46a9f8d5aac32">ensureWritableBytes</a> (size_t len)</td></tr>
+<tr class="separator:a1185aa5bbe069f50c8d46a9f8d5aac32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71778facb9cd13bc2403edf59621f3f5"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a71778facb9cd13bc2403edf59621f3f5">beginWrite</a> ()</td></tr>
+<tr class="separator:a71778facb9cd13bc2403edf59621f3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46f79eca290d4d4cee634e3c1b50c57d"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a46f79eca290d4d4cee634e3c1b50c57d">beginWrite</a> () const</td></tr>
+<tr class="separator:a46f79eca290d4d4cee634e3c1b50c57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae29d7ca8954d0ec7da6363221c80a245"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#ae29d7ca8954d0ec7da6363221c80a245">hasWritten</a> (size_t len)</td></tr>
+<tr class="separator:ae29d7ca8954d0ec7da6363221c80a245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a851a742d16106f81629a5315d80e0616"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a851a742d16106f81629a5315d80e0616">unwrite</a> (size_t len)</td></tr>
+<tr class="separator:a851a742d16106f81629a5315d80e0616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e283b380d5c67b86e150324bbb0546a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a7e283b380d5c67b86e150324bbb0546a">appendInt64</a> (int64_t x)</td></tr>
+<tr class="separator:a7e283b380d5c67b86e150324bbb0546a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93760f95378988318124352dbf222e67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a93760f95378988318124352dbf222e67">appendInt32</a> (int32_t x)</td></tr>
+<tr class="separator:a93760f95378988318124352dbf222e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d4daf38d824d3773fa5d711ffd536e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a4d4daf38d824d3773fa5d711ffd536e1">appendInt16</a> (int16_t x)</td></tr>
+<tr class="separator:a4d4daf38d824d3773fa5d711ffd536e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dca0171bcc73c002095487c464bad28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a9dca0171bcc73c002095487c464bad28">appendInt8</a> (int8_t x)</td></tr>
+<tr class="separator:a9dca0171bcc73c002095487c464bad28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b815d6984b81ae01f581f799c48582f"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a5b815d6984b81ae01f581f799c48582f">readInt64</a> ()</td></tr>
+<tr class="separator:a5b815d6984b81ae01f581f799c48582f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc23fa2b53ee3f0bd8cc0af521900d4"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#adbc23fa2b53ee3f0bd8cc0af521900d4">readInt32</a> ()</td></tr>
+<tr class="separator:adbc23fa2b53ee3f0bd8cc0af521900d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cf018b7a5d7bed8aa4d201e4399fce0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a7cf018b7a5d7bed8aa4d201e4399fce0">readInt16</a> ()</td></tr>
+<tr class="separator:a7cf018b7a5d7bed8aa4d201e4399fce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c9f312341ccfb47ae7a007ae32c39f"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a24c9f312341ccfb47ae7a007ae32c39f">readInt8</a> ()</td></tr>
+<tr class="separator:a24c9f312341ccfb47ae7a007ae32c39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f18c2f695bc9fb75781596a16d9416"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a78f18c2f695bc9fb75781596a16d9416">peekInt64</a> () const</td></tr>
+<tr class="separator:a78f18c2f695bc9fb75781596a16d9416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afefe12caa1ed837ffb7e967d44e19af9"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#afefe12caa1ed837ffb7e967d44e19af9">peekInt32</a> () const</td></tr>
+<tr class="separator:afefe12caa1ed837ffb7e967d44e19af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9c96d31bad4ac1ff73d31672bc324c3"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#af9c96d31bad4ac1ff73d31672bc324c3">peekInt16</a> () const</td></tr>
+<tr class="separator:af9c96d31bad4ac1ff73d31672bc324c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28a767d788ebbb53bef6c939cfa8b5fb"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a28a767d788ebbb53bef6c939cfa8b5fb">peekInt8</a> () const</td></tr>
+<tr class="separator:a28a767d788ebbb53bef6c939cfa8b5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c260d8fb7c6194ce8ca9859718239d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a1c260d8fb7c6194ce8ca9859718239d3">prependInt64</a> (int64_t x)</td></tr>
+<tr class="separator:a1c260d8fb7c6194ce8ca9859718239d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a280f25c26e5867377de5c0c31dbc06c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a280f25c26e5867377de5c0c31dbc06c1">prependInt32</a> (int32_t x)</td></tr>
+<tr class="separator:a280f25c26e5867377de5c0c31dbc06c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c47f5d97958f529ef78f0ba283e33d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a1c47f5d97958f529ef78f0ba283e33d0">prependInt16</a> (int16_t x)</td></tr>
+<tr class="separator:a1c47f5d97958f529ef78f0ba283e33d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9b0f2527792514135d94b7f141f4039"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#aa9b0f2527792514135d94b7f141f4039">prependInt8</a> (int8_t x)</td></tr>
+<tr class="separator:aa9b0f2527792514135d94b7f141f4039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3099092e4d4138f55fb825a50f50f24b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a3099092e4d4138f55fb825a50f50f24b">prepend</a> (const void *data, size_t len)</td></tr>
+<tr class="separator:a3099092e4d4138f55fb825a50f50f24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69095875ff26fe7eff163afde6eb7c9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a69095875ff26fe7eff163afde6eb7c9e">shrink</a> (size_t reserve)</td></tr>
+<tr class="separator:a69095875ff26fe7eff163afde6eb7c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add5064782687c36289ea4905a58caef2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#add5064782687c36289ea4905a58caef2">internalCapacity</a> () const</td></tr>
+<tr class="separator:add5064782687c36289ea4905a58caef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf4ee68d9e5290cdfb7f3854387f0576"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#abf4ee68d9e5290cdfb7f3854387f0576">readFd</a> (int fd, int *savedErrno)</td></tr>
+<tr class="separator:abf4ee68d9e5290cdfb7f3854387f0576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a7c7e801837b45cd542d00cc5ec88dcb1"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a7c7e801837b45cd542d00cc5ec88dcb1">kCheapPrepend</a> = 8</td></tr>
+<tr class="separator:a7c7e801837b45cd542d00cc5ec88dcb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50181a12c6e534352c6c3cf9e0d8b331"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a50181a12c6e534352c6c3cf9e0d8b331">kInitialSize</a> = 1024</td></tr>
+<tr class="separator:a50181a12c6e534352c6c3cf9e0d8b331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:ad431daee7daddf53f8aca682ddf3c940"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940">begin</a> ()</td></tr>
+<tr class="separator:ad431daee7daddf53f8aca682ddf3c940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5386e98f71cb440232f0c41041f50af4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a5386e98f71cb440232f0c41041f50af4">begin</a> () const</td></tr>
+<tr class="separator:a5386e98f71cb440232f0c41041f50af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83d5a5ce302569b35df7743314578791"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a83d5a5ce302569b35df7743314578791">makeSpace</a> (size_t len)</td></tr>
+<tr class="separator:a83d5a5ce302569b35df7743314578791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a906f9199a48e49dfaa86ba3e8edd0269"><td class="memItemLeft" align="right" valign="top">std::vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a906f9199a48e49dfaa86ba3e8edd0269">buffer_</a></td></tr>
+<tr class="separator:a906f9199a48e49dfaa86ba3e8edd0269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8af076cf34524e62b7392ca568468a7d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a8af076cf34524e62b7392ca568468a7d">readerIndex_</a></td></tr>
+<tr class="separator:a8af076cf34524e62b7392ca568468a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a642726abccc15af160d55735b2ed5d9a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a642726abccc15af160d55735b2ed5d9a">writerIndex_</a></td></tr>
+<tr class="separator:a642726abccc15af160d55735b2ed5d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+静态 Private 属性</h2></td></tr>
+<tr class="memitem:aba43e9a92549451389054f6cd4aec2b4"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1Buffer.html#aba43e9a92549451389054f6cd4aec2b4">kCRLF</a> []</td></tr>
+<tr class="separator:aba43e9a92549451389054f6cd4aec2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classmuduo_1_1copyable"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmuduo_1_1copyable')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classmuduo_1_1copyable.html">copyable</a></td></tr>
+<tr class="memitem:ac8579356ab6a1c47424c42769858aaee inherit pro_methods_classmuduo_1_1copyable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1copyable.html#ac8579356ab6a1c47424c42769858aaee">copyable</a> ()=default</td></tr>
+<tr class="separator:ac8579356ab6a1c47424c42769858aaee inherit pro_methods_classmuduo_1_1copyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b4f930d069a7d0cd78c4f6c19c94727 inherit pro_methods_classmuduo_1_1copyable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1copyable.html#a9b4f930d069a7d0cd78c4f6c19c94727">~copyable</a> ()=default</td></tr>
+<tr class="separator:a9b4f930d069a7d0cd78c4f6c19c94727 inherit pro_methods_classmuduo_1_1copyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>A buffer class modeled after org.jboss.netty.buffer.ChannelBuffer</p>
+<div class="fragment"><div class="line">+-------------------+------------------+------------------+</div><div class="line">| prependable bytes |  readable bytes  |  writable bytes  |</div><div class="line">|                   |     (CONTENT)    |                  |</div><div class="line">+-------------------+------------------+------------------+</div><div class="line">|                   |                  |                  |</div><div class="line">0      &lt;=      readerIndex   &lt;=   writerIndex    &lt;=     size</div></div><!-- fragment --> 
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00042">42</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a3189a466a75c249c9371b74325e4fc53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3189a466a75c249c9371b74325e4fc53">&#9670;&nbsp;</a></span>Buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1net_1_1Buffer.html">Buffer</a> </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>initialSize</em> = <code><a class="el" href="classmuduo_1_1net_1_1Buffer.html#a50181a12c6e534352c6c3cf9e0d8b331">kInitialSize</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00048">48</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00074">Buffer::prependableBytes()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00068">Buffer::readableBytes()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00071">Buffer::writableBytes()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a3189a466a75c249c9371b74325e4fc53_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a3189a466a75c249c9371b74325e4fc53_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a3189a466a75c249c9371b74325e4fc53_cgraph" id="classmuduo_1_1net_1_1Buffer_a3189a466a75c249c9371b74325e4fc53_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#ad738bbd8321f518ca5cdfac842993d04" title="prependableBytes" alt="" coords="115,5,255,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="127,56,243,83"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#a998888da42aba8e7ff1977405f7c33e3" title="writableBytes" alt="" coords="129,107,241,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="af02baace4e1946f318dfa5c4d5d4bb3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af02baace4e1946f318dfa5c4d5d4bb3c">&#9670;&nbsp;</a></span>append() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void append </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmuduo_1_1StringPiece.html">StringPiece</a> &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00177">177</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="StringPiece_8h_source.html#l00096">StringPiece::data()</a> , 以及 <a class="el" href="StringPiece_8h_source.html#l00097">StringPiece::size()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00189">Buffer::append()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00239">Buffer::appendInt16()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00233">Buffer::appendInt32()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00224">Buffer::appendInt64()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00245">Buffer::appendInt8()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00362">Buffer::shrink()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_af02baace4e1946f318dfa5c4d5d4bb3c_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_af02baace4e1946f318dfa5c4d5d4bb3c_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_af02baace4e1946f318dfa5c4d5d4bb3c_cgraph" id="classmuduo_1_1net_1_1Buffer_af02baace4e1946f318dfa5c4d5d4bb3c_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1StringPiece.html#a39a256207a84f316547e36c755373d03" title="muduo::StringPiece\l::data" alt="" coords="124,5,272,47"/>
+<area shape="rect" id="node3" href="classmuduo_1_1StringPiece.html#af9593d4a5ff4274efaf429cb4f9e57cc" title="muduo::StringPiece\l::size" alt="" coords="124,71,272,112"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_af02baace4e1946f318dfa5c4d5d4bb3c_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_af02baace4e1946f318dfa5c4d5d4bb3c_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_af02baace4e1946f318dfa5c4d5d4bb3c_icgraph" id="classmuduo_1_1net_1_1Buffer_af02baace4e1946f318dfa5c4d5d4bb3c_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#af4c97664922a815eb9aa9dfe78686007" title="append" alt="" coords="140,5,211,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#a4d4daf38d824d3773fa5d711ffd536e1" title="appendInt16" alt="" coords="124,56,227,83"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#a93760f95378988318124352dbf222e67" title="appendInt32" alt="" coords="124,107,227,133"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#a7e283b380d5c67b86e150324bbb0546a" title="appendInt64" alt="" coords="124,157,227,184"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1Buffer.html#a9dca0171bcc73c002095487c464bad28" title="appendInt8" alt="" coords="128,208,223,235"/>
+<area shape="rect" id="node7" href="classmuduo_1_1net_1_1Buffer.html#a69095875ff26fe7eff163afde6eb7c9e" title="shrink" alt="" coords="144,259,207,285"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adece1d853752b95184d19c78228a0c39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adece1d853752b95184d19c78228a0c39">&#9670;&nbsp;</a></span>append() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void append </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00182">182</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00203">Buffer::beginWrite()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00194">Buffer::ensureWritableBytes()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00209">Buffer::hasWritten()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_adece1d853752b95184d19c78228a0c39_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_adece1d853752b95184d19c78228a0c39_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_adece1d853752b95184d19c78228a0c39_cgraph" id="classmuduo_1_1net_1_1Buffer_adece1d853752b95184d19c78228a0c39_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a71778facb9cd13bc2403edf59621f3f5" title="beginWrite" alt="" coords="333,5,425,32"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#a1185aa5bbe069f50c8d46a9f8d5aac32" title="ensureWritableBytes" alt="" coords="124,69,281,96"/>
+<area shape="rect" id="node9" href="classmuduo_1_1net_1_1Buffer.html#ae29d7ca8954d0ec7da6363221c80a245" title="hasWritten" alt="" coords="157,132,249,159"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="517,5,575,32"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#a998888da42aba8e7ff1977405f7c33e3" title="writableBytes" alt="" coords="490,157,602,184"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1Buffer.html#a83d5a5ce302569b35df7743314578791" title="makeSpace" alt="" coords="329,56,428,83"/>
+<area shape="rect" id="node7" href="classmuduo_1_1net_1_1Buffer.html#ad738bbd8321f518ca5cdfac842993d04" title="prependableBytes" alt="" coords="476,107,616,133"/>
+<area shape="rect" id="node8" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="488,56,604,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af4c97664922a815eb9aa9dfe78686007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4c97664922a815eb9aa9dfe78686007">&#9670;&nbsp;</a></span>append() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void append </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00189">189</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00177">Buffer::append()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_af4c97664922a815eb9aa9dfe78686007_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_af4c97664922a815eb9aa9dfe78686007_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_af4c97664922a815eb9aa9dfe78686007_cgraph" id="classmuduo_1_1net_1_1Buffer_af4c97664922a815eb9aa9dfe78686007_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#af02baace4e1946f318dfa5c4d5d4bb3c" title="append" alt="" coords="124,46,195,73"/>
+<area shape="rect" id="node3" href="classmuduo_1_1StringPiece.html#a39a256207a84f316547e36c755373d03" title="muduo::StringPiece\l::data" alt="" coords="243,5,391,47"/>
+<area shape="rect" id="node4" href="classmuduo_1_1StringPiece.html#af9593d4a5ff4274efaf429cb4f9e57cc" title="muduo::StringPiece\l::size" alt="" coords="243,71,391,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4d4daf38d824d3773fa5d711ffd536e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d4daf38d824d3773fa5d711ffd536e1">&#9670;&nbsp;</a></span>appendInt16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void appendInt16 </td>
+          <td>(</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00239">239</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00177">Buffer::append()</a> , 以及 <a class="el" href="Endian_8h_source.html#l00039">muduo::net::sockets::hostToNetwork16()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a4d4daf38d824d3773fa5d711ffd536e1_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a4d4daf38d824d3773fa5d711ffd536e1_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a4d4daf38d824d3773fa5d711ffd536e1_cgraph" id="classmuduo_1_1net_1_1Buffer_a4d4daf38d824d3773fa5d711ffd536e1_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#af02baace4e1946f318dfa5c4d5d4bb3c" title="append" alt="" coords="198,46,269,73"/>
+<area shape="rect" id="node5" href="namespacemuduo_1_1net_1_1sockets.html#ae117e4d96b27b387f167e75fb17c1834" title="muduo::net::sockets\l::hostToNetwork16" alt="" coords="156,97,311,139"/>
+<area shape="rect" id="node3" href="classmuduo_1_1StringPiece.html#a39a256207a84f316547e36c755373d03" title="muduo::StringPiece\l::data" alt="" coords="359,5,507,47"/>
+<area shape="rect" id="node4" href="classmuduo_1_1StringPiece.html#af9593d4a5ff4274efaf429cb4f9e57cc" title="muduo::StringPiece\l::size" alt="" coords="359,71,507,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a93760f95378988318124352dbf222e67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93760f95378988318124352dbf222e67">&#9670;&nbsp;</a></span>appendInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void appendInt32 </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Append int32_t using network endian </p>
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00233">233</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00177">Buffer::append()</a> , 以及 <a class="el" href="Endian_8h_source.html#l00034">muduo::net::sockets::hostToNetwork32()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a93760f95378988318124352dbf222e67_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a93760f95378988318124352dbf222e67_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a93760f95378988318124352dbf222e67_cgraph" id="classmuduo_1_1net_1_1Buffer_a93760f95378988318124352dbf222e67_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#af02baace4e1946f318dfa5c4d5d4bb3c" title="append" alt="" coords="198,46,269,73"/>
+<area shape="rect" id="node5" href="namespacemuduo_1_1net_1_1sockets.html#a4bb4a759c0f63477b89bac777f863cef" title="muduo::net::sockets\l::hostToNetwork32" alt="" coords="156,97,311,139"/>
+<area shape="rect" id="node3" href="classmuduo_1_1StringPiece.html#a39a256207a84f316547e36c755373d03" title="muduo::StringPiece\l::data" alt="" coords="359,5,507,47"/>
+<area shape="rect" id="node4" href="classmuduo_1_1StringPiece.html#af9593d4a5ff4274efaf429cb4f9e57cc" title="muduo::StringPiece\l::size" alt="" coords="359,71,507,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7e283b380d5c67b86e150324bbb0546a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e283b380d5c67b86e150324bbb0546a">&#9670;&nbsp;</a></span>appendInt64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void appendInt64 </td>
+          <td>(</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Append int64_t using network endian </p>
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00224">224</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00177">Buffer::append()</a> , 以及 <a class="el" href="Endian_8h_source.html#l00029">muduo::net::sockets::hostToNetwork64()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a7e283b380d5c67b86e150324bbb0546a_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a7e283b380d5c67b86e150324bbb0546a_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a7e283b380d5c67b86e150324bbb0546a_cgraph" id="classmuduo_1_1net_1_1Buffer_a7e283b380d5c67b86e150324bbb0546a_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#af02baace4e1946f318dfa5c4d5d4bb3c" title="append" alt="" coords="198,46,269,73"/>
+<area shape="rect" id="node5" href="namespacemuduo_1_1net_1_1sockets.html#ad0a6476a5e70fb475acf4e34f5a5f8cc" title="muduo::net::sockets\l::hostToNetwork64" alt="" coords="156,97,311,139"/>
+<area shape="rect" id="node3" href="classmuduo_1_1StringPiece.html#a39a256207a84f316547e36c755373d03" title="muduo::StringPiece\l::data" alt="" coords="359,5,507,47"/>
+<area shape="rect" id="node4" href="classmuduo_1_1StringPiece.html#af9593d4a5ff4274efaf429cb4f9e57cc" title="muduo::StringPiece\l::size" alt="" coords="359,71,507,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9dca0171bcc73c002095487c464bad28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dca0171bcc73c002095487c464bad28">&#9670;&nbsp;</a></span>appendInt8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void appendInt8 </td>
+          <td>(</td>
+          <td class="paramtype">int8_t&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00245">245</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00177">Buffer::append()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a9dca0171bcc73c002095487c464bad28_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a9dca0171bcc73c002095487c464bad28_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a9dca0171bcc73c002095487c464bad28_cgraph" id="classmuduo_1_1net_1_1Buffer_a9dca0171bcc73c002095487c464bad28_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#af02baace4e1946f318dfa5c4d5d4bb3c" title="append" alt="" coords="148,46,219,73"/>
+<area shape="rect" id="node3" href="classmuduo_1_1StringPiece.html#a39a256207a84f316547e36c755373d03" title="muduo::StringPiece\l::data" alt="" coords="267,5,415,47"/>
+<area shape="rect" id="node4" href="classmuduo_1_1StringPiece.html#af9593d4a5ff4274efaf429cb4f9e57cc" title="muduo::StringPiece\l::size" alt="" coords="267,71,415,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad431daee7daddf53f8aca682ddf3c940"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad431daee7daddf53f8aca682ddf3c940">&#9670;&nbsp;</a></span>begin() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00384">384</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00412">Buffer::buffer_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00203">Buffer::beginWrite()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00390">Buffer::makeSpace()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00077">Buffer::peek()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00354">Buffer::prepend()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_ad431daee7daddf53f8aca682ddf3c940_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_ad431daee7daddf53f8aca682ddf3c940_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_ad431daee7daddf53f8aca682ddf3c940_icgraph" id="classmuduo_1_1net_1_1Buffer_ad431daee7daddf53f8aca682ddf3c940_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a71778facb9cd13bc2403edf59621f3f5" title="beginWrite" alt="" coords="115,157,207,184"/>
+<area shape="rect" id="node7" href="classmuduo_1_1net_1_1Buffer.html#a83d5a5ce302569b35df7743314578791" title="makeSpace" alt="" coords="112,56,211,83"/>
+<area shape="rect" id="node10" href="classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="134,335,189,361"/>
+<area shape="rect" id="node23" href="classmuduo_1_1net_1_1Buffer.html#a3099092e4d4138f55fb825a50f50f24b" title="prepend" alt="" coords="124,664,199,691"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#a757db069730494fc47e500b29851c6c5" title="findCRLF" alt="" coords="298,157,377,184"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#a29e5dd77acbc70bc4f98301eb84a29f4" title="findEOL" alt="" coords="302,107,373,133"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#abffa19bdb1fbf4ac36fe0f2375bee1e5" title="retrieveUntil" alt="" coords="285,208,389,235"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1Buffer.html#adece1d853752b95184d19c78228a0c39" title="append" alt="" coords="501,31,571,57"/>
+<area shape="rect" id="node8" href="classmuduo_1_1net_1_1Buffer.html#a1185aa5bbe069f50c8d46a9f8d5aac32" title="ensureWritableBytes" alt="" coords="259,5,416,32"/>
+<area shape="rect" id="node9" href="classmuduo_1_1net_1_1Buffer.html#a69095875ff26fe7eff163afde6eb7c9e" title="shrink" alt="" coords="505,157,567,184"/>
+<area shape="rect" id="node11" href="classmuduo_1_1net_1_1Buffer.html#acf4decda782c75e8f198c95de2958409" title="findEOL" alt="" coords="302,411,373,437"/>
+<area shape="rect" id="node12" href="classmuduo_1_1net_1_1Buffer.html#a2f372acde2975d2cd9a7633148db7e7f" title="retrieveAsString" alt="" coords="274,512,401,539"/>
+<area shape="rect" id="node14" href="classmuduo_1_1net_1_1Buffer.html#a78096dee3d0826efb63a5b814eef37c4" title="toStringPiece" alt="" coords="283,259,391,285"/>
+<area shape="rect" id="node15" href="classmuduo_1_1net_1_1Buffer.html#a78f18c2f695bc9fb75781596a16d9416" title="peekInt64" alt="" coords="294,461,381,488"/>
+<area shape="rect" id="node17" href="classmuduo_1_1net_1_1Buffer.html#afefe12caa1ed837ffb7e967d44e19af9" title="peekInt32" alt="" coords="294,563,381,589"/>
+<area shape="rect" id="node19" href="classmuduo_1_1net_1_1Buffer.html#af9c96d31bad4ac1ff73d31672bc324c3" title="peekInt16" alt="" coords="294,309,381,336"/>
+<area shape="rect" id="node21" href="classmuduo_1_1net_1_1Buffer.html#a28a767d788ebbb53bef6c939cfa8b5fb" title="peekInt8" alt="" coords="298,360,377,387"/>
+<area shape="rect" id="node13" href="classmuduo_1_1net_1_1Buffer.html#ac902667b575515cba5b54ddf3a5d10aa" title="retrieveAllAsString" alt="" coords="464,512,608,539"/>
+<area shape="rect" id="node16" href="classmuduo_1_1net_1_1Buffer.html#a5b815d6984b81ae01f581f799c48582f" title="readInt64" alt="" coords="494,461,578,488"/>
+<area shape="rect" id="node18" href="classmuduo_1_1net_1_1Buffer.html#adbc23fa2b53ee3f0bd8cc0af521900d4" title="readInt32" alt="" coords="494,563,578,589"/>
+<area shape="rect" id="node20" href="classmuduo_1_1net_1_1Buffer.html#a7cf018b7a5d7bed8aa4d201e4399fce0" title="readInt16" alt="" coords="494,309,578,336"/>
+<area shape="rect" id="node22" href="classmuduo_1_1net_1_1Buffer.html#a24c9f312341ccfb47ae7a007ae32c39f" title="readInt8" alt="" coords="498,360,574,387"/>
+<area shape="rect" id="node24" href="classmuduo_1_1net_1_1Buffer.html#a1c260d8fb7c6194ce8ca9859718239d3" title="prependInt64" alt="" coords="283,613,391,640"/>
+<area shape="rect" id="node25" href="classmuduo_1_1net_1_1Buffer.html#a280f25c26e5867377de5c0c31dbc06c1" title="prependInt32" alt="" coords="283,664,391,691"/>
+<area shape="rect" id="node26" href="classmuduo_1_1net_1_1Buffer.html#a1c47f5d97958f529ef78f0ba283e33d0" title="prependInt16" alt="" coords="283,715,391,741"/>
+<area shape="rect" id="node27" href="classmuduo_1_1net_1_1Buffer.html#aa9b0f2527792514135d94b7f141f4039" title="prependInt8" alt="" coords="287,765,387,792"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5386e98f71cb440232f0c41041f50af4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5386e98f71cb440232f0c41041f50af4">&#9670;&nbsp;</a></span>begin() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00387">387</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00412">Buffer::buffer_</a>.</p>
+
+</div>
+</div>
+<a id="a71778facb9cd13bc2403edf59621f3f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71778facb9cd13bc2403edf59621f3f5">&#9670;&nbsp;</a></span>beginWrite() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* beginWrite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00203">203</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00384">Buffer::begin()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00414">Buffer::writerIndex_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00182">Buffer::append()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00080">Buffer::findCRLF()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00102">Buffer::findEOL()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00126">Buffer::retrieveUntil()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a71778facb9cd13bc2403edf59621f3f5_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a71778facb9cd13bc2403edf59621f3f5_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a71778facb9cd13bc2403edf59621f3f5_cgraph" id="classmuduo_1_1net_1_1Buffer_a71778facb9cd13bc2403edf59621f3f5_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="145,5,204,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a71778facb9cd13bc2403edf59621f3f5_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a71778facb9cd13bc2403edf59621f3f5_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a71778facb9cd13bc2403edf59621f3f5_icgraph" id="classmuduo_1_1net_1_1Buffer_a71778facb9cd13bc2403edf59621f3f5_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#adece1d853752b95184d19c78228a0c39" title="append" alt="" coords="162,5,233,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#a757db069730494fc47e500b29851c6c5" title="findCRLF" alt="" coords="158,56,237,83"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#a29e5dd77acbc70bc4f98301eb84a29f4" title="findEOL" alt="" coords="162,107,233,133"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#abffa19bdb1fbf4ac36fe0f2375bee1e5" title="retrieveUntil" alt="" coords="145,157,249,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a46f79eca290d4d4cee634e3c1b50c57d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46f79eca290d4d4cee634e3c1b50c57d">&#9670;&nbsp;</a></span>beginWrite() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* beginWrite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00206">206</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00384">Buffer::begin()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00414">Buffer::writerIndex_</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a46f79eca290d4d4cee634e3c1b50c57d_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a46f79eca290d4d4cee634e3c1b50c57d_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a46f79eca290d4d4cee634e3c1b50c57d_cgraph" id="classmuduo_1_1net_1_1Buffer_a46f79eca290d4d4cee634e3c1b50c57d_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="145,5,204,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1185aa5bbe069f50c8d46a9f8d5aac32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1185aa5bbe069f50c8d46a9f8d5aac32">&#9670;&nbsp;</a></span>ensureWritableBytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ensureWritableBytes </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00194">194</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00390">Buffer::makeSpace()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00071">Buffer::writableBytes()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00182">Buffer::append()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00362">Buffer::shrink()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a1185aa5bbe069f50c8d46a9f8d5aac32_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a1185aa5bbe069f50c8d46a9f8d5aac32_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a1185aa5bbe069f50c8d46a9f8d5aac32_cgraph" id="classmuduo_1_1net_1_1Buffer_a1185aa5bbe069f50c8d46a9f8d5aac32_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a83d5a5ce302569b35df7743314578791" title="makeSpace" alt="" coords="211,56,309,83"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#a998888da42aba8e7ff1977405f7c33e3" title="writableBytes" alt="" coords="371,5,483,32"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#ad738bbd8321f518ca5cdfac842993d04" title="prependableBytes" alt="" coords="357,56,497,83"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="369,107,485,133"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="398,157,457,184"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a1185aa5bbe069f50c8d46a9f8d5aac32_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a1185aa5bbe069f50c8d46a9f8d5aac32_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a1185aa5bbe069f50c8d46a9f8d5aac32_icgraph" id="classmuduo_1_1net_1_1Buffer_a1185aa5bbe069f50c8d46a9f8d5aac32_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#adece1d853752b95184d19c78228a0c39" title="append" alt="" coords="211,5,281,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#a69095875ff26fe7eff163afde6eb7c9e" title="shrink" alt="" coords="215,56,277,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a757db069730494fc47e500b29851c6c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a757db069730494fc47e500b29851c6c5">&#9670;&nbsp;</a></span>findCRLF() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* findCRLF </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00080">80</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00203">Buffer::beginWrite()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00416">Buffer::kCRLF</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00077">Buffer::peek()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a757db069730494fc47e500b29851c6c5_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a757db069730494fc47e500b29851c6c5_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a757db069730494fc47e500b29851c6c5_cgraph" id="classmuduo_1_1net_1_1Buffer_a757db069730494fc47e500b29851c6c5_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a71778facb9cd13bc2403edf59621f3f5" title="beginWrite" alt="" coords="132,5,224,32"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="151,56,205,83"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="272,31,331,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac0c8bd8a269f6d31932e0f7bab608fdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0c8bd8a269f6d31932e0f7bab608fdf">&#9670;&nbsp;</a></span>findCRLF() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* findCRLF </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>start</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00087">87</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00203">Buffer::beginWrite()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00416">Buffer::kCRLF</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00077">Buffer::peek()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_ac0c8bd8a269f6d31932e0f7bab608fdf_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_ac0c8bd8a269f6d31932e0f7bab608fdf_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_ac0c8bd8a269f6d31932e0f7bab608fdf_cgraph" id="classmuduo_1_1net_1_1Buffer_ac0c8bd8a269f6d31932e0f7bab608fdf_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a71778facb9cd13bc2403edf59621f3f5" title="beginWrite" alt="" coords="132,5,224,32"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="151,56,205,83"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="272,31,331,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acf4decda782c75e8f198c95de2958409"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf4decda782c75e8f198c95de2958409">&#9670;&nbsp;</a></span>findEOL() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* findEOL </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00096">96</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00077">Buffer::peek()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00068">Buffer::readableBytes()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_acf4decda782c75e8f198c95de2958409_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_acf4decda782c75e8f198c95de2958409_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_acf4decda782c75e8f198c95de2958409_cgraph" id="classmuduo_1_1net_1_1Buffer_acf4decda782c75e8f198c95de2958409_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="155,5,209,32"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="124,56,240,83"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="288,5,347,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a29e5dd77acbc70bc4f98301eb84a29f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29e5dd77acbc70bc4f98301eb84a29f4">&#9670;&nbsp;</a></span>findEOL() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* findEOL </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>start</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00102">102</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00203">Buffer::beginWrite()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00077">Buffer::peek()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a29e5dd77acbc70bc4f98301eb84a29f4_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a29e5dd77acbc70bc4f98301eb84a29f4_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a29e5dd77acbc70bc4f98301eb84a29f4_cgraph" id="classmuduo_1_1net_1_1Buffer_a29e5dd77acbc70bc4f98301eb84a29f4_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a71778facb9cd13bc2403edf59621f3f5" title="beginWrite" alt="" coords="124,5,216,32"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="143,56,197,83"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="264,31,323,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae29d7ca8954d0ec7da6363221c80a245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae29d7ca8954d0ec7da6363221c80a245">&#9670;&nbsp;</a></span>hasWritten()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hasWritten </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00209">209</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00071">Buffer::writableBytes()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00414">Buffer::writerIndex_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00182">Buffer::append()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_ae29d7ca8954d0ec7da6363221c80a245_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_ae29d7ca8954d0ec7da6363221c80a245_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_ae29d7ca8954d0ec7da6363221c80a245_cgraph" id="classmuduo_1_1net_1_1Buffer_ae29d7ca8954d0ec7da6363221c80a245_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a998888da42aba8e7ff1977405f7c33e3" title="writableBytes" alt="" coords="145,5,257,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_ae29d7ca8954d0ec7da6363221c80a245_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_ae29d7ca8954d0ec7da6363221c80a245_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_ae29d7ca8954d0ec7da6363221c80a245_icgraph" id="classmuduo_1_1net_1_1Buffer_ae29d7ca8954d0ec7da6363221c80a245_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#adece1d853752b95184d19c78228a0c39" title="append" alt="" coords="145,5,216,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="add5064782687c36289ea4905a58caef2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add5064782687c36289ea4905a58caef2">&#9670;&nbsp;</a></span>internalCapacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t internalCapacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00371">371</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00412">Buffer::buffer_</a> , 以及 <a class="el" href="classmuduo_1_1net_1_1Buffer.html#abf4ee68d9e5290cdfb7f3854387f0576">Buffer::readFd()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_add5064782687c36289ea4905a58caef2_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_add5064782687c36289ea4905a58caef2_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_add5064782687c36289ea4905a58caef2_cgraph" id="classmuduo_1_1net_1_1Buffer_add5064782687c36289ea4905a58caef2_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#abf4ee68d9e5290cdfb7f3854387f0576" title="readFd" alt="" coords="183,5,249,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a83d5a5ce302569b35df7743314578791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83d5a5ce302569b35df7743314578791">&#9670;&nbsp;</a></span>makeSpace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void makeSpace </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00390">390</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00384">Buffer::begin()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00412">Buffer::buffer_</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00045">Buffer::kCheapPrepend</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00074">Buffer::prependableBytes()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00068">Buffer::readableBytes()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00413">Buffer::readerIndex_</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00071">Buffer::writableBytes()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00414">Buffer::writerIndex_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00194">Buffer::ensureWritableBytes()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a83d5a5ce302569b35df7743314578791_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a83d5a5ce302569b35df7743314578791_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a83d5a5ce302569b35df7743314578791_cgraph" id="classmuduo_1_1net_1_1Buffer_a83d5a5ce302569b35df7743314578791_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="193,5,251,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#ad738bbd8321f518ca5cdfac842993d04" title="prependableBytes" alt="" coords="152,56,292,83"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="164,107,280,133"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#a998888da42aba8e7ff1977405f7c33e3" title="writableBytes" alt="" coords="166,157,278,184"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a83d5a5ce302569b35df7743314578791_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a83d5a5ce302569b35df7743314578791_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a83d5a5ce302569b35df7743314578791_icgraph" id="classmuduo_1_1net_1_1Buffer_a83d5a5ce302569b35df7743314578791_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a1185aa5bbe069f50c8d46a9f8d5aac32" title="ensureWritableBytes" alt="" coords="152,31,309,57"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#adece1d853752b95184d19c78228a0c39" title="append" alt="" coords="357,5,428,32"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#a69095875ff26fe7eff163afde6eb7c9e" title="shrink" alt="" coords="361,56,424,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad1339d8b1a42e9762ae6cd3add003706"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1339d8b1a42e9762ae6cd3add003706">&#9670;&nbsp;</a></span>peek()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* peek </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00077">77</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00384">Buffer::begin()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00413">Buffer::readerIndex_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00080">Buffer::findCRLF()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00096">Buffer::findEOL()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00310">Buffer::peekInt16()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00302">Buffer::peekInt32()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00290">Buffer::peekInt64()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00318">Buffer::peekInt8()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00164">Buffer::retrieveAsString()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00126">Buffer::retrieveUntil()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00172">Buffer::toStringPiece()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_ad1339d8b1a42e9762ae6cd3add003706_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_ad1339d8b1a42e9762ae6cd3add003706_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_ad1339d8b1a42e9762ae6cd3add003706_cgraph" id="classmuduo_1_1net_1_1Buffer_ad1339d8b1a42e9762ae6cd3add003706_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="108,5,167,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_ad1339d8b1a42e9762ae6cd3add003706_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_ad1339d8b1a42e9762ae6cd3add003706_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_ad1339d8b1a42e9762ae6cd3add003706_icgraph" id="classmuduo_1_1net_1_1Buffer_ad1339d8b1a42e9762ae6cd3add003706_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a757db069730494fc47e500b29851c6c5" title="findCRLF" alt="" coords="132,5,211,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#acf4decda782c75e8f198c95de2958409" title="findEOL" alt="" coords="136,56,207,83"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#af9c96d31bad4ac1ff73d31672bc324c3" title="peekInt16" alt="" coords="128,107,215,133"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1Buffer.html#afefe12caa1ed837ffb7e967d44e19af9" title="peekInt32" alt="" coords="128,157,215,184"/>
+<area shape="rect" id="node8" href="classmuduo_1_1net_1_1Buffer.html#a78f18c2f695bc9fb75781596a16d9416" title="peekInt64" alt="" coords="128,208,215,235"/>
+<area shape="rect" id="node10" href="classmuduo_1_1net_1_1Buffer.html#a28a767d788ebbb53bef6c939cfa8b5fb" title="peekInt8" alt="" coords="132,259,211,285"/>
+<area shape="rect" id="node12" href="classmuduo_1_1net_1_1Buffer.html#a2f372acde2975d2cd9a7633148db7e7f" title="retrieveAsString" alt="" coords="108,309,235,336"/>
+<area shape="rect" id="node14" href="classmuduo_1_1net_1_1Buffer.html#abffa19bdb1fbf4ac36fe0f2375bee1e5" title="retrieveUntil" alt="" coords="119,360,223,387"/>
+<area shape="rect" id="node15" href="classmuduo_1_1net_1_1Buffer.html#a78096dee3d0826efb63a5b814eef37c4" title="toStringPiece" alt="" coords="117,411,225,437"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#a7cf018b7a5d7bed8aa4d201e4399fce0" title="readInt16" alt="" coords="313,107,397,133"/>
+<area shape="rect" id="node7" href="classmuduo_1_1net_1_1Buffer.html#adbc23fa2b53ee3f0bd8cc0af521900d4" title="readInt32" alt="" coords="313,157,397,184"/>
+<area shape="rect" id="node9" href="classmuduo_1_1net_1_1Buffer.html#a5b815d6984b81ae01f581f799c48582f" title="readInt64" alt="" coords="313,208,397,235"/>
+<area shape="rect" id="node11" href="classmuduo_1_1net_1_1Buffer.html#a24c9f312341ccfb47ae7a007ae32c39f" title="readInt8" alt="" coords="317,259,393,285"/>
+<area shape="rect" id="node13" href="classmuduo_1_1net_1_1Buffer.html#ac902667b575515cba5b54ddf3a5d10aa" title="retrieveAllAsString" alt="" coords="283,309,427,336"/>
+<area shape="rect" id="node16" href="classmuduo_1_1net_1_1Buffer.html#a69095875ff26fe7eff163afde6eb7c9e" title="shrink" alt="" coords="323,411,386,437"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af9c96d31bad4ac1ff73d31672bc324c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9c96d31bad4ac1ff73d31672bc324c3">&#9670;&nbsp;</a></span>peekInt16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t peekInt16 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00310">310</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Endian_8h_source.html#l00054">muduo::net::sockets::networkToHost16()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00077">Buffer::peek()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00068">Buffer::readableBytes()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00272">Buffer::readInt16()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_af9c96d31bad4ac1ff73d31672bc324c3_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_af9c96d31bad4ac1ff73d31672bc324c3_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_af9c96d31bad4ac1ff73d31672bc324c3_cgraph" id="classmuduo_1_1net_1_1Buffer_af9c96d31bad4ac1ff73d31672bc324c3_cgraph">
+<area shape="rect" id="node2" href="namespacemuduo_1_1net_1_1sockets.html#a0f7768ebfa264d5c4eaf377297bab244" title="muduo::net::sockets\l::networkToHost16" alt="" coords="140,5,295,47"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="190,71,245,98"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="159,122,275,149"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="343,71,401,98"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_af9c96d31bad4ac1ff73d31672bc324c3_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_af9c96d31bad4ac1ff73d31672bc324c3_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_af9c96d31bad4ac1ff73d31672bc324c3_icgraph" id="classmuduo_1_1net_1_1Buffer_af9c96d31bad4ac1ff73d31672bc324c3_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a7cf018b7a5d7bed8aa4d201e4399fce0" title="readInt16" alt="" coords="140,5,224,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afefe12caa1ed837ffb7e967d44e19af9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afefe12caa1ed837ffb7e967d44e19af9">&#9670;&nbsp;</a></span>peekInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t peekInt32 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Peek int32_t from network endian</p>
+<p>Require: buf-&gt;<a class="el" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724">readableBytes()</a> &gt;= sizeof(int32_t) </p>
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00302">302</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Endian_8h_source.html#l00049">muduo::net::sockets::networkToHost32()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00077">Buffer::peek()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00068">Buffer::readableBytes()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00265">Buffer::readInt32()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_afefe12caa1ed837ffb7e967d44e19af9_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_afefe12caa1ed837ffb7e967d44e19af9_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_afefe12caa1ed837ffb7e967d44e19af9_cgraph" id="classmuduo_1_1net_1_1Buffer_afefe12caa1ed837ffb7e967d44e19af9_cgraph">
+<area shape="rect" id="node2" href="namespacemuduo_1_1net_1_1sockets.html#a23f7d77e0379e52b1390e1d2846624e0" title="muduo::net::sockets\l::networkToHost32" alt="" coords="140,5,295,47"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="190,71,245,98"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="159,122,275,149"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="343,71,401,98"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_afefe12caa1ed837ffb7e967d44e19af9_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_afefe12caa1ed837ffb7e967d44e19af9_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_afefe12caa1ed837ffb7e967d44e19af9_icgraph" id="classmuduo_1_1net_1_1Buffer_afefe12caa1ed837ffb7e967d44e19af9_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#adbc23fa2b53ee3f0bd8cc0af521900d4" title="readInt32" alt="" coords="140,5,224,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a78f18c2f695bc9fb75781596a16d9416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78f18c2f695bc9fb75781596a16d9416">&#9670;&nbsp;</a></span>peekInt64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t peekInt64 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Peek int64_t from network endian</p>
+<p>Require: buf-&gt;<a class="el" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724">readableBytes()</a> &gt;= sizeof(int64_t) </p>
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00290">290</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Endian_8h_source.html#l00044">muduo::net::sockets::networkToHost64()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00077">Buffer::peek()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00068">Buffer::readableBytes()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00254">Buffer::readInt64()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a78f18c2f695bc9fb75781596a16d9416_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a78f18c2f695bc9fb75781596a16d9416_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a78f18c2f695bc9fb75781596a16d9416_cgraph" id="classmuduo_1_1net_1_1Buffer_a78f18c2f695bc9fb75781596a16d9416_cgraph">
+<area shape="rect" id="node2" href="namespacemuduo_1_1net_1_1sockets.html#a590d67f0a8d4f8ff19462c08ebfb99b0" title="muduo::net::sockets\l::networkToHost64" alt="" coords="140,5,295,47"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="190,71,245,98"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="159,122,275,149"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="343,71,401,98"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a78f18c2f695bc9fb75781596a16d9416_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a78f18c2f695bc9fb75781596a16d9416_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a78f18c2f695bc9fb75781596a16d9416_icgraph" id="classmuduo_1_1net_1_1Buffer_a78f18c2f695bc9fb75781596a16d9416_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a5b815d6984b81ae01f581f799c48582f" title="readInt64" alt="" coords="140,5,224,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a28a767d788ebbb53bef6c939cfa8b5fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28a767d788ebbb53bef6c939cfa8b5fb">&#9670;&nbsp;</a></span>peekInt8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t peekInt8 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00318">318</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00077">Buffer::peek()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00068">Buffer::readableBytes()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00279">Buffer::readInt8()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a28a767d788ebbb53bef6c939cfa8b5fb_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a28a767d788ebbb53bef6c939cfa8b5fb_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a28a767d788ebbb53bef6c939cfa8b5fb_cgraph" id="classmuduo_1_1net_1_1Buffer_a28a767d788ebbb53bef6c939cfa8b5fb_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="163,5,217,32"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="132,56,248,83"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="296,5,355,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a28a767d788ebbb53bef6c939cfa8b5fb_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a28a767d788ebbb53bef6c939cfa8b5fb_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a28a767d788ebbb53bef6c939cfa8b5fb_icgraph" id="classmuduo_1_1net_1_1Buffer_a28a767d788ebbb53bef6c939cfa8b5fb_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a24c9f312341ccfb47ae7a007ae32c39f" title="readInt8" alt="" coords="132,5,208,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3099092e4d4138f55fb825a50f50f24b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3099092e4d4138f55fb825a50f50f24b">&#9670;&nbsp;</a></span>prepend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void prepend </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00354">354</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00384">Buffer::begin()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00074">Buffer::prependableBytes()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00413">Buffer::readerIndex_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00343">Buffer::prependInt16()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00337">Buffer::prependInt32()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00328">Buffer::prependInt64()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00349">Buffer::prependInt8()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a3099092e4d4138f55fb825a50f50f24b_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a3099092e4d4138f55fb825a50f50f24b_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a3099092e4d4138f55fb825a50f50f24b_cgraph" id="classmuduo_1_1net_1_1Buffer_a3099092e4d4138f55fb825a50f50f24b_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="169,5,227,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#ad738bbd8321f518ca5cdfac842993d04" title="prependableBytes" alt="" coords="128,56,268,83"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a3099092e4d4138f55fb825a50f50f24b_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a3099092e4d4138f55fb825a50f50f24b_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a3099092e4d4138f55fb825a50f50f24b_icgraph" id="classmuduo_1_1net_1_1Buffer_a3099092e4d4138f55fb825a50f50f24b_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a1c47f5d97958f529ef78f0ba283e33d0" title="prependInt16" alt="" coords="128,5,236,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#a280f25c26e5867377de5c0c31dbc06c1" title="prependInt32" alt="" coords="128,56,236,83"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#a1c260d8fb7c6194ce8ca9859718239d3" title="prependInt64" alt="" coords="128,107,236,133"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#aa9b0f2527792514135d94b7f141f4039" title="prependInt8" alt="" coords="132,157,232,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad738bbd8321f518ca5cdfac842993d04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad738bbd8321f518ca5cdfac842993d04">&#9670;&nbsp;</a></span>prependableBytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t prependableBytes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00074">74</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00413">Buffer::readerIndex_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00048">Buffer::Buffer()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00390">Buffer::makeSpace()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00354">Buffer::prepend()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_ad738bbd8321f518ca5cdfac842993d04_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_ad738bbd8321f518ca5cdfac842993d04_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_ad738bbd8321f518ca5cdfac842993d04_icgraph" id="classmuduo_1_1net_1_1Buffer_ad738bbd8321f518ca5cdfac842993d04_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a3189a466a75c249c9371b74325e4fc53" title="Buffer" alt="" coords="212,5,273,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#a83d5a5ce302569b35df7743314578791" title="makeSpace" alt="" coords="193,56,292,83"/>
+<area shape="rect" id="node7" href="classmuduo_1_1net_1_1Buffer.html#a3099092e4d4138f55fb825a50f50f24b" title="prepend" alt="" coords="205,132,280,159"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#a1185aa5bbe069f50c8d46a9f8d5aac32" title="ensureWritableBytes" alt="" coords="340,31,497,57"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#adece1d853752b95184d19c78228a0c39" title="append" alt="" coords="545,5,616,32"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1Buffer.html#a69095875ff26fe7eff163afde6eb7c9e" title="shrink" alt="" coords="549,56,612,83"/>
+<area shape="rect" id="node8" href="classmuduo_1_1net_1_1Buffer.html#a1c47f5d97958f529ef78f0ba283e33d0" title="prependInt16" alt="" coords="365,81,473,108"/>
+<area shape="rect" id="node9" href="classmuduo_1_1net_1_1Buffer.html#a280f25c26e5867377de5c0c31dbc06c1" title="prependInt32" alt="" coords="365,132,473,159"/>
+<area shape="rect" id="node10" href="classmuduo_1_1net_1_1Buffer.html#a1c260d8fb7c6194ce8ca9859718239d3" title="prependInt64" alt="" coords="365,183,473,209"/>
+<area shape="rect" id="node11" href="classmuduo_1_1net_1_1Buffer.html#aa9b0f2527792514135d94b7f141f4039" title="prependInt8" alt="" coords="369,233,469,260"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1c47f5d97958f529ef78f0ba283e33d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c47f5d97958f529ef78f0ba283e33d0">&#9670;&nbsp;</a></span>prependInt16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void prependInt16 </td>
+          <td>(</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00343">343</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Endian_8h_source.html#l00039">muduo::net::sockets::hostToNetwork16()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00354">Buffer::prepend()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a1c47f5d97958f529ef78f0ba283e33d0_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a1c47f5d97958f529ef78f0ba283e33d0_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a1c47f5d97958f529ef78f0ba283e33d0_cgraph" id="classmuduo_1_1net_1_1Buffer_a1c47f5d97958f529ef78f0ba283e33d0_cgraph">
+<area shape="rect" id="node2" href="namespacemuduo_1_1net_1_1sockets.html#ae117e4d96b27b387f167e75fb17c1834" title="muduo::net::sockets\l::hostToNetwork16" alt="" coords="161,5,316,47"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#a3099092e4d4138f55fb825a50f50f24b" title="prepend" alt="" coords="201,71,276,98"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="405,46,463,73"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#ad738bbd8321f518ca5cdfac842993d04" title="prependableBytes" alt="" coords="364,97,504,123"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a280f25c26e5867377de5c0c31dbc06c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a280f25c26e5867377de5c0c31dbc06c1">&#9670;&nbsp;</a></span>prependInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void prependInt32 </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Prepend int32_t using network endian </p>
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00337">337</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Endian_8h_source.html#l00034">muduo::net::sockets::hostToNetwork32()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00354">Buffer::prepend()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a280f25c26e5867377de5c0c31dbc06c1_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a280f25c26e5867377de5c0c31dbc06c1_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a280f25c26e5867377de5c0c31dbc06c1_cgraph" id="classmuduo_1_1net_1_1Buffer_a280f25c26e5867377de5c0c31dbc06c1_cgraph">
+<area shape="rect" id="node2" href="namespacemuduo_1_1net_1_1sockets.html#a4bb4a759c0f63477b89bac777f863cef" title="muduo::net::sockets\l::hostToNetwork32" alt="" coords="161,5,316,47"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#a3099092e4d4138f55fb825a50f50f24b" title="prepend" alt="" coords="201,71,276,98"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="405,46,463,73"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#ad738bbd8321f518ca5cdfac842993d04" title="prependableBytes" alt="" coords="364,97,504,123"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1c260d8fb7c6194ce8ca9859718239d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c260d8fb7c6194ce8ca9859718239d3">&#9670;&nbsp;</a></span>prependInt64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void prependInt64 </td>
+          <td>(</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Prepend int64_t using network endian </p>
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00328">328</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Endian_8h_source.html#l00029">muduo::net::sockets::hostToNetwork64()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00354">Buffer::prepend()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a1c260d8fb7c6194ce8ca9859718239d3_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a1c260d8fb7c6194ce8ca9859718239d3_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a1c260d8fb7c6194ce8ca9859718239d3_cgraph" id="classmuduo_1_1net_1_1Buffer_a1c260d8fb7c6194ce8ca9859718239d3_cgraph">
+<area shape="rect" id="node2" href="namespacemuduo_1_1net_1_1sockets.html#ad0a6476a5e70fb475acf4e34f5a5f8cc" title="muduo::net::sockets\l::hostToNetwork64" alt="" coords="161,5,316,47"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#a3099092e4d4138f55fb825a50f50f24b" title="prepend" alt="" coords="201,71,276,98"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="405,46,463,73"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#ad738bbd8321f518ca5cdfac842993d04" title="prependableBytes" alt="" coords="364,97,504,123"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa9b0f2527792514135d94b7f141f4039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9b0f2527792514135d94b7f141f4039">&#9670;&nbsp;</a></span>prependInt8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void prependInt8 </td>
+          <td>(</td>
+          <td class="paramtype">int8_t&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00349">349</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00354">Buffer::prepend()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_aa9b0f2527792514135d94b7f141f4039_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_aa9b0f2527792514135d94b7f141f4039_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_aa9b0f2527792514135d94b7f141f4039_cgraph" id="classmuduo_1_1net_1_1Buffer_aa9b0f2527792514135d94b7f141f4039_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a3099092e4d4138f55fb825a50f50f24b" title="prepend" alt="" coords="153,31,228,57"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="317,5,375,32"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#ad738bbd8321f518ca5cdfac842993d04" title="prependableBytes" alt="" coords="276,56,416,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afba1d23196411daa43950fdbbff6d724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afba1d23196411daa43950fdbbff6d724">&#9670;&nbsp;</a></span>readableBytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t readableBytes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00068">68</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00413">Buffer::readerIndex_</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00414">Buffer::writerIndex_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00048">Buffer::Buffer()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00096">Buffer::findEOL()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00390">Buffer::makeSpace()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00310">Buffer::peekInt16()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00302">Buffer::peekInt32()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00290">Buffer::peekInt64()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00318">Buffer::peekInt8()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00113">Buffer::retrieve()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00159">Buffer::retrieveAllAsString()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00164">Buffer::retrieveAsString()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00362">Buffer::shrink()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00172">Buffer::toStringPiece()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00215">Buffer::unwrite()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_afba1d23196411daa43950fdbbff6d724_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_afba1d23196411daa43950fdbbff6d724_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_afba1d23196411daa43950fdbbff6d724_icgraph" id="classmuduo_1_1net_1_1Buffer_afba1d23196411daa43950fdbbff6d724_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a3189a466a75c249c9371b74325e4fc53" title="Buffer" alt="" coords="188,5,249,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#acf4decda782c75e8f198c95de2958409" title="findEOL" alt="" coords="183,56,254,83"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#a83d5a5ce302569b35df7743314578791" title="makeSpace" alt="" coords="169,107,268,133"/>
+<area shape="rect" id="node7" href="classmuduo_1_1net_1_1Buffer.html#a69095875ff26fe7eff163afde6eb7c9e" title="shrink" alt="" coords="562,157,625,184"/>
+<area shape="rect" id="node8" href="classmuduo_1_1net_1_1Buffer.html#af9c96d31bad4ac1ff73d31672bc324c3" title="peekInt16" alt="" coords="351,309,438,336"/>
+<area shape="rect" id="node10" href="classmuduo_1_1net_1_1Buffer.html#afefe12caa1ed837ffb7e967d44e19af9" title="peekInt32" alt="" coords="175,525,262,552"/>
+<area shape="rect" id="node12" href="classmuduo_1_1net_1_1Buffer.html#a78f18c2f695bc9fb75781596a16d9416" title="peekInt64" alt="" coords="175,259,262,285"/>
+<area shape="rect" id="node14" href="classmuduo_1_1net_1_1Buffer.html#a28a767d788ebbb53bef6c939cfa8b5fb" title="peekInt8" alt="" coords="179,627,258,653"/>
+<area shape="rect" id="node16" href="classmuduo_1_1net_1_1Buffer.html#a25a9cdb4fcb89f6e3ff071517bdc09e8" title="retrieve" alt="" coords="182,461,255,488"/>
+<area shape="rect" id="node22" href="classmuduo_1_1net_1_1Buffer.html#a2f372acde2975d2cd9a7633148db7e7f" title="retrieveAsString" alt="" coords="331,715,458,741"/>
+<area shape="rect" id="node23" href="classmuduo_1_1net_1_1Buffer.html#ac902667b575515cba5b54ddf3a5d10aa" title="retrieveAllAsString" alt="" coords="521,740,665,767"/>
+<area shape="rect" id="node24" href="classmuduo_1_1net_1_1Buffer.html#a78096dee3d0826efb63a5b814eef37c4" title="toStringPiece" alt="" coords="341,208,449,235"/>
+<area shape="rect" id="node25" href="classmuduo_1_1net_1_1Buffer.html#a851a742d16106f81629a5315d80e0616" title="unwrite" alt="" coords="183,816,254,843"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#a1185aa5bbe069f50c8d46a9f8d5aac32" title="ensureWritableBytes" alt="" coords="316,107,473,133"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1Buffer.html#adece1d853752b95184d19c78228a0c39" title="append" alt="" coords="558,107,629,133"/>
+<area shape="rect" id="node9" href="classmuduo_1_1net_1_1Buffer.html#a7cf018b7a5d7bed8aa4d201e4399fce0" title="readInt16" alt="" coords="551,385,635,412"/>
+<area shape="rect" id="node11" href="classmuduo_1_1net_1_1Buffer.html#adbc23fa2b53ee3f0bd8cc0af521900d4" title="readInt32" alt="" coords="551,512,635,539"/>
+<area shape="rect" id="node13" href="classmuduo_1_1net_1_1Buffer.html#a5b815d6984b81ae01f581f799c48582f" title="readInt64" alt="" coords="551,259,635,285"/>
+<area shape="rect" id="node15" href="classmuduo_1_1net_1_1Buffer.html#a24c9f312341ccfb47ae7a007ae32c39f" title="readInt8" alt="" coords="555,613,631,640"/>
+<area shape="rect" id="node17" href="classmuduo_1_1net_1_1Buffer.html#abffa19bdb1fbf4ac36fe0f2375bee1e5" title="retrieveUntil" alt="" coords="343,411,447,437"/>
+<area shape="rect" id="node18" href="classmuduo_1_1net_1_1Buffer.html#a31eaec053434837ca42b6abc4319f0ee" title="retrieveInt64" alt="" coords="341,360,448,387"/>
+<area shape="rect" id="node19" href="classmuduo_1_1net_1_1Buffer.html#a703d91e23ca1b8ab42350d8a9aa67de1" title="retrieveInt32" alt="" coords="341,512,448,539"/>
+<area shape="rect" id="node20" href="classmuduo_1_1net_1_1Buffer.html#a78a272f407b370f1a5e0d30d0bdcf131" title="retrieveInt16" alt="" coords="341,461,448,488"/>
+<area shape="rect" id="node21" href="classmuduo_1_1net_1_1Buffer.html#a4605c83f07f06cc12d0ab3a2d54be43e" title="retrieveInt8" alt="" coords="345,563,444,589"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abf4ee68d9e5290cdfb7f3854387f0576"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf4ee68d9e5290cdfb7f3854387f0576">&#9670;&nbsp;</a></span>readFd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t readFd </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>savedErrno</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read data directly into buffer.</p>
+<p>It may implement with readv(2) </p><dl class="section return"><dt>返回</dt><dd>result of read(2), <code>errno</code> is saved </dd></dl>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00371">Buffer::internalCapacity()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_abf4ee68d9e5290cdfb7f3854387f0576_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_abf4ee68d9e5290cdfb7f3854387f0576_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_abf4ee68d9e5290cdfb7f3854387f0576_icgraph" id="classmuduo_1_1net_1_1Buffer_abf4ee68d9e5290cdfb7f3854387f0576_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#add5064782687c36289ea4905a58caef2" title="internalCapacity" alt="" coords="120,5,249,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7cf018b7a5d7bed8aa4d201e4399fce0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cf018b7a5d7bed8aa4d201e4399fce0">&#9670;&nbsp;</a></span>readInt16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t readInt16 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00272">272</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00310">Buffer::peekInt16()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00143">Buffer::retrieveInt16()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a7cf018b7a5d7bed8aa4d201e4399fce0_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a7cf018b7a5d7bed8aa4d201e4399fce0_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a7cf018b7a5d7bed8aa4d201e4399fce0_cgraph" id="classmuduo_1_1net_1_1Buffer_a7cf018b7a5d7bed8aa4d201e4399fce0_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#af9c96d31bad4ac1ff73d31672bc324c3" title="peekInt16" alt="" coords="147,85,234,111"/>
+<area shape="rect" id="node7" href="classmuduo_1_1net_1_1Buffer.html#a78a272f407b370f1a5e0d30d0bdcf131" title="retrieveInt16" alt="" coords="137,147,244,174"/>
+<area shape="rect" id="node3" href="namespacemuduo_1_1net_1_1sockets.html#a0f7768ebfa264d5c4eaf377297bab244" title="muduo::net::sockets\l::networkToHost16" alt="" coords="292,5,447,47"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="342,71,397,98"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="495,122,611,149"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="523,71,582,98"/>
+<area shape="rect" id="node8" href="classmuduo_1_1net_1_1Buffer.html#a25a9cdb4fcb89f6e3ff071517bdc09e8" title="retrieve" alt="" coords="333,173,406,199"/>
+<area shape="rect" id="node9" href="classmuduo_1_1net_1_1Buffer.html#af505ce71f8935bcfaa932d304c295173" title="retrieveAll" alt="" coords="507,173,598,199"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adbc23fa2b53ee3f0bd8cc0af521900d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbc23fa2b53ee3f0bd8cc0af521900d4">&#9670;&nbsp;</a></span>readInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t readInt32 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Read int32_t from network endian</p>
+<p>Require: buf-&gt;<a class="el" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724">readableBytes()</a> &gt;= sizeof(int32_t) </p>
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00265">265</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00302">Buffer::peekInt32()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00138">Buffer::retrieveInt32()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_adbc23fa2b53ee3f0bd8cc0af521900d4_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_adbc23fa2b53ee3f0bd8cc0af521900d4_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_adbc23fa2b53ee3f0bd8cc0af521900d4_cgraph" id="classmuduo_1_1net_1_1Buffer_adbc23fa2b53ee3f0bd8cc0af521900d4_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#afefe12caa1ed837ffb7e967d44e19af9" title="peekInt32" alt="" coords="147,85,234,111"/>
+<area shape="rect" id="node7" href="classmuduo_1_1net_1_1Buffer.html#a703d91e23ca1b8ab42350d8a9aa67de1" title="retrieveInt32" alt="" coords="137,147,244,174"/>
+<area shape="rect" id="node3" href="namespacemuduo_1_1net_1_1sockets.html#a23f7d77e0379e52b1390e1d2846624e0" title="muduo::net::sockets\l::networkToHost32" alt="" coords="292,5,447,47"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="342,71,397,98"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="495,122,611,149"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="523,71,582,98"/>
+<area shape="rect" id="node8" href="classmuduo_1_1net_1_1Buffer.html#a25a9cdb4fcb89f6e3ff071517bdc09e8" title="retrieve" alt="" coords="333,173,406,199"/>
+<area shape="rect" id="node9" href="classmuduo_1_1net_1_1Buffer.html#af505ce71f8935bcfaa932d304c295173" title="retrieveAll" alt="" coords="507,173,598,199"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5b815d6984b81ae01f581f799c48582f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b815d6984b81ae01f581f799c48582f">&#9670;&nbsp;</a></span>readInt64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t readInt64 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Read int64_t from network endian</p>
+<p>Require: buf-&gt;<a class="el" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724">readableBytes()</a> &gt;= sizeof(int32_t) </p>
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00254">254</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00290">Buffer::peekInt64()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00133">Buffer::retrieveInt64()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a5b815d6984b81ae01f581f799c48582f_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a5b815d6984b81ae01f581f799c48582f_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a5b815d6984b81ae01f581f799c48582f_cgraph" id="classmuduo_1_1net_1_1Buffer_a5b815d6984b81ae01f581f799c48582f_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a78f18c2f695bc9fb75781596a16d9416" title="peekInt64" alt="" coords="147,85,234,111"/>
+<area shape="rect" id="node7" href="classmuduo_1_1net_1_1Buffer.html#a31eaec053434837ca42b6abc4319f0ee" title="retrieveInt64" alt="" coords="137,147,244,174"/>
+<area shape="rect" id="node3" href="namespacemuduo_1_1net_1_1sockets.html#a590d67f0a8d4f8ff19462c08ebfb99b0" title="muduo::net::sockets\l::networkToHost64" alt="" coords="292,5,447,47"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="342,71,397,98"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="495,122,611,149"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="523,71,582,98"/>
+<area shape="rect" id="node8" href="classmuduo_1_1net_1_1Buffer.html#a25a9cdb4fcb89f6e3ff071517bdc09e8" title="retrieve" alt="" coords="333,173,406,199"/>
+<area shape="rect" id="node9" href="classmuduo_1_1net_1_1Buffer.html#af505ce71f8935bcfaa932d304c295173" title="retrieveAll" alt="" coords="507,173,598,199"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a24c9f312341ccfb47ae7a007ae32c39f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24c9f312341ccfb47ae7a007ae32c39f">&#9670;&nbsp;</a></span>readInt8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t readInt8 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00279">279</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00318">Buffer::peekInt8()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00148">Buffer::retrieveInt8()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a24c9f312341ccfb47ae7a007ae32c39f_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a24c9f312341ccfb47ae7a007ae32c39f_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a24c9f312341ccfb47ae7a007ae32c39f_cgraph" id="classmuduo_1_1net_1_1Buffer_a24c9f312341ccfb47ae7a007ae32c39f_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a28a767d788ebbb53bef6c939cfa8b5fb" title="peekInt8" alt="" coords="139,56,218,83"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1Buffer.html#a4605c83f07f06cc12d0ab3a2d54be43e" title="retrieveInt8" alt="" coords="129,107,228,133"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="285,5,340,32"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="397,56,513,83"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="426,5,485,32"/>
+<area shape="rect" id="node7" href="classmuduo_1_1net_1_1Buffer.html#a25a9cdb4fcb89f6e3ff071517bdc09e8" title="retrieve" alt="" coords="276,107,349,133"/>
+<area shape="rect" id="node8" href="classmuduo_1_1net_1_1Buffer.html#af505ce71f8935bcfaa932d304c295173" title="retrieveAll" alt="" coords="410,107,501,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a25a9cdb4fcb89f6e3ff071517bdc09e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25a9cdb4fcb89f6e3ff071517bdc09e8">&#9670;&nbsp;</a></span>retrieve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void retrieve </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00113">113</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00068">Buffer::readableBytes()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00413">Buffer::readerIndex_</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00153">Buffer::retrieveAll()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00164">Buffer::retrieveAsString()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00143">Buffer::retrieveInt16()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00138">Buffer::retrieveInt32()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00133">Buffer::retrieveInt64()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00148">Buffer::retrieveInt8()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00126">Buffer::retrieveUntil()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a25a9cdb4fcb89f6e3ff071517bdc09e8_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a25a9cdb4fcb89f6e3ff071517bdc09e8_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a25a9cdb4fcb89f6e3ff071517bdc09e8_cgraph" id="classmuduo_1_1net_1_1Buffer_a25a9cdb4fcb89f6e3ff071517bdc09e8_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="127,5,243,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#af505ce71f8935bcfaa932d304c295173" title="retrieveAll" alt="" coords="139,56,230,83"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a25a9cdb4fcb89f6e3ff071517bdc09e8_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a25a9cdb4fcb89f6e3ff071517bdc09e8_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a25a9cdb4fcb89f6e3ff071517bdc09e8_icgraph" id="classmuduo_1_1net_1_1Buffer_a25a9cdb4fcb89f6e3ff071517bdc09e8_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a2f372acde2975d2cd9a7633148db7e7f" title="retrieveAsString" alt="" coords="127,5,253,32"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#a78a272f407b370f1a5e0d30d0bdcf131" title="retrieveInt16" alt="" coords="137,56,243,83"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1Buffer.html#a703d91e23ca1b8ab42350d8a9aa67de1" title="retrieveInt32" alt="" coords="137,107,243,133"/>
+<area shape="rect" id="node8" href="classmuduo_1_1net_1_1Buffer.html#a31eaec053434837ca42b6abc4319f0ee" title="retrieveInt64" alt="" coords="137,157,243,184"/>
+<area shape="rect" id="node10" href="classmuduo_1_1net_1_1Buffer.html#a4605c83f07f06cc12d0ab3a2d54be43e" title="retrieveInt8" alt="" coords="141,208,239,235"/>
+<area shape="rect" id="node12" href="classmuduo_1_1net_1_1Buffer.html#abffa19bdb1fbf4ac36fe0f2375bee1e5" title="retrieveUntil" alt="" coords="138,259,242,285"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#ac902667b575515cba5b54ddf3a5d10aa" title="retrieveAllAsString" alt="" coords="301,5,445,32"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#a7cf018b7a5d7bed8aa4d201e4399fce0" title="readInt16" alt="" coords="331,56,415,83"/>
+<area shape="rect" id="node7" href="classmuduo_1_1net_1_1Buffer.html#adbc23fa2b53ee3f0bd8cc0af521900d4" title="readInt32" alt="" coords="331,107,415,133"/>
+<area shape="rect" id="node9" href="classmuduo_1_1net_1_1Buffer.html#a5b815d6984b81ae01f581f799c48582f" title="readInt64" alt="" coords="331,157,415,184"/>
+<area shape="rect" id="node11" href="classmuduo_1_1net_1_1Buffer.html#a24c9f312341ccfb47ae7a007ae32c39f" title="readInt8" alt="" coords="335,208,411,235"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af505ce71f8935bcfaa932d304c295173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af505ce71f8935bcfaa932d304c295173">&#9670;&nbsp;</a></span>retrieveAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void retrieveAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00153">153</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00045">Buffer::kCheapPrepend</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00413">Buffer::readerIndex_</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00414">Buffer::writerIndex_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00113">Buffer::retrieve()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_af505ce71f8935bcfaa932d304c295173_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_af505ce71f8935bcfaa932d304c295173_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_af505ce71f8935bcfaa932d304c295173_icgraph" id="classmuduo_1_1net_1_1Buffer_af505ce71f8935bcfaa932d304c295173_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a25a9cdb4fcb89f6e3ff071517bdc09e8" title="retrieve" alt="" coords="144,132,217,159"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#a2f372acde2975d2cd9a7633148db7e7f" title="retrieveAsString" alt="" coords="265,5,392,32"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#a78a272f407b370f1a5e0d30d0bdcf131" title="retrieveInt16" alt="" coords="275,56,382,83"/>
+<area shape="rect" id="node7" href="classmuduo_1_1net_1_1Buffer.html#a703d91e23ca1b8ab42350d8a9aa67de1" title="retrieveInt32" alt="" coords="275,107,382,133"/>
+<area shape="rect" id="node9" href="classmuduo_1_1net_1_1Buffer.html#a31eaec053434837ca42b6abc4319f0ee" title="retrieveInt64" alt="" coords="275,157,382,184"/>
+<area shape="rect" id="node11" href="classmuduo_1_1net_1_1Buffer.html#a4605c83f07f06cc12d0ab3a2d54be43e" title="retrieveInt8" alt="" coords="279,208,378,235"/>
+<area shape="rect" id="node13" href="classmuduo_1_1net_1_1Buffer.html#abffa19bdb1fbf4ac36fe0f2375bee1e5" title="retrieveUntil" alt="" coords="277,259,381,285"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#ac902667b575515cba5b54ddf3a5d10aa" title="retrieveAllAsString" alt="" coords="440,5,584,32"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1Buffer.html#a7cf018b7a5d7bed8aa4d201e4399fce0" title="readInt16" alt="" coords="470,56,554,83"/>
+<area shape="rect" id="node8" href="classmuduo_1_1net_1_1Buffer.html#adbc23fa2b53ee3f0bd8cc0af521900d4" title="readInt32" alt="" coords="470,107,554,133"/>
+<area shape="rect" id="node10" href="classmuduo_1_1net_1_1Buffer.html#a5b815d6984b81ae01f581f799c48582f" title="readInt64" alt="" coords="470,157,554,184"/>
+<area shape="rect" id="node12" href="classmuduo_1_1net_1_1Buffer.html#a24c9f312341ccfb47ae7a007ae32c39f" title="readInt8" alt="" coords="474,208,550,235"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac902667b575515cba5b54ddf3a5d10aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac902667b575515cba5b54ddf3a5d10aa">&#9670;&nbsp;</a></span>retrieveAllAsString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string retrieveAllAsString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00159">159</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00068">Buffer::readableBytes()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00164">Buffer::retrieveAsString()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_ac902667b575515cba5b54ddf3a5d10aa_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_ac902667b575515cba5b54ddf3a5d10aa_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_ac902667b575515cba5b54ddf3a5d10aa_cgraph" id="classmuduo_1_1net_1_1Buffer_ac902667b575515cba5b54ddf3a5d10aa_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="493,5,609,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#a2f372acde2975d2cd9a7633148db7e7f" title="retrieveAsString" alt="" coords="197,31,324,57"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="381,107,436,133"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1Buffer.html#a25a9cdb4fcb89f6e3ff071517bdc09e8" title="retrieve" alt="" coords="372,56,445,83"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="522,107,581,133"/>
+<area shape="rect" id="node7" href="classmuduo_1_1net_1_1Buffer.html#af505ce71f8935bcfaa932d304c295173" title="retrieveAll" alt="" coords="506,56,597,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2f372acde2975d2cd9a7633148db7e7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f372acde2975d2cd9a7633148db7e7f">&#9670;&nbsp;</a></span>retrieveAsString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string retrieveAsString </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00164">164</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00077">Buffer::peek()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00068">Buffer::readableBytes()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00113">Buffer::retrieve()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00159">Buffer::retrieveAllAsString()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a2f372acde2975d2cd9a7633148db7e7f_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a2f372acde2975d2cd9a7633148db7e7f_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a2f372acde2975d2cd9a7633148db7e7f_cgraph" id="classmuduo_1_1net_1_1Buffer_a2f372acde2975d2cd9a7633148db7e7f_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="189,5,244,32"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="301,56,417,83"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#a25a9cdb4fcb89f6e3ff071517bdc09e8" title="retrieve" alt="" coords="180,107,253,133"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="330,5,389,32"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1Buffer.html#af505ce71f8935bcfaa932d304c295173" title="retrieveAll" alt="" coords="314,107,405,133"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a2f372acde2975d2cd9a7633148db7e7f_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a2f372acde2975d2cd9a7633148db7e7f_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a2f372acde2975d2cd9a7633148db7e7f_icgraph" id="classmuduo_1_1net_1_1Buffer_a2f372acde2975d2cd9a7633148db7e7f_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#ac902667b575515cba5b54ddf3a5d10aa" title="retrieveAllAsString" alt="" coords="180,5,324,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a78a272f407b370f1a5e0d30d0bdcf131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78a272f407b370f1a5e0d30d0bdcf131">&#9670;&nbsp;</a></span>retrieveInt16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void retrieveInt16 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00143">143</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00113">Buffer::retrieve()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00272">Buffer::readInt16()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a78a272f407b370f1a5e0d30d0bdcf131_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a78a272f407b370f1a5e0d30d0bdcf131_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a78a272f407b370f1a5e0d30d0bdcf131_cgraph" id="classmuduo_1_1net_1_1Buffer_a78a272f407b370f1a5e0d30d0bdcf131_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a25a9cdb4fcb89f6e3ff071517bdc09e8" title="retrieve" alt="" coords="160,31,233,57"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="281,5,397,32"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#af505ce71f8935bcfaa932d304c295173" title="retrieveAll" alt="" coords="294,56,385,83"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a78a272f407b370f1a5e0d30d0bdcf131_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a78a272f407b370f1a5e0d30d0bdcf131_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a78a272f407b370f1a5e0d30d0bdcf131_icgraph" id="classmuduo_1_1net_1_1Buffer_a78a272f407b370f1a5e0d30d0bdcf131_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a7cf018b7a5d7bed8aa4d201e4399fce0" title="readInt16" alt="" coords="160,5,244,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a703d91e23ca1b8ab42350d8a9aa67de1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a703d91e23ca1b8ab42350d8a9aa67de1">&#9670;&nbsp;</a></span>retrieveInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void retrieveInt32 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00138">138</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00113">Buffer::retrieve()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00265">Buffer::readInt32()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a703d91e23ca1b8ab42350d8a9aa67de1_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a703d91e23ca1b8ab42350d8a9aa67de1_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a703d91e23ca1b8ab42350d8a9aa67de1_cgraph" id="classmuduo_1_1net_1_1Buffer_a703d91e23ca1b8ab42350d8a9aa67de1_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a25a9cdb4fcb89f6e3ff071517bdc09e8" title="retrieve" alt="" coords="160,31,233,57"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="281,5,397,32"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#af505ce71f8935bcfaa932d304c295173" title="retrieveAll" alt="" coords="294,56,385,83"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a703d91e23ca1b8ab42350d8a9aa67de1_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a703d91e23ca1b8ab42350d8a9aa67de1_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a703d91e23ca1b8ab42350d8a9aa67de1_icgraph" id="classmuduo_1_1net_1_1Buffer_a703d91e23ca1b8ab42350d8a9aa67de1_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#adbc23fa2b53ee3f0bd8cc0af521900d4" title="readInt32" alt="" coords="160,5,244,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a31eaec053434837ca42b6abc4319f0ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31eaec053434837ca42b6abc4319f0ee">&#9670;&nbsp;</a></span>retrieveInt64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void retrieveInt64 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00133">133</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00113">Buffer::retrieve()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00254">Buffer::readInt64()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a31eaec053434837ca42b6abc4319f0ee_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a31eaec053434837ca42b6abc4319f0ee_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a31eaec053434837ca42b6abc4319f0ee_cgraph" id="classmuduo_1_1net_1_1Buffer_a31eaec053434837ca42b6abc4319f0ee_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a25a9cdb4fcb89f6e3ff071517bdc09e8" title="retrieve" alt="" coords="160,31,233,57"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="281,5,397,32"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#af505ce71f8935bcfaa932d304c295173" title="retrieveAll" alt="" coords="294,56,385,83"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a31eaec053434837ca42b6abc4319f0ee_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a31eaec053434837ca42b6abc4319f0ee_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a31eaec053434837ca42b6abc4319f0ee_icgraph" id="classmuduo_1_1net_1_1Buffer_a31eaec053434837ca42b6abc4319f0ee_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a5b815d6984b81ae01f581f799c48582f" title="readInt64" alt="" coords="160,5,244,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4605c83f07f06cc12d0ab3a2d54be43e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4605c83f07f06cc12d0ab3a2d54be43e">&#9670;&nbsp;</a></span>retrieveInt8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void retrieveInt8 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00148">148</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00113">Buffer::retrieve()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00279">Buffer::readInt8()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a4605c83f07f06cc12d0ab3a2d54be43e_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a4605c83f07f06cc12d0ab3a2d54be43e_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a4605c83f07f06cc12d0ab3a2d54be43e_cgraph" id="classmuduo_1_1net_1_1Buffer_a4605c83f07f06cc12d0ab3a2d54be43e_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a25a9cdb4fcb89f6e3ff071517bdc09e8" title="retrieve" alt="" coords="152,31,225,57"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="273,5,389,32"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#af505ce71f8935bcfaa932d304c295173" title="retrieveAll" alt="" coords="286,56,377,83"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a4605c83f07f06cc12d0ab3a2d54be43e_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a4605c83f07f06cc12d0ab3a2d54be43e_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a4605c83f07f06cc12d0ab3a2d54be43e_icgraph" id="classmuduo_1_1net_1_1Buffer_a4605c83f07f06cc12d0ab3a2d54be43e_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a24c9f312341ccfb47ae7a007ae32c39f" title="readInt8" alt="" coords="152,5,228,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abffa19bdb1fbf4ac36fe0f2375bee1e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abffa19bdb1fbf4ac36fe0f2375bee1e5">&#9670;&nbsp;</a></span>retrieveUntil()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void retrieveUntil </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>end</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00126">126</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00203">Buffer::beginWrite()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00077">Buffer::peek()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00113">Buffer::retrieve()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_abffa19bdb1fbf4ac36fe0f2375bee1e5_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_abffa19bdb1fbf4ac36fe0f2375bee1e5_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_abffa19bdb1fbf4ac36fe0f2375bee1e5_cgraph" id="classmuduo_1_1net_1_1Buffer_abffa19bdb1fbf4ac36fe0f2375bee1e5_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a71778facb9cd13bc2403edf59621f3f5" title="beginWrite" alt="" coords="157,5,249,32"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="176,56,231,83"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#a25a9cdb4fcb89f6e3ff071517bdc09e8" title="retrieve" alt="" coords="167,107,240,133"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="326,19,385,45"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="297,81,413,108"/>
+<area shape="rect" id="node7" href="classmuduo_1_1net_1_1Buffer.html#af505ce71f8935bcfaa932d304c295173" title="retrieveAll" alt="" coords="310,132,401,159"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a69095875ff26fe7eff163afde6eb7c9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69095875ff26fe7eff163afde6eb7c9e">&#9670;&nbsp;</a></span>shrink()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void shrink </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>reserve</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00362">362</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00177">Buffer::append()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00194">Buffer::ensureWritableBytes()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00068">Buffer::readableBytes()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00061">Buffer::swap()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00172">Buffer::toStringPiece()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a69095875ff26fe7eff163afde6eb7c9e_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a69095875ff26fe7eff163afde6eb7c9e_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a69095875ff26fe7eff163afde6eb7c9e_cgraph" id="classmuduo_1_1net_1_1Buffer_a69095875ff26fe7eff163afde6eb7c9e_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#af02baace4e1946f318dfa5c4d5d4bb3c" title="append" alt="" coords="159,78,230,105"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#a1185aa5bbe069f50c8d46a9f8d5aac32" title="ensureWritableBytes" alt="" coords="116,187,273,214"/>
+<area shape="rect" id="node9" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="529,289,645,315"/>
+<area shape="rect" id="node11" href="classmuduo_1_1net_1_1Buffer.html#a5a6560acf9880bf7a3b210c07bb3db2e" title="swap" alt="" coords="167,289,223,315"/>
+<area shape="rect" id="node12" href="classmuduo_1_1net_1_1Buffer.html#a78096dee3d0826efb63a5b814eef37c4" title="toStringPiece" alt="" coords="141,238,249,265"/>
+<area shape="rect" id="node3" href="classmuduo_1_1StringPiece.html#a39a256207a84f316547e36c755373d03" title="muduo::StringPiece\l::data" alt="" coords="321,71,469,112"/>
+<area shape="rect" id="node4" href="classmuduo_1_1StringPiece.html#af9593d4a5ff4274efaf429cb4f9e57cc" title="muduo::StringPiece\l::size" alt="" coords="321,5,469,47"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1Buffer.html#a83d5a5ce302569b35df7743314578791" title="makeSpace" alt="" coords="346,187,445,214"/>
+<area shape="rect" id="node10" href="classmuduo_1_1net_1_1Buffer.html#a998888da42aba8e7ff1977405f7c33e3" title="writableBytes" alt="" coords="531,137,643,163"/>
+<area shape="rect" id="node7" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="558,238,617,265"/>
+<area shape="rect" id="node8" href="classmuduo_1_1net_1_1Buffer.html#ad738bbd8321f518ca5cdfac842993d04" title="prependableBytes" alt="" coords="517,187,657,214"/>
+<area shape="rect" id="node13" href="classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="368,238,423,265"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5a6560acf9880bf7a3b210c07bb3db2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a6560acf9880bf7a3b210c07bb3db2e">&#9670;&nbsp;</a></span>swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1net_1_1Buffer.html">Buffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00061">61</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00412">Buffer::buffer_</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00413">Buffer::readerIndex_</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00414">Buffer::writerIndex_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00362">Buffer::shrink()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a5a6560acf9880bf7a3b210c07bb3db2e_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a5a6560acf9880bf7a3b210c07bb3db2e_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a5a6560acf9880bf7a3b210c07bb3db2e_icgraph" id="classmuduo_1_1net_1_1Buffer_a5a6560acf9880bf7a3b210c07bb3db2e_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a69095875ff26fe7eff163afde6eb7c9e" title="shrink" alt="" coords="109,5,172,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a78096dee3d0826efb63a5b814eef37c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78096dee3d0826efb63a5b814eef37c4">&#9670;&nbsp;</a></span>toStringPiece()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1StringPiece.html">StringPiece</a> toStringPiece </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00172">172</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00077">Buffer::peek()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00068">Buffer::readableBytes()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00362">Buffer::shrink()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a78096dee3d0826efb63a5b814eef37c4_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a78096dee3d0826efb63a5b814eef37c4_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a78096dee3d0826efb63a5b814eef37c4_cgraph" id="classmuduo_1_1net_1_1Buffer_a78096dee3d0826efb63a5b814eef37c4_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="192,5,247,32"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="161,56,277,83"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="325,5,384,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a78096dee3d0826efb63a5b814eef37c4_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a78096dee3d0826efb63a5b814eef37c4_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a78096dee3d0826efb63a5b814eef37c4_icgraph" id="classmuduo_1_1net_1_1Buffer_a78096dee3d0826efb63a5b814eef37c4_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a69095875ff26fe7eff163afde6eb7c9e" title="shrink" alt="" coords="161,5,224,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a851a742d16106f81629a5315d80e0616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a851a742d16106f81629a5315d80e0616">&#9670;&nbsp;</a></span>unwrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unwrite </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00215">215</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00068">Buffer::readableBytes()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00414">Buffer::writerIndex_</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a851a742d16106f81629a5315d80e0616_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a851a742d16106f81629a5315d80e0616_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a851a742d16106f81629a5315d80e0616_cgraph" id="classmuduo_1_1net_1_1Buffer_a851a742d16106f81629a5315d80e0616_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="124,5,240,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a998888da42aba8e7ff1977405f7c33e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a998888da42aba8e7ff1977405f7c33e3">&#9670;&nbsp;</a></span>writableBytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t writableBytes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00071">71</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00412">Buffer::buffer_</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00414">Buffer::writerIndex_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00048">Buffer::Buffer()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00194">Buffer::ensureWritableBytes()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00209">Buffer::hasWritten()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00390">Buffer::makeSpace()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1Buffer_a998888da42aba8e7ff1977405f7c33e3_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1Buffer_a998888da42aba8e7ff1977405f7c33e3_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1Buffer_a998888da42aba8e7ff1977405f7c33e3_icgraph" id="classmuduo_1_1net_1_1Buffer_a998888da42aba8e7ff1977405f7c33e3_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1Buffer.html#a3189a466a75c249c9371b74325e4fc53" title="Buffer" alt="" coords="184,5,245,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1Buffer.html#a1185aa5bbe069f50c8d46a9f8d5aac32" title="ensureWritableBytes" alt="" coords="312,107,469,133"/>
+<area shape="rect" id="node6" href="classmuduo_1_1net_1_1Buffer.html#ae29d7ca8954d0ec7da6363221c80a245" title="hasWritten" alt="" coords="345,157,437,184"/>
+<area shape="rect" id="node7" href="classmuduo_1_1net_1_1Buffer.html#a83d5a5ce302569b35df7743314578791" title="makeSpace" alt="" coords="165,107,264,133"/>
+<area shape="rect" id="node4" href="classmuduo_1_1net_1_1Buffer.html#adece1d853752b95184d19c78228a0c39" title="append" alt="" coords="517,157,588,184"/>
+<area shape="rect" id="node5" href="classmuduo_1_1net_1_1Buffer.html#a69095875ff26fe7eff163afde6eb7c9e" title="shrink" alt="" coords="521,107,584,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a906f9199a48e49dfaa86ba3e8edd0269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a906f9199a48e49dfaa86ba3e8edd0269">&#9670;&nbsp;</a></span>buffer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;char&gt; buffer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00412">412</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00384">Buffer::begin()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00371">Buffer::internalCapacity()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00390">Buffer::makeSpace()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00061">Buffer::swap()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00071">Buffer::writableBytes()</a>.</p>
+
+</div>
+</div>
+<a id="a7c7e801837b45cd542d00cc5ec88dcb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c7e801837b45cd542d00cc5ec88dcb1">&#9670;&nbsp;</a></span>kCheapPrepend</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t kCheapPrepend = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00045">45</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00390">Buffer::makeSpace()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00153">Buffer::retrieveAll()</a>.</p>
+
+</div>
+</div>
+<a id="aba43e9a92549451389054f6cd4aec2b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba43e9a92549451389054f6cd4aec2b4">&#9670;&nbsp;</a></span>kCRLF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char kCRLF[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00416">416</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00080">Buffer::findCRLF()</a>.</p>
+
+</div>
+</div>
+<a id="a50181a12c6e534352c6c3cf9e0d8b331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50181a12c6e534352c6c3cf9e0d8b331">&#9670;&nbsp;</a></span>kInitialSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t kInitialSize = 1024</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8af076cf34524e62b7392ca568468a7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8af076cf34524e62b7392ca568468a7d">&#9670;&nbsp;</a></span>readerIndex_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t readerIndex_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00413">413</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00390">Buffer::makeSpace()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00077">Buffer::peek()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00354">Buffer::prepend()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00074">Buffer::prependableBytes()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00068">Buffer::readableBytes()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00113">Buffer::retrieve()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00153">Buffer::retrieveAll()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00061">Buffer::swap()</a>.</p>
+
+</div>
+</div>
+<a id="a642726abccc15af160d55735b2ed5d9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a642726abccc15af160d55735b2ed5d9a">&#9670;&nbsp;</a></span>writerIndex_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t writerIndex_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a> 第 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00414">414</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00203">Buffer::beginWrite()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00209">Buffer::hasWritten()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00390">Buffer::makeSpace()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00068">Buffer::readableBytes()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00153">Buffer::retrieveAll()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00061">Buffer::swap()</a>, <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00215">Buffer::unwrite()</a> , 以及 <a class="el" href="muduo_2net_2Buffer_8h_source.html#l00071">Buffer::writableBytes()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>lib/muduo/net/<a class="el" href="muduo_2net_2Buffer_8h_source.html">Buffer.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemuduo.html">muduo</a></li><li class="navelem"><a class="el" href="namespacemuduo_1_1net.html">net</a></li><li class="navelem"><a class="el" href="classmuduo_1_1net_1_1Buffer.html">Buffer</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

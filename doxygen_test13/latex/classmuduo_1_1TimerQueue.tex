@@ -1,0 +1,529 @@
+\hypertarget{classmuduo_1_1TimerQueue}{}\section{Timer\+Queue类 参考}
+\label{classmuduo_1_1TimerQueue}\index{Timer\+Queue@{Timer\+Queue}}
+
+
+{\ttfamily \#include $<$Timer\+Queue.\+h$>$}
+
+
+
+类 Timer\+Queue 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classmuduo_1_1TimerQueue__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Timer\+Queue 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmuduo_1_1TimerQueue__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1TimerQueue_a7ad41aed2409f7d424fd9cf7c0c5eac8}{Timer\+Queue} (\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$loop)
+\item 
+\hyperlink{classmuduo_1_1TimerQueue_a31b74dd52d3bff8688adcbbddc932901}{$\sim$\+Timer\+Queue} ()
+\item 
+\hyperlink{classmuduo_1_1TimerId}{Timer\+Id} \hyperlink{classmuduo_1_1TimerQueue_af1bd2f1010adf1a82120c708b7a1ba22}{add\+Timer} (const \hyperlink{namespacemuduo_a5f7453c2a15825e79bddf5deaec707bf}{Timer\+Callback} \&cb, \hyperlink{classmuduo_1_1Timestamp}{Timestamp} when, double interval)
+\item 
+void \hyperlink{classmuduo_1_1TimerQueue_af8b24b02bbff6a657fa5b0190bef9b9b}{cancel} (\hyperlink{classmuduo_1_1TimerId}{Timer\+Id} timer\+Id)
+\end{DoxyCompactItemize}
+\subsection*{Private 类型}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::pair$<$ \hyperlink{classmuduo_1_1Timestamp}{Timestamp}, \hyperlink{classmuduo_1_1Timer}{Timer} $\ast$ $>$ \hyperlink{classmuduo_1_1TimerQueue_aa2bab77baf38279fd11dcfcbf8fb15d8}{Entry}
+\item 
+typedef std\+::set$<$ \hyperlink{classmuduo_1_1TimerQueue_aa2bab77baf38279fd11dcfcbf8fb15d8}{Entry} $>$ \hyperlink{classmuduo_1_1TimerQueue_aeb83ff8eddb4b17cb88a9c3dab7268a2}{Timer\+List}
+\item 
+typedef std\+::pair$<$ \hyperlink{classmuduo_1_1Timer}{Timer} $\ast$, int64\+\_\+t $>$ \hyperlink{classmuduo_1_1TimerQueue_a8559b2c5a91f664c629dc1292d484e16}{Active\+Timer}
+\item 
+typedef std\+::set$<$ \hyperlink{classmuduo_1_1TimerQueue_a8559b2c5a91f664c629dc1292d484e16}{Active\+Timer} $>$ \hyperlink{classmuduo_1_1TimerQueue_ac4562f9443eea7ea7d16c2eab2dad988}{Active\+Timer\+Set}
+\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmuduo_1_1TimerQueue_adff791c94ab893d2adae1eafe03713ad}{add\+Timer\+In\+Loop} (\hyperlink{classmuduo_1_1Timer}{Timer} $\ast$timer)
+\item 
+void \hyperlink{classmuduo_1_1TimerQueue_abc59bed63190c00d9aab9281a543ea58}{cancel\+In\+Loop} (\hyperlink{classmuduo_1_1TimerId}{Timer\+Id} timer\+Id)
+\item 
+void \hyperlink{classmuduo_1_1TimerQueue_a231ec0ec0313193a59b3f1326328ae50}{handle\+Read} ()
+\item 
+std\+::vector$<$ \hyperlink{classmuduo_1_1TimerQueue_aa2bab77baf38279fd11dcfcbf8fb15d8}{Entry} $>$ \hyperlink{classmuduo_1_1TimerQueue_a4475fc9e3cda425c7f71b9d3e00e840a}{get\+Expired} (\hyperlink{classmuduo_1_1Timestamp}{Timestamp} now)
+\item 
+void \hyperlink{classmuduo_1_1TimerQueue_ac59fd8ddc045aae320982a0913993237}{reset} (const std\+::vector$<$ \hyperlink{classmuduo_1_1TimerQueue_aa2bab77baf38279fd11dcfcbf8fb15d8}{Entry} $>$ \&expired, \hyperlink{classmuduo_1_1Timestamp}{Timestamp} now)
+\item 
+bool \hyperlink{classmuduo_1_1TimerQueue_ac4bdfea344ee2a30857d2eabadfef399}{insert} (\hyperlink{classmuduo_1_1Timer}{Timer} $\ast$timer)
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$ \hyperlink{classmuduo_1_1TimerQueue_a19968f50018d32ac31f5cba0195591ac}{loop\+\_\+}
+\item 
+const int \hyperlink{classmuduo_1_1TimerQueue_acf759a4fb3d6057907231d57dabc92a1}{timerfd\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1Channel}{Channel} \hyperlink{classmuduo_1_1TimerQueue_a5f622e650258ae6484bc627f816a1650}{timerfd\+Channel\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1TimerQueue_aeb83ff8eddb4b17cb88a9c3dab7268a2}{Timer\+List} \hyperlink{classmuduo_1_1TimerQueue_a8fe653e82ce7b6c7135163d91a8a7602}{timers\+\_\+}
+\item 
+bool \hyperlink{classmuduo_1_1TimerQueue_a720fc1742c7b356dfd83f016ff5a219f}{calling\+Expired\+Timers\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1TimerQueue_ac4562f9443eea7ea7d16c2eab2dad988}{Active\+Timer\+Set} \hyperlink{classmuduo_1_1TimerQueue_a72047415bfa49f1d3d949115c01479fc}{active\+Timers\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1TimerQueue_ac4562f9443eea7ea7d16c2eab2dad988}{Active\+Timer\+Set} \hyperlink{classmuduo_1_1TimerQueue_a6e9e871b80d9b78c3a1d4c45a7235198}{canceling\+Timers\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+A best efforts timer queue. No guarantee that the callback will be on time. 
+
+在文件 Timer\+Queue.\+h 第 25 行定义.
+
+
+
+\subsection{成员类型定义说明}
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_a8559b2c5a91f664c629dc1292d484e16}\label{classmuduo_1_1TimerQueue_a8559b2c5a91f664c629dc1292d484e16}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!Active\+Timer@{Active\+Timer}}
+\index{Active\+Timer@{Active\+Timer}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{Active\+Timer}{ActiveTimer}}
+{\footnotesize\ttfamily typedef std\+::pair$<$\hyperlink{classmuduo_1_1Timer}{Timer}$\ast$, int64\+\_\+t$>$ \hyperlink{classmuduo_1_1TimerQueue_a8559b2c5a91f664c629dc1292d484e16}{Active\+Timer}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer\+Queue.\+h 第 42 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_ac4562f9443eea7ea7d16c2eab2dad988}\label{classmuduo_1_1TimerQueue_ac4562f9443eea7ea7d16c2eab2dad988}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!Active\+Timer\+Set@{Active\+Timer\+Set}}
+\index{Active\+Timer\+Set@{Active\+Timer\+Set}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{Active\+Timer\+Set}{ActiveTimerSet}}
+{\footnotesize\ttfamily typedef std\+::set$<$\hyperlink{classmuduo_1_1TimerQueue_a8559b2c5a91f664c629dc1292d484e16}{Active\+Timer}$>$ \hyperlink{classmuduo_1_1TimerQueue_ac4562f9443eea7ea7d16c2eab2dad988}{Active\+Timer\+Set}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer\+Queue.\+h 第 43 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_aa2bab77baf38279fd11dcfcbf8fb15d8}\label{classmuduo_1_1TimerQueue_aa2bab77baf38279fd11dcfcbf8fb15d8}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!Entry@{Entry}}
+\index{Entry@{Entry}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{Entry}{Entry}}
+{\footnotesize\ttfamily typedef std\+::pair$<$\hyperlink{classmuduo_1_1Timestamp}{Timestamp}, \hyperlink{classmuduo_1_1Timer}{Timer}$\ast$$>$ \hyperlink{classmuduo_1_1TimerQueue_aa2bab77baf38279fd11dcfcbf8fb15d8}{Entry}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer\+Queue.\+h 第 40 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_aeb83ff8eddb4b17cb88a9c3dab7268a2}\label{classmuduo_1_1TimerQueue_aeb83ff8eddb4b17cb88a9c3dab7268a2}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!Timer\+List@{Timer\+List}}
+\index{Timer\+List@{Timer\+List}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{Timer\+List}{TimerList}}
+{\footnotesize\ttfamily typedef std\+::set$<$\hyperlink{classmuduo_1_1TimerQueue_aa2bab77baf38279fd11dcfcbf8fb15d8}{Entry}$>$ \hyperlink{classmuduo_1_1TimerQueue_aeb83ff8eddb4b17cb88a9c3dab7268a2}{Timer\+List}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer\+Queue.\+h 第 41 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_a7ad41aed2409f7d424fd9cf7c0c5eac8}\label{classmuduo_1_1TimerQueue_a7ad41aed2409f7d424fd9cf7c0c5eac8}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!Timer\+Queue@{Timer\+Queue}}
+\index{Timer\+Queue@{Timer\+Queue}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{Timer\+Queue()}{TimerQueue()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1TimerQueue}{Timer\+Queue} (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$}]{loop }\end{DoxyParamCaption})}
+
+
+
+在文件 Timer\+Queue.\+cc 第 64 行定义.
+
+
+
+参考 Channel\+::enable\+Reading(), Timer\+Queue\+::handle\+Read(), Channel\+::set\+Read\+Callback() , 以及 Timer\+Queue\+::timerfd\+Channel\+\_\+.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1TimerQueue_a7ad41aed2409f7d424fd9cf7c0c5eac8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_a31b74dd52d3bff8688adcbbddc932901}\label{classmuduo_1_1TimerQueue_a31b74dd52d3bff8688adcbbddc932901}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!````~Timer\+Queue@{$\sim$\+Timer\+Queue}}
+\index{````~Timer\+Queue@{$\sim$\+Timer\+Queue}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{$\sim$\+Timer\+Queue()}{~TimerQueue()}}
+{\footnotesize\ttfamily $\sim$\hyperlink{classmuduo_1_1TimerQueue}{Timer\+Queue} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 Timer\+Queue.\+cc 第 74 行定义.
+
+
+
+参考 muduo\+::sockets\+::close(), Timer\+Queue\+::timerfd\+\_\+ , 以及 Timer\+Queue\+::timers\+\_\+.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classmuduo_1_1TimerQueue_a31b74dd52d3bff8688adcbbddc932901_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_af1bd2f1010adf1a82120c708b7a1ba22}\label{classmuduo_1_1TimerQueue_af1bd2f1010adf1a82120c708b7a1ba22}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!add\+Timer@{add\+Timer}}
+\index{add\+Timer@{add\+Timer}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{add\+Timer()}{addTimer()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1TimerId}{Timer\+Id} add\+Timer (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemuduo_a5f7453c2a15825e79bddf5deaec707bf}{Timer\+Callback} \&}]{cb,  }\item[{\hyperlink{classmuduo_1_1Timestamp}{Timestamp}}]{when,  }\item[{double}]{interval }\end{DoxyParamCaption})}
+
+Schedules the callback to be run at given time, repeats if {\ttfamily interval} $>$ 0.\+0.
+
+Must be thread safe. Usually be called from other threads. 
+
+在文件 Timer\+Queue.\+cc 第 82 行定义.
+
+
+
+参考 Timer\+Queue\+::add\+Timer\+In\+Loop(), Timer\+Queue\+::loop\+\_\+, Event\+Loop\+::run\+In\+Loop() , 以及 Timer\+::sequence().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1TimerQueue_af1bd2f1010adf1a82120c708b7a1ba22_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_adff791c94ab893d2adae1eafe03713ad}\label{classmuduo_1_1TimerQueue_adff791c94ab893d2adae1eafe03713ad}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!add\+Timer\+In\+Loop@{add\+Timer\+In\+Loop}}
+\index{add\+Timer\+In\+Loop@{add\+Timer\+In\+Loop}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{add\+Timer\+In\+Loop()}{addTimerInLoop()}}
+{\footnotesize\ttfamily void add\+Timer\+In\+Loop (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Timer}{Timer} $\ast$}]{timer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer\+Queue.\+cc 第 92 行定义.
+
+
+
+参考 Event\+Loop\+::assert\+In\+Loop\+Thread(), Timer\+::expiration(), Timer\+Queue\+::insert(), Timer\+Queue\+::loop\+\_\+, muduo\+::detail\+::reset\+Timerfd() , 以及 Timer\+Queue\+::timerfd\+\_\+.
+
+
+
+参考自 Timer\+Queue\+::add\+Timer().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1TimerQueue_adff791c94ab893d2adae1eafe03713ad_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{classmuduo_1_1TimerQueue_adff791c94ab893d2adae1eafe03713ad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_af8b24b02bbff6a657fa5b0190bef9b9b}\label{classmuduo_1_1TimerQueue_af8b24b02bbff6a657fa5b0190bef9b9b}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!cancel@{cancel}}
+\index{cancel@{cancel}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily void cancel (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1TimerId}{Timer\+Id}}]{timer\+Id }\end{DoxyParamCaption})}
+
+
+
+在文件 Timer\+Queue.\+cc 第 88 行定义.
+
+
+
+参考 Timer\+Queue\+::cancel\+In\+Loop(), Timer\+Queue\+::loop\+\_\+ , 以及 Event\+Loop\+::run\+In\+Loop().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1TimerQueue_af8b24b02bbff6a657fa5b0190bef9b9b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_abc59bed63190c00d9aab9281a543ea58}\label{classmuduo_1_1TimerQueue_abc59bed63190c00d9aab9281a543ea58}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!cancel\+In\+Loop@{cancel\+In\+Loop}}
+\index{cancel\+In\+Loop@{cancel\+In\+Loop}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{cancel\+In\+Loop()}{cancelInLoop()}}
+{\footnotesize\ttfamily void cancel\+In\+Loop (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1TimerId}{Timer\+Id}}]{timer\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer\+Queue.\+cc 第 100 行定义.
+
+
+
+参考 Timer\+Queue\+::active\+Timers\+\_\+, Event\+Loop\+::assert\+In\+Loop\+Thread(), Timer\+Queue\+::calling\+Expired\+Timers\+\_\+, Timer\+Queue\+::canceling\+Timers\+\_\+, Timer\+Queue\+::loop\+\_\+, Timer\+Id\+::sequence\+\_\+, Timer\+Id\+::timer\+\_\+ , 以及 Timer\+Queue\+::timers\+\_\+.
+
+
+
+参考自 Timer\+Queue\+::cancel().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1TimerQueue_abc59bed63190c00d9aab9281a543ea58_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{classmuduo_1_1TimerQueue_abc59bed63190c00d9aab9281a543ea58_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_a4475fc9e3cda425c7f71b9d3e00e840a}\label{classmuduo_1_1TimerQueue_a4475fc9e3cda425c7f71b9d3e00e840a}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!get\+Expired@{get\+Expired}}
+\index{get\+Expired@{get\+Expired}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{get\+Expired()}{getExpired()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classmuduo_1_1TimerQueue_aa2bab77baf38279fd11dcfcbf8fb15d8}{Timer\+Queue\+::\+Entry} $>$ get\+Expired (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Timestamp}{Timestamp}}]{now }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer\+Queue.\+cc 第 136 行定义.
+
+
+
+参考 Timer\+Queue\+::active\+Timers\+\_\+ , 以及 Timer\+Queue\+::timers\+\_\+.
+
+
+
+参考自 Timer\+Queue\+::handle\+Read().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1TimerQueue_a4475fc9e3cda425c7f71b9d3e00e840a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_a231ec0ec0313193a59b3f1326328ae50}\label{classmuduo_1_1TimerQueue_a231ec0ec0313193a59b3f1326328ae50}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!handle\+Read@{handle\+Read}}
+\index{handle\+Read@{handle\+Read}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{handle\+Read()}{handleRead()}}
+{\footnotesize\ttfamily void handle\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer\+Queue.\+cc 第 117 行定义.
+
+
+
+参考 Event\+Loop\+::assert\+In\+Loop\+Thread(), Timer\+Queue\+::calling\+Expired\+Timers\+\_\+, Timer\+Queue\+::canceling\+Timers\+\_\+, Timer\+Queue\+::get\+Expired(), Timer\+Queue\+::loop\+\_\+, Timestamp\+::now(), muduo\+::detail\+::read\+Timerfd(), Timer\+Queue\+::reset() , 以及 Timer\+Queue\+::timerfd\+\_\+.
+
+
+
+参考自 Timer\+Queue\+::\+Timer\+Queue().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1TimerQueue_a231ec0ec0313193a59b3f1326328ae50_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{classmuduo_1_1TimerQueue_a231ec0ec0313193a59b3f1326328ae50_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_ac4bdfea344ee2a30857d2eabadfef399}\label{classmuduo_1_1TimerQueue_ac4bdfea344ee2a30857d2eabadfef399}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!insert@{insert}}
+\index{insert@{insert}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily bool insert (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Timer}{Timer} $\ast$}]{timer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer\+Queue.\+cc 第 178 行定义.
+
+
+
+参考 Timer\+Queue\+::active\+Timers\+\_\+, Event\+Loop\+::assert\+In\+Loop\+Thread(), Timer\+::expiration(), Timer\+Queue\+::loop\+\_\+, Timer\+::sequence() , 以及 Timer\+Queue\+::timers\+\_\+.
+
+
+
+参考自 Timer\+Queue\+::add\+Timer\+In\+Loop() , 以及 Timer\+Queue\+::reset().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1TimerQueue_ac4bdfea344ee2a30857d2eabadfef399_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1TimerQueue_ac4bdfea344ee2a30857d2eabadfef399_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_ac59fd8ddc045aae320982a0913993237}\label{classmuduo_1_1TimerQueue_ac59fd8ddc045aae320982a0913993237}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!reset@{reset}}
+\index{reset@{reset}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void reset (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classmuduo_1_1TimerQueue_aa2bab77baf38279fd11dcfcbf8fb15d8}{Entry} $>$ \&}]{expired,  }\item[{\hyperlink{classmuduo_1_1Timestamp}{Timestamp}}]{now }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer\+Queue.\+cc 第 155 行定义.
+
+
+
+参考 Timer\+Queue\+::canceling\+Timers\+\_\+, Timer\+Queue\+::insert(), muduo\+::detail\+::reset\+Timerfd(), Timer\+Queue\+::timerfd\+\_\+, Timer\+Queue\+::timers\+\_\+ , 以及 Timestamp\+::valid().
+
+
+
+参考自 Timer\+Queue\+::handle\+Read().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1TimerQueue_ac59fd8ddc045aae320982a0913993237_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classmuduo_1_1TimerQueue_ac59fd8ddc045aae320982a0913993237_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_a72047415bfa49f1d3d949115c01479fc}\label{classmuduo_1_1TimerQueue_a72047415bfa49f1d3d949115c01479fc}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!active\+Timers\+\_\+@{active\+Timers\+\_\+}}
+\index{active\+Timers\+\_\+@{active\+Timers\+\_\+}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{active\+Timers\+\_\+}{activeTimers\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1TimerQueue_ac4562f9443eea7ea7d16c2eab2dad988}{Active\+Timer\+Set} active\+Timers\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer\+Queue.\+h 第 63 行定义.
+
+
+
+参考自 Timer\+Queue\+::cancel\+In\+Loop(), Timer\+Queue\+::get\+Expired() , 以及 Timer\+Queue\+::insert().
+
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_a720fc1742c7b356dfd83f016ff5a219f}\label{classmuduo_1_1TimerQueue_a720fc1742c7b356dfd83f016ff5a219f}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!calling\+Expired\+Timers\+\_\+@{calling\+Expired\+Timers\+\_\+}}
+\index{calling\+Expired\+Timers\+\_\+@{calling\+Expired\+Timers\+\_\+}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{calling\+Expired\+Timers\+\_\+}{callingExpiredTimers\_}}
+{\footnotesize\ttfamily bool calling\+Expired\+Timers\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer\+Queue.\+h 第 62 行定义.
+
+
+
+参考自 Timer\+Queue\+::cancel\+In\+Loop() , 以及 Timer\+Queue\+::handle\+Read().
+
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_a6e9e871b80d9b78c3a1d4c45a7235198}\label{classmuduo_1_1TimerQueue_a6e9e871b80d9b78c3a1d4c45a7235198}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!canceling\+Timers\+\_\+@{canceling\+Timers\+\_\+}}
+\index{canceling\+Timers\+\_\+@{canceling\+Timers\+\_\+}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{canceling\+Timers\+\_\+}{cancelingTimers\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1TimerQueue_ac4562f9443eea7ea7d16c2eab2dad988}{Active\+Timer\+Set} canceling\+Timers\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer\+Queue.\+h 第 64 行定义.
+
+
+
+参考自 Timer\+Queue\+::cancel\+In\+Loop(), Timer\+Queue\+::handle\+Read() , 以及 Timer\+Queue\+::reset().
+
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_a19968f50018d32ac31f5cba0195591ac}\label{classmuduo_1_1TimerQueue_a19968f50018d32ac31f5cba0195591ac}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!loop\+\_\+@{loop\+\_\+}}
+\index{loop\+\_\+@{loop\+\_\+}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{loop\+\_\+}{loop\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1EventLoop}{Event\+Loop}$\ast$ loop\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer\+Queue.\+h 第 55 行定义.
+
+
+
+参考自 Timer\+Queue\+::add\+Timer(), Timer\+Queue\+::add\+Timer\+In\+Loop(), Timer\+Queue\+::cancel(), Timer\+Queue\+::cancel\+In\+Loop(), Timer\+Queue\+::handle\+Read() , 以及 Timer\+Queue\+::insert().
+
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_acf759a4fb3d6057907231d57dabc92a1}\label{classmuduo_1_1TimerQueue_acf759a4fb3d6057907231d57dabc92a1}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!timerfd\+\_\+@{timerfd\+\_\+}}
+\index{timerfd\+\_\+@{timerfd\+\_\+}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{timerfd\+\_\+}{timerfd\_}}
+{\footnotesize\ttfamily const int timerfd\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer\+Queue.\+h 第 56 行定义.
+
+
+
+参考自 Timer\+Queue\+::add\+Timer\+In\+Loop(), Timer\+Queue\+::handle\+Read(), Timer\+Queue\+::reset() , 以及 Timer\+Queue\+::$\sim$\+Timer\+Queue().
+
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_a5f622e650258ae6484bc627f816a1650}\label{classmuduo_1_1TimerQueue_a5f622e650258ae6484bc627f816a1650}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!timerfd\+Channel\+\_\+@{timerfd\+Channel\+\_\+}}
+\index{timerfd\+Channel\+\_\+@{timerfd\+Channel\+\_\+}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{timerfd\+Channel\+\_\+}{timerfdChannel\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Channel}{Channel} timerfd\+Channel\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer\+Queue.\+h 第 57 行定义.
+
+
+
+参考自 Timer\+Queue\+::\+Timer\+Queue().
+
+\mbox{\Hypertarget{classmuduo_1_1TimerQueue_a8fe653e82ce7b6c7135163d91a8a7602}\label{classmuduo_1_1TimerQueue_a8fe653e82ce7b6c7135163d91a8a7602}} 
+\index{muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}!timers\+\_\+@{timers\+\_\+}}
+\index{timers\+\_\+@{timers\+\_\+}!muduo\+::\+Timer\+Queue@{muduo\+::\+Timer\+Queue}}
+\subsubsection{\texorpdfstring{timers\+\_\+}{timers\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1TimerQueue_aeb83ff8eddb4b17cb88a9c3dab7268a2}{Timer\+List} timers\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer\+Queue.\+h 第 59 行定义.
+
+
+
+参考自 Timer\+Queue\+::cancel\+In\+Loop(), Timer\+Queue\+::get\+Expired(), Timer\+Queue\+::insert(), Timer\+Queue\+::reset() , 以及 Timer\+Queue\+::$\sim$\+Timer\+Queue().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{TimerQueue_8h}{Timer\+Queue.\+h}\item 
+src/\hyperlink{TimerQueue_8cc}{Timer\+Queue.\+cc}\end{DoxyCompactItemize}

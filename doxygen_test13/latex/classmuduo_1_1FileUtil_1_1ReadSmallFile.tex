@@ -1,0 +1,173 @@
+\hypertarget{classmuduo_1_1FileUtil_1_1ReadSmallFile}{}\section{Read\+Small\+File类 参考}
+\label{classmuduo_1_1FileUtil_1_1ReadSmallFile}\index{Read\+Small\+File@{Read\+Small\+File}}
+
+
+{\ttfamily \#include $<$File\+Util.\+h$>$}
+
+
+
+类 Read\+Small\+File 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classmuduo_1_1FileUtil_1_1ReadSmallFile__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Read\+Small\+File 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classmuduo_1_1FileUtil_1_1ReadSmallFile__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1FileUtil_1_1ReadSmallFile_acd3eba8bbc84e42edd1ad5d7be6e41bf}{Read\+Small\+File} (\hyperlink{classmuduo_1_1StringArg}{String\+Arg} filename)
+\item 
+\hyperlink{classmuduo_1_1FileUtil_1_1ReadSmallFile_a8acf775ef72f1afce8864be5857de949}{$\sim$\+Read\+Small\+File} ()
+\item 
+{\footnotesize template$<$typename String $>$ }\\int \hyperlink{classmuduo_1_1FileUtil_1_1ReadSmallFile_a0acd2c32d596b47c7e96c849094a324e}{read\+To\+String} (int max\+Size, String $\ast$content, int64\+\_\+t $\ast$file\+Size, int64\+\_\+t $\ast$modify\+Time, int64\+\_\+t $\ast$create\+Time)
+\item 
+int \hyperlink{classmuduo_1_1FileUtil_1_1ReadSmallFile_ac8747a6f57ac42695bea92336ef34216}{read\+To\+Buffer} (int $\ast$size)
+\begin{DoxyCompactList}\small\item\em Read at maxium k\+Buffer\+Size into buf\+\_\+ \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{classmuduo_1_1FileUtil_1_1ReadSmallFile_a93eb423e7ffe9dfb42eb003f80f4c47e}{buffer} () const
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{classmuduo_1_1FileUtil_1_1ReadSmallFile_a8b423a805589152d71009c594ad25ab3}{k\+Buffer\+Size} = 64$\ast$1024
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classmuduo_1_1FileUtil_1_1ReadSmallFile_a4d16b31e09a7202f94eb934cde5372e5}{fd\+\_\+}
+\item 
+int \hyperlink{classmuduo_1_1FileUtil_1_1ReadSmallFile_a0fc9a1b2c15f28a6cbe07194e4e25c1f}{err\+\_\+}
+\item 
+char \hyperlink{classmuduo_1_1FileUtil_1_1ReadSmallFile_ae46aa1652cf42a27dcd3e2d6e9836efd}{buf\+\_\+} \mbox{[}\hyperlink{classmuduo_1_1FileUtil_1_1ReadSmallFile_a8b423a805589152d71009c594ad25ab3}{k\+Buffer\+Size}\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+
+
+在文件 File\+Util.\+h 第 21 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1FileUtil_1_1ReadSmallFile_acd3eba8bbc84e42edd1ad5d7be6e41bf}\label{classmuduo_1_1FileUtil_1_1ReadSmallFile_acd3eba8bbc84e42edd1ad5d7be6e41bf}} 
+\index{muduo\+::\+File\+Util\+::\+Read\+Small\+File@{muduo\+::\+File\+Util\+::\+Read\+Small\+File}!Read\+Small\+File@{Read\+Small\+File}}
+\index{Read\+Small\+File@{Read\+Small\+File}!muduo\+::\+File\+Util\+::\+Read\+Small\+File@{muduo\+::\+File\+Util\+::\+Read\+Small\+File}}
+\subsubsection{\texorpdfstring{Read\+Small\+File()}{ReadSmallFile()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1FileUtil_1_1ReadSmallFile}{Read\+Small\+File} (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1StringArg}{String\+Arg}}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmuduo_1_1FileUtil_1_1ReadSmallFile_a8acf775ef72f1afce8864be5857de949}\label{classmuduo_1_1FileUtil_1_1ReadSmallFile_a8acf775ef72f1afce8864be5857de949}} 
+\index{muduo\+::\+File\+Util\+::\+Read\+Small\+File@{muduo\+::\+File\+Util\+::\+Read\+Small\+File}!````~Read\+Small\+File@{$\sim$\+Read\+Small\+File}}
+\index{````~Read\+Small\+File@{$\sim$\+Read\+Small\+File}!muduo\+::\+File\+Util\+::\+Read\+Small\+File@{muduo\+::\+File\+Util\+::\+Read\+Small\+File}}
+\subsubsection{\texorpdfstring{$\sim$\+Read\+Small\+File()}{~ReadSmallFile()}}
+{\footnotesize\ttfamily $\sim$\hyperlink{classmuduo_1_1FileUtil_1_1ReadSmallFile}{Read\+Small\+File} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1FileUtil_1_1ReadSmallFile_a93eb423e7ffe9dfb42eb003f80f4c47e}\label{classmuduo_1_1FileUtil_1_1ReadSmallFile_a93eb423e7ffe9dfb42eb003f80f4c47e}} 
+\index{muduo\+::\+File\+Util\+::\+Read\+Small\+File@{muduo\+::\+File\+Util\+::\+Read\+Small\+File}!buffer@{buffer}}
+\index{buffer@{buffer}!muduo\+::\+File\+Util\+::\+Read\+Small\+File@{muduo\+::\+File\+Util\+::\+Read\+Small\+File}}
+\subsubsection{\texorpdfstring{buffer()}{buffer()}}
+{\footnotesize\ttfamily const char$\ast$ buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 File\+Util.\+h 第 39 行定义.
+
+
+
+参考 Read\+Small\+File\+::buf\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1FileUtil_1_1ReadSmallFile_ac8747a6f57ac42695bea92336ef34216}\label{classmuduo_1_1FileUtil_1_1ReadSmallFile_ac8747a6f57ac42695bea92336ef34216}} 
+\index{muduo\+::\+File\+Util\+::\+Read\+Small\+File@{muduo\+::\+File\+Util\+::\+Read\+Small\+File}!read\+To\+Buffer@{read\+To\+Buffer}}
+\index{read\+To\+Buffer@{read\+To\+Buffer}!muduo\+::\+File\+Util\+::\+Read\+Small\+File@{muduo\+::\+File\+Util\+::\+Read\+Small\+File}}
+\subsubsection{\texorpdfstring{read\+To\+Buffer()}{readToBuffer()}}
+{\footnotesize\ttfamily int read\+To\+Buffer (\begin{DoxyParamCaption}\item[{int $\ast$}]{size }\end{DoxyParamCaption})}
+
+
+
+Read at maxium k\+Buffer\+Size into buf\+\_\+ 
+
+\mbox{\Hypertarget{classmuduo_1_1FileUtil_1_1ReadSmallFile_a0acd2c32d596b47c7e96c849094a324e}\label{classmuduo_1_1FileUtil_1_1ReadSmallFile_a0acd2c32d596b47c7e96c849094a324e}} 
+\index{muduo\+::\+File\+Util\+::\+Read\+Small\+File@{muduo\+::\+File\+Util\+::\+Read\+Small\+File}!read\+To\+String@{read\+To\+String}}
+\index{read\+To\+String@{read\+To\+String}!muduo\+::\+File\+Util\+::\+Read\+Small\+File@{muduo\+::\+File\+Util\+::\+Read\+Small\+File}}
+\subsubsection{\texorpdfstring{read\+To\+String()}{readToString()}}
+{\footnotesize\ttfamily int read\+To\+String (\begin{DoxyParamCaption}\item[{int}]{max\+Size,  }\item[{String $\ast$}]{content,  }\item[{int64\+\_\+t $\ast$}]{file\+Size,  }\item[{int64\+\_\+t $\ast$}]{modify\+Time,  }\item[{int64\+\_\+t $\ast$}]{create\+Time }\end{DoxyParamCaption})}
+
+
+
+参考自 muduo\+::\+File\+Util\+::read\+File().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classmuduo_1_1FileUtil_1_1ReadSmallFile_a0acd2c32d596b47c7e96c849094a324e_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1FileUtil_1_1ReadSmallFile_ae46aa1652cf42a27dcd3e2d6e9836efd}\label{classmuduo_1_1FileUtil_1_1ReadSmallFile_ae46aa1652cf42a27dcd3e2d6e9836efd}} 
+\index{muduo\+::\+File\+Util\+::\+Read\+Small\+File@{muduo\+::\+File\+Util\+::\+Read\+Small\+File}!buf\+\_\+@{buf\+\_\+}}
+\index{buf\+\_\+@{buf\+\_\+}!muduo\+::\+File\+Util\+::\+Read\+Small\+File@{muduo\+::\+File\+Util\+::\+Read\+Small\+File}}
+\subsubsection{\texorpdfstring{buf\+\_\+}{buf\_}}
+{\footnotesize\ttfamily char buf\+\_\+\mbox{[}\hyperlink{classmuduo_1_1FileUtil_1_1ReadSmallFile_a8b423a805589152d71009c594ad25ab3}{k\+Buffer\+Size}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 File\+Util.\+h 第 46 行定义.
+
+
+
+参考自 Read\+Small\+File\+::buffer().
+
+\mbox{\Hypertarget{classmuduo_1_1FileUtil_1_1ReadSmallFile_a0fc9a1b2c15f28a6cbe07194e4e25c1f}\label{classmuduo_1_1FileUtil_1_1ReadSmallFile_a0fc9a1b2c15f28a6cbe07194e4e25c1f}} 
+\index{muduo\+::\+File\+Util\+::\+Read\+Small\+File@{muduo\+::\+File\+Util\+::\+Read\+Small\+File}!err\+\_\+@{err\+\_\+}}
+\index{err\+\_\+@{err\+\_\+}!muduo\+::\+File\+Util\+::\+Read\+Small\+File@{muduo\+::\+File\+Util\+::\+Read\+Small\+File}}
+\subsubsection{\texorpdfstring{err\+\_\+}{err\_}}
+{\footnotesize\ttfamily int err\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 File\+Util.\+h 第 45 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1FileUtil_1_1ReadSmallFile_a4d16b31e09a7202f94eb934cde5372e5}\label{classmuduo_1_1FileUtil_1_1ReadSmallFile_a4d16b31e09a7202f94eb934cde5372e5}} 
+\index{muduo\+::\+File\+Util\+::\+Read\+Small\+File@{muduo\+::\+File\+Util\+::\+Read\+Small\+File}!fd\+\_\+@{fd\+\_\+}}
+\index{fd\+\_\+@{fd\+\_\+}!muduo\+::\+File\+Util\+::\+Read\+Small\+File@{muduo\+::\+File\+Util\+::\+Read\+Small\+File}}
+\subsubsection{\texorpdfstring{fd\+\_\+}{fd\_}}
+{\footnotesize\ttfamily int fd\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 File\+Util.\+h 第 44 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1FileUtil_1_1ReadSmallFile_a8b423a805589152d71009c594ad25ab3}\label{classmuduo_1_1FileUtil_1_1ReadSmallFile_a8b423a805589152d71009c594ad25ab3}} 
+\index{muduo\+::\+File\+Util\+::\+Read\+Small\+File@{muduo\+::\+File\+Util\+::\+Read\+Small\+File}!k\+Buffer\+Size@{k\+Buffer\+Size}}
+\index{k\+Buffer\+Size@{k\+Buffer\+Size}!muduo\+::\+File\+Util\+::\+Read\+Small\+File@{muduo\+::\+File\+Util\+::\+Read\+Small\+File}}
+\subsubsection{\texorpdfstring{k\+Buffer\+Size}{kBufferSize}}
+{\footnotesize\ttfamily const int k\+Buffer\+Size = 64$\ast$1024\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+在文件 File\+Util.\+h 第 41 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/muduo/base/\hyperlink{FileUtil_8h}{File\+Util.\+h}\end{DoxyCompactItemize}

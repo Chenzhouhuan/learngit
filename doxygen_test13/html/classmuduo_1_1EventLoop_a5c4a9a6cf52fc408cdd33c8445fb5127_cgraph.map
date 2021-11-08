@@ -1,0 +1,24 @@
+<map id="pollReturnTime" name="pollReturnTime">
+<area shape="rect" id="node2" href="$classmuduo_1_1EventLoop.html#af8b24b02bbff6a657fa5b0190bef9b9b" title="cancel" alt="" coords="205,5,269,32"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1EventLoop.html#a7d2b6939f8f94715d253c0d4c6cee207" title="queueInLoop" alt="" coords="399,107,504,133"/>
+<area shape="rect" id="node10" href="$classmuduo_1_1EventLoop.html#ae674290a26ecbd622c5160e38e8a4fe9" title="wakeup" alt="" coords="690,157,763,184"/>
+<area shape="rect" id="node11" href="$classmuduo_1_1EventLoop.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="removeChannel" alt="" coords="175,233,300,260"/>
+<area shape="rect" id="node14" href="$classmuduo_1_1EventLoop.html#acaa4a191936aacf608d279a6f343d533" title="updateChannel" alt="" coords="899,284,1019,311"/>
+<area shape="rect" id="node16" href="$classmuduo_1_1EventLoop.html#ae770f8cb708dfacf455d71d6977e5436" title="runAfter" alt="" coords="200,448,275,475"/>
+<area shape="rect" id="node21" href="$classmuduo_1_1EventLoop.html#aa4a2472f0030a6f2076aa56e21830f6f" title="runAt" alt="" coords="423,499,480,525"/>
+<area shape="rect" id="node22" href="$classmuduo_1_1EventLoop.html#a7bf9fa6b9440ac1053f475108297264e" title="runEvery" alt="" coords="197,397,277,424"/>
+<area shape="rect" id="node23" href="$classmuduo_1_1EventLoop.html#acf6a4570703c6edf29ae2d28cf6767cb" title="runInLoop" alt="" coords="194,56,281,83"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="isInLoopThread" alt="" coords="1265,107,1387,133"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="abortNotInLoopThread" alt="" coords="1435,208,1601,235"/>
+<area shape="rect" id="node6" href="$namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="1649,157,1843,184"/>
+<area shape="rect" id="node8" href="$classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="doPendingFunctors" alt="" coords="1446,157,1590,184"/>
+<area shape="rect" id="node9" href="$classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="handleRead" alt="" coords="1469,56,1567,83"/>
+<area shape="rect" id="node7" href="$namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="1891,150,2059,191"/>
+<area shape="rect" id="node12" href="$classmuduo_1_1Channel.html#a2e24e2ab7ada4682fdf49cc835d85e8d" title="muduo::Channel::ownerLoop" alt="" coords="348,259,555,285"/>
+<area shape="rect" id="node15" href="$classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="assertInLoopThread" alt="" coords="1067,208,1217,235"/>
+<area shape="rect" id="node13" href="$classmuduo_1_1Channel.html#ac5c54df7ed3b930268c8d7752c101725" title="muduo::Channel::update" alt="" coords="636,309,817,336"/>
+<area shape="rect" id="node17" href="$namespacemuduo.html#a4c4a0e85f7b5c4056878cd7cf26a83cb" title="muduo::addTime" alt="" coords="385,448,517,475"/>
+<area shape="rect" id="node20" href="$classmuduo_1_1Timestamp.html#a3bca3b2a36424e36b3d2c772fa7d5772" title="muduo::Timestamp::now" alt="" coords="359,397,543,424"/>
+<area shape="rect" id="node18" href="$classmuduo_1_1Timestamp.html#a8a0616b73c803b94f5c0e9d00fa96fb4" title="muduo::Timestamp::microSeconds\lSinceEpoch" alt="" coords="603,487,851,529"/>
+<area shape="rect" id="node19" href="$classmuduo_1_1Timestamp.html#a3ccb273b45fb16b1b14de8a4c8b44e3b" title="muduo::Timestamp::Timestamp" alt="" coords="611,436,842,463"/>
+</map>

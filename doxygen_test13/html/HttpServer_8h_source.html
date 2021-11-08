@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: lib/muduo/net/http/HttpServer.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('HttpServer_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">HttpServer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="HttpServer_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2010, Shuo Chen.  All rights reserved.</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// http://code.google.com/p/muduo/</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Use of this source code is governed by a BSD-style license</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// that can be found in the License file.</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// Author: Shuo Chen (chenshuo at chenshuo dot com)</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This is a public header file, it must only include public header files.</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef MUDUO_NET_HTTP_HTTPSERVER_H</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define MUDUO_NET_HTTP_HTTPSERVER_H</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="muduo_2net_2TcpServer_8h.html">muduo/net/TcpServer.h</a>&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemuduo.html">muduo</a></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>net</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span>HttpRequest;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">class </span>HttpResponse;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classmuduo_1_1net_1_1HttpServer.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmuduo_1_1net_1_1HttpServer.html">HttpServer</a> : <a class="code" href="classmuduo_1_1noncopyable.html">noncopyable</a></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; <span class="keyword">public</span>:</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">typedef</span> std::function&lt;void (<span class="keyword">const</span> <a class="code" href="classmuduo_1_1net_1_1HttpRequest.html">HttpRequest</a>&amp;,</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classmuduo_1_1net_1_1HttpServer.html#ab343d6a3f751b7fb50940f92c64b6578">   32</a></span>&#160;                              <a class="code" href="classmuduo_1_1net_1_1HttpResponse.html">HttpResponse</a>*)&gt; <a class="code" href="classmuduo_1_1net_1_1HttpServer.html#ab343d6a3f751b7fb50940f92c64b6578">HttpCallback</a>;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="classmuduo_1_1net_1_1HttpServer.html#a497e7b9c047a6b99d3727de450774988">HttpServer</a>(<a class="code" href="classmuduo_1_1net_1_1EventLoop.html">EventLoop</a>* loop,</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;             <span class="keyword">const</span> <a class="code" href="classmuduo_1_1net_1_1InetAddress.html">InetAddress</a>&amp; listenAddr,</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;             <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code" href="namespacemuduo_1_1CurrentThread.html#adc8b0cfe3a876d8edf272f982ea2c014">name</a>,</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;             <a class="code" href="classmuduo_1_1net_1_1TcpServer.html#a0e65ad13124ea2cb5e255b640464e35f">TcpServer::Option</a> option = <a class="code" href="classmuduo_1_1net_1_1TcpServer.html#a0e65ad13124ea2cb5e255b640464e35fa5ddf56db99b3883a1c729e8b6873bbf5">TcpServer::kNoReusePort</a>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classmuduo_1_1net_1_1HttpServer.html#aef1cbfe0592e8196e6c81b4db82a39ce">   39</a></span>&#160;  <a class="code" href="classmuduo_1_1net_1_1EventLoop.html">EventLoop</a>* <a class="code" href="classmuduo_1_1net_1_1HttpServer.html#aef1cbfe0592e8196e6c81b4db82a39ce">getLoop</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmuduo_1_1net_1_1HttpServer.html#a5fa2c354b57a31cc2b5ed74583f853ad">server_</a>.<a class="code" href="classmuduo_1_1net_1_1TcpServer.html#aef1cbfe0592e8196e6c81b4db82a39ce">getLoop</a>(); }</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classmuduo_1_1net_1_1HttpServer.html#ac46810c8853d92daeea2753cc270dccb">   42</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmuduo_1_1net_1_1HttpServer.html#ac46810c8853d92daeea2753cc270dccb">setHttpCallback</a>(<span class="keyword">const</span> HttpCallback&amp; cb)</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classmuduo_1_1net_1_1HttpServer.html#ab296b28a88834c853b076a5a25ba76a7">httpCallback_</a> = cb;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classmuduo_1_1net_1_1HttpServer.html#a83bb28d139df96ba9fc449b4643f2c36">   47</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmuduo_1_1net_1_1HttpServer.html#a83bb28d139df96ba9fc449b4643f2c36">setThreadNum</a>(<span class="keywordtype">int</span> <a class="code" href="namespacemuduo_1_1ProcessInfo.html#a120db223841da7c65566c1fb2a06befa">numThreads</a>)</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classmuduo_1_1net_1_1HttpServer.html#a5fa2c354b57a31cc2b5ed74583f853ad">server_</a>.<a class="code" href="classmuduo_1_1net_1_1TcpServer.html#a83bb28d139df96ba9fc449b4643f2c36">setThreadNum</a>(numThreads);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmuduo_1_1net_1_1HttpServer.html#a60de64d75454385b23995437f1d72669">start</a>();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; <span class="keyword">private</span>:</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmuduo_1_1net_1_1HttpServer.html#ae085355191b9979cba83ee65fb969fcb">onConnection</a>(<span class="keyword">const</span> <a class="code" href="namespacemuduo_1_1net.html#ab91a46e9290926aa692450e46cfc9039">TcpConnectionPtr</a>&amp; conn);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmuduo_1_1net_1_1HttpServer.html#affde82cb1aeae31f8ce39103fa4cd358">onMessage</a>(<span class="keyword">const</span> <a class="code" href="namespacemuduo_1_1net.html#ab91a46e9290926aa692450e46cfc9039">TcpConnectionPtr</a>&amp; conn,</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                 <a class="code" href="classmuduo_1_1net_1_1Buffer.html">Buffer</a>* buf,</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                 <a class="code" href="classmuduo_1_1Timestamp.html">Timestamp</a> receiveTime);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmuduo_1_1net_1_1HttpServer.html#a39f88c74f26fed6e5d98de09075f4c1b">onRequest</a>(<span class="keyword">const</span> <a class="code" href="namespacemuduo_1_1net.html#ab91a46e9290926aa692450e46cfc9039">TcpConnectionPtr</a>&amp;, <span class="keyword">const</span> <a class="code" href="classmuduo_1_1net_1_1HttpRequest.html">HttpRequest</a>&amp;);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classmuduo_1_1net_1_1HttpServer.html#a5fa2c354b57a31cc2b5ed74583f853ad">   61</a></span>&#160;  <a class="code" href="classmuduo_1_1net_1_1TcpServer.html">TcpServer</a> <a class="code" href="classmuduo_1_1net_1_1HttpServer.html#a5fa2c354b57a31cc2b5ed74583f853ad">server_</a>;</div><div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classmuduo_1_1net_1_1HttpServer.html#ab296b28a88834c853b076a5a25ba76a7">   62</a></span>&#160;  HttpCallback <a class="code" href="classmuduo_1_1net_1_1HttpServer.html#ab296b28a88834c853b076a5a25ba76a7">httpCallback_</a>;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}  <span class="comment">// namespace net</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}  <span class="comment">// namespace muduo</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif  // MUDUO_NET_HTTP_HTTPSERVER_H</span></div><div class="ttc" id="classmuduo_1_1net_1_1TcpServer_html_a0e65ad13124ea2cb5e255b640464e35f"><div class="ttname"><a href="classmuduo_1_1net_1_1TcpServer.html#a0e65ad13124ea2cb5e255b640464e35f">muduo::net::TcpServer::Option</a></div><div class="ttdeci">Option</div><div class="ttdef"><b>Definition:</b> <a href="muduo_2net_2TcpServer_8h_source.html#l00037">TcpServer.h:37</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_a120db223841da7c65566c1fb2a06befa"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#a120db223841da7c65566c1fb2a06befa">muduo::ProcessInfo::numThreads</a></div><div class="ttdeci">int numThreads()</div></div>
+<div class="ttc" id="namespacemuduo_1_1net_html_ab91a46e9290926aa692450e46cfc9039"><div class="ttname"><a href="namespacemuduo_1_1net.html#ab91a46e9290926aa692450e46cfc9039">muduo::net::TcpConnectionPtr</a></div><div class="ttdeci">std::shared_ptr&lt; TcpConnection &gt; TcpConnectionPtr</div><div class="ttdef"><b>Definition:</b> <a href="muduo_2net_2Callbacks_8h_source.html#l00061">Callbacks.h:61</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1HttpServer_html_a497e7b9c047a6b99d3727de450774988"><div class="ttname"><a href="classmuduo_1_1net_1_1HttpServer.html#a497e7b9c047a6b99d3727de450774988">muduo::net::HttpServer::HttpServer</a></div><div class="ttdeci">HttpServer(EventLoop *loop, const InetAddress &amp;listenAddr, const string &amp;name, TcpServer::Option option=TcpServer::kNoReusePort)</div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1TcpServer_html_a83bb28d139df96ba9fc449b4643f2c36"><div class="ttname"><a href="classmuduo_1_1net_1_1TcpServer.html#a83bb28d139df96ba9fc449b4643f2c36">muduo::net::TcpServer::setThreadNum</a></div><div class="ttdeci">void setThreadNum(int numThreads)</div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1HttpServer_html_a5fa2c354b57a31cc2b5ed74583f853ad"><div class="ttname"><a href="classmuduo_1_1net_1_1HttpServer.html#a5fa2c354b57a31cc2b5ed74583f853ad">muduo::net::HttpServer::server_</a></div><div class="ttdeci">TcpServer server_</div><div class="ttdef"><b>Definition:</b> <a href="HttpServer_8h_source.html#l00061">HttpServer.h:61</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1HttpServer_html_affde82cb1aeae31f8ce39103fa4cd358"><div class="ttname"><a href="classmuduo_1_1net_1_1HttpServer.html#affde82cb1aeae31f8ce39103fa4cd358">muduo::net::HttpServer::onMessage</a></div><div class="ttdeci">void onMessage(const TcpConnectionPtr &amp;conn, Buffer *buf, Timestamp receiveTime)</div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1HttpServer_html_ab343d6a3f751b7fb50940f92c64b6578"><div class="ttname"><a href="classmuduo_1_1net_1_1HttpServer.html#ab343d6a3f751b7fb50940f92c64b6578">muduo::net::HttpServer::HttpCallback</a></div><div class="ttdeci">std::function&lt; void(const HttpRequest &amp;, HttpResponse *)&gt; HttpCallback</div><div class="ttdef"><b>Definition:</b> <a href="HttpServer_8h_source.html#l00032">HttpServer.h:32</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1HttpServer_html_a60de64d75454385b23995437f1d72669"><div class="ttname"><a href="classmuduo_1_1net_1_1HttpServer.html#a60de64d75454385b23995437f1d72669">muduo::net::HttpServer::start</a></div><div class="ttdeci">void start()</div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1TcpServer_html"><div class="ttname"><a href="classmuduo_1_1net_1_1TcpServer.html">muduo::net::TcpServer</a></div><div class="ttdef"><b>Definition:</b> <a href="muduo_2net_2TcpServer_8h_source.html#l00033">TcpServer.h:33</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1HttpServer_html"><div class="ttname"><a href="classmuduo_1_1net_1_1HttpServer.html">muduo::net::HttpServer</a></div><div class="ttdef"><b>Definition:</b> <a href="HttpServer_8h_source.html#l00028">HttpServer.h:28</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1CurrentThread_html_adc8b0cfe3a876d8edf272f982ea2c014"><div class="ttname"><a href="namespacemuduo_1_1CurrentThread.html#adc8b0cfe3a876d8edf272f982ea2c014">muduo::CurrentThread::name</a></div><div class="ttdeci">const char * name()</div><div class="ttdef"><b>Definition:</b> <a href="CurrentThread_8h_source.html#l00041">CurrentThread.h:41</a></div></div>
+<div class="ttc" id="namespacemuduo_html"><div class="ttname"><a href="namespacemuduo.html">muduo</a></div><div class="ttdef"><b>Definition:</b> <a href="Acceptor_8h_source.html#l00010">Acceptor.h:10</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1HttpRequest_html"><div class="ttname"><a href="classmuduo_1_1net_1_1HttpRequest.html">muduo::net::HttpRequest</a></div><div class="ttdef"><b>Definition:</b> <a href="HttpRequest_8h_source.html#l00027">HttpRequest.h:27</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1EventLoop_html"><div class="ttname"><a href="classmuduo_1_1net_1_1EventLoop.html">muduo::net::EventLoop</a></div><div class="ttdef"><b>Definition:</b> <a href="muduo_2net_2EventLoop_8h_source.html#l00039">EventLoop.h:39</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1HttpServer_html_a83bb28d139df96ba9fc449b4643f2c36"><div class="ttname"><a href="classmuduo_1_1net_1_1HttpServer.html#a83bb28d139df96ba9fc449b4643f2c36">muduo::net::HttpServer::setThreadNum</a></div><div class="ttdeci">void setThreadNum(int numThreads)</div><div class="ttdef"><b>Definition:</b> <a href="HttpServer_8h_source.html#l00047">HttpServer.h:47</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1TcpServer_html_aef1cbfe0592e8196e6c81b4db82a39ce"><div class="ttname"><a href="classmuduo_1_1net_1_1TcpServer.html#aef1cbfe0592e8196e6c81b4db82a39ce">muduo::net::TcpServer::getLoop</a></div><div class="ttdeci">EventLoop * getLoop() const</div><div class="ttdef"><b>Definition:</b> <a href="muduo_2net_2TcpServer_8h_source.html#l00052">TcpServer.h:52</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1Buffer_html"><div class="ttname"><a href="classmuduo_1_1net_1_1Buffer.html">muduo::net::Buffer</a></div><div class="ttdef"><b>Definition:</b> <a href="muduo_2net_2Buffer_8h_source.html#l00042">Buffer.h:42</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1HttpServer_html_ac46810c8853d92daeea2753cc270dccb"><div class="ttname"><a href="classmuduo_1_1net_1_1HttpServer.html#ac46810c8853d92daeea2753cc270dccb">muduo::net::HttpServer::setHttpCallback</a></div><div class="ttdeci">void setHttpCallback(const HttpCallback &amp;cb)</div><div class="ttdoc">Not thread safe, callback be registered before calling start(). </div><div class="ttdef"><b>Definition:</b> <a href="HttpServer_8h_source.html#l00042">HttpServer.h:42</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1HttpServer_html_aef1cbfe0592e8196e6c81b4db82a39ce"><div class="ttname"><a href="classmuduo_1_1net_1_1HttpServer.html#aef1cbfe0592e8196e6c81b4db82a39ce">muduo::net::HttpServer::getLoop</a></div><div class="ttdeci">EventLoop * getLoop() const</div><div class="ttdef"><b>Definition:</b> <a href="HttpServer_8h_source.html#l00039">HttpServer.h:39</a></div></div>
+<div class="ttc" id="muduo_2net_2TcpServer_8h_html"><div class="ttname"><a href="muduo_2net_2TcpServer_8h.html">TcpServer.h</a></div></div>
+<div class="ttc" id="classmuduo_1_1noncopyable_html"><div class="ttname"><a href="classmuduo_1_1noncopyable.html">muduo::noncopyable</a></div><div class="ttdef"><b>Definition:</b> <a href="noncopyable_8h_source.html#l00007">noncopyable.h:7</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1InetAddress_html"><div class="ttname"><a href="classmuduo_1_1net_1_1InetAddress.html">muduo::net::InetAddress</a></div><div class="ttdef"><b>Definition:</b> <a href="muduo_2net_2InetAddress_8h_source.html#l00032">InetAddress.h:32</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1HttpServer_html_ab296b28a88834c853b076a5a25ba76a7"><div class="ttname"><a href="classmuduo_1_1net_1_1HttpServer.html#ab296b28a88834c853b076a5a25ba76a7">muduo::net::HttpServer::httpCallback_</a></div><div class="ttdeci">HttpCallback httpCallback_</div><div class="ttdef"><b>Definition:</b> <a href="HttpServer_8h_source.html#l00062">HttpServer.h:62</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1HttpServer_html_ae085355191b9979cba83ee65fb969fcb"><div class="ttname"><a href="classmuduo_1_1net_1_1HttpServer.html#ae085355191b9979cba83ee65fb969fcb">muduo::net::HttpServer::onConnection</a></div><div class="ttdeci">void onConnection(const TcpConnectionPtr &amp;conn)</div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1HttpServer_html_a39f88c74f26fed6e5d98de09075f4c1b"><div class="ttname"><a href="classmuduo_1_1net_1_1HttpServer.html#a39f88c74f26fed6e5d98de09075f4c1b">muduo::net::HttpServer::onRequest</a></div><div class="ttdeci">void onRequest(const TcpConnectionPtr &amp;, const HttpRequest &amp;)</div></div>
+<div class="ttc" id="classmuduo_1_1Timestamp_html"><div class="ttname"><a href="classmuduo_1_1Timestamp.html">muduo::Timestamp</a></div><div class="ttdef"><b>Definition:</b> <a href="Timestamp_8h_source.html#l00023">Timestamp.h:23</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1HttpResponse_html"><div class="ttname"><a href="classmuduo_1_1net_1_1HttpResponse.html">muduo::net::HttpResponse</a></div><div class="ttdef"><b>Definition:</b> <a href="HttpResponse_8h_source.html#l00025">HttpResponse.h:25</a></div></div>
+<div class="ttc" id="classmuduo_1_1net_1_1TcpServer_html_a0e65ad13124ea2cb5e255b640464e35fa5ddf56db99b3883a1c729e8b6873bbf5"><div class="ttname"><a href="classmuduo_1_1net_1_1TcpServer.html#a0e65ad13124ea2cb5e255b640464e35fa5ddf56db99b3883a1c729e8b6873bbf5">muduo::net::TcpServer::kNoReusePort</a></div><div class="ttdef"><b>Definition:</b> <a href="muduo_2net_2TcpServer_8h_source.html#l00039">TcpServer.h:39</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_e3b32e68f04aa7e841009dd52d1d0488.html">muduo</a></li><li class="navelem"><a class="el" href="dir_d7c6d3fc8ffe3f4fe08283d9a46c8dda.html">net</a></li><li class="navelem"><a class="el" href="dir_6e42ac9128852134230823b3db09aa86.html">http</a></li><li class="navelem"><a class="el" href="HttpServer_8h.html">HttpServer.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

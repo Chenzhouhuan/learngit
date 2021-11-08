@@ -1,0 +1,701 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: Thread类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmuduo_1_1Thread.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#pri-static-attribs">静态 Private 属性</a> &#124;
+<a href="classmuduo_1_1Thread-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Thread类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Thread_8h_source.html">Thread.h</a>&gt;</code></p>
+<div class="dynheader">
+类 Thread 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Thread__inherit__graph.png" border="0" usemap="#Thread_inherit__map" alt="Inheritance graph"/></div>
+<map name="Thread_inherit__map" id="Thread_inherit__map">
+<area shape="rect" id="node2" href="classmuduo_1_1noncopyable.html" title="{noncopyable\n||+ noncopyable()\l+ operator=()\l# noncopyable()\l# ~noncopyable()\l}" alt="" coords="9,5,150,127"/>
+</map>
+</div>
+<div class="dynheader">
+Thread 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Thread__coll__graph.png" border="0" usemap="#Thread_coll__map" alt="Collaboration graph"/></div>
+<map name="Thread_coll__map" id="Thread_coll__map">
+<area shape="rect" id="node2" href="classmuduo_1_1noncopyable.html" title="{noncopyable\n||+ noncopyable()\l+ operator=()\l# noncopyable()\l# ~noncopyable()\l}" alt="" coords="203,5,344,127"/>
+<area shape="rect" id="node3" href="classmuduo_1_1detail_1_1AtomicIntegerT.html" title="{AtomicIntegerT\&lt; T \&gt;\n||+ AtomicIntegerT()\l+ get()\l+ getAndAdd()\l+ addAndGet()\l+ incrementAndGet()\l+ decrementAndGet()\l+ add()\l+ increment()\l+ decrement()\l+ getAndSet()\l}" alt="" coords="5,189,171,399"/>
+<area shape="rect" id="node5" href="classmuduo_1_1CountDownLatch.html" title="{CountDownLatch\n|&#45; mutex_\l|+ CountDownLatch()\l+ wait()\l+ countDown()\l+ getCount()\l&#45; GUARDED_BY()\l&#45; GUARDED_BY()\l}" alt="" coords="195,219,352,369"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a72bd31ac00c06074792e7cff0c8e3022"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Thread.html#a72bd31ac00c06074792e7cff0c8e3022">ThreadFunc</a></td></tr>
+<tr class="separator:a72bd31ac00c06074792e7cff0c8e3022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a2c3b1a6d86c989182ca7a9bb1aba48b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Thread.html#a2c3b1a6d86c989182ca7a9bb1aba48b3">Thread</a> (<a class="el" href="classmuduo_1_1Thread.html#a72bd31ac00c06074792e7cff0c8e3022">ThreadFunc</a>, const string &amp;<a class="el" href="classmuduo_1_1Thread.html#a47f4f0a66d5a539e687100dc65462ced">name</a>=string())</td></tr>
+<tr class="separator:a2c3b1a6d86c989182ca7a9bb1aba48b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a9c69a69ee4b13cb1ec5772f6d32ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Thread.html#a87a9c69a69ee4b13cb1ec5772f6d32ad">~Thread</a> ()</td></tr>
+<tr class="separator:a87a9c69a69ee4b13cb1ec5772f6d32ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60de64d75454385b23995437f1d72669"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Thread.html#a60de64d75454385b23995437f1d72669">start</a> ()</td></tr>
+<tr class="separator:a60de64d75454385b23995437f1d72669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac942067a7e5a314610c1e89ff801f3bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Thread.html#ac942067a7e5a314610c1e89ff801f3bd">join</a> ()</td></tr>
+<tr class="separator:ac942067a7e5a314610c1e89ff801f3bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64a8595ddd43477f87ff91d9f051058"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Thread.html#ae64a8595ddd43477f87ff91d9f051058">started</a> () const</td></tr>
+<tr class="separator:ae64a8595ddd43477f87ff91d9f051058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cab09936ca9d7d85a156634a27f8be4"><td class="memItemLeft" align="right" valign="top">pid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Thread.html#a1cab09936ca9d7d85a156634a27f8be4">tid</a> () const</td></tr>
+<tr class="separator:a1cab09936ca9d7d85a156634a27f8be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f4f0a66d5a539e687100dc65462ced"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Thread.html#a47f4f0a66d5a539e687100dc65462ced">name</a> () const</td></tr>
+<tr class="separator:a47f4f0a66d5a539e687100dc65462ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a2191877eb828575b4a698e5b1009923d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Thread.html#a2191877eb828575b4a698e5b1009923d">numCreated</a> ()</td></tr>
+<tr class="separator:a2191877eb828575b4a698e5b1009923d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a7ac088202ebd97d9b4f69b46341a3142"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Thread.html#a7ac088202ebd97d9b4f69b46341a3142">setDefaultName</a> ()</td></tr>
+<tr class="separator:a7ac088202ebd97d9b4f69b46341a3142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmuduo_1_1noncopyable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmuduo_1_1noncopyable')"><img src="closed.png" alt="-"/>&#160;Private 成员函数 继承自 <a class="el" href="classmuduo_1_1noncopyable.html">noncopyable</a></td></tr>
+<tr class="memitem:aaefac0158453c4de9989d742a02fdc61 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1noncopyable.html#aaefac0158453c4de9989d742a02fdc61">noncopyable</a> (const <a class="el" href="classmuduo_1_1noncopyable.html">noncopyable</a> &amp;)=delete</td></tr>
+<tr class="separator:aaefac0158453c4de9989d742a02fdc61 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfca16bbe6126971c0c9959e573df923 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1noncopyable.html#adfca16bbe6126971c0c9959e573df923">operator=</a> (const <a class="el" href="classmuduo_1_1noncopyable.html">noncopyable</a> &amp;)=delete</td></tr>
+<tr class="separator:adfca16bbe6126971c0c9959e573df923 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a7cb0757f3a96b9862062e348f20577 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1noncopyable.html#a9a7cb0757f3a96b9862062e348f20577">noncopyable</a> ()=default</td></tr>
+<tr class="separator:a9a7cb0757f3a96b9862062e348f20577 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60dec0098f04c2bedcf32fc41e8bd203 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1noncopyable.html#a60dec0098f04c2bedcf32fc41e8bd203">~noncopyable</a> ()=default</td></tr>
+<tr class="separator:a60dec0098f04c2bedcf32fc41e8bd203 inherit pub_methods_classmuduo_1_1noncopyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a5ad69cfc4163d7797bc0f0d7eadb95a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Thread.html#a5ad69cfc4163d7797bc0f0d7eadb95a7">started_</a></td></tr>
+<tr class="separator:a5ad69cfc4163d7797bc0f0d7eadb95a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6abe498e0c9cb2cc340db85c691527fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Thread.html#a6abe498e0c9cb2cc340db85c691527fb">joined_</a></td></tr>
+<tr class="separator:a6abe498e0c9cb2cc340db85c691527fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cddcc9b885ebd90a657e65ef5386e45"><td class="memItemLeft" align="right" valign="top">pthread_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Thread.html#a1cddcc9b885ebd90a657e65ef5386e45">pthreadId_</a></td></tr>
+<tr class="separator:a1cddcc9b885ebd90a657e65ef5386e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3941d2816d56fc00acc575589d1bf4d"><td class="memItemLeft" align="right" valign="top">pid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Thread.html#ad3941d2816d56fc00acc575589d1bf4d">tid_</a></td></tr>
+<tr class="separator:ad3941d2816d56fc00acc575589d1bf4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d48c0bb2a39f7e2f47bcdb994b1ffa5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1Thread.html#a72bd31ac00c06074792e7cff0c8e3022">ThreadFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Thread.html#a8d48c0bb2a39f7e2f47bcdb994b1ffa5">func_</a></td></tr>
+<tr class="separator:a8d48c0bb2a39f7e2f47bcdb994b1ffa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79cfd788b219a7f48068d0e96e5e8e77"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Thread.html#a79cfd788b219a7f48068d0e96e5e8e77">name_</a></td></tr>
+<tr class="separator:a79cfd788b219a7f48068d0e96e5e8e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192dc9b859fde65e1f303e900e00d12a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1CountDownLatch.html">CountDownLatch</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Thread.html#a192dc9b859fde65e1f303e900e00d12a">latch_</a></td></tr>
+<tr class="separator:a192dc9b859fde65e1f303e900e00d12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+静态 Private 属性</h2></td></tr>
+<tr class="memitem:a2742b202c5dc4f5f9e2c60798b7ada26"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacemuduo.html#a5ff4a046f03836ad4fb080652d419987">AtomicInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Thread.html#a2742b202c5dc4f5f9e2c60798b7ada26">numCreated_</a></td></tr>
+<tr class="separator:a2742b202c5dc4f5f9e2c60798b7ada26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="Thread_8h_source.html">Thread.h</a> 第 <a class="el" href="Thread_8h_source.html#l00020">20</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a72bd31ac00c06074792e7cff0c8e3022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72bd31ac00c06074792e7cff0c8e3022">&#9670;&nbsp;</a></span>ThreadFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::function&lt;void ()&gt; <a class="el" href="classmuduo_1_1Thread.html#a72bd31ac00c06074792e7cff0c8e3022">ThreadFunc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Thread_8h_source.html">Thread.h</a> 第 <a class="el" href="Thread_8h_source.html#l00023">23</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a2c3b1a6d86c989182ca7a9bb1aba48b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c3b1a6d86c989182ca7a9bb1aba48b3">&#9670;&nbsp;</a></span>Thread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1Thread.html">Thread</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1Thread.html#a72bd31ac00c06074792e7cff0c8e3022">ThreadFunc</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>name</em> = <code>string()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87a9c69a69ee4b13cb1ec5772f6d32ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87a9c69a69ee4b13cb1ec5772f6d32ad">&#9670;&nbsp;</a></span>~Thread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="classmuduo_1_1Thread.html">Thread</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ac942067a7e5a314610c1e89ff801f3bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac942067a7e5a314610c1e89ff801f3bd">&#9670;&nbsp;</a></span>join()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int join </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="AsyncLogging_8h_source.html#l00047">AsyncLogging::stop()</a> , 以及 <a class="el" href="EventLoopThread_8cc_source.html#l00016">EventLoopThread::~EventLoopThread()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Thread_ac942067a7e5a314610c1e89ff801f3bd_icgraph.png" border="0" usemap="#classmuduo_1_1Thread_ac942067a7e5a314610c1e89ff801f3bd_icgraph" alt=""/></div>
+<map name="classmuduo_1_1Thread_ac942067a7e5a314610c1e89ff801f3bd_icgraph" id="classmuduo_1_1Thread_ac942067a7e5a314610c1e89ff801f3bd_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1AsyncLogging.html#a849302529291497f64017bf57efb5606" title="muduo::AsyncLogging\l::stop" alt="" coords="111,5,277,47"/>
+<area shape="rect" id="node4" href="classmuduo_1_1EventLoopThread.html#af946ac1087e0c7617b0704ebde55332c" title="muduo::EventLoopThread\l::~EventLoopThread" alt="" coords="100,71,288,112"/>
+<area shape="rect" id="node3" href="classmuduo_1_1AsyncLogging.html#aa008935e7ad96a6ade750a9c5ec984b7" title="muduo::AsyncLogging\l::~AsyncLogging" alt="" coords="336,5,501,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a47f4f0a66d5a539e687100dc65462ced"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47f4f0a66d5a539e687100dc65462ced">&#9670;&nbsp;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string&amp; name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Thread_8h_source.html">Thread.h</a> 第 <a class="el" href="Thread_8h_source.html#l00035">35</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Thread_8h_source.html#l00047">Thread::name_</a>.</p>
+
+</div>
+</div>
+<a id="a2191877eb828575b4a698e5b1009923d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2191877eb828575b4a698e5b1009923d">&#9670;&nbsp;</a></span>numCreated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int numCreated </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Thread_8h_source.html">Thread.h</a> 第 <a class="el" href="Thread_8h_source.html#l00037">37</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Atomic_8h_source.html#l00039">AtomicIntegerT&lt; T &gt;::get()</a>, <a class="el" href="Thread_8h_source.html#l00050">Thread::numCreated_</a> , 以及 <a class="el" href="classmuduo_1_1Thread.html#a7ac088202ebd97d9b4f69b46341a3142">Thread::setDefaultName()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Thread_a2191877eb828575b4a698e5b1009923d_cgraph.png" border="0" usemap="#classmuduo_1_1Thread_a2191877eb828575b4a698e5b1009923d_cgraph" alt=""/></div>
+<map name="classmuduo_1_1Thread_a2191877eb828575b4a698e5b1009923d_cgraph" id="classmuduo_1_1Thread_a2191877eb828575b4a698e5b1009923d_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1detail_1_1AtomicIntegerT.html#af6ea056c8af82f08af9fd0d857967f9b" title="muduo::detail::AtomicInteger\lT::get" alt="" coords="156,5,368,47"/>
+<area shape="rect" id="node3" href="classmuduo_1_1Thread.html#a7ac088202ebd97d9b4f69b46341a3142" title="setDefaultName" alt="" coords="197,71,327,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7ac088202ebd97d9b4f69b46341a3142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ac088202ebd97d9b4f69b46341a3142">&#9670;&nbsp;</a></span>setDefaultName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setDefaultName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="Thread_8h_source.html#l00037">Thread::numCreated()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Thread_a7ac088202ebd97d9b4f69b46341a3142_icgraph.png" border="0" usemap="#classmuduo_1_1Thread_a7ac088202ebd97d9b4f69b46341a3142_icgraph" alt=""/></div>
+<map name="classmuduo_1_1Thread_a7ac088202ebd97d9b4f69b46341a3142_icgraph" id="classmuduo_1_1Thread_a7ac088202ebd97d9b4f69b46341a3142_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1Thread.html#a2191877eb828575b4a698e5b1009923d" title="numCreated" alt="" coords="183,5,285,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a60de64d75454385b23995437f1d72669"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60de64d75454385b23995437f1d72669">&#9670;&nbsp;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="AsyncLogging_8h_source.html#l00040">AsyncLogging::start()</a> , 以及 <a class="el" href="EventLoopThread_8cc_source.html#l00022">EventLoopThread::startLoop()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Thread_a60de64d75454385b23995437f1d72669_icgraph.png" border="0" usemap="#classmuduo_1_1Thread_a60de64d75454385b23995437f1d72669_icgraph" alt=""/></div>
+<map name="classmuduo_1_1Thread_a60de64d75454385b23995437f1d72669_icgraph" id="classmuduo_1_1Thread_a60de64d75454385b23995437f1d72669_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1AsyncLogging.html#a60de64d75454385b23995437f1d72669" title="muduo::AsyncLogging\l::start" alt="" coords="117,5,282,47"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoopThread.html#a223c4c7a43f7d8c3e41071315efa78d1" title="muduo::EventLoopThread\l::startLoop" alt="" coords="105,71,293,112"/>
+<area shape="rect" id="node4" href="classmuduo_1_1EventLoopThreadPool.html#a60de64d75454385b23995437f1d72669" title="muduo::EventLoopThreadPool\l::start" alt="" coords="341,71,557,112"/>
+<area shape="rect" id="node5" href="classmuduo_1_1EventLoopThreadPool.html#a83bb28d139df96ba9fc449b4643f2c36" title="muduo::EventLoopThreadPool\l::setThreadNum" alt="" coords="605,71,821,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae64a8595ddd43477f87ff91d9f051058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae64a8595ddd43477f87ff91d9f051058">&#9670;&nbsp;</a></span>started()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool started </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Thread_8h_source.html">Thread.h</a> 第 <a class="el" href="Thread_8h_source.html#l00032">32</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Thread_8h_source.html#l00042">Thread::started_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoopThread_8cc_source.html#l00022">EventLoopThread::startLoop()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Thread_ae64a8595ddd43477f87ff91d9f051058_icgraph.png" border="0" usemap="#classmuduo_1_1Thread_ae64a8595ddd43477f87ff91d9f051058_icgraph" alt=""/></div>
+<map name="classmuduo_1_1Thread_ae64a8595ddd43477f87ff91d9f051058_icgraph" id="classmuduo_1_1Thread_ae64a8595ddd43477f87ff91d9f051058_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoopThread.html#a223c4c7a43f7d8c3e41071315efa78d1" title="muduo::EventLoopThread\l::startLoop" alt="" coords="121,5,309,47"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoopThreadPool.html#a60de64d75454385b23995437f1d72669" title="muduo::EventLoopThreadPool\l::start" alt="" coords="357,5,573,47"/>
+<area shape="rect" id="node4" href="classmuduo_1_1EventLoopThreadPool.html#a83bb28d139df96ba9fc449b4643f2c36" title="muduo::EventLoopThreadPool\l::setThreadNum" alt="" coords="621,5,837,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1cab09936ca9d7d85a156634a27f8be4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cab09936ca9d7d85a156634a27f8be4">&#9670;&nbsp;</a></span>tid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pid_t tid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Thread_8h_source.html">Thread.h</a> 第 <a class="el" href="Thread_8h_source.html#l00034">34</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Thread_8h_source.html#l00045">Thread::tid_</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a8d48c0bb2a39f7e2f47bcdb994b1ffa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d48c0bb2a39f7e2f47bcdb994b1ffa5">&#9670;&nbsp;</a></span>func_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1Thread.html#a72bd31ac00c06074792e7cff0c8e3022">ThreadFunc</a> func_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Thread_8h_source.html">Thread.h</a> 第 <a class="el" href="Thread_8h_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6abe498e0c9cb2cc340db85c691527fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6abe498e0c9cb2cc340db85c691527fb">&#9670;&nbsp;</a></span>joined_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool joined_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Thread_8h_source.html">Thread.h</a> 第 <a class="el" href="Thread_8h_source.html#l00043">43</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a192dc9b859fde65e1f303e900e00d12a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a192dc9b859fde65e1f303e900e00d12a">&#9670;&nbsp;</a></span>latch_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1CountDownLatch.html">CountDownLatch</a> latch_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Thread_8h_source.html">Thread.h</a> 第 <a class="el" href="Thread_8h_source.html#l00048">48</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a79cfd788b219a7f48068d0e96e5e8e77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79cfd788b219a7f48068d0e96e5e8e77">&#9670;&nbsp;</a></span>name_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string name_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Thread_8h_source.html">Thread.h</a> 第 <a class="el" href="Thread_8h_source.html#l00047">47</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="Thread_8h_source.html#l00035">Thread::name()</a>.</p>
+
+</div>
+</div>
+<a id="a2742b202c5dc4f5f9e2c60798b7ada26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2742b202c5dc4f5f9e2c60798b7ada26">&#9670;&nbsp;</a></span>numCreated_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemuduo.html#a5ff4a046f03836ad4fb080652d419987">AtomicInt32</a> numCreated_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Thread_8h_source.html">Thread.h</a> 第 <a class="el" href="Thread_8h_source.html#l00050">50</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="Thread_8h_source.html#l00037">Thread::numCreated()</a>.</p>
+
+</div>
+</div>
+<a id="a1cddcc9b885ebd90a657e65ef5386e45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cddcc9b885ebd90a657e65ef5386e45">&#9670;&nbsp;</a></span>pthreadId_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pthread_t pthreadId_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Thread_8h_source.html">Thread.h</a> 第 <a class="el" href="Thread_8h_source.html#l00044">44</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5ad69cfc4163d7797bc0f0d7eadb95a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ad69cfc4163d7797bc0f0d7eadb95a7">&#9670;&nbsp;</a></span>started_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool started_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Thread_8h_source.html">Thread.h</a> 第 <a class="el" href="Thread_8h_source.html#l00042">42</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="Thread_8h_source.html#l00032">Thread::started()</a>.</p>
+
+</div>
+</div>
+<a id="ad3941d2816d56fc00acc575589d1bf4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3941d2816d56fc00acc575589d1bf4d">&#9670;&nbsp;</a></span>tid_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pid_t tid_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Thread_8h_source.html">Thread.h</a> 第 <a class="el" href="Thread_8h_source.html#l00045">45</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="Thread_8h_source.html#l00034">Thread::tid()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>lib/muduo/base/<a class="el" href="Thread_8h_source.html">Thread.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemuduo.html">muduo</a></li><li class="navelem"><a class="el" href="classmuduo_1_1Thread.html">Thread</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<map id="prependInt16" name="prependInt16">
+<area shape="rect" id="node2" href="$namespacemuduo_1_1net_1_1sockets.html#ae117e4d96b27b387f167e75fb17c1834" title="muduo::net::sockets\l::hostToNetwork16" alt="" coords="161,5,316,47"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1net_1_1Buffer.html#a3099092e4d4138f55fb825a50f50f24b" title="prepend" alt="" coords="201,71,276,98"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="405,46,463,73"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1net_1_1Buffer.html#ad738bbd8321f518ca5cdfac842993d04" title="prependableBytes" alt="" coords="364,97,504,123"/>
+</map>

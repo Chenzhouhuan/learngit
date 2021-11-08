@@ -1,0 +1,68 @@
+\hypertarget{SocketsOps_8h}{}\section{lib/\+Sockets\+Ops.h 文件参考}
+\label{SocketsOps_8h}\index{lib/\+Sockets\+Ops.\+h@{lib/\+Sockets\+Ops.\+h}}
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\newline
+{\ttfamily \#include $<$endian.\+h$>$}\newline
+Sockets\+Ops.\+h 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{SocketsOps_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SocketsOps_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemuduo}{muduo}
+\item 
+ \hyperlink{namespacemuduo_1_1sockets}{muduo\+::sockets}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \hyperlink{namespacemuduo_1_1sockets_a6cf7699b950ed4dfbc170a6ff9f71450}{host\+To\+Network64} (uint64\+\_\+t host64)
+\item 
+uint32\+\_\+t \hyperlink{namespacemuduo_1_1sockets_a937a8685473c938d339f02a8c6d395b6}{host\+To\+Network32} (uint32\+\_\+t host32)
+\item 
+uint16\+\_\+t \hyperlink{namespacemuduo_1_1sockets_a2c7a9f8e753e01c481aaf287251fa18e}{host\+To\+Network16} (uint16\+\_\+t host16)
+\item 
+uint64\+\_\+t \hyperlink{namespacemuduo_1_1sockets_ae5a926be124d52254860b4e93a5d1f31}{network\+To\+Host64} (uint64\+\_\+t net64)
+\item 
+uint32\+\_\+t \hyperlink{namespacemuduo_1_1sockets_a5846c926ef43813d8b8440b6b3a43633}{network\+To\+Host32} (uint32\+\_\+t net32)
+\item 
+uint16\+\_\+t \hyperlink{namespacemuduo_1_1sockets_aeeb31294e44fee5ecfc4b32f420f6d5d}{network\+To\+Host16} (uint16\+\_\+t net16)
+\item 
+int \hyperlink{namespacemuduo_1_1sockets_a91269e56d86b2e78e693b330e5c665aa}{create\+Nonblocking\+Or\+Die} ()
+\item 
+int \hyperlink{namespacemuduo_1_1sockets_a349a8d2188d9632596b2e5213cb16436}{connect} (int sockfd, const struct sockaddr\+\_\+in \&addr)
+\item 
+void \hyperlink{namespacemuduo_1_1sockets_a8fe4065cd24e49e158dd1c16cd693ae1}{bind\+Or\+Die} (int sockfd, const struct sockaddr\+\_\+in \&addr)
+\item 
+void \hyperlink{namespacemuduo_1_1sockets_a379cec5f383764a3696d9615bd344529}{listen\+Or\+Die} (int sockfd)
+\item 
+int \hyperlink{namespacemuduo_1_1sockets_a5fe7cd11cb2662939917285c51b3f992}{accept} (int sockfd, struct sockaddr\+\_\+in $\ast$addr)
+\item 
+void \hyperlink{namespacemuduo_1_1sockets_acb275b6d8b5979229bae664cb7ee14da}{close} (int sockfd)
+\item 
+void \hyperlink{namespacemuduo_1_1sockets_a549ec5e856fec6f111aeb481cca9e622}{shutdown\+Write} (int sockfd)
+\item 
+void \hyperlink{namespacemuduo_1_1sockets_adbdc909d04fd53860d9175b51755b0ae}{to\+Host\+Port} (char $\ast$buf, size\+\_\+t size, const struct sockaddr\+\_\+in \&addr)
+\item 
+void \hyperlink{namespacemuduo_1_1sockets_ae40b8bfde260835c9034bfaea0fb4ee0}{from\+Host\+Port} (const char $\ast$ip, uint16\+\_\+t port, struct sockaddr\+\_\+in $\ast$addr)
+\item 
+struct sockaddr\+\_\+in \hyperlink{namespacemuduo_1_1sockets_a4b4793e2d3f77da7bab38cfb52274075}{get\+Local\+Addr} (int sockfd)
+\item 
+struct sockaddr\+\_\+in \hyperlink{namespacemuduo_1_1sockets_ad095a2bf0c44507c945d04f8346f2817}{get\+Peer\+Addr} (int sockfd)
+\item 
+int \hyperlink{namespacemuduo_1_1sockets_a80bd626331e049209f59d11c80a8b539}{get\+Socket\+Error} (int sockfd)
+\item 
+bool \hyperlink{namespacemuduo_1_1sockets_ae3b7d08b5cb176e9d67580a0a1fd57fb}{is\+Self\+Connect} (int sockfd)
+\end{DoxyCompactItemize}

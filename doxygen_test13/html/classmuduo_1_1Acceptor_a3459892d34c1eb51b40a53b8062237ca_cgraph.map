@@ -1,0 +1,14 @@
+<map id="handlRead" name="handlRead">
+<area shape="rect" id="node2" href="$classmuduo_1_1Socket.html#a4f91f07f92cd51f6d6d4214af1e9b73f" title="muduo::Socket::accept" alt="" coords="154,71,325,98"/>
+<area shape="rect" id="node6" href="$classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::EventLoop::assert\lInLoopThread" alt="" coords="144,123,335,164"/>
+<area shape="rect" id="node13" href="$namespacemuduo_1_1sockets.html#acb275b6d8b5979229bae664cb7ee14da" title="muduo::sockets::close" alt="" coords="156,189,323,215"/>
+<area shape="rect" id="node3" href="$namespacemuduo_1_1sockets.html#a5fe7cd11cb2662939917285c51b3f992" title="muduo::sockets::accept" alt="" coords="397,13,573,39"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1InetAddress.html#ac40372dd403192210eddb5e699a420c7" title="muduo::InetAddress\l::setSockAddrInet" alt="" coords="409,64,561,105"/>
+<area shape="rect" id="node4" href="$namespacemuduo_1_1net_1_1sockets.html#ad69bf980a58ef6798c4e1dbe5497d52c" title="muduo::net::sockets\l::sockaddr_cast" alt="" coords="672,5,827,47"/>
+<area shape="rect" id="node7" href="$classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="muduo::EventLoop::isInLoop\lThread" alt="" coords="383,181,588,223"/>
+<area shape="rect" id="node10" href="$classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="muduo::EventLoop::abortNot\lInLoopThread" alt="" coords="645,123,853,164"/>
+<area shape="rect" id="node8" href="$namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="911,159,1104,186"/>
+<area shape="rect" id="node11" href="$classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="muduo::EventLoop::handleRead" alt="" coords="636,239,863,266"/>
+<area shape="rect" id="node12" href="$classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="muduo::EventLoop::doPending\lFunctors" alt="" coords="640,291,859,332"/>
+<area shape="rect" id="node9" href="$namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="1152,152,1320,193"/>
+</map>

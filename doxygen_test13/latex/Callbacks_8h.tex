@@ -1,0 +1,41 @@
+\hypertarget{Callbacks_8h}{}\section{lib/\+Callbacks.h 文件参考}
+\label{Callbacks_8h}\index{lib/\+Callbacks.\+h@{lib/\+Callbacks.\+h}}
+{\ttfamily \#include $<$boost/function.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/shared\+\_\+ptr.\+hpp$>$}\newline
+{\ttfamily \#include \char`\"{}muduo/base/\+Timestamp.\+h\char`\"{}}\newline
+Callbacks.\+h 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Callbacks_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Callbacks_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemuduo}{muduo}
+\end{DoxyCompactItemize}
+\subsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ Tcp\+Connection $>$ \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{Tcp\+Connection\+Ptr}
+\item 
+typedef boost\+::function$<$ void()$>$ \hyperlink{namespacemuduo_a5f7453c2a15825e79bddf5deaec707bf}{Timer\+Callback}
+\item 
+typedef boost\+::function$<$ void(const Tcp\+Connection\+Ptr \&)$>$ \hyperlink{namespacemuduo_ac7f7b0c9c9e96123dfea3fe120a2c404}{Connection\+Callback}
+\item 
+typedef boost\+::function$<$ void(const Tcp\+Connection\+Ptr \&, Buffer $\ast$buf, Timestamp)$>$ \hyperlink{namespacemuduo_ab8a96fa483cffe150618e01058e6fc1b}{Message\+Callback}
+\item 
+typedef boost\+::function$<$ void(const Tcp\+Connection\+Ptr \&)$>$ \hyperlink{namespacemuduo_a605eda27d048a69607942b95735d7087}{Write\+Complete\+Callback}
+\item 
+typedef boost\+::function$<$ void(const Tcp\+Connection\+Ptr \&)$>$ \hyperlink{namespacemuduo_ab2469aa3fe08794ee43a3d8f69bff30f}{Close\+Callback}
+\end{DoxyCompactItemize}

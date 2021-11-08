@@ -1,0 +1,273 @@
+\hypertarget{classmuduo_1_1net_1_1HttpContext}{}\section{Http\+Context类 参考}
+\label{classmuduo_1_1net_1_1HttpContext}\index{Http\+Context@{Http\+Context}}
+
+
+{\ttfamily \#include $<$Http\+Context.\+h$>$}
+
+
+
+类 Http\+Context 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classmuduo_1_1net_1_1HttpContext__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Http\+Context 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmuduo_1_1net_1_1HttpContext__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classmuduo_1_1net_1_1HttpContext_ae45b4b16d3226e885f8f1b01481cdc97}{Http\+Request\+Parse\+State} \{ \hyperlink{classmuduo_1_1net_1_1HttpContext_ae45b4b16d3226e885f8f1b01481cdc97a90e524639e1fe13ced27233abea943a0}{k\+Expect\+Request\+Line}, 
+\hyperlink{classmuduo_1_1net_1_1HttpContext_ae45b4b16d3226e885f8f1b01481cdc97a04cd6bfcf95d65f6574e2dd964296c2f}{k\+Expect\+Headers}, 
+\hyperlink{classmuduo_1_1net_1_1HttpContext_ae45b4b16d3226e885f8f1b01481cdc97a84674a0d8e33557ae6498eca1ce114c4}{k\+Expect\+Body}, 
+\hyperlink{classmuduo_1_1net_1_1HttpContext_ae45b4b16d3226e885f8f1b01481cdc97abc0630584582857fe8012b089eb24e15}{k\+Got\+All}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1net_1_1HttpContext_a50a52ddd11337e5be6fe37718d315b26}{Http\+Context} ()
+\item 
+bool \hyperlink{classmuduo_1_1net_1_1HttpContext_a0cba53638467f64e0018aaf96dd35f61}{parse\+Request} (\hyperlink{classmuduo_1_1net_1_1Buffer}{Buffer} $\ast$buf, \hyperlink{classmuduo_1_1Timestamp}{Timestamp} receive\+Time)
+\item 
+bool \hyperlink{classmuduo_1_1net_1_1HttpContext_ad2febe7a65a069b4be36beac564592f3}{got\+All} () const
+\item 
+void \hyperlink{classmuduo_1_1net_1_1HttpContext_ad20897c5c8bd47f5d4005989bead0e55}{reset} ()
+\item 
+const \hyperlink{classmuduo_1_1net_1_1HttpRequest}{Http\+Request} \& \hyperlink{classmuduo_1_1net_1_1HttpContext_adb9c927b9a9aef020981b888ee01c166}{request} () const
+\item 
+\hyperlink{classmuduo_1_1net_1_1HttpRequest}{Http\+Request} \& \hyperlink{classmuduo_1_1net_1_1HttpContext_a0a2a13410dfd6edfe5c1bb41943bb80d}{request} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classmuduo_1_1net_1_1HttpContext_a821b8727fba9b866e5d04d766a82e715}{process\+Request\+Line} (const char $\ast$begin, const char $\ast$end)
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1net_1_1HttpContext_ae45b4b16d3226e885f8f1b01481cdc97}{Http\+Request\+Parse\+State} \hyperlink{classmuduo_1_1net_1_1HttpContext_a3d9e7ad50008abb97efa5390abb349d0}{state\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1net_1_1HttpRequest}{Http\+Request} \hyperlink{classmuduo_1_1net_1_1HttpContext_a6e50d2148d29c744bd4cafc005252a3b}{request\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+
+
+在文件 Http\+Context.\+h 第 25 行定义.
+
+
+
+\subsection{成员枚举类型说明}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpContext_ae45b4b16d3226e885f8f1b01481cdc97}\label{classmuduo_1_1net_1_1HttpContext_ae45b4b16d3226e885f8f1b01481cdc97}} 
+\index{muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}!Http\+Request\+Parse\+State@{Http\+Request\+Parse\+State}}
+\index{Http\+Request\+Parse\+State@{Http\+Request\+Parse\+State}!muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}}
+\subsubsection{\texorpdfstring{Http\+Request\+Parse\+State}{HttpRequestParseState}}
+{\footnotesize\ttfamily enum \hyperlink{classmuduo_1_1net_1_1HttpContext_ae45b4b16d3226e885f8f1b01481cdc97}{Http\+Request\+Parse\+State}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Expect\+Request\+Line@{k\+Expect\+Request\+Line}!muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}}\index{muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}!k\+Expect\+Request\+Line@{k\+Expect\+Request\+Line}}}\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpContext_ae45b4b16d3226e885f8f1b01481cdc97a90e524639e1fe13ced27233abea943a0}\label{classmuduo_1_1net_1_1HttpContext_ae45b4b16d3226e885f8f1b01481cdc97a90e524639e1fe13ced27233abea943a0}} 
+k\+Expect\+Request\+Line&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Expect\+Headers@{k\+Expect\+Headers}!muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}}\index{muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}!k\+Expect\+Headers@{k\+Expect\+Headers}}}\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpContext_ae45b4b16d3226e885f8f1b01481cdc97a04cd6bfcf95d65f6574e2dd964296c2f}\label{classmuduo_1_1net_1_1HttpContext_ae45b4b16d3226e885f8f1b01481cdc97a04cd6bfcf95d65f6574e2dd964296c2f}} 
+k\+Expect\+Headers&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Expect\+Body@{k\+Expect\+Body}!muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}}\index{muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}!k\+Expect\+Body@{k\+Expect\+Body}}}\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpContext_ae45b4b16d3226e885f8f1b01481cdc97a84674a0d8e33557ae6498eca1ce114c4}\label{classmuduo_1_1net_1_1HttpContext_ae45b4b16d3226e885f8f1b01481cdc97a84674a0d8e33557ae6498eca1ce114c4}} 
+k\+Expect\+Body&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Got\+All@{k\+Got\+All}!muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}}\index{muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}!k\+Got\+All@{k\+Got\+All}}}\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpContext_ae45b4b16d3226e885f8f1b01481cdc97abc0630584582857fe8012b089eb24e15}\label{classmuduo_1_1net_1_1HttpContext_ae45b4b16d3226e885f8f1b01481cdc97abc0630584582857fe8012b089eb24e15}} 
+k\+Got\+All&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 Http\+Context.\+h 第 28 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpContext_a50a52ddd11337e5be6fe37718d315b26}\label{classmuduo_1_1net_1_1HttpContext_a50a52ddd11337e5be6fe37718d315b26}} 
+\index{muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}!Http\+Context@{Http\+Context}}
+\index{Http\+Context@{Http\+Context}!muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}}
+\subsubsection{\texorpdfstring{Http\+Context()}{HttpContext()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1net_1_1HttpContext}{Http\+Context} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Http\+Context.\+h 第 36 行定义.
+
+
+
+参考 Http\+Context\+::parse\+Request().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{classmuduo_1_1net_1_1HttpContext_a50a52ddd11337e5be6fe37718d315b26_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpContext_ad2febe7a65a069b4be36beac564592f3}\label{classmuduo_1_1net_1_1HttpContext_ad2febe7a65a069b4be36beac564592f3}} 
+\index{muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}!got\+All@{got\+All}}
+\index{got\+All@{got\+All}!muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}}
+\subsubsection{\texorpdfstring{got\+All()}{gotAll()}}
+{\footnotesize\ttfamily bool got\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Http\+Context.\+h 第 46 行定义.
+
+
+
+参考 Http\+Context\+::k\+Got\+All , 以及 Http\+Context\+::state\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpContext_a0cba53638467f64e0018aaf96dd35f61}\label{classmuduo_1_1net_1_1HttpContext_a0cba53638467f64e0018aaf96dd35f61}} 
+\index{muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}!parse\+Request@{parse\+Request}}
+\index{parse\+Request@{parse\+Request}!muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}}
+\subsubsection{\texorpdfstring{parse\+Request()}{parseRequest()}}
+{\footnotesize\ttfamily bool parse\+Request (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1net_1_1Buffer}{Buffer} $\ast$}]{buf,  }\item[{\hyperlink{classmuduo_1_1Timestamp}{Timestamp}}]{receive\+Time }\end{DoxyParamCaption})}
+
+
+
+参考自 Http\+Context\+::\+Http\+Context().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{classmuduo_1_1net_1_1HttpContext_a0cba53638467f64e0018aaf96dd35f61_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpContext_a821b8727fba9b866e5d04d766a82e715}\label{classmuduo_1_1net_1_1HttpContext_a821b8727fba9b866e5d04d766a82e715}} 
+\index{muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}!process\+Request\+Line@{process\+Request\+Line}}
+\index{process\+Request\+Line@{process\+Request\+Line}!muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}}
+\subsubsection{\texorpdfstring{process\+Request\+Line()}{processRequestLine()}}
+{\footnotesize\ttfamily bool process\+Request\+Line (\begin{DoxyParamCaption}\item[{const char $\ast$}]{begin,  }\item[{const char $\ast$}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+参考自 Http\+Context\+::request().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classmuduo_1_1net_1_1HttpContext_a821b8727fba9b866e5d04d766a82e715_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpContext_adb9c927b9a9aef020981b888ee01c166}\label{classmuduo_1_1net_1_1HttpContext_adb9c927b9a9aef020981b888ee01c166}} 
+\index{muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}!request@{request}}
+\index{request@{request}!muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}}
+\subsubsection{\texorpdfstring{request()}{request()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const \hyperlink{classmuduo_1_1net_1_1HttpRequest}{Http\+Request}\& request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Http\+Context.\+h 第 56 行定义.
+
+
+
+参考 Http\+Context\+::request\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpContext_a0a2a13410dfd6edfe5c1bb41943bb80d}\label{classmuduo_1_1net_1_1HttpContext_a0a2a13410dfd6edfe5c1bb41943bb80d}} 
+\index{muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}!request@{request}}
+\index{request@{request}!muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}}
+\subsubsection{\texorpdfstring{request()}{request()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1net_1_1HttpRequest}{Http\+Request}\& request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Http\+Context.\+h 第 59 行定义.
+
+
+
+参考 Http\+Context\+::process\+Request\+Line() , 以及 Http\+Context\+::request\+\_\+.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classmuduo_1_1net_1_1HttpContext_a0a2a13410dfd6edfe5c1bb41943bb80d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpContext_ad20897c5c8bd47f5d4005989bead0e55}\label{classmuduo_1_1net_1_1HttpContext_ad20897c5c8bd47f5d4005989bead0e55}} 
+\index{muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}!reset@{reset}}
+\index{reset@{reset}!muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Http\+Context.\+h 第 49 行定义.
+
+
+
+参考 Http\+Context\+::k\+Expect\+Request\+Line, Http\+Context\+::request\+\_\+, Http\+Context\+::state\+\_\+ , 以及 Http\+Request\+::swap().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1net_1_1HttpContext_ad20897c5c8bd47f5d4005989bead0e55_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpContext_a6e50d2148d29c744bd4cafc005252a3b}\label{classmuduo_1_1net_1_1HttpContext_a6e50d2148d29c744bd4cafc005252a3b}} 
+\index{muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}!request\+\_\+@{request\+\_\+}}
+\index{request\+\_\+@{request\+\_\+}!muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}}
+\subsubsection{\texorpdfstring{request\+\_\+}{request\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1net_1_1HttpRequest}{Http\+Request} request\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Http\+Context.\+h 第 66 行定义.
+
+
+
+参考自 Http\+Context\+::request() , 以及 Http\+Context\+::reset().
+
+\mbox{\Hypertarget{classmuduo_1_1net_1_1HttpContext_a3d9e7ad50008abb97efa5390abb349d0}\label{classmuduo_1_1net_1_1HttpContext_a3d9e7ad50008abb97efa5390abb349d0}} 
+\index{muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}!state\+\_\+@{state\+\_\+}}
+\index{state\+\_\+@{state\+\_\+}!muduo\+::net\+::\+Http\+Context@{muduo\+::net\+::\+Http\+Context}}
+\subsubsection{\texorpdfstring{state\+\_\+}{state\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1net_1_1HttpContext_ae45b4b16d3226e885f8f1b01481cdc97}{Http\+Request\+Parse\+State} state\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Http\+Context.\+h 第 65 行定义.
+
+
+
+参考自 Http\+Context\+::got\+All() , 以及 Http\+Context\+::reset().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/muduo/net/http/\hyperlink{HttpContext_8h}{Http\+Context.\+h}\end{DoxyCompactItemize}

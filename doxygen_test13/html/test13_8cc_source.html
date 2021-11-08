@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: test13.cc 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('test13_8cc_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">test13.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="test13_8cc.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="EventLoop_8h.html">lib/EventLoop.h</a>&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="InetAddress_8h.html">lib/InetAddress.h</a>&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="TcpClient_8h.html">lib/TcpClient.h</a>&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Logging_8h.html">lib/muduo/base/Logging.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;boost/bind.hpp&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="test13_8cc.html#a36bd74109f547f7f8198faf5a12d2879">   14</a></span>&#160;std::string <a class="code" href="test13_8cc.html#a36bd74109f547f7f8198faf5a12d2879">message</a> = <span class="stringliteral">&quot;Hello\n&quot;</span>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="test13_8cc.html#a6eb66d9a7a41230486568c4e0b65e095">   16</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="test13_8cc.html#a6eb66d9a7a41230486568c4e0b65e095">onConnection</a>(<span class="keyword">const</span> <a class="code" href="namespacemuduo.html#a40c45128e9700d337d92f3cbb8dd4a0a">muduo::TcpConnectionPtr</a>&amp; conn){</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">if</span>(conn-&gt;connected()){</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        printf(<span class="stringliteral">&quot;onConnection(): new connection [%s] from %s\n&quot;</span>, conn-&gt;name().c_str(), conn-&gt;peerAddress().toHostPort().c_str());</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        conn-&gt;send(<a class="code" href="test13_8cc.html#a36bd74109f547f7f8198faf5a12d2879">message</a>);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }<span class="keywordflow">else</span>{</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        printf(<span class="stringliteral">&quot;onConnection(): connection [%s] is down\n&quot;</span>, conn-&gt;name().c_str());</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="test13_8cc.html#af33efd842a41b80c31e25f49b91bba72">   25</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="test13_8cc.html#af33efd842a41b80c31e25f49b91bba72">onMessage</a>(<span class="keyword">const</span> <a class="code" href="namespacemuduo.html#a40c45128e9700d337d92f3cbb8dd4a0a">muduo::TcpConnectionPtr</a>&amp; conn, <a class="code" href="classmuduo_1_1Buffer.html">muduo::Buffer</a>* buf, <a class="code" href="classmuduo_1_1Timestamp.html">muduo::Timestamp</a> receiveTime){</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    printf(<span class="stringliteral">&quot;onMessage(): received %zd bytes from connection [%s] at %s\n&quot;</span>, buf-&gt;<a class="code" href="classmuduo_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724">readableBytes</a>(), conn-&gt;name().c_str(), receiveTime.<a class="code" href="classmuduo_1_1Timestamp.html#ac8bf4663993962a4d68d4a6c44588e97">toFormattedString</a>().c_str());</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    printf(<span class="stringliteral">&quot;onMessage(): [%s]\n&quot;</span>, buf-&gt;<a class="code" href="classmuduo_1_1Buffer.html#a49c703048227a7c666fca7514b60892e">retrieveAsString</a>().c_str());</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="test13_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   30</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="test13_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>(){</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classmuduo_1_1EventLoop.html">muduo::EventLoop</a> loop;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classmuduo_1_1InetAddress.html">muduo::InetAddress</a> serverAddr(<span class="stringliteral">&quot;localhost&quot;</span>, 9981);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classmuduo_1_1TcpClient.html">muduo::TcpClient</a> client(&amp;loop, serverAddr);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    client.<a class="code" href="classmuduo_1_1TcpClient.html#abbb0008856a8495adb08c8cb7fe65c2c">setConnectionCallback</a>(<a class="code" href="test13_8cc.html#a6eb66d9a7a41230486568c4e0b65e095">onConnection</a>);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    client.<a class="code" href="classmuduo_1_1TcpClient.html#a0a67f11f92b4cdc6f6c66b861f81cb08">setMessageCallback</a>(<a class="code" href="test13_8cc.html#af33efd842a41b80c31e25f49b91bba72">onMessage</a>);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    client.<a class="code" href="classmuduo_1_1TcpClient.html#a24bbe5c717dfa26078c7deb6cbf9a71c">enableRetry</a>();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    client.<a class="code" href="classmuduo_1_1TcpClient.html#a1396bf9b5defe9fa844a63b5cd40ac0e">connect</a>();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    loop.<a class="code" href="classmuduo_1_1EventLoop.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div><div class="ttc" id="test13_8cc_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="test13_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="test13_8cc_source.html#l00030">test13.cc:30</a></div></div>
+<div class="ttc" id="classmuduo_1_1TcpClient_html"><div class="ttname"><a href="classmuduo_1_1TcpClient.html">muduo::TcpClient</a></div><div class="ttdef"><b>Definition:</b> <a href="TcpClient_8h_source.html#l00014">TcpClient.h:14</a></div></div>
+<div class="ttc" id="Logging_8h_html"><div class="ttname"><a href="Logging_8h.html">Logging.h</a></div></div>
+<div class="ttc" id="test13_8cc_html_a36bd74109f547f7f8198faf5a12d2879"><div class="ttname"><a href="test13_8cc.html#a36bd74109f547f7f8198faf5a12d2879">message</a></div><div class="ttdeci">std::string message</div><div class="ttdef"><b>Definition:</b> <a href="test13_8cc_source.html#l00014">test13.cc:14</a></div></div>
+<div class="ttc" id="classmuduo_1_1TcpClient_html_a24bbe5c717dfa26078c7deb6cbf9a71c"><div class="ttname"><a href="classmuduo_1_1TcpClient.html#a24bbe5c717dfa26078c7deb6cbf9a71c">muduo::TcpClient::enableRetry</a></div><div class="ttdeci">void enableRetry()</div><div class="ttdef"><b>Definition:</b> <a href="TcpClient_8h_source.html#l00029">TcpClient.h:29</a></div></div>
+<div class="ttc" id="classmuduo_1_1InetAddress_html"><div class="ttname"><a href="classmuduo_1_1InetAddress.html">muduo::InetAddress</a></div><div class="ttdef"><b>Definition:</b> <a href="InetAddress_8h_source.html#l00016">InetAddress.h:16</a></div></div>
+<div class="ttc" id="InetAddress_8h_html"><div class="ttname"><a href="InetAddress_8h.html">InetAddress.h</a></div></div>
+<div class="ttc" id="namespacemuduo_html_a40c45128e9700d337d92f3cbb8dd4a0a"><div class="ttname"><a href="namespacemuduo.html#a40c45128e9700d337d92f3cbb8dd4a0a">muduo::TcpConnectionPtr</a></div><div class="ttdeci">boost::shared_ptr&lt; TcpConnection &gt; TcpConnectionPtr</div><div class="ttdef"><b>Definition:</b> <a href="Callbacks_8h_source.html#l00014">Callbacks.h:14</a></div></div>
+<div class="ttc" id="classmuduo_1_1TcpClient_html_abbb0008856a8495adb08c8cb7fe65c2c"><div class="ttname"><a href="classmuduo_1_1TcpClient.html#abbb0008856a8495adb08c8cb7fe65c2c">muduo::TcpClient::setConnectionCallback</a></div><div class="ttdeci">void setConnectionCallback(const ConnectionCallback &amp;cb)</div><div class="ttdef"><b>Definition:</b> <a href="TcpClient_8h_source.html#l00035">TcpClient.h:35</a></div></div>
+<div class="ttc" id="classmuduo_1_1EventLoop_html"><div class="ttname"><a href="classmuduo_1_1EventLoop.html">muduo::EventLoop</a></div><div class="ttdef"><b>Definition:</b> <a href="EventLoop_8h_source.html#l00022">EventLoop.h:22</a></div></div>
+<div class="ttc" id="classmuduo_1_1TcpClient_html_a1396bf9b5defe9fa844a63b5cd40ac0e"><div class="ttname"><a href="classmuduo_1_1TcpClient.html#a1396bf9b5defe9fa844a63b5cd40ac0e">muduo::TcpClient::connect</a></div><div class="ttdeci">void connect()</div><div class="ttdef"><b>Definition:</b> <a href="TcpClient_8cc_source.html#l00061">TcpClient.cc:61</a></div></div>
+<div class="ttc" id="classmuduo_1_1Buffer_html_a49c703048227a7c666fca7514b60892e"><div class="ttname"><a href="classmuduo_1_1Buffer.html#a49c703048227a7c666fca7514b60892e">muduo::Buffer::retrieveAsString</a></div><div class="ttdeci">std::string retrieveAsString()</div><div class="ttdef"><b>Definition:</b> <a href="Buffer_8h_source.html#l00085">Buffer.h:85</a></div></div>
+<div class="ttc" id="EventLoop_8h_html"><div class="ttname"><a href="EventLoop_8h.html">EventLoop.h</a></div></div>
+<div class="ttc" id="classmuduo_1_1TcpClient_html_a0a67f11f92b4cdc6f6c66b861f81cb08"><div class="ttname"><a href="classmuduo_1_1TcpClient.html#a0a67f11f92b4cdc6f6c66b861f81cb08">muduo::TcpClient::setMessageCallback</a></div><div class="ttdeci">void setMessageCallback(const MessageCallback &amp;cb)</div><div class="ttdef"><b>Definition:</b> <a href="TcpClient_8h_source.html#l00039">TcpClient.h:39</a></div></div>
+<div class="ttc" id="test13_8cc_html_a6eb66d9a7a41230486568c4e0b65e095"><div class="ttname"><a href="test13_8cc.html#a6eb66d9a7a41230486568c4e0b65e095">onConnection</a></div><div class="ttdeci">void onConnection(const muduo::TcpConnectionPtr &amp;conn)</div><div class="ttdef"><b>Definition:</b> <a href="test13_8cc_source.html#l00016">test13.cc:16</a></div></div>
+<div class="ttc" id="TcpClient_8h_html"><div class="ttname"><a href="TcpClient_8h.html">TcpClient.h</a></div></div>
+<div class="ttc" id="classmuduo_1_1EventLoop_html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="classmuduo_1_1EventLoop.html#afe461d27b9c48d5921c00d521181f12f">muduo::EventLoop::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdef"><b>Definition:</b> <a href="EventLoop_8cc_source.html#l00068">EventLoop.cc:68</a></div></div>
+<div class="ttc" id="test13_8cc_html_af33efd842a41b80c31e25f49b91bba72"><div class="ttname"><a href="test13_8cc.html#af33efd842a41b80c31e25f49b91bba72">onMessage</a></div><div class="ttdeci">void onMessage(const muduo::TcpConnectionPtr &amp;conn, muduo::Buffer *buf, muduo::Timestamp receiveTime)</div><div class="ttdef"><b>Definition:</b> <a href="test13_8cc_source.html#l00025">test13.cc:25</a></div></div>
+<div class="ttc" id="classmuduo_1_1Buffer_html"><div class="ttname"><a href="classmuduo_1_1Buffer.html">muduo::Buffer</a></div><div class="ttdef"><b>Definition:</b> <a href="Buffer_8h_source.html#l00026">Buffer.h:26</a></div></div>
+<div class="ttc" id="classmuduo_1_1Timestamp_html"><div class="ttname"><a href="classmuduo_1_1Timestamp.html">muduo::Timestamp</a></div><div class="ttdef"><b>Definition:</b> <a href="Timestamp_8h_source.html#l00023">Timestamp.h:23</a></div></div>
+<div class="ttc" id="classmuduo_1_1Timestamp_html_ac8bf4663993962a4d68d4a6c44588e97"><div class="ttname"><a href="classmuduo_1_1Timestamp.html#ac8bf4663993962a4d68d4a6c44588e97">muduo::Timestamp::toFormattedString</a></div><div class="ttdeci">string toFormattedString(bool showMicroseconds=true) const</div></div>
+<div class="ttc" id="classmuduo_1_1Buffer_html_afba1d23196411daa43950fdbbff6d724"><div class="ttname"><a href="classmuduo_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724">muduo::Buffer::readableBytes</a></div><div class="ttdeci">size_t readableBytes() const</div><div class="ttdef"><b>Definition:</b> <a href="Buffer_8h_source.html#l00051">Buffer.h:51</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="test13_8cc.html">test13.cc</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

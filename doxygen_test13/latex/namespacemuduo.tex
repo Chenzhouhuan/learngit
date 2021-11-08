@@ -1,0 +1,680 @@
+\hypertarget{namespacemuduo}{}\section{muduo 命名空间参考}
+\label{namespacemuduo}\index{muduo@{muduo}}
+\subsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemuduo_1_1CurrentThread}{Current\+Thread}
+\item 
+ \hyperlink{namespacemuduo_1_1detail}{detail}
+\item 
+ \hyperlink{namespacemuduo_1_1FileUtil}{File\+Util}
+\item 
+ \hyperlink{namespacemuduo_1_1net}{net}
+\item 
+ \hyperlink{namespacemuduo_1_1ProcessInfo}{Process\+Info}
+\item 
+ \hyperlink{namespacemuduo_1_1sockets}{sockets}
+\end{DoxyCompactItemize}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmuduo_1_1Acceptor}{Acceptor}
+\item 
+class \hyperlink{classmuduo_1_1AsyncLogging}{Async\+Logging}
+\item 
+class \hyperlink{classmuduo_1_1BlockingQueue}{Blocking\+Queue}
+\item 
+class \hyperlink{classmuduo_1_1BoundedBlockingQueue}{Bounded\+Blocking\+Queue}
+\item 
+class \hyperlink{classmuduo_1_1Buffer}{Buffer}
+\item 
+class \hyperlink{classmuduo_1_1Channel}{Channel}
+\item 
+class \hyperlink{classmuduo_1_1Condition}{Condition}
+\item 
+class \hyperlink{classmuduo_1_1Connector}{Connector}
+\item 
+class \hyperlink{classmuduo_1_1copyable}{copyable}
+\item 
+class \hyperlink{classmuduo_1_1CountDownLatch}{Count\+Down\+Latch}
+\item 
+class \hyperlink{classmuduo_1_1Date}{Date}
+\item 
+class \hyperlink{classmuduo_1_1EPoller}{E\+Poller}
+\item 
+class \hyperlink{classmuduo_1_1EventLoop}{Event\+Loop}
+\item 
+class \hyperlink{classmuduo_1_1EventLoopThread}{Event\+Loop\+Thread}
+\item 
+class \hyperlink{classmuduo_1_1EventLoopThreadPool}{Event\+Loop\+Thread\+Pool}
+\item 
+class \hyperlink{classmuduo_1_1Exception}{Exception}
+\item 
+class \hyperlink{classmuduo_1_1Fmt}{Fmt}
+\item 
+class \hyperlink{classmuduo_1_1GzipFile}{Gzip\+File}
+\item 
+class \hyperlink{classmuduo_1_1InetAddress}{Inet\+Address}
+\item 
+class \hyperlink{classmuduo_1_1LogFile}{Log\+File}
+\item 
+class \hyperlink{classmuduo_1_1Logger}{Logger}
+\item 
+class \hyperlink{classmuduo_1_1LogStream}{Log\+Stream}
+\item 
+class \hyperlink{classmuduo_1_1MutexLockGuard}{Mutex\+Lock\+Guard}
+\item 
+class \hyperlink{classmuduo_1_1noncopyable}{noncopyable}
+\item 
+class \hyperlink{classmuduo_1_1Poller}{Poller}
+\item 
+class \hyperlink{classmuduo_1_1Singleton}{Singleton}
+\item 
+class \hyperlink{classmuduo_1_1Socket}{Socket}
+\item 
+class \hyperlink{classmuduo_1_1StringArg}{String\+Arg}
+\item 
+class \hyperlink{classmuduo_1_1StringPiece}{String\+Piece}
+\item 
+class \hyperlink{classmuduo_1_1TcpClient}{Tcp\+Client}
+\item 
+class \hyperlink{classmuduo_1_1TcpConnection}{Tcp\+Connection}
+\item 
+class \hyperlink{classmuduo_1_1TcpServer}{Tcp\+Server}
+\item 
+class \hyperlink{classmuduo_1_1Thread}{Thread}
+\item 
+class \hyperlink{classmuduo_1_1ThreadLocal}{Thread\+Local}
+\item 
+class \hyperlink{classmuduo_1_1ThreadLocalSingleton}{Thread\+Local\+Singleton}
+\item 
+class \hyperlink{classmuduo_1_1ThreadPool}{Thread\+Pool}
+\item 
+class \hyperlink{classmuduo_1_1Timer}{Timer}
+\item 
+class \hyperlink{classmuduo_1_1TimerId}{Timer\+Id}
+\item 
+class \hyperlink{classmuduo_1_1TimerQueue}{Timer\+Queue}
+\item 
+class \hyperlink{classmuduo_1_1Timestamp}{Timestamp}
+\item 
+class \hyperlink{classmuduo_1_1TimeZone}{Time\+Zone}
+\item 
+class \hyperlink{classmuduo_1_1WeakCallback}{Weak\+Callback}
+\end{DoxyCompactItemize}
+\subsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ \hyperlink{classmuduo_1_1TcpConnection}{Tcp\+Connection} $>$ \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{Tcp\+Connection\+Ptr}
+\item 
+typedef boost\+::function$<$ void()$>$ \hyperlink{namespacemuduo_a5f7453c2a15825e79bddf5deaec707bf}{Timer\+Callback}
+\item 
+typedef boost\+::function$<$ void(const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{Tcp\+Connection\+Ptr} \&)$>$ \hyperlink{namespacemuduo_ac7f7b0c9c9e96123dfea3fe120a2c404}{Connection\+Callback}
+\item 
+typedef boost\+::function$<$ void(const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{Tcp\+Connection\+Ptr} \&, \hyperlink{classmuduo_1_1Buffer}{Buffer} $\ast$buf, \hyperlink{classmuduo_1_1Timestamp}{Timestamp})$>$ \hyperlink{namespacemuduo_ab8a96fa483cffe150618e01058e6fc1b}{Message\+Callback}
+\item 
+typedef boost\+::function$<$ void(const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{Tcp\+Connection\+Ptr} \&)$>$ \hyperlink{namespacemuduo_a605eda27d048a69607942b95735d7087}{Write\+Complete\+Callback}
+\item 
+typedef boost\+::function$<$ void(const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{Tcp\+Connection\+Ptr} \&)$>$ \hyperlink{namespacemuduo_ab2469aa3fe08794ee43a3d8f69bff30f}{Close\+Callback}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ \hyperlink{classmuduo_1_1Connector}{Connector} $>$ \hyperlink{namespacemuduo_a144f8adea97b4c9ac75c439f6d87ae29}{Connector\+Ptr}
+\item 
+typedef \hyperlink{classmuduo_1_1detail_1_1AtomicIntegerT}{detail\+::\+Atomic\+IntegerT}$<$ int32\+\_\+t $>$ \hyperlink{namespacemuduo_a5ff4a046f03836ad4fb080652d419987}{Atomic\+Int32}
+\item 
+typedef \hyperlink{classmuduo_1_1detail_1_1AtomicIntegerT}{detail\+::\+Atomic\+IntegerT}$<$ int64\+\_\+t $>$ \hyperlink{namespacemuduo_aa79d31350742dfc80edb0d9a5df0e7e7}{Atomic\+Int64}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespacemuduo_a16d6a8ea1b5e79c94c59f96137b8d26d}{operator$<$} (\hyperlink{classmuduo_1_1Date}{Date} x, \hyperlink{classmuduo_1_1Date}{Date} y)
+\item 
+bool \hyperlink{namespacemuduo_a0a048e90c15864ab82a55b148bebd144}{operator==} (\hyperlink{classmuduo_1_1Date}{Date} x, \hyperlink{classmuduo_1_1Date}{Date} y)
+\item 
+const char $\ast$ \hyperlink{namespacemuduo_a8c7278edf83f347bacf79e36689bf91c}{strerror\+\_\+tl} (int saved\+Errno)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespacemuduo_a4b813c501ed67387236a1291d1873ab5}{Check\+Not\+Null} (\hyperlink{classmuduo_1_1Logger_1_1SourceFile}{Logger\+::\+Source\+File} file, int line, const char $\ast$names, T $\ast$ptr)
+\item 
+\hyperlink{classmuduo_1_1LogStream}{Log\+Stream} \& \hyperlink{namespacemuduo_a8306fbe1f821ddb82e4c161f936695b2}{operator$<$$<$} (\hyperlink{classmuduo_1_1LogStream}{Log\+Stream} \&s, const \hyperlink{classmuduo_1_1Fmt}{Fmt} \&fmt)
+\item 
+string \hyperlink{namespacemuduo_a2530c171cac6dda7399a9eb5805e01fa}{format\+SI} (int64\+\_\+t n)
+\item 
+string \hyperlink{namespacemuduo_a2ad8a8650556c05bae4c4f449ac6d106}{format\+I\+EC} (int64\+\_\+t n)
+\item 
+bool \hyperlink{namespacemuduo_a7cdae651f87c159c785591256d06740e}{operator$<$} (\hyperlink{classmuduo_1_1Timestamp}{Timestamp} lhs, \hyperlink{classmuduo_1_1Timestamp}{Timestamp} rhs)
+\item 
+bool \hyperlink{namespacemuduo_abf794c2f7edbea7af7ae48632eef1b84}{operator==} (\hyperlink{classmuduo_1_1Timestamp}{Timestamp} lhs, \hyperlink{classmuduo_1_1Timestamp}{Timestamp} rhs)
+\item 
+double \hyperlink{namespacemuduo_a6f7c17d86f2474f297b3b9e54b500907}{time\+Difference} (\hyperlink{classmuduo_1_1Timestamp}{Timestamp} high, \hyperlink{classmuduo_1_1Timestamp}{Timestamp} low)
+\item 
+\hyperlink{classmuduo_1_1Timestamp}{Timestamp} \hyperlink{namespacemuduo_a4c4a0e85f7b5c4056878cd7cf26a83cb}{add\+Time} (\hyperlink{classmuduo_1_1Timestamp}{Timestamp} timestamp, double seconds)
+\item 
+void \hyperlink{namespacemuduo_a8f6d784bddb9d3e0774a665b147758bc}{mem\+Zero} (void $\ast$p, size\+\_\+t n)
+\item 
+{\footnotesize template$<$typename To , typename From $>$ }\\To \hyperlink{namespacemuduo_a72cbcf425db108335295456e8ff9c12b}{implicit\+\_\+cast} (From const \&f)
+\item 
+{\footnotesize template$<$typename To , typename From $>$ }\\To \hyperlink{namespacemuduo_a4a5610d86660bbd28e059ebb1ffc8316}{down\+\_\+cast} (From $\ast$f)
+\item 
+{\footnotesize template$<$typename C\+L\+A\+SS , typename... A\+R\+GS$>$ }\\\hyperlink{classmuduo_1_1WeakCallback}{Weak\+Callback}$<$ C\+L\+A\+SS, A\+R\+G\+S... $>$ \hyperlink{namespacemuduo_ae9dd2c7476408fd8f17491aff0d422f1}{make\+Weak\+Callback} (const std\+::shared\+\_\+ptr$<$ C\+L\+A\+SS $>$ \&object, void(C\+L\+A\+S\+S\+::$\ast$function)(A\+R\+G\+S...))
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespacemuduo_a98789775449e36c3c0c26004e19ef6bc}{get\+\_\+pointer} (const std\+::shared\+\_\+ptr$<$ T $>$ \&ptr)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespacemuduo_aedcb2cb9b3d8f7bdfabeadec584a691c}{get\+\_\+pointer} (const std\+::unique\+\_\+ptr$<$ T $>$ \&ptr)
+\item 
+{\footnotesize template$<$typename To , typename From $>$ }\\inline \+::std\+::shared\+\_\+ptr$<$ To $>$ \hyperlink{namespacemuduo_a1836aa0a42711172d5598fbfda6fb588}{down\+\_\+pointer\+\_\+cast} (const \+::std\+::shared\+\_\+ptr$<$ From $>$ \&f)
+\end{DoxyCompactItemize}
+\subsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9}{Logger\+::\+Log\+Level} \hyperlink{namespacemuduo_ac758fb9f0d1703994b7e23772d09f183}{g\+\_\+log\+Level}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+The most common stuffs. 
+
+\subsection{类型定义说明}
+\mbox{\Hypertarget{namespacemuduo_a5ff4a046f03836ad4fb080652d419987}\label{namespacemuduo_a5ff4a046f03836ad4fb080652d419987}} 
+\index{muduo@{muduo}!Atomic\+Int32@{Atomic\+Int32}}
+\index{Atomic\+Int32@{Atomic\+Int32}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{Atomic\+Int32}{AtomicInt32}}
+{\footnotesize\ttfamily typedef \hyperlink{classmuduo_1_1detail_1_1AtomicIntegerT}{detail\+::\+Atomic\+IntegerT}$<$int32\+\_\+t$>$ \hyperlink{namespacemuduo_a5ff4a046f03836ad4fb080652d419987}{Atomic\+Int32}}
+
+
+
+在文件 Atomic.\+h 第 92 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_aa79d31350742dfc80edb0d9a5df0e7e7}\label{namespacemuduo_aa79d31350742dfc80edb0d9a5df0e7e7}} 
+\index{muduo@{muduo}!Atomic\+Int64@{Atomic\+Int64}}
+\index{Atomic\+Int64@{Atomic\+Int64}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{Atomic\+Int64}{AtomicInt64}}
+{\footnotesize\ttfamily typedef \hyperlink{classmuduo_1_1detail_1_1AtomicIntegerT}{detail\+::\+Atomic\+IntegerT}$<$int64\+\_\+t$>$ \hyperlink{namespacemuduo_aa79d31350742dfc80edb0d9a5df0e7e7}{Atomic\+Int64}}
+
+
+
+在文件 Atomic.\+h 第 93 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_ab2469aa3fe08794ee43a3d8f69bff30f}\label{namespacemuduo_ab2469aa3fe08794ee43a3d8f69bff30f}} 
+\index{muduo@{muduo}!Close\+Callback@{Close\+Callback}}
+\index{Close\+Callback@{Close\+Callback}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{Close\+Callback}{CloseCallback}}
+{\footnotesize\ttfamily typedef boost\+::function$<$void(const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{Tcp\+Connection\+Ptr}\&)$>$ \hyperlink{namespacemuduo_ab2469aa3fe08794ee43a3d8f69bff30f}{Close\+Callback}}
+
+
+
+在文件 Callbacks.\+h 第 21 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_ac7f7b0c9c9e96123dfea3fe120a2c404}\label{namespacemuduo_ac7f7b0c9c9e96123dfea3fe120a2c404}} 
+\index{muduo@{muduo}!Connection\+Callback@{Connection\+Callback}}
+\index{Connection\+Callback@{Connection\+Callback}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{Connection\+Callback}{ConnectionCallback}}
+{\footnotesize\ttfamily typedef boost\+::function$<$void(const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{Tcp\+Connection\+Ptr}\&)$>$ \hyperlink{namespacemuduo_ac7f7b0c9c9e96123dfea3fe120a2c404}{Connection\+Callback}}
+
+
+
+在文件 Callbacks.\+h 第 18 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_a144f8adea97b4c9ac75c439f6d87ae29}\label{namespacemuduo_a144f8adea97b4c9ac75c439f6d87ae29}} 
+\index{muduo@{muduo}!Connector\+Ptr@{Connector\+Ptr}}
+\index{Connector\+Ptr@{Connector\+Ptr}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{Connector\+Ptr}{ConnectorPtr}}
+{\footnotesize\ttfamily typedef boost\+::shared\+\_\+ptr$<$ \hyperlink{classmuduo_1_1Connector}{Connector} $>$ \hyperlink{namespacemuduo_a144f8adea97b4c9ac75c439f6d87ae29}{Connector\+Ptr}}
+
+
+
+在文件 Connector.\+h 第 57 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_ab8a96fa483cffe150618e01058e6fc1b}\label{namespacemuduo_ab8a96fa483cffe150618e01058e6fc1b}} 
+\index{muduo@{muduo}!Message\+Callback@{Message\+Callback}}
+\index{Message\+Callback@{Message\+Callback}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{Message\+Callback}{MessageCallback}}
+{\footnotesize\ttfamily typedef boost\+::function$<$void(const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{Tcp\+Connection\+Ptr}\&, \hyperlink{classmuduo_1_1Buffer}{Buffer}$\ast$ buf,\hyperlink{classmuduo_1_1Timestamp}{Timestamp})$>$ \hyperlink{namespacemuduo_ab8a96fa483cffe150618e01058e6fc1b}{Message\+Callback}}
+
+
+
+在文件 Callbacks.\+h 第 19 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}\label{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}} 
+\index{muduo@{muduo}!Tcp\+Connection\+Ptr@{Tcp\+Connection\+Ptr}}
+\index{Tcp\+Connection\+Ptr@{Tcp\+Connection\+Ptr}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{Tcp\+Connection\+Ptr}{TcpConnectionPtr}}
+{\footnotesize\ttfamily typedef boost\+::shared\+\_\+ptr$<$ \hyperlink{classmuduo_1_1TcpConnection}{Tcp\+Connection} $>$ \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{Tcp\+Connection\+Ptr}}
+
+
+
+在文件 Callbacks.\+h 第 14 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_a5f7453c2a15825e79bddf5deaec707bf}\label{namespacemuduo_a5f7453c2a15825e79bddf5deaec707bf}} 
+\index{muduo@{muduo}!Timer\+Callback@{Timer\+Callback}}
+\index{Timer\+Callback@{Timer\+Callback}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{Timer\+Callback}{TimerCallback}}
+{\footnotesize\ttfamily typedef boost\+::function$<$void()$>$ \hyperlink{namespacemuduo_a5f7453c2a15825e79bddf5deaec707bf}{Timer\+Callback}}
+
+
+
+在文件 Callbacks.\+h 第 17 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_a605eda27d048a69607942b95735d7087}\label{namespacemuduo_a605eda27d048a69607942b95735d7087}} 
+\index{muduo@{muduo}!Write\+Complete\+Callback@{Write\+Complete\+Callback}}
+\index{Write\+Complete\+Callback@{Write\+Complete\+Callback}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{Write\+Complete\+Callback}{WriteCompleteCallback}}
+{\footnotesize\ttfamily typedef boost\+::function$<$void (const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{Tcp\+Connection\+Ptr}\&)$>$ \hyperlink{namespacemuduo_a605eda27d048a69607942b95735d7087}{Write\+Complete\+Callback}}
+
+
+
+在文件 Callbacks.\+h 第 20 行定义.
+
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{namespacemuduo_a4c4a0e85f7b5c4056878cd7cf26a83cb}\label{namespacemuduo_a4c4a0e85f7b5c4056878cd7cf26a83cb}} 
+\index{muduo@{muduo}!add\+Time@{add\+Time}}
+\index{add\+Time@{add\+Time}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{add\+Time()}{addTime()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Timestamp}{Timestamp} muduo\+::add\+Time (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Timestamp}{Timestamp}}]{timestamp,  }\item[{double}]{seconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add {\ttfamily seconds} to given timestamp.
+
+\begin{DoxyReturn}{返回}
+timestamp+seconds as \hyperlink{classmuduo_1_1Timestamp}{Timestamp} 
+\end{DoxyReturn}
+
+
+在文件 Timestamp.\+h 第 115 行定义.
+
+
+
+参考 Timestamp\+::k\+Micro\+Seconds\+Per\+Second, Timestamp\+::micro\+Seconds\+Since\+Epoch() , 以及 Timestamp\+::\+Timestamp().
+
+
+
+参考自 Timer\+::restart(), Event\+Loop\+::run\+After() , 以及 Event\+Loop\+::run\+Every().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_a4c4a0e85f7b5c4056878cd7cf26a83cb_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_a4c4a0e85f7b5c4056878cd7cf26a83cb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_a4b813c501ed67387236a1291d1873ab5}\label{namespacemuduo_a4b813c501ed67387236a1291d1873ab5}} 
+\index{muduo@{muduo}!Check\+Not\+Null@{Check\+Not\+Null}}
+\index{Check\+Not\+Null@{Check\+Not\+Null}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{Check\+Not\+Null()}{CheckNotNull()}}
+{\footnotesize\ttfamily T$\ast$ muduo\+::\+Check\+Not\+Null (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Logger_1_1SourceFile}{Logger\+::\+Source\+File}}]{file,  }\item[{int}]{line,  }\item[{const char $\ast$}]{names,  }\item[{T $\ast$}]{ptr }\end{DoxyParamCaption})}
+
+
+
+在文件 Logging.\+h 第 148 行定义.
+
+
+
+参考 Logger\+::\+F\+A\+T\+AL , 以及 Logger\+::\+Logger().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{namespacemuduo_a4b813c501ed67387236a1291d1873ab5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_a4a5610d86660bbd28e059ebb1ffc8316}\label{namespacemuduo_a4a5610d86660bbd28e059ebb1ffc8316}} 
+\index{muduo@{muduo}!down\+\_\+cast@{down\+\_\+cast}}
+\index{down\+\_\+cast@{down\+\_\+cast}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{down\+\_\+cast()}{down\_cast()}}
+{\footnotesize\ttfamily To muduo\+::down\+\_\+cast (\begin{DoxyParamCaption}\item[{From $\ast$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Types.\+h 第 104 行定义.
+
+
+
+参考 implicit\+\_\+cast().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{namespacemuduo_a4a5610d86660bbd28e059ebb1ffc8316_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_a1836aa0a42711172d5598fbfda6fb588}\label{namespacemuduo_a1836aa0a42711172d5598fbfda6fb588}} 
+\index{muduo@{muduo}!down\+\_\+pointer\+\_\+cast@{down\+\_\+pointer\+\_\+cast}}
+\index{down\+\_\+pointer\+\_\+cast@{down\+\_\+pointer\+\_\+cast}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{down\+\_\+pointer\+\_\+cast()}{down\_pointer\_cast()}}
+{\footnotesize\ttfamily inline \+::std\+::shared\+\_\+ptr$<$To$>$ muduo\+::down\+\_\+pointer\+\_\+cast (\begin{DoxyParamCaption}\item[{const \+::std\+::shared\+\_\+ptr$<$ From $>$ \&}]{f }\end{DoxyParamCaption})}
+
+
+
+在文件 Callbacks.\+h 第 43 行定义.
+
+
+
+参考 get\+\_\+pointer() , 以及 implicit\+\_\+cast().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{namespacemuduo_a1836aa0a42711172d5598fbfda6fb588_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_a2ad8a8650556c05bae4c4f449ac6d106}\label{namespacemuduo_a2ad8a8650556c05bae4c4f449ac6d106}} 
+\index{muduo@{muduo}!format\+I\+EC@{format\+I\+EC}}
+\index{format\+I\+EC@{format\+I\+EC}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{format\+I\+E\+C()}{formatIEC()}}
+{\footnotesize\ttfamily string muduo\+::format\+I\+EC (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+
+
+参考自 operator$<$$<$().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_a2ad8a8650556c05bae4c4f449ac6d106_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_a2530c171cac6dda7399a9eb5805e01fa}\label{namespacemuduo_a2530c171cac6dda7399a9eb5805e01fa}} 
+\index{muduo@{muduo}!format\+SI@{format\+SI}}
+\index{format\+SI@{format\+SI}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{format\+S\+I()}{formatSI()}}
+{\footnotesize\ttfamily string muduo\+::format\+SI (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+
+
+参考自 operator$<$$<$().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_a2530c171cac6dda7399a9eb5805e01fa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_a98789775449e36c3c0c26004e19ef6bc}\label{namespacemuduo_a98789775449e36c3c0c26004e19ef6bc}} 
+\index{muduo@{muduo}!get\+\_\+pointer@{get\+\_\+pointer}}
+\index{get\+\_\+pointer@{get\+\_\+pointer}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{get\+\_\+pointer()}{get\_pointer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily T$\ast$ muduo\+::get\+\_\+pointer (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ T $>$ \&}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Callbacks.\+h 第 29 行定义.
+
+
+
+参考自 Tcp\+Connection\+::connect\+Destoryed(), down\+\_\+pointer\+\_\+cast(), Connector\+::remove\+And\+Reset\+Channel(), Tcp\+Server\+::start(), Tcp\+Client\+::\+Tcp\+Client() , 以及 Tcp\+Client\+::$\sim$\+Tcp\+Client().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_a98789775449e36c3c0c26004e19ef6bc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_aedcb2cb9b3d8f7bdfabeadec584a691c}\label{namespacemuduo_aedcb2cb9b3d8f7bdfabeadec584a691c}} 
+\index{muduo@{muduo}!get\+\_\+pointer@{get\+\_\+pointer}}
+\index{get\+\_\+pointer@{get\+\_\+pointer}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{get\+\_\+pointer()}{get\_pointer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily T$\ast$ muduo\+::get\+\_\+pointer (\begin{DoxyParamCaption}\item[{const std\+::unique\+\_\+ptr$<$ T $>$ \&}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Callbacks.\+h 第 35 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_a72cbcf425db108335295456e8ff9c12b}\label{namespacemuduo_a72cbcf425db108335295456e8ff9c12b}} 
+\index{muduo@{muduo}!implicit\+\_\+cast@{implicit\+\_\+cast}}
+\index{implicit\+\_\+cast@{implicit\+\_\+cast}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{implicit\+\_\+cast()}{implicit\_cast()}}
+{\footnotesize\ttfamily To muduo\+::implicit\+\_\+cast (\begin{DoxyParamCaption}\item[{From const \&}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Types.\+h 第 80 行定义.
+
+
+
+参考自 down\+\_\+cast() , 以及 down\+\_\+pointer\+\_\+cast().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{namespacemuduo_a72cbcf425db108335295456e8ff9c12b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_ae9dd2c7476408fd8f17491aff0d422f1}\label{namespacemuduo_ae9dd2c7476408fd8f17491aff0d422f1}} 
+\index{muduo@{muduo}!make\+Weak\+Callback@{make\+Weak\+Callback}}
+\index{make\+Weak\+Callback@{make\+Weak\+Callback}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{make\+Weak\+Callback()}{makeWeakCallback()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1WeakCallback}{Weak\+Callback}$<$ C\+L\+A\+SS, A\+R\+G\+S... $>$ make\+Weak\+Callback (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ C\+L\+A\+SS $>$ \&}]{object,  }\item[{void(C\+L\+A\+S\+S\+::$\ast$)(A\+R\+G\+S...)}]{function }\end{DoxyParamCaption})}
+
+
+
+在文件 Weak\+Callback.\+h 第 50 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_a8f6d784bddb9d3e0774a665b147758bc}\label{namespacemuduo_a8f6d784bddb9d3e0774a665b147758bc}} 
+\index{muduo@{muduo}!mem\+Zero@{mem\+Zero}}
+\index{mem\+Zero@{mem\+Zero}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{mem\+Zero()}{memZero()}}
+{\footnotesize\ttfamily void muduo\+::mem\+Zero (\begin{DoxyParamCaption}\item[{void $\ast$}]{p,  }\item[{size\+\_\+t}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Types.\+h 第 20 行定义.
+
+
+
+参考自 Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::bzero().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{namespacemuduo_a8f6d784bddb9d3e0774a665b147758bc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_a7cdae651f87c159c785591256d06740e}\label{namespacemuduo_a7cdae651f87c159c785591256d06740e}} 
+\index{muduo@{muduo}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool muduo\+::operator$<$ (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Timestamp}{Timestamp}}]{lhs,  }\item[{\hyperlink{classmuduo_1_1Timestamp}{Timestamp}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Timestamp.\+h 第 87 行定义.
+
+
+
+参考 Timestamp\+::micro\+Seconds\+Since\+Epoch().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_a7cdae651f87c159c785591256d06740e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_a16d6a8ea1b5e79c94c59f96137b8d26d}\label{namespacemuduo_a16d6a8ea1b5e79c94c59f96137b8d26d}} 
+\index{muduo@{muduo}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool muduo\+::operator$<$ (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Date}{Date}}]{x,  }\item[{\hyperlink{classmuduo_1_1Date}{Date}}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Date.\+h 第 107 行定义.
+
+
+
+参考 Date\+::julian\+Day\+Number().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_a16d6a8ea1b5e79c94c59f96137b8d26d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_a8306fbe1f821ddb82e4c161f936695b2}\label{namespacemuduo_a8306fbe1f821ddb82e4c161f936695b2}} 
+\index{muduo@{muduo}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1LogStream}{Log\+Stream}\& muduo\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1LogStream}{Log\+Stream} \&}]{s,  }\item[{const \hyperlink{classmuduo_1_1Fmt}{Fmt} \&}]{fmt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Log\+Stream.\+h 第 185 行定义.
+
+
+
+参考 Log\+Stream\+::append(), Fmt\+::data(), format\+I\+E\+C(), format\+S\+I() , 以及 Fmt\+::length().
+
+
+
+参考自 Log\+Stream\+::operator$<$$<$() , 以及 String\+Piece\+::starts\+\_\+with().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{namespacemuduo_a8306fbe1f821ddb82e4c161f936695b2_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_a8306fbe1f821ddb82e4c161f936695b2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_abf794c2f7edbea7af7ae48632eef1b84}\label{namespacemuduo_abf794c2f7edbea7af7ae48632eef1b84}} 
+\index{muduo@{muduo}!operator==@{operator==}}
+\index{operator==@{operator==}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool muduo\+::operator== (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Timestamp}{Timestamp}}]{lhs,  }\item[{\hyperlink{classmuduo_1_1Timestamp}{Timestamp}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Timestamp.\+h 第 92 行定义.
+
+
+
+参考 Timestamp\+::micro\+Seconds\+Since\+Epoch().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_abf794c2f7edbea7af7ae48632eef1b84_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_a0a048e90c15864ab82a55b148bebd144}\label{namespacemuduo_a0a048e90c15864ab82a55b148bebd144}} 
+\index{muduo@{muduo}!operator==@{operator==}}
+\index{operator==@{operator==}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool muduo\+::operator== (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Date}{Date}}]{x,  }\item[{\hyperlink{classmuduo_1_1Date}{Date}}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Date.\+h 第 112 行定义.
+
+
+
+参考 Date\+::julian\+Day\+Number().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_a0a048e90c15864ab82a55b148bebd144_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_a8c7278edf83f347bacf79e36689bf91c}\label{namespacemuduo_a8c7278edf83f347bacf79e36689bf91c}} 
+\index{muduo@{muduo}!strerror\+\_\+tl@{strerror\+\_\+tl}}
+\index{strerror\+\_\+tl@{strerror\+\_\+tl}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{strerror\+\_\+tl()}{strerror\_tl()}}
+{\footnotesize\ttfamily const char$\ast$ muduo\+::strerror\+\_\+tl (\begin{DoxyParamCaption}\item[{int}]{saved\+Errno }\end{DoxyParamCaption})}
+
+
+
+参考自 Connector\+::handle\+Error(), Tcp\+Connection\+::handle\+Error() , 以及 Connector\+::handle\+Write().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_a8c7278edf83f347bacf79e36689bf91c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_a6f7c17d86f2474f297b3b9e54b500907}\label{namespacemuduo_a6f7c17d86f2474f297b3b9e54b500907}} 
+\index{muduo@{muduo}!time\+Difference@{time\+Difference}}
+\index{time\+Difference@{time\+Difference}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{time\+Difference()}{timeDifference()}}
+{\footnotesize\ttfamily double muduo\+::time\+Difference (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Timestamp}{Timestamp}}]{high,  }\item[{\hyperlink{classmuduo_1_1Timestamp}{Timestamp}}]{low }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets time difference of two timestamps, result in seconds.
+
+
+\begin{DoxyParams}{参数}
+{\em high,low} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+(high-\/low) in seconds {\ttfamily double} has 52-\/bit precision, enough for one-\/microsecond resolution for next 100 years. 
+\end{DoxyReturn}
+
+
+在文件 Timestamp.\+h 第 104 行定义.
+
+
+
+参考 Timestamp\+::k\+Micro\+Seconds\+Per\+Second , 以及 Timestamp\+::micro\+Seconds\+Since\+Epoch().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_a6f7c17d86f2474f297b3b9e54b500907_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{变量说明}
+\mbox{\Hypertarget{namespacemuduo_ac758fb9f0d1703994b7e23772d09f183}\label{namespacemuduo_ac758fb9f0d1703994b7e23772d09f183}} 
+\index{muduo@{muduo}!g\+\_\+log\+Level@{g\+\_\+log\+Level}}
+\index{g\+\_\+log\+Level@{g\+\_\+log\+Level}!muduo@{muduo}}
+\subsubsection{\texorpdfstring{g\+\_\+log\+Level}{g\_logLevel}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9}{Logger\+::\+Log\+Level} g\+\_\+log\+Level}
+
+
+
+参考自 Logger\+::log\+Level().
+

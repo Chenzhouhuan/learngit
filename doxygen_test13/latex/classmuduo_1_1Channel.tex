@@ -1,0 +1,782 @@
+\hypertarget{classmuduo_1_1Channel}{}\section{Channel类 参考}
+\label{classmuduo_1_1Channel}\index{Channel@{Channel}}
+
+
+{\ttfamily \#include $<$Channel.\+h$>$}
+
+
+
+类 Channel 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classmuduo_1_1Channel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Channel 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmuduo_1_1Channel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::function$<$ void()$>$ \hyperlink{classmuduo_1_1Channel_aba4530f63bcce7091a51e66d01f4d2cb}{Event\+Callback}
+\item 
+typedef boost\+::function$<$ void(\hyperlink{classmuduo_1_1Timestamp}{Timestamp})$>$ \hyperlink{classmuduo_1_1Channel_a9523d5df2fdb848727cf98870dba0000}{Read\+Event\+Callback}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1Channel_a51d49371e765dcf30535b38b68bb80b6}{Channel} (\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$loop, int \hyperlink{classmuduo_1_1Channel_ace5c4071ee8893901bb818bbcab739b2}{fd})
+\item 
+\hyperlink{classmuduo_1_1Channel_aad279ec58dddf879ac20651fceffd4cf}{$\sim$\+Channel} ()
+\item 
+void \hyperlink{classmuduo_1_1Channel_a3574bf44b16f2a7e9a172972f5197310}{handl\+Event} (\hyperlink{classmuduo_1_1Timestamp}{Timestamp} receive\+Time)
+\item 
+void \hyperlink{classmuduo_1_1Channel_a98320338d5a728a36dd017a9c083c129}{set\+Read\+Callback} (const \hyperlink{classmuduo_1_1Channel_a9523d5df2fdb848727cf98870dba0000}{Read\+Event\+Callback} \&cb)
+\item 
+void \hyperlink{classmuduo_1_1Channel_a907650e3c5c90a771fd1f200aaa3ba8c}{set\+Write\+Callback} (const \hyperlink{classmuduo_1_1Channel_aba4530f63bcce7091a51e66d01f4d2cb}{Event\+Callback} \&cb)
+\item 
+void \hyperlink{classmuduo_1_1Channel_a79c694fa2b8948df095ae2978ed10cc8}{set\+Error\+Callback} (const \hyperlink{classmuduo_1_1Channel_aba4530f63bcce7091a51e66d01f4d2cb}{Event\+Callback} \&cb)
+\item 
+void \hyperlink{classmuduo_1_1Channel_af03f5a5224cce590883293ffdf9c88e8}{set\+Close\+Callback} (const \hyperlink{classmuduo_1_1Channel_aba4530f63bcce7091a51e66d01f4d2cb}{Event\+Callback} \&cb)
+\item 
+int \hyperlink{classmuduo_1_1Channel_ace5c4071ee8893901bb818bbcab739b2}{fd} () const
+\item 
+int \hyperlink{classmuduo_1_1Channel_ae4f693c8725a3c04d41dee8bb4266f7e}{events} () const
+\item 
+void \hyperlink{classmuduo_1_1Channel_ac155f87f8dc6f7bdf9559d4d2e5a9a4b}{set\+\_\+revents} (int revt)
+\item 
+bool \hyperlink{classmuduo_1_1Channel_af586af8cbcc49b563969f6c8356b3c9a}{is\+None\+Event} () const
+\item 
+void \hyperlink{classmuduo_1_1Channel_ad31f735a6d5ad83203d977ad8eafb223}{enable\+Reading} ()
+\item 
+void \hyperlink{classmuduo_1_1Channel_af1dff4317f202ed06097a1425a4dca6d}{enable\+Writing} ()
+\item 
+void \hyperlink{classmuduo_1_1Channel_a97cbc4c0678234e62a4a9d906e064cdf}{disable\+Writing} ()
+\item 
+void \hyperlink{classmuduo_1_1Channel_a238885c747f586049b766fa4fcd5ec12}{disable\+All} ()
+\item 
+bool \hyperlink{classmuduo_1_1Channel_a181a6a67a97d760db63a2c3294ed22e3}{is\+Writing} () const
+\item 
+int \hyperlink{classmuduo_1_1Channel_a019749328da42c4814af71d3e3b647ad}{index} ()
+\item 
+void \hyperlink{classmuduo_1_1Channel_ac9a4cd0efc3148a6fee45b2ab4f61cb6}{set\+\_\+index} (int idx)
+\item 
+\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$ \hyperlink{classmuduo_1_1Channel_a2e24e2ab7ada4682fdf49cc835d85e8d}{owner\+Loop} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmuduo_1_1Channel_ac5c54df7ed3b930268c8d7752c101725}{update} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$ \hyperlink{classmuduo_1_1Channel_a19968f50018d32ac31f5cba0195591ac}{loop\+\_\+}
+\item 
+const int \hyperlink{classmuduo_1_1Channel_a09562e53209b1f330f5139f6eccce269}{fd\+\_\+}
+\item 
+int \hyperlink{classmuduo_1_1Channel_a42e49f2f857ee5a1a8e3d7dead16e988}{events\+\_\+}
+\item 
+int \hyperlink{classmuduo_1_1Channel_a57a0ca4614e5a2696d0dc1ca7e6cc72d}{revents\+\_\+}
+\item 
+int \hyperlink{classmuduo_1_1Channel_aaaf1ac02dfa554a3cdffc647d512a77b}{index\+\_\+}
+\item 
+bool \hyperlink{classmuduo_1_1Channel_adde382716a55887e3b6e9cec9d615380}{event\+Handling\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1Channel_a9523d5df2fdb848727cf98870dba0000}{Read\+Event\+Callback} \hyperlink{classmuduo_1_1Channel_a48142903e7199fc704ef449f4a7c75ee}{read\+Callback\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1Channel_aba4530f63bcce7091a51e66d01f4d2cb}{Event\+Callback} \hyperlink{classmuduo_1_1Channel_a1d5ee91b83f4499ea0a52c5491113169}{write\+Callback\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1Channel_aba4530f63bcce7091a51e66d01f4d2cb}{Event\+Callback} \hyperlink{classmuduo_1_1Channel_a8790ab985c8b1ca29f4eed435635b4b0}{error\+Callback\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1Channel_aba4530f63bcce7091a51e66d01f4d2cb}{Event\+Callback} \hyperlink{classmuduo_1_1Channel_a97e25dcb601312c3c9b94e4cfa56865c}{close\+Callback\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{classmuduo_1_1Channel_a7873ae2887674cb643986d9f04745444}{k\+None\+Event} = 0
+\item 
+static const int \hyperlink{classmuduo_1_1Channel_a7a33491041233f79f0686805e1844694}{k\+Read\+Event} = P\+O\+L\+L\+IN $\vert$ P\+O\+L\+L\+P\+RI
+\item 
+static const int \hyperlink{classmuduo_1_1Channel_a050e3f1da6130199bfa2619a60e43f3b}{k\+Write\+Event} = P\+O\+L\+L\+O\+UT
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 Channel.\+h 第 13 行定义.
+
+
+
+\subsection{成员类型定义说明}
+\mbox{\Hypertarget{classmuduo_1_1Channel_aba4530f63bcce7091a51e66d01f4d2cb}\label{classmuduo_1_1Channel_aba4530f63bcce7091a51e66d01f4d2cb}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!Event\+Callback@{Event\+Callback}}
+\index{Event\+Callback@{Event\+Callback}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{Event\+Callback}{EventCallback}}
+{\footnotesize\ttfamily typedef boost\+::function$<$void()$>$ \hyperlink{classmuduo_1_1Channel_aba4530f63bcce7091a51e66d01f4d2cb}{Event\+Callback}}
+
+
+
+在文件 Channel.\+h 第 15 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1Channel_a9523d5df2fdb848727cf98870dba0000}\label{classmuduo_1_1Channel_a9523d5df2fdb848727cf98870dba0000}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!Read\+Event\+Callback@{Read\+Event\+Callback}}
+\index{Read\+Event\+Callback@{Read\+Event\+Callback}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{Read\+Event\+Callback}{ReadEventCallback}}
+{\footnotesize\ttfamily typedef boost\+::function$<$void(\hyperlink{classmuduo_1_1Timestamp}{Timestamp})$>$ \hyperlink{classmuduo_1_1Channel_a9523d5df2fdb848727cf98870dba0000}{Read\+Event\+Callback}}
+
+
+
+在文件 Channel.\+h 第 16 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Channel_a51d49371e765dcf30535b38b68bb80b6}\label{classmuduo_1_1Channel_a51d49371e765dcf30535b38b68bb80b6}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!Channel@{Channel}}
+\index{Channel@{Channel}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{Channel()}{Channel()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Channel}{Channel} (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$}]{loop,  }\item[{int}]{fd }\end{DoxyParamCaption})}
+
+
+
+在文件 Channel.\+cc 第 15 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1Channel_aad279ec58dddf879ac20651fceffd4cf}\label{classmuduo_1_1Channel_aad279ec58dddf879ac20651fceffd4cf}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!````~Channel@{$\sim$\+Channel}}
+\index{````~Channel@{$\sim$\+Channel}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{$\sim$\+Channel()}{~Channel()}}
+{\footnotesize\ttfamily $\sim$\hyperlink{classmuduo_1_1Channel}{Channel} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 Channel.\+cc 第 23 行定义.
+
+
+
+参考 Channel\+::event\+Handling\+\_\+.
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Channel_a238885c747f586049b766fa4fcd5ec12}\label{classmuduo_1_1Channel_a238885c747f586049b766fa4fcd5ec12}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!disable\+All@{disable\+All}}
+\index{disable\+All@{disable\+All}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{disable\+All()}{disableAll()}}
+{\footnotesize\ttfamily void disable\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Channel.\+h 第 35 行定义.
+
+
+
+参考 Channel\+::events\+\_\+, Channel\+::k\+None\+Event , 以及 Channel\+::update().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Channel_a238885c747f586049b766fa4fcd5ec12_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Channel_a97cbc4c0678234e62a4a9d906e064cdf}\label{classmuduo_1_1Channel_a97cbc4c0678234e62a4a9d906e064cdf}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!disable\+Writing@{disable\+Writing}}
+\index{disable\+Writing@{disable\+Writing}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{disable\+Writing()}{disableWriting()}}
+{\footnotesize\ttfamily void disable\+Writing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Channel.\+h 第 34 行定义.
+
+
+
+参考 Channel\+::events\+\_\+, Channel\+::k\+Write\+Event , 以及 Channel\+::update().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Channel_a97cbc4c0678234e62a4a9d906e064cdf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Channel_ad31f735a6d5ad83203d977ad8eafb223}\label{classmuduo_1_1Channel_ad31f735a6d5ad83203d977ad8eafb223}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!enable\+Reading@{enable\+Reading}}
+\index{enable\+Reading@{enable\+Reading}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{enable\+Reading()}{enableReading()}}
+{\footnotesize\ttfamily void enable\+Reading (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Channel.\+h 第 32 行定义.
+
+
+
+参考 Channel\+::events\+\_\+, Channel\+::k\+Read\+Event , 以及 Channel\+::update().
+
+
+
+参考自 Acceptor\+::listen() , 以及 Timer\+Queue\+::\+Timer\+Queue().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Channel_ad31f735a6d5ad83203d977ad8eafb223_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Channel_ad31f735a6d5ad83203d977ad8eafb223_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Channel_af1dff4317f202ed06097a1425a4dca6d}\label{classmuduo_1_1Channel_af1dff4317f202ed06097a1425a4dca6d}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!enable\+Writing@{enable\+Writing}}
+\index{enable\+Writing@{enable\+Writing}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{enable\+Writing()}{enableWriting()}}
+{\footnotesize\ttfamily void enable\+Writing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Channel.\+h 第 33 行定义.
+
+
+
+参考 Channel\+::events\+\_\+, Channel\+::k\+Write\+Event , 以及 Channel\+::update().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Channel_af1dff4317f202ed06097a1425a4dca6d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Channel_ae4f693c8725a3c04d41dee8bb4266f7e}\label{classmuduo_1_1Channel_ae4f693c8725a3c04d41dee8bb4266f7e}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!events@{events}}
+\index{events@{events}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{events()}{events()}}
+{\footnotesize\ttfamily int events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Channel.\+h 第 28 行定义.
+
+
+
+参考 Channel\+::events\+\_\+.
+
+
+
+参考自 Poller\+::remove\+Channel(), E\+Poller\+::update(), Poller\+::update\+Channel() , 以及 E\+Poller\+::update\+Channel().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Channel_ae4f693c8725a3c04d41dee8bb4266f7e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Channel_ace5c4071ee8893901bb818bbcab739b2}\label{classmuduo_1_1Channel_ace5c4071ee8893901bb818bbcab739b2}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!fd@{fd}}
+\index{fd@{fd}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{fd()}{fd()}}
+{\footnotesize\ttfamily int fd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Channel.\+h 第 27 行定义.
+
+
+
+参考 Channel\+::fd\+\_\+.
+
+
+
+参考自 E\+Poller\+::fill\+Active\+Channels(), Poller\+::remove\+Channel(), E\+Poller\+::remove\+Channel(), E\+Poller\+::update(), Poller\+::update\+Channel() , 以及 E\+Poller\+::update\+Channel().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Channel_ace5c4071ee8893901bb818bbcab739b2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Channel_a3574bf44b16f2a7e9a172972f5197310}\label{classmuduo_1_1Channel_a3574bf44b16f2a7e9a172972f5197310}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!handl\+Event@{handl\+Event}}
+\index{handl\+Event@{handl\+Event}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{handl\+Event()}{handlEvent()}}
+{\footnotesize\ttfamily void handl\+Event (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Timestamp}{Timestamp}}]{receive\+Time }\end{DoxyParamCaption})}
+
+
+
+在文件 Channel.\+cc 第 32 行定义.
+
+
+
+参考 Channel\+::close\+Callback\+\_\+, Channel\+::error\+Callback\+\_\+, Channel\+::event\+Handling\+\_\+, L\+O\+G\+\_\+\+W\+A\+RN, Channel\+::read\+Callback\+\_\+, Channel\+::revents\+\_\+ , 以及 Channel\+::write\+Callback\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1Channel_a019749328da42c4814af71d3e3b647ad}\label{classmuduo_1_1Channel_a019749328da42c4814af71d3e3b647ad}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!index@{index}}
+\index{index@{index}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{index()}{index()}}
+{\footnotesize\ttfamily int index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Channel.\+h 第 39 行定义.
+
+
+
+参考 Channel\+::index\+\_\+.
+
+
+
+参考自 Poller\+::remove\+Channel(), E\+Poller\+::remove\+Channel(), Poller\+::update\+Channel() , 以及 E\+Poller\+::update\+Channel().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classmuduo_1_1Channel_a019749328da42c4814af71d3e3b647ad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Channel_af586af8cbcc49b563969f6c8356b3c9a}\label{classmuduo_1_1Channel_af586af8cbcc49b563969f6c8356b3c9a}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!is\+None\+Event@{is\+None\+Event}}
+\index{is\+None\+Event@{is\+None\+Event}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{is\+None\+Event()}{isNoneEvent()}}
+{\footnotesize\ttfamily bool is\+None\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Channel.\+h 第 30 行定义.
+
+
+
+参考 Channel\+::events\+\_\+ , 以及 Channel\+::k\+None\+Event.
+
+
+
+参考自 Poller\+::remove\+Channel(), E\+Poller\+::remove\+Channel(), Poller\+::update\+Channel() , 以及 E\+Poller\+::update\+Channel().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Channel_af586af8cbcc49b563969f6c8356b3c9a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Channel_a181a6a67a97d760db63a2c3294ed22e3}\label{classmuduo_1_1Channel_a181a6a67a97d760db63a2c3294ed22e3}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!is\+Writing@{is\+Writing}}
+\index{is\+Writing@{is\+Writing}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{is\+Writing()}{isWriting()}}
+{\footnotesize\ttfamily bool is\+Writing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Channel.\+h 第 36 行定义.
+
+
+
+参考 Channel\+::events\+\_\+ , 以及 Channel\+::k\+Write\+Event.
+
+\mbox{\Hypertarget{classmuduo_1_1Channel_a2e24e2ab7ada4682fdf49cc835d85e8d}\label{classmuduo_1_1Channel_a2e24e2ab7ada4682fdf49cc835d85e8d}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!owner\+Loop@{owner\+Loop}}
+\index{owner\+Loop@{owner\+Loop}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{owner\+Loop()}{ownerLoop()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1EventLoop}{Event\+Loop}$\ast$ owner\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Channel.\+h 第 42 行定义.
+
+
+
+参考 Channel\+::loop\+\_\+ , 以及 Channel\+::update().
+
+
+
+参考自 Event\+Loop\+::remove\+Channel() , 以及 Event\+Loop\+::update\+Channel().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Channel_a2e24e2ab7ada4682fdf49cc835d85e8d_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Channel_a2e24e2ab7ada4682fdf49cc835d85e8d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Channel_ac9a4cd0efc3148a6fee45b2ab4f61cb6}\label{classmuduo_1_1Channel_ac9a4cd0efc3148a6fee45b2ab4f61cb6}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!set\+\_\+index@{set\+\_\+index}}
+\index{set\+\_\+index@{set\+\_\+index}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{set\+\_\+index()}{set\_index()}}
+{\footnotesize\ttfamily void set\+\_\+index (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Channel.\+h 第 40 行定义.
+
+
+
+参考 Channel\+::index\+\_\+.
+
+
+
+参考自 E\+Poller\+::remove\+Channel(), Poller\+::update\+Channel() , 以及 E\+Poller\+::update\+Channel().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Channel_ac9a4cd0efc3148a6fee45b2ab4f61cb6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Channel_ac155f87f8dc6f7bdf9559d4d2e5a9a4b}\label{classmuduo_1_1Channel_ac155f87f8dc6f7bdf9559d4d2e5a9a4b}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!set\+\_\+revents@{set\+\_\+revents}}
+\index{set\+\_\+revents@{set\+\_\+revents}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{set\+\_\+revents()}{set\_revents()}}
+{\footnotesize\ttfamily void set\+\_\+revents (\begin{DoxyParamCaption}\item[{int}]{revt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Channel.\+h 第 29 行定义.
+
+
+
+参考 Channel\+::revents\+\_\+.
+
+
+
+参考自 Poller\+::fill\+Active\+Channels() , 以及 E\+Poller\+::fill\+Active\+Channels().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Channel_ac155f87f8dc6f7bdf9559d4d2e5a9a4b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Channel_af03f5a5224cce590883293ffdf9c88e8}\label{classmuduo_1_1Channel_af03f5a5224cce590883293ffdf9c88e8}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!set\+Close\+Callback@{set\+Close\+Callback}}
+\index{set\+Close\+Callback@{set\+Close\+Callback}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{set\+Close\+Callback()}{setCloseCallback()}}
+{\footnotesize\ttfamily void set\+Close\+Callback (\begin{DoxyParamCaption}\item[{const \hyperlink{classmuduo_1_1Channel_aba4530f63bcce7091a51e66d01f4d2cb}{Event\+Callback} \&}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Channel.\+h 第 25 行定义.
+
+
+
+参考 Channel\+::close\+Callback\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1Channel_a79c694fa2b8948df095ae2978ed10cc8}\label{classmuduo_1_1Channel_a79c694fa2b8948df095ae2978ed10cc8}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!set\+Error\+Callback@{set\+Error\+Callback}}
+\index{set\+Error\+Callback@{set\+Error\+Callback}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{set\+Error\+Callback()}{setErrorCallback()}}
+{\footnotesize\ttfamily void set\+Error\+Callback (\begin{DoxyParamCaption}\item[{const \hyperlink{classmuduo_1_1Channel_aba4530f63bcce7091a51e66d01f4d2cb}{Event\+Callback} \&}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Channel.\+h 第 24 行定义.
+
+
+
+参考 Channel\+::error\+Callback\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1Channel_a98320338d5a728a36dd017a9c083c129}\label{classmuduo_1_1Channel_a98320338d5a728a36dd017a9c083c129}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!set\+Read\+Callback@{set\+Read\+Callback}}
+\index{set\+Read\+Callback@{set\+Read\+Callback}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{set\+Read\+Callback()}{setReadCallback()}}
+{\footnotesize\ttfamily void set\+Read\+Callback (\begin{DoxyParamCaption}\item[{const \hyperlink{classmuduo_1_1Channel_a9523d5df2fdb848727cf98870dba0000}{Read\+Event\+Callback} \&}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Channel.\+h 第 22 行定义.
+
+
+
+参考 Channel\+::read\+Callback\+\_\+.
+
+
+
+参考自 Acceptor\+::\+Acceptor() , 以及 Timer\+Queue\+::\+Timer\+Queue().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Channel_a98320338d5a728a36dd017a9c083c129_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Channel_a907650e3c5c90a771fd1f200aaa3ba8c}\label{classmuduo_1_1Channel_a907650e3c5c90a771fd1f200aaa3ba8c}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!set\+Write\+Callback@{set\+Write\+Callback}}
+\index{set\+Write\+Callback@{set\+Write\+Callback}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{set\+Write\+Callback()}{setWriteCallback()}}
+{\footnotesize\ttfamily void set\+Write\+Callback (\begin{DoxyParamCaption}\item[{const \hyperlink{classmuduo_1_1Channel_aba4530f63bcce7091a51e66d01f4d2cb}{Event\+Callback} \&}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Channel.\+h 第 23 行定义.
+
+
+
+参考 Channel\+::write\+Callback\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1Channel_ac5c54df7ed3b930268c8d7752c101725}\label{classmuduo_1_1Channel_ac5c54df7ed3b930268c8d7752c101725}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!update@{update}}
+\index{update@{update}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Channel.\+cc 第 28 行定义.
+
+
+
+参考 Channel\+::loop\+\_\+ , 以及 Event\+Loop\+::update\+Channel().
+
+
+
+参考自 Channel\+::disable\+All(), Channel\+::disable\+Writing(), Channel\+::enable\+Reading(), Channel\+::enable\+Writing() , 以及 Channel\+::owner\+Loop().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Channel_ac5c54df7ed3b930268c8d7752c101725_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Channel_ac5c54df7ed3b930268c8d7752c101725_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1Channel_a97e25dcb601312c3c9b94e4cfa56865c}\label{classmuduo_1_1Channel_a97e25dcb601312c3c9b94e4cfa56865c}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!close\+Callback\+\_\+@{close\+Callback\+\_\+}}
+\index{close\+Callback\+\_\+@{close\+Callback\+\_\+}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{close\+Callback\+\_\+}{closeCallback\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Channel_aba4530f63bcce7091a51e66d01f4d2cb}{Event\+Callback} close\+Callback\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Channel.\+h 第 61 行定义.
+
+
+
+参考自 Channel\+::handl\+Event() , 以及 Channel\+::set\+Close\+Callback().
+
+\mbox{\Hypertarget{classmuduo_1_1Channel_a8790ab985c8b1ca29f4eed435635b4b0}\label{classmuduo_1_1Channel_a8790ab985c8b1ca29f4eed435635b4b0}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!error\+Callback\+\_\+@{error\+Callback\+\_\+}}
+\index{error\+Callback\+\_\+@{error\+Callback\+\_\+}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{error\+Callback\+\_\+}{errorCallback\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Channel_aba4530f63bcce7091a51e66d01f4d2cb}{Event\+Callback} error\+Callback\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Channel.\+h 第 60 行定义.
+
+
+
+参考自 Channel\+::handl\+Event() , 以及 Channel\+::set\+Error\+Callback().
+
+\mbox{\Hypertarget{classmuduo_1_1Channel_adde382716a55887e3b6e9cec9d615380}\label{classmuduo_1_1Channel_adde382716a55887e3b6e9cec9d615380}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!event\+Handling\+\_\+@{event\+Handling\+\_\+}}
+\index{event\+Handling\+\_\+@{event\+Handling\+\_\+}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{event\+Handling\+\_\+}{eventHandling\_}}
+{\footnotesize\ttfamily bool event\+Handling\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Channel.\+h 第 56 行定义.
+
+
+
+参考自 Channel\+::handl\+Event() , 以及 Channel\+::$\sim$\+Channel().
+
+\mbox{\Hypertarget{classmuduo_1_1Channel_a42e49f2f857ee5a1a8e3d7dead16e988}\label{classmuduo_1_1Channel_a42e49f2f857ee5a1a8e3d7dead16e988}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!events\+\_\+@{events\+\_\+}}
+\index{events\+\_\+@{events\+\_\+}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{events\+\_\+}{events\_}}
+{\footnotesize\ttfamily int events\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Channel.\+h 第 52 行定义.
+
+
+
+参考自 Channel\+::disable\+All(), Channel\+::disable\+Writing(), Channel\+::enable\+Reading(), Channel\+::enable\+Writing(), Channel\+::events(), Channel\+::is\+None\+Event() , 以及 Channel\+::is\+Writing().
+
+\mbox{\Hypertarget{classmuduo_1_1Channel_a09562e53209b1f330f5139f6eccce269}\label{classmuduo_1_1Channel_a09562e53209b1f330f5139f6eccce269}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!fd\+\_\+@{fd\+\_\+}}
+\index{fd\+\_\+@{fd\+\_\+}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{fd\+\_\+}{fd\_}}
+{\footnotesize\ttfamily const int fd\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Channel.\+h 第 51 行定义.
+
+
+
+参考自 Channel\+::fd().
+
+\mbox{\Hypertarget{classmuduo_1_1Channel_aaaf1ac02dfa554a3cdffc647d512a77b}\label{classmuduo_1_1Channel_aaaf1ac02dfa554a3cdffc647d512a77b}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!index\+\_\+@{index\+\_\+}}
+\index{index\+\_\+@{index\+\_\+}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{index\+\_\+}{index\_}}
+{\footnotesize\ttfamily int index\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Channel.\+h 第 54 行定义.
+
+
+
+参考自 Channel\+::index() , 以及 Channel\+::set\+\_\+index().
+
+\mbox{\Hypertarget{classmuduo_1_1Channel_a7873ae2887674cb643986d9f04745444}\label{classmuduo_1_1Channel_a7873ae2887674cb643986d9f04745444}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!k\+None\+Event@{k\+None\+Event}}
+\index{k\+None\+Event@{k\+None\+Event}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{k\+None\+Event}{kNoneEvent}}
+{\footnotesize\ttfamily const int k\+None\+Event = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 Channel.\+h 第 46 行定义.
+
+
+
+参考自 Channel\+::disable\+All() , 以及 Channel\+::is\+None\+Event().
+
+\mbox{\Hypertarget{classmuduo_1_1Channel_a7a33491041233f79f0686805e1844694}\label{classmuduo_1_1Channel_a7a33491041233f79f0686805e1844694}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!k\+Read\+Event@{k\+Read\+Event}}
+\index{k\+Read\+Event@{k\+Read\+Event}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{k\+Read\+Event}{kReadEvent}}
+{\footnotesize\ttfamily const int k\+Read\+Event = P\+O\+L\+L\+IN $\vert$ P\+O\+L\+L\+P\+RI\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 Channel.\+h 第 47 行定义.
+
+
+
+参考自 Channel\+::enable\+Reading().
+
+\mbox{\Hypertarget{classmuduo_1_1Channel_a050e3f1da6130199bfa2619a60e43f3b}\label{classmuduo_1_1Channel_a050e3f1da6130199bfa2619a60e43f3b}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!k\+Write\+Event@{k\+Write\+Event}}
+\index{k\+Write\+Event@{k\+Write\+Event}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{k\+Write\+Event}{kWriteEvent}}
+{\footnotesize\ttfamily const int k\+Write\+Event = P\+O\+L\+L\+O\+UT\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 Channel.\+h 第 48 行定义.
+
+
+
+参考自 Channel\+::disable\+Writing(), Channel\+::enable\+Writing() , 以及 Channel\+::is\+Writing().
+
+\mbox{\Hypertarget{classmuduo_1_1Channel_a19968f50018d32ac31f5cba0195591ac}\label{classmuduo_1_1Channel_a19968f50018d32ac31f5cba0195591ac}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!loop\+\_\+@{loop\+\_\+}}
+\index{loop\+\_\+@{loop\+\_\+}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{loop\+\_\+}{loop\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1EventLoop}{Event\+Loop}$\ast$ loop\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Channel.\+h 第 50 行定义.
+
+
+
+参考自 Channel\+::owner\+Loop() , 以及 Channel\+::update().
+
+\mbox{\Hypertarget{classmuduo_1_1Channel_a48142903e7199fc704ef449f4a7c75ee}\label{classmuduo_1_1Channel_a48142903e7199fc704ef449f4a7c75ee}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!read\+Callback\+\_\+@{read\+Callback\+\_\+}}
+\index{read\+Callback\+\_\+@{read\+Callback\+\_\+}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{read\+Callback\+\_\+}{readCallback\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Channel_a9523d5df2fdb848727cf98870dba0000}{Read\+Event\+Callback} read\+Callback\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Channel.\+h 第 58 行定义.
+
+
+
+参考自 Channel\+::handl\+Event() , 以及 Channel\+::set\+Read\+Callback().
+
+\mbox{\Hypertarget{classmuduo_1_1Channel_a57a0ca4614e5a2696d0dc1ca7e6cc72d}\label{classmuduo_1_1Channel_a57a0ca4614e5a2696d0dc1ca7e6cc72d}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!revents\+\_\+@{revents\+\_\+}}
+\index{revents\+\_\+@{revents\+\_\+}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{revents\+\_\+}{revents\_}}
+{\footnotesize\ttfamily int revents\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Channel.\+h 第 53 行定义.
+
+
+
+参考自 Channel\+::handl\+Event() , 以及 Channel\+::set\+\_\+revents().
+
+\mbox{\Hypertarget{classmuduo_1_1Channel_a1d5ee91b83f4499ea0a52c5491113169}\label{classmuduo_1_1Channel_a1d5ee91b83f4499ea0a52c5491113169}} 
+\index{muduo\+::\+Channel@{muduo\+::\+Channel}!write\+Callback\+\_\+@{write\+Callback\+\_\+}}
+\index{write\+Callback\+\_\+@{write\+Callback\+\_\+}!muduo\+::\+Channel@{muduo\+::\+Channel}}
+\subsubsection{\texorpdfstring{write\+Callback\+\_\+}{writeCallback\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Channel_aba4530f63bcce7091a51e66d01f4d2cb}{Event\+Callback} write\+Callback\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Channel.\+h 第 59 行定义.
+
+
+
+参考自 Channel\+::handl\+Event() , 以及 Channel\+::set\+Write\+Callback().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{Channel_8h}{Channel.\+h}\item 
+src/\hyperlink{Channel_8cc}{Channel.\+cc}\end{DoxyCompactItemize}

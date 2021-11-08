@@ -1,0 +1,5 @@
+<map id="bindAddress" name="bindAddress">
+<area shape="rect" id="node2" href="$namespacemuduo_1_1sockets.html#a8fe4065cd24e49e158dd1c16cd693ae1" title="muduo::sockets::bindOrDie" alt="" coords="156,13,355,39"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1InetAddress.html#a1878fa474832ba9fa73958124c0404cc" title="muduo::InetAddress\l::getSockAddrInet" alt="" coords="179,64,331,105"/>
+<area shape="rect" id="node3" href="$namespacemuduo_1_1net_1_1sockets.html#ad69bf980a58ef6798c4e1dbe5497d52c" title="muduo::net::sockets\l::sockaddr_cast" alt="" coords="403,5,557,47"/>
+</map>

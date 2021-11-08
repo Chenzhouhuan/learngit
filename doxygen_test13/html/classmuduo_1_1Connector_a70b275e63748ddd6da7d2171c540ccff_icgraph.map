@@ -1,0 +1,11 @@
+<map id="handleError" name="handleError">
+<area shape="rect" id="node2" href="$classmuduo_1_1Connector.html#a2e3471f37486a133ee848ea72ed7efc2" title="connecting" alt="" coords="151,271,244,297"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1Connector.html#ab987a8e9ac6b0ad825674ec2131921af" title="setState" alt="" coords="556,157,632,184"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1Connector.html#a1396bf9b5defe9fa844a63b5cd40ac0e" title="connect" alt="" coords="292,183,365,209"/>
+<area shape="rect" id="node9" href="$classmuduo_1_1Connector.html#ad289b54db652dcb10f835f3613e68fdb" title="startInLoop" alt="" coords="413,56,508,83"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1Connector.html#a22ee094ca3f45aa4156b97d34fe678bf" title="restart" alt="" coords="680,56,745,83"/>
+<area shape="rect" id="node7" href="$classmuduo_1_1Connector.html#ae1d79ff6580eaced59a900144818150d" title="handleWrite" alt="" coords="843,181,943,208"/>
+<area shape="rect" id="node8" href="$classmuduo_1_1Connector.html#a6a23d487c31355d8663ccdd4cbf4f499" title="retry" alt="" coords="686,213,739,240"/>
+<area shape="rect" id="node6" href="$classmuduo_1_1Connector.html#a30908d8d30b5333e6288a7430d598cb1" title="setNewConnectionCallback" alt="" coords="793,31,993,57"/>
+<area shape="rect" id="node10" href="$classmuduo_1_1Connector.html#a60de64d75454385b23995437f1d72669" title="start" alt="" coords="568,5,620,32"/>
+</map>

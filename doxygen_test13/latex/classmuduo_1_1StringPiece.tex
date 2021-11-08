@@ -1,0 +1,427 @@
+\hypertarget{classmuduo_1_1StringPiece}{}\section{String\+Piece类 参考}
+\label{classmuduo_1_1StringPiece}\index{String\+Piece@{String\+Piece}}
+
+
+{\ttfamily \#include $<$String\+Piece.\+h$>$}
+
+
+
+String\+Piece 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{classmuduo_1_1StringPiece__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1StringPiece_a4c296db5c55ee41bd29ab2d1af87f3dd}{String\+Piece} ()
+\item 
+\hyperlink{classmuduo_1_1StringPiece_ad5ac9c67dc87039531a4d958350add7b}{String\+Piece} (const char $\ast$str)
+\item 
+\hyperlink{classmuduo_1_1StringPiece_ae62926b7fc38fa0ea85a3a6554b21f61}{String\+Piece} (const unsigned char $\ast$str)
+\item 
+\hyperlink{classmuduo_1_1StringPiece_a7ed4b9eef78ac4a2a760ff93502d807d}{String\+Piece} (const string \&str)
+\item 
+\hyperlink{classmuduo_1_1StringPiece_a49a39734f89dcd6a9e6d5b6698704013}{String\+Piece} (const char $\ast$offset, int len)
+\item 
+const char $\ast$ \hyperlink{classmuduo_1_1StringPiece_a39a256207a84f316547e36c755373d03}{data} () const
+\item 
+int \hyperlink{classmuduo_1_1StringPiece_af9593d4a5ff4274efaf429cb4f9e57cc}{size} () const
+\item 
+bool \hyperlink{classmuduo_1_1StringPiece_a644718bb2fb240de962dc3c9a1fdf0dc}{empty} () const
+\item 
+const char $\ast$ \hyperlink{classmuduo_1_1StringPiece_a5386e98f71cb440232f0c41041f50af4}{begin} () const
+\item 
+const char $\ast$ \hyperlink{classmuduo_1_1StringPiece_a8f7e2912f169cf1aa7eeaec74b5fd151}{end} () const
+\item 
+void \hyperlink{classmuduo_1_1StringPiece_ac8bb3912a3ce86b15842e79d0b421204}{clear} ()
+\item 
+void \hyperlink{classmuduo_1_1StringPiece_a1f0ee9dccfd3553dffa874b3bc701fb3}{set} (const char $\ast$buffer, int len)
+\item 
+void \hyperlink{classmuduo_1_1StringPiece_a2d1485d6ad21670a4092ad4ddb532daa}{set} (const char $\ast$str)
+\item 
+void \hyperlink{classmuduo_1_1StringPiece_a77360c2ea2a40be8ac0e1c1db34b9f2a}{set} (const void $\ast$buffer, int len)
+\item 
+char \hyperlink{classmuduo_1_1StringPiece_a142e70c83cd0bd7a84011867711b4cb5}{operator\mbox{[}$\,$\mbox{]}} (int i) const
+\item 
+void \hyperlink{classmuduo_1_1StringPiece_a59ea335a45cf183fb65e28ed434cad10}{remove\+\_\+prefix} (int n)
+\item 
+void \hyperlink{classmuduo_1_1StringPiece_a63be252f1ef4e181e3f878ed0c178311}{remove\+\_\+suffix} (int n)
+\item 
+bool \hyperlink{classmuduo_1_1StringPiece_a920993bb85cf3c1fc3aedf6a1e8bf691}{operator==} (const \hyperlink{classmuduo_1_1StringPiece}{String\+Piece} \&x) const
+\item 
+bool \hyperlink{classmuduo_1_1StringPiece_a47eee77c6839712b69d886de179036c0}{operator!=} (const \hyperlink{classmuduo_1_1StringPiece}{String\+Piece} \&x) const
+\item 
+\hyperlink{classmuduo_1_1StringPiece_a3a9b0c7ca5a3f9c77e09cf2e9304b30e}{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE} ($<$,$<$)
+\item 
+\hyperlink{classmuduo_1_1StringPiece_a5a100b406673db090479c909f3f68ca8}{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE} ($<$=,$<$)
+\item 
+\hyperlink{classmuduo_1_1StringPiece_ab5fd7ad677a84e93b3c6001ce4521871}{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE} ($>$=, $>$)
+\item 
+\hyperlink{classmuduo_1_1StringPiece_a4a553a89f26aef85bcfaa6658b5640fe}{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE} ($>$, $>$)
+\item 
+int \hyperlink{classmuduo_1_1StringPiece_adc02cf8460f87c412a490f0f7fce3b8e}{compare} (const \hyperlink{classmuduo_1_1StringPiece}{String\+Piece} \&x) const
+\item 
+string \hyperlink{classmuduo_1_1StringPiece_a53670f3465c15e32425fd9180b53e962}{as\+\_\+string} () const
+\item 
+void \hyperlink{classmuduo_1_1StringPiece_ae87831fc542134c6bb04004740658a15}{Copy\+To\+String} (string $\ast$target) const
+\item 
+bool \hyperlink{classmuduo_1_1StringPiece_a02b5196f9bd404fb9d8f60121c770114}{starts\+\_\+with} (const \hyperlink{classmuduo_1_1StringPiece}{String\+Piece} \&x) const
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{classmuduo_1_1StringPiece_a3562ccc1fbaeaf1cb0f2892aa2f299b9}{ptr\+\_\+}
+\item 
+int \hyperlink{classmuduo_1_1StringPiece_a4bac9b810d0cf891c8fcbc974e989739}{length\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 String\+Piece.\+h 第 69 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a4c296db5c55ee41bd29ab2d1af87f3dd}\label{classmuduo_1_1StringPiece_a4c296db5c55ee41bd29ab2d1af87f3dd}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!String\+Piece@{String\+Piece}}
+\index{String\+Piece@{String\+Piece}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{String\+Piece()}{StringPiece()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1StringPiece}{String\+Piece} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 78 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_ad5ac9c67dc87039531a4d958350add7b}\label{classmuduo_1_1StringPiece_ad5ac9c67dc87039531a4d958350add7b}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!String\+Piece@{String\+Piece}}
+\index{String\+Piece@{String\+Piece}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{String\+Piece()}{StringPiece()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1StringPiece}{String\+Piece} (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 80 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_ae62926b7fc38fa0ea85a3a6554b21f61}\label{classmuduo_1_1StringPiece_ae62926b7fc38fa0ea85a3a6554b21f61}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!String\+Piece@{String\+Piece}}
+\index{String\+Piece@{String\+Piece}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{String\+Piece()}{StringPiece()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1StringPiece}{String\+Piece} (\begin{DoxyParamCaption}\item[{const unsigned char $\ast$}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 82 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a7ed4b9eef78ac4a2a760ff93502d807d}\label{classmuduo_1_1StringPiece_a7ed4b9eef78ac4a2a760ff93502d807d}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!String\+Piece@{String\+Piece}}
+\index{String\+Piece@{String\+Piece}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{String\+Piece()}{StringPiece()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1StringPiece}{String\+Piece} (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 85 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a49a39734f89dcd6a9e6d5b6698704013}\label{classmuduo_1_1StringPiece_a49a39734f89dcd6a9e6d5b6698704013}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!String\+Piece@{String\+Piece}}
+\index{String\+Piece@{String\+Piece}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{String\+Piece()}{StringPiece()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1StringPiece}{String\+Piece} (\begin{DoxyParamCaption}\item[{const char $\ast$}]{offset,  }\item[{int}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 87 行定义.
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a53670f3465c15e32425fd9180b53e962}\label{classmuduo_1_1StringPiece_a53670f3465c15e32425fd9180b53e962}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!as\+\_\+string@{as\+\_\+string}}
+\index{as\+\_\+string@{as\+\_\+string}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{as\+\_\+string()}{as\_string()}}
+{\footnotesize\ttfamily string as\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 152 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a5386e98f71cb440232f0c41041f50af4}\label{classmuduo_1_1StringPiece_a5386e98f71cb440232f0c41041f50af4}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!begin@{begin}}
+\index{begin@{begin}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily const char$\ast$ begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 99 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_ac8bb3912a3ce86b15842e79d0b421204}\label{classmuduo_1_1StringPiece_ac8bb3912a3ce86b15842e79d0b421204}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!clear@{clear}}
+\index{clear@{clear}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 102 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_adc02cf8460f87c412a490f0f7fce3b8e}\label{classmuduo_1_1StringPiece_adc02cf8460f87c412a490f0f7fce3b8e}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!compare@{compare}}
+\index{compare@{compare}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily int compare (\begin{DoxyParamCaption}\item[{const \hyperlink{classmuduo_1_1StringPiece}{String\+Piece} \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 143 行定义.
+
+
+
+参考 String\+Piece\+::length\+\_\+ , 以及 String\+Piece\+::ptr\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_ae87831fc542134c6bb04004740658a15}\label{classmuduo_1_1StringPiece_ae87831fc542134c6bb04004740658a15}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!Copy\+To\+String@{Copy\+To\+String}}
+\index{Copy\+To\+String@{Copy\+To\+String}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{Copy\+To\+String()}{CopyToString()}}
+{\footnotesize\ttfamily void Copy\+To\+String (\begin{DoxyParamCaption}\item[{string $\ast$}]{target }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 156 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a39a256207a84f316547e36c755373d03}\label{classmuduo_1_1StringPiece_a39a256207a84f316547e36c755373d03}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!data@{data}}
+\index{data@{data}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily const char$\ast$ data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 96 行定义.
+
+
+
+参考自 Buffer\+::append(), Log\+Stream\+::operator$<$$<$() , 以及 Gzip\+File\+::write().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1StringPiece_a39a256207a84f316547e36c755373d03_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a644718bb2fb240de962dc3c9a1fdf0dc}\label{classmuduo_1_1StringPiece_a644718bb2fb240de962dc3c9a1fdf0dc}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!empty@{empty}}
+\index{empty@{empty}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily bool empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 98 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a8f7e2912f169cf1aa7eeaec74b5fd151}\label{classmuduo_1_1StringPiece_a8f7e2912f169cf1aa7eeaec74b5fd151}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!end@{end}}
+\index{end@{end}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily const char$\ast$ end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 100 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a47eee77c6839712b69d886de179036c0}\label{classmuduo_1_1StringPiece_a47eee77c6839712b69d886de179036c0}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmuduo_1_1StringPiece}{String\+Piece} \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 128 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a920993bb85cf3c1fc3aedf6a1e8bf691}\label{classmuduo_1_1StringPiece_a920993bb85cf3c1fc3aedf6a1e8bf691}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!operator==@{operator==}}
+\index{operator==@{operator==}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classmuduo_1_1StringPiece}{String\+Piece} \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 124 行定义.
+
+
+
+参考 String\+Piece\+::length\+\_\+ , 以及 String\+Piece\+::ptr\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a142e70c83cd0bd7a84011867711b4cb5}\label{classmuduo_1_1StringPiece_a142e70c83cd0bd7a84011867711b4cb5}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily char operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 113 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a59ea335a45cf183fb65e28ed434cad10}\label{classmuduo_1_1StringPiece_a59ea335a45cf183fb65e28ed434cad10}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!remove\+\_\+prefix@{remove\+\_\+prefix}}
+\index{remove\+\_\+prefix@{remove\+\_\+prefix}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{remove\+\_\+prefix()}{remove\_prefix()}}
+{\footnotesize\ttfamily void remove\+\_\+prefix (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 115 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a63be252f1ef4e181e3f878ed0c178311}\label{classmuduo_1_1StringPiece_a63be252f1ef4e181e3f878ed0c178311}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!remove\+\_\+suffix@{remove\+\_\+suffix}}
+\index{remove\+\_\+suffix@{remove\+\_\+suffix}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{remove\+\_\+suffix()}{remove\_suffix()}}
+{\footnotesize\ttfamily void remove\+\_\+suffix (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 120 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a1f0ee9dccfd3553dffa874b3bc701fb3}\label{classmuduo_1_1StringPiece_a1f0ee9dccfd3553dffa874b3bc701fb3}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!set@{set}}
+\index{set@{set}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void set (\begin{DoxyParamCaption}\item[{const char $\ast$}]{buffer,  }\item[{int}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 103 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a2d1485d6ad21670a4092ad4ddb532daa}\label{classmuduo_1_1StringPiece_a2d1485d6ad21670a4092ad4ddb532daa}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!set@{set}}
+\index{set@{set}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void set (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 104 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a77360c2ea2a40be8ac0e1c1db34b9f2a}\label{classmuduo_1_1StringPiece_a77360c2ea2a40be8ac0e1c1db34b9f2a}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!set@{set}}
+\index{set@{set}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void set (\begin{DoxyParamCaption}\item[{const void $\ast$}]{buffer,  }\item[{int}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 108 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_af9593d4a5ff4274efaf429cb4f9e57cc}\label{classmuduo_1_1StringPiece_af9593d4a5ff4274efaf429cb4f9e57cc}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!size@{size}}
+\index{size@{size}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 97 行定义.
+
+
+
+参考自 Buffer\+::append(), Log\+Stream\+::operator$<$$<$() , 以及 Gzip\+File\+::write().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1StringPiece_af9593d4a5ff4274efaf429cb4f9e57cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a02b5196f9bd404fb9d8f60121c770114}\label{classmuduo_1_1StringPiece_a02b5196f9bd404fb9d8f60121c770114}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!starts\+\_\+with@{starts\+\_\+with}}
+\index{starts\+\_\+with@{starts\+\_\+with}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{starts\+\_\+with()}{starts\_with()}}
+{\footnotesize\ttfamily bool starts\+\_\+with (\begin{DoxyParamCaption}\item[{const \hyperlink{classmuduo_1_1StringPiece}{String\+Piece} \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 String\+Piece.\+h 第 161 行定义.
+
+
+
+参考 String\+Piece\+::length\+\_\+, muduo\+::operator$<$$<$() , 以及 String\+Piece\+::ptr\+\_\+.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1StringPiece_a02b5196f9bd404fb9d8f60121c770114_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a3a9b0c7ca5a3f9c77e09cf2e9304b30e}\label{classmuduo_1_1StringPiece_a3a9b0c7ca5a3f9c77e09cf2e9304b30e}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE@{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE}}
+\index{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE@{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+T\+E()}{STRINGPIECE\_BINARY\_PREDICATE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a5a100b406673db090479c909f3f68ca8}\label{classmuduo_1_1StringPiece_a5a100b406673db090479c909f3f68ca8}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE@{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE}}
+\index{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE@{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+T\+E()}{STRINGPIECE\_BINARY\_PREDICATE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE (\begin{DoxyParamCaption}\item[{$<$=}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_ab5fd7ad677a84e93b3c6001ce4521871}\label{classmuduo_1_1StringPiece_ab5fd7ad677a84e93b3c6001ce4521871}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE@{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE}}
+\index{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE@{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+T\+E()}{STRINGPIECE\_BINARY\_PREDICATE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE (\begin{DoxyParamCaption}\item[{$>$=}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a4a553a89f26aef85bcfaa6658b5640fe}\label{classmuduo_1_1StringPiece_a4a553a89f26aef85bcfaa6658b5640fe}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE@{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE}}
+\index{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE@{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+T\+E()}{STRINGPIECE\_BINARY\_PREDICATE()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a4bac9b810d0cf891c8fcbc974e989739}\label{classmuduo_1_1StringPiece_a4bac9b810d0cf891c8fcbc974e989739}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!length\+\_\+@{length\+\_\+}}
+\index{length\+\_\+@{length\+\_\+}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{length\+\_\+}{length\_}}
+{\footnotesize\ttfamily int length\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 String\+Piece.\+h 第 72 行定义.
+
+
+
+参考自 String\+Piece\+::compare(), String\+Piece\+::operator==() , 以及 String\+Piece\+::starts\+\_\+with().
+
+\mbox{\Hypertarget{classmuduo_1_1StringPiece_a3562ccc1fbaeaf1cb0f2892aa2f299b9}\label{classmuduo_1_1StringPiece_a3562ccc1fbaeaf1cb0f2892aa2f299b9}} 
+\index{muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}!ptr\+\_\+@{ptr\+\_\+}}
+\index{ptr\+\_\+@{ptr\+\_\+}!muduo\+::\+String\+Piece@{muduo\+::\+String\+Piece}}
+\subsubsection{\texorpdfstring{ptr\+\_\+}{ptr\_}}
+{\footnotesize\ttfamily const char$\ast$ ptr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 String\+Piece.\+h 第 71 行定义.
+
+
+
+参考自 String\+Piece\+::compare(), String\+Piece\+::operator==() , 以及 String\+Piece\+::starts\+\_\+with().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/muduo/base/\hyperlink{StringPiece_8h}{String\+Piece.\+h}\end{DoxyCompactItemize}

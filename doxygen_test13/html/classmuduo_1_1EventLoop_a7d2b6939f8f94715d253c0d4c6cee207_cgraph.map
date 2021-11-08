@@ -1,0 +1,9 @@
+<map id="queueInLoop" name="queueInLoop">
+<area shape="rect" id="node2" href="$classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="isInLoopThread" alt="" coords="159,81,280,108"/>
+<area shape="rect" id="node8" href="$classmuduo_1_1EventLoop.html#ae674290a26ecbd622c5160e38e8a4fe9" title="wakeup" alt="" coords="183,132,256,159"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="abortNotInLoopThread" alt="" coords="328,5,495,32"/>
+<area shape="rect" id="node4" href="$namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="543,31,736,57"/>
+<area shape="rect" id="node6" href="$classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="doPendingFunctors" alt="" coords="339,107,483,133"/>
+<area shape="rect" id="node7" href="$classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="handleRead" alt="" coords="362,157,461,184"/>
+<area shape="rect" id="node5" href="$namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="784,23,952,65"/>
+</map>

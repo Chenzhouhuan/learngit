@@ -1,0 +1,270 @@
+\hypertarget{classmuduo_1_1EventLoopThreadPool}{}\section{Event\+Loop\+Thread\+Pool类 参考}
+\label{classmuduo_1_1EventLoopThreadPool}\index{Event\+Loop\+Thread\+Pool@{Event\+Loop\+Thread\+Pool}}
+
+
+{\ttfamily \#include $<$Event\+Loop\+Thread\+Pool.\+h$>$}
+
+
+
+类 Event\+Loop\+Thread\+Pool 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classmuduo_1_1EventLoopThreadPool__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Event\+Loop\+Thread\+Pool 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmuduo_1_1EventLoopThreadPool__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1EventLoopThreadPool_ab1abd52cc351211b66982ad02e306ac6}{Event\+Loop\+Thread\+Pool} (\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$base\+Loop)
+\item 
+\hyperlink{classmuduo_1_1EventLoopThreadPool_a009ff3f40b47ffa7ff8ed249e4be9864}{$\sim$\+Event\+Loop\+Thread\+Pool} ()
+\item 
+void \hyperlink{classmuduo_1_1EventLoopThreadPool_a83bb28d139df96ba9fc449b4643f2c36}{set\+Thread\+Num} (int num\+Threads)
+\item 
+void \hyperlink{classmuduo_1_1EventLoopThreadPool_a60de64d75454385b23995437f1d72669}{start} ()
+\item 
+\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$ \hyperlink{classmuduo_1_1EventLoopThreadPool_ad79a4dd0cdd1358bfde1170759543c7d}{get\+Next\+Loop} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$ \hyperlink{classmuduo_1_1EventLoopThreadPool_abd40a665f0987cb18463ec326b966b06}{base\+Loop\+\_\+}
+\item 
+bool \hyperlink{classmuduo_1_1EventLoopThreadPool_a5ad69cfc4163d7797bc0f0d7eadb95a7}{started\+\_\+}
+\item 
+int \hyperlink{classmuduo_1_1EventLoopThreadPool_ace47a99e5a5a2f2f0cd96ab6108d432b}{num\+Threads\+\_\+}
+\item 
+int \hyperlink{classmuduo_1_1EventLoopThreadPool_aca74906911b1be75766735048142edae}{next\+\_\+}
+\item 
+boost\+::ptr\+\_\+vector$<$ \hyperlink{classmuduo_1_1EventLoopThread}{Event\+Loop\+Thread} $>$ \hyperlink{classmuduo_1_1EventLoopThreadPool_aa5d7bf46fd47a27bf0fd76b1dfad1fb1}{threads\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$ $>$ \hyperlink{classmuduo_1_1EventLoopThreadPool_a07ba07ac88b81aabf4b59f19f6494c3f}{loops\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 Event\+Loop\+Thread\+Pool.\+h 第 18 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1EventLoopThreadPool_ab1abd52cc351211b66982ad02e306ac6}\label{classmuduo_1_1EventLoopThreadPool_ab1abd52cc351211b66982ad02e306ac6}} 
+\index{muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}!Event\+Loop\+Thread\+Pool@{Event\+Loop\+Thread\+Pool}}
+\index{Event\+Loop\+Thread\+Pool@{Event\+Loop\+Thread\+Pool}!muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}}
+\subsubsection{\texorpdfstring{Event\+Loop\+Thread\+Pool()}{EventLoopThreadPool()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1EventLoopThreadPool}{Event\+Loop\+Thread\+Pool} (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$}]{base\+Loop }\end{DoxyParamCaption})}
+
+
+
+在文件 Event\+Loop\+Thread\+Pool.\+cc 第 10 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1EventLoopThreadPool_a009ff3f40b47ffa7ff8ed249e4be9864}\label{classmuduo_1_1EventLoopThreadPool_a009ff3f40b47ffa7ff8ed249e4be9864}} 
+\index{muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}!````~Event\+Loop\+Thread\+Pool@{$\sim$\+Event\+Loop\+Thread\+Pool}}
+\index{````~Event\+Loop\+Thread\+Pool@{$\sim$\+Event\+Loop\+Thread\+Pool}!muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}}
+\subsubsection{\texorpdfstring{$\sim$\+Event\+Loop\+Thread\+Pool()}{~EventLoopThreadPool()}}
+{\footnotesize\ttfamily $\sim$\hyperlink{classmuduo_1_1EventLoopThreadPool}{Event\+Loop\+Thread\+Pool} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 Event\+Loop\+Thread\+Pool.\+cc 第 16 行定义.
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1EventLoopThreadPool_ad79a4dd0cdd1358bfde1170759543c7d}\label{classmuduo_1_1EventLoopThreadPool_ad79a4dd0cdd1358bfde1170759543c7d}} 
+\index{muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}!get\+Next\+Loop@{get\+Next\+Loop}}
+\index{get\+Next\+Loop@{get\+Next\+Loop}!muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}}
+\subsubsection{\texorpdfstring{get\+Next\+Loop()}{getNextLoop()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$ get\+Next\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 Event\+Loop\+Thread\+Pool.\+cc 第 31 行定义.
+
+
+
+参考 Event\+Loop\+::assert\+In\+Loop\+Thread(), Event\+Loop\+Thread\+Pool\+::base\+Loop\+\_\+, Event\+Loop\+Thread\+Pool\+::loops\+\_\+ , 以及 Event\+Loop\+Thread\+Pool\+::next\+\_\+.
+
+
+
+参考自 Event\+Loop\+Thread\+Pool\+::set\+Thread\+Num().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1EventLoopThreadPool_ad79a4dd0cdd1358bfde1170759543c7d_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{classmuduo_1_1EventLoopThreadPool_ad79a4dd0cdd1358bfde1170759543c7d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1EventLoopThreadPool_a83bb28d139df96ba9fc449b4643f2c36}\label{classmuduo_1_1EventLoopThreadPool_a83bb28d139df96ba9fc449b4643f2c36}} 
+\index{muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}!set\+Thread\+Num@{set\+Thread\+Num}}
+\index{set\+Thread\+Num@{set\+Thread\+Num}!muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}}
+\subsubsection{\texorpdfstring{set\+Thread\+Num()}{setThreadNum()}}
+{\footnotesize\ttfamily void set\+Thread\+Num (\begin{DoxyParamCaption}\item[{int}]{num\+Threads }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Event\+Loop\+Thread\+Pool.\+h 第 22 行定义.
+
+
+
+参考 Event\+Loop\+Thread\+Pool\+::get\+Next\+Loop(), muduo\+::\+Process\+Info\+::num\+Threads(), Event\+Loop\+Thread\+Pool\+::num\+Threads\+\_\+ , 以及 Event\+Loop\+Thread\+Pool\+::start().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1EventLoopThreadPool_a83bb28d139df96ba9fc449b4643f2c36_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1EventLoopThreadPool_a60de64d75454385b23995437f1d72669}\label{classmuduo_1_1EventLoopThreadPool_a60de64d75454385b23995437f1d72669}} 
+\index{muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}!start@{start}}
+\index{start@{start}!muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 Event\+Loop\+Thread\+Pool.\+cc 第 18 行定义.
+
+
+
+参考 Event\+Loop\+::assert\+In\+Loop\+Thread(), Event\+Loop\+Thread\+Pool\+::base\+Loop\+\_\+, Event\+Loop\+Thread\+Pool\+::loops\+\_\+, Event\+Loop\+Thread\+Pool\+::num\+Threads\+\_\+, Event\+Loop\+Thread\+Pool\+::started\+\_\+, Event\+Loop\+Thread\+::start\+Loop() , 以及 Event\+Loop\+Thread\+Pool\+::threads\+\_\+.
+
+
+
+参考自 Event\+Loop\+Thread\+Pool\+::set\+Thread\+Num().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1EventLoopThreadPool_a60de64d75454385b23995437f1d72669_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{classmuduo_1_1EventLoopThreadPool_a60de64d75454385b23995437f1d72669_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1EventLoopThreadPool_abd40a665f0987cb18463ec326b966b06}\label{classmuduo_1_1EventLoopThreadPool_abd40a665f0987cb18463ec326b966b06}} 
+\index{muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}!base\+Loop\+\_\+@{base\+Loop\+\_\+}}
+\index{base\+Loop\+\_\+@{base\+Loop\+\_\+}!muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}}
+\subsubsection{\texorpdfstring{base\+Loop\+\_\+}{baseLoop\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1EventLoop}{Event\+Loop}$\ast$ base\+Loop\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Event\+Loop\+Thread\+Pool.\+h 第 27 行定义.
+
+
+
+参考自 Event\+Loop\+Thread\+Pool\+::get\+Next\+Loop() , 以及 Event\+Loop\+Thread\+Pool\+::start().
+
+\mbox{\Hypertarget{classmuduo_1_1EventLoopThreadPool_a07ba07ac88b81aabf4b59f19f6494c3f}\label{classmuduo_1_1EventLoopThreadPool_a07ba07ac88b81aabf4b59f19f6494c3f}} 
+\index{muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}!loops\+\_\+@{loops\+\_\+}}
+\index{loops\+\_\+@{loops\+\_\+}!muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}}
+\subsubsection{\texorpdfstring{loops\+\_\+}{loops\_}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop}$\ast$$>$ loops\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Event\+Loop\+Thread\+Pool.\+h 第 32 行定义.
+
+
+
+参考自 Event\+Loop\+Thread\+Pool\+::get\+Next\+Loop() , 以及 Event\+Loop\+Thread\+Pool\+::start().
+
+\mbox{\Hypertarget{classmuduo_1_1EventLoopThreadPool_aca74906911b1be75766735048142edae}\label{classmuduo_1_1EventLoopThreadPool_aca74906911b1be75766735048142edae}} 
+\index{muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}!next\+\_\+@{next\+\_\+}}
+\index{next\+\_\+@{next\+\_\+}!muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}}
+\subsubsection{\texorpdfstring{next\+\_\+}{next\_}}
+{\footnotesize\ttfamily int next\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Event\+Loop\+Thread\+Pool.\+h 第 30 行定义.
+
+
+
+参考自 Event\+Loop\+Thread\+Pool\+::get\+Next\+Loop().
+
+\mbox{\Hypertarget{classmuduo_1_1EventLoopThreadPool_ace47a99e5a5a2f2f0cd96ab6108d432b}\label{classmuduo_1_1EventLoopThreadPool_ace47a99e5a5a2f2f0cd96ab6108d432b}} 
+\index{muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}!num\+Threads\+\_\+@{num\+Threads\+\_\+}}
+\index{num\+Threads\+\_\+@{num\+Threads\+\_\+}!muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}}
+\subsubsection{\texorpdfstring{num\+Threads\+\_\+}{numThreads\_}}
+{\footnotesize\ttfamily int num\+Threads\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Event\+Loop\+Thread\+Pool.\+h 第 29 行定义.
+
+
+
+参考自 Event\+Loop\+Thread\+Pool\+::set\+Thread\+Num() , 以及 Event\+Loop\+Thread\+Pool\+::start().
+
+\mbox{\Hypertarget{classmuduo_1_1EventLoopThreadPool_a5ad69cfc4163d7797bc0f0d7eadb95a7}\label{classmuduo_1_1EventLoopThreadPool_a5ad69cfc4163d7797bc0f0d7eadb95a7}} 
+\index{muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}!started\+\_\+@{started\+\_\+}}
+\index{started\+\_\+@{started\+\_\+}!muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}}
+\subsubsection{\texorpdfstring{started\+\_\+}{started\_}}
+{\footnotesize\ttfamily bool started\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Event\+Loop\+Thread\+Pool.\+h 第 28 行定义.
+
+
+
+参考自 Event\+Loop\+Thread\+Pool\+::start().
+
+\mbox{\Hypertarget{classmuduo_1_1EventLoopThreadPool_aa5d7bf46fd47a27bf0fd76b1dfad1fb1}\label{classmuduo_1_1EventLoopThreadPool_aa5d7bf46fd47a27bf0fd76b1dfad1fb1}} 
+\index{muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}!threads\+\_\+@{threads\+\_\+}}
+\index{threads\+\_\+@{threads\+\_\+}!muduo\+::\+Event\+Loop\+Thread\+Pool@{muduo\+::\+Event\+Loop\+Thread\+Pool}}
+\subsubsection{\texorpdfstring{threads\+\_\+}{threads\_}}
+{\footnotesize\ttfamily boost\+::ptr\+\_\+vector$<$\hyperlink{classmuduo_1_1EventLoopThread}{Event\+Loop\+Thread}$>$ threads\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Event\+Loop\+Thread\+Pool.\+h 第 31 行定义.
+
+
+
+参考自 Event\+Loop\+Thread\+Pool\+::start().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{EventLoopThreadPool_8h}{Event\+Loop\+Thread\+Pool.\+h}\item 
+src/\hyperlink{EventLoopThreadPool_8cc}{Event\+Loop\+Thread\+Pool.\+cc}\end{DoxyCompactItemize}

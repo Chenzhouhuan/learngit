@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: lib/SocketsOps.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('SocketsOps_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SocketsOps.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="SocketsOps_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MUDUO_NET_SOCKETSOPS_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MUDUO_NET_SOCKETSOPS_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;arpa/inet.h&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;endian.h&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemuduo.html">muduo</a></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="namespacemuduo_1_1sockets.html">    9</a></span>&#160;<span class="keyword">namespace </span>sockets</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespacemuduo_1_1sockets.html#a6cf7699b950ed4dfbc170a6ff9f71450">   12</a></span>&#160;<span class="keyword">inline</span> uint64_t <a class="code" href="namespacemuduo_1_1sockets.html#a6cf7699b950ed4dfbc170a6ff9f71450">hostToNetwork64</a>(uint64_t host64){</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> htobe64(host64);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespacemuduo_1_1sockets.html#a937a8685473c938d339f02a8c6d395b6">   16</a></span>&#160;<span class="keyword">inline</span> uint32_t <a class="code" href="namespacemuduo_1_1sockets.html#a937a8685473c938d339f02a8c6d395b6">hostToNetwork32</a>(uint32_t host32){</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> htonl(host32);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="namespacemuduo_1_1sockets.html#a2c7a9f8e753e01c481aaf287251fa18e">   20</a></span>&#160;<span class="keyword">inline</span> uint16_t <a class="code" href="namespacemuduo_1_1sockets.html#a2c7a9f8e753e01c481aaf287251fa18e">hostToNetwork16</a>(uint16_t host16){</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">return</span> htons(host16);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="namespacemuduo_1_1sockets.html#ae5a926be124d52254860b4e93a5d1f31">   24</a></span>&#160;<span class="keyword">inline</span> uint64_t <a class="code" href="namespacemuduo_1_1sockets.html#ae5a926be124d52254860b4e93a5d1f31">networkToHost64</a>(uint64_t net64){</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> be64toh(net64);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="namespacemuduo_1_1sockets.html#a5846c926ef43813d8b8440b6b3a43633">   28</a></span>&#160;<span class="keyword">inline</span> uint32_t <a class="code" href="namespacemuduo_1_1sockets.html#a5846c926ef43813d8b8440b6b3a43633">networkToHost32</a>(uint32_t net32){</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> ntohl(net32);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="namespacemuduo_1_1sockets.html#aeeb31294e44fee5ecfc4b32f420f6d5d">   32</a></span>&#160;<span class="keyword">inline</span> uint16_t <a class="code" href="namespacemuduo_1_1sockets.html#aeeb31294e44fee5ecfc4b32f420f6d5d">networkToHost16</a>(uint16_t net16){</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> ntohs(net16);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespacemuduo_1_1sockets.html#a91269e56d86b2e78e693b330e5c665aa">createNonblockingOrDie</a>();</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespacemuduo_1_1sockets.html#a349a8d2188d9632596b2e5213cb16436">connect</a>(<span class="keywordtype">int</span> sockfd, <span class="keyword">const</span> <span class="keyword">struct</span> sockaddr_in&amp; addr);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacemuduo_1_1sockets.html#a8fe4065cd24e49e158dd1c16cd693ae1">bindOrDie</a>(<span class="keywordtype">int</span> sockfd, <span class="keyword">const</span> <span class="keyword">struct</span> sockaddr_in&amp; addr);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacemuduo_1_1sockets.html#a379cec5f383764a3696d9615bd344529">listenOrDie</a>(<span class="keywordtype">int</span> sockfd);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespacemuduo_1_1sockets.html#a5fe7cd11cb2662939917285c51b3f992">accept</a>(<span class="keywordtype">int</span> sockfd, <span class="keyword">struct</span> sockaddr_in* addr);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacemuduo_1_1sockets.html#acb275b6d8b5979229bae664cb7ee14da">close</a>(<span class="keywordtype">int</span> sockfd);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacemuduo_1_1sockets.html#a549ec5e856fec6f111aeb481cca9e622">shutdownWrite</a>(<span class="keywordtype">int</span> sockfd);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacemuduo_1_1sockets.html#adbdc909d04fd53860d9175b51755b0ae">toHostPort</a>(<span class="keywordtype">char</span>* buf, <span class="keywordtype">size_t</span> size, <span class="keyword">const</span> <span class="keyword">struct</span> sockaddr_in&amp; addr);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacemuduo_1_1sockets.html#ae40b8bfde260835c9034bfaea0fb4ee0">fromHostPort</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* ip, uint16_t port, <span class="keyword">struct</span> sockaddr_in* addr);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">struct </span>sockaddr_in getLocalAddr(int sockfd);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">struct </span>sockaddr_in getPeerAddr(int sockfd);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespacemuduo_1_1sockets.html#a80bd626331e049209f59d11c80a8b539">getSocketError</a>(<span class="keywordtype">int</span> sockfd);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacemuduo_1_1sockets.html#ae3b7d08b5cb176e9d67580a0a1fd57fb">isSelfConnect</a>(<span class="keywordtype">int</span> sockfd);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;} <span class="comment">// namespace sockets</span></div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;} <span class="comment">// namespace muduo</span></div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif //MUDUO_NET_SOCKETSOPS_H</span></div><div class="ttc" id="namespacemuduo_1_1sockets_html_ae3b7d08b5cb176e9d67580a0a1fd57fb"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#ae3b7d08b5cb176e9d67580a0a1fd57fb">muduo::sockets::isSelfConnect</a></div><div class="ttdeci">bool isSelfConnect(int sockfd)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8cc_source.html#l00198">SocketsOps.cc:198</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_a80bd626331e049209f59d11c80a8b539"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#a80bd626331e049209f59d11c80a8b539">muduo::sockets::getSocketError</a></div><div class="ttdeci">int getSocketError(int sockfd)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8cc_source.html#l00182">SocketsOps.cc:182</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_ae5a926be124d52254860b4e93a5d1f31"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#ae5a926be124d52254860b4e93a5d1f31">muduo::sockets::networkToHost64</a></div><div class="ttdeci">uint64_t networkToHost64(uint64_t net64)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8h_source.html#l00024">SocketsOps.h:24</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_a379cec5f383764a3696d9615bd344529"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#a379cec5f383764a3696d9615bd344529">muduo::sockets::listenOrDie</a></div><div class="ttdeci">void listenOrDie(int sockfd)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8cc_source.html#l00071">SocketsOps.cc:71</a></div></div>
+<div class="ttc" id="namespacemuduo_html"><div class="ttname"><a href="namespacemuduo.html">muduo</a></div><div class="ttdef"><b>Definition:</b> <a href="Acceptor_8h_source.html#l00010">Acceptor.h:10</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_a8fe4065cd24e49e158dd1c16cd693ae1"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#a8fe4065cd24e49e158dd1c16cd693ae1">muduo::sockets::bindOrDie</a></div><div class="ttdeci">void bindOrDie(int sockfd, const struct sockaddr_in &amp;addr)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8cc_source.html#l00064">SocketsOps.cc:64</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_a549ec5e856fec6f111aeb481cca9e622"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#a549ec5e856fec6f111aeb481cca9e622">muduo::sockets::shutdownWrite</a></div><div class="ttdeci">void shutdownWrite(int sockfd)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8cc_source.html#l00131">SocketsOps.cc:131</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_a5fe7cd11cb2662939917285c51b3f992"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#a5fe7cd11cb2662939917285c51b3f992">muduo::sockets::accept</a></div><div class="ttdeci">int accept(int sockfd, struct sockaddr_in *addr)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8cc_source.html#l00078">SocketsOps.cc:78</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_a6cf7699b950ed4dfbc170a6ff9f71450"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#a6cf7699b950ed4dfbc170a6ff9f71450">muduo::sockets::hostToNetwork64</a></div><div class="ttdeci">uint64_t hostToNetwork64(uint64_t host64)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8h_source.html#l00012">SocketsOps.h:12</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_aeeb31294e44fee5ecfc4b32f420f6d5d"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#aeeb31294e44fee5ecfc4b32f420f6d5d">muduo::sockets::networkToHost16</a></div><div class="ttdeci">uint16_t networkToHost16(uint16_t net16)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8h_source.html#l00032">SocketsOps.h:32</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_ae40b8bfde260835c9034bfaea0fb4ee0"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#ae40b8bfde260835c9034bfaea0fb4ee0">muduo::sockets::fromHostPort</a></div><div class="ttdeci">void fromHostPort(const char *ip, uint16_t port, struct sockaddr_in *addr)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8cc_source.html#l00150">SocketsOps.cc:150</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_a349a8d2188d9632596b2e5213cb16436"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#a349a8d2188d9632596b2e5213cb16436">muduo::sockets::connect</a></div><div class="ttdeci">int connect(int sockfd, const struct sockaddr_in &amp;addr)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8cc_source.html#l00060">SocketsOps.cc:60</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_a91269e56d86b2e78e693b330e5c665aa"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#a91269e56d86b2e78e693b330e5c665aa">muduo::sockets::createNonblockingOrDie</a></div><div class="ttdeci">int createNonblockingOrDie()</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8cc_source.html#l00042">SocketsOps.cc:42</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_a2c7a9f8e753e01c481aaf287251fa18e"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#a2c7a9f8e753e01c481aaf287251fa18e">muduo::sockets::hostToNetwork16</a></div><div class="ttdeci">uint16_t hostToNetwork16(uint16_t host16)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8h_source.html#l00020">SocketsOps.h:20</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_a937a8685473c938d339f02a8c6d395b6"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#a937a8685473c938d339f02a8c6d395b6">muduo::sockets::hostToNetwork32</a></div><div class="ttdeci">uint32_t hostToNetwork32(uint32_t host32)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8h_source.html#l00016">SocketsOps.h:16</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_adbdc909d04fd53860d9175b51755b0ae"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#adbdc909d04fd53860d9175b51755b0ae">muduo::sockets::toHostPort</a></div><div class="ttdeci">void toHostPort(char *buf, size_t size, const struct sockaddr_in &amp;addr)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8cc_source.html#l00137">SocketsOps.cc:137</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_a5846c926ef43813d8b8440b6b3a43633"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#a5846c926ef43813d8b8440b6b3a43633">muduo::sockets::networkToHost32</a></div><div class="ttdeci">uint32_t networkToHost32(uint32_t net32)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8h_source.html#l00028">SocketsOps.h:28</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_acb275b6d8b5979229bae664cb7ee14da"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#acb275b6d8b5979229bae664cb7ee14da">muduo::sockets::close</a></div><div class="ttdeci">void close(int sockfd)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8cc_source.html#l00125">SocketsOps.cc:125</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="SocketsOps_8h.html">SocketsOps.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<map id="resetTimerfd" name="resetTimerfd">
+<area shape="rect" id="node2" href="$namespacemuduo_1_1detail.html#a14924335d79da967a69c650af3002c77" title="howMuchTimeFromNow" alt="" coords="160,42,337,69"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1Timestamp.html#a8a0616b73c803b94f5c0e9d00fa96fb4" title="muduo::Timestamp::microSeconds\lSinceEpoch" alt="" coords="385,5,633,47"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1Timestamp.html#a3bca3b2a36424e36b3d2c772fa7d5772" title="muduo::Timestamp::now" alt="" coords="417,71,601,98"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Channel" name="Channel">
+<area shape="rect" id="node3" href="$classmuduo_1_1EventLoop.html" title="{EventLoop\n|&#45; looping_\l&#45; quit_\l&#45; callingPendingFunctors_\l&#45; threadId_\l&#45; poller_\l&#45; timerQueue_\l&#45; wakeupFd_\l&#45; wakeupChannel_\l&#45; activeChannels_\l&#45; mutex_\l&#45; pendingFunctors_\l|+ EventLoop()\l+ ~EventLoop()\l+ loop()\l+ quit()\l+ pollReturnTime()\l+ runInLoop()\l+ queueInLoop()\l+ runAt()\l+ runAfter()\l+ runEvery()\l和 6 更多...\l&#45; abortNotInLoopThread()\l&#45; handleRead()\l&#45; doPendingFunctors()\l}" alt="" coords="101,463,287,877"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1Timestamp.html" title="{Timestamp\n|+ kMicroSecondsPerSecond\l&#45; microSecondsSinceEpoch_\l|+ Timestamp()\l+ Timestamp()\l+ swap()\l+ toString()\l+ toFormattedString()\l+ valid()\l+ microSecondsSinceEpoch()\l+ secondsSinceEpoch()\l+ now()\l+ invalid()\l+ fromUnixTime()\l+ fromUnixTime()\l}" alt="" coords="140,147,352,400"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1copyable.html" title="{copyable\n||# copyable()\l# ~copyable()\l}" alt="" coords="25,5,142,97"/>
+</map>

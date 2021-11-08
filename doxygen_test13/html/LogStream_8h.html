@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: lib/muduo/base/LogStream.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('LogStream_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">LogStream.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="noncopyable_8h_source.html">muduo/base/noncopyable.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="StringPiece_8h_source.html">muduo/base/StringPiece.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Types_8h_source.html">muduo/base/Types.h</a>&quot;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+LogStream.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="LogStream_8h__incl.png" border="0" usemap="#lib_2muduo_2base_2LogStream_8h" alt=""/></div>
+<map name="lib_2muduo_2base_2LogStream_8h" id="lib_2muduo_2base_2LogStream_8h">
+<area shape="rect" id="node2" href="noncopyable_8h.html" title="muduo/base/noncopyable.h" alt="" coords="5,80,207,107"/>
+<area shape="rect" id="node3" href="StringPiece_8h.html" title="muduo/base/StringPiece.h" alt="" coords="283,80,473,107"/>
+<area shape="rect" id="node6" href="Types_8h.html" title="muduo/base/Types.h" alt="" coords="429,155,583,181"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="LogStream_8h__dep__incl.png" border="0" usemap="#lib_2muduo_2base_2LogStream_8hdep" alt=""/></div>
+<map name="lib_2muduo_2base_2LogStream_8hdep" id="lib_2muduo_2base_2LogStream_8hdep">
+<area shape="rect" id="node2" href="AsyncLogging_8h.html" title="lib/muduo/base/AsyncLogging.h" alt="" coords="555,80,783,107"/>
+<area shape="rect" id="node3" href="Logging_8h.html" title="lib/muduo/base/Logging.h" alt="" coords="807,80,997,107"/>
+<area shape="rect" id="node4" href="Acceptor_8cc.html" title="src/Acceptor.cc" alt="" coords="5,155,124,181"/>
+<area shape="rect" id="node5" href="Buffer_8cc.html" title="src/Buffer.cc" alt="" coords="149,155,250,181"/>
+<area shape="rect" id="node6" href="Channel_8cc.html" title="src/Channel.cc" alt="" coords="275,155,391,181"/>
+<area shape="rect" id="node7" href="Connector_8cc.html" title="src/Connector.cc" alt="" coords="415,155,543,181"/>
+<area shape="rect" id="node8" href="EPoller_8cc.html" title="src/EPoller.cc" alt="" coords="567,155,674,181"/>
+<area shape="rect" id="node9" href="EventLoop_8cc.html" title="src/EventLoop.cc" alt="" coords="698,155,829,181"/>
+<area shape="rect" id="node10" href="Poller_8cc.html" title="src/Poller.cc" alt="" coords="853,155,951,181"/>
+<area shape="rect" id="node11" href="SocketsOps_8cc.html" title="src/SocketsOps.cc" alt="" coords="975,155,1114,181"/>
+<area shape="rect" id="node12" href="TcpClient_8cc.html" title="src/TcpClient.cc" alt="" coords="1138,155,1261,181"/>
+<area shape="rect" id="node13" href="TcpConnection_8cc.html" title="src/TcpConnection.cc" alt="" coords="1285,155,1442,181"/>
+<area shape="rect" id="node14" href="TcpServer_8cc.html" title="src/TcpServer.cc" alt="" coords="1466,155,1591,181"/>
+<area shape="rect" id="node15" href="TimerQueue_8cc.html" title="src/TimerQueue.cc" alt="" coords="1616,155,1759,181"/>
+<area shape="rect" id="node16" href="test13_8cc.html" title="test13.cc" alt="" coords="1783,155,1864,181"/>
+</map>
+</div>
+</div>
+<p><a href="LogStream_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1detail_1_1FixedBuffer.html">FixedBuffer&lt; SIZE &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1LogStream.html">LogStream</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Fmt.html">Fmt</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:namespacemuduo"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemuduo.html">muduo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacemuduo_1_1detail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemuduo_1_1detail.html">muduo::detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a8306fbe1f821ddb82e4c161f936695b2"><td class="memItemLeft" align="right" valign="top">LogStream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemuduo.html#a8306fbe1f821ddb82e4c161f936695b2">operator&lt;&lt;</a> (LogStream &amp;s, const Fmt &amp;fmt)</td></tr>
+<tr class="separator:a8306fbe1f821ddb82e4c161f936695b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2530c171cac6dda7399a9eb5805e01fa"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemuduo.html#a2530c171cac6dda7399a9eb5805e01fa">formatSI</a> (int64_t n)</td></tr>
+<tr class="separator:a2530c171cac6dda7399a9eb5805e01fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad8a8650556c05bae4c4f449ac6d106"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemuduo.html#a2ad8a8650556c05bae4c4f449ac6d106">formatIEC</a> (int64_t n)</td></tr>
+<tr class="separator:a2ad8a8650556c05bae4c4f449ac6d106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a01441c3dba82e5d4bad1ce2b39ff576b"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemuduo_1_1detail.html#a01441c3dba82e5d4bad1ce2b39ff576b">kSmallBuffer</a> = 4000</td></tr>
+<tr class="separator:a01441c3dba82e5d4bad1ce2b39ff576b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d89caa2e467f089bb6cc480d73b884"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemuduo_1_1detail.html#a72d89caa2e467f089bb6cc480d73b884">kLargeBuffer</a> = 4000*1000</td></tr>
+<tr class="separator:a72d89caa2e467f089bb6cc480d73b884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_e3b32e68f04aa7e841009dd52d1d0488.html">muduo</a></li><li class="navelem"><a class="el" href="dir_9dc812d0f010bb69297de7069e5ca985.html">base</a></li><li class="navelem"><a class="el" href="LogStream_8h.html">LogStream.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

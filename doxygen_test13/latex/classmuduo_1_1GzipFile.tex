@@ -1,0 +1,347 @@
+\hypertarget{classmuduo_1_1GzipFile}{}\section{Gzip\+File类 参考}
+\label{classmuduo_1_1GzipFile}\index{Gzip\+File@{Gzip\+File}}
+
+
+{\ttfamily \#include $<$Gzip\+File.\+h$>$}
+
+
+
+类 Gzip\+File 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classmuduo_1_1GzipFile__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Gzip\+File 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classmuduo_1_1GzipFile__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1GzipFile_a4591ce59f7007cd95c859dc28622bdb4}{Gzip\+File} (\hyperlink{classmuduo_1_1GzipFile}{Gzip\+File} \&\&rhs) noexcept
+\item 
+\hyperlink{classmuduo_1_1GzipFile_a7d63cf49097d53ffc7e8d945a6816a2a}{$\sim$\+Gzip\+File} ()
+\item 
+\hyperlink{classmuduo_1_1GzipFile}{Gzip\+File} \& \hyperlink{classmuduo_1_1GzipFile_a8dddcc232bc559a7ced99ef5f05689b4}{operator=} (\hyperlink{classmuduo_1_1GzipFile}{Gzip\+File} \&\&rhs) noexcept
+\item 
+bool \hyperlink{classmuduo_1_1GzipFile_a315419f26d3c59fa143b49b90a019049}{valid} () const
+\item 
+void \hyperlink{classmuduo_1_1GzipFile_a545d0ac9e0b6d92ec76093784b550cb2}{swap} (\hyperlink{classmuduo_1_1GzipFile}{Gzip\+File} \&rhs)
+\item 
+int \hyperlink{classmuduo_1_1GzipFile_a3246bad9b6760a10a502669da1264746}{read} (void $\ast$buf, int len)
+\item 
+int \hyperlink{classmuduo_1_1GzipFile_a9df1dd3bba47672243cc91713d8a59dd}{write} (\hyperlink{classmuduo_1_1StringPiece}{String\+Piece} buf)
+\item 
+off\+\_\+t \hyperlink{classmuduo_1_1GzipFile_a6e8ce06f95605b89cfcee42fc3e5162c}{tell} () const
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classmuduo_1_1GzipFile}{Gzip\+File} \hyperlink{classmuduo_1_1GzipFile_a0a3314e3024363b639db1f864586647a}{open\+For\+Read} (\hyperlink{classmuduo_1_1StringArg}{String\+Arg} filename)
+\item 
+static \hyperlink{classmuduo_1_1GzipFile}{Gzip\+File} \hyperlink{classmuduo_1_1GzipFile_a9c729746e69ca041b116552594ddb70a}{open\+For\+Append} (\hyperlink{classmuduo_1_1StringArg}{String\+Arg} filename)
+\item 
+static \hyperlink{classmuduo_1_1GzipFile}{Gzip\+File} \hyperlink{classmuduo_1_1GzipFile_afc3a38fb0012c6e377aca37925f98c4f}{open\+For\+Write\+Exclusive} (\hyperlink{classmuduo_1_1StringArg}{String\+Arg} filename)
+\item 
+static \hyperlink{classmuduo_1_1GzipFile}{Gzip\+File} \hyperlink{classmuduo_1_1GzipFile_ab3ebedf22d289ebd69792c1590035b57}{open\+For\+Write\+Truncate} (\hyperlink{classmuduo_1_1StringArg}{String\+Arg} filename)
+\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1GzipFile_ab4b83a7add3f1901e7e4e0722fdd8f35}{Gzip\+File} (gz\+File file)
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+gz\+File \hyperlink{classmuduo_1_1GzipFile_aefa49b1eaa84765dc4afdffadb3a117d}{file\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 Gzip\+File.\+h 第 15 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1GzipFile_a4591ce59f7007cd95c859dc28622bdb4}\label{classmuduo_1_1GzipFile_a4591ce59f7007cd95c859dc28622bdb4}} 
+\index{muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}!Gzip\+File@{Gzip\+File}}
+\index{Gzip\+File@{Gzip\+File}!muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}}
+\subsubsection{\texorpdfstring{Gzip\+File()}{GzipFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1GzipFile}{Gzip\+File} (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1GzipFile}{Gzip\+File} \&\&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+在文件 Gzip\+File.\+h 第 18 行定义.
+
+
+
+参考自 Gzip\+File\+::open\+For\+Append(), Gzip\+File\+::open\+For\+Read(), Gzip\+File\+::open\+For\+Write\+Exclusive() , 以及 Gzip\+File\+::open\+For\+Write\+Truncate().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{classmuduo_1_1GzipFile_a4591ce59f7007cd95c859dc28622bdb4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1GzipFile_a7d63cf49097d53ffc7e8d945a6816a2a}\label{classmuduo_1_1GzipFile_a7d63cf49097d53ffc7e8d945a6816a2a}} 
+\index{muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}!````~Gzip\+File@{$\sim$\+Gzip\+File}}
+\index{````~Gzip\+File@{$\sim$\+Gzip\+File}!muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}}
+\subsubsection{\texorpdfstring{$\sim$\+Gzip\+File()}{~GzipFile()}}
+{\footnotesize\ttfamily $\sim$\hyperlink{classmuduo_1_1GzipFile}{Gzip\+File} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Gzip\+File.\+h 第 24 行定义.
+
+
+
+参考 Gzip\+File\+::file\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1GzipFile_ab4b83a7add3f1901e7e4e0722fdd8f35}\label{classmuduo_1_1GzipFile_ab4b83a7add3f1901e7e4e0722fdd8f35}} 
+\index{muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}!Gzip\+File@{Gzip\+File}}
+\index{Gzip\+File@{Gzip\+File}!muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}}
+\subsubsection{\texorpdfstring{Gzip\+File()}{GzipFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1GzipFile}{Gzip\+File} (\begin{DoxyParamCaption}\item[{gz\+File}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}, {\ttfamily [private]}}
+
+
+
+在文件 Gzip\+File.\+h 第 81 行定义.
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1GzipFile_a9c729746e69ca041b116552594ddb70a}\label{classmuduo_1_1GzipFile_a9c729746e69ca041b116552594ddb70a}} 
+\index{muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}!open\+For\+Append@{open\+For\+Append}}
+\index{open\+For\+Append@{open\+For\+Append}!muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}}
+\subsubsection{\texorpdfstring{open\+For\+Append()}{openForAppend()}}
+{\footnotesize\ttfamily static \hyperlink{classmuduo_1_1GzipFile}{Gzip\+File} open\+For\+Append (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1StringArg}{String\+Arg}}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+在文件 Gzip\+File.\+h 第 65 行定义.
+
+
+
+参考 String\+Arg\+::c\+\_\+str() , 以及 Gzip\+File\+::\+Gzip\+File().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classmuduo_1_1GzipFile_a9c729746e69ca041b116552594ddb70a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1GzipFile_a0a3314e3024363b639db1f864586647a}\label{classmuduo_1_1GzipFile_a0a3314e3024363b639db1f864586647a}} 
+\index{muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}!open\+For\+Read@{open\+For\+Read}}
+\index{open\+For\+Read@{open\+For\+Read}!muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}}
+\subsubsection{\texorpdfstring{open\+For\+Read()}{openForRead()}}
+{\footnotesize\ttfamily static \hyperlink{classmuduo_1_1GzipFile}{Gzip\+File} open\+For\+Read (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1StringArg}{String\+Arg}}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+在文件 Gzip\+File.\+h 第 60 行定义.
+
+
+
+参考 String\+Arg\+::c\+\_\+str() , 以及 Gzip\+File\+::\+Gzip\+File().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classmuduo_1_1GzipFile_a0a3314e3024363b639db1f864586647a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1GzipFile_afc3a38fb0012c6e377aca37925f98c4f}\label{classmuduo_1_1GzipFile_afc3a38fb0012c6e377aca37925f98c4f}} 
+\index{muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}!open\+For\+Write\+Exclusive@{open\+For\+Write\+Exclusive}}
+\index{open\+For\+Write\+Exclusive@{open\+For\+Write\+Exclusive}!muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}}
+\subsubsection{\texorpdfstring{open\+For\+Write\+Exclusive()}{openForWriteExclusive()}}
+{\footnotesize\ttfamily static \hyperlink{classmuduo_1_1GzipFile}{Gzip\+File} open\+For\+Write\+Exclusive (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1StringArg}{String\+Arg}}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+在文件 Gzip\+File.\+h 第 70 行定义.
+
+
+
+参考 String\+Arg\+::c\+\_\+str() , 以及 Gzip\+File\+::\+Gzip\+File().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1GzipFile_afc3a38fb0012c6e377aca37925f98c4f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1GzipFile_ab3ebedf22d289ebd69792c1590035b57}\label{classmuduo_1_1GzipFile_ab3ebedf22d289ebd69792c1590035b57}} 
+\index{muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}!open\+For\+Write\+Truncate@{open\+For\+Write\+Truncate}}
+\index{open\+For\+Write\+Truncate@{open\+For\+Write\+Truncate}!muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}}
+\subsubsection{\texorpdfstring{open\+For\+Write\+Truncate()}{openForWriteTruncate()}}
+{\footnotesize\ttfamily static \hyperlink{classmuduo_1_1GzipFile}{Gzip\+File} open\+For\+Write\+Truncate (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1StringArg}{String\+Arg}}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+在文件 Gzip\+File.\+h 第 75 行定义.
+
+
+
+参考 String\+Arg\+::c\+\_\+str() , 以及 Gzip\+File\+::\+Gzip\+File().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1GzipFile_ab3ebedf22d289ebd69792c1590035b57_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1GzipFile_a8dddcc232bc559a7ced99ef5f05689b4}\label{classmuduo_1_1GzipFile_a8dddcc232bc559a7ced99ef5f05689b4}} 
+\index{muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}!operator=@{operator=}}
+\index{operator=@{operator=}!muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1GzipFile}{Gzip\+File}\& operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1GzipFile}{Gzip\+File} \&\&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+在文件 Gzip\+File.\+h 第 32 行定义.
+
+
+
+参考 Gzip\+File\+::swap().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classmuduo_1_1GzipFile_a8dddcc232bc559a7ced99ef5f05689b4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1GzipFile_a3246bad9b6760a10a502669da1264746}\label{classmuduo_1_1GzipFile_a3246bad9b6760a10a502669da1264746}} 
+\index{muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}!read@{read}}
+\index{read@{read}!muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily int read (\begin{DoxyParamCaption}\item[{void $\ast$}]{buf,  }\item[{int}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Gzip\+File.\+h 第 45 行定义.
+
+
+
+参考 Gzip\+File\+::file\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1GzipFile_a545d0ac9e0b6d92ec76093784b550cb2}\label{classmuduo_1_1GzipFile_a545d0ac9e0b6d92ec76093784b550cb2}} 
+\index{muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}!swap@{swap}}
+\index{swap@{swap}!muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}}
+\subsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void swap (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1GzipFile}{Gzip\+File} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Gzip\+File.\+h 第 39 行定义.
+
+
+
+参考 Gzip\+File\+::file\+\_\+.
+
+
+
+参考自 Gzip\+File\+::operator=().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classmuduo_1_1GzipFile_a545d0ac9e0b6d92ec76093784b550cb2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1GzipFile_a6e8ce06f95605b89cfcee42fc3e5162c}\label{classmuduo_1_1GzipFile_a6e8ce06f95605b89cfcee42fc3e5162c}} 
+\index{muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}!tell@{tell}}
+\index{tell@{tell}!muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}}
+\subsubsection{\texorpdfstring{tell()}{tell()}}
+{\footnotesize\ttfamily off\+\_\+t tell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Gzip\+File.\+h 第 51 行定义.
+
+
+
+参考 Gzip\+File\+::file\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1GzipFile_a315419f26d3c59fa143b49b90a019049}\label{classmuduo_1_1GzipFile_a315419f26d3c59fa143b49b90a019049}} 
+\index{muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}!valid@{valid}}
+\index{valid@{valid}!muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}}
+\subsubsection{\texorpdfstring{valid()}{valid()}}
+{\footnotesize\ttfamily bool valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Gzip\+File.\+h 第 38 行定义.
+
+
+
+参考 Gzip\+File\+::file\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1GzipFile_a9df1dd3bba47672243cc91713d8a59dd}\label{classmuduo_1_1GzipFile_a9df1dd3bba47672243cc91713d8a59dd}} 
+\index{muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}!write@{write}}
+\index{write@{write}!muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily int write (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1StringPiece}{String\+Piece}}]{buf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Gzip\+File.\+h 第 48 行定义.
+
+
+
+参考 String\+Piece\+::data(), Gzip\+File\+::file\+\_\+ , 以及 String\+Piece\+::size().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classmuduo_1_1GzipFile_a9df1dd3bba47672243cc91713d8a59dd_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1GzipFile_aefa49b1eaa84765dc4afdffadb3a117d}\label{classmuduo_1_1GzipFile_aefa49b1eaa84765dc4afdffadb3a117d}} 
+\index{muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}!file\+\_\+@{file\+\_\+}}
+\index{file\+\_\+@{file\+\_\+}!muduo\+::\+Gzip\+File@{muduo\+::\+Gzip\+File}}
+\subsubsection{\texorpdfstring{file\+\_\+}{file\_}}
+{\footnotesize\ttfamily gz\+File file\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Gzip\+File.\+h 第 86 行定义.
+
+
+
+参考自 Gzip\+File\+::read(), Gzip\+File\+::swap(), Gzip\+File\+::tell(), Gzip\+File\+::valid(), Gzip\+File\+::write() , 以及 Gzip\+File\+::$\sim$\+Gzip\+File().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/muduo/base/\hyperlink{GzipFile_8h}{Gzip\+File.\+h}\end{DoxyCompactItemize}

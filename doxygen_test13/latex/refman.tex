@@ -1,0 +1,363 @@
+\documentclass[twoside]{book}
+
+% Packages required by doxygen
+\usepackage{fixltx2e}
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage[export]{adjustbox} % also loads graphicx
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage[table]{xcolor}
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Page & text layout
+\usepackage{geometry}
+\geometry{%
+  a4paper,%
+  top=2.5cm,%
+  bottom=2.5cm,%
+  left=2.5cm,%
+  right=2.5cm%
+}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{3ex plus 2ex minus 2ex}
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize 制作者 Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize 制作者 Doxygen }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\chaptermark}[1]{%
+  \markboth{#1}{}%
+}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+% Hyperlinks (required, but should be loaded last)
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \usepackage[ps2pdf,pagebackref=true]{hyperref}
+\fi
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+\usepackage{caption}
+\captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false,
+             bookmarksnumbered=true,
+             pdfencoding=unicode
+            }
+\pagenumbering{alph}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\Large my\+Muduo\+Learning \\[1ex]\large 1.\+0.\+0 }\\
+\vspace*{1cm}
+{\large 制作者 Doxygen 1.8.13}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\chapter{命名空间索引}
+\input{namespaces}
+\chapter{继承关系索引}
+\input{hierarchy}
+\chapter{类索引}
+\input{annotated}
+\chapter{文件索引}
+\input{files}
+\chapter{命名空间文档}
+\input{namespacemuduo}
+\input{namespacemuduo_1_1CurrentThread}
+\input{namespacemuduo_1_1detail}
+\input{namespacemuduo_1_1FileUtil}
+\input{namespacemuduo_1_1net}
+\input{namespacemuduo_1_1net_1_1sockets}
+\input{namespacemuduo_1_1ProcessInfo}
+\input{namespacemuduo_1_1sockets}
+\chapter{类说明}
+\input{classmuduo_1_1Acceptor}
+\input{classmuduo_1_1FileUtil_1_1AppendFile}
+\input{classmuduo_1_1AsyncLogging}
+\input{classmuduo_1_1detail_1_1AtomicIntegerT}
+\input{classmuduo_1_1BlockingQueue}
+\input{classmuduo_1_1BoundedBlockingQueue}
+\input{classmuduo_1_1Buffer}
+\input{classmuduo_1_1net_1_1Buffer}
+\input{classmuduo_1_1net_1_1Channel}
+\input{classmuduo_1_1Channel}
+\input{classmuduo_1_1Condition}
+\input{classmuduo_1_1Connector}
+\input{classmuduo_1_1copyable}
+\input{classmuduo_1_1CountDownLatch}
+\input{structmuduo_1_1ProcessInfo_1_1CpuTime}
+\input{classmuduo_1_1Date}
+\input{classmuduo_1_1ThreadLocalSingleton_1_1Deleter}
+\input{classmuduo_1_1EPoller}
+\input{classmuduo_1_1net_1_1EventLoop}
+\input{classmuduo_1_1EventLoop}
+\input{classmuduo_1_1net_1_1EventLoopThread}
+\input{classmuduo_1_1EventLoopThread}
+\input{classmuduo_1_1EventLoopThreadPool}
+\input{classmuduo_1_1net_1_1EventLoopThreadPool}
+\input{classmuduo_1_1Exception}
+\input{classmuduo_1_1detail_1_1FixedBuffer}
+\input{classmuduo_1_1Fmt}
+\input{classmuduo_1_1GzipFile}
+\input{structmuduo_1_1detail_1_1has__no__destroy}
+\input{classmuduo_1_1net_1_1HttpContext}
+\input{classmuduo_1_1net_1_1HttpRequest}
+\input{classmuduo_1_1net_1_1HttpResponse}
+\input{classmuduo_1_1net_1_1HttpServer}
+\input{classIgnoreSigPipe}
+\input{classmuduo_1_1Logger_1_1Impl}
+\input{classmuduo_1_1InetAddress}
+\input{classmuduo_1_1net_1_1InetAddress}
+\input{classmuduo_1_1net_1_1Inspector}
+\input{classmuduo_1_1LogFile}
+\input{classmuduo_1_1Logger}
+\input{classmuduo_1_1LogStream}
+\input{classmuduo_1_1MutexLockGuard}
+\input{classmuduo_1_1noncopyable}
+\input{classmuduo_1_1net_1_1PerformanceInspector}
+\input{classmuduo_1_1Poller}
+\input{classmuduo_1_1net_1_1ProcessInspector}
+\input{classmuduo_1_1FileUtil_1_1ReadSmallFile}
+\input{classmuduo_1_1Singleton}
+\input{classmuduo_1_1Socket}
+\input{classmuduo_1_1Logger_1_1SourceFile}
+\input{classmuduo_1_1StringArg}
+\input{classmuduo_1_1StringPiece}
+\input{classmuduo_1_1net_1_1SystemInspector}
+\input{classmuduo_1_1net_1_1TcpClient}
+\input{classmuduo_1_1TcpClient}
+\input{classmuduo_1_1net_1_1TcpConnection}
+\input{classmuduo_1_1TcpConnection}
+\input{classmuduo_1_1TcpServer}
+\input{classmuduo_1_1net_1_1TcpServer}
+\input{classmuduo_1_1Thread}
+\input{classmuduo_1_1ThreadLocal}
+\input{classmuduo_1_1ThreadLocalSingleton}
+\input{classmuduo_1_1ThreadPool}
+\input{classmuduo_1_1Timer}
+\input{classmuduo_1_1TimerId}
+\input{classmuduo_1_1net_1_1TimerId}
+\input{classmuduo_1_1TimerQueue}
+\input{classmuduo_1_1Timestamp}
+\input{classmuduo_1_1TimeZone}
+\input{classmuduo_1_1WeakCallback}
+\input{structmuduo_1_1Date_1_1YearMonthDay}
+\chapter{文件说明}
+\input{CMakeCCompilerId_8c}
+\input{CMakeCXXCompilerId_8cpp}
+\input{test13_8dir_2src_2Acceptor_8cc_8o_8d}
+\input{test9_8dir_2src_2Acceptor_8cc_8o_8d}
+\input{test13_8dir_2src_2Buffer_8cc_8o_8d}
+\input{test9_8dir_2src_2Buffer_8cc_8o_8d}
+\input{test13_8dir_2src_2Channel_8cc_8o_8d}
+\input{test9_8dir_2src_2Channel_8cc_8o_8d}
+\input{test13_8dir_2src_2Connector_8cc_8o_8d}
+\input{test9_8dir_2src_2Connector_8cc_8o_8d}
+\input{test13_8dir_2src_2EPoller_8cc_8o_8d}
+\input{test9_8dir_2src_2EPoller_8cc_8o_8d}
+\input{test13_8dir_2src_2EventLoop_8cc_8o_8d}
+\input{test9_8dir_2src_2EventLoop_8cc_8o_8d}
+\input{test13_8dir_2src_2EventLoopThread_8cc_8o_8d}
+\input{test9_8dir_2src_2EventLoopThread_8cc_8o_8d}
+\input{test13_8dir_2src_2EventLoopThreadPool_8cc_8o_8d}
+\input{test9_8dir_2src_2EventLoopThreadPool_8cc_8o_8d}
+\input{test13_8dir_2src_2InetAddress_8cc_8o_8d}
+\input{test9_8dir_2src_2InetAddress_8cc_8o_8d}
+\input{test13_8dir_2src_2Socket_8cc_8o_8d}
+\input{test9_8dir_2src_2Socket_8cc_8o_8d}
+\input{test13_8dir_2src_2SocketsOps_8cc_8o_8d}
+\input{test9_8dir_2src_2SocketsOps_8cc_8o_8d}
+\input{test13_8dir_2src_2TcpClient_8cc_8o_8d}
+\input{test9_8dir_2src_2TcpClient_8cc_8o_8d}
+\input{test13_8dir_2src_2TcpConnection_8cc_8o_8d}
+\input{test9_8dir_2src_2TcpConnection_8cc_8o_8d}
+\input{test13_8dir_2src_2TcpServer_8cc_8o_8d}
+\input{test9_8dir_2src_2TcpServer_8cc_8o_8d}
+\input{test13_8dir_2src_2Timer_8cc_8o_8d}
+\input{test9_8dir_2src_2Timer_8cc_8o_8d}
+\input{test13_8dir_2src_2TimerQueue_8cc_8o_8d}
+\input{test9_8dir_2src_2TimerQueue_8cc_8o_8d}
+\input{test13_8cc_8o_8d}
+\input{test9_8cc_8o_8d}
+\input{Acceptor_8h}
+\input{Buffer_8h}
+\input{muduo_2net_2Buffer_8h}
+\input{Callbacks_8h}
+\input{muduo_2net_2Callbacks_8h}
+\input{Channel_8h}
+\input{muduo_2net_2Channel_8h}
+\input{Connector_8h}
+\input{EPoller_8h}
+\input{EventLoop_8h}
+\input{muduo_2net_2EventLoop_8h}
+\input{EventLoopThread_8h}
+\input{muduo_2net_2EventLoopThread_8h}
+\input{EventLoopThreadPool_8h}
+\input{muduo_2net_2EventLoopThreadPool_8h}
+\input{InetAddress_8h}
+\input{muduo_2net_2InetAddress_8h}
+\input{AsyncLogging_8h}
+\input{Atomic_8h}
+\input{BlockingQueue_8h}
+\input{BoundedBlockingQueue_8h}
+\input{Condition_8h}
+\input{copyable_8h}
+\input{CountDownLatch_8h}
+\input{CurrentThread_8h}
+\input{Date_8h}
+\input{Exception_8h}
+\input{FileUtil_8h}
+\input{GzipFile_8h}
+\input{LogFile_8h}
+\input{Logging_8h}
+\input{LogStream_8h}
+\input{Mutex_8h}
+\input{noncopyable_8h}
+\input{ProcessInfo_8h}
+\input{Singleton_8h}
+\input{StringPiece_8h}
+\input{Thread_8h}
+\input{ThreadLocal_8h}
+\input{ThreadLocalSingleton_8h}
+\input{ThreadPool_8h}
+\input{Timestamp_8h}
+\input{TimeZone_8h}
+\input{Types_8h}
+\input{WeakCallback_8h}
+\input{Endian_8h}
+\input{HttpContext_8h}
+\input{HttpRequest_8h}
+\input{HttpResponse_8h}
+\input{HttpServer_8h}
+\input{Inspector_8h}
+\input{PerformanceInspector_8h}
+\input{ProcessInspector_8h}
+\input{SystemInspector_8h}
+\input{muduo_2net_2TcpClient_8h}
+\input{TcpClient_8h}
+\input{muduo_2net_2TcpConnection_8h}
+\input{TcpConnection_8h}
+\input{muduo_2net_2TcpServer_8h}
+\input{TcpServer_8h}
+\input{muduo_2net_2TimerId_8h}
+\input{TimerId_8h}
+\input{Poller_8h}
+\input{Socket_8h}
+\input{SocketsOps_8h}
+\input{Timer_8h}
+\input{TimerQueue_8h}
+\input{Acceptor_8cc}
+\input{Buffer_8cc}
+\input{Channel_8cc}
+\input{Connector_8cc}
+\input{EPoller_8cc}
+\input{EventLoop_8cc}
+\input{EventLoopThread_8cc}
+\input{EventLoopThreadPool_8cc}
+\input{InetAddress_8cc}
+\input{Poller_8cc}
+\input{Socket_8cc}
+\input{SocketsOps_8cc}
+\input{TcpClient_8cc}
+\input{TcpConnection_8cc}
+\input{TcpServer_8cc}
+\input{Timer_8cc}
+\input{TimerQueue_8cc}
+\input{test13_8cc}
+\input{test9_8cc}
+%--- End generated contents ---
+
+% Index
+\backmatter
+\newpage
+\phantomsection
+\clearemptydoublepage
+\addcontentsline{toc}{chapter}{索引}
+\printindex
+
+\end{document}

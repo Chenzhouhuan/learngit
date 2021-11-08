@@ -1,0 +1,291 @@
+\hypertarget{classmuduo_1_1Acceptor}{}\section{Acceptor类 参考}
+\label{classmuduo_1_1Acceptor}\index{Acceptor@{Acceptor}}
+
+
+{\ttfamily \#include $<$Acceptor.\+h$>$}
+
+
+
+类 Acceptor 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{classmuduo_1_1Acceptor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Acceptor 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmuduo_1_1Acceptor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::function$<$ void(int sockfd, const \hyperlink{classmuduo_1_1InetAddress}{Inet\+Address} \&)$>$ \hyperlink{classmuduo_1_1Acceptor_ad9da8988c47fddac6b0b91e01e154814}{New\+Connection\+Callback}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1Acceptor_a034c2e4c8c39c67bcaa4a47a6fa906fd}{Acceptor} (\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$loop, const \hyperlink{classmuduo_1_1InetAddress}{Inet\+Address} \&listen\+Addr)
+\item 
+void \hyperlink{classmuduo_1_1Acceptor_a30908d8d30b5333e6288a7430d598cb1}{set\+New\+Connection\+Callback} (const \hyperlink{classmuduo_1_1Acceptor_ad9da8988c47fddac6b0b91e01e154814}{New\+Connection\+Callback} \&cb)
+\item 
+bool \hyperlink{classmuduo_1_1Acceptor_a43301d614b7aaae820d7ddd7033984f5}{listenning} () const
+\item 
+void \hyperlink{classmuduo_1_1Acceptor_a458bbe4cf81360301586b2e62a7f9dd2}{listen} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmuduo_1_1Acceptor_a3459892d34c1eb51b40a53b8062237ca}{handl\+Read} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$ \hyperlink{classmuduo_1_1Acceptor_a19968f50018d32ac31f5cba0195591ac}{loop\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1Socket}{Socket} \hyperlink{classmuduo_1_1Acceptor_a5b8432787de199c64a25108a26d4690d}{accept\+Socket\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1Channel}{Channel} \hyperlink{classmuduo_1_1Acceptor_a32c277ec09ca9c780ddc51b21278c317}{accept\+Channel\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1Acceptor_ad9da8988c47fddac6b0b91e01e154814}{New\+Connection\+Callback} \hyperlink{classmuduo_1_1Acceptor_a315d8356d0420fe5a89dc67f49c82617}{new\+Connection\+Callback\+\_\+}
+\item 
+bool \hyperlink{classmuduo_1_1Acceptor_af4e1fb2da4efe5a7bcfff6c2434f966d}{listenning\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\hyperlink{classmuduo_1_1Acceptor}{Acceptor} of incoming T\+CP connections. 
+
+在文件 Acceptor.\+h 第 18 行定义.
+
+
+
+\subsection{成员类型定义说明}
+\mbox{\Hypertarget{classmuduo_1_1Acceptor_ad9da8988c47fddac6b0b91e01e154814}\label{classmuduo_1_1Acceptor_ad9da8988c47fddac6b0b91e01e154814}} 
+\index{muduo\+::\+Acceptor@{muduo\+::\+Acceptor}!New\+Connection\+Callback@{New\+Connection\+Callback}}
+\index{New\+Connection\+Callback@{New\+Connection\+Callback}!muduo\+::\+Acceptor@{muduo\+::\+Acceptor}}
+\subsubsection{\texorpdfstring{New\+Connection\+Callback}{NewConnectionCallback}}
+{\footnotesize\ttfamily typedef boost\+::function$<$void(int sockfd, const \hyperlink{classmuduo_1_1InetAddress}{Inet\+Address}\&)$>$ \hyperlink{classmuduo_1_1Acceptor_ad9da8988c47fddac6b0b91e01e154814}{New\+Connection\+Callback}}
+
+
+
+在文件 Acceptor.\+h 第 20 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Acceptor_a034c2e4c8c39c67bcaa4a47a6fa906fd}\label{classmuduo_1_1Acceptor_a034c2e4c8c39c67bcaa4a47a6fa906fd}} 
+\index{muduo\+::\+Acceptor@{muduo\+::\+Acceptor}!Acceptor@{Acceptor}}
+\index{Acceptor@{Acceptor}!muduo\+::\+Acceptor@{muduo\+::\+Acceptor}}
+\subsubsection{\texorpdfstring{Acceptor()}{Acceptor()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Acceptor}{Acceptor} (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$}]{loop,  }\item[{const \hyperlink{classmuduo_1_1InetAddress}{Inet\+Address} \&}]{listen\+Addr }\end{DoxyParamCaption})}
+
+
+
+在文件 Acceptor.\+cc 第 12 行定义.
+
+
+
+参考 Acceptor\+::accept\+Channel\+\_\+, Acceptor\+::accept\+Socket\+\_\+, Socket\+::bind\+Address(), Acceptor\+::handl\+Read(), Channel\+::set\+Read\+Callback() , 以及 Socket\+::set\+Reuse\+Addr().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Acceptor_a034c2e4c8c39c67bcaa4a47a6fa906fd_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Acceptor_a3459892d34c1eb51b40a53b8062237ca}\label{classmuduo_1_1Acceptor_a3459892d34c1eb51b40a53b8062237ca}} 
+\index{muduo\+::\+Acceptor@{muduo\+::\+Acceptor}!handl\+Read@{handl\+Read}}
+\index{handl\+Read@{handl\+Read}!muduo\+::\+Acceptor@{muduo\+::\+Acceptor}}
+\subsubsection{\texorpdfstring{handl\+Read()}{handlRead()}}
+{\footnotesize\ttfamily void handl\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Acceptor.\+cc 第 29 行定义.
+
+
+
+参考 Socket\+::accept(), Acceptor\+::accept\+Socket\+\_\+, Event\+Loop\+::assert\+In\+Loop\+Thread(), muduo\+::sockets\+::close(), Acceptor\+::loop\+\_\+ , 以及 Acceptor\+::new\+Connection\+Callback\+\_\+.
+
+
+
+参考自 Acceptor\+::\+Acceptor() , 以及 Acceptor\+::listenning().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Acceptor_a3459892d34c1eb51b40a53b8062237ca_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{classmuduo_1_1Acceptor_a3459892d34c1eb51b40a53b8062237ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Acceptor_a458bbe4cf81360301586b2e62a7f9dd2}\label{classmuduo_1_1Acceptor_a458bbe4cf81360301586b2e62a7f9dd2}} 
+\index{muduo\+::\+Acceptor@{muduo\+::\+Acceptor}!listen@{listen}}
+\index{listen@{listen}!muduo\+::\+Acceptor@{muduo\+::\+Acceptor}}
+\subsubsection{\texorpdfstring{listen()}{listen()}}
+{\footnotesize\ttfamily void listen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 Acceptor.\+cc 第 22 行定义.
+
+
+
+参考 Acceptor\+::accept\+Channel\+\_\+, Acceptor\+::accept\+Socket\+\_\+, Event\+Loop\+::assert\+In\+Loop\+Thread(), Channel\+::enable\+Reading(), Socket\+::listen(), Acceptor\+::listenning\+\_\+ , 以及 Acceptor\+::loop\+\_\+.
+
+
+
+参考自 Acceptor\+::listenning() , 以及 Tcp\+Server\+::start().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Acceptor_a458bbe4cf81360301586b2e62a7f9dd2_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Acceptor_a458bbe4cf81360301586b2e62a7f9dd2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Acceptor_a43301d614b7aaae820d7ddd7033984f5}\label{classmuduo_1_1Acceptor_a43301d614b7aaae820d7ddd7033984f5}} 
+\index{muduo\+::\+Acceptor@{muduo\+::\+Acceptor}!listenning@{listenning}}
+\index{listenning@{listenning}!muduo\+::\+Acceptor@{muduo\+::\+Acceptor}}
+\subsubsection{\texorpdfstring{listenning()}{listenning()}}
+{\footnotesize\ttfamily bool listenning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Acceptor.\+h 第 28 行定义.
+
+
+
+参考 Acceptor\+::handl\+Read(), Acceptor\+::listen() , 以及 Acceptor\+::listenning\+\_\+.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Acceptor_a43301d614b7aaae820d7ddd7033984f5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Acceptor_a30908d8d30b5333e6288a7430d598cb1}\label{classmuduo_1_1Acceptor_a30908d8d30b5333e6288a7430d598cb1}} 
+\index{muduo\+::\+Acceptor@{muduo\+::\+Acceptor}!set\+New\+Connection\+Callback@{set\+New\+Connection\+Callback}}
+\index{set\+New\+Connection\+Callback@{set\+New\+Connection\+Callback}!muduo\+::\+Acceptor@{muduo\+::\+Acceptor}}
+\subsubsection{\texorpdfstring{set\+New\+Connection\+Callback()}{setNewConnectionCallback()}}
+{\footnotesize\ttfamily void set\+New\+Connection\+Callback (\begin{DoxyParamCaption}\item[{const \hyperlink{classmuduo_1_1Acceptor_ad9da8988c47fddac6b0b91e01e154814}{New\+Connection\+Callback} \&}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Acceptor.\+h 第 24 行定义.
+
+
+
+参考 Acceptor\+::new\+Connection\+Callback\+\_\+.
+
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1Acceptor_a32c277ec09ca9c780ddc51b21278c317}\label{classmuduo_1_1Acceptor_a32c277ec09ca9c780ddc51b21278c317}} 
+\index{muduo\+::\+Acceptor@{muduo\+::\+Acceptor}!accept\+Channel\+\_\+@{accept\+Channel\+\_\+}}
+\index{accept\+Channel\+\_\+@{accept\+Channel\+\_\+}!muduo\+::\+Acceptor@{muduo\+::\+Acceptor}}
+\subsubsection{\texorpdfstring{accept\+Channel\+\_\+}{acceptChannel\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Channel}{Channel} accept\+Channel\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Acceptor.\+h 第 39 行定义.
+
+
+
+参考自 Acceptor\+::\+Acceptor() , 以及 Acceptor\+::listen().
+
+\mbox{\Hypertarget{classmuduo_1_1Acceptor_a5b8432787de199c64a25108a26d4690d}\label{classmuduo_1_1Acceptor_a5b8432787de199c64a25108a26d4690d}} 
+\index{muduo\+::\+Acceptor@{muduo\+::\+Acceptor}!accept\+Socket\+\_\+@{accept\+Socket\+\_\+}}
+\index{accept\+Socket\+\_\+@{accept\+Socket\+\_\+}!muduo\+::\+Acceptor@{muduo\+::\+Acceptor}}
+\subsubsection{\texorpdfstring{accept\+Socket\+\_\+}{acceptSocket\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Socket}{Socket} accept\+Socket\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Acceptor.\+h 第 38 行定义.
+
+
+
+参考自 Acceptor\+::\+Acceptor(), Acceptor\+::handl\+Read() , 以及 Acceptor\+::listen().
+
+\mbox{\Hypertarget{classmuduo_1_1Acceptor_af4e1fb2da4efe5a7bcfff6c2434f966d}\label{classmuduo_1_1Acceptor_af4e1fb2da4efe5a7bcfff6c2434f966d}} 
+\index{muduo\+::\+Acceptor@{muduo\+::\+Acceptor}!listenning\+\_\+@{listenning\+\_\+}}
+\index{listenning\+\_\+@{listenning\+\_\+}!muduo\+::\+Acceptor@{muduo\+::\+Acceptor}}
+\subsubsection{\texorpdfstring{listenning\+\_\+}{listenning\_}}
+{\footnotesize\ttfamily bool listenning\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Acceptor.\+h 第 41 行定义.
+
+
+
+参考自 Acceptor\+::listen() , 以及 Acceptor\+::listenning().
+
+\mbox{\Hypertarget{classmuduo_1_1Acceptor_a19968f50018d32ac31f5cba0195591ac}\label{classmuduo_1_1Acceptor_a19968f50018d32ac31f5cba0195591ac}} 
+\index{muduo\+::\+Acceptor@{muduo\+::\+Acceptor}!loop\+\_\+@{loop\+\_\+}}
+\index{loop\+\_\+@{loop\+\_\+}!muduo\+::\+Acceptor@{muduo\+::\+Acceptor}}
+\subsubsection{\texorpdfstring{loop\+\_\+}{loop\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1EventLoop}{Event\+Loop}$\ast$ loop\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Acceptor.\+h 第 37 行定义.
+
+
+
+参考自 Acceptor\+::handl\+Read() , 以及 Acceptor\+::listen().
+
+\mbox{\Hypertarget{classmuduo_1_1Acceptor_a315d8356d0420fe5a89dc67f49c82617}\label{classmuduo_1_1Acceptor_a315d8356d0420fe5a89dc67f49c82617}} 
+\index{muduo\+::\+Acceptor@{muduo\+::\+Acceptor}!new\+Connection\+Callback\+\_\+@{new\+Connection\+Callback\+\_\+}}
+\index{new\+Connection\+Callback\+\_\+@{new\+Connection\+Callback\+\_\+}!muduo\+::\+Acceptor@{muduo\+::\+Acceptor}}
+\subsubsection{\texorpdfstring{new\+Connection\+Callback\+\_\+}{newConnectionCallback\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Acceptor_ad9da8988c47fddac6b0b91e01e154814}{New\+Connection\+Callback} new\+Connection\+Callback\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Acceptor.\+h 第 40 行定义.
+
+
+
+参考自 Acceptor\+::handl\+Read() , 以及 Acceptor\+::set\+New\+Connection\+Callback().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{Acceptor_8h}{Acceptor.\+h}\item 
+src/\hyperlink{Acceptor_8cc}{Acceptor.\+cc}\end{DoxyCompactItemize}

@@ -1,0 +1,1829 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: EventLoop类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmuduo_1_1EventLoop.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-types">Private 类型</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classmuduo_1_1EventLoop-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">EventLoop类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="EventLoop_8h_source.html">EventLoop.h</a>&gt;</code></p>
+<div class="dynheader">
+类 EventLoop 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop__inherit__graph.png" border="0" usemap="#EventLoop_inherit__map" alt="Inheritance graph"/></div>
+<map name="EventLoop_inherit__map" id="EventLoop_inherit__map">
+</map>
+</div>
+<div class="dynheader">
+EventLoop 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop__coll__graph.png" border="0" usemap="#EventLoop_coll__map" alt="Collaboration graph"/></div>
+<map name="EventLoop_coll__map" id="EventLoop_coll__map">
+<area shape="rect" id="node3" href="classmuduo_1_1Timestamp.html" title="{Timestamp\n|+ kMicroSecondsPerSecond\l&#45; microSecondsSinceEpoch_\l|+ Timestamp()\l+ Timestamp()\l+ swap()\l+ toString()\l+ toFormattedString()\l+ valid()\l+ microSecondsSinceEpoch()\l+ secondsSinceEpoch()\l+ now()\l+ invalid()\l+ fromUnixTime()\l+ fromUnixTime()\l}" alt="" coords="154,147,366,400"/>
+<area shape="rect" id="node4" href="classmuduo_1_1copyable.html" title="{copyable\n||# copyable()\l# ~copyable()\l}" alt="" coords="39,5,156,97"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:aa47556388c5bf0b2534c9816841d8e7a"><td class="memItemLeft" align="right" valign="top">typedef boost::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#aa47556388c5bf0b2534c9816841d8e7a">Functor</a></td></tr>
+<tr class="separator:aa47556388c5bf0b2534c9816841d8e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a2bb4ef53c2b77f2313fe0db9fc952450"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#a2bb4ef53c2b77f2313fe0db9fc952450">EventLoop</a> ()</td></tr>
+<tr class="separator:a2bb4ef53c2b77f2313fe0db9fc952450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad39d140230e71b90198d0ed03e0c21f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#ad39d140230e71b90198d0ed03e0c21f2">~EventLoop</a> ()</td></tr>
+<tr class="separator:ad39d140230e71b90198d0ed03e0c21f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#afe461d27b9c48d5921c00d521181f12f">loop</a> ()</td></tr>
+<tr class="separator:afe461d27b9c48d5921c00d521181f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2463a3acef2df4c951ce942a3229e44e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#a2463a3acef2df4c951ce942a3229e44e">quit</a> ()</td></tr>
+<tr class="separator:a2463a3acef2df4c951ce942a3229e44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c4a9a6cf52fc408cdd33c8445fb5127"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1Timestamp.html">Timestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#a5c4a9a6cf52fc408cdd33c8445fb5127">pollReturnTime</a> () const</td></tr>
+<tr class="separator:a5c4a9a6cf52fc408cdd33c8445fb5127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6a4570703c6edf29ae2d28cf6767cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#acf6a4570703c6edf29ae2d28cf6767cb">runInLoop</a> (const <a class="el" href="classmuduo_1_1EventLoop.html#aa47556388c5bf0b2534c9816841d8e7a">Functor</a> &amp;cb)</td></tr>
+<tr class="separator:acf6a4570703c6edf29ae2d28cf6767cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d2b6939f8f94715d253c0d4c6cee207"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#a7d2b6939f8f94715d253c0d4c6cee207">queueInLoop</a> (const <a class="el" href="classmuduo_1_1EventLoop.html#aa47556388c5bf0b2534c9816841d8e7a">Functor</a> &amp;cb)</td></tr>
+<tr class="separator:a7d2b6939f8f94715d253c0d4c6cee207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a2472f0030a6f2076aa56e21830f6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1TimerId.html">TimerId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#aa4a2472f0030a6f2076aa56e21830f6f">runAt</a> (const <a class="el" href="classmuduo_1_1Timestamp.html">Timestamp</a> &amp;time, const <a class="el" href="namespacemuduo.html#a5f7453c2a15825e79bddf5deaec707bf">TimerCallback</a> &amp;cb)</td></tr>
+<tr class="separator:aa4a2472f0030a6f2076aa56e21830f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae770f8cb708dfacf455d71d6977e5436"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1TimerId.html">TimerId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#ae770f8cb708dfacf455d71d6977e5436">runAfter</a> (double delay, const <a class="el" href="namespacemuduo.html#a5f7453c2a15825e79bddf5deaec707bf">TimerCallback</a> &amp;cb)</td></tr>
+<tr class="separator:ae770f8cb708dfacf455d71d6977e5436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf9fa6b9440ac1053f475108297264e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1TimerId.html">TimerId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#a7bf9fa6b9440ac1053f475108297264e">runEvery</a> (double interval, const <a class="el" href="namespacemuduo.html#a5f7453c2a15825e79bddf5deaec707bf">TimerCallback</a> &amp;cb)</td></tr>
+<tr class="separator:a7bf9fa6b9440ac1053f475108297264e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8b24b02bbff6a657fa5b0190bef9b9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#af8b24b02bbff6a657fa5b0190bef9b9b">cancel</a> (<a class="el" href="classmuduo_1_1TimerId.html">TimerId</a> timerId)</td></tr>
+<tr class="separator:af8b24b02bbff6a657fa5b0190bef9b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae674290a26ecbd622c5160e38e8a4fe9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#ae674290a26ecbd622c5160e38e8a4fe9">wakeup</a> ()</td></tr>
+<tr class="separator:ae674290a26ecbd622c5160e38e8a4fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa4a191936aacf608d279a6f343d533"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#acaa4a191936aacf608d279a6f343d533">updateChannel</a> (<a class="el" href="classmuduo_1_1Channel.html">Channel</a> *channel)</td></tr>
+<tr class="separator:acaa4a191936aacf608d279a6f343d533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab10f76c92cb5269f8296e5b3e4dd0ef9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#ab10f76c92cb5269f8296e5b3e4dd0ef9">removeChannel</a> (<a class="el" href="classmuduo_1_1Channel.html">Channel</a> *channel)</td></tr>
+<tr class="separator:ab10f76c92cb5269f8296e5b3e4dd0ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e9c23193ece3ba25a1a2779fc7ebc2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d">assertInLoopThread</a> ()</td></tr>
+<tr class="separator:a9e9c23193ece3ba25a1a2779fc7ebc2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1da5ae1e094c0136136b5344ef7a3b66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66">isInLoopThread</a> () const</td></tr>
+<tr class="separator:a1da5ae1e094c0136136b5344ef7a3b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private 类型</h2></td></tr>
+<tr class="memitem:a0b74248ffee6df294563618187b52404"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="classmuduo_1_1Channel.html">Channel</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#a0b74248ffee6df294563618187b52404">ChannelList</a></td></tr>
+<tr class="separator:a0b74248ffee6df294563618187b52404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a6375a5e33170fe1ee0fcb82c68b684ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba">abortNotInLoopThread</a> ()</td></tr>
+<tr class="separator:a6375a5e33170fe1ee0fcb82c68b684ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a231ec0ec0313193a59b3f1326328ae50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50">handleRead</a> ()</td></tr>
+<tr class="separator:a231ec0ec0313193a59b3f1326328ae50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52b9d01f6df5ea016514b924abda1299"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299">doPendingFunctors</a> ()</td></tr>
+<tr class="separator:a52b9d01f6df5ea016514b924abda1299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a56192e02721abc39fdcc5fec930beb42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#a56192e02721abc39fdcc5fec930beb42">looping_</a></td></tr>
+<tr class="separator:a56192e02721abc39fdcc5fec930beb42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad03d5e60173eec4928f28be29b5cbacf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#ad03d5e60173eec4928f28be29b5cbacf">quit_</a></td></tr>
+<tr class="separator:ad03d5e60173eec4928f28be29b5cbacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a34dfe17bae44f99e2c05ce2a952c90"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#a5a34dfe17bae44f99e2c05ce2a952c90">callingPendingFunctors_</a></td></tr>
+<tr class="separator:a5a34dfe17bae44f99e2c05ce2a952c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34adb5b3e132d9207ceed3440b4f2ab1"><td class="memItemLeft" align="right" valign="top">const pid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#a34adb5b3e132d9207ceed3440b4f2ab1">threadId_</a></td></tr>
+<tr class="separator:a34adb5b3e132d9207ceed3440b4f2ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9331500c7091e0eec7cb1e608897b0ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1Timestamp.html">Timestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#a9331500c7091e0eec7cb1e608897b0ed">pollReturnTime_</a></td></tr>
+<tr class="separator:a9331500c7091e0eec7cb1e608897b0ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac086876e4c7ab85ef83d35afa0340693"><td class="memItemLeft" align="right" valign="top">boost::scoped_ptr&lt; <a class="el" href="classmuduo_1_1EPoller.html">EPoller</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#ac086876e4c7ab85ef83d35afa0340693">poller_</a></td></tr>
+<tr class="separator:ac086876e4c7ab85ef83d35afa0340693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e84bc1cb5c3f44f9a4d6c0e6ea1ee29"><td class="memItemLeft" align="right" valign="top">boost::scoped_ptr&lt; <a class="el" href="classmuduo_1_1TimerQueue.html">TimerQueue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#a5e84bc1cb5c3f44f9a4d6c0e6ea1ee29">timerQueue_</a></td></tr>
+<tr class="separator:a5e84bc1cb5c3f44f9a4d6c0e6ea1ee29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14cd183489944d3bf82c0c1907eeaa30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#a14cd183489944d3bf82c0c1907eeaa30">wakeupFd_</a></td></tr>
+<tr class="separator:a14cd183489944d3bf82c0c1907eeaa30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65578f34006755d9c3ddd66969874bd4"><td class="memItemLeft" align="right" valign="top">boost::scoped_ptr&lt; <a class="el" href="classmuduo_1_1Channel.html">Channel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#a65578f34006755d9c3ddd66969874bd4">wakeupChannel_</a></td></tr>
+<tr class="separator:a65578f34006755d9c3ddd66969874bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9196549e63e60c1a0749ca09d7df6155"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1EventLoop.html#a0b74248ffee6df294563618187b52404">ChannelList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#a9196549e63e60c1a0749ca09d7df6155">activeChannels_</a></td></tr>
+<tr class="separator:a9196549e63e60c1a0749ca09d7df6155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1bf1809a42f40f1a21178dc6620a6f"><td class="memItemLeft" align="right" valign="top">MutexLock&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#a6e1bf1809a42f40f1a21178dc6620a6f">mutex_</a></td></tr>
+<tr class="separator:a6e1bf1809a42f40f1a21178dc6620a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8934a9424f158aa4f0346132f24a2d6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classmuduo_1_1EventLoop.html#aa47556388c5bf0b2534c9816841d8e7a">Functor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1EventLoop.html#ab8934a9424f158aa4f0346132f24a2d6">pendingFunctors_</a></td></tr>
+<tr class="separator:ab8934a9424f158aa4f0346132f24a2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="EventLoop_8h_source.html">EventLoop.h</a> 第 <a class="el" href="EventLoop_8h_source.html#l00022">22</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a0b74248ffee6df294563618187b52404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b74248ffee6df294563618187b52404">&#9670;&nbsp;</a></span>ChannelList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="classmuduo_1_1Channel.html">Channel</a>*&gt; <a class="el" href="classmuduo_1_1EventLoop.html#a0b74248ffee6df294563618187b52404">ChannelList</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8h_source.html">EventLoop.h</a> 第 <a class="el" href="EventLoop_8h_source.html#l00085">85</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa47556388c5bf0b2534c9816841d8e7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa47556388c5bf0b2534c9816841d8e7a">&#9670;&nbsp;</a></span>Functor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::function&lt;void()&gt; <a class="el" href="classmuduo_1_1EventLoop.html#aa47556388c5bf0b2534c9816841d8e7a">Functor</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8h_source.html">EventLoop.h</a> 第 <a class="el" href="EventLoop_8h_source.html#l00025">25</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a2bb4ef53c2b77f2313fe0db9fc952450"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bb4ef53c2b77f2313fe0db9fc952450">&#9670;&nbsp;</a></span>EventLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1EventLoop.html">EventLoop</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8cc_source.html">EventLoop.cc</a> 第 <a class="el" href="EventLoop_8cc_source.html#l00036">36</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="EventLoop_8cc_source.html#l00166">EventLoop::handleRead()</a>, <a class="el" href="Logging_8h_source.html#l00132">LOG_FATAL</a>, <a class="el" href="Logging_8h_source.html#l00124">LOG_TRACE</a>, <a class="el" href="EventLoop_8cc_source.html#l00017">t_loopInThisThread</a>, <a class="el" href="EventLoop_8h_source.html#l00090">EventLoop::threadId_</a> , 以及 <a class="el" href="EventLoop_8h_source.html#l00097">EventLoop::wakeupChannel_</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_a2bb4ef53c2b77f2313fe0db9fc952450_cgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_a2bb4ef53c2b77f2313fe0db9fc952450_cgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_a2bb4ef53c2b77f2313fe0db9fc952450_cgraph" id="classmuduo_1_1EventLoop_a2bb4ef53c2b77f2313fe0db9fc952450_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="handleRead" alt="" coords="144,5,243,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad39d140230e71b90198d0ed03e0c21f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad39d140230e71b90198d0ed03e0c21f2">&#9670;&nbsp;</a></span>~EventLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="classmuduo_1_1EventLoop.html">EventLoop</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8cc_source.html">EventLoop.cc</a> 第 <a class="el" href="EventLoop_8cc_source.html#l00061">61</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="SocketsOps_8cc_source.html#l00125">muduo::sockets::close()</a>, <a class="el" href="EventLoop_8h_source.html#l00087">EventLoop::looping_</a>, <a class="el" href="EventLoop_8cc_source.html#l00017">t_loopInThisThread</a> , 以及 <a class="el" href="EventLoop_8h_source.html#l00094">EventLoop::wakeupFd_</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_ad39d140230e71b90198d0ed03e0c21f2_cgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_ad39d140230e71b90198d0ed03e0c21f2_cgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_ad39d140230e71b90198d0ed03e0c21f2_cgraph" id="classmuduo_1_1EventLoop_ad39d140230e71b90198d0ed03e0c21f2_cgraph">
+<area shape="rect" id="node2" href="namespacemuduo_1_1sockets.html#acb275b6d8b5979229bae664cb7ee14da" title="muduo::sockets::close" alt="" coords="155,5,321,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a6375a5e33170fe1ee0fcb82c68b684ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6375a5e33170fe1ee0fcb82c68b684ba">&#9670;&nbsp;</a></span>abortNotInLoopThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void abortNotInLoopThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8cc_source.html">EventLoop.cc</a> 第 <a class="el" href="EventLoop_8cc_source.html#l00151">151</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Logging_8h_source.html#l00132">LOG_FATAL</a>, <a class="el" href="EventLoop_8h_source.html#l00090">EventLoop::threadId_</a> , 以及 <a class="el" href="CurrentThread_8h_source.html#l00022">muduo::CurrentThread::tid()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8h_source.html#l00069">EventLoop::assertInLoopThread()</a> , 以及 <a class="el" href="EventLoop_8h_source.html#l00077">EventLoop::isInLoopThread()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_a6375a5e33170fe1ee0fcb82c68b684ba_cgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_a6375a5e33170fe1ee0fcb82c68b684ba_cgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_a6375a5e33170fe1ee0fcb82c68b684ba_cgraph" id="classmuduo_1_1EventLoop_a6375a5e33170fe1ee0fcb82c68b684ba_cgraph">
+<area shape="rect" id="node2" href="namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="220,13,413,39"/>
+<area shape="rect" id="node3" href="namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="461,5,629,47"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_a6375a5e33170fe1ee0fcb82c68b684ba_icgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_a6375a5e33170fe1ee0fcb82c68b684ba_icgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_a6375a5e33170fe1ee0fcb82c68b684ba_icgraph" id="classmuduo_1_1EventLoop_a6375a5e33170fe1ee0fcb82c68b684ba_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="assertInLoopThread" alt="" coords="389,821,540,847"/>
+<area shape="rect" id="node47" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="isInLoopThread" alt="" coords="220,1409,341,1435"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EPoller.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::EPoller::assertIn\lLoopThread" alt="" coords="609,537,789,579"/>
+<area shape="rect" id="node6" href="classmuduo_1_1Poller.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::Poller::assertInLoop\lThread" alt="" coords="598,603,801,644"/>
+<area shape="rect" id="node9" href="classmuduo_1_1Acceptor.html#a458bbe4cf81360301586b2e62a7f9dd2" title="muduo::Acceptor::listen" alt="" coords="611,770,787,797"/>
+<area shape="rect" id="node12" href="classmuduo_1_1Acceptor.html#a3459892d34c1eb51b40a53b8062237ca" title="muduo::Acceptor::handlRead" alt="" coords="595,719,803,746"/>
+<area shape="rect" id="node14" href="classmuduo_1_1Connector.html#ad289b54db652dcb10f835f3613e68fdb" title="muduo::Connector::startInLoop" alt="" coords="588,821,811,847"/>
+<area shape="rect" id="node15" href="classmuduo_1_1Connector.html#a22ee094ca3f45aa4156b97d34fe678bf" title="muduo::Connector::restart" alt="" coords="1429,878,1621,905"/>
+<area shape="rect" id="node20" href="classmuduo_1_1EventLoop.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="674,42,725,69"/>
+<area shape="rect" id="node23" href="classmuduo_1_1EventLoop.html#acaa4a191936aacf608d279a6f343d533" title="updateChannel" alt="" coords="639,1023,759,1050"/>
+<area shape="rect" id="node26" href="classmuduo_1_1EventLoop.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="removeChannel" alt="" coords="637,1074,762,1101"/>
+<area shape="rect" id="node28" href="classmuduo_1_1TcpConnection.html#afff2c1576d605dda12f87d2b32d5c1a2" title="muduo::TcpConnection\l::connectDestoryed" alt="" coords="897,1107,1067,1148"/>
+<area shape="rect" id="node29" href="classmuduo_1_1TcpClient.html#ad9661c3f05443256c9439f812d1a7691" title="Not thread safe, but in loop " alt="" coords="1159,1353,1351,1395"/>
+<area shape="rect" id="node31" href="classmuduo_1_1TcpClient.html#ae2e5d102f7a519e65019cd5f09acea72" title="Not thread safe, but in loop " alt="" coords="1404,1310,1647,1337"/>
+<area shape="rect" id="node32" href="classmuduo_1_1TcpServer.html#a38345725075c2bf845af025c2567d977" title="Not thread safe, but in loop " alt="" coords="1157,1107,1353,1148"/>
+<area shape="rect" id="node33" href="classmuduo_1_1EventLoopThreadPool.html#a60de64d75454385b23995437f1d72669" title="muduo::EventLoopThreadPool\l::start" alt="" coords="591,93,807,135"/>
+<area shape="rect" id="node35" href="classmuduo_1_1EventLoopThreadPool.html#ad79a4dd0cdd1358bfde1170759543c7d" title="muduo::EventLoopThreadPool\l::getNextLoop" alt="" coords="591,159,807,200"/>
+<area shape="rect" id="node36" href="classmuduo_1_1TcpConnection.html#a016986a5f7c6f0d415e25b4b6bdbf481" title="muduo::TcpConnection\l::sendInLoop" alt="" coords="615,1612,784,1653"/>
+<area shape="rect" id="node38" href="classmuduo_1_1TcpConnection.html#a4f988229386dc4e5f80cca96e096e074" title="muduo::TcpConnection\l::shutdownInLoop" alt="" coords="615,1176,784,1217"/>
+<area shape="rect" id="node39" href="classmuduo_1_1TcpConnection.html#ae1d79ff6580eaced59a900144818150d" title="muduo::TcpConnection\l::handleWrite" alt="" coords="897,1340,1067,1381"/>
+<area shape="rect" id="node40" href="classmuduo_1_1TcpConnection.html#a2e1f9742dac98a0c3e5a5509920934ae" title="muduo::TcpConnection\l::connectEstablished" alt="" coords="615,1241,784,1283"/>
+<area shape="rect" id="node41" href="classmuduo_1_1TcpServer.html#a6e7510f45cfa67ddc79aa8689fd79562" title="Not thread safe, but in loop " alt="" coords="859,1406,1105,1433"/>
+<area shape="rect" id="node42" href="classmuduo_1_1TcpConnection.html#a2cb2baff35786f9caa991e3c47908d91" title="muduo::TcpConnection\l::handleClose" alt="" coords="615,224,784,265"/>
+<area shape="rect" id="node43" href="classmuduo_1_1TimerQueue.html#adff791c94ab893d2adae1eafe03713ad" title="muduo::TimerQueue::\laddTimerInLoop" alt="" coords="901,312,1063,353"/>
+<area shape="rect" id="node44" href="classmuduo_1_1TimerQueue.html#abc59bed63190c00d9aab9281a543ea58" title="muduo::TimerQueue::\lcancelInLoop" alt="" coords="618,407,781,448"/>
+<area shape="rect" id="node45" href="classmuduo_1_1TimerQueue.html#a231ec0ec0313193a59b3f1326328ae50" title="muduo::TimerQueue::\lhandleRead" alt="" coords="618,472,781,513"/>
+<area shape="rect" id="node46" href="classmuduo_1_1TimerQueue.html#ac4bdfea344ee2a30857d2eabadfef399" title="muduo::TimerQueue::\linsert" alt="" coords="618,341,781,383"/>
+<area shape="rect" id="node4" href="classmuduo_1_1EPoller.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="muduo::EPoller::removeChannel" alt="" coords="867,397,1097,423"/>
+<area shape="rect" id="node5" href="classmuduo_1_1EPoller.html#acaa4a191936aacf608d279a6f343d533" title="muduo::EPoller::updateChannel" alt="" coords="869,447,1095,474"/>
+<area shape="rect" id="node7" href="classmuduo_1_1Poller.html#acaa4a191936aacf608d279a6f343d533" title="muduo::Poller::updateChannel" alt="" coords="873,498,1091,525"/>
+<area shape="rect" id="node8" href="classmuduo_1_1Poller.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="muduo::Poller::removeChannel" alt="" coords="871,549,1093,575"/>
+<area shape="rect" id="node10" href="classmuduo_1_1Acceptor.html#a43301d614b7aaae820d7ddd7033984f5" title="muduo::Acceptor::listenning" alt="" coords="880,701,1084,727"/>
+<area shape="rect" id="node11" href="classmuduo_1_1TcpServer.html#a60de64d75454385b23995437f1d72669" title="muduo::TcpServer::start" alt="" coords="894,751,1070,778"/>
+<area shape="rect" id="node13" href="classmuduo_1_1Acceptor.html#a034c2e4c8c39c67bcaa4a47a6fa906fd" title="muduo::Acceptor::Acceptor" alt="" coords="883,650,1081,677"/>
+<area shape="rect" id="node17" href="classmuduo_1_1Connector.html#a6a23d487c31355d8663ccdd4cbf4f499" title="muduo::Connector::retry" alt="" coords="892,853,1072,879"/>
+<area shape="rect" id="node18" href="classmuduo_1_1Connector.html#ab987a8e9ac6b0ad825674ec2131921af" title="muduo::Connector::setState" alt="" coords="1153,853,1356,879"/>
+<area shape="rect" id="node19" href="classmuduo_1_1Connector.html#a60de64d75454385b23995437f1d72669" title="muduo::Connector::start" alt="" coords="893,954,1071,981"/>
+<area shape="rect" id="node16" href="classmuduo_1_1Connector.html#a30908d8d30b5333e6288a7430d598cb1" title="muduo::Connector::setNew\lConnectionCallback" alt="" coords="1695,909,1893,951"/>
+<area shape="rect" id="node21" href="classmuduo_1_1EventLoopThread.html#a539feb3c59a20db3b260b312fa7dea34" title="muduo::EventLoopThread\l::threadFunc" alt="" coords="888,5,1076,47"/>
+<area shape="rect" id="node22" href="test13_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="955,71,1009,98"/>
+<area shape="rect" id="node24" href="classmuduo_1_1EventLoop.html#a5c4a9a6cf52fc408cdd33c8445fb5127" title="pollReturnTime" alt="" coords="921,1223,1043,1250"/>
+<area shape="rect" id="node25" href="classmuduo_1_1Channel.html#ac5c54df7ed3b930268c8d7752c101725" title="muduo::Channel::update" alt="" coords="891,1173,1073,1199"/>
+<area shape="rect" id="node27" href="classmuduo_1_1Connector.html#abf9772658904f185215158e0dbdf9610" title="muduo::Connector::remove\lAndResetChannel" alt="" coords="883,1275,1081,1316"/>
+<area shape="rect" id="node30" href="classmuduo_1_1TcpClient.html#a94b31be320453fc8aeae81b25934b43f" title="muduo::TcpClient::setWrite\lCompleteCallback" alt="" coords="1696,1328,1892,1369"/>
+<area shape="rect" id="node34" href="classmuduo_1_1EventLoopThreadPool.html#a83bb28d139df96ba9fc449b4643f2c36" title="muduo::EventLoopThreadPool\l::setThreadNum" alt="" coords="874,141,1090,183"/>
+<area shape="rect" id="node37" href="classmuduo_1_1TcpConnection.html#a4d274fdc2a242187da42dcd82cd593ec" title="muduo::TcpConnection\l::send" alt="" coords="897,1612,1067,1653"/>
+<area shape="rect" id="node48" href="classmuduo_1_1EventLoop.html#a2463a3acef2df4c951ce942a3229e44e" title="quit" alt="" coords="441,1510,488,1537"/>
+<area shape="rect" id="node49" href="classmuduo_1_1EventLoop.html#acf6a4570703c6edf29ae2d28cf6767cb" title="runInLoop" alt="" coords="656,1358,743,1385"/>
+<area shape="rect" id="node50" href="classmuduo_1_1EventLoop.html#a7d2b6939f8f94715d253c0d4c6cee207" title="queueInLoop" alt="" coords="412,1459,517,1486"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9e9c23193ece3ba25a1a2779fc7ebc2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e9c23193ece3ba25a1a2779fc7ebc2d">&#9670;&nbsp;</a></span>assertInLoopThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void assertInLoopThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8h_source.html">EventLoop.h</a> 第 <a class="el" href="EventLoop_8h_source.html#l00069">69</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="EventLoop_8cc_source.html#l00151">EventLoop::abortNotInLoopThread()</a> , 以及 <a class="el" href="EventLoop_8h_source.html#l00077">EventLoop::isInLoopThread()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="TimerQueue_8cc_source.html#l00092">TimerQueue::addTimerInLoop()</a>, <a class="el" href="Poller_8h_source.html#l00029">Poller::assertInLoopThread()</a>, <a class="el" href="EPoller_8h_source.html#l00038">EPoller::assertInLoopThread()</a>, <a class="el" href="TimerQueue_8cc_source.html#l00100">TimerQueue::cancelInLoop()</a>, <a class="el" href="TcpConnection_8cc_source.html#l00109">TcpConnection::connectDestoryed()</a>, <a class="el" href="TcpConnection_8cc_source.html#l00100">TcpConnection::connectEstablished()</a>, <a class="el" href="EventLoopThreadPool_8cc_source.html#l00031">EventLoopThreadPool::getNextLoop()</a>, <a class="el" href="TcpConnection_8cc_source.html#l00156">TcpConnection::handleClose()</a>, <a class="el" href="TimerQueue_8cc_source.html#l00117">TimerQueue::handleRead()</a>, <a class="el" href="TcpConnection_8cc_source.html#l00133">TcpConnection::handleWrite()</a>, <a class="el" href="Acceptor_8cc_source.html#l00029">Acceptor::handlRead()</a>, <a class="el" href="TimerQueue_8cc_source.html#l00178">TimerQueue::insert()</a>, <a class="el" href="Acceptor_8cc_source.html#l00022">Acceptor::listen()</a>, <a class="el" href="EventLoop_8cc_source.html#l00068">EventLoop::loop()</a>, <a class="el" href="TcpClient_8cc_source.html#l00083">TcpClient::newConnection()</a>, <a class="el" href="TcpServer_8cc_source.html#l00041">TcpServer::newConnection()</a>, <a class="el" href="EventLoop_8cc_source.html#l00145">EventLoop::removeChannel()</a>, <a class="el" href="TcpClient_8cc_source.html#l00106">TcpClient::removeConnection()</a>, <a class="el" href="TcpServer_8cc_source.html#l00066">TcpServer::removeConnectionInLoop()</a>, <a class="el" href="Connector_8cc_source.html#l00086">Connector::restart()</a>, <a class="el" href="TcpConnection_8cc_source.html#l00050">TcpConnection::sendInLoop()</a>, <a class="el" href="TcpConnection_8cc_source.html#l00088">TcpConnection::shutdownInLoop()</a>, <a class="el" href="EventLoopThreadPool_8cc_source.html#l00018">EventLoopThreadPool::start()</a>, <a class="el" href="Connector_8cc_source.html#l00038">Connector::startInLoop()</a> , 以及 <a class="el" href="EventLoop_8cc_source.html#l00139">EventLoop::updateChannel()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_a9e9c23193ece3ba25a1a2779fc7ebc2d_cgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_a9e9c23193ece3ba25a1a2779fc7ebc2d_cgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_a9e9c23193ece3ba25a1a2779fc7ebc2d_cgraph" id="classmuduo_1_1EventLoop_a9e9c23193ece3ba25a1a2779fc7ebc2d_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="abortNotInLoopThread" alt="" coords="373,5,540,32"/>
+<area shape="rect" id="node5" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="isInLoopThread" alt="" coords="204,56,325,83"/>
+<area shape="rect" id="node3" href="namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="588,31,781,57"/>
+<area shape="rect" id="node4" href="namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="829,23,997,65"/>
+<area shape="rect" id="node6" href="classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="handleRead" alt="" coords="407,107,506,133"/>
+<area shape="rect" id="node7" href="classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="doPendingFunctors" alt="" coords="385,157,529,184"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_a9e9c23193ece3ba25a1a2779fc7ebc2d_icgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_a9e9c23193ece3ba25a1a2779fc7ebc2d_icgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_a9e9c23193ece3ba25a1a2779fc7ebc2d_icgraph" id="classmuduo_1_1EventLoop_a9e9c23193ece3ba25a1a2779fc7ebc2d_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1TimerQueue.html#adff791c94ab893d2adae1eafe03713ad" title="muduo::TimerQueue::\laddTimerInLoop" alt="" coords="509,15,671,57"/>
+<area shape="rect" id="node4" href="classmuduo_1_1Poller.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::Poller::assertInLoop\lThread" alt="" coords="214,241,417,282"/>
+<area shape="rect" id="node7" href="classmuduo_1_1EPoller.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::EPoller::assertIn\lLoopThread" alt="" coords="225,335,405,377"/>
+<area shape="rect" id="node10" href="classmuduo_1_1TimerQueue.html#abc59bed63190c00d9aab9281a543ea58" title="muduo::TimerQueue::\lcancelInLoop" alt="" coords="234,401,397,442"/>
+<area shape="rect" id="node12" href="classmuduo_1_1TcpConnection.html#afff2c1576d605dda12f87d2b32d5c1a2" title="muduo::TcpConnection\l::connectDestoryed" alt="" coords="971,793,1140,834"/>
+<area shape="rect" id="node15" href="classmuduo_1_1TcpClient.html#ad9661c3f05443256c9439f812d1a7691" title="Not thread safe, but in loop " alt="" coords="1215,1091,1407,1133"/>
+<area shape="rect" id="node17" href="classmuduo_1_1TcpClient.html#ae2e5d102f7a519e65019cd5f09acea72" title="Not thread safe, but in loop " alt="" coords="1483,1153,1725,1180"/>
+<area shape="rect" id="node19" href="classmuduo_1_1TcpServer.html#a38345725075c2bf845af025c2567d977" title="Not thread safe, but in loop " alt="" coords="1213,734,1409,775"/>
+<area shape="rect" id="node21" href="classmuduo_1_1TcpConnection.html#a2e1f9742dac98a0c3e5a5509920934ae" title="muduo::TcpConnection\l::connectEstablished" alt="" coords="971,883,1140,925"/>
+<area shape="rect" id="node22" href="classmuduo_1_1TcpServer.html#a6e7510f45cfa67ddc79aa8689fd79562" title="Not thread safe, but in loop " alt="" coords="1188,917,1435,944"/>
+<area shape="rect" id="node24" href="classmuduo_1_1EventLoopThreadPool.html#ad79a4dd0cdd1358bfde1170759543c7d" title="muduo::EventLoopThreadPool\l::getNextLoop" alt="" coords="207,1274,423,1315"/>
+<area shape="rect" id="node26" href="classmuduo_1_1TcpConnection.html#a2cb2baff35786f9caa991e3c47908d91" title="muduo::TcpConnection\l::handleClose" alt="" coords="231,747,400,789"/>
+<area shape="rect" id="node30" href="classmuduo_1_1TimerQueue.html#a231ec0ec0313193a59b3f1326328ae50" title="muduo::TimerQueue::\lhandleRead" alt="" coords="757,110,919,151"/>
+<area shape="rect" id="node32" href="classmuduo_1_1TcpConnection.html#ae1d79ff6580eaced59a900144818150d" title="muduo::TcpConnection\l::handleWrite" alt="" coords="505,838,675,879"/>
+<area shape="rect" id="node33" href="classmuduo_1_1Acceptor.html#a3459892d34c1eb51b40a53b8062237ca" title="muduo::Acceptor::handlRead" alt="" coords="211,1340,419,1367"/>
+<area shape="rect" id="node36" href="classmuduo_1_1TimerQueue.html#ac4bdfea344ee2a30857d2eabadfef399" title="muduo::TimerQueue::\linsert" alt="" coords="234,81,397,122"/>
+<area shape="rect" id="node38" href="classmuduo_1_1Acceptor.html#a458bbe4cf81360301586b2e62a7f9dd2" title="muduo::Acceptor::listen" alt="" coords="227,1391,403,1417"/>
+<area shape="rect" id="node40" href="classmuduo_1_1EventLoop.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="290,1441,341,1468"/>
+<area shape="rect" id="node43" href="classmuduo_1_1EventLoop.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="removeChannel" alt="" coords="253,619,378,645"/>
+<area shape="rect" id="node45" href="classmuduo_1_1Connector.html#a22ee094ca3f45aa4156b97d34fe678bf" title="muduo::Connector::restart" alt="" coords="494,1559,686,1585"/>
+<area shape="rect" id="node46" href="classmuduo_1_1TcpConnection.html#a016986a5f7c6f0d415e25b4b6bdbf481" title="muduo::TcpConnection\l::sendInLoop" alt="" coords="231,939,400,981"/>
+<area shape="rect" id="node47" href="classmuduo_1_1TcpConnection.html#a4f988229386dc4e5f80cca96e096e074" title="muduo::TcpConnection\l::shutdownInLoop" alt="" coords="231,874,400,915"/>
+<area shape="rect" id="node48" href="classmuduo_1_1EventLoopThreadPool.html#a60de64d75454385b23995437f1d72669" title="muduo::EventLoopThreadPool\l::start" alt="" coords="207,1209,423,1250"/>
+<area shape="rect" id="node49" href="classmuduo_1_1Connector.html#ad289b54db652dcb10f835f3613e68fdb" title="muduo::Connector::startInLoop" alt="" coords="204,1496,427,1523"/>
+<area shape="rect" id="node50" href="classmuduo_1_1EventLoop.html#acaa4a191936aacf608d279a6f343d533" title="updateChannel" alt="" coords="255,679,375,705"/>
+<area shape="rect" id="node3" href="classmuduo_1_1TimerQueue.html#af1bd2f1010adf1a82120c708b7a1ba22" title="muduo::TimerQueue::\laddTimer" alt="" coords="757,15,919,57"/>
+<area shape="rect" id="node5" href="classmuduo_1_1Poller.html#acaa4a191936aacf608d279a6f343d533" title="muduo::Poller::updateChannel" alt="" coords="481,248,699,275"/>
+<area shape="rect" id="node6" href="classmuduo_1_1Poller.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="muduo::Poller::removeChannel" alt="" coords="479,197,701,224"/>
+<area shape="rect" id="node8" href="classmuduo_1_1EPoller.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="muduo::EPoller::removeChannel" alt="" coords="475,349,705,376"/>
+<area shape="rect" id="node9" href="classmuduo_1_1EPoller.html#acaa4a191936aacf608d279a6f343d533" title="muduo::EPoller::updateChannel" alt="" coords="477,299,703,325"/>
+<area shape="rect" id="node11" href="classmuduo_1_1TimerQueue.html#af8b24b02bbff6a657fa5b0190bef9b9b" title="muduo::TimerQueue::\lcancel" alt="" coords="509,401,671,442"/>
+<area shape="rect" id="node13" href="classmuduo_1_1TcpConnection.html#acb32ba0eda160676b4fc98d756ee3515" title="Internal use only. " alt="" coords="1227,851,1396,893"/>
+<area shape="rect" id="node14" href="namespacemuduo_1_1detail.html#ae3e6bfc20f665df13eeb2ebc3c91abce" title="muduo::detail::removeConnection" alt="" coords="1190,800,1433,827"/>
+<area shape="rect" id="node16" href="classmuduo_1_1TcpClient.html#a94b31be320453fc8aeae81b25934b43f" title="muduo::TcpClient::setWrite\lCompleteCallback" alt="" coords="1776,1091,1972,1133"/>
+<area shape="rect" id="node18" href="classmuduo_1_1TcpClient.html#a8d68694b0595253edef974e8ee289d4c" title="muduo::TcpClient::TcpClient" alt="" coords="1773,1157,1975,1184"/>
+<area shape="rect" id="node20" href="classmuduo_1_1TcpServer.html#a94b31be320453fc8aeae81b25934b43f" title="muduo::TcpServer::setWrite\lCompleteCallback" alt="" coords="1504,793,1704,834"/>
+<area shape="rect" id="node23" href="classmuduo_1_1TcpServer.html#aca9a1702da801c3275b2e70d233cc0c7" title="muduo::TcpServer::TcpServer" alt="" coords="1499,917,1709,944"/>
+<area shape="rect" id="node25" href="classmuduo_1_1EventLoopThreadPool.html#a83bb28d139df96ba9fc449b4643f2c36" title="muduo::EventLoopThreadPool\l::setThreadNum" alt="" coords="482,1215,698,1257"/>
+<area shape="rect" id="node27" href="classmuduo_1_1TcpConnection.html#a5cefef7ea6272b740592d9dfecbd6c20" title="muduo::TcpConnection\l::setState" alt="" coords="753,838,923,879"/>
+<area shape="rect" id="node28" href="classmuduo_1_1TcpConnection.html#a239881b2e3d5499da8745fba1bd82e08" title="muduo::TcpConnection\l::TcpConnection" alt="" coords="753,721,923,762"/>
+<area shape="rect" id="node29" href="classmuduo_1_1TcpConnection.html#afca05707020dd916739c07555d4769a0" title="muduo::TcpConnection\l::handleRead" alt="" coords="505,721,675,762"/>
+<area shape="rect" id="node31" href="classmuduo_1_1TimerQueue.html#a7ad41aed2409f7d424fd9cf7c0c5eac8" title="muduo::TimerQueue::\lTimerQueue" alt="" coords="974,110,1137,151"/>
+<area shape="rect" id="node34" href="classmuduo_1_1Acceptor.html#a034c2e4c8c39c67bcaa4a47a6fa906fd" title="muduo::Acceptor::Acceptor" alt="" coords="491,1289,689,1316"/>
+<area shape="rect" id="node35" href="classmuduo_1_1Acceptor.html#a43301d614b7aaae820d7ddd7033984f5" title="muduo::Acceptor::listenning" alt="" coords="488,1340,692,1367"/>
+<area shape="rect" id="node37" href="classmuduo_1_1TimerQueue.html#ac59fd8ddc045aae320982a0913993237" title="muduo::TimerQueue::\lreset" alt="" coords="509,81,671,122"/>
+<area shape="rect" id="node39" href="classmuduo_1_1TcpServer.html#a60de64d75454385b23995437f1d72669" title="muduo::TcpServer::start" alt="" coords="502,1391,678,1417"/>
+<area shape="rect" id="node41" href="classmuduo_1_1EventLoopThread.html#a539feb3c59a20db3b260b312fa7dea34" title="muduo::EventLoopThread\l::threadFunc" alt="" coords="496,1493,684,1534"/>
+<area shape="rect" id="node42" href="test13_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="563,1441,617,1468"/>
+<area shape="rect" id="node44" href="classmuduo_1_1EventLoop.html#a5c4a9a6cf52fc408cdd33c8445fb5127" title="pollReturnTime" alt="" coords="529,619,651,645"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af8b24b02bbff6a657fa5b0190bef9b9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8b24b02bbff6a657fa5b0190bef9b9b">&#9670;&nbsp;</a></span>cancel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cancel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1TimerId.html">TimerId</a>&#160;</td>
+          <td class="paramname"><em>timerId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8cc_source.html">EventLoop.cc</a> 第 <a class="el" href="EventLoop_8cc_source.html#l00135">135</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="EventLoop_8h_source.html#l00093">EventLoop::timerQueue_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8h_source.html#l00035">EventLoop::pollReturnTime()</a>, <a class="el" href="Connector_8cc_source.html#l00094">Connector::stop()</a> , 以及 <a class="el" href="Connector_8cc_source.html#l00027">Connector::~Connector()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_af8b24b02bbff6a657fa5b0190bef9b9b_icgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_af8b24b02bbff6a657fa5b0190bef9b9b_icgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_af8b24b02bbff6a657fa5b0190bef9b9b_icgraph" id="classmuduo_1_1EventLoop_af8b24b02bbff6a657fa5b0190bef9b9b_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a5c4a9a6cf52fc408cdd33c8445fb5127" title="pollReturnTime" alt="" coords="145,5,267,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1Connector.html#a8c528baf37154d347366083f0f816846" title="muduo::Connector::stop" alt="" coords="117,56,295,83"/>
+<area shape="rect" id="node5" href="classmuduo_1_1Connector.html#a3ee3948f23cf15142798ae0031f6b692" title="muduo::Connector::\l~Connector" alt="" coords="131,107,281,149"/>
+<area shape="rect" id="node4" href="classmuduo_1_1Connector.html#a30908d8d30b5333e6288a7430d598cb1" title="muduo::Connector::setNew\lConnectionCallback" alt="" coords="343,49,541,90"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a52b9d01f6df5ea016514b924abda1299"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52b9d01f6df5ea016514b924abda1299">&#9670;&nbsp;</a></span>doPendingFunctors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void doPendingFunctors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8cc_source.html">EventLoop.cc</a> 第 <a class="el" href="EventLoop_8cc_source.html#l00174">174</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="EventLoop_8h_source.html#l00089">EventLoop::callingPendingFunctors_</a>, <a class="el" href="EventLoop_8h_source.html#l00099">EventLoop::mutex_</a> , 以及 <a class="el" href="EventLoop_8h_source.html#l00100">EventLoop::pendingFunctors_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8h_source.html#l00077">EventLoop::isInLoopThread()</a> , 以及 <a class="el" href="EventLoop_8cc_source.html#l00068">EventLoop::loop()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_a52b9d01f6df5ea016514b924abda1299_icgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_a52b9d01f6df5ea016514b924abda1299_icgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_a52b9d01f6df5ea016514b924abda1299_icgraph" id="classmuduo_1_1EventLoop_a52b9d01f6df5ea016514b924abda1299_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="isInLoopThread" alt="" coords="197,1707,319,1734"/>
+<area shape="rect" id="node31" href="classmuduo_1_1EventLoop.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="651,1837,702,1863"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="assertInLoopThread" alt="" coords="367,778,517,805"/>
+<area shape="rect" id="node39" href="classmuduo_1_1TcpConnection.html#a4d274fdc2a242187da42dcd82cd593ec" title="muduo::TcpConnection\l::send" alt="" coords="867,1712,1036,1753"/>
+<area shape="rect" id="node47" href="classmuduo_1_1EventLoop.html#a2463a3acef2df4c951ce942a3229e44e" title="quit" alt="" coords="419,1829,465,1855"/>
+<area shape="rect" id="node49" href="classmuduo_1_1EventLoop.html#acf6a4570703c6edf29ae2d28cf6767cb" title="runInLoop" alt="" coords="633,1545,720,1571"/>
+<area shape="rect" id="node50" href="classmuduo_1_1EventLoop.html#a7d2b6939f8f94715d253c0d4c6cee207" title="queueInLoop" alt="" coords="389,1494,495,1521"/>
+<area shape="rect" id="node4" href="classmuduo_1_1TimerQueue.html#adff791c94ab893d2adae1eafe03713ad" title="muduo::TimerQueue::\laddTimerInLoop" alt="" coords="870,976,1033,1017"/>
+<area shape="rect" id="node6" href="classmuduo_1_1Poller.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::Poller::assertInLoop\lThread" alt="" coords="575,169,778,211"/>
+<area shape="rect" id="node9" href="classmuduo_1_1EPoller.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::EPoller::assertIn\lLoopThread" alt="" coords="587,235,767,276"/>
+<area shape="rect" id="node12" href="classmuduo_1_1TimerQueue.html#abc59bed63190c00d9aab9281a543ea58" title="muduo::TimerQueue::\lcancelInLoop" alt="" coords="595,1596,758,1637"/>
+<area shape="rect" id="node14" href="classmuduo_1_1TcpConnection.html#afff2c1576d605dda12f87d2b32d5c1a2" title="muduo::TcpConnection\l::connectDestoryed" alt="" coords="867,908,1036,949"/>
+<area shape="rect" id="node17" href="classmuduo_1_1TcpClient.html#ad9661c3f05443256c9439f812d1a7691" title="Not thread safe, but in loop " alt="" coords="1140,773,1332,815"/>
+<area shape="rect" id="node18" href="classmuduo_1_1TcpClient.html#ae2e5d102f7a519e65019cd5f09acea72" title="Not thread safe, but in loop " alt="" coords="1405,302,1648,329"/>
+<area shape="rect" id="node19" href="classmuduo_1_1TcpServer.html#a38345725075c2bf845af025c2567d977" title="Not thread safe, but in loop " alt="" coords="1138,908,1334,949"/>
+<area shape="rect" id="node21" href="classmuduo_1_1TcpServer.html#a6e7510f45cfa67ddc79aa8689fd79562" title="Not thread safe, but in loop " alt="" coords="1696,787,1943,814"/>
+<area shape="rect" id="node22" href="classmuduo_1_1TcpConnection.html#a2e1f9742dac98a0c3e5a5509920934ae" title="muduo::TcpConnection\l::connectEstablished" alt="" coords="1442,716,1611,757"/>
+<area shape="rect" id="node23" href="classmuduo_1_1EventLoopThreadPool.html#ad79a4dd0cdd1358bfde1170759543c7d" title="muduo::EventLoopThreadPool\l::getNextLoop" alt="" coords="569,104,785,145"/>
+<area shape="rect" id="node24" href="classmuduo_1_1TcpConnection.html#a2cb2baff35786f9caa991e3c47908d91" title="muduo::TcpConnection\l::handleClose" alt="" coords="592,300,761,341"/>
+<area shape="rect" id="node25" href="classmuduo_1_1TimerQueue.html#a231ec0ec0313193a59b3f1326328ae50" title="muduo::TimerQueue::\lhandleRead" alt="" coords="595,417,758,459"/>
+<area shape="rect" id="node26" href="classmuduo_1_1TcpConnection.html#ae1d79ff6580eaced59a900144818150d" title="muduo::TcpConnection\l::handleWrite" alt="" coords="867,1159,1036,1200"/>
+<area shape="rect" id="node27" href="classmuduo_1_1Acceptor.html#a3459892d34c1eb51b40a53b8062237ca" title="muduo::Acceptor::handlRead" alt="" coords="573,483,781,510"/>
+<area shape="rect" id="node28" href="classmuduo_1_1TimerQueue.html#ac4bdfea344ee2a30857d2eabadfef399" title="muduo::TimerQueue::\linsert" alt="" coords="595,1007,758,1048"/>
+<area shape="rect" id="node29" href="classmuduo_1_1Acceptor.html#a458bbe4cf81360301586b2e62a7f9dd2" title="muduo::Acceptor::listen" alt="" coords="589,1443,765,1470"/>
+<area shape="rect" id="node34" href="classmuduo_1_1EventLoop.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="removeChannel" alt="" coords="614,1073,739,1099"/>
+<area shape="rect" id="node37" href="classmuduo_1_1Connector.html#a22ee094ca3f45aa4156b97d34fe678bf" title="muduo::Connector::restart" alt="" coords="855,803,1047,830"/>
+<area shape="rect" id="node38" href="classmuduo_1_1TcpConnection.html#a016986a5f7c6f0d415e25b4b6bdbf481" title="muduo::TcpConnection\l::sendInLoop" alt="" coords="592,1661,761,1703"/>
+<area shape="rect" id="node41" href="classmuduo_1_1TcpConnection.html#a4f988229386dc4e5f80cca96e096e074" title="muduo::TcpConnection\l::shutdownInLoop" alt="" coords="592,1225,761,1267"/>
+<area shape="rect" id="node43" href="classmuduo_1_1EventLoopThreadPool.html#a60de64d75454385b23995437f1d72669" title="muduo::EventLoopThreadPool\l::start" alt="" coords="569,535,785,576"/>
+<area shape="rect" id="node44" href="classmuduo_1_1Connector.html#ad289b54db652dcb10f835f3613e68fdb" title="muduo::Connector::startInLoop" alt="" coords="565,803,788,830"/>
+<area shape="rect" id="node46" href="classmuduo_1_1EventLoop.html#acaa4a191936aacf608d279a6f343d533" title="updateChannel" alt="" coords="617,1291,737,1318"/>
+<area shape="rect" id="node5" href="classmuduo_1_1TimerQueue.html#af1bd2f1010adf1a82120c708b7a1ba22" title="muduo::TimerQueue::\laddTimer" alt="" coords="1155,1168,1317,1209"/>
+<area shape="rect" id="node7" href="classmuduo_1_1Poller.html#acaa4a191936aacf608d279a6f343d533" title="muduo::Poller::updateChannel" alt="" coords="842,130,1061,157"/>
+<area shape="rect" id="node8" href="classmuduo_1_1Poller.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="muduo::Poller::removeChannel" alt="" coords="840,181,1063,207"/>
+<area shape="rect" id="node10" href="classmuduo_1_1EPoller.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="muduo::EPoller::removeChannel" alt="" coords="836,238,1067,265"/>
+<area shape="rect" id="node11" href="classmuduo_1_1EPoller.html#acaa4a191936aacf608d279a6f343d533" title="muduo::EPoller::updateChannel" alt="" coords="838,289,1065,315"/>
+<area shape="rect" id="node13" href="classmuduo_1_1TimerQueue.html#af8b24b02bbff6a657fa5b0190bef9b9b" title="muduo::TimerQueue::\lcancel" alt="" coords="870,1647,1033,1688"/>
+<area shape="rect" id="node15" href="namespacemuduo_1_1detail.html#ae3e6bfc20f665df13eeb2ebc3c91abce" title="muduo::detail::removeConnection" alt="" coords="1115,1595,1357,1622"/>
+<area shape="rect" id="node16" href="classmuduo_1_1TcpClient.html#a01845d2886f327b9c8cb5df03cb00d7c" title="muduo::TcpClient::\l~TcpClient" alt="" coords="1455,1559,1598,1600"/>
+<area shape="rect" id="node20" href="classmuduo_1_1TcpServer.html#ad9661c3f05443256c9439f812d1a7691" title="Thread safe " alt="" coords="1429,908,1625,949"/>
+<area shape="rect" id="node30" href="classmuduo_1_1TcpServer.html#a60de64d75454385b23995437f1d72669" title="muduo::TcpServer::start" alt="" coords="863,1393,1039,1419"/>
+<area shape="rect" id="node32" href="classmuduo_1_1EventLoopThread.html#a539feb3c59a20db3b260b312fa7dea34" title="muduo::EventLoopThread\l::threadFunc" alt="" coords="857,1829,1045,1871"/>
+<area shape="rect" id="node33" href="test13_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="924,1895,979,1922"/>
+<area shape="rect" id="node35" href="classmuduo_1_1EventLoop.html#a5c4a9a6cf52fc408cdd33c8445fb5127" title="pollReturnTime" alt="" coords="891,1225,1012,1251"/>
+<area shape="rect" id="node36" href="classmuduo_1_1Connector.html#abf9772658904f185215158e0dbdf9610" title="muduo::Connector::remove\lAndResetChannel" alt="" coords="852,1041,1051,1083"/>
+<area shape="rect" id="node40" href="classmuduo_1_1TcpConnection.html#aa0fd96bc25e3d509fb54028c2e4b91f6" title="muduo::TcpConnection\l::connected" alt="" coords="1151,1479,1321,1520"/>
+<area shape="rect" id="node42" href="classmuduo_1_1TcpConnection.html#a7861ee1569802186a619778efc85af13" title="muduo::TcpConnection\l::shutdown" alt="" coords="867,1327,1036,1368"/>
+<area shape="rect" id="node45" href="classmuduo_1_1Connector.html#a60de64d75454385b23995437f1d72669" title="muduo::Connector::start" alt="" coords="862,1107,1041,1134"/>
+<area shape="rect" id="node48" href="classmuduo_1_1EventLoopThread.html#af946ac1087e0c7617b0704ebde55332c" title="muduo::EventLoopThread\l::~EventLoopThread" alt="" coords="583,1888,771,1929"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a231ec0ec0313193a59b3f1326328ae50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a231ec0ec0313193a59b3f1326328ae50">&#9670;&nbsp;</a></span>handleRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleRead </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8cc_source.html">EventLoop.cc</a> 第 <a class="el" href="EventLoop_8cc_source.html#l00166">166</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Logging_8h_source.html#l00131">LOG_ERROR</a> , 以及 <a class="el" href="EventLoop_8h_source.html#l00094">EventLoop::wakeupFd_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8cc_source.html#l00036">EventLoop::EventLoop()</a> , 以及 <a class="el" href="EventLoop_8h_source.html#l00077">EventLoop::isInLoopThread()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_a231ec0ec0313193a59b3f1326328ae50_icgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_a231ec0ec0313193a59b3f1326328ae50_icgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_a231ec0ec0313193a59b3f1326328ae50_icgraph" id="classmuduo_1_1EventLoop_a231ec0ec0313193a59b3f1326328ae50_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a2bb4ef53c2b77f2313fe0db9fc952450" title="EventLoop" alt="" coords="167,298,258,324"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="isInLoopThread" alt="" coords="152,348,273,375"/>
+<area shape="rect" id="node4" href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="assertInLoopThread" alt="" coords="321,1090,472,1116"/>
+<area shape="rect" id="node39" href="classmuduo_1_1TcpConnection.html#a4d274fdc2a242187da42dcd82cd593ec" title="muduo::TcpConnection\l::send" alt="" coords="821,110,991,152"/>
+<area shape="rect" id="node47" href="classmuduo_1_1EventLoop.html#a2463a3acef2df4c951ce942a3229e44e" title="quit" alt="" coords="373,1519,420,1546"/>
+<area shape="rect" id="node49" href="classmuduo_1_1EventLoop.html#acf6a4570703c6edf29ae2d28cf6767cb" title="runInLoop" alt="" coords="588,206,675,232"/>
+<area shape="rect" id="node50" href="classmuduo_1_1EventLoop.html#a7d2b6939f8f94715d253c0d4c6cee207" title="queueInLoop" alt="" coords="344,348,449,375"/>
+<area shape="rect" id="node5" href="classmuduo_1_1TimerQueue.html#adff791c94ab893d2adae1eafe03713ad" title="muduo::TimerQueue::\laddTimerInLoop" alt="" coords="825,948,987,989"/>
+<area shape="rect" id="node7" href="classmuduo_1_1Poller.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::Poller::assertInLoop\lThread" alt="" coords="530,1217,733,1258"/>
+<area shape="rect" id="node10" href="classmuduo_1_1EPoller.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::EPoller::assertIn\lLoopThread" alt="" coords="541,1530,721,1572"/>
+<area shape="rect" id="node13" href="classmuduo_1_1TimerQueue.html#abc59bed63190c00d9aab9281a543ea58" title="muduo::TimerQueue::\lcancelInLoop" alt="" coords="550,257,713,298"/>
+<area shape="rect" id="node15" href="classmuduo_1_1TcpConnection.html#afff2c1576d605dda12f87d2b32d5c1a2" title="muduo::TcpConnection\l::connectDestoryed" alt="" coords="821,1013,991,1054"/>
+<area shape="rect" id="node19" href="classmuduo_1_1TcpClient.html#ad9661c3f05443256c9439f812d1a7691" title="Not thread safe, but in loop " alt="" coords="1095,1416,1287,1457"/>
+<area shape="rect" id="node20" href="classmuduo_1_1TcpClient.html#ae2e5d102f7a519e65019cd5f09acea72" title="Not thread safe, but in loop " alt="" coords="1360,1736,1603,1763"/>
+<area shape="rect" id="node21" href="classmuduo_1_1TcpServer.html#a38345725075c2bf845af025c2567d977" title="Not thread safe, but in loop " alt="" coords="1093,838,1289,880"/>
+<area shape="rect" id="node23" href="classmuduo_1_1TcpServer.html#a6e7510f45cfa67ddc79aa8689fd79562" title="Not thread safe, but in loop " alt="" coords="1651,963,1897,990"/>
+<area shape="rect" id="node24" href="classmuduo_1_1TcpConnection.html#a2e1f9742dac98a0c3e5a5509920934ae" title="muduo::TcpConnection\l::connectEstablished" alt="" coords="821,1282,991,1324"/>
+<area shape="rect" id="node25" href="classmuduo_1_1EventLoopThreadPool.html#ad79a4dd0cdd1358bfde1170759543c7d" title="muduo::EventLoopThreadPool\l::getNextLoop" alt="" coords="523,1282,739,1324"/>
+<area shape="rect" id="node26" href="classmuduo_1_1TcpConnection.html#a2cb2baff35786f9caa991e3c47908d91" title="muduo::TcpConnection\l::handleClose" alt="" coords="547,1348,716,1389"/>
+<area shape="rect" id="node27" href="classmuduo_1_1TimerQueue.html#a231ec0ec0313193a59b3f1326328ae50" title="muduo::TimerQueue::\lhandleRead" alt="" coords="550,1465,713,1506"/>
+<area shape="rect" id="node28" href="classmuduo_1_1TcpConnection.html#ae1d79ff6580eaced59a900144818150d" title="muduo::TcpConnection\l::handleWrite" alt="" coords="821,714,991,756"/>
+<area shape="rect" id="node29" href="classmuduo_1_1Acceptor.html#a3459892d34c1eb51b40a53b8062237ca" title="muduo::Acceptor::handlRead" alt="" coords="527,1596,735,1623"/>
+<area shape="rect" id="node30" href="classmuduo_1_1TimerQueue.html#ac4bdfea344ee2a30857d2eabadfef399" title="muduo::TimerQueue::\linsert" alt="" coords="550,897,713,938"/>
+<area shape="rect" id="node31" href="classmuduo_1_1Acceptor.html#a458bbe4cf81360301586b2e62a7f9dd2" title="muduo::Acceptor::listen" alt="" coords="543,592,719,619"/>
+<area shape="rect" id="node33" href="classmuduo_1_1EventLoop.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="606,1647,657,1674"/>
+<area shape="rect" id="node34" href="classmuduo_1_1EventLoop.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="removeChannel" alt="" coords="569,795,694,822"/>
+<area shape="rect" id="node37" href="classmuduo_1_1Connector.html#a22ee094ca3f45aa4156b97d34fe678bf" title="muduo::Connector::restart" alt="" coords="810,896,1002,923"/>
+<area shape="rect" id="node38" href="classmuduo_1_1TcpConnection.html#a016986a5f7c6f0d415e25b4b6bdbf481" title="muduo::TcpConnection\l::sendInLoop" alt="" coords="547,140,716,181"/>
+<area shape="rect" id="node41" href="classmuduo_1_1TcpConnection.html#a4f988229386dc4e5f80cca96e096e074" title="muduo::TcpConnection\l::shutdownInLoop" alt="" coords="547,476,716,517"/>
+<area shape="rect" id="node43" href="classmuduo_1_1EventLoopThreadPool.html#a60de64d75454385b23995437f1d72669" title="muduo::EventLoopThreadPool\l::start" alt="" coords="523,1749,739,1790"/>
+<area shape="rect" id="node44" href="classmuduo_1_1Connector.html#ad289b54db652dcb10f835f3613e68fdb" title="muduo::Connector::startInLoop" alt="" coords="520,643,743,670"/>
+<area shape="rect" id="node46" href="classmuduo_1_1EventLoop.html#acaa4a191936aacf608d279a6f343d533" title="updateChannel" alt="" coords="571,694,691,720"/>
+<area shape="rect" id="node6" href="classmuduo_1_1TimerQueue.html#af1bd2f1010adf1a82120c708b7a1ba22" title="muduo::TimerQueue::\laddTimer" alt="" coords="1109,641,1272,682"/>
+<area shape="rect" id="node8" href="classmuduo_1_1Poller.html#acaa4a191936aacf608d279a6f343d533" title="muduo::Poller::updateChannel" alt="" coords="797,1231,1015,1258"/>
+<area shape="rect" id="node9" href="classmuduo_1_1Poller.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="muduo::Poller::removeChannel" alt="" coords="795,1180,1017,1207"/>
+<area shape="rect" id="node11" href="classmuduo_1_1EPoller.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="muduo::EPoller::removeChannel" alt="" coords="791,1563,1021,1590"/>
+<area shape="rect" id="node12" href="classmuduo_1_1EPoller.html#acaa4a191936aacf608d279a6f343d533" title="muduo::EPoller::updateChannel" alt="" coords="793,1512,1019,1539"/>
+<area shape="rect" id="node14" href="classmuduo_1_1TimerQueue.html#af8b24b02bbff6a657fa5b0190bef9b9b" title="muduo::TimerQueue::\lcancel" alt="" coords="825,380,987,421"/>
+<area shape="rect" id="node16" href="classmuduo_1_1TcpConnection.html#acb32ba0eda160676b4fc98d756ee3515" title="Internal use only. " alt="" coords="1106,1013,1275,1054"/>
+<area shape="rect" id="node18" href="namespacemuduo_1_1detail.html#ae3e6bfc20f665df13eeb2ebc3c91abce" title="muduo::detail::removeConnection" alt="" coords="1069,936,1312,963"/>
+<area shape="rect" id="node17" href="classmuduo_1_1TcpClient.html#a01845d2886f327b9c8cb5df03cb00d7c" title="muduo::TcpClient::\l~TcpClient" alt="" coords="1410,929,1553,970"/>
+<area shape="rect" id="node22" href="classmuduo_1_1TcpServer.html#ad9661c3f05443256c9439f812d1a7691" title="Thread safe " alt="" coords="1383,838,1579,880"/>
+<area shape="rect" id="node32" href="classmuduo_1_1TcpServer.html#a60de64d75454385b23995437f1d72669" title="muduo::TcpServer::start" alt="" coords="818,562,994,588"/>
+<area shape="rect" id="node35" href="classmuduo_1_1EventLoop.html#a5c4a9a6cf52fc408cdd33c8445fb5127" title="pollReturnTime" alt="" coords="845,663,967,690"/>
+<area shape="rect" id="node36" href="classmuduo_1_1Connector.html#abf9772658904f185215158e0dbdf9610" title="muduo::Connector::remove\lAndResetChannel" alt="" coords="807,780,1005,821"/>
+<area shape="rect" id="node40" href="classmuduo_1_1TcpConnection.html#aa0fd96bc25e3d509fb54028c2e4b91f6" title="muduo::TcpConnection\l::connected" alt="" coords="1106,386,1275,428"/>
+<area shape="rect" id="node42" href="classmuduo_1_1TcpConnection.html#a7861ee1569802186a619778efc85af13" title="muduo::TcpConnection\l::shutdown" alt="" coords="821,445,991,486"/>
+<area shape="rect" id="node45" href="classmuduo_1_1Connector.html#a60de64d75454385b23995437f1d72669" title="muduo::Connector::start" alt="" coords="817,612,995,639"/>
+<area shape="rect" id="node48" href="classmuduo_1_1EventLoopThread.html#af946ac1087e0c7617b0704ebde55332c" title="muduo::EventLoopThread\l::~EventLoopThread" alt="" coords="537,1866,725,1908"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1da5ae1e094c0136136b5344ef7a3b66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1da5ae1e094c0136136b5344ef7a3b66">&#9670;&nbsp;</a></span>isInLoopThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isInLoopThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8h_source.html">EventLoop.h</a> 第 <a class="el" href="EventLoop_8h_source.html#l00077">77</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="EventLoop_8cc_source.html#l00151">EventLoop::abortNotInLoopThread()</a>, <a class="el" href="EventLoop_8cc_source.html#l00174">EventLoop::doPendingFunctors()</a>, <a class="el" href="EventLoop_8cc_source.html#l00166">EventLoop::handleRead()</a>, <a class="el" href="EventLoop_8h_source.html#l00090">EventLoop::threadId_</a> , 以及 <a class="el" href="CurrentThread_8h_source.html#l00022">muduo::CurrentThread::tid()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8h_source.html#l00069">EventLoop::assertInLoopThread()</a>, <a class="el" href="EventLoop_8cc_source.html#l00104">EventLoop::queueInLoop()</a>, <a class="el" href="EventLoop_8cc_source.html#l00089">EventLoop::quit()</a>, <a class="el" href="EventLoop_8cc_source.html#l00096">EventLoop::runInLoop()</a> , 以及 <a class="el" href="TcpConnection_8cc_source.html#l00040">TcpConnection::send()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_a1da5ae1e094c0136136b5344ef7a3b66_cgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_a1da5ae1e094c0136136b5344ef7a3b66_cgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_a1da5ae1e094c0136136b5344ef7a3b66_cgraph" id="classmuduo_1_1EventLoop_a1da5ae1e094c0136136b5344ef7a3b66_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="abortNotInLoopThread" alt="" coords="175,5,341,32"/>
+<area shape="rect" id="node3" href="namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="389,31,583,57"/>
+<area shape="rect" id="node5" href="classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="doPendingFunctors" alt="" coords="186,107,330,133"/>
+<area shape="rect" id="node6" href="classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="handleRead" alt="" coords="209,157,307,184"/>
+<area shape="rect" id="node4" href="namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="631,23,799,65"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_a1da5ae1e094c0136136b5344ef7a3b66_icgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_a1da5ae1e094c0136136b5344ef7a3b66_icgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_a1da5ae1e094c0136136b5344ef7a3b66_icgraph" id="classmuduo_1_1EventLoop_a1da5ae1e094c0136136b5344ef7a3b66_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="assertInLoopThread" alt="" coords="175,998,325,1024"/>
+<area shape="rect" id="node41" href="classmuduo_1_1TcpConnection.html#a4d274fdc2a242187da42dcd82cd593ec" title="muduo::TcpConnection\l::send" alt="" coords="937,630,1107,672"/>
+<area shape="rect" id="node47" href="classmuduo_1_1EventLoop.html#a7d2b6939f8f94715d253c0d4c6cee207" title="queueInLoop" alt="" coords="432,370,537,396"/>
+<area shape="rect" id="node48" href="classmuduo_1_1EventLoop.html#acf6a4570703c6edf29ae2d28cf6767cb" title="runInLoop" alt="" coords="716,1002,803,1028"/>
+<area shape="rect" id="node49" href="classmuduo_1_1EventLoop.html#a2463a3acef2df4c951ce942a3229e44e" title="quit" alt="" coords="227,1410,273,1436"/>
+<area shape="rect" id="node3" href="classmuduo_1_1TimerQueue.html#adff791c94ab893d2adae1eafe03713ad" title="muduo::TimerQueue::\laddTimerInLoop" alt="" coords="678,1294,841,1336"/>
+<area shape="rect" id="node5" href="classmuduo_1_1Poller.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::Poller::assertInLoop\lThread" alt="" coords="383,1462,586,1504"/>
+<area shape="rect" id="node8" href="classmuduo_1_1EPoller.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::EPoller::assertIn\lLoopThread" alt="" coords="395,1593,575,1634"/>
+<area shape="rect" id="node11" href="classmuduo_1_1TimerQueue.html#abc59bed63190c00d9aab9281a543ea58" title="muduo::TimerQueue::\lcancelInLoop" alt="" coords="403,1528,566,1569"/>
+<area shape="rect" id="node13" href="classmuduo_1_1TcpConnection.html#afff2c1576d605dda12f87d2b32d5c1a2" title="muduo::TcpConnection\l::connectDestoryed" alt="" coords="1169,429,1339,470"/>
+<area shape="rect" id="node17" href="classmuduo_1_1TcpClient.html#ad9661c3f05443256c9439f812d1a7691" title="Not thread safe, but in loop " alt="" coords="1412,65,1604,106"/>
+<area shape="rect" id="node18" href="classmuduo_1_1TcpClient.html#ae2e5d102f7a519e65019cd5f09acea72" title="Not thread safe, but in loop " alt="" coords="1677,32,1920,59"/>
+<area shape="rect" id="node19" href="classmuduo_1_1TcpServer.html#a38345725075c2bf845af025c2567d977" title="Not thread safe, but in loop " alt="" coords="1410,246,1606,288"/>
+<area shape="rect" id="node21" href="classmuduo_1_1TcpServer.html#a6e7510f45cfa67ddc79aa8689fd79562" title="Not thread safe, but in loop " alt="" coords="1968,982,2215,1008"/>
+<area shape="rect" id="node22" href="classmuduo_1_1TcpConnection.html#a2e1f9742dac98a0c3e5a5509920934ae" title="muduo::TcpConnection\l::connectEstablished" alt="" coords="1169,894,1339,936"/>
+<area shape="rect" id="node23" href="classmuduo_1_1EventLoopThreadPool.html#ad79a4dd0cdd1358bfde1170759543c7d" title="muduo::EventLoopThreadPool\l::getNextLoop" alt="" coords="377,1177,593,1218"/>
+<area shape="rect" id="node25" href="classmuduo_1_1TcpConnection.html#a2cb2baff35786f9caa991e3c47908d91" title="muduo::TcpConnection\l::handleClose" alt="" coords="675,784,844,825"/>
+<area shape="rect" id="node29" href="classmuduo_1_1TimerQueue.html#a231ec0ec0313193a59b3f1326328ae50" title="muduo::TimerQueue::\lhandleRead" alt="" coords="403,994,566,1036"/>
+<area shape="rect" id="node30" href="classmuduo_1_1TcpConnection.html#ae1d79ff6580eaced59a900144818150d" title="muduo::TcpConnection\l::handleWrite" alt="" coords="675,666,844,708"/>
+<area shape="rect" id="node31" href="classmuduo_1_1Acceptor.html#a3459892d34c1eb51b40a53b8062237ca" title="muduo::Acceptor::handlRead" alt="" coords="381,1126,589,1152"/>
+<area shape="rect" id="node32" href="classmuduo_1_1TimerQueue.html#ac4bdfea344ee2a30857d2eabadfef399" title="muduo::TimerQueue::\linsert" alt="" coords="403,1294,566,1336"/>
+<area shape="rect" id="node33" href="classmuduo_1_1Acceptor.html#a458bbe4cf81360301586b2e62a7f9dd2" title="muduo::Acceptor::listen" alt="" coords="671,1659,847,1686"/>
+<area shape="rect" id="node35" href="classmuduo_1_1EventLoop.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="459,1360,510,1387"/>
+<area shape="rect" id="node36" href="classmuduo_1_1EventLoop.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="removeChannel" alt="" coords="697,347,822,374"/>
+<area shape="rect" id="node39" href="classmuduo_1_1Connector.html#a22ee094ca3f45aa4156b97d34fe678bf" title="muduo::Connector::restart" alt="" coords="663,900,855,927"/>
+<area shape="rect" id="node40" href="classmuduo_1_1TcpConnection.html#a016986a5f7c6f0d415e25b4b6bdbf481" title="muduo::TcpConnection\l::sendInLoop" alt="" coords="675,601,844,642"/>
+<area shape="rect" id="node42" href="classmuduo_1_1TcpConnection.html#a4f988229386dc4e5f80cca96e096e074" title="muduo::TcpConnection\l::shutdownInLoop" alt="" coords="400,725,569,766"/>
+<area shape="rect" id="node43" href="classmuduo_1_1EventLoopThreadPool.html#a60de64d75454385b23995437f1d72669" title="muduo::EventLoopThreadPool\l::start" alt="" coords="377,1060,593,1101"/>
+<area shape="rect" id="node44" href="classmuduo_1_1Connector.html#ad289b54db652dcb10f835f3613e68fdb" title="muduo::Connector::startInLoop" alt="" coords="373,892,596,919"/>
+<area shape="rect" id="node46" href="classmuduo_1_1EventLoop.html#acaa4a191936aacf608d279a6f343d533" title="updateChannel" alt="" coords="425,522,545,548"/>
+<area shape="rect" id="node4" href="classmuduo_1_1TimerQueue.html#af1bd2f1010adf1a82120c708b7a1ba22" title="muduo::TimerQueue::\laddTimer" alt="" coords="941,1084,1103,1125"/>
+<area shape="rect" id="node6" href="classmuduo_1_1Poller.html#acaa4a191936aacf608d279a6f343d533" title="muduo::Poller::updateChannel" alt="" coords="650,1456,869,1483"/>
+<area shape="rect" id="node7" href="classmuduo_1_1Poller.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="muduo::Poller::removeChannel" alt="" coords="648,1406,871,1432"/>
+<area shape="rect" id="node9" href="classmuduo_1_1EPoller.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="muduo::EPoller::removeChannel" alt="" coords="644,1608,875,1635"/>
+<area shape="rect" id="node10" href="classmuduo_1_1EPoller.html#acaa4a191936aacf608d279a6f343d533" title="muduo::EPoller::updateChannel" alt="" coords="646,1558,873,1584"/>
+<area shape="rect" id="node12" href="classmuduo_1_1TimerQueue.html#af8b24b02bbff6a657fa5b0190bef9b9b" title="muduo::TimerQueue::\lcancel" alt="" coords="941,1149,1103,1190"/>
+<area shape="rect" id="node14" href="classmuduo_1_1TcpConnection.html#acb32ba0eda160676b4fc98d756ee3515" title="Internal use only. " alt="" coords="1423,865,1593,906"/>
+<area shape="rect" id="node16" href="namespacemuduo_1_1detail.html#ae3e6bfc20f665df13eeb2ebc3c91abce" title="muduo::detail::removeConnection" alt="" coords="1387,436,1629,463"/>
+<area shape="rect" id="node15" href="classmuduo_1_1TcpClient.html#a01845d2886f327b9c8cb5df03cb00d7c" title="muduo::TcpClient::\l~TcpClient" alt="" coords="1727,865,1870,906"/>
+<area shape="rect" id="node20" href="classmuduo_1_1TcpServer.html#ad9661c3f05443256c9439f812d1a7691" title="Thread safe " alt="" coords="1701,800,1897,841"/>
+<area shape="rect" id="node24" href="classmuduo_1_1EventLoopThreadPool.html#a83bb28d139df96ba9fc449b4643f2c36" title="muduo::EventLoopThreadPool\l::setThreadNum" alt="" coords="651,1177,867,1218"/>
+<area shape="rect" id="node26" href="classmuduo_1_1TcpConnection.html#a5cefef7ea6272b740592d9dfecbd6c20" title="muduo::TcpConnection\l::setState" alt="" coords="937,713,1107,754"/>
+<area shape="rect" id="node27" href="classmuduo_1_1TcpConnection.html#a7861ee1569802186a619778efc85af13" title="muduo::TcpConnection\l::shutdown" alt="" coords="1169,757,1339,798"/>
+<area shape="rect" id="node28" href="classmuduo_1_1TcpConnection.html#aa0fd96bc25e3d509fb54028c2e4b91f6" title="muduo::TcpConnection\l::connected" alt="" coords="1423,734,1593,776"/>
+<area shape="rect" id="node34" href="classmuduo_1_1TcpServer.html#a60de64d75454385b23995437f1d72669" title="muduo::TcpServer::start" alt="" coords="934,1215,1110,1242"/>
+<area shape="rect" id="node37" href="classmuduo_1_1EventLoop.html#a5c4a9a6cf52fc408cdd33c8445fb5127" title="pollReturnTime" alt="" coords="961,443,1083,470"/>
+<area shape="rect" id="node38" href="classmuduo_1_1Connector.html#abf9772658904f185215158e0dbdf9610" title="muduo::Connector::remove\lAndResetChannel" alt="" coords="923,301,1121,342"/>
+<area shape="rect" id="node45" href="classmuduo_1_1Connector.html#a60de64d75454385b23995437f1d72669" title="muduo::Connector::start" alt="" coords="933,830,1111,856"/>
+<area shape="rect" id="node50" href="classmuduo_1_1EventLoopThread.html#af946ac1087e0c7617b0704ebde55332c" title="muduo::EventLoopThread\l::~EventLoopThread" alt="" coords="391,1761,579,1802"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afe461d27b9c48d5921c00d521181f12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe461d27b9c48d5921c00d521181f12f">&#9670;&nbsp;</a></span>loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8cc_source.html">EventLoop.cc</a> 第 <a class="el" href="EventLoop_8cc_source.html#l00068">68</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="EventLoop_8h_source.html#l00098">EventLoop::activeChannels_</a>, <a class="el" href="EventLoop_8h_source.html#l00069">EventLoop::assertInLoopThread()</a>, <a class="el" href="EventLoop_8cc_source.html#l00174">EventLoop::doPendingFunctors()</a>, <a class="el" href="EventLoop_8cc_source.html#l00018">kPollTimeMs</a>, <a class="el" href="Logging_8h_source.html#l00124">LOG_TRACE</a>, <a class="el" href="EventLoop_8h_source.html#l00087">EventLoop::looping_</a>, <a class="el" href="EventLoop_8h_source.html#l00092">EventLoop::poller_</a>, <a class="el" href="EventLoop_8h_source.html#l00091">EventLoop::pollReturnTime_</a> , 以及 <a class="el" href="EventLoop_8h_source.html#l00088">EventLoop::quit_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="test13_8cc_source.html#l00030">main()</a> , 以及 <a class="el" href="EventLoopThread_8cc_source.html#l00038">EventLoopThread::threadFunc()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_afe461d27b9c48d5921c00d521181f12f_cgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_afe461d27b9c48d5921c00d521181f12f_cgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_afe461d27b9c48d5921c00d521181f12f_cgraph" id="classmuduo_1_1EventLoop_afe461d27b9c48d5921c00d521181f12f_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="assertInLoopThread" alt="" coords="104,69,255,96"/>
+<area shape="rect" id="node7" href="classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="doPendingFunctors" alt="" coords="483,157,627,184"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="abortNotInLoopThread" alt="" coords="472,5,639,32"/>
+<area shape="rect" id="node6" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="isInLoopThread" alt="" coords="303,69,424,96"/>
+<area shape="rect" id="node4" href="namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="687,31,880,57"/>
+<area shape="rect" id="node5" href="namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="928,23,1096,65"/>
+<area shape="rect" id="node8" href="classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="handleRead" alt="" coords="506,107,605,133"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_afe461d27b9c48d5921c00d521181f12f_icgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_afe461d27b9c48d5921c00d521181f12f_icgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_afe461d27b9c48d5921c00d521181f12f_icgraph" id="classmuduo_1_1EventLoop_afe461d27b9c48d5921c00d521181f12f_icgraph">
+<area shape="rect" id="node2" href="test13_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="171,5,225,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoopThread.html#a539feb3c59a20db3b260b312fa7dea34" title="muduo::EventLoopThread\l::threadFunc" alt="" coords="104,57,292,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5c4a9a6cf52fc408cdd33c8445fb5127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c4a9a6cf52fc408cdd33c8445fb5127">&#9670;&nbsp;</a></span>pollReturnTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1Timestamp.html">Timestamp</a> pollReturnTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8h_source.html">EventLoop.h</a> 第 <a class="el" href="EventLoop_8h_source.html#l00035">35</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="EventLoop_8cc_source.html#l00135">EventLoop::cancel()</a>, <a class="el" href="EventLoop_8h_source.html#l00091">EventLoop::pollReturnTime_</a>, <a class="el" href="EventLoop_8cc_source.html#l00104">EventLoop::queueInLoop()</a>, <a class="el" href="EventLoop_8cc_source.html#l00145">EventLoop::removeChannel()</a>, <a class="el" href="EventLoop_8cc_source.html#l00125">EventLoop::runAfter()</a>, <a class="el" href="EventLoop_8cc_source.html#l00121">EventLoop::runAt()</a>, <a class="el" href="EventLoop_8cc_source.html#l00130">EventLoop::runEvery()</a>, <a class="el" href="EventLoop_8cc_source.html#l00096">EventLoop::runInLoop()</a>, <a class="el" href="EventLoop_8cc_source.html#l00139">EventLoop::updateChannel()</a> , 以及 <a class="el" href="EventLoop_8cc_source.html#l00158">EventLoop::wakeup()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_a5c4a9a6cf52fc408cdd33c8445fb5127_cgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_a5c4a9a6cf52fc408cdd33c8445fb5127_cgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_a5c4a9a6cf52fc408cdd33c8445fb5127_cgraph" id="classmuduo_1_1EventLoop_a5c4a9a6cf52fc408cdd33c8445fb5127_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#af8b24b02bbff6a657fa5b0190bef9b9b" title="cancel" alt="" coords="205,5,269,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoop.html#a7d2b6939f8f94715d253c0d4c6cee207" title="queueInLoop" alt="" coords="399,107,504,133"/>
+<area shape="rect" id="node10" href="classmuduo_1_1EventLoop.html#ae674290a26ecbd622c5160e38e8a4fe9" title="wakeup" alt="" coords="690,157,763,184"/>
+<area shape="rect" id="node11" href="classmuduo_1_1EventLoop.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="removeChannel" alt="" coords="175,233,300,260"/>
+<area shape="rect" id="node14" href="classmuduo_1_1EventLoop.html#acaa4a191936aacf608d279a6f343d533" title="updateChannel" alt="" coords="899,284,1019,311"/>
+<area shape="rect" id="node16" href="classmuduo_1_1EventLoop.html#ae770f8cb708dfacf455d71d6977e5436" title="runAfter" alt="" coords="200,448,275,475"/>
+<area shape="rect" id="node21" href="classmuduo_1_1EventLoop.html#aa4a2472f0030a6f2076aa56e21830f6f" title="runAt" alt="" coords="423,499,480,525"/>
+<area shape="rect" id="node22" href="classmuduo_1_1EventLoop.html#a7bf9fa6b9440ac1053f475108297264e" title="runEvery" alt="" coords="197,397,277,424"/>
+<area shape="rect" id="node23" href="classmuduo_1_1EventLoop.html#acf6a4570703c6edf29ae2d28cf6767cb" title="runInLoop" alt="" coords="194,56,281,83"/>
+<area shape="rect" id="node4" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="isInLoopThread" alt="" coords="1265,107,1387,133"/>
+<area shape="rect" id="node5" href="classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="abortNotInLoopThread" alt="" coords="1435,208,1601,235"/>
+<area shape="rect" id="node6" href="namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="1649,157,1843,184"/>
+<area shape="rect" id="node8" href="classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="doPendingFunctors" alt="" coords="1446,157,1590,184"/>
+<area shape="rect" id="node9" href="classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="handleRead" alt="" coords="1469,56,1567,83"/>
+<area shape="rect" id="node7" href="namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="1891,150,2059,191"/>
+<area shape="rect" id="node12" href="classmuduo_1_1Channel.html#a2e24e2ab7ada4682fdf49cc835d85e8d" title="muduo::Channel::ownerLoop" alt="" coords="348,259,555,285"/>
+<area shape="rect" id="node15" href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="assertInLoopThread" alt="" coords="1067,208,1217,235"/>
+<area shape="rect" id="node13" href="classmuduo_1_1Channel.html#ac5c54df7ed3b930268c8d7752c101725" title="muduo::Channel::update" alt="" coords="636,309,817,336"/>
+<area shape="rect" id="node17" href="namespacemuduo.html#a4c4a0e85f7b5c4056878cd7cf26a83cb" title="muduo::addTime" alt="" coords="385,448,517,475"/>
+<area shape="rect" id="node20" href="classmuduo_1_1Timestamp.html#a3bca3b2a36424e36b3d2c772fa7d5772" title="muduo::Timestamp::now" alt="" coords="359,397,543,424"/>
+<area shape="rect" id="node18" href="classmuduo_1_1Timestamp.html#a8a0616b73c803b94f5c0e9d00fa96fb4" title="muduo::Timestamp::microSeconds\lSinceEpoch" alt="" coords="603,487,851,529"/>
+<area shape="rect" id="node19" href="classmuduo_1_1Timestamp.html#a3ccb273b45fb16b1b14de8a4c8b44e3b" title="muduo::Timestamp::Timestamp" alt="" coords="611,436,842,463"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7d2b6939f8f94715d253c0d4c6cee207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d2b6939f8f94715d253c0d4c6cee207">&#9670;&nbsp;</a></span>queueInLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void queueInLoop </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmuduo_1_1EventLoop.html#aa47556388c5bf0b2534c9816841d8e7a">Functor</a> &amp;&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Queues callback in the loop thread. Runs after finish pooling. Safe to call from other threads. </p>
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8cc_source.html">EventLoop.cc</a> 第 <a class="el" href="EventLoop_8cc_source.html#l00104">104</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="EventLoop_8h_source.html#l00089">EventLoop::callingPendingFunctors_</a>, <a class="el" href="EventLoop_8h_source.html#l00077">EventLoop::isInLoopThread()</a>, <a class="el" href="EventLoop_8h_source.html#l00099">EventLoop::mutex_</a>, <a class="el" href="EventLoop_8h_source.html#l00100">EventLoop::pendingFunctors_</a> , 以及 <a class="el" href="EventLoop_8cc_source.html#l00158">EventLoop::wakeup()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="TcpConnection_8cc_source.html#l00133">TcpConnection::handleWrite()</a>, <a class="el" href="EventLoop_8h_source.html#l00035">EventLoop::pollReturnTime()</a>, <a class="el" href="Connector_8cc_source.html#l00109">Connector::removeAndResetChannel()</a>, <a class="el" href="TcpClient_8cc_source.html#l00019">muduo::detail::removeConnection()</a>, <a class="el" href="TcpClient_8cc_source.html#l00106">TcpClient::removeConnection()</a>, <a class="el" href="TcpServer_8cc_source.html#l00066">TcpServer::removeConnectionInLoop()</a>, <a class="el" href="EventLoop_8cc_source.html#l00096">EventLoop::runInLoop()</a> , 以及 <a class="el" href="TcpConnection_8cc_source.html#l00050">TcpConnection::sendInLoop()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_a7d2b6939f8f94715d253c0d4c6cee207_cgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_a7d2b6939f8f94715d253c0d4c6cee207_cgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_a7d2b6939f8f94715d253c0d4c6cee207_cgraph" id="classmuduo_1_1EventLoop_a7d2b6939f8f94715d253c0d4c6cee207_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="isInLoopThread" alt="" coords="159,81,280,108"/>
+<area shape="rect" id="node8" href="classmuduo_1_1EventLoop.html#ae674290a26ecbd622c5160e38e8a4fe9" title="wakeup" alt="" coords="183,132,256,159"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="abortNotInLoopThread" alt="" coords="328,5,495,32"/>
+<area shape="rect" id="node4" href="namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="543,31,736,57"/>
+<area shape="rect" id="node6" href="classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="doPendingFunctors" alt="" coords="339,107,483,133"/>
+<area shape="rect" id="node7" href="classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="handleRead" alt="" coords="362,157,461,184"/>
+<area shape="rect" id="node5" href="namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="784,23,952,65"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_a7d2b6939f8f94715d253c0d4c6cee207_icgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_a7d2b6939f8f94715d253c0d4c6cee207_icgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_a7d2b6939f8f94715d253c0d4c6cee207_icgraph" id="classmuduo_1_1EventLoop_a7d2b6939f8f94715d253c0d4c6cee207_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1TcpConnection.html#ae1d79ff6580eaced59a900144818150d" title="muduo::TcpConnection\l::handleWrite" alt="" coords="173,288,343,329"/>
+<area shape="rect" id="node13" href="namespacemuduo_1_1detail.html#ae3e6bfc20f665df13eeb2ebc3c91abce" title="muduo::detail::removeConnection" alt="" coords="915,97,1157,123"/>
+<area shape="rect" id="node14" href="classmuduo_1_1TcpClient.html#ad9661c3f05443256c9439f812d1a7691" title="Not thread safe, but in loop " alt="" coords="940,31,1132,72"/>
+<area shape="rect" id="node18" href="classmuduo_1_1TcpServer.html#a38345725075c2bf845af025c2567d977" title="Not thread safe, but in loop " alt="" coords="938,213,1134,255"/>
+<area shape="rect" id="node21" href="classmuduo_1_1EventLoop.html#a5c4a9a6cf52fc408cdd33c8445fb5127" title="pollReturnTime" alt="" coords="696,841,817,867"/>
+<area shape="rect" id="node22" href="classmuduo_1_1Connector.html#abf9772658904f185215158e0dbdf9610" title="muduo::Connector::remove\lAndResetChannel" alt="" coords="159,1117,357,1159"/>
+<area shape="rect" id="node33" href="classmuduo_1_1EventLoop.html#acf6a4570703c6edf29ae2d28cf6767cb" title="runInLoop" alt="" coords="459,563,545,590"/>
+<area shape="rect" id="node39" href="classmuduo_1_1TcpConnection.html#a016986a5f7c6f0d415e25b4b6bdbf481" title="muduo::TcpConnection\l::sendInLoop" alt="" coords="173,353,343,395"/>
+<area shape="rect" id="node3" href="classmuduo_1_1TcpConnection.html#a5cefef7ea6272b740592d9dfecbd6c20" title="muduo::TcpConnection\l::setState" alt="" coords="417,323,587,364"/>
+<area shape="rect" id="node20" href="classmuduo_1_1TcpConnection.html#a239881b2e3d5499da8745fba1bd82e08" title="muduo::TcpConnection\l::TcpConnection" alt="" coords="417,257,587,299"/>
+<area shape="rect" id="node4" href="classmuduo_1_1TcpConnection.html#a7861ee1569802186a619778efc85af13" title="muduo::TcpConnection\l::shutdown" alt="" coords="672,323,841,364"/>
+<area shape="rect" id="node6" href="classmuduo_1_1TcpConnection.html#a2e1f9742dac98a0c3e5a5509920934ae" title="muduo::TcpConnection\l::connectEstablished" alt="" coords="672,257,841,299"/>
+<area shape="rect" id="node12" href="classmuduo_1_1TcpConnection.html#afff2c1576d605dda12f87d2b32d5c1a2" title="muduo::TcpConnection\l::connectDestoryed" alt="" coords="672,140,841,181"/>
+<area shape="rect" id="node5" href="classmuduo_1_1TcpConnection.html#aa0fd96bc25e3d509fb54028c2e4b91f6" title="muduo::TcpConnection\l::connected" alt="" coords="951,388,1121,429"/>
+<area shape="rect" id="node7" href="classmuduo_1_1TcpConnection.html#acb32ba0eda160676b4fc98d756ee3515" title="Internal use only. " alt="" coords="951,148,1121,189"/>
+<area shape="rect" id="node9" href="classmuduo_1_1TcpServer.html#a6e7510f45cfa67ddc79aa8689fd79562" title="Not thread safe, but in loop " alt="" coords="1496,337,1743,363"/>
+<area shape="rect" id="node8" href="classmuduo_1_1TcpClient.html#a01845d2886f327b9c8cb5df03cb00d7c" title="muduo::TcpClient::\l~TcpClient" alt="" coords="1255,148,1398,189"/>
+<area shape="rect" id="node10" href="classmuduo_1_1TcpServer.html#a94b31be320453fc8aeae81b25934b43f" title="muduo::TcpServer::setWrite\lCompleteCallback" alt="" coords="1795,271,1995,312"/>
+<area shape="rect" id="node11" href="classmuduo_1_1TcpServer.html#aca9a1702da801c3275b2e70d233cc0c7" title="muduo::TcpServer::TcpServer" alt="" coords="1791,337,2000,363"/>
+<area shape="rect" id="node15" href="classmuduo_1_1TcpClient.html#a94b31be320453fc8aeae81b25934b43f" title="muduo::TcpClient::setWrite\lCompleteCallback" alt="" coords="1521,5,1717,47"/>
+<area shape="rect" id="node16" href="classmuduo_1_1TcpClient.html#ae2e5d102f7a519e65019cd5f09acea72" title="Not thread safe, but in loop " alt="" coords="1205,63,1448,90"/>
+<area shape="rect" id="node17" href="classmuduo_1_1TcpClient.html#a8d68694b0595253edef974e8ee289d4c" title="muduo::TcpClient::TcpClient" alt="" coords="1519,71,1720,98"/>
+<area shape="rect" id="node19" href="classmuduo_1_1TcpServer.html#ad9661c3f05443256c9439f812d1a7691" title="Thread safe " alt="" coords="1229,271,1425,312"/>
+<area shape="rect" id="node23" href="classmuduo_1_1Connector.html#a70b275e63748ddd6da7d2171c540ccff" title="muduo::Connector::handle\lError" alt="" coords="405,1075,599,1116"/>
+<area shape="rect" id="node26" href="classmuduo_1_1Connector.html#ab987a8e9ac6b0ad825674ec2131921af" title="muduo::Connector::setState" alt="" coords="1518,1039,1721,1066"/>
+<area shape="rect" id="node27" href="classmuduo_1_1Connector.html#ae1d79ff6580eaced59a900144818150d" title="muduo::Connector::handle\lWrite" alt="" coords="2051,1032,2244,1073"/>
+<area shape="rect" id="node24" href="classmuduo_1_1Connector.html#a2e3471f37486a133ee848ea72ed7efc2" title="muduo::Connector::connecting" alt="" coords="647,1055,867,1082"/>
+<area shape="rect" id="node25" href="classmuduo_1_1Connector.html#a1396bf9b5defe9fa844a63b5cd40ac0e" title="muduo::Connector::connect" alt="" coords="936,993,1136,1019"/>
+<area shape="rect" id="node31" href="classmuduo_1_1Connector.html#ad289b54db652dcb10f835f3613e68fdb" title="muduo::Connector::startInLoop" alt="" coords="1215,891,1438,918"/>
+<area shape="rect" id="node28" href="classmuduo_1_1Connector.html#a22ee094ca3f45aa4156b97d34fe678bf" title="muduo::Connector::restart" alt="" coords="1799,891,1991,918"/>
+<area shape="rect" id="node30" href="classmuduo_1_1Connector.html#a6a23d487c31355d8663ccdd4cbf4f499" title="muduo::Connector::retry" alt="" coords="1805,1102,1985,1129"/>
+<area shape="rect" id="node29" href="classmuduo_1_1Connector.html#a30908d8d30b5333e6288a7430d598cb1" title="muduo::Connector::setNew\lConnectionCallback" alt="" coords="2048,833,2247,875"/>
+<area shape="rect" id="node32" href="classmuduo_1_1Connector.html#a60de64d75454385b23995437f1d72669" title="muduo::Connector::start" alt="" coords="1530,790,1709,817"/>
+<area shape="rect" id="node34" href="classmuduo_1_1TcpConnection.html#a4d274fdc2a242187da42dcd82cd593ec" title="muduo::TcpConnection\l::send" alt="" coords="672,388,841,429"/>
+<area shape="rect" id="node35" href="classmuduo_1_1TcpServer.html#a60de64d75454385b23995437f1d72669" title="muduo::TcpServer::start" alt="" coords="669,622,845,649"/>
+<area shape="rect" id="node37" href="classmuduo_1_1TimerQueue.html#af1bd2f1010adf1a82120c708b7a1ba22" title="muduo::TimerQueue::\laddTimer" alt="" coords="675,556,838,597"/>
+<area shape="rect" id="node38" href="classmuduo_1_1TimerQueue.html#af8b24b02bbff6a657fa5b0190bef9b9b" title="muduo::TimerQueue::\lcancel" alt="" coords="675,724,838,765"/>
+<area shape="rect" id="node36" href="test9_8cc.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1009,622,1063,649"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2463a3acef2df4c951ce942a3229e44e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2463a3acef2df4c951ce942a3229e44e">&#9670;&nbsp;</a></span>quit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void quit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8cc_source.html">EventLoop.cc</a> 第 <a class="el" href="EventLoop_8cc_source.html#l00089">89</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="EventLoop_8h_source.html#l00077">EventLoop::isInLoopThread()</a>, <a class="el" href="EventLoop_8h_source.html#l00088">EventLoop::quit_</a> , 以及 <a class="el" href="EventLoop_8cc_source.html#l00158">EventLoop::wakeup()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoopThread_8cc_source.html#l00016">EventLoopThread::~EventLoopThread()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_a2463a3acef2df4c951ce942a3229e44e_cgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_a2463a3acef2df4c951ce942a3229e44e_cgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_a2463a3acef2df4c951ce942a3229e44e_cgraph" id="classmuduo_1_1EventLoop_a2463a3acef2df4c951ce942a3229e44e_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="isInLoopThread" alt="" coords="100,81,221,108"/>
+<area shape="rect" id="node8" href="classmuduo_1_1EventLoop.html#ae674290a26ecbd622c5160e38e8a4fe9" title="wakeup" alt="" coords="124,132,197,159"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="abortNotInLoopThread" alt="" coords="269,5,436,32"/>
+<area shape="rect" id="node4" href="namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="484,31,677,57"/>
+<area shape="rect" id="node6" href="classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="doPendingFunctors" alt="" coords="281,107,425,133"/>
+<area shape="rect" id="node7" href="classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="handleRead" alt="" coords="303,157,402,184"/>
+<area shape="rect" id="node5" href="namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="725,23,893,65"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_a2463a3acef2df4c951ce942a3229e44e_icgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_a2463a3acef2df4c951ce942a3229e44e_icgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_a2463a3acef2df4c951ce942a3229e44e_icgraph" id="classmuduo_1_1EventLoop_a2463a3acef2df4c951ce942a3229e44e_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoopThread.html#af946ac1087e0c7617b0704ebde55332c" title="muduo::EventLoopThread\l::~EventLoopThread" alt="" coords="100,5,288,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab10f76c92cb5269f8296e5b3e4dd0ef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab10f76c92cb5269f8296e5b3e4dd0ef9">&#9670;&nbsp;</a></span>removeChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void removeChannel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1Channel.html">Channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8cc_source.html">EventLoop.cc</a> 第 <a class="el" href="EventLoop_8cc_source.html#l00145">145</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="EventLoop_8h_source.html#l00069">EventLoop::assertInLoopThread()</a>, <a class="el" href="Channel_8h_source.html#l00042">Channel::ownerLoop()</a> , 以及 <a class="el" href="EventLoop_8h_source.html#l00092">EventLoop::poller_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="TcpConnection_8cc_source.html#l00109">TcpConnection::connectDestoryed()</a>, <a class="el" href="EventLoop_8h_source.html#l00035">EventLoop::pollReturnTime()</a> , 以及 <a class="el" href="Connector_8cc_source.html#l00109">Connector::removeAndResetChannel()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_ab10f76c92cb5269f8296e5b3e4dd0ef9_cgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_ab10f76c92cb5269f8296e5b3e4dd0ef9_cgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_ab10f76c92cb5269f8296e5b3e4dd0ef9_cgraph" id="classmuduo_1_1EventLoop_ab10f76c92cb5269f8296e5b3e4dd0ef9_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="assertInLoopThread" alt="" coords="831,31,981,57"/>
+<area shape="rect" id="node9" href="classmuduo_1_1Channel.html#a2e24e2ab7ada4682fdf49cc835d85e8d" title="muduo::Channel::ownerLoop" alt="" coords="179,56,385,83"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="abortNotInLoopThread" alt="" coords="1199,5,1365,32"/>
+<area shape="rect" id="node6" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="isInLoopThread" alt="" coords="1029,56,1151,83"/>
+<area shape="rect" id="node4" href="namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="1413,31,1607,57"/>
+<area shape="rect" id="node5" href="namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="1655,23,1823,65"/>
+<area shape="rect" id="node7" href="classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="doPendingFunctors" alt="" coords="1210,107,1354,133"/>
+<area shape="rect" id="node8" href="classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="handleRead" alt="" coords="1233,157,1331,184"/>
+<area shape="rect" id="node10" href="classmuduo_1_1Channel.html#ac5c54df7ed3b930268c8d7752c101725" title="muduo::Channel::update" alt="" coords="433,56,615,83"/>
+<area shape="rect" id="node11" href="classmuduo_1_1EventLoop.html#acaa4a191936aacf608d279a6f343d533" title="updateChannel" alt="" coords="663,56,783,83"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_ab10f76c92cb5269f8296e5b3e4dd0ef9_icgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_ab10f76c92cb5269f8296e5b3e4dd0ef9_icgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_ab10f76c92cb5269f8296e5b3e4dd0ef9_icgraph" id="classmuduo_1_1EventLoop_ab10f76c92cb5269f8296e5b3e4dd0ef9_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1TcpConnection.html#afff2c1576d605dda12f87d2b32d5c1a2" title="muduo::TcpConnection\l::connectDestoryed" alt="" coords="193,177,363,218"/>
+<area shape="rect" id="node15" href="classmuduo_1_1EventLoop.html#a5c4a9a6cf52fc408cdd33c8445fb5127" title="pollReturnTime" alt="" coords="217,467,339,493"/>
+<area shape="rect" id="node16" href="classmuduo_1_1Connector.html#abf9772658904f185215158e0dbdf9610" title="muduo::Connector::remove\lAndResetChannel" alt="" coords="179,675,377,717"/>
+<area shape="rect" id="node3" href="classmuduo_1_1TcpConnection.html#acb32ba0eda160676b4fc98d756ee3515" title="Internal use only. " alt="" coords="462,118,631,159"/>
+<area shape="rect" id="node5" href="namespacemuduo_1_1detail.html#ae3e6bfc20f665df13eeb2ebc3c91abce" title="muduo::detail::removeConnection" alt="" coords="425,184,668,211"/>
+<area shape="rect" id="node6" href="classmuduo_1_1TcpClient.html#ad9661c3f05443256c9439f812d1a7691" title="Not thread safe, but in loop " alt="" coords="451,53,643,94"/>
+<area shape="rect" id="node10" href="classmuduo_1_1TcpServer.html#a38345725075c2bf845af025c2567d977" title="Not thread safe, but in loop " alt="" coords="449,235,645,277"/>
+<area shape="rect" id="node4" href="classmuduo_1_1TcpClient.html#a01845d2886f327b9c8cb5df03cb00d7c" title="muduo::TcpClient::\l~TcpClient" alt="" coords="766,118,909,159"/>
+<area shape="rect" id="node7" href="classmuduo_1_1TcpClient.html#a94b31be320453fc8aeae81b25934b43f" title="muduo::TcpClient::setWrite\lCompleteCallback" alt="" coords="1032,57,1228,98"/>
+<area shape="rect" id="node8" href="classmuduo_1_1TcpClient.html#ae2e5d102f7a519e65019cd5f09acea72" title="Not thread safe, but in loop " alt="" coords="716,13,959,40"/>
+<area shape="rect" id="node9" href="classmuduo_1_1TcpClient.html#a8d68694b0595253edef974e8ee289d4c" title="muduo::TcpClient::TcpClient" alt="" coords="1029,5,1231,32"/>
+<area shape="rect" id="node11" href="classmuduo_1_1TcpServer.html#a94b31be320453fc8aeae81b25934b43f" title="muduo::TcpServer::setWrite\lCompleteCallback" alt="" coords="1313,195,1513,237"/>
+<area shape="rect" id="node12" href="classmuduo_1_1TcpServer.html#ad9661c3f05443256c9439f812d1a7691" title="Thread safe " alt="" coords="739,183,935,225"/>
+<area shape="rect" id="node13" href="classmuduo_1_1TcpServer.html#a6e7510f45cfa67ddc79aa8689fd79562" title="Not thread safe, but in loop " alt="" coords="1007,148,1253,175"/>
+<area shape="rect" id="node14" href="classmuduo_1_1TcpServer.html#aca9a1702da801c3275b2e70d233cc0c7" title="muduo::TcpServer::TcpServer" alt="" coords="1308,144,1517,171"/>
+<area shape="rect" id="node17" href="classmuduo_1_1Connector.html#a70b275e63748ddd6da7d2171c540ccff" title="muduo::Connector::handle\lError" alt="" coords="450,635,643,677"/>
+<area shape="rect" id="node20" href="classmuduo_1_1Connector.html#ab987a8e9ac6b0ad825674ec2131921af" title="muduo::Connector::setState" alt="" coords="1572,559,1775,585"/>
+<area shape="rect" id="node21" href="classmuduo_1_1Connector.html#ae1d79ff6580eaced59a900144818150d" title="muduo::Connector::handle\lWrite" alt="" coords="2065,558,2259,599"/>
+<area shape="rect" id="node18" href="classmuduo_1_1Connector.html#a2e3471f37486a133ee848ea72ed7efc2" title="muduo::Connector::connecting" alt="" coords="727,559,947,585"/>
+<area shape="rect" id="node19" href="classmuduo_1_1Connector.html#a1396bf9b5defe9fa844a63b5cd40ac0e" title="muduo::Connector::connect" alt="" coords="1030,471,1230,497"/>
+<area shape="rect" id="node25" href="classmuduo_1_1Connector.html#ad289b54db652dcb10f835f3613e68fdb" title="muduo::Connector::startInLoop" alt="" coords="1301,395,1524,421"/>
+<area shape="rect" id="node22" href="classmuduo_1_1Connector.html#a22ee094ca3f45aa4156b97d34fe678bf" title="muduo::Connector::restart" alt="" coords="1823,401,2015,428"/>
+<area shape="rect" id="node24" href="classmuduo_1_1Connector.html#a6a23d487c31355d8663ccdd4cbf4f499" title="muduo::Connector::retry" alt="" coords="1829,503,2009,529"/>
+<area shape="rect" id="node23" href="classmuduo_1_1Connector.html#a30908d8d30b5333e6288a7430d598cb1" title="muduo::Connector::setNew\lConnectionCallback" alt="" coords="2063,318,2261,359"/>
+<area shape="rect" id="node26" href="classmuduo_1_1Connector.html#a60de64d75454385b23995437f1d72669" title="muduo::Connector::start" alt="" coords="1584,351,1763,377"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae770f8cb708dfacf455d71d6977e5436"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae770f8cb708dfacf455d71d6977e5436">&#9670;&nbsp;</a></span>runAfter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1TimerId.html">TimerId</a> runAfter </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacemuduo.html#a5f7453c2a15825e79bddf5deaec707bf">TimerCallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Runs callback after <code>delay</code> seconds. </p>
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8cc_source.html">EventLoop.cc</a> 第 <a class="el" href="EventLoop_8cc_source.html#l00125">125</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Timestamp_8h_source.html#l00115">muduo::addTime()</a>, <a class="el" href="classmuduo_1_1Timestamp.html#a3bca3b2a36424e36b3d2c772fa7d5772">Timestamp::now()</a> , 以及 <a class="el" href="EventLoop_8cc_source.html#l00121">EventLoop::runAt()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8h_source.html#l00035">EventLoop::pollReturnTime()</a>, <a class="el" href="Connector_8cc_source.html#l00158">Connector::retry()</a> , 以及 <a class="el" href="TcpClient_8cc_source.html#l00042">TcpClient::~TcpClient()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_ae770f8cb708dfacf455d71d6977e5436_cgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_ae770f8cb708dfacf455d71d6977e5436_cgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_ae770f8cb708dfacf455d71d6977e5436_cgraph" id="classmuduo_1_1EventLoop_ae770f8cb708dfacf455d71d6977e5436_cgraph">
+<area shape="rect" id="node2" href="namespacemuduo.html#a4c4a0e85f7b5c4056878cd7cf26a83cb" title="muduo::addTime" alt="" coords="154,42,286,69"/>
+<area shape="rect" id="node5" href="classmuduo_1_1Timestamp.html#a3bca3b2a36424e36b3d2c772fa7d5772" title="muduo::Timestamp::now" alt="" coords="128,93,312,119"/>
+<area shape="rect" id="node6" href="classmuduo_1_1EventLoop.html#aa4a2472f0030a6f2076aa56e21830f6f" title="runAt" alt="" coords="191,143,249,170"/>
+<area shape="rect" id="node3" href="classmuduo_1_1Timestamp.html#a8a0616b73c803b94f5c0e9d00fa96fb4" title="muduo::Timestamp::microSeconds\lSinceEpoch" alt="" coords="360,5,608,47"/>
+<area shape="rect" id="node4" href="classmuduo_1_1Timestamp.html#a3ccb273b45fb16b1b14de8a4c8b44e3b" title="muduo::Timestamp::Timestamp" alt="" coords="369,71,599,98"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_ae770f8cb708dfacf455d71d6977e5436_icgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_ae770f8cb708dfacf455d71d6977e5436_icgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_ae770f8cb708dfacf455d71d6977e5436_icgraph" id="classmuduo_1_1EventLoop_ae770f8cb708dfacf455d71d6977e5436_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a5c4a9a6cf52fc408cdd33c8445fb5127" title="pollReturnTime" alt="" coords="157,169,279,196"/>
+<area shape="rect" id="node3" href="classmuduo_1_1Connector.html#a6a23d487c31355d8663ccdd4cbf4f499" title="muduo::Connector::retry" alt="" coords="128,220,308,247"/>
+<area shape="rect" id="node13" href="classmuduo_1_1TcpClient.html#a01845d2886f327b9c8cb5df03cb00d7c" title="muduo::TcpClient::\l~TcpClient" alt="" coords="147,271,289,313"/>
+<area shape="rect" id="node4" href="classmuduo_1_1Connector.html#a1396bf9b5defe9fa844a63b5cd40ac0e" title="muduo::Connector::connect" alt="" coords="356,145,556,172"/>
+<area shape="rect" id="node5" href="classmuduo_1_1Connector.html#ab987a8e9ac6b0ad825674ec2131921af" title="muduo::Connector::setState" alt="" coords="875,195,1077,221"/>
+<area shape="rect" id="node7" href="classmuduo_1_1Connector.html#ae1d79ff6580eaced59a900144818150d" title="muduo::Connector::handle\lWrite" alt="" coords="1125,233,1319,274"/>
+<area shape="rect" id="node12" href="classmuduo_1_1Connector.html#a70b275e63748ddd6da7d2171c540ccff" title="muduo::Connector::handle\lError" alt="" coords="619,283,812,325"/>
+<area shape="rect" id="node10" href="classmuduo_1_1Connector.html#ad289b54db652dcb10f835f3613e68fdb" title="muduo::Connector::startInLoop" alt="" coords="604,56,827,83"/>
+<area shape="rect" id="node6" href="classmuduo_1_1Connector.html#a2e3471f37486a133ee848ea72ed7efc2" title="muduo::Connector::connecting" alt="" coords="1367,169,1587,196"/>
+<area shape="rect" id="node8" href="classmuduo_1_1Connector.html#a22ee094ca3f45aa4156b97d34fe678bf" title="muduo::Connector::restart" alt="" coords="1126,56,1318,83"/>
+<area shape="rect" id="node9" href="classmuduo_1_1Connector.html#a30908d8d30b5333e6288a7430d598cb1" title="muduo::Connector::setNew\lConnectionCallback" alt="" coords="1377,23,1576,65"/>
+<area shape="rect" id="node11" href="classmuduo_1_1Connector.html#a60de64d75454385b23995437f1d72669" title="muduo::Connector::start" alt="" coords="887,5,1065,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa4a2472f0030a6f2076aa56e21830f6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4a2472f0030a6f2076aa56e21830f6f">&#9670;&nbsp;</a></span>runAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1TimerId.html">TimerId</a> runAt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmuduo_1_1Timestamp.html">Timestamp</a> &amp;&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacemuduo.html#a5f7453c2a15825e79bddf5deaec707bf">TimerCallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Runs callback at 'time'. </p>
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8cc_source.html">EventLoop.cc</a> 第 <a class="el" href="EventLoop_8cc_source.html#l00121">121</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="EventLoop_8h_source.html#l00093">EventLoop::timerQueue_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8h_source.html#l00035">EventLoop::pollReturnTime()</a> , 以及 <a class="el" href="EventLoop_8cc_source.html#l00125">EventLoop::runAfter()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_aa4a2472f0030a6f2076aa56e21830f6f_icgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_aa4a2472f0030a6f2076aa56e21830f6f_icgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_aa4a2472f0030a6f2076aa56e21830f6f_icgraph" id="classmuduo_1_1EventLoop_aa4a2472f0030a6f2076aa56e21830f6f_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a5c4a9a6cf52fc408cdd33c8445fb5127" title="pollReturnTime" alt="" coords="263,103,384,129"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoop.html#ae770f8cb708dfacf455d71d6977e5436" title="runAfter" alt="" coords="111,157,185,184"/>
+<area shape="rect" id="node4" href="classmuduo_1_1Connector.html#a6a23d487c31355d8663ccdd4cbf4f499" title="muduo::Connector::retry" alt="" coords="233,220,413,247"/>
+<area shape="rect" id="node14" href="classmuduo_1_1TcpClient.html#a01845d2886f327b9c8cb5df03cb00d7c" title="muduo::TcpClient::\l~TcpClient" alt="" coords="252,154,395,195"/>
+<area shape="rect" id="node5" href="classmuduo_1_1Connector.html#a1396bf9b5defe9fa844a63b5cd40ac0e" title="muduo::Connector::connect" alt="" coords="461,145,661,172"/>
+<area shape="rect" id="node6" href="classmuduo_1_1Connector.html#ab987a8e9ac6b0ad825674ec2131921af" title="muduo::Connector::setState" alt="" coords="980,195,1183,221"/>
+<area shape="rect" id="node8" href="classmuduo_1_1Connector.html#ae1d79ff6580eaced59a900144818150d" title="muduo::Connector::handle\lWrite" alt="" coords="1231,233,1424,274"/>
+<area shape="rect" id="node13" href="classmuduo_1_1Connector.html#a70b275e63748ddd6da7d2171c540ccff" title="muduo::Connector::handle\lError" alt="" coords="724,283,917,325"/>
+<area shape="rect" id="node11" href="classmuduo_1_1Connector.html#ad289b54db652dcb10f835f3613e68fdb" title="muduo::Connector::startInLoop" alt="" coords="709,56,932,83"/>
+<area shape="rect" id="node7" href="classmuduo_1_1Connector.html#a2e3471f37486a133ee848ea72ed7efc2" title="muduo::Connector::connecting" alt="" coords="1472,169,1692,196"/>
+<area shape="rect" id="node9" href="classmuduo_1_1Connector.html#a22ee094ca3f45aa4156b97d34fe678bf" title="muduo::Connector::restart" alt="" coords="1231,56,1423,83"/>
+<area shape="rect" id="node10" href="classmuduo_1_1Connector.html#a30908d8d30b5333e6288a7430d598cb1" title="muduo::Connector::setNew\lConnectionCallback" alt="" coords="1483,23,1681,65"/>
+<area shape="rect" id="node12" href="classmuduo_1_1Connector.html#a60de64d75454385b23995437f1d72669" title="muduo::Connector::start" alt="" coords="992,5,1171,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7bf9fa6b9440ac1053f475108297264e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bf9fa6b9440ac1053f475108297264e">&#9670;&nbsp;</a></span>runEvery()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1TimerId.html">TimerId</a> runEvery </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>interval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacemuduo.html#a5f7453c2a15825e79bddf5deaec707bf">TimerCallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Runs callback every <code>interval</code> seconds. </p>
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8cc_source.html">EventLoop.cc</a> 第 <a class="el" href="EventLoop_8cc_source.html#l00130">130</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Timestamp_8h_source.html#l00115">muduo::addTime()</a>, <a class="el" href="classmuduo_1_1Timestamp.html#a3bca3b2a36424e36b3d2c772fa7d5772">Timestamp::now()</a> , 以及 <a class="el" href="EventLoop_8h_source.html#l00093">EventLoop::timerQueue_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8h_source.html#l00035">EventLoop::pollReturnTime()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_a7bf9fa6b9440ac1053f475108297264e_cgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_a7bf9fa6b9440ac1053f475108297264e_cgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_a7bf9fa6b9440ac1053f475108297264e_cgraph" id="classmuduo_1_1EventLoop_a7bf9fa6b9440ac1053f475108297264e_cgraph">
+<area shape="rect" id="node2" href="namespacemuduo.html#a4c4a0e85f7b5c4056878cd7cf26a83cb" title="muduo::addTime" alt="" coords="159,42,291,69"/>
+<area shape="rect" id="node5" href="classmuduo_1_1Timestamp.html#a3bca3b2a36424e36b3d2c772fa7d5772" title="muduo::Timestamp::now" alt="" coords="133,93,317,119"/>
+<area shape="rect" id="node3" href="classmuduo_1_1Timestamp.html#a8a0616b73c803b94f5c0e9d00fa96fb4" title="muduo::Timestamp::microSeconds\lSinceEpoch" alt="" coords="365,5,613,47"/>
+<area shape="rect" id="node4" href="classmuduo_1_1Timestamp.html#a3ccb273b45fb16b1b14de8a4c8b44e3b" title="muduo::Timestamp::Timestamp" alt="" coords="374,71,605,98"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_a7bf9fa6b9440ac1053f475108297264e_icgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_a7bf9fa6b9440ac1053f475108297264e_icgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_a7bf9fa6b9440ac1053f475108297264e_icgraph" id="classmuduo_1_1EventLoop_a7bf9fa6b9440ac1053f475108297264e_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a5c4a9a6cf52fc408cdd33c8445fb5127" title="pollReturnTime" alt="" coords="133,5,255,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acf6a4570703c6edf29ae2d28cf6767cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf6a4570703c6edf29ae2d28cf6767cb">&#9670;&nbsp;</a></span>runInLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void runInLoop </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmuduo_1_1EventLoop.html#aa47556388c5bf0b2534c9816841d8e7a">Functor</a> &amp;&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Runs callback immediately in the loop thread. It wakes up the loop, and run the cb. If in the same loop thread, cb is run within the function. Safe to call from other threads. </p>
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8cc_source.html">EventLoop.cc</a> 第 <a class="el" href="EventLoop_8cc_source.html#l00096">96</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="EventLoop_8h_source.html#l00077">EventLoop::isInLoopThread()</a> , 以及 <a class="el" href="EventLoop_8cc_source.html#l00104">EventLoop::queueInLoop()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="TimerQueue_8cc_source.html#l00082">TimerQueue::addTimer()</a>, <a class="el" href="TimerQueue_8cc_source.html#l00088">TimerQueue::cancel()</a>, <a class="el" href="TcpServer_8cc_source.html#l00041">TcpServer::newConnection()</a>, <a class="el" href="EventLoop_8h_source.html#l00035">EventLoop::pollReturnTime()</a>, <a class="el" href="TcpServer_8cc_source.html#l00061">TcpServer::removeConnection()</a>, <a class="el" href="TcpConnection_8cc_source.html#l00040">TcpConnection::send()</a>, <a class="el" href="TcpConnection_8cc_source.html#l00079">TcpConnection::shutdown()</a>, <a class="el" href="Connector_8cc_source.html#l00033">Connector::start()</a>, <a class="el" href="TcpServer_8cc_source.html#l00031">TcpServer::start()</a> , 以及 <a class="el" href="TcpClient_8cc_source.html#l00042">TcpClient::~TcpClient()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_acf6a4570703c6edf29ae2d28cf6767cb_cgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_acf6a4570703c6edf29ae2d28cf6767cb_cgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_acf6a4570703c6edf29ae2d28cf6767cb_cgraph" id="classmuduo_1_1EventLoop_acf6a4570703c6edf29ae2d28cf6767cb_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="isInLoopThread" alt="" coords="293,81,415,108"/>
+<area shape="rect" id="node8" href="classmuduo_1_1EventLoop.html#a7d2b6939f8f94715d253c0d4c6cee207" title="queueInLoop" alt="" coords="140,132,245,159"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="abortNotInLoopThread" alt="" coords="463,5,629,32"/>
+<area shape="rect" id="node4" href="namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="677,31,871,57"/>
+<area shape="rect" id="node6" href="classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="doPendingFunctors" alt="" coords="474,107,618,133"/>
+<area shape="rect" id="node7" href="classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="handleRead" alt="" coords="497,157,595,184"/>
+<area shape="rect" id="node5" href="namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="919,23,1087,65"/>
+<area shape="rect" id="node9" href="classmuduo_1_1EventLoop.html#ae674290a26ecbd622c5160e38e8a4fe9" title="wakeup" alt="" coords="317,132,391,159"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_acf6a4570703c6edf29ae2d28cf6767cb_icgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_acf6a4570703c6edf29ae2d28cf6767cb_icgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_acf6a4570703c6edf29ae2d28cf6767cb_icgraph" id="classmuduo_1_1EventLoop_acf6a4570703c6edf29ae2d28cf6767cb_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1TimerQueue.html#af1bd2f1010adf1a82120c708b7a1ba22" title="muduo::TimerQueue::\laddTimer" alt="" coords="157,5,319,47"/>
+<area shape="rect" id="node3" href="classmuduo_1_1TimerQueue.html#af8b24b02bbff6a657fa5b0190bef9b9b" title="muduo::TimerQueue::\lcancel" alt="" coords="157,71,319,112"/>
+<area shape="rect" id="node4" href="classmuduo_1_1TcpServer.html#a6e7510f45cfa67ddc79aa8689fd79562" title="Not thread safe, but in loop " alt="" coords="384,191,631,218"/>
+<area shape="rect" id="node7" href="classmuduo_1_1EventLoop.html#a5c4a9a6cf52fc408cdd33c8445fb5127" title="pollReturnTime" alt="" coords="177,187,299,214"/>
+<area shape="rect" id="node8" href="classmuduo_1_1TcpServer.html#ad9661c3f05443256c9439f812d1a7691" title="Thread safe " alt="" coords="140,239,336,280"/>
+<area shape="rect" id="node9" href="classmuduo_1_1TcpConnection.html#a4d274fdc2a242187da42dcd82cd593ec" title="muduo::TcpConnection\l::send" alt="" coords="153,304,323,345"/>
+<area shape="rect" id="node11" href="classmuduo_1_1TcpConnection.html#a7861ee1569802186a619778efc85af13" title="muduo::TcpConnection\l::shutdown" alt="" coords="153,369,323,411"/>
+<area shape="rect" id="node12" href="classmuduo_1_1Connector.html#a60de64d75454385b23995437f1d72669" title="muduo::Connector::start" alt="" coords="149,435,327,462"/>
+<area shape="rect" id="node14" href="classmuduo_1_1TcpServer.html#a60de64d75454385b23995437f1d72669" title="muduo::TcpServer::start" alt="" coords="150,486,326,513"/>
+<area shape="rect" id="node16" href="classmuduo_1_1TcpClient.html#a01845d2886f327b9c8cb5df03cb00d7c" title="muduo::TcpClient::\l~TcpClient" alt="" coords="167,537,309,579"/>
+<area shape="rect" id="node5" href="classmuduo_1_1TcpServer.html#a94b31be320453fc8aeae81b25934b43f" title="muduo::TcpServer::setWrite\lCompleteCallback" alt="" coords="683,239,883,280"/>
+<area shape="rect" id="node6" href="classmuduo_1_1TcpServer.html#aca9a1702da801c3275b2e70d233cc0c7" title="muduo::TcpServer::TcpServer" alt="" coords="679,187,888,214"/>
+<area shape="rect" id="node10" href="classmuduo_1_1TcpConnection.html#aa0fd96bc25e3d509fb54028c2e4b91f6" title="muduo::TcpConnection\l::connected" alt="" coords="423,331,592,372"/>
+<area shape="rect" id="node13" href="classmuduo_1_1Connector.html#a30908d8d30b5333e6288a7430d598cb1" title="muduo::Connector::setNew\lConnectionCallback" alt="" coords="408,424,607,465"/>
+<area shape="rect" id="node15" href="test9_8cc.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="480,490,535,517"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acaa4a191936aacf608d279a6f343d533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaa4a191936aacf608d279a6f343d533">&#9670;&nbsp;</a></span>updateChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateChannel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1Channel.html">Channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8cc_source.html">EventLoop.cc</a> 第 <a class="el" href="EventLoop_8cc_source.html#l00139">139</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="EventLoop_8h_source.html#l00069">EventLoop::assertInLoopThread()</a>, <a class="el" href="Channel_8h_source.html#l00042">Channel::ownerLoop()</a> , 以及 <a class="el" href="EventLoop_8h_source.html#l00092">EventLoop::poller_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8h_source.html#l00035">EventLoop::pollReturnTime()</a> , 以及 <a class="el" href="Channel_8cc_source.html#l00028">Channel::update()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_acaa4a191936aacf608d279a6f343d533_cgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_acaa4a191936aacf608d279a6f343d533_cgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_acaa4a191936aacf608d279a6f343d533_cgraph" id="classmuduo_1_1EventLoop_acaa4a191936aacf608d279a6f343d533_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="assertInLoopThread" alt="" coords="201,31,352,57"/>
+<area shape="rect" id="node9" href="classmuduo_1_1Channel.html#a2e24e2ab7ada4682fdf49cc835d85e8d" title="muduo::Channel::ownerLoop" alt="" coords="173,81,380,108"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="abortNotInLoopThread" alt="" coords="657,5,824,32"/>
+<area shape="rect" id="node6" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="isInLoopThread" alt="" coords="458,56,579,83"/>
+<area shape="rect" id="node4" href="namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="872,31,1065,57"/>
+<area shape="rect" id="node5" href="namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="1113,23,1281,65"/>
+<area shape="rect" id="node7" href="classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="doPendingFunctors" alt="" coords="669,107,813,133"/>
+<area shape="rect" id="node8" href="classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="handleRead" alt="" coords="691,157,790,184"/>
+<area shape="rect" id="node10" href="classmuduo_1_1Channel.html#ac5c54df7ed3b930268c8d7752c101725" title="muduo::Channel::update" alt="" coords="428,119,609,145"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_acaa4a191936aacf608d279a6f343d533_icgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_acaa4a191936aacf608d279a6f343d533_icgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_acaa4a191936aacf608d279a6f343d533_icgraph" id="classmuduo_1_1EventLoop_acaa4a191936aacf608d279a6f343d533_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a5c4a9a6cf52fc408cdd33c8445fb5127" title="pollReturnTime" alt="" coords="948,220,1069,247"/>
+<area shape="rect" id="node3" href="classmuduo_1_1Channel.html#ac5c54df7ed3b930268c8d7752c101725" title="muduo::Channel::update" alt="" coords="173,355,355,381"/>
+<area shape="rect" id="node4" href="classmuduo_1_1Channel.html#a238885c747f586049b766fa4fcd5ec12" title="muduo::Channel::disableAll" alt="" coords="419,329,619,356"/>
+<area shape="rect" id="node5" href="classmuduo_1_1Channel.html#a97cbc4c0678234e62a4a9d906e064cdf" title="muduo::Channel::disableWriting" alt="" coords="404,380,633,407"/>
+<area shape="rect" id="node6" href="classmuduo_1_1Channel.html#ad31f735a6d5ad83203d977ad8eafb223" title="muduo::Channel::enableReading" alt="" coords="403,431,635,457"/>
+<area shape="rect" id="node12" href="classmuduo_1_1Channel.html#af1dff4317f202ed06097a1425a4dca6d" title="muduo::Channel::enableWriting" alt="" coords="405,481,632,508"/>
+<area shape="rect" id="node13" href="classmuduo_1_1Channel.html#a2e24e2ab7ada4682fdf49cc835d85e8d" title="muduo::Channel::ownerLoop" alt="" coords="415,279,622,305"/>
+<area shape="rect" id="node7" href="classmuduo_1_1Acceptor.html#a458bbe4cf81360301586b2e62a7f9dd2" title="muduo::Acceptor::listen" alt="" coords="683,431,859,457"/>
+<area shape="rect" id="node11" href="classmuduo_1_1TimerQueue.html#a7ad41aed2409f7d424fd9cf7c0c5eac8" title="muduo::TimerQueue::\lTimerQueue" alt="" coords="689,482,852,523"/>
+<area shape="rect" id="node8" href="classmuduo_1_1Acceptor.html#a43301d614b7aaae820d7ddd7033984f5" title="muduo::Acceptor::listenning" alt="" coords="907,431,1111,457"/>
+<area shape="rect" id="node9" href="classmuduo_1_1TcpServer.html#a60de64d75454385b23995437f1d72669" title="muduo::TcpServer::start" alt="" coords="921,649,1097,676"/>
+<area shape="rect" id="node10" href="test9_8cc.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1253,827,1307,853"/>
+<area shape="rect" id="node14" href="classmuduo_1_1EventLoop.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="removeChannel" alt="" coords="708,279,833,305"/>
+<area shape="rect" id="node15" href="classmuduo_1_1TcpConnection.html#afff2c1576d605dda12f87d2b32d5c1a2" title="muduo::TcpConnection\l::connectDestoryed" alt="" coords="924,271,1093,313"/>
+<area shape="rect" id="node28" href="classmuduo_1_1Connector.html#abf9772658904f185215158e0dbdf9610" title="muduo::Connector::remove\lAndResetChannel" alt="" coords="909,350,1108,391"/>
+<area shape="rect" id="node16" href="classmuduo_1_1TcpConnection.html#acb32ba0eda160676b4fc98d756ee3515" title="Internal use only. " alt="" coords="1195,163,1365,205"/>
+<area shape="rect" id="node18" href="namespacemuduo_1_1detail.html#ae3e6bfc20f665df13eeb2ebc3c91abce" title="muduo::detail::removeConnection" alt="" coords="1159,229,1401,256"/>
+<area shape="rect" id="node19" href="classmuduo_1_1TcpClient.html#ad9661c3f05443256c9439f812d1a7691" title="Not thread safe, but in loop " alt="" coords="1184,281,1376,322"/>
+<area shape="rect" id="node23" href="classmuduo_1_1TcpServer.html#a38345725075c2bf845af025c2567d977" title="Not thread safe, but in loop " alt="" coords="1182,98,1378,139"/>
+<area shape="rect" id="node17" href="classmuduo_1_1TcpClient.html#a01845d2886f327b9c8cb5df03cb00d7c" title="muduo::TcpClient::\l~TcpClient" alt="" coords="1499,167,1642,209"/>
+<area shape="rect" id="node20" href="classmuduo_1_1TcpClient.html#a94b31be320453fc8aeae81b25934b43f" title="muduo::TcpClient::setWrite\lCompleteCallback" alt="" coords="1765,281,1961,322"/>
+<area shape="rect" id="node21" href="classmuduo_1_1TcpClient.html#ae2e5d102f7a519e65019cd5f09acea72" title="Not thread safe, but in loop " alt="" coords="1449,237,1692,264"/>
+<area shape="rect" id="node22" href="classmuduo_1_1TcpClient.html#a8d68694b0595253edef974e8ee289d4c" title="muduo::TcpClient::TcpClient" alt="" coords="1763,229,1964,256"/>
+<area shape="rect" id="node24" href="classmuduo_1_1TcpServer.html#a94b31be320453fc8aeae81b25934b43f" title="muduo::TcpServer::setWrite\lCompleteCallback" alt="" coords="2046,57,2246,98"/>
+<area shape="rect" id="node25" href="classmuduo_1_1TcpServer.html#ad9661c3f05443256c9439f812d1a7691" title="Thread safe " alt="" coords="1473,45,1669,86"/>
+<area shape="rect" id="node26" href="classmuduo_1_1TcpServer.html#a6e7510f45cfa67ddc79aa8689fd79562" title="Not thread safe, but in loop " alt="" coords="1740,9,1987,36"/>
+<area shape="rect" id="node27" href="classmuduo_1_1TcpServer.html#aca9a1702da801c3275b2e70d233cc0c7" title="muduo::TcpServer::TcpServer" alt="" coords="2041,5,2251,32"/>
+<area shape="rect" id="node29" href="classmuduo_1_1Connector.html#a70b275e63748ddd6da7d2171c540ccff" title="muduo::Connector::handle\lError" alt="" coords="1183,491,1377,533"/>
+<area shape="rect" id="node32" href="classmuduo_1_1Connector.html#ab987a8e9ac6b0ad825674ec2131921af" title="muduo::Connector::setState" alt="" coords="2305,701,2508,728"/>
+<area shape="rect" id="node33" href="classmuduo_1_1Connector.html#ae1d79ff6580eaced59a900144818150d" title="muduo::Connector::handle\lWrite" alt="" coords="2799,530,2992,571"/>
+<area shape="rect" id="node30" href="classmuduo_1_1Connector.html#a2e3471f37486a133ee848ea72ed7efc2" title="muduo::Connector::connecting" alt="" coords="1461,549,1681,576"/>
+<area shape="rect" id="node31" href="classmuduo_1_1Connector.html#a1396bf9b5defe9fa844a63b5cd40ac0e" title="muduo::Connector::connect" alt="" coords="1763,549,1963,576"/>
+<area shape="rect" id="node37" href="classmuduo_1_1Connector.html#ad289b54db652dcb10f835f3613e68fdb" title="muduo::Connector::startInLoop" alt="" coords="2035,549,2257,576"/>
+<area shape="rect" id="node34" href="classmuduo_1_1Connector.html#a22ee094ca3f45aa4156b97d34fe678bf" title="muduo::Connector::restart" alt="" coords="2556,713,2748,740"/>
+<area shape="rect" id="node36" href="classmuduo_1_1Connector.html#a6a23d487c31355d8663ccdd4cbf4f499" title="muduo::Connector::retry" alt="" coords="2562,537,2742,564"/>
+<area shape="rect" id="node35" href="classmuduo_1_1Connector.html#a30908d8d30b5333e6288a7430d598cb1" title="muduo::Connector::setNew\lConnectionCallback" alt="" coords="2796,650,2995,691"/>
+<area shape="rect" id="node38" href="classmuduo_1_1Connector.html#a60de64d75454385b23995437f1d72669" title="muduo::Connector::start" alt="" coords="2317,600,2496,627"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae674290a26ecbd622c5160e38e8a4fe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae674290a26ecbd622c5160e38e8a4fe9">&#9670;&nbsp;</a></span>wakeup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wakeup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8cc_source.html">EventLoop.cc</a> 第 <a class="el" href="EventLoop_8cc_source.html#l00158">158</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Logging_8h_source.html#l00131">LOG_ERROR</a> , 以及 <a class="el" href="EventLoop_8h_source.html#l00094">EventLoop::wakeupFd_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8h_source.html#l00035">EventLoop::pollReturnTime()</a>, <a class="el" href="EventLoop_8cc_source.html#l00104">EventLoop::queueInLoop()</a> , 以及 <a class="el" href="EventLoop_8cc_source.html#l00089">EventLoop::quit()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1EventLoop_ae674290a26ecbd622c5160e38e8a4fe9_icgraph.png" border="0" usemap="#classmuduo_1_1EventLoop_ae674290a26ecbd622c5160e38e8a4fe9_icgraph" alt=""/></div>
+<map name="classmuduo_1_1EventLoop_ae674290a26ecbd622c5160e38e8a4fe9_icgraph" id="classmuduo_1_1EventLoop_ae674290a26ecbd622c5160e38e8a4fe9_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a5c4a9a6cf52fc408cdd33c8445fb5127" title="pollReturnTime" alt="" coords="817,5,939,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoop.html#a7d2b6939f8f94715d253c0d4c6cee207" title="queueInLoop" alt="" coords="127,603,232,629"/>
+<area shape="rect" id="node41" href="classmuduo_1_1EventLoop.html#a2463a3acef2df4c951ce942a3229e44e" title="quit" alt="" coords="156,879,203,905"/>
+<area shape="rect" id="node4" href="classmuduo_1_1TcpConnection.html#ae1d79ff6580eaced59a900144818150d" title="muduo::TcpConnection\l::handleWrite" alt="" coords="295,625,464,666"/>
+<area shape="rect" id="node15" href="namespacemuduo_1_1detail.html#ae3e6bfc20f665df13eeb2ebc3c91abce" title="muduo::detail::removeConnection" alt="" coords="1036,512,1279,539"/>
+<area shape="rect" id="node16" href="classmuduo_1_1TcpClient.html#ad9661c3f05443256c9439f812d1a7691" title="Not thread safe, but in loop " alt="" coords="1061,795,1253,837"/>
+<area shape="rect" id="node20" href="classmuduo_1_1TcpServer.html#a38345725075c2bf845af025c2567d977" title="Not thread safe, but in loop " alt="" coords="1059,690,1255,731"/>
+<area shape="rect" id="node23" href="classmuduo_1_1Connector.html#abf9772658904f185215158e0dbdf9610" title="muduo::Connector::remove\lAndResetChannel" alt="" coords="280,1003,479,1045"/>
+<area shape="rect" id="node34" href="classmuduo_1_1EventLoop.html#acf6a4570703c6edf29ae2d28cf6767cb" title="runInLoop" alt="" coords="580,289,667,316"/>
+<area shape="rect" id="node40" href="classmuduo_1_1TcpConnection.html#a016986a5f7c6f0d415e25b4b6bdbf481" title="muduo::TcpConnection\l::sendInLoop" alt="" coords="295,507,464,549"/>
+<area shape="rect" id="node5" href="classmuduo_1_1TcpConnection.html#a5cefef7ea6272b740592d9dfecbd6c20" title="muduo::TcpConnection\l::setState" alt="" coords="539,625,708,666"/>
+<area shape="rect" id="node22" href="classmuduo_1_1TcpConnection.html#a239881b2e3d5499da8745fba1bd82e08" title="muduo::TcpConnection\l::TcpConnection" alt="" coords="539,690,708,731"/>
+<area shape="rect" id="node6" href="classmuduo_1_1TcpConnection.html#a7861ee1569802186a619778efc85af13" title="muduo::TcpConnection\l::shutdown" alt="" coords="793,507,963,549"/>
+<area shape="rect" id="node8" href="classmuduo_1_1TcpConnection.html#a2e1f9742dac98a0c3e5a5509920934ae" title="muduo::TcpConnection\l::connectEstablished" alt="" coords="793,625,963,666"/>
+<area shape="rect" id="node14" href="classmuduo_1_1TcpConnection.html#afff2c1576d605dda12f87d2b32d5c1a2" title="muduo::TcpConnection\l::connectDestoryed" alt="" coords="793,690,963,731"/>
+<area shape="rect" id="node7" href="classmuduo_1_1TcpConnection.html#aa0fd96bc25e3d509fb54028c2e4b91f6" title="muduo::TcpConnection\l::connected" alt="" coords="1073,443,1242,485"/>
+<area shape="rect" id="node9" href="classmuduo_1_1TcpConnection.html#acb32ba0eda160676b4fc98d756ee3515" title="Internal use only. " alt="" coords="1073,563,1242,605"/>
+<area shape="rect" id="node11" href="classmuduo_1_1TcpServer.html#a6e7510f45cfa67ddc79aa8689fd79562" title="Not thread safe, but in loop " alt="" coords="1617,580,1864,607"/>
+<area shape="rect" id="node10" href="classmuduo_1_1TcpClient.html#a01845d2886f327b9c8cb5df03cb00d7c" title="muduo::TcpClient::\l~TcpClient" alt="" coords="1377,505,1519,546"/>
+<area shape="rect" id="node12" href="classmuduo_1_1TcpServer.html#a94b31be320453fc8aeae81b25934b43f" title="muduo::TcpServer::setWrite\lCompleteCallback" alt="" coords="1917,631,2117,673"/>
+<area shape="rect" id="node13" href="classmuduo_1_1TcpServer.html#aca9a1702da801c3275b2e70d233cc0c7" title="muduo::TcpServer::TcpServer" alt="" coords="1912,580,2121,607"/>
+<area shape="rect" id="node17" href="classmuduo_1_1TcpClient.html#a94b31be320453fc8aeae81b25934b43f" title="muduo::TcpClient::setWrite\lCompleteCallback" alt="" coords="1643,793,1839,834"/>
+<area shape="rect" id="node18" href="classmuduo_1_1TcpClient.html#ae2e5d102f7a519e65019cd5f09acea72" title="Not thread safe, but in loop " alt="" coords="1327,851,1569,877"/>
+<area shape="rect" id="node19" href="classmuduo_1_1TcpClient.html#a8d68694b0595253edef974e8ee289d4c" title="muduo::TcpClient::TcpClient" alt="" coords="1640,859,1841,885"/>
+<area shape="rect" id="node21" href="classmuduo_1_1TcpServer.html#ad9661c3f05443256c9439f812d1a7691" title="Thread safe " alt="" coords="1350,631,1546,673"/>
+<area shape="rect" id="node24" href="classmuduo_1_1Connector.html#a70b275e63748ddd6da7d2171c540ccff" title="muduo::Connector::handle\lError" alt="" coords="527,1198,720,1239"/>
+<area shape="rect" id="node27" href="classmuduo_1_1Connector.html#ab987a8e9ac6b0ad825674ec2131921af" title="muduo::Connector::setState" alt="" coords="1639,1112,1842,1139"/>
+<area shape="rect" id="node28" href="classmuduo_1_1Connector.html#ae1d79ff6580eaced59a900144818150d" title="muduo::Connector::handle\lWrite" alt="" coords="2172,1117,2365,1158"/>
+<area shape="rect" id="node25" href="classmuduo_1_1Connector.html#a2e3471f37486a133ee848ea72ed7efc2" title="muduo::Connector::connecting" alt="" coords="768,1175,988,1201"/>
+<area shape="rect" id="node26" href="classmuduo_1_1Connector.html#a1396bf9b5defe9fa844a63b5cd40ac0e" title="muduo::Connector::connect" alt="" coords="1057,1112,1257,1139"/>
+<area shape="rect" id="node32" href="classmuduo_1_1Connector.html#ad289b54db652dcb10f835f3613e68fdb" title="muduo::Connector::startInLoop" alt="" coords="1337,960,1559,987"/>
+<area shape="rect" id="node29" href="classmuduo_1_1Connector.html#a22ee094ca3f45aa4156b97d34fe678bf" title="muduo::Connector::restart" alt="" coords="1921,960,2113,987"/>
+<area shape="rect" id="node31" href="classmuduo_1_1Connector.html#a6a23d487c31355d8663ccdd4cbf4f499" title="muduo::Connector::retry" alt="" coords="1927,1061,2107,1088"/>
+<area shape="rect" id="node30" href="classmuduo_1_1Connector.html#a30908d8d30b5333e6288a7430d598cb1" title="muduo::Connector::setNew\lConnectionCallback" alt="" coords="2169,873,2368,914"/>
+<area shape="rect" id="node33" href="classmuduo_1_1Connector.html#a60de64d75454385b23995437f1d72669" title="muduo::Connector::start" alt="" coords="1651,741,1830,768"/>
+<area shape="rect" id="node35" href="classmuduo_1_1TimerQueue.html#af1bd2f1010adf1a82120c708b7a1ba22" title="muduo::TimerQueue::\laddTimer" alt="" coords="797,107,959,149"/>
+<area shape="rect" id="node36" href="classmuduo_1_1TimerQueue.html#af8b24b02bbff6a657fa5b0190bef9b9b" title="muduo::TimerQueue::\lcancel" alt="" coords="797,173,959,214"/>
+<area shape="rect" id="node37" href="classmuduo_1_1TcpConnection.html#a4d274fdc2a242187da42dcd82cd593ec" title="muduo::TcpConnection\l::send" alt="" coords="793,442,963,483"/>
+<area shape="rect" id="node38" href="classmuduo_1_1TcpServer.html#a60de64d75454385b23995437f1d72669" title="muduo::TcpServer::start" alt="" coords="790,56,966,83"/>
+<area shape="rect" id="node39" href="test9_8cc.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1130,56,1185,83"/>
+<area shape="rect" id="node42" href="classmuduo_1_1EventLoopThread.html#af946ac1087e0c7617b0704ebde55332c" title="muduo::EventLoopThread\l::~EventLoopThread" alt="" coords="285,1069,473,1110"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a9196549e63e60c1a0749ca09d7df6155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9196549e63e60c1a0749ca09d7df6155">&#9670;&nbsp;</a></span>activeChannels_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1EventLoop.html#a0b74248ffee6df294563618187b52404">ChannelList</a> activeChannels_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8h_source.html">EventLoop.h</a> 第 <a class="el" href="EventLoop_8h_source.html#l00098">98</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8cc_source.html#l00068">EventLoop::loop()</a>.</p>
+
+</div>
+</div>
+<a id="a5a34dfe17bae44f99e2c05ce2a952c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a34dfe17bae44f99e2c05ce2a952c90">&#9670;&nbsp;</a></span>callingPendingFunctors_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool callingPendingFunctors_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8h_source.html">EventLoop.h</a> 第 <a class="el" href="EventLoop_8h_source.html#l00089">89</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8cc_source.html#l00174">EventLoop::doPendingFunctors()</a> , 以及 <a class="el" href="EventLoop_8cc_source.html#l00104">EventLoop::queueInLoop()</a>.</p>
+
+</div>
+</div>
+<a id="a56192e02721abc39fdcc5fec930beb42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56192e02721abc39fdcc5fec930beb42">&#9670;&nbsp;</a></span>looping_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool looping_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8h_source.html">EventLoop.h</a> 第 <a class="el" href="EventLoop_8h_source.html#l00087">87</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8cc_source.html#l00068">EventLoop::loop()</a> , 以及 <a class="el" href="EventLoop_8cc_source.html#l00061">EventLoop::~EventLoop()</a>.</p>
+
+</div>
+</div>
+<a id="a6e1bf1809a42f40f1a21178dc6620a6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e1bf1809a42f40f1a21178dc6620a6f">&#9670;&nbsp;</a></span>mutex_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MutexLock mutex_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8h_source.html">EventLoop.h</a> 第 <a class="el" href="EventLoop_8h_source.html#l00099">99</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8cc_source.html#l00174">EventLoop::doPendingFunctors()</a> , 以及 <a class="el" href="EventLoop_8cc_source.html#l00104">EventLoop::queueInLoop()</a>.</p>
+
+</div>
+</div>
+<a id="ab8934a9424f158aa4f0346132f24a2d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8934a9424f158aa4f0346132f24a2d6">&#9670;&nbsp;</a></span>pendingFunctors_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classmuduo_1_1EventLoop.html#aa47556388c5bf0b2534c9816841d8e7a">Functor</a>&gt; pendingFunctors_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8h_source.html">EventLoop.h</a> 第 <a class="el" href="EventLoop_8h_source.html#l00100">100</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8cc_source.html#l00174">EventLoop::doPendingFunctors()</a> , 以及 <a class="el" href="EventLoop_8cc_source.html#l00104">EventLoop::queueInLoop()</a>.</p>
+
+</div>
+</div>
+<a id="ac086876e4c7ab85ef83d35afa0340693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac086876e4c7ab85ef83d35afa0340693">&#9670;&nbsp;</a></span>poller_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::scoped_ptr&lt;<a class="el" href="classmuduo_1_1EPoller.html">EPoller</a>&gt; poller_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8h_source.html">EventLoop.h</a> 第 <a class="el" href="EventLoop_8h_source.html#l00092">92</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8cc_source.html#l00068">EventLoop::loop()</a>, <a class="el" href="EventLoop_8cc_source.html#l00145">EventLoop::removeChannel()</a> , 以及 <a class="el" href="EventLoop_8cc_source.html#l00139">EventLoop::updateChannel()</a>.</p>
+
+</div>
+</div>
+<a id="a9331500c7091e0eec7cb1e608897b0ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9331500c7091e0eec7cb1e608897b0ed">&#9670;&nbsp;</a></span>pollReturnTime_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1Timestamp.html">Timestamp</a> pollReturnTime_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8h_source.html">EventLoop.h</a> 第 <a class="el" href="EventLoop_8h_source.html#l00091">91</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8cc_source.html#l00068">EventLoop::loop()</a> , 以及 <a class="el" href="EventLoop_8h_source.html#l00035">EventLoop::pollReturnTime()</a>.</p>
+
+</div>
+</div>
+<a id="ad03d5e60173eec4928f28be29b5cbacf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad03d5e60173eec4928f28be29b5cbacf">&#9670;&nbsp;</a></span>quit_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool quit_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8h_source.html">EventLoop.h</a> 第 <a class="el" href="EventLoop_8h_source.html#l00088">88</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8cc_source.html#l00068">EventLoop::loop()</a> , 以及 <a class="el" href="EventLoop_8cc_source.html#l00089">EventLoop::quit()</a>.</p>
+
+</div>
+</div>
+<a id="a34adb5b3e132d9207ceed3440b4f2ab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34adb5b3e132d9207ceed3440b4f2ab1">&#9670;&nbsp;</a></span>threadId_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pid_t threadId_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8h_source.html">EventLoop.h</a> 第 <a class="el" href="EventLoop_8h_source.html#l00090">90</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8cc_source.html#l00151">EventLoop::abortNotInLoopThread()</a>, <a class="el" href="EventLoop_8cc_source.html#l00036">EventLoop::EventLoop()</a> , 以及 <a class="el" href="EventLoop_8h_source.html#l00077">EventLoop::isInLoopThread()</a>.</p>
+
+</div>
+</div>
+<a id="a5e84bc1cb5c3f44f9a4d6c0e6ea1ee29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e84bc1cb5c3f44f9a4d6c0e6ea1ee29">&#9670;&nbsp;</a></span>timerQueue_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::scoped_ptr&lt;<a class="el" href="classmuduo_1_1TimerQueue.html">TimerQueue</a>&gt; timerQueue_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8h_source.html">EventLoop.h</a> 第 <a class="el" href="EventLoop_8h_source.html#l00093">93</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8cc_source.html#l00135">EventLoop::cancel()</a>, <a class="el" href="EventLoop_8cc_source.html#l00121">EventLoop::runAt()</a> , 以及 <a class="el" href="EventLoop_8cc_source.html#l00130">EventLoop::runEvery()</a>.</p>
+
+</div>
+</div>
+<a id="a65578f34006755d9c3ddd66969874bd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65578f34006755d9c3ddd66969874bd4">&#9670;&nbsp;</a></span>wakeupChannel_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::scoped_ptr&lt;<a class="el" href="classmuduo_1_1Channel.html">Channel</a>&gt; wakeupChannel_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8h_source.html">EventLoop.h</a> 第 <a class="el" href="EventLoop_8h_source.html#l00097">97</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8cc_source.html#l00036">EventLoop::EventLoop()</a>.</p>
+
+</div>
+</div>
+<a id="a14cd183489944d3bf82c0c1907eeaa30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14cd183489944d3bf82c0c1907eeaa30">&#9670;&nbsp;</a></span>wakeupFd_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wakeupFd_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="EventLoop_8h_source.html">EventLoop.h</a> 第 <a class="el" href="EventLoop_8h_source.html#l00094">94</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="EventLoop_8cc_source.html#l00166">EventLoop::handleRead()</a>, <a class="el" href="EventLoop_8cc_source.html#l00158">EventLoop::wakeup()</a> , 以及 <a class="el" href="EventLoop_8cc_source.html#l00061">EventLoop::~EventLoop()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>lib/<a class="el" href="EventLoop_8h_source.html">EventLoop.h</a></li>
+<li>src/<a class="el" href="EventLoop_8cc_source.html">EventLoop.cc</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemuduo.html">muduo</a></li><li class="navelem"><a class="el" href="classmuduo_1_1EventLoop.html">EventLoop</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

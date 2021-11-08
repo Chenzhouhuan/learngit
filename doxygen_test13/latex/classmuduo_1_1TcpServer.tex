@@ -1,0 +1,549 @@
+\hypertarget{classmuduo_1_1TcpServer}{}\section{Tcp\+Server类 参考}
+\label{classmuduo_1_1TcpServer}\index{Tcp\+Server@{Tcp\+Server}}
+
+
+{\ttfamily \#include $<$Tcp\+Server.\+h$>$}
+
+
+
+类 Tcp\+Server 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{classmuduo_1_1TcpServer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Tcp\+Server 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmuduo_1_1TcpServer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1TcpServer_aca9a1702da801c3275b2e70d233cc0c7}{Tcp\+Server} (\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$loop, const \hyperlink{classmuduo_1_1InetAddress}{Inet\+Address} \&listen\+Addr)
+\item 
+\hyperlink{classmuduo_1_1TcpServer_a4eb415b51f7d85a5d4ac91370d0cbb00}{$\sim$\+Tcp\+Server} ()
+\item 
+void \hyperlink{classmuduo_1_1TcpServer_a83bb28d139df96ba9fc449b4643f2c36}{set\+Thread\+Num} (int num\+Threads)
+\item 
+void \hyperlink{classmuduo_1_1TcpServer_a60de64d75454385b23995437f1d72669}{start} ()
+\item 
+void \hyperlink{classmuduo_1_1TcpServer_abbb0008856a8495adb08c8cb7fe65c2c}{set\+Connection\+Callback} (const \hyperlink{namespacemuduo_ac7f7b0c9c9e96123dfea3fe120a2c404}{Connection\+Callback} \&cb)
+\item 
+void \hyperlink{classmuduo_1_1TcpServer_a0a67f11f92b4cdc6f6c66b861f81cb08}{set\+Message\+Callback} (const \hyperlink{namespacemuduo_ab8a96fa483cffe150618e01058e6fc1b}{Message\+Callback} \&cb)
+\item 
+void \hyperlink{classmuduo_1_1TcpServer_a94b31be320453fc8aeae81b25934b43f}{set\+Write\+Complete\+Callback} (const \hyperlink{namespacemuduo_a605eda27d048a69607942b95735d7087}{Write\+Complete\+Callback} \&cb)
+\end{DoxyCompactItemize}
+\subsection*{Private 类型}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ std\+::string, \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{Tcp\+Connection\+Ptr} $>$ \hyperlink{classmuduo_1_1TcpServer_a757ed86be3708eee03ff754c5108abdd}{Connection\+Map}
+\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmuduo_1_1TcpServer_a6e7510f45cfa67ddc79aa8689fd79562}{new\+Connection} (int sockfd, const \hyperlink{classmuduo_1_1InetAddress}{Inet\+Address} \&peer\+Addr)
+\begin{DoxyCompactList}\small\item\em Not thread safe, but in loop \end{DoxyCompactList}\item 
+void \hyperlink{classmuduo_1_1TcpServer_ad9661c3f05443256c9439f812d1a7691}{remove\+Connection} (const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{Tcp\+Connection\+Ptr} \&conn)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmuduo_1_1Thread}{Thread} safe \end{DoxyCompactList}\item 
+void \hyperlink{classmuduo_1_1TcpServer_a38345725075c2bf845af025c2567d977}{remove\+Connection\+In\+Loop} (const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{Tcp\+Connection\+Ptr} \&conn)
+\begin{DoxyCompactList}\small\item\em Not thread safe, but in loop \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$ \hyperlink{classmuduo_1_1TcpServer_a19968f50018d32ac31f5cba0195591ac}{loop\+\_\+}
+\item 
+const std\+::string \hyperlink{classmuduo_1_1TcpServer_a723d30392e2c4f36252de0528a1b246d}{name\+\_\+}
+\item 
+boost\+::scoped\+\_\+ptr$<$ \hyperlink{classmuduo_1_1Acceptor}{Acceptor} $>$ \hyperlink{classmuduo_1_1TcpServer_ae5dd43c1da06f8fcb95db8add7e93e49}{acceptor\+\_\+}
+\item 
+boost\+::scoped\+\_\+ptr$<$ \hyperlink{classmuduo_1_1EventLoopThreadPool}{Event\+Loop\+Thread\+Pool} $>$ \hyperlink{classmuduo_1_1TcpServer_a734d140bc9fcb5fe26e93dd0a42cf775}{thread\+Pool\+\_\+}
+\item 
+\hyperlink{namespacemuduo_ac7f7b0c9c9e96123dfea3fe120a2c404}{Connection\+Callback} \hyperlink{classmuduo_1_1TcpServer_ae4ac7fea1abbcfb56d481dbe8ffb37e7}{connection\+Callback\+\_\+}
+\item 
+\hyperlink{namespacemuduo_ab8a96fa483cffe150618e01058e6fc1b}{Message\+Callback} \hyperlink{classmuduo_1_1TcpServer_aa4d5ea21d215329779698e634e5e7755}{message\+Callback\+\_\+}
+\item 
+\hyperlink{namespacemuduo_a605eda27d048a69607942b95735d7087}{Write\+Complete\+Callback} \hyperlink{classmuduo_1_1TcpServer_a525f0d11cfa2e271600caa30407b6150}{write\+Complete\+Callback\+\_\+}
+\item 
+bool \hyperlink{classmuduo_1_1TcpServer_a5ad69cfc4163d7797bc0f0d7eadb95a7}{started\+\_\+}
+\item 
+int \hyperlink{classmuduo_1_1TcpServer_aab950be51cdd74cb0fc104fa135e4853}{next\+Conn\+Id\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1TcpServer_a757ed86be3708eee03ff754c5108abdd}{Connection\+Map} \hyperlink{classmuduo_1_1TcpServer_a07322e7616e616baff3de1675028979a}{connections\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 Tcp\+Server.\+h 第 17 行定义.
+
+
+
+\subsection{成员类型定义说明}
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_a757ed86be3708eee03ff754c5108abdd}\label{classmuduo_1_1TcpServer_a757ed86be3708eee03ff754c5108abdd}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!Connection\+Map@{Connection\+Map}}
+\index{Connection\+Map@{Connection\+Map}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{Connection\+Map}{ConnectionMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{Tcp\+Connection\+Ptr}$>$ \hyperlink{classmuduo_1_1TcpServer_a757ed86be3708eee03ff754c5108abdd}{Connection\+Map}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Tcp\+Server.\+h 第 61 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_aca9a1702da801c3275b2e70d233cc0c7}\label{classmuduo_1_1TcpServer_aca9a1702da801c3275b2e70d233cc0c7}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!Tcp\+Server@{Tcp\+Server}}
+\index{Tcp\+Server@{Tcp\+Server}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{Tcp\+Server()}{TcpServer()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1TcpServer}{Tcp\+Server} (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$}]{loop,  }\item[{const \hyperlink{classmuduo_1_1InetAddress}{Inet\+Address} \&}]{listen\+Addr }\end{DoxyParamCaption})}
+
+
+
+在文件 Tcp\+Server.\+cc 第 13 行定义.
+
+
+
+参考 Tcp\+Server\+::acceptor\+\_\+ , 以及 Tcp\+Server\+::new\+Connection().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1TcpServer_aca9a1702da801c3275b2e70d233cc0c7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_a4eb415b51f7d85a5d4ac91370d0cbb00}\label{classmuduo_1_1TcpServer_a4eb415b51f7d85a5d4ac91370d0cbb00}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!````~Tcp\+Server@{$\sim$\+Tcp\+Server}}
+\index{````~Tcp\+Server@{$\sim$\+Tcp\+Server}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{$\sim$\+Tcp\+Server()}{~TcpServer()}}
+{\footnotesize\ttfamily $\sim$\hyperlink{classmuduo_1_1TcpServer}{Tcp\+Server} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 Tcp\+Server.\+cc 第 24 行定义.
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_a6e7510f45cfa67ddc79aa8689fd79562}\label{classmuduo_1_1TcpServer_a6e7510f45cfa67ddc79aa8689fd79562}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!new\+Connection@{new\+Connection}}
+\index{new\+Connection@{new\+Connection}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{new\+Connection()}{newConnection()}}
+{\footnotesize\ttfamily void new\+Connection (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{const \hyperlink{classmuduo_1_1InetAddress}{Inet\+Address} \&}]{peer\+Addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Not thread safe, but in loop 
+
+
+
+在文件 Tcp\+Server.\+cc 第 41 行定义.
+
+
+
+参考 Event\+Loop\+::assert\+In\+Loop\+Thread(), Tcp\+Connection\+::connect\+Established(), Tcp\+Server\+::connection\+Callback\+\_\+, Tcp\+Server\+::connections\+\_\+, muduo\+::sockets\+::get\+Local\+Addr(), L\+O\+G\+\_\+\+I\+N\+FO, Tcp\+Server\+::loop\+\_\+, Tcp\+Server\+::message\+Callback\+\_\+, Tcp\+Server\+::name\+\_\+, Tcp\+Server\+::next\+Conn\+Id\+\_\+, Tcp\+Server\+::remove\+Connection(), Event\+Loop\+::run\+In\+Loop(), Tcp\+Server\+::thread\+Pool\+\_\+, Inet\+Address\+::to\+Host\+Port() , 以及 Tcp\+Server\+::write\+Complete\+Callback\+\_\+.
+
+
+
+参考自 Tcp\+Server\+::set\+Write\+Complete\+Callback() , 以及 Tcp\+Server\+::\+Tcp\+Server().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1TcpServer_a6e7510f45cfa67ddc79aa8689fd79562_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1TcpServer_a6e7510f45cfa67ddc79aa8689fd79562_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_ad9661c3f05443256c9439f812d1a7691}\label{classmuduo_1_1TcpServer_ad9661c3f05443256c9439f812d1a7691}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!remove\+Connection@{remove\+Connection}}
+\index{remove\+Connection@{remove\+Connection}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{remove\+Connection()}{removeConnection()}}
+{\footnotesize\ttfamily void remove\+Connection (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{Tcp\+Connection\+Ptr} \&}]{conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\hyperlink{classmuduo_1_1Thread}{Thread} safe 
+
+
+
+在文件 Tcp\+Server.\+cc 第 61 行定义.
+
+
+
+参考 Tcp\+Server\+::loop\+\_\+, Tcp\+Server\+::remove\+Connection\+In\+Loop() , 以及 Event\+Loop\+::run\+In\+Loop().
+
+
+
+参考自 Tcp\+Server\+::new\+Connection() , 以及 Tcp\+Server\+::set\+Write\+Complete\+Callback().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1TcpServer_ad9661c3f05443256c9439f812d1a7691_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1TcpServer_ad9661c3f05443256c9439f812d1a7691_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_a38345725075c2bf845af025c2567d977}\label{classmuduo_1_1TcpServer_a38345725075c2bf845af025c2567d977}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!remove\+Connection\+In\+Loop@{remove\+Connection\+In\+Loop}}
+\index{remove\+Connection\+In\+Loop@{remove\+Connection\+In\+Loop}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{remove\+Connection\+In\+Loop()}{removeConnectionInLoop()}}
+{\footnotesize\ttfamily void remove\+Connection\+In\+Loop (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{Tcp\+Connection\+Ptr} \&}]{conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Not thread safe, but in loop 
+
+
+
+在文件 Tcp\+Server.\+cc 第 66 行定义.
+
+
+
+参考 Event\+Loop\+::assert\+In\+Loop\+Thread(), Tcp\+Connection\+::connect\+Destoryed(), Tcp\+Server\+::connections\+\_\+, L\+O\+G\+\_\+\+I\+N\+FO, Tcp\+Server\+::loop\+\_\+, Tcp\+Server\+::name\+\_\+ , 以及 Event\+Loop\+::queue\+In\+Loop().
+
+
+
+参考自 Tcp\+Server\+::remove\+Connection() , 以及 Tcp\+Server\+::set\+Write\+Complete\+Callback().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1TcpServer_a38345725075c2bf845af025c2567d977_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1TcpServer_a38345725075c2bf845af025c2567d977_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_abbb0008856a8495adb08c8cb7fe65c2c}\label{classmuduo_1_1TcpServer_abbb0008856a8495adb08c8cb7fe65c2c}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!set\+Connection\+Callback@{set\+Connection\+Callback}}
+\index{set\+Connection\+Callback@{set\+Connection\+Callback}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{set\+Connection\+Callback()}{setConnectionCallback()}}
+{\footnotesize\ttfamily void set\+Connection\+Callback (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemuduo_ac7f7b0c9c9e96123dfea3fe120a2c404}{Connection\+Callback} \&}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set connection callback. Not thread safe. 
+
+在文件 Tcp\+Server.\+h 第 43 行定义.
+
+
+
+参考 Tcp\+Server\+::connection\+Callback\+\_\+.
+
+
+
+参考自 main().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classmuduo_1_1TcpServer_abbb0008856a8495adb08c8cb7fe65c2c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_a0a67f11f92b4cdc6f6c66b861f81cb08}\label{classmuduo_1_1TcpServer_a0a67f11f92b4cdc6f6c66b861f81cb08}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!set\+Message\+Callback@{set\+Message\+Callback}}
+\index{set\+Message\+Callback@{set\+Message\+Callback}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{set\+Message\+Callback()}{setMessageCallback()}}
+{\footnotesize\ttfamily void set\+Message\+Callback (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemuduo_ab8a96fa483cffe150618e01058e6fc1b}{Message\+Callback} \&}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set message callback. Not thread safe. 
+
+在文件 Tcp\+Server.\+h 第 47 行定义.
+
+
+
+参考 Tcp\+Server\+::message\+Callback\+\_\+.
+
+
+
+参考自 main().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{classmuduo_1_1TcpServer_a0a67f11f92b4cdc6f6c66b861f81cb08_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_a83bb28d139df96ba9fc449b4643f2c36}\label{classmuduo_1_1TcpServer_a83bb28d139df96ba9fc449b4643f2c36}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!set\+Thread\+Num@{set\+Thread\+Num}}
+\index{set\+Thread\+Num@{set\+Thread\+Num}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{set\+Thread\+Num()}{setThreadNum()}}
+{\footnotesize\ttfamily void set\+Thread\+Num (\begin{DoxyParamCaption}\item[{int}]{num\+Threads }\end{DoxyParamCaption})}
+
+Set the number of threads for handling input.
+
+Always accepts new connection in loop\textquotesingle{}s thread. Must be called before {\ttfamily start} 
+\begin{DoxyParams}{参数}
+{\em num\+Threads} & 
+\begin{DoxyItemize}
+\item 0 means all I/O in loop\textquotesingle{}s thread, no thread will created. this is the default value.
+\item 1 means all I/O in another thread.
+\item N means a thread pool with N threads, new connections are assigned on a round-\/robin basis. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+
+
+在文件 Tcp\+Server.\+cc 第 26 行定义.
+
+
+
+参考 Tcp\+Server\+::thread\+Pool\+\_\+.
+
+
+
+参考自 main().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classmuduo_1_1TcpServer_a83bb28d139df96ba9fc449b4643f2c36_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_a94b31be320453fc8aeae81b25934b43f}\label{classmuduo_1_1TcpServer_a94b31be320453fc8aeae81b25934b43f}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!set\+Write\+Complete\+Callback@{set\+Write\+Complete\+Callback}}
+\index{set\+Write\+Complete\+Callback@{set\+Write\+Complete\+Callback}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{set\+Write\+Complete\+Callback()}{setWriteCompleteCallback()}}
+{\footnotesize\ttfamily void set\+Write\+Complete\+Callback (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemuduo_a605eda27d048a69607942b95735d7087}{Write\+Complete\+Callback} \&}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set write complete callback Not thread safe 
+
+在文件 Tcp\+Server.\+h 第 51 行定义.
+
+
+
+参考 Tcp\+Server\+::new\+Connection(), Tcp\+Server\+::remove\+Connection(), Tcp\+Server\+::remove\+Connection\+In\+Loop() , 以及 Tcp\+Server\+::write\+Complete\+Callback\+\_\+.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1TcpServer_a94b31be320453fc8aeae81b25934b43f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_a60de64d75454385b23995437f1d72669}\label{classmuduo_1_1TcpServer_a60de64d75454385b23995437f1d72669}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!start@{start}}
+\index{start@{start}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Starts the server if it\textquotesingle{}s not listenning.
+
+It\textquotesingle{}s harmless to call it multiple times. \hyperlink{classmuduo_1_1Thread}{Thread} safe. 
+
+在文件 Tcp\+Server.\+cc 第 31 行定义.
+
+
+
+参考 Tcp\+Server\+::acceptor\+\_\+, muduo\+::get\+\_\+pointer(), Acceptor\+::listen(), Tcp\+Server\+::loop\+\_\+, Event\+Loop\+::run\+In\+Loop(), Tcp\+Server\+::started\+\_\+ , 以及 Tcp\+Server\+::thread\+Pool\+\_\+.
+
+
+
+参考自 main().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1TcpServer_a60de64d75454385b23995437f1d72669_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classmuduo_1_1TcpServer_a60de64d75454385b23995437f1d72669_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_ae5dd43c1da06f8fcb95db8add7e93e49}\label{classmuduo_1_1TcpServer_ae5dd43c1da06f8fcb95db8add7e93e49}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!acceptor\+\_\+@{acceptor\+\_\+}}
+\index{acceptor\+\_\+@{acceptor\+\_\+}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{acceptor\+\_\+}{acceptor\_}}
+{\footnotesize\ttfamily boost\+::scoped\+\_\+ptr$<$\hyperlink{classmuduo_1_1Acceptor}{Acceptor}$>$ acceptor\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Tcp\+Server.\+h 第 65 行定义.
+
+
+
+参考自 Tcp\+Server\+::start() , 以及 Tcp\+Server\+::\+Tcp\+Server().
+
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_ae4ac7fea1abbcfb56d481dbe8ffb37e7}\label{classmuduo_1_1TcpServer_ae4ac7fea1abbcfb56d481dbe8ffb37e7}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!connection\+Callback\+\_\+@{connection\+Callback\+\_\+}}
+\index{connection\+Callback\+\_\+@{connection\+Callback\+\_\+}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{connection\+Callback\+\_\+}{connectionCallback\_}}
+{\footnotesize\ttfamily \hyperlink{namespacemuduo_ac7f7b0c9c9e96123dfea3fe120a2c404}{Connection\+Callback} connection\+Callback\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Tcp\+Server.\+h 第 67 行定义.
+
+
+
+参考自 Tcp\+Server\+::new\+Connection() , 以及 Tcp\+Server\+::set\+Connection\+Callback().
+
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_a07322e7616e616baff3de1675028979a}\label{classmuduo_1_1TcpServer_a07322e7616e616baff3de1675028979a}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!connections\+\_\+@{connections\+\_\+}}
+\index{connections\+\_\+@{connections\+\_\+}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{connections\+\_\+}{connections\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1TcpServer_a757ed86be3708eee03ff754c5108abdd}{Connection\+Map} connections\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Tcp\+Server.\+h 第 72 行定义.
+
+
+
+参考自 Tcp\+Server\+::new\+Connection() , 以及 Tcp\+Server\+::remove\+Connection\+In\+Loop().
+
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_a19968f50018d32ac31f5cba0195591ac}\label{classmuduo_1_1TcpServer_a19968f50018d32ac31f5cba0195591ac}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!loop\+\_\+@{loop\+\_\+}}
+\index{loop\+\_\+@{loop\+\_\+}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{loop\+\_\+}{loop\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1EventLoop}{Event\+Loop}$\ast$ loop\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Tcp\+Server.\+h 第 63 行定义.
+
+
+
+参考自 Tcp\+Server\+::new\+Connection(), Tcp\+Server\+::remove\+Connection(), Tcp\+Server\+::remove\+Connection\+In\+Loop() , 以及 Tcp\+Server\+::start().
+
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_aa4d5ea21d215329779698e634e5e7755}\label{classmuduo_1_1TcpServer_aa4d5ea21d215329779698e634e5e7755}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!message\+Callback\+\_\+@{message\+Callback\+\_\+}}
+\index{message\+Callback\+\_\+@{message\+Callback\+\_\+}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{message\+Callback\+\_\+}{messageCallback\_}}
+{\footnotesize\ttfamily \hyperlink{namespacemuduo_ab8a96fa483cffe150618e01058e6fc1b}{Message\+Callback} message\+Callback\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Tcp\+Server.\+h 第 68 行定义.
+
+
+
+参考自 Tcp\+Server\+::new\+Connection() , 以及 Tcp\+Server\+::set\+Message\+Callback().
+
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_a723d30392e2c4f36252de0528a1b246d}\label{classmuduo_1_1TcpServer_a723d30392e2c4f36252de0528a1b246d}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!name\+\_\+@{name\+\_\+}}
+\index{name\+\_\+@{name\+\_\+}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{name\+\_\+}{name\_}}
+{\footnotesize\ttfamily const std\+::string name\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Tcp\+Server.\+h 第 64 行定义.
+
+
+
+参考自 Tcp\+Server\+::new\+Connection() , 以及 Tcp\+Server\+::remove\+Connection\+In\+Loop().
+
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_aab950be51cdd74cb0fc104fa135e4853}\label{classmuduo_1_1TcpServer_aab950be51cdd74cb0fc104fa135e4853}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!next\+Conn\+Id\+\_\+@{next\+Conn\+Id\+\_\+}}
+\index{next\+Conn\+Id\+\_\+@{next\+Conn\+Id\+\_\+}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{next\+Conn\+Id\+\_\+}{nextConnId\_}}
+{\footnotesize\ttfamily int next\+Conn\+Id\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Tcp\+Server.\+h 第 71 行定义.
+
+
+
+参考自 Tcp\+Server\+::new\+Connection().
+
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_a5ad69cfc4163d7797bc0f0d7eadb95a7}\label{classmuduo_1_1TcpServer_a5ad69cfc4163d7797bc0f0d7eadb95a7}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!started\+\_\+@{started\+\_\+}}
+\index{started\+\_\+@{started\+\_\+}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{started\+\_\+}{started\_}}
+{\footnotesize\ttfamily bool started\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Tcp\+Server.\+h 第 70 行定义.
+
+
+
+参考自 Tcp\+Server\+::start().
+
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_a734d140bc9fcb5fe26e93dd0a42cf775}\label{classmuduo_1_1TcpServer_a734d140bc9fcb5fe26e93dd0a42cf775}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!thread\+Pool\+\_\+@{thread\+Pool\+\_\+}}
+\index{thread\+Pool\+\_\+@{thread\+Pool\+\_\+}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{thread\+Pool\+\_\+}{threadPool\_}}
+{\footnotesize\ttfamily boost\+::scoped\+\_\+ptr$<$\hyperlink{classmuduo_1_1EventLoopThreadPool}{Event\+Loop\+Thread\+Pool}$>$ thread\+Pool\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Tcp\+Server.\+h 第 66 行定义.
+
+
+
+参考自 Tcp\+Server\+::new\+Connection(), Tcp\+Server\+::set\+Thread\+Num() , 以及 Tcp\+Server\+::start().
+
+\mbox{\Hypertarget{classmuduo_1_1TcpServer_a525f0d11cfa2e271600caa30407b6150}\label{classmuduo_1_1TcpServer_a525f0d11cfa2e271600caa30407b6150}} 
+\index{muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}!write\+Complete\+Callback\+\_\+@{write\+Complete\+Callback\+\_\+}}
+\index{write\+Complete\+Callback\+\_\+@{write\+Complete\+Callback\+\_\+}!muduo\+::\+Tcp\+Server@{muduo\+::\+Tcp\+Server}}
+\subsubsection{\texorpdfstring{write\+Complete\+Callback\+\_\+}{writeCompleteCallback\_}}
+{\footnotesize\ttfamily \hyperlink{namespacemuduo_a605eda27d048a69607942b95735d7087}{Write\+Complete\+Callback} write\+Complete\+Callback\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Tcp\+Server.\+h 第 69 行定义.
+
+
+
+参考自 Tcp\+Server\+::new\+Connection() , 以及 Tcp\+Server\+::set\+Write\+Complete\+Callback().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{TcpServer_8h}{Tcp\+Server.\+h}\item 
+src/\hyperlink{TcpServer_8cc}{Tcp\+Server.\+cc}\end{DoxyCompactItemize}

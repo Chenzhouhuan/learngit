@@ -1,0 +1,11 @@
+<map id="size" name="size">
+<area shape="rect" id="node2" href="$classmuduo_1_1net_1_1Buffer.html#af02baace4e1946f318dfa5c4d5d4bb3c" title="muduo::net::Buffer\l::append" alt="" coords="145,169,288,211"/>
+<area shape="rect" id="node9" href="$classmuduo_1_1LogStream.html#ae05e1c88b77ce178b75cb47185fd4894" title="muduo::LogStream::operator\&lt;\&lt;" alt="" coords="101,235,332,262"/>
+<area shape="rect" id="node10" href="$classmuduo_1_1GzipFile.html#a9df1dd3bba47672243cc91713d8a59dd" title="muduo::GzipFile::write" alt="" coords="133,286,300,313"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1net_1_1Buffer.html#af4c97664922a815eb9aa9dfe78686007" title="muduo::net::Buffer\l::append" alt="" coords="380,5,523,47"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1net_1_1Buffer.html#a7e283b380d5c67b86e150324bbb0546a" title="muduo::net::Buffer\l::appendInt64" alt="" coords="380,71,523,112"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1net_1_1Buffer.html#a93760f95378988318124352dbf222e67" title="muduo::net::Buffer\l::appendInt32" alt="" coords="380,136,523,177"/>
+<area shape="rect" id="node6" href="$classmuduo_1_1net_1_1Buffer.html#a4d4daf38d824d3773fa5d711ffd536e1" title="muduo::net::Buffer\l::appendInt16" alt="" coords="380,201,523,243"/>
+<area shape="rect" id="node7" href="$classmuduo_1_1net_1_1Buffer.html#a9dca0171bcc73c002095487c464bad28" title="muduo::net::Buffer\l::appendInt8" alt="" coords="380,267,523,308"/>
+<area shape="rect" id="node8" href="$classmuduo_1_1net_1_1Buffer.html#a69095875ff26fe7eff163afde6eb7c9e" title="muduo::net::Buffer\l::shrink" alt="" coords="380,332,523,373"/>
+</map>

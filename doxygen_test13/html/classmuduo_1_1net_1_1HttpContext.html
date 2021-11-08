@@ -1,0 +1,510 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: HttpContext类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmuduo_1_1net_1_1HttpContext.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classmuduo_1_1net_1_1HttpContext-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">HttpContext类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="HttpContext_8h_source.html">HttpContext.h</a>&gt;</code></p>
+<div class="dynheader">
+类 HttpContext 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1HttpContext__inherit__graph.png" border="0" usemap="#HttpContext_inherit__map" alt="Inheritance graph"/></div>
+<map name="HttpContext_inherit__map" id="HttpContext_inherit__map">
+<area shape="rect" id="node2" href="classmuduo_1_1copyable.html" title="{copyable\n||# copyable()\l# ~copyable()\l}" alt="" coords="32,5,149,97"/>
+</map>
+</div>
+<div class="dynheader">
+HttpContext 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1HttpContext__coll__graph.png" border="0" usemap="#HttpContext_coll__map" alt="Collaboration graph"/></div>
+<map name="HttpContext_coll__map" id="HttpContext_coll__map">
+<area shape="rect" id="node2" href="classmuduo_1_1copyable.html" title="{copyable\n||# copyable()\l# ~copyable()\l}" alt="" coords="43,5,160,97"/>
+<area shape="rect" id="node3" href="classmuduo_1_1net_1_1HttpRequest.html" title="{HttpRequest\n|&#45; method_\l&#45; version_\l&#45; headers_\l|+ HttpRequest()\l+ setVersion()\l+ getVersion()\l+ setMethod()\l+ method()\l+ methodString()\l+ setPath()\l+ path()\l+ setQuery()\l+ query()\l和 6 更多...\l}" alt="" coords="151,477,286,731"/>
+<area shape="rect" id="node4" href="classmuduo_1_1Timestamp.html" title="{Timestamp\n|+ kMicroSecondsPerSecond\l&#45; microSecondsSinceEpoch_\l|+ Timestamp()\l+ Timestamp()\l+ swap()\l+ toString()\l+ toFormattedString()\l+ valid()\l+ microSecondsSinceEpoch()\l+ secondsSinceEpoch()\l+ now()\l+ invalid()\l+ fromUnixTime()\l+ fromUnixTime()\l}" alt="" coords="158,147,370,400"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ae45b4b16d3226e885f8f1b01481cdc97"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpContext.html#ae45b4b16d3226e885f8f1b01481cdc97">HttpRequestParseState</a> { <a class="el" href="classmuduo_1_1net_1_1HttpContext.html#ae45b4b16d3226e885f8f1b01481cdc97a90e524639e1fe13ced27233abea943a0">kExpectRequestLine</a>, 
+<a class="el" href="classmuduo_1_1net_1_1HttpContext.html#ae45b4b16d3226e885f8f1b01481cdc97a04cd6bfcf95d65f6574e2dd964296c2f">kExpectHeaders</a>, 
+<a class="el" href="classmuduo_1_1net_1_1HttpContext.html#ae45b4b16d3226e885f8f1b01481cdc97a84674a0d8e33557ae6498eca1ce114c4">kExpectBody</a>, 
+<a class="el" href="classmuduo_1_1net_1_1HttpContext.html#ae45b4b16d3226e885f8f1b01481cdc97abc0630584582857fe8012b089eb24e15">kGotAll</a>
+ }</td></tr>
+<tr class="separator:ae45b4b16d3226e885f8f1b01481cdc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a50a52ddd11337e5be6fe37718d315b26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpContext.html#a50a52ddd11337e5be6fe37718d315b26">HttpContext</a> ()</td></tr>
+<tr class="separator:a50a52ddd11337e5be6fe37718d315b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cba53638467f64e0018aaf96dd35f61"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpContext.html#a0cba53638467f64e0018aaf96dd35f61">parseRequest</a> (<a class="el" href="classmuduo_1_1net_1_1Buffer.html">Buffer</a> *buf, <a class="el" href="classmuduo_1_1Timestamp.html">Timestamp</a> receiveTime)</td></tr>
+<tr class="separator:a0cba53638467f64e0018aaf96dd35f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2febe7a65a069b4be36beac564592f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpContext.html#ad2febe7a65a069b4be36beac564592f3">gotAll</a> () const</td></tr>
+<tr class="separator:ad2febe7a65a069b4be36beac564592f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20897c5c8bd47f5d4005989bead0e55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpContext.html#ad20897c5c8bd47f5d4005989bead0e55">reset</a> ()</td></tr>
+<tr class="separator:ad20897c5c8bd47f5d4005989bead0e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb9c927b9a9aef020981b888ee01c166"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmuduo_1_1net_1_1HttpRequest.html">HttpRequest</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpContext.html#adb9c927b9a9aef020981b888ee01c166">request</a> () const</td></tr>
+<tr class="separator:adb9c927b9a9aef020981b888ee01c166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a2a13410dfd6edfe5c1bb41943bb80d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1net_1_1HttpRequest.html">HttpRequest</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpContext.html#a0a2a13410dfd6edfe5c1bb41943bb80d">request</a> ()</td></tr>
+<tr class="separator:a0a2a13410dfd6edfe5c1bb41943bb80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a821b8727fba9b866e5d04d766a82e715"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpContext.html#a821b8727fba9b866e5d04d766a82e715">processRequestLine</a> (const char *begin, const char *end)</td></tr>
+<tr class="separator:a821b8727fba9b866e5d04d766a82e715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a3d9e7ad50008abb97efa5390abb349d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1net_1_1HttpContext.html#ae45b4b16d3226e885f8f1b01481cdc97">HttpRequestParseState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpContext.html#a3d9e7ad50008abb97efa5390abb349d0">state_</a></td></tr>
+<tr class="separator:a3d9e7ad50008abb97efa5390abb349d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e50d2148d29c744bd4cafc005252a3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1net_1_1HttpRequest.html">HttpRequest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1net_1_1HttpContext.html#a6e50d2148d29c744bd4cafc005252a3b">request_</a></td></tr>
+<tr class="separator:a6e50d2148d29c744bd4cafc005252a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classmuduo_1_1copyable"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmuduo_1_1copyable')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classmuduo_1_1copyable.html">copyable</a></td></tr>
+<tr class="memitem:ac8579356ab6a1c47424c42769858aaee inherit pro_methods_classmuduo_1_1copyable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1copyable.html#ac8579356ab6a1c47424c42769858aaee">copyable</a> ()=default</td></tr>
+<tr class="separator:ac8579356ab6a1c47424c42769858aaee inherit pro_methods_classmuduo_1_1copyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b4f930d069a7d0cd78c4f6c19c94727 inherit pro_methods_classmuduo_1_1copyable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1copyable.html#a9b4f930d069a7d0cd78c4f6c19c94727">~copyable</a> ()=default</td></tr>
+<tr class="separator:a9b4f930d069a7d0cd78c4f6c19c94727 inherit pro_methods_classmuduo_1_1copyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="HttpContext_8h_source.html">HttpContext.h</a> 第 <a class="el" href="HttpContext_8h_source.html#l00025">25</a> 行定义.</p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="ae45b4b16d3226e885f8f1b01481cdc97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae45b4b16d3226e885f8f1b01481cdc97">&#9670;&nbsp;</a></span>HttpRequestParseState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classmuduo_1_1net_1_1HttpContext.html#ae45b4b16d3226e885f8f1b01481cdc97">HttpRequestParseState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ae45b4b16d3226e885f8f1b01481cdc97a90e524639e1fe13ced27233abea943a0"></a>kExpectRequestLine&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae45b4b16d3226e885f8f1b01481cdc97a04cd6bfcf95d65f6574e2dd964296c2f"></a>kExpectHeaders&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae45b4b16d3226e885f8f1b01481cdc97a84674a0d8e33557ae6498eca1ce114c4"></a>kExpectBody&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae45b4b16d3226e885f8f1b01481cdc97abc0630584582857fe8012b089eb24e15"></a>kGotAll&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="HttpContext_8h_source.html">HttpContext.h</a> 第 <a class="el" href="HttpContext_8h_source.html#l00028">28</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a50a52ddd11337e5be6fe37718d315b26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50a52ddd11337e5be6fe37718d315b26">&#9670;&nbsp;</a></span>HttpContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1net_1_1HttpContext.html">HttpContext</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="HttpContext_8h_source.html">HttpContext.h</a> 第 <a class="el" href="HttpContext_8h_source.html#l00036">36</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="classmuduo_1_1net_1_1HttpContext.html#a0cba53638467f64e0018aaf96dd35f61">HttpContext::parseRequest()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1HttpContext_a50a52ddd11337e5be6fe37718d315b26_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1HttpContext_a50a52ddd11337e5be6fe37718d315b26_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1HttpContext_a50a52ddd11337e5be6fe37718d315b26_cgraph" id="classmuduo_1_1net_1_1HttpContext_a50a52ddd11337e5be6fe37718d315b26_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1HttpContext.html#a0cba53638467f64e0018aaf96dd35f61" title="parseRequest" alt="" coords="155,5,265,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ad2febe7a65a069b4be36beac564592f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2febe7a65a069b4be36beac564592f3">&#9670;&nbsp;</a></span>gotAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gotAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="HttpContext_8h_source.html">HttpContext.h</a> 第 <a class="el" href="HttpContext_8h_source.html#l00046">46</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="HttpContext_8h_source.html#l00033">HttpContext::kGotAll</a> , 以及 <a class="el" href="HttpContext_8h_source.html#l00065">HttpContext::state_</a>.</p>
+
+</div>
+</div>
+<a id="a0cba53638467f64e0018aaf96dd35f61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cba53638467f64e0018aaf96dd35f61">&#9670;&nbsp;</a></span>parseRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool parseRequest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1net_1_1Buffer.html">Buffer</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1Timestamp.html">Timestamp</a>&#160;</td>
+          <td class="paramname"><em>receiveTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="HttpContext_8h_source.html#l00036">HttpContext::HttpContext()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1HttpContext_a0cba53638467f64e0018aaf96dd35f61_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1HttpContext_a0cba53638467f64e0018aaf96dd35f61_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1HttpContext_a0cba53638467f64e0018aaf96dd35f61_icgraph" id="classmuduo_1_1net_1_1HttpContext_a0cba53638467f64e0018aaf96dd35f61_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1HttpContext.html#a50a52ddd11337e5be6fe37718d315b26" title="HttpContext" alt="" coords="164,5,265,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a821b8727fba9b866e5d04d766a82e715"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a821b8727fba9b866e5d04d766a82e715">&#9670;&nbsp;</a></span>processRequestLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool processRequestLine </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">参考自 <a class="el" href="HttpContext_8h_source.html#l00059">HttpContext::request()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1HttpContext_a821b8727fba9b866e5d04d766a82e715_icgraph.png" border="0" usemap="#classmuduo_1_1net_1_1HttpContext_a821b8727fba9b866e5d04d766a82e715_icgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1HttpContext_a821b8727fba9b866e5d04d766a82e715_icgraph" id="classmuduo_1_1net_1_1HttpContext_a821b8727fba9b866e5d04d766a82e715_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1HttpContext.html#a0a2a13410dfd6edfe5c1bb41943bb80d" title="request" alt="" coords="204,5,275,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adb9c927b9a9aef020981b888ee01c166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb9c927b9a9aef020981b888ee01c166">&#9670;&nbsp;</a></span>request() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmuduo_1_1net_1_1HttpRequest.html">HttpRequest</a>&amp; request </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="HttpContext_8h_source.html">HttpContext.h</a> 第 <a class="el" href="HttpContext_8h_source.html#l00056">56</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="HttpContext_8h_source.html#l00066">HttpContext::request_</a>.</p>
+
+</div>
+</div>
+<a id="a0a2a13410dfd6edfe5c1bb41943bb80d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a2a13410dfd6edfe5c1bb41943bb80d">&#9670;&nbsp;</a></span>request() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1net_1_1HttpRequest.html">HttpRequest</a>&amp; request </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="HttpContext_8h_source.html">HttpContext.h</a> 第 <a class="el" href="HttpContext_8h_source.html#l00059">59</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="classmuduo_1_1net_1_1HttpContext.html#a821b8727fba9b866e5d04d766a82e715">HttpContext::processRequestLine()</a> , 以及 <a class="el" href="HttpContext_8h_source.html#l00066">HttpContext::request_</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1HttpContext_a0a2a13410dfd6edfe5c1bb41943bb80d_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1HttpContext_a0a2a13410dfd6edfe5c1bb41943bb80d_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1HttpContext_a0a2a13410dfd6edfe5c1bb41943bb80d_cgraph" id="classmuduo_1_1net_1_1HttpContext_a0a2a13410dfd6edfe5c1bb41943bb80d_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1HttpContext.html#a821b8727fba9b866e5d04d766a82e715" title="processRequestLine" alt="" coords="124,5,275,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad20897c5c8bd47f5d4005989bead0e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad20897c5c8bd47f5d4005989bead0e55">&#9670;&nbsp;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="HttpContext_8h_source.html">HttpContext.h</a> 第 <a class="el" href="HttpContext_8h_source.html#l00049">49</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="HttpContext_8h_source.html#l00030">HttpContext::kExpectRequestLine</a>, <a class="el" href="HttpContext_8h_source.html#l00066">HttpContext::request_</a>, <a class="el" href="HttpContext_8h_source.html#l00065">HttpContext::state_</a> , 以及 <a class="el" href="HttpRequest_8h_source.html#l00165">HttpRequest::swap()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1net_1_1HttpContext_ad20897c5c8bd47f5d4005989bead0e55_cgraph.png" border="0" usemap="#classmuduo_1_1net_1_1HttpContext_ad20897c5c8bd47f5d4005989bead0e55_cgraph" alt=""/></div>
+<map name="classmuduo_1_1net_1_1HttpContext_ad20897c5c8bd47f5d4005989bead0e55_cgraph" id="classmuduo_1_1net_1_1HttpContext_ad20897c5c8bd47f5d4005989bead0e55_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1net_1_1HttpRequest.html#a175188d59044234c59dcec6513a685b4" title="muduo::net::HttpRequest\l::swap" alt="" coords="108,35,292,76"/>
+<area shape="rect" id="node3" href="classmuduo_1_1Timestamp.html#aa405c6fb7c29a07e1924fa0b4d846638" title="muduo::Timestamp::swap" alt="" coords="340,42,531,69"/>
+<area shape="rect" id="node4" href="classmuduo_1_1Timestamp.html#ac8bf4663993962a4d68d4a6c44588e97" title="muduo::Timestamp::toFormatted\lString" alt="" coords="579,5,816,47"/>
+<area shape="rect" id="node5" href="classmuduo_1_1Timestamp.html#a133cf5030cda633035ca97147356f2f9" title="muduo::Timestamp::toString" alt="" coords="593,71,801,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a6e50d2148d29c744bd4cafc005252a3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e50d2148d29c744bd4cafc005252a3b">&#9670;&nbsp;</a></span>request_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1net_1_1HttpRequest.html">HttpRequest</a> request_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="HttpContext_8h_source.html">HttpContext.h</a> 第 <a class="el" href="HttpContext_8h_source.html#l00066">66</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="HttpContext_8h_source.html#l00056">HttpContext::request()</a> , 以及 <a class="el" href="HttpContext_8h_source.html#l00049">HttpContext::reset()</a>.</p>
+
+</div>
+</div>
+<a id="a3d9e7ad50008abb97efa5390abb349d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9e7ad50008abb97efa5390abb349d0">&#9670;&nbsp;</a></span>state_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1net_1_1HttpContext.html#ae45b4b16d3226e885f8f1b01481cdc97">HttpRequestParseState</a> state_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="HttpContext_8h_source.html">HttpContext.h</a> 第 <a class="el" href="HttpContext_8h_source.html#l00065">65</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="HttpContext_8h_source.html#l00046">HttpContext::gotAll()</a> , 以及 <a class="el" href="HttpContext_8h_source.html#l00049">HttpContext::reset()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>lib/muduo/net/http/<a class="el" href="HttpContext_8h_source.html">HttpContext.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemuduo.html">muduo</a></li><li class="navelem"><a class="el" href="namespacemuduo_1_1net.html">net</a></li><li class="navelem"><a class="el" href="classmuduo_1_1net_1_1HttpContext.html">HttpContext</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

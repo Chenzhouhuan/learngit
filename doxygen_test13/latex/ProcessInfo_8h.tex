@@ -1,0 +1,72 @@
+\hypertarget{ProcessInfo_8h}{}\section{lib/muduo/base/\+Process\+Info.h 文件参考}
+\label{ProcessInfo_8h}\index{lib/muduo/base/\+Process\+Info.\+h@{lib/muduo/base/\+Process\+Info.\+h}}
+{\ttfamily \#include \char`\"{}muduo/base/\+String\+Piece.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}muduo/base/\+Types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}muduo/base/\+Timestamp.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+Process\+Info.\+h 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ProcessInfo_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmuduo_1_1ProcessInfo_1_1CpuTime}{Cpu\+Time}
+\end{DoxyCompactItemize}
+\subsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemuduo}{muduo}
+\item 
+ \hyperlink{namespacemuduo_1_1ProcessInfo}{muduo\+::\+Process\+Info}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+pid\+\_\+t \hyperlink{namespacemuduo_1_1ProcessInfo_a9b565d9cb6c35649f0feeeaa8b26dd7b}{pid} ()
+\item 
+string \hyperlink{namespacemuduo_1_1ProcessInfo_af54b6cc2e94622bf45a9ced0093b7dae}{pid\+String} ()
+\item 
+uid\+\_\+t \hyperlink{namespacemuduo_1_1ProcessInfo_a056245f62bbe6e8abdcd42171a432aac}{uid} ()
+\item 
+string \hyperlink{namespacemuduo_1_1ProcessInfo_a54e6907a19c94da2cf5db8dcad530262}{username} ()
+\item 
+uid\+\_\+t \hyperlink{namespacemuduo_1_1ProcessInfo_a7313897d7ec7dc5bbdd8f3f88c449b7e}{euid} ()
+\item 
+Timestamp \hyperlink{namespacemuduo_1_1ProcessInfo_a3662fa984eef69a557c6d997aba58e18}{start\+Time} ()
+\item 
+int \hyperlink{namespacemuduo_1_1ProcessInfo_af8d3ce061f87c1a208c8e164e9b69882}{clock\+Ticks\+Per\+Second} ()
+\item 
+int \hyperlink{namespacemuduo_1_1ProcessInfo_a3aab01e3a27d7f88b7d8fffceb529c64}{page\+Size} ()
+\item 
+bool \hyperlink{namespacemuduo_1_1ProcessInfo_aabe41272bf5623d260fe92399071ed4e}{is\+Debug\+Build} ()
+\item 
+string \hyperlink{namespacemuduo_1_1ProcessInfo_ac60f3a33a07318aa231cc3d07f6ee419}{hostname} ()
+\item 
+string \hyperlink{namespacemuduo_1_1ProcessInfo_ac8a6ab8cb6657fc7ddba4a8be2f60e2b}{procname} ()
+\item 
+String\+Piece \hyperlink{namespacemuduo_1_1ProcessInfo_acb222d923a768bc8e9ecceaf21ac4ba3}{procname} (const string \&stat)
+\item 
+string \hyperlink{namespacemuduo_1_1ProcessInfo_a930c5a6d17d6ba40f7011643f4442c41}{proc\+Status} ()
+\begin{DoxyCompactList}\small\item\em read /proc/self/status \end{DoxyCompactList}\item 
+string \hyperlink{namespacemuduo_1_1ProcessInfo_a8f557f94d9b8cdb55a8d21c5b6c70634}{proc\+Stat} ()
+\begin{DoxyCompactList}\small\item\em read /proc/self/stat \end{DoxyCompactList}\item 
+string \hyperlink{namespacemuduo_1_1ProcessInfo_a7d3faa2d63f4cf7b8ba073a3daf7ffb1}{thread\+Stat} ()
+\begin{DoxyCompactList}\small\item\em read /proc/self/task/tid/stat \end{DoxyCompactList}\item 
+string \hyperlink{namespacemuduo_1_1ProcessInfo_acdf231e7f033258ea9e93f1a4d651c50}{exe\+Path} ()
+\begin{DoxyCompactList}\small\item\em readlink /proc/self/exe \end{DoxyCompactList}\item 
+int \hyperlink{namespacemuduo_1_1ProcessInfo_aa8e6192d04097a3864d8c07bf24e4ff9}{opened\+Files} ()
+\item 
+int \hyperlink{namespacemuduo_1_1ProcessInfo_a2bb52b7cbab50f7bc977048005845c67}{max\+Open\+Files} ()
+\item 
+Cpu\+Time \hyperlink{namespacemuduo_1_1ProcessInfo_a0e67cc8ad47ff86331b6d2a509d14648}{cpu\+Time} ()
+\item 
+int \hyperlink{namespacemuduo_1_1ProcessInfo_a120db223841da7c65566c1fb2a06befa}{num\+Threads} ()
+\item 
+std\+::vector$<$ pid\+\_\+t $>$ \hyperlink{namespacemuduo_1_1ProcessInfo_a360aafb2759971d7c8190b1a60f7dc03}{threads} ()
+\end{DoxyCompactItemize}

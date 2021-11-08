@@ -1,0 +1,318 @@
+\hypertarget{classmuduo_1_1Poller}{}\section{Poller类 参考}
+\label{classmuduo_1_1Poller}\index{Poller@{Poller}}
+
+
+{\ttfamily \#include $<$Poller.\+h$>$}
+
+
+
+类 Poller 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classmuduo_1_1Poller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Poller 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmuduo_1_1Poller__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \hyperlink{classmuduo_1_1Channel}{Channel} $\ast$ $>$ \hyperlink{classmuduo_1_1Poller_a0b74248ffee6df294563618187b52404}{Channel\+List}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1Poller_ad1445448c7a54f569eb9d6c6163ca7bc}{Poller} (\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$loop)
+\item 
+\hyperlink{classmuduo_1_1Poller_a057f5fb0e9594deb1fd4b46f0e930557}{$\sim$\+Poller} ()
+\item 
+\hyperlink{classmuduo_1_1Timestamp}{Timestamp} \hyperlink{classmuduo_1_1Poller_a0165aabf2721e39f87ad67b05ece9267}{poll} (int timeout\+Ms, \hyperlink{classmuduo_1_1Poller_a0b74248ffee6df294563618187b52404}{Channel\+List} $\ast$active\+Channels)
+\item 
+void \hyperlink{classmuduo_1_1Poller_acaa4a191936aacf608d279a6f343d533}{update\+Channel} (\hyperlink{classmuduo_1_1Channel}{Channel} $\ast$channel)
+\item 
+void \hyperlink{classmuduo_1_1Poller_ab10f76c92cb5269f8296e5b3e4dd0ef9}{remove\+Channel} (\hyperlink{classmuduo_1_1Channel}{Channel} $\ast$channel)
+\item 
+void \hyperlink{classmuduo_1_1Poller_a9e9c23193ece3ba25a1a2779fc7ebc2d}{assert\+In\+Loop\+Thread} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 类型}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ struct pollfd $>$ \hyperlink{classmuduo_1_1Poller_a0cf1be2f572740022edada139cacfb12}{Poll\+Fd\+List}
+\item 
+typedef std\+::map$<$ int, \hyperlink{classmuduo_1_1Channel}{Channel} $\ast$ $>$ \hyperlink{classmuduo_1_1Poller_a950db725d18ce33d8457ae784380a07e}{Channel\+Map}
+\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmuduo_1_1Poller_a93b3d6d6cac94e92c2ddfd91e9b18cc0}{fill\+Active\+Channels} (int num\+Events, \hyperlink{classmuduo_1_1Poller_a0b74248ffee6df294563618187b52404}{Channel\+List} $\ast$active\+Channels) const
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$ \hyperlink{classmuduo_1_1Poller_ab7cf856df3fd0f8496fcf3b59b8a24ab}{owner\+Loop\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1Poller_a0cf1be2f572740022edada139cacfb12}{Poll\+Fd\+List} \hyperlink{classmuduo_1_1Poller_abbd39d01f8545e75e218de725997abc3}{pollfds\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1Poller_a950db725d18ce33d8457ae784380a07e}{Channel\+Map} \hyperlink{classmuduo_1_1Poller_aca6f39ba1cb9dbdd28edf2291d1b4fd5}{channels\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 Poller.\+h 第 17 行定义.
+
+
+
+\subsection{成员类型定义说明}
+\mbox{\Hypertarget{classmuduo_1_1Poller_a0b74248ffee6df294563618187b52404}\label{classmuduo_1_1Poller_a0b74248ffee6df294563618187b52404}} 
+\index{muduo\+::\+Poller@{muduo\+::\+Poller}!Channel\+List@{Channel\+List}}
+\index{Channel\+List@{Channel\+List}!muduo\+::\+Poller@{muduo\+::\+Poller}}
+\subsubsection{\texorpdfstring{Channel\+List}{ChannelList}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\hyperlink{classmuduo_1_1Channel}{Channel}$\ast$$>$ \hyperlink{classmuduo_1_1Poller_a0b74248ffee6df294563618187b52404}{Channel\+List}}
+
+
+
+在文件 Poller.\+h 第 19 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1Poller_a950db725d18ce33d8457ae784380a07e}\label{classmuduo_1_1Poller_a950db725d18ce33d8457ae784380a07e}} 
+\index{muduo\+::\+Poller@{muduo\+::\+Poller}!Channel\+Map@{Channel\+Map}}
+\index{Channel\+Map@{Channel\+Map}!muduo\+::\+Poller@{muduo\+::\+Poller}}
+\subsubsection{\texorpdfstring{Channel\+Map}{ChannelMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$int, \hyperlink{classmuduo_1_1Channel}{Channel}$\ast$$>$ \hyperlink{classmuduo_1_1Poller_a950db725d18ce33d8457ae784380a07e}{Channel\+Map}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Poller.\+h 第 35 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1Poller_a0cf1be2f572740022edada139cacfb12}\label{classmuduo_1_1Poller_a0cf1be2f572740022edada139cacfb12}} 
+\index{muduo\+::\+Poller@{muduo\+::\+Poller}!Poll\+Fd\+List@{Poll\+Fd\+List}}
+\index{Poll\+Fd\+List@{Poll\+Fd\+List}!muduo\+::\+Poller@{muduo\+::\+Poller}}
+\subsubsection{\texorpdfstring{Poll\+Fd\+List}{PollFdList}}
+{\footnotesize\ttfamily typedef std\+::vector$<$struct pollfd$>$ \hyperlink{classmuduo_1_1Poller_a0cf1be2f572740022edada139cacfb12}{Poll\+Fd\+List}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Poller.\+h 第 34 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Poller_ad1445448c7a54f569eb9d6c6163ca7bc}\label{classmuduo_1_1Poller_ad1445448c7a54f569eb9d6c6163ca7bc}} 
+\index{muduo\+::\+Poller@{muduo\+::\+Poller}!Poller@{Poller}}
+\index{Poller@{Poller}!muduo\+::\+Poller@{muduo\+::\+Poller}}
+\subsubsection{\texorpdfstring{Poller()}{Poller()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Poller}{Poller} (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$}]{loop }\end{DoxyParamCaption})}
+
+
+
+在文件 Poller.\+cc 第 11 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1Poller_a057f5fb0e9594deb1fd4b46f0e930557}\label{classmuduo_1_1Poller_a057f5fb0e9594deb1fd4b46f0e930557}} 
+\index{muduo\+::\+Poller@{muduo\+::\+Poller}!````~Poller@{$\sim$\+Poller}}
+\index{````~Poller@{$\sim$\+Poller}!muduo\+::\+Poller@{muduo\+::\+Poller}}
+\subsubsection{\texorpdfstring{$\sim$\+Poller()}{~Poller()}}
+{\footnotesize\ttfamily $\sim$\hyperlink{classmuduo_1_1Poller}{Poller} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 Poller.\+cc 第 14 行定义.
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Poller_a9e9c23193ece3ba25a1a2779fc7ebc2d}\label{classmuduo_1_1Poller_a9e9c23193ece3ba25a1a2779fc7ebc2d}} 
+\index{muduo\+::\+Poller@{muduo\+::\+Poller}!assert\+In\+Loop\+Thread@{assert\+In\+Loop\+Thread}}
+\index{assert\+In\+Loop\+Thread@{assert\+In\+Loop\+Thread}!muduo\+::\+Poller@{muduo\+::\+Poller}}
+\subsubsection{\texorpdfstring{assert\+In\+Loop\+Thread()}{assertInLoopThread()}}
+{\footnotesize\ttfamily void assert\+In\+Loop\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Poller.\+h 第 29 行定义.
+
+
+
+参考 Event\+Loop\+::assert\+In\+Loop\+Thread(), Poller\+::fill\+Active\+Channels() , 以及 Poller\+::owner\+Loop\+\_\+.
+
+
+
+参考自 Poller\+::remove\+Channel() , 以及 Poller\+::update\+Channel().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Poller_a9e9c23193ece3ba25a1a2779fc7ebc2d_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classmuduo_1_1Poller_a9e9c23193ece3ba25a1a2779fc7ebc2d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Poller_a93b3d6d6cac94e92c2ddfd91e9b18cc0}\label{classmuduo_1_1Poller_a93b3d6d6cac94e92c2ddfd91e9b18cc0}} 
+\index{muduo\+::\+Poller@{muduo\+::\+Poller}!fill\+Active\+Channels@{fill\+Active\+Channels}}
+\index{fill\+Active\+Channels@{fill\+Active\+Channels}!muduo\+::\+Poller@{muduo\+::\+Poller}}
+\subsubsection{\texorpdfstring{fill\+Active\+Channels()}{fillActiveChannels()}}
+{\footnotesize\ttfamily void fill\+Active\+Channels (\begin{DoxyParamCaption}\item[{int}]{num\+Events,  }\item[{\hyperlink{classmuduo_1_1Poller_a0b74248ffee6df294563618187b52404}{Channel\+List} $\ast$}]{active\+Channels }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Poller.\+cc 第 30 行定义.
+
+
+
+参考 Poller\+::channels\+\_\+, Poller\+::pollfds\+\_\+ , 以及 Channel\+::set\+\_\+revents().
+
+
+
+参考自 Poller\+::assert\+In\+Loop\+Thread() , 以及 Poller\+::poll().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{classmuduo_1_1Poller_a93b3d6d6cac94e92c2ddfd91e9b18cc0_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Poller_a93b3d6d6cac94e92c2ddfd91e9b18cc0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Poller_a0165aabf2721e39f87ad67b05ece9267}\label{classmuduo_1_1Poller_a0165aabf2721e39f87ad67b05ece9267}} 
+\index{muduo\+::\+Poller@{muduo\+::\+Poller}!poll@{poll}}
+\index{poll@{poll}!muduo\+::\+Poller@{muduo\+::\+Poller}}
+\subsubsection{\texorpdfstring{poll()}{poll()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Timestamp}{Timestamp} poll (\begin{DoxyParamCaption}\item[{int}]{timeout\+Ms,  }\item[{\hyperlink{classmuduo_1_1Poller_a0b74248ffee6df294563618187b52404}{Channel\+List} $\ast$}]{active\+Channels }\end{DoxyParamCaption})}
+
+
+
+在文件 Poller.\+cc 第 16 行定义.
+
+
+
+参考 Poller\+::fill\+Active\+Channels(), L\+O\+G\+\_\+\+S\+Y\+S\+E\+RR, L\+O\+G\+\_\+\+T\+R\+A\+CE, Timestamp\+::now() , 以及 Poller\+::pollfds\+\_\+.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Poller_a0165aabf2721e39f87ad67b05ece9267_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Poller_ab10f76c92cb5269f8296e5b3e4dd0ef9}\label{classmuduo_1_1Poller_ab10f76c92cb5269f8296e5b3e4dd0ef9}} 
+\index{muduo\+::\+Poller@{muduo\+::\+Poller}!remove\+Channel@{remove\+Channel}}
+\index{remove\+Channel@{remove\+Channel}!muduo\+::\+Poller@{muduo\+::\+Poller}}
+\subsubsection{\texorpdfstring{remove\+Channel()}{removeChannel()}}
+{\footnotesize\ttfamily void remove\+Channel (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Channel}{Channel} $\ast$}]{channel }\end{DoxyParamCaption})}
+
+
+
+在文件 Poller.\+cc 第 73 行定义.
+
+
+
+参考 Poller\+::assert\+In\+Loop\+Thread(), Poller\+::channels\+\_\+, Channel\+::events(), Channel\+::fd(), Channel\+::index(), Channel\+::is\+None\+Event(), L\+O\+G\+\_\+\+T\+R\+A\+CE , 以及 Poller\+::pollfds\+\_\+.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Poller_ab10f76c92cb5269f8296e5b3e4dd0ef9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Poller_acaa4a191936aacf608d279a6f343d533}\label{classmuduo_1_1Poller_acaa4a191936aacf608d279a6f343d533}} 
+\index{muduo\+::\+Poller@{muduo\+::\+Poller}!update\+Channel@{update\+Channel}}
+\index{update\+Channel@{update\+Channel}!muduo\+::\+Poller@{muduo\+::\+Poller}}
+\subsubsection{\texorpdfstring{update\+Channel()}{updateChannel()}}
+{\footnotesize\ttfamily void update\+Channel (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Channel}{Channel} $\ast$}]{channel }\end{DoxyParamCaption})}
+
+
+
+在文件 Poller.\+cc 第 45 行定义.
+
+
+
+参考 Poller\+::assert\+In\+Loop\+Thread(), Poller\+::channels\+\_\+, Channel\+::events(), Channel\+::fd(), Channel\+::index(), Channel\+::is\+None\+Event(), L\+O\+G\+\_\+\+T\+R\+A\+CE, Poller\+::pollfds\+\_\+ , 以及 Channel\+::set\+\_\+index().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Poller_acaa4a191936aacf608d279a6f343d533_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1Poller_aca6f39ba1cb9dbdd28edf2291d1b4fd5}\label{classmuduo_1_1Poller_aca6f39ba1cb9dbdd28edf2291d1b4fd5}} 
+\index{muduo\+::\+Poller@{muduo\+::\+Poller}!channels\+\_\+@{channels\+\_\+}}
+\index{channels\+\_\+@{channels\+\_\+}!muduo\+::\+Poller@{muduo\+::\+Poller}}
+\subsubsection{\texorpdfstring{channels\+\_\+}{channels\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Poller_a950db725d18ce33d8457ae784380a07e}{Channel\+Map} channels\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Poller.\+h 第 39 行定义.
+
+
+
+参考自 Poller\+::fill\+Active\+Channels(), Poller\+::remove\+Channel() , 以及 Poller\+::update\+Channel().
+
+\mbox{\Hypertarget{classmuduo_1_1Poller_ab7cf856df3fd0f8496fcf3b59b8a24ab}\label{classmuduo_1_1Poller_ab7cf856df3fd0f8496fcf3b59b8a24ab}} 
+\index{muduo\+::\+Poller@{muduo\+::\+Poller}!owner\+Loop\+\_\+@{owner\+Loop\+\_\+}}
+\index{owner\+Loop\+\_\+@{owner\+Loop\+\_\+}!muduo\+::\+Poller@{muduo\+::\+Poller}}
+\subsubsection{\texorpdfstring{owner\+Loop\+\_\+}{ownerLoop\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1EventLoop}{Event\+Loop}$\ast$ owner\+Loop\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Poller.\+h 第 37 行定义.
+
+
+
+参考自 Poller\+::assert\+In\+Loop\+Thread().
+
+\mbox{\Hypertarget{classmuduo_1_1Poller_abbd39d01f8545e75e218de725997abc3}\label{classmuduo_1_1Poller_abbd39d01f8545e75e218de725997abc3}} 
+\index{muduo\+::\+Poller@{muduo\+::\+Poller}!pollfds\+\_\+@{pollfds\+\_\+}}
+\index{pollfds\+\_\+@{pollfds\+\_\+}!muduo\+::\+Poller@{muduo\+::\+Poller}}
+\subsubsection{\texorpdfstring{pollfds\+\_\+}{pollfds\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Poller_a0cf1be2f572740022edada139cacfb12}{Poll\+Fd\+List} pollfds\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Poller.\+h 第 38 行定义.
+
+
+
+参考自 Poller\+::fill\+Active\+Channels(), Poller\+::poll(), Poller\+::remove\+Channel() , 以及 Poller\+::update\+Channel().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{Poller_8h}{Poller.\+h}\item 
+src/\hyperlink{Poller_8cc}{Poller.\+cc}\end{DoxyCompactItemize}

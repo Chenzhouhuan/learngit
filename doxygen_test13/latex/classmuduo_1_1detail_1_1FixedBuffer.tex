@@ -1,0 +1,398 @@
+\hypertarget{classmuduo_1_1detail_1_1FixedBuffer}{}\section{Fixed\+Buffer$<$ S\+I\+ZE $>$ 模板类 参考}
+\label{classmuduo_1_1detail_1_1FixedBuffer}\index{Fixed\+Buffer$<$ S\+I\+Z\+E $>$@{Fixed\+Buffer$<$ S\+I\+Z\+E $>$}}
+
+
+{\ttfamily \#include $<$Log\+Stream.\+h$>$}
+
+
+
+类 Fixed\+Buffer$<$ S\+I\+ZE $>$ 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classmuduo_1_1detail_1_1FixedBuffer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Fixed\+Buffer$<$ S\+I\+ZE $>$ 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classmuduo_1_1detail_1_1FixedBuffer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1detail_1_1FixedBuffer_a6722d84d94a517c4b7152df4491d474f}{Fixed\+Buffer} ()
+\item 
+\hyperlink{classmuduo_1_1detail_1_1FixedBuffer_adde014f8d60c05f6dbf1c5ec6814121e}{$\sim$\+Fixed\+Buffer} ()
+\item 
+void \hyperlink{classmuduo_1_1detail_1_1FixedBuffer_a56555fde5c36cc7c4b2407916f0c0824}{append} (const char $\ast$buf, size\+\_\+t len)
+\item 
+const char $\ast$ \hyperlink{classmuduo_1_1detail_1_1FixedBuffer_a39a256207a84f316547e36c755373d03}{data} () const
+\item 
+int \hyperlink{classmuduo_1_1detail_1_1FixedBuffer_a91213974fa3ac3959b1c355a9e588f8d}{length} () const
+\item 
+char $\ast$ \hyperlink{classmuduo_1_1detail_1_1FixedBuffer_a3da3a484fbcb408cf19871b0e5397ab0}{current} ()
+\item 
+int \hyperlink{classmuduo_1_1detail_1_1FixedBuffer_a988b5e0ccd9d5681300268a2d6dfb262}{avail} () const
+\item 
+void \hyperlink{classmuduo_1_1detail_1_1FixedBuffer_a3993761d1c6b57cb30ceb9ae6c40eca4}{add} (size\+\_\+t len)
+\item 
+void \hyperlink{classmuduo_1_1detail_1_1FixedBuffer_ad20897c5c8bd47f5d4005989bead0e55}{reset} ()
+\item 
+void \hyperlink{classmuduo_1_1detail_1_1FixedBuffer_ae686b39fc28f49effe6f852adb778bb0}{bzero} ()
+\item 
+const char $\ast$ \hyperlink{classmuduo_1_1detail_1_1FixedBuffer_a8f912ff009070cb5dcce97612fcda401}{debug\+String} ()
+\item 
+void \hyperlink{classmuduo_1_1detail_1_1FixedBuffer_a41f8a4fce183594d93e63ea70ed1c94d}{set\+Cookie} (void($\ast$cookie)())
+\item 
+string \hyperlink{classmuduo_1_1detail_1_1FixedBuffer_a133cf5030cda633035ca97147356f2f9}{to\+String} () const
+\item 
+\hyperlink{classmuduo_1_1StringPiece}{String\+Piece} \hyperlink{classmuduo_1_1detail_1_1FixedBuffer_a78096dee3d0826efb63a5b814eef37c4}{to\+String\+Piece} () const
+\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{classmuduo_1_1detail_1_1FixedBuffer_a8f7e2912f169cf1aa7eeaec74b5fd151}{end} () const
+\end{DoxyCompactItemize}
+\subsection*{静态 Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classmuduo_1_1detail_1_1FixedBuffer_a64d4d2d5b107798f469956cd12405b84}{cookie\+Start} ()
+\item 
+static void \hyperlink{classmuduo_1_1detail_1_1FixedBuffer_a6340e2e9c0b269ff97b1ffa43dfb2920}{cookie\+End} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ \hyperlink{classmuduo_1_1detail_1_1FixedBuffer_a5684debf5a7e739505cba6c024a3f7f8}{cookie\+\_\+} )()
+\item 
+char \hyperlink{classmuduo_1_1detail_1_1FixedBuffer_a54258af31252262daa68a893089d7a88}{data\+\_\+} \mbox{[}S\+I\+ZE\mbox{]}
+\item 
+char $\ast$ \hyperlink{classmuduo_1_1detail_1_1FixedBuffer_ad1ee918c4fe42ae1767d186beebf9778}{cur\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$int S\+I\+ZE$>$\newline
+class muduo\+::detail\+::\+Fixed\+Buffer$<$ S\+I\+Z\+E $>$}
+
+
+
+在文件 Log\+Stream.\+h 第 25 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1detail_1_1FixedBuffer_a6722d84d94a517c4b7152df4491d474f}\label{classmuduo_1_1detail_1_1FixedBuffer_a6722d84d94a517c4b7152df4491d474f}} 
+\index{muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}!Fixed\+Buffer@{Fixed\+Buffer}}
+\index{Fixed\+Buffer@{Fixed\+Buffer}!muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}}
+\subsubsection{\texorpdfstring{Fixed\+Buffer()}{FixedBuffer()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1detail_1_1FixedBuffer}{Fixed\+Buffer} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Log\+Stream.\+h 第 28 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1detail_1_1FixedBuffer_adde014f8d60c05f6dbf1c5ec6814121e}\label{classmuduo_1_1detail_1_1FixedBuffer_adde014f8d60c05f6dbf1c5ec6814121e}} 
+\index{muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}!````~Fixed\+Buffer@{$\sim$\+Fixed\+Buffer}}
+\index{````~Fixed\+Buffer@{$\sim$\+Fixed\+Buffer}!muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}}
+\subsubsection{\texorpdfstring{$\sim$\+Fixed\+Buffer()}{~FixedBuffer()}}
+{\footnotesize\ttfamily $\sim$\hyperlink{classmuduo_1_1detail_1_1FixedBuffer}{Fixed\+Buffer} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Log\+Stream.\+h 第 34 行定义.
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1detail_1_1FixedBuffer_a3993761d1c6b57cb30ceb9ae6c40eca4}\label{classmuduo_1_1detail_1_1FixedBuffer_a3993761d1c6b57cb30ceb9ae6c40eca4}} 
+\index{muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}!add@{add}}
+\index{add@{add}!muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void add (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Log\+Stream.\+h 第 55 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1detail_1_1FixedBuffer_a56555fde5c36cc7c4b2407916f0c0824}\label{classmuduo_1_1detail_1_1FixedBuffer_a56555fde5c36cc7c4b2407916f0c0824}} 
+\index{muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}!append@{append}}
+\index{append@{append}!muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}}
+\subsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily void append (\begin{DoxyParamCaption}\item[{const char $\ast$}]{buf,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Log\+Stream.\+h 第 39 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1detail_1_1FixedBuffer_a988b5e0ccd9d5681300268a2d6dfb262}\label{classmuduo_1_1detail_1_1FixedBuffer_a988b5e0ccd9d5681300268a2d6dfb262}} 
+\index{muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}!avail@{avail}}
+\index{avail@{avail}!muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}}
+\subsubsection{\texorpdfstring{avail()}{avail()}}
+{\footnotesize\ttfamily int avail (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Log\+Stream.\+h 第 54 行定义.
+
+
+
+参考自 Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::append().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{classmuduo_1_1detail_1_1FixedBuffer_a988b5e0ccd9d5681300268a2d6dfb262_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1detail_1_1FixedBuffer_ae686b39fc28f49effe6f852adb778bb0}\label{classmuduo_1_1detail_1_1FixedBuffer_ae686b39fc28f49effe6f852adb778bb0}} 
+\index{muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}!bzero@{bzero}}
+\index{bzero@{bzero}!muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}}
+\subsubsection{\texorpdfstring{bzero()}{bzero()}}
+{\footnotesize\ttfamily void bzero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Log\+Stream.\+h 第 58 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1detail_1_1FixedBuffer_a6340e2e9c0b269ff97b1ffa43dfb2920}\label{classmuduo_1_1detail_1_1FixedBuffer_a6340e2e9c0b269ff97b1ffa43dfb2920}} 
+\index{muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}!cookie\+End@{cookie\+End}}
+\index{cookie\+End@{cookie\+End}!muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}}
+\subsubsection{\texorpdfstring{cookie\+End()}{cookieEnd()}}
+{\footnotesize\ttfamily static void cookie\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+参考自 Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::end() , 以及 Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::$\sim$\+Fixed\+Buffer().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classmuduo_1_1detail_1_1FixedBuffer_a6340e2e9c0b269ff97b1ffa43dfb2920_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1detail_1_1FixedBuffer_a64d4d2d5b107798f469956cd12405b84}\label{classmuduo_1_1detail_1_1FixedBuffer_a64d4d2d5b107798f469956cd12405b84}} 
+\index{muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}!cookie\+Start@{cookie\+Start}}
+\index{cookie\+Start@{cookie\+Start}!muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}}
+\subsubsection{\texorpdfstring{cookie\+Start()}{cookieStart()}}
+{\footnotesize\ttfamily static void cookie\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+参考自 Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::end() , 以及 Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::\+Fixed\+Buffer().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classmuduo_1_1detail_1_1FixedBuffer_a64d4d2d5b107798f469956cd12405b84_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1detail_1_1FixedBuffer_a3da3a484fbcb408cf19871b0e5397ab0}\label{classmuduo_1_1detail_1_1FixedBuffer_a3da3a484fbcb408cf19871b0e5397ab0}} 
+\index{muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}!current@{current}}
+\index{current@{current}!muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}}
+\subsubsection{\texorpdfstring{current()}{current()}}
+{\footnotesize\ttfamily char$\ast$ current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Log\+Stream.\+h 第 53 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1detail_1_1FixedBuffer_a39a256207a84f316547e36c755373d03}\label{classmuduo_1_1detail_1_1FixedBuffer_a39a256207a84f316547e36c755373d03}} 
+\index{muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}!data@{data}}
+\index{data@{data}!muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}}
+\subsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily const char$\ast$ data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Log\+Stream.\+h 第 49 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1detail_1_1FixedBuffer_a8f912ff009070cb5dcce97612fcda401}\label{classmuduo_1_1detail_1_1FixedBuffer_a8f912ff009070cb5dcce97612fcda401}} 
+\index{muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}!debug\+String@{debug\+String}}
+\index{debug\+String@{debug\+String}!muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}}
+\subsubsection{\texorpdfstring{debug\+String()}{debugString()}}
+{\footnotesize\ttfamily const char$\ast$ debug\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+参考自 Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::bzero().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classmuduo_1_1detail_1_1FixedBuffer_a8f912ff009070cb5dcce97612fcda401_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1detail_1_1FixedBuffer_a8f7e2912f169cf1aa7eeaec74b5fd151}\label{classmuduo_1_1detail_1_1FixedBuffer_a8f7e2912f169cf1aa7eeaec74b5fd151}} 
+\index{muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}!end@{end}}
+\index{end@{end}!muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily const char$\ast$ end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 Log\+Stream.\+h 第 68 行定义.
+
+
+
+参考自 Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::avail().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{classmuduo_1_1detail_1_1FixedBuffer_a8f7e2912f169cf1aa7eeaec74b5fd151_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1detail_1_1FixedBuffer_a91213974fa3ac3959b1c355a9e588f8d}\label{classmuduo_1_1detail_1_1FixedBuffer_a91213974fa3ac3959b1c355a9e588f8d}} 
+\index{muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}!length@{length}}
+\index{length@{length}!muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}}
+\subsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily int length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Log\+Stream.\+h 第 50 行定义.
+
+
+
+参考自 Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::to\+String() , 以及 Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::to\+String\+Piece().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classmuduo_1_1detail_1_1FixedBuffer_a91213974fa3ac3959b1c355a9e588f8d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1detail_1_1FixedBuffer_ad20897c5c8bd47f5d4005989bead0e55}\label{classmuduo_1_1detail_1_1FixedBuffer_ad20897c5c8bd47f5d4005989bead0e55}} 
+\index{muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}!reset@{reset}}
+\index{reset@{reset}!muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Log\+Stream.\+h 第 57 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1detail_1_1FixedBuffer_a41f8a4fce183594d93e63ea70ed1c94d}\label{classmuduo_1_1detail_1_1FixedBuffer_a41f8a4fce183594d93e63ea70ed1c94d}} 
+\index{muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}!set\+Cookie@{set\+Cookie}}
+\index{set\+Cookie@{set\+Cookie}!muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}}
+\subsubsection{\texorpdfstring{set\+Cookie()}{setCookie()}}
+{\footnotesize\ttfamily void set\+Cookie (\begin{DoxyParamCaption}\item[{void($\ast$)()}]{cookie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Log\+Stream.\+h 第 62 行定义.
+
+
+
+参考自 Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::\+Fixed\+Buffer() , 以及 Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::$\sim$\+Fixed\+Buffer().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classmuduo_1_1detail_1_1FixedBuffer_a41f8a4fce183594d93e63ea70ed1c94d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1detail_1_1FixedBuffer_a133cf5030cda633035ca97147356f2f9}\label{classmuduo_1_1detail_1_1FixedBuffer_a133cf5030cda633035ca97147356f2f9}} 
+\index{muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily string to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Log\+Stream.\+h 第 64 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1detail_1_1FixedBuffer_a78096dee3d0826efb63a5b814eef37c4}\label{classmuduo_1_1detail_1_1FixedBuffer_a78096dee3d0826efb63a5b814eef37c4}} 
+\index{muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}!to\+String\+Piece@{to\+String\+Piece}}
+\index{to\+String\+Piece@{to\+String\+Piece}!muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}}
+\subsubsection{\texorpdfstring{to\+String\+Piece()}{toStringPiece()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1StringPiece}{String\+Piece} to\+String\+Piece (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Log\+Stream.\+h 第 65 行定义.
+
+
+
+参考自 Log\+Stream\+::operator$<$$<$().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1detail_1_1FixedBuffer_a78096dee3d0826efb63a5b814eef37c4_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1detail_1_1FixedBuffer_a5684debf5a7e739505cba6c024a3f7f8}\label{classmuduo_1_1detail_1_1FixedBuffer_a5684debf5a7e739505cba6c024a3f7f8}} 
+\index{muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}!cookie\+\_\+@{cookie\+\_\+}}
+\index{cookie\+\_\+@{cookie\+\_\+}!muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}}
+\subsubsection{\texorpdfstring{cookie\+\_\+}{cookie\_}}
+{\footnotesize\ttfamily void($\ast$ cookie\+\_\+) ()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Log\+Stream.\+h 第 73 行定义.
+
+
+
+参考自 Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::set\+Cookie().
+
+\mbox{\Hypertarget{classmuduo_1_1detail_1_1FixedBuffer_ad1ee918c4fe42ae1767d186beebf9778}\label{classmuduo_1_1detail_1_1FixedBuffer_ad1ee918c4fe42ae1767d186beebf9778}} 
+\index{muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}!cur\+\_\+@{cur\+\_\+}}
+\index{cur\+\_\+@{cur\+\_\+}!muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}}
+\subsubsection{\texorpdfstring{cur\+\_\+}{cur\_}}
+{\footnotesize\ttfamily char$\ast$ cur\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Log\+Stream.\+h 第 75 行定义.
+
+
+
+参考自 Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::add(), Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::append(), Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::avail(), Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::current(), Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::length() , 以及 Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::reset().
+
+\mbox{\Hypertarget{classmuduo_1_1detail_1_1FixedBuffer_a54258af31252262daa68a893089d7a88}\label{classmuduo_1_1detail_1_1FixedBuffer_a54258af31252262daa68a893089d7a88}} 
+\index{muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}!data\+\_\+@{data\+\_\+}}
+\index{data\+\_\+@{data\+\_\+}!muduo\+::detail\+::\+Fixed\+Buffer@{muduo\+::detail\+::\+Fixed\+Buffer}}
+\subsubsection{\texorpdfstring{data\+\_\+}{data\_}}
+{\footnotesize\ttfamily char data\+\_\+\mbox{[}S\+I\+ZE\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Log\+Stream.\+h 第 74 行定义.
+
+
+
+参考自 Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::bzero(), Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::data(), Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::end(), Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::length(), Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::reset(), Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::to\+String() , 以及 Fixed\+Buffer$<$ detail\+::k\+Small\+Buffer $>$\+::to\+String\+Piece().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/muduo/base/\hyperlink{LogStream_8h}{Log\+Stream.\+h}\end{DoxyCompactItemize}

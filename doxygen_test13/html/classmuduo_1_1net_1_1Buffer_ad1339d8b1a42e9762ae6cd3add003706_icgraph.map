@@ -1,0 +1,17 @@
+<map id="peek" name="peek">
+<area shape="rect" id="node2" href="$classmuduo_1_1net_1_1Buffer.html#a757db069730494fc47e500b29851c6c5" title="findCRLF" alt="" coords="132,5,211,32"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1net_1_1Buffer.html#acf4decda782c75e8f198c95de2958409" title="findEOL" alt="" coords="136,56,207,83"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1net_1_1Buffer.html#af9c96d31bad4ac1ff73d31672bc324c3" title="peekInt16" alt="" coords="128,107,215,133"/>
+<area shape="rect" id="node6" href="$classmuduo_1_1net_1_1Buffer.html#afefe12caa1ed837ffb7e967d44e19af9" title="peekInt32" alt="" coords="128,157,215,184"/>
+<area shape="rect" id="node8" href="$classmuduo_1_1net_1_1Buffer.html#a78f18c2f695bc9fb75781596a16d9416" title="peekInt64" alt="" coords="128,208,215,235"/>
+<area shape="rect" id="node10" href="$classmuduo_1_1net_1_1Buffer.html#a28a767d788ebbb53bef6c939cfa8b5fb" title="peekInt8" alt="" coords="132,259,211,285"/>
+<area shape="rect" id="node12" href="$classmuduo_1_1net_1_1Buffer.html#a2f372acde2975d2cd9a7633148db7e7f" title="retrieveAsString" alt="" coords="108,309,235,336"/>
+<area shape="rect" id="node14" href="$classmuduo_1_1net_1_1Buffer.html#abffa19bdb1fbf4ac36fe0f2375bee1e5" title="retrieveUntil" alt="" coords="119,360,223,387"/>
+<area shape="rect" id="node15" href="$classmuduo_1_1net_1_1Buffer.html#a78096dee3d0826efb63a5b814eef37c4" title="toStringPiece" alt="" coords="117,411,225,437"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1net_1_1Buffer.html#a7cf018b7a5d7bed8aa4d201e4399fce0" title="readInt16" alt="" coords="313,107,397,133"/>
+<area shape="rect" id="node7" href="$classmuduo_1_1net_1_1Buffer.html#adbc23fa2b53ee3f0bd8cc0af521900d4" title="readInt32" alt="" coords="313,157,397,184"/>
+<area shape="rect" id="node9" href="$classmuduo_1_1net_1_1Buffer.html#a5b815d6984b81ae01f581f799c48582f" title="readInt64" alt="" coords="313,208,397,235"/>
+<area shape="rect" id="node11" href="$classmuduo_1_1net_1_1Buffer.html#a24c9f312341ccfb47ae7a007ae32c39f" title="readInt8" alt="" coords="317,259,393,285"/>
+<area shape="rect" id="node13" href="$classmuduo_1_1net_1_1Buffer.html#ac902667b575515cba5b54ddf3a5d10aa" title="retrieveAllAsString" alt="" coords="283,309,427,336"/>
+<area shape="rect" id="node16" href="$classmuduo_1_1net_1_1Buffer.html#a69095875ff26fe7eff163afde6eb7c9e" title="shrink" alt="" coords="323,411,386,437"/>
+</map>

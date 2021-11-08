@@ -1,0 +1,352 @@
+\hypertarget{classmuduo_1_1Thread}{}\section{Thread类 参考}
+\label{classmuduo_1_1Thread}\index{Thread@{Thread}}
+
+
+{\ttfamily \#include $<$Thread.\+h$>$}
+
+
+
+类 Thread 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{classmuduo_1_1Thread__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Thread 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Thread__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::function$<$ void()$>$ \hyperlink{classmuduo_1_1Thread_a72bd31ac00c06074792e7cff0c8e3022}{Thread\+Func}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1Thread_a2c3b1a6d86c989182ca7a9bb1aba48b3}{Thread} (\hyperlink{classmuduo_1_1Thread_a72bd31ac00c06074792e7cff0c8e3022}{Thread\+Func}, const string \&\hyperlink{classmuduo_1_1Thread_a47f4f0a66d5a539e687100dc65462ced}{name}=string())
+\item 
+\hyperlink{classmuduo_1_1Thread_a87a9c69a69ee4b13cb1ec5772f6d32ad}{$\sim$\+Thread} ()
+\item 
+void \hyperlink{classmuduo_1_1Thread_a60de64d75454385b23995437f1d72669}{start} ()
+\item 
+int \hyperlink{classmuduo_1_1Thread_ac942067a7e5a314610c1e89ff801f3bd}{join} ()
+\item 
+bool \hyperlink{classmuduo_1_1Thread_ae64a8595ddd43477f87ff91d9f051058}{started} () const
+\item 
+pid\+\_\+t \hyperlink{classmuduo_1_1Thread_a1cab09936ca9d7d85a156634a27f8be4}{tid} () const
+\item 
+const string \& \hyperlink{classmuduo_1_1Thread_a47f4f0a66d5a539e687100dc65462ced}{name} () const
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classmuduo_1_1Thread_a2191877eb828575b4a698e5b1009923d}{num\+Created} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmuduo_1_1Thread_a7ac088202ebd97d9b4f69b46341a3142}{set\+Default\+Name} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classmuduo_1_1Thread_a5ad69cfc4163d7797bc0f0d7eadb95a7}{started\+\_\+}
+\item 
+bool \hyperlink{classmuduo_1_1Thread_a6abe498e0c9cb2cc340db85c691527fb}{joined\+\_\+}
+\item 
+pthread\+\_\+t \hyperlink{classmuduo_1_1Thread_a1cddcc9b885ebd90a657e65ef5386e45}{pthread\+Id\+\_\+}
+\item 
+pid\+\_\+t \hyperlink{classmuduo_1_1Thread_ad3941d2816d56fc00acc575589d1bf4d}{tid\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1Thread_a72bd31ac00c06074792e7cff0c8e3022}{Thread\+Func} \hyperlink{classmuduo_1_1Thread_a8d48c0bb2a39f7e2f47bcdb994b1ffa5}{func\+\_\+}
+\item 
+string \hyperlink{classmuduo_1_1Thread_a79cfd788b219a7f48068d0e96e5e8e77}{name\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1CountDownLatch}{Count\+Down\+Latch} \hyperlink{classmuduo_1_1Thread_a192dc9b859fde65e1f303e900e00d12a}{latch\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{namespacemuduo_a5ff4a046f03836ad4fb080652d419987}{Atomic\+Int32} \hyperlink{classmuduo_1_1Thread_a2742b202c5dc4f5f9e2c60798b7ada26}{num\+Created\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 Thread.\+h 第 20 行定义.
+
+
+
+\subsection{成员类型定义说明}
+\mbox{\Hypertarget{classmuduo_1_1Thread_a72bd31ac00c06074792e7cff0c8e3022}\label{classmuduo_1_1Thread_a72bd31ac00c06074792e7cff0c8e3022}} 
+\index{muduo\+::\+Thread@{muduo\+::\+Thread}!Thread\+Func@{Thread\+Func}}
+\index{Thread\+Func@{Thread\+Func}!muduo\+::\+Thread@{muduo\+::\+Thread}}
+\subsubsection{\texorpdfstring{Thread\+Func}{ThreadFunc}}
+{\footnotesize\ttfamily typedef std\+::function$<$void ()$>$ \hyperlink{classmuduo_1_1Thread_a72bd31ac00c06074792e7cff0c8e3022}{Thread\+Func}}
+
+
+
+在文件 Thread.\+h 第 23 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Thread_a2c3b1a6d86c989182ca7a9bb1aba48b3}\label{classmuduo_1_1Thread_a2c3b1a6d86c989182ca7a9bb1aba48b3}} 
+\index{muduo\+::\+Thread@{muduo\+::\+Thread}!Thread@{Thread}}
+\index{Thread@{Thread}!muduo\+::\+Thread@{muduo\+::\+Thread}}
+\subsubsection{\texorpdfstring{Thread()}{Thread()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Thread}{Thread} (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Thread_a72bd31ac00c06074792e7cff0c8e3022}{Thread\+Func}}]{,  }\item[{const string \&}]{name = {\ttfamily string()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classmuduo_1_1Thread_a87a9c69a69ee4b13cb1ec5772f6d32ad}\label{classmuduo_1_1Thread_a87a9c69a69ee4b13cb1ec5772f6d32ad}} 
+\index{muduo\+::\+Thread@{muduo\+::\+Thread}!````~Thread@{$\sim$\+Thread}}
+\index{````~Thread@{$\sim$\+Thread}!muduo\+::\+Thread@{muduo\+::\+Thread}}
+\subsubsection{\texorpdfstring{$\sim$\+Thread()}{~Thread()}}
+{\footnotesize\ttfamily $\sim$\hyperlink{classmuduo_1_1Thread}{Thread} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Thread_ac942067a7e5a314610c1e89ff801f3bd}\label{classmuduo_1_1Thread_ac942067a7e5a314610c1e89ff801f3bd}} 
+\index{muduo\+::\+Thread@{muduo\+::\+Thread}!join@{join}}
+\index{join@{join}!muduo\+::\+Thread@{muduo\+::\+Thread}}
+\subsubsection{\texorpdfstring{join()}{join()}}
+{\footnotesize\ttfamily int join (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+参考自 Async\+Logging\+::stop() , 以及 Event\+Loop\+Thread\+::$\sim$\+Event\+Loop\+Thread().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Thread_ac942067a7e5a314610c1e89ff801f3bd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Thread_a47f4f0a66d5a539e687100dc65462ced}\label{classmuduo_1_1Thread_a47f4f0a66d5a539e687100dc65462ced}} 
+\index{muduo\+::\+Thread@{muduo\+::\+Thread}!name@{name}}
+\index{name@{name}!muduo\+::\+Thread@{muduo\+::\+Thread}}
+\subsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily const string\& name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Thread.\+h 第 35 行定义.
+
+
+
+参考 Thread\+::name\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1Thread_a2191877eb828575b4a698e5b1009923d}\label{classmuduo_1_1Thread_a2191877eb828575b4a698e5b1009923d}} 
+\index{muduo\+::\+Thread@{muduo\+::\+Thread}!num\+Created@{num\+Created}}
+\index{num\+Created@{num\+Created}!muduo\+::\+Thread@{muduo\+::\+Thread}}
+\subsubsection{\texorpdfstring{num\+Created()}{numCreated()}}
+{\footnotesize\ttfamily static int num\+Created (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+在文件 Thread.\+h 第 37 行定义.
+
+
+
+参考 Atomic\+Integer\+T$<$ T $>$\+::get(), Thread\+::num\+Created\+\_\+ , 以及 Thread\+::set\+Default\+Name().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Thread_a2191877eb828575b4a698e5b1009923d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Thread_a7ac088202ebd97d9b4f69b46341a3142}\label{classmuduo_1_1Thread_a7ac088202ebd97d9b4f69b46341a3142}} 
+\index{muduo\+::\+Thread@{muduo\+::\+Thread}!set\+Default\+Name@{set\+Default\+Name}}
+\index{set\+Default\+Name@{set\+Default\+Name}!muduo\+::\+Thread@{muduo\+::\+Thread}}
+\subsubsection{\texorpdfstring{set\+Default\+Name()}{setDefaultName()}}
+{\footnotesize\ttfamily void set\+Default\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+参考自 Thread\+::num\+Created().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classmuduo_1_1Thread_a7ac088202ebd97d9b4f69b46341a3142_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Thread_a60de64d75454385b23995437f1d72669}\label{classmuduo_1_1Thread_a60de64d75454385b23995437f1d72669}} 
+\index{muduo\+::\+Thread@{muduo\+::\+Thread}!start@{start}}
+\index{start@{start}!muduo\+::\+Thread@{muduo\+::\+Thread}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+参考自 Async\+Logging\+::start() , 以及 Event\+Loop\+Thread\+::start\+Loop().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Thread_a60de64d75454385b23995437f1d72669_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Thread_ae64a8595ddd43477f87ff91d9f051058}\label{classmuduo_1_1Thread_ae64a8595ddd43477f87ff91d9f051058}} 
+\index{muduo\+::\+Thread@{muduo\+::\+Thread}!started@{started}}
+\index{started@{started}!muduo\+::\+Thread@{muduo\+::\+Thread}}
+\subsubsection{\texorpdfstring{started()}{started()}}
+{\footnotesize\ttfamily bool started (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Thread.\+h 第 32 行定义.
+
+
+
+参考 Thread\+::started\+\_\+.
+
+
+
+参考自 Event\+Loop\+Thread\+::start\+Loop().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Thread_ae64a8595ddd43477f87ff91d9f051058_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Thread_a1cab09936ca9d7d85a156634a27f8be4}\label{classmuduo_1_1Thread_a1cab09936ca9d7d85a156634a27f8be4}} 
+\index{muduo\+::\+Thread@{muduo\+::\+Thread}!tid@{tid}}
+\index{tid@{tid}!muduo\+::\+Thread@{muduo\+::\+Thread}}
+\subsubsection{\texorpdfstring{tid()}{tid()}}
+{\footnotesize\ttfamily pid\+\_\+t tid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Thread.\+h 第 34 行定义.
+
+
+
+参考 Thread\+::tid\+\_\+.
+
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1Thread_a8d48c0bb2a39f7e2f47bcdb994b1ffa5}\label{classmuduo_1_1Thread_a8d48c0bb2a39f7e2f47bcdb994b1ffa5}} 
+\index{muduo\+::\+Thread@{muduo\+::\+Thread}!func\+\_\+@{func\+\_\+}}
+\index{func\+\_\+@{func\+\_\+}!muduo\+::\+Thread@{muduo\+::\+Thread}}
+\subsubsection{\texorpdfstring{func\+\_\+}{func\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Thread_a72bd31ac00c06074792e7cff0c8e3022}{Thread\+Func} func\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Thread.\+h 第 46 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1Thread_a6abe498e0c9cb2cc340db85c691527fb}\label{classmuduo_1_1Thread_a6abe498e0c9cb2cc340db85c691527fb}} 
+\index{muduo\+::\+Thread@{muduo\+::\+Thread}!joined\+\_\+@{joined\+\_\+}}
+\index{joined\+\_\+@{joined\+\_\+}!muduo\+::\+Thread@{muduo\+::\+Thread}}
+\subsubsection{\texorpdfstring{joined\+\_\+}{joined\_}}
+{\footnotesize\ttfamily bool joined\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Thread.\+h 第 43 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1Thread_a192dc9b859fde65e1f303e900e00d12a}\label{classmuduo_1_1Thread_a192dc9b859fde65e1f303e900e00d12a}} 
+\index{muduo\+::\+Thread@{muduo\+::\+Thread}!latch\+\_\+@{latch\+\_\+}}
+\index{latch\+\_\+@{latch\+\_\+}!muduo\+::\+Thread@{muduo\+::\+Thread}}
+\subsubsection{\texorpdfstring{latch\+\_\+}{latch\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1CountDownLatch}{Count\+Down\+Latch} latch\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Thread.\+h 第 48 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1Thread_a79cfd788b219a7f48068d0e96e5e8e77}\label{classmuduo_1_1Thread_a79cfd788b219a7f48068d0e96e5e8e77}} 
+\index{muduo\+::\+Thread@{muduo\+::\+Thread}!name\+\_\+@{name\+\_\+}}
+\index{name\+\_\+@{name\+\_\+}!muduo\+::\+Thread@{muduo\+::\+Thread}}
+\subsubsection{\texorpdfstring{name\+\_\+}{name\_}}
+{\footnotesize\ttfamily string name\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Thread.\+h 第 47 行定义.
+
+
+
+参考自 Thread\+::name().
+
+\mbox{\Hypertarget{classmuduo_1_1Thread_a2742b202c5dc4f5f9e2c60798b7ada26}\label{classmuduo_1_1Thread_a2742b202c5dc4f5f9e2c60798b7ada26}} 
+\index{muduo\+::\+Thread@{muduo\+::\+Thread}!num\+Created\+\_\+@{num\+Created\+\_\+}}
+\index{num\+Created\+\_\+@{num\+Created\+\_\+}!muduo\+::\+Thread@{muduo\+::\+Thread}}
+\subsubsection{\texorpdfstring{num\+Created\+\_\+}{numCreated\_}}
+{\footnotesize\ttfamily \hyperlink{namespacemuduo_a5ff4a046f03836ad4fb080652d419987}{Atomic\+Int32} num\+Created\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 Thread.\+h 第 50 行定义.
+
+
+
+参考自 Thread\+::num\+Created().
+
+\mbox{\Hypertarget{classmuduo_1_1Thread_a1cddcc9b885ebd90a657e65ef5386e45}\label{classmuduo_1_1Thread_a1cddcc9b885ebd90a657e65ef5386e45}} 
+\index{muduo\+::\+Thread@{muduo\+::\+Thread}!pthread\+Id\+\_\+@{pthread\+Id\+\_\+}}
+\index{pthread\+Id\+\_\+@{pthread\+Id\+\_\+}!muduo\+::\+Thread@{muduo\+::\+Thread}}
+\subsubsection{\texorpdfstring{pthread\+Id\+\_\+}{pthreadId\_}}
+{\footnotesize\ttfamily pthread\+\_\+t pthread\+Id\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Thread.\+h 第 44 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1Thread_a5ad69cfc4163d7797bc0f0d7eadb95a7}\label{classmuduo_1_1Thread_a5ad69cfc4163d7797bc0f0d7eadb95a7}} 
+\index{muduo\+::\+Thread@{muduo\+::\+Thread}!started\+\_\+@{started\+\_\+}}
+\index{started\+\_\+@{started\+\_\+}!muduo\+::\+Thread@{muduo\+::\+Thread}}
+\subsubsection{\texorpdfstring{started\+\_\+}{started\_}}
+{\footnotesize\ttfamily bool started\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Thread.\+h 第 42 行定义.
+
+
+
+参考自 Thread\+::started().
+
+\mbox{\Hypertarget{classmuduo_1_1Thread_ad3941d2816d56fc00acc575589d1bf4d}\label{classmuduo_1_1Thread_ad3941d2816d56fc00acc575589d1bf4d}} 
+\index{muduo\+::\+Thread@{muduo\+::\+Thread}!tid\+\_\+@{tid\+\_\+}}
+\index{tid\+\_\+@{tid\+\_\+}!muduo\+::\+Thread@{muduo\+::\+Thread}}
+\subsubsection{\texorpdfstring{tid\+\_\+}{tid\_}}
+{\footnotesize\ttfamily pid\+\_\+t tid\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Thread.\+h 第 45 行定义.
+
+
+
+参考自 Thread\+::tid().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/muduo/base/\hyperlink{Thread_8h}{Thread.\+h}\end{DoxyCompactItemize}

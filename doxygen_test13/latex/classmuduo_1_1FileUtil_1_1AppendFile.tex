@@ -1,0 +1,144 @@
+\hypertarget{classmuduo_1_1FileUtil_1_1AppendFile}{}\section{Append\+File类 参考}
+\label{classmuduo_1_1FileUtil_1_1AppendFile}\index{Append\+File@{Append\+File}}
+
+
+{\ttfamily \#include $<$File\+Util.\+h$>$}
+
+
+
+类 Append\+File 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classmuduo_1_1FileUtil_1_1AppendFile__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Append\+File 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classmuduo_1_1FileUtil_1_1AppendFile__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1FileUtil_1_1AppendFile_afab98ee95471530b1192c3d0fd4bdabf}{Append\+File} (\hyperlink{classmuduo_1_1StringArg}{String\+Arg} filename)
+\item 
+\hyperlink{classmuduo_1_1FileUtil_1_1AppendFile_a24fec9f403479899ba3c30761d0db0c4}{$\sim$\+Append\+File} ()
+\item 
+void \hyperlink{classmuduo_1_1FileUtil_1_1AppendFile_a201a938319b6ec6100d2eadb013709bf}{append} (const char $\ast$logline, size\+\_\+t len)
+\item 
+void \hyperlink{classmuduo_1_1FileUtil_1_1AppendFile_adac116554b543b7c4228c018a85882f5}{flush} ()
+\item 
+off\+\_\+t \hyperlink{classmuduo_1_1FileUtil_1_1AppendFile_ade77694c7d5e90cc2b491704aa94754a}{written\+Bytes} () const
+\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classmuduo_1_1FileUtil_1_1AppendFile_abbaf356e78e65b65c159b1bebd48b35c}{write} (const char $\ast$logline, size\+\_\+t len)
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+F\+I\+LE $\ast$ \hyperlink{classmuduo_1_1FileUtil_1_1AppendFile_ada014bcf13679d8e22d88571b0f11275}{fp\+\_\+}
+\item 
+char \hyperlink{classmuduo_1_1FileUtil_1_1AppendFile_ab9024ec17112436406b01257ef4a373c}{buffer\+\_\+} \mbox{[}64 $\ast$1024\mbox{]}
+\item 
+off\+\_\+t \hyperlink{classmuduo_1_1FileUtil_1_1AppendFile_ac5d5b6f9bd491ad2f7168b56f95f9f16}{written\+Bytes\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 File\+Util.\+h 第 63 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1FileUtil_1_1AppendFile_afab98ee95471530b1192c3d0fd4bdabf}\label{classmuduo_1_1FileUtil_1_1AppendFile_afab98ee95471530b1192c3d0fd4bdabf}} 
+\index{muduo\+::\+File\+Util\+::\+Append\+File@{muduo\+::\+File\+Util\+::\+Append\+File}!Append\+File@{Append\+File}}
+\index{Append\+File@{Append\+File}!muduo\+::\+File\+Util\+::\+Append\+File@{muduo\+::\+File\+Util\+::\+Append\+File}}
+\subsubsection{\texorpdfstring{Append\+File()}{AppendFile()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1FileUtil_1_1AppendFile}{Append\+File} (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1StringArg}{String\+Arg}}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classmuduo_1_1FileUtil_1_1AppendFile_a24fec9f403479899ba3c30761d0db0c4}\label{classmuduo_1_1FileUtil_1_1AppendFile_a24fec9f403479899ba3c30761d0db0c4}} 
+\index{muduo\+::\+File\+Util\+::\+Append\+File@{muduo\+::\+File\+Util\+::\+Append\+File}!````~Append\+File@{$\sim$\+Append\+File}}
+\index{````~Append\+File@{$\sim$\+Append\+File}!muduo\+::\+File\+Util\+::\+Append\+File@{muduo\+::\+File\+Util\+::\+Append\+File}}
+\subsubsection{\texorpdfstring{$\sim$\+Append\+File()}{~AppendFile()}}
+{\footnotesize\ttfamily $\sim$\hyperlink{classmuduo_1_1FileUtil_1_1AppendFile}{Append\+File} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1FileUtil_1_1AppendFile_a201a938319b6ec6100d2eadb013709bf}\label{classmuduo_1_1FileUtil_1_1AppendFile_a201a938319b6ec6100d2eadb013709bf}} 
+\index{muduo\+::\+File\+Util\+::\+Append\+File@{muduo\+::\+File\+Util\+::\+Append\+File}!append@{append}}
+\index{append@{append}!muduo\+::\+File\+Util\+::\+Append\+File@{muduo\+::\+File\+Util\+::\+Append\+File}}
+\subsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily void append (\begin{DoxyParamCaption}\item[{const char $\ast$}]{logline,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmuduo_1_1FileUtil_1_1AppendFile_adac116554b543b7c4228c018a85882f5}\label{classmuduo_1_1FileUtil_1_1AppendFile_adac116554b543b7c4228c018a85882f5}} 
+\index{muduo\+::\+File\+Util\+::\+Append\+File@{muduo\+::\+File\+Util\+::\+Append\+File}!flush@{flush}}
+\index{flush@{flush}!muduo\+::\+File\+Util\+::\+Append\+File@{muduo\+::\+File\+Util\+::\+Append\+File}}
+\subsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily void flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmuduo_1_1FileUtil_1_1AppendFile_abbaf356e78e65b65c159b1bebd48b35c}\label{classmuduo_1_1FileUtil_1_1AppendFile_abbaf356e78e65b65c159b1bebd48b35c}} 
+\index{muduo\+::\+File\+Util\+::\+Append\+File@{muduo\+::\+File\+Util\+::\+Append\+File}!write@{write}}
+\index{write@{write}!muduo\+::\+File\+Util\+::\+Append\+File@{muduo\+::\+File\+Util\+::\+Append\+File}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily size\+\_\+t write (\begin{DoxyParamCaption}\item[{const char $\ast$}]{logline,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmuduo_1_1FileUtil_1_1AppendFile_ade77694c7d5e90cc2b491704aa94754a}\label{classmuduo_1_1FileUtil_1_1AppendFile_ade77694c7d5e90cc2b491704aa94754a}} 
+\index{muduo\+::\+File\+Util\+::\+Append\+File@{muduo\+::\+File\+Util\+::\+Append\+File}!written\+Bytes@{written\+Bytes}}
+\index{written\+Bytes@{written\+Bytes}!muduo\+::\+File\+Util\+::\+Append\+File@{muduo\+::\+File\+Util\+::\+Append\+File}}
+\subsubsection{\texorpdfstring{written\+Bytes()}{writtenBytes()}}
+{\footnotesize\ttfamily off\+\_\+t written\+Bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 File\+Util.\+h 第 74 行定义.
+
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1FileUtil_1_1AppendFile_ab9024ec17112436406b01257ef4a373c}\label{classmuduo_1_1FileUtil_1_1AppendFile_ab9024ec17112436406b01257ef4a373c}} 
+\index{muduo\+::\+File\+Util\+::\+Append\+File@{muduo\+::\+File\+Util\+::\+Append\+File}!buffer\+\_\+@{buffer\+\_\+}}
+\index{buffer\+\_\+@{buffer\+\_\+}!muduo\+::\+File\+Util\+::\+Append\+File@{muduo\+::\+File\+Util\+::\+Append\+File}}
+\subsubsection{\texorpdfstring{buffer\+\_\+}{buffer\_}}
+{\footnotesize\ttfamily char buffer\+\_\+\mbox{[}64 $\ast$1024\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 File\+Util.\+h 第 81 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1FileUtil_1_1AppendFile_ada014bcf13679d8e22d88571b0f11275}\label{classmuduo_1_1FileUtil_1_1AppendFile_ada014bcf13679d8e22d88571b0f11275}} 
+\index{muduo\+::\+File\+Util\+::\+Append\+File@{muduo\+::\+File\+Util\+::\+Append\+File}!fp\+\_\+@{fp\+\_\+}}
+\index{fp\+\_\+@{fp\+\_\+}!muduo\+::\+File\+Util\+::\+Append\+File@{muduo\+::\+File\+Util\+::\+Append\+File}}
+\subsubsection{\texorpdfstring{fp\+\_\+}{fp\_}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ fp\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 File\+Util.\+h 第 80 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1FileUtil_1_1AppendFile_ac5d5b6f9bd491ad2f7168b56f95f9f16}\label{classmuduo_1_1FileUtil_1_1AppendFile_ac5d5b6f9bd491ad2f7168b56f95f9f16}} 
+\index{muduo\+::\+File\+Util\+::\+Append\+File@{muduo\+::\+File\+Util\+::\+Append\+File}!written\+Bytes\+\_\+@{written\+Bytes\+\_\+}}
+\index{written\+Bytes\+\_\+@{written\+Bytes\+\_\+}!muduo\+::\+File\+Util\+::\+Append\+File@{muduo\+::\+File\+Util\+::\+Append\+File}}
+\subsubsection{\texorpdfstring{written\+Bytes\+\_\+}{writtenBytes\_}}
+{\footnotesize\ttfamily off\+\_\+t written\+Bytes\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 File\+Util.\+h 第 82 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/muduo/base/\hyperlink{FileUtil_8h}{File\+Util.\+h}\end{DoxyCompactItemize}

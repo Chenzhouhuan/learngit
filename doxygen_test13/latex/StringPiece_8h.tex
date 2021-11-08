@@ -1,0 +1,72 @@
+\hypertarget{StringPiece_8h}{}\section{lib/muduo/base/\+String\+Piece.h 文件参考}
+\label{StringPiece_8h}\index{lib/muduo/base/\+String\+Piece.\+h@{lib/muduo/base/\+String\+Piece.\+h}}
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$iosfwd$>$}\newline
+{\ttfamily \#include \char`\"{}muduo/base/\+Types.\+h\char`\"{}}\newline
+String\+Piece.\+h 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{StringPiece_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{StringPiece_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmuduo_1_1StringArg}{String\+Arg}
+\item 
+class \hyperlink{classmuduo_1_1StringPiece}{String\+Piece}
+\end{DoxyCompactItemize}
+\subsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemuduo}{muduo}
+\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{StringPiece_8h_a11f94ac00f3df0ff105005fd7a8c16d5}{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE}(cmp,  auxcmp)
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{StringPiece_8h_a0e857c92972f3044f2b33f745618eb79}{operator$<$$<$} (std\+::ostream \&o, const \hyperlink{classmuduo_1_1StringPiece}{muduo\+::\+String\+Piece} \&piece)
+\end{DoxyCompactItemize}
+
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{StringPiece_8h_a11f94ac00f3df0ff105005fd7a8c16d5}\label{StringPiece_8h_a11f94ac00f3df0ff105005fd7a8c16d5}} 
+\index{String\+Piece.\+h@{String\+Piece.\+h}!S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE@{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE}}
+\index{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE@{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE}!String\+Piece.\+h@{String\+Piece.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE}{STRINGPIECE\_BINARY\_PREDICATE}}
+{\footnotesize\ttfamily \#define S\+T\+R\+I\+N\+G\+P\+I\+E\+C\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+P\+R\+E\+D\+I\+C\+A\+TE(\begin{DoxyParamCaption}\item[{}]{cmp,  }\item[{}]{auxcmp }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} \textcolor{keyword}{operator} cmp (\textcolor{keyword}{const} StringPiece& x)\textcolor{keyword}{ const }\{                           \(\backslash\)
+    int r = memcmp(ptr\_, x.ptr\_, length\_ < x.length\_ ? length\_ : x.length\_); \(\backslash\)
+    return ((r auxcmp 0) || ((r == 0) && (length\_ cmp x.length\_)));          \(\backslash\)
+  \}
+\end{DoxyCode}
+
+
+在文件 String\+Piece.\+h 第 132 行定义.
+
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{StringPiece_8h_a0e857c92972f3044f2b33f745618eb79}\label{StringPiece_8h_a0e857c92972f3044f2b33f745618eb79}} 
+\index{String\+Piece.\+h@{String\+Piece.\+h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!String\+Piece.\+h@{String\+Piece.\+h}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{o,  }\item[{const \hyperlink{classmuduo_1_1StringPiece}{muduo\+::\+String\+Piece} \&}]{piece }\end{DoxyParamCaption})}
+

@@ -1,0 +1,14 @@
+<map id="shrink" name="shrink">
+<area shape="rect" id="node2" href="$classmuduo_1_1net_1_1Buffer.html#af02baace4e1946f318dfa5c4d5d4bb3c" title="append" alt="" coords="159,78,230,105"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1net_1_1Buffer.html#a1185aa5bbe069f50c8d46a9f8d5aac32" title="ensureWritableBytes" alt="" coords="116,187,273,214"/>
+<area shape="rect" id="node9" href="$classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="529,289,645,315"/>
+<area shape="rect" id="node11" href="$classmuduo_1_1net_1_1Buffer.html#a5a6560acf9880bf7a3b210c07bb3db2e" title="swap" alt="" coords="167,289,223,315"/>
+<area shape="rect" id="node12" href="$classmuduo_1_1net_1_1Buffer.html#a78096dee3d0826efb63a5b814eef37c4" title="toStringPiece" alt="" coords="141,238,249,265"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1StringPiece.html#a39a256207a84f316547e36c755373d03" title="muduo::StringPiece\l::data" alt="" coords="321,71,469,112"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1StringPiece.html#af9593d4a5ff4274efaf429cb4f9e57cc" title="muduo::StringPiece\l::size" alt="" coords="321,5,469,47"/>
+<area shape="rect" id="node6" href="$classmuduo_1_1net_1_1Buffer.html#a83d5a5ce302569b35df7743314578791" title="makeSpace" alt="" coords="346,187,445,214"/>
+<area shape="rect" id="node10" href="$classmuduo_1_1net_1_1Buffer.html#a998888da42aba8e7ff1977405f7c33e3" title="writableBytes" alt="" coords="531,137,643,163"/>
+<area shape="rect" id="node7" href="$classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="558,238,617,265"/>
+<area shape="rect" id="node8" href="$classmuduo_1_1net_1_1Buffer.html#ad738bbd8321f518ca5cdfac842993d04" title="prependableBytes" alt="" coords="517,187,657,214"/>
+<area shape="rect" id="node13" href="$classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="368,238,423,265"/>
+</map>

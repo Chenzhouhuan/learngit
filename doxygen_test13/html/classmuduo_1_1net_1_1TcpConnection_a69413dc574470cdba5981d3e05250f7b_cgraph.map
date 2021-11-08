@@ -1,0 +1,11 @@
+<map id="disconnected" name="disconnected">
+<area shape="rect" id="node2" href="$classmuduo_1_1net_1_1TcpConnection.html#a0ba4cd267f7415c7ae91516b4545eda4" title="forceClose" alt="" coords="195,5,286,32"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1net_1_1TcpConnection.html#a1400e984896abdc7b716ebaa8a6ea694" title="forceCloseWithDelay" alt="" coords="161,56,320,83"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1net_1_1TcpConnection.html#a1de4ddf8b40138039f3382ec9c4a0366" title="getTcpInfo" alt="" coords="196,107,285,133"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1net_1_1TcpConnection.html#a60514adf97e4a2d28f74ff39a5275bde" title="getTcpInfoString" alt="" coords="177,157,304,184"/>
+<area shape="rect" id="node6" href="$classmuduo_1_1net_1_1TcpConnection.html#a9c8ef4c9c94e6ccd8cb7233d6ecb9834" title="send" alt="" coords="214,208,267,235"/>
+<area shape="rect" id="node7" href="$classmuduo_1_1net_1_1TcpConnection.html#a7419d5072b837a2ba3cc5aac85015212" title="setTcpNoDelay" alt="" coords="181,259,300,285"/>
+<area shape="rect" id="node8" href="$classmuduo_1_1net_1_1TcpConnection.html#a7861ee1569802186a619778efc85af13" title="shutdown" alt="" coords="198,309,283,336"/>
+<area shape="rect" id="node9" href="$classmuduo_1_1net_1_1TcpConnection.html#a2fb6cbd3d3abf25782d51457ab157b24" title="startRead" alt="" coords="199,360,283,387"/>
+<area shape="rect" id="node10" href="$classmuduo_1_1net_1_1TcpConnection.html#a36b0d441712db3b0e94cead68e9ff10a" title="stopRead" alt="" coords="199,411,282,437"/>
+</map>

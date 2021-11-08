@@ -1,0 +1,116 @@
+\hypertarget{test9_8cc}{}\section{test9.\+cc 文件参考}
+\label{test9_8cc}\index{test9.\+cc@{test9.\+cc}}
+{\ttfamily \#include \char`\"{}lib/\+Tcp\+Server.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lib/\+Event\+Loop.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lib/\+Inet\+Address.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+test9.\+cc 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test9_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{test9_8cc_a6eb66d9a7a41230486568c4e0b65e095}{on\+Connection} (const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{muduo\+::\+Tcp\+Connection\+Ptr} \&conn)
+\item 
+void \hyperlink{test9_8cc_af33efd842a41b80c31e25f49b91bba72}{on\+Message} (const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{muduo\+::\+Tcp\+Connection\+Ptr} \&conn, \hyperlink{classmuduo_1_1Buffer}{muduo\+::\+Buffer} $\ast$buf, \hyperlink{classmuduo_1_1Timestamp}{muduo\+::\+Timestamp} receive\+Time)
+\item 
+int \hyperlink{test9_8cc_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{test9_8cc_a0ddf1224851353fc92bfbff6f499fa97}\label{test9_8cc_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{test9.\+cc@{test9.\+cc}!main@{main}}
+\index{main@{main}!test9.\+cc@{test9.\+cc}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+在文件 test9.\+cc 第 36 行定义.
+
+
+
+参考 Event\+Loop\+::loop(), on\+Connection(), on\+Message(), Tcp\+Server\+::set\+Connection\+Callback(), Tcp\+Server\+::set\+Message\+Callback(), Tcp\+Server\+::set\+Thread\+Num() , 以及 Tcp\+Server\+::start().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test9_8cc_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{test9_8cc_a6eb66d9a7a41230486568c4e0b65e095}\label{test9_8cc_a6eb66d9a7a41230486568c4e0b65e095}} 
+\index{test9.\+cc@{test9.\+cc}!on\+Connection@{on\+Connection}}
+\index{on\+Connection@{on\+Connection}!test9.\+cc@{test9.\+cc}}
+\subsubsection{\texorpdfstring{on\+Connection()}{onConnection()}}
+{\footnotesize\ttfamily void on\+Connection (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{muduo\+::\+Tcp\+Connection\+Ptr} \&}]{conn }\end{DoxyParamCaption})}
+
+
+
+在文件 test9.\+cc 第 6 行定义.
+
+
+
+参考 muduo\+::\+Current\+Thread\+::tid().
+
+
+
+参考自 main().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test9_8cc_a6eb66d9a7a41230486568c4e0b65e095_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{test9_8cc_a6eb66d9a7a41230486568c4e0b65e095_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{test9_8cc_af33efd842a41b80c31e25f49b91bba72}\label{test9_8cc_af33efd842a41b80c31e25f49b91bba72}} 
+\index{test9.\+cc@{test9.\+cc}!on\+Message@{on\+Message}}
+\index{on\+Message@{on\+Message}!test9.\+cc@{test9.\+cc}}
+\subsubsection{\texorpdfstring{on\+Message()}{onMessage()}}
+{\footnotesize\ttfamily void on\+Message (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{muduo\+::\+Tcp\+Connection\+Ptr} \&}]{conn,  }\item[{\hyperlink{classmuduo_1_1Buffer}{muduo\+::\+Buffer} $\ast$}]{buf,  }\item[{\hyperlink{classmuduo_1_1Timestamp}{muduo\+::\+Timestamp}}]{receive\+Time }\end{DoxyParamCaption})}
+
+
+
+在文件 test9.\+cc 第 23 行定义.
+
+
+
+参考 Buffer\+::readable\+Bytes(), Buffer\+::retrieve\+As\+String(), muduo\+::\+Current\+Thread\+::tid() , 以及 Timestamp\+::to\+Formatted\+String().
+
+
+
+参考自 main().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test9_8cc_af33efd842a41b80c31e25f49b91bba72_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{test9_8cc_af33efd842a41b80c31e25f49b91bba72_icgraph}
+\end{center}
+\end{figure}

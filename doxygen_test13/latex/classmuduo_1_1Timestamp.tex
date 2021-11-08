@@ -1,0 +1,385 @@
+\hypertarget{classmuduo_1_1Timestamp}{}\section{Timestamp类 参考}
+\label{classmuduo_1_1Timestamp}\index{Timestamp@{Timestamp}}
+
+
+{\ttfamily \#include $<$Timestamp.\+h$>$}
+
+
+
+类 Timestamp 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Timestamp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Timestamp 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Timestamp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1Timestamp_a3ccb273b45fb16b1b14de8a4c8b44e3b}{Timestamp} ()
+\item 
+\hyperlink{classmuduo_1_1Timestamp_a37c7ad2d5316b1c9c0e6e1686ad599ff}{Timestamp} (int64\+\_\+t micro\+Seconds\+Since\+Epoch\+Arg)
+\item 
+void \hyperlink{classmuduo_1_1Timestamp_aa405c6fb7c29a07e1924fa0b4d846638}{swap} (\hyperlink{classmuduo_1_1Timestamp}{Timestamp} \&that)
+\item 
+string \hyperlink{classmuduo_1_1Timestamp_a133cf5030cda633035ca97147356f2f9}{to\+String} () const
+\item 
+string \hyperlink{classmuduo_1_1Timestamp_ac8bf4663993962a4d68d4a6c44588e97}{to\+Formatted\+String} (bool show\+Microseconds=true) const
+\item 
+bool \hyperlink{classmuduo_1_1Timestamp_a315419f26d3c59fa143b49b90a019049}{valid} () const
+\item 
+int64\+\_\+t \hyperlink{classmuduo_1_1Timestamp_a8a0616b73c803b94f5c0e9d00fa96fb4}{micro\+Seconds\+Since\+Epoch} () const
+\item 
+time\+\_\+t \hyperlink{classmuduo_1_1Timestamp_a71e46e0dc3ff552a361dfe7dc32847b5}{seconds\+Since\+Epoch} () const
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classmuduo_1_1Timestamp}{Timestamp} \hyperlink{classmuduo_1_1Timestamp_a3bca3b2a36424e36b3d2c772fa7d5772}{now} ()
+\item 
+static \hyperlink{classmuduo_1_1Timestamp}{Timestamp} \hyperlink{classmuduo_1_1Timestamp_a1aa83f32d706090ef354b182460d27aa}{invalid} ()
+\item 
+static \hyperlink{classmuduo_1_1Timestamp}{Timestamp} \hyperlink{classmuduo_1_1Timestamp_aee5bf9a550a08f101f9fff5ab98f5f8b}{from\+Unix\+Time} (time\+\_\+t t)
+\item 
+static \hyperlink{classmuduo_1_1Timestamp}{Timestamp} \hyperlink{classmuduo_1_1Timestamp_a610b35a1215297acd5117d0006e64434}{from\+Unix\+Time} (time\+\_\+t t, int microseconds)
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{classmuduo_1_1Timestamp_a2659197720e28bf9db3631a73f16f7ff}{k\+Micro\+Seconds\+Per\+Second} = 1000 $\ast$ 1000
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+int64\+\_\+t \hyperlink{classmuduo_1_1Timestamp_ad36b5d1f504a660a5e4386588d27346d}{micro\+Seconds\+Since\+Epoch\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Time stamp in U\+TC, in microseconds resolution.
+
+This class is immutable. It\textquotesingle{}s recommended to pass it by value, since it\textquotesingle{}s passed in register on x64. 
+
+在文件 Timestamp.\+h 第 23 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Timestamp_a3ccb273b45fb16b1b14de8a4c8b44e3b}\label{classmuduo_1_1Timestamp_a3ccb273b45fb16b1b14de8a4c8b44e3b}} 
+\index{muduo\+::\+Timestamp@{muduo\+::\+Timestamp}!Timestamp@{Timestamp}}
+\index{Timestamp@{Timestamp}!muduo\+::\+Timestamp@{muduo\+::\+Timestamp}}
+\subsubsection{\texorpdfstring{Timestamp()}{Timestamp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Timestamp}{Timestamp} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constucts an invalid \hyperlink{classmuduo_1_1Timestamp}{Timestamp}. 
+
+在文件 Timestamp.\+h 第 31 行定义.
+
+
+
+参考自 muduo\+::add\+Time(), Timestamp\+::from\+Unix\+Time() , 以及 Timestamp\+::invalid().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Timestamp_a3ccb273b45fb16b1b14de8a4c8b44e3b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Timestamp_a37c7ad2d5316b1c9c0e6e1686ad599ff}\label{classmuduo_1_1Timestamp_a37c7ad2d5316b1c9c0e6e1686ad599ff}} 
+\index{muduo\+::\+Timestamp@{muduo\+::\+Timestamp}!Timestamp@{Timestamp}}
+\index{Timestamp@{Timestamp}!muduo\+::\+Timestamp@{muduo\+::\+Timestamp}}
+\subsubsection{\texorpdfstring{Timestamp()}{Timestamp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Timestamp}{Timestamp} (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{micro\+Seconds\+Since\+Epoch\+Arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+Constucts a \hyperlink{classmuduo_1_1Timestamp}{Timestamp} at specific time
+
+
+\begin{DoxyParams}{参数}
+{\em micro\+Seconds\+Since\+Epoch} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Timestamp.\+h 第 40 行定义.
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Timestamp_aee5bf9a550a08f101f9fff5ab98f5f8b}\label{classmuduo_1_1Timestamp_aee5bf9a550a08f101f9fff5ab98f5f8b}} 
+\index{muduo\+::\+Timestamp@{muduo\+::\+Timestamp}!from\+Unix\+Time@{from\+Unix\+Time}}
+\index{from\+Unix\+Time@{from\+Unix\+Time}!muduo\+::\+Timestamp@{muduo\+::\+Timestamp}}
+\subsubsection{\texorpdfstring{from\+Unix\+Time()}{fromUnixTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \hyperlink{classmuduo_1_1Timestamp}{Timestamp} from\+Unix\+Time (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+在文件 Timestamp.\+h 第 71 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1Timestamp_a610b35a1215297acd5117d0006e64434}\label{classmuduo_1_1Timestamp_a610b35a1215297acd5117d0006e64434}} 
+\index{muduo\+::\+Timestamp@{muduo\+::\+Timestamp}!from\+Unix\+Time@{from\+Unix\+Time}}
+\index{from\+Unix\+Time@{from\+Unix\+Time}!muduo\+::\+Timestamp@{muduo\+::\+Timestamp}}
+\subsubsection{\texorpdfstring{from\+Unix\+Time()}{fromUnixTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \hyperlink{classmuduo_1_1Timestamp}{Timestamp} from\+Unix\+Time (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{t,  }\item[{int}]{microseconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+在文件 Timestamp.\+h 第 76 行定义.
+
+
+
+参考 Timestamp\+::k\+Micro\+Seconds\+Per\+Second , 以及 Timestamp\+::\+Timestamp().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{classmuduo_1_1Timestamp_a610b35a1215297acd5117d0006e64434_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Timestamp_a1aa83f32d706090ef354b182460d27aa}\label{classmuduo_1_1Timestamp_a1aa83f32d706090ef354b182460d27aa}} 
+\index{muduo\+::\+Timestamp@{muduo\+::\+Timestamp}!invalid@{invalid}}
+\index{invalid@{invalid}!muduo\+::\+Timestamp@{muduo\+::\+Timestamp}}
+\subsubsection{\texorpdfstring{invalid()}{invalid()}}
+{\footnotesize\ttfamily static \hyperlink{classmuduo_1_1Timestamp}{Timestamp} invalid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+在文件 Timestamp.\+h 第 66 行定义.
+
+
+
+参考 Timestamp\+::\+Timestamp().
+
+
+
+参考自 Timer\+::restart().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classmuduo_1_1Timestamp_a1aa83f32d706090ef354b182460d27aa_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Timestamp_a1aa83f32d706090ef354b182460d27aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Timestamp_a8a0616b73c803b94f5c0e9d00fa96fb4}\label{classmuduo_1_1Timestamp_a8a0616b73c803b94f5c0e9d00fa96fb4}} 
+\index{muduo\+::\+Timestamp@{muduo\+::\+Timestamp}!micro\+Seconds\+Since\+Epoch@{micro\+Seconds\+Since\+Epoch}}
+\index{micro\+Seconds\+Since\+Epoch@{micro\+Seconds\+Since\+Epoch}!muduo\+::\+Timestamp@{muduo\+::\+Timestamp}}
+\subsubsection{\texorpdfstring{micro\+Seconds\+Since\+Epoch()}{microSecondsSinceEpoch()}}
+{\footnotesize\ttfamily int64\+\_\+t micro\+Seconds\+Since\+Epoch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Timestamp.\+h 第 58 行定义.
+
+
+
+参考 Timestamp\+::micro\+Seconds\+Since\+Epoch\+\_\+.
+
+
+
+参考自 muduo\+::add\+Time(), muduo\+::detail\+::how\+Much\+Time\+From\+Now(), muduo\+::operator$<$(), muduo\+::operator==() , 以及 muduo\+::time\+Difference().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Timestamp_a8a0616b73c803b94f5c0e9d00fa96fb4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Timestamp_a3bca3b2a36424e36b3d2c772fa7d5772}\label{classmuduo_1_1Timestamp_a3bca3b2a36424e36b3d2c772fa7d5772}} 
+\index{muduo\+::\+Timestamp@{muduo\+::\+Timestamp}!now@{now}}
+\index{now@{now}!muduo\+::\+Timestamp@{muduo\+::\+Timestamp}}
+\subsubsection{\texorpdfstring{now()}{now()}}
+{\footnotesize\ttfamily static \hyperlink{classmuduo_1_1Timestamp}{Timestamp} now (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get time of now. 
+
+参考自 Timer\+Queue\+::handle\+Read(), muduo\+::detail\+::how\+Much\+Time\+From\+Now(), Poller\+::poll(), E\+Poller\+::poll(), Event\+Loop\+::run\+After(), Event\+Loop\+::run\+Every() , 以及 Timestamp\+::seconds\+Since\+Epoch().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Timestamp_a3bca3b2a36424e36b3d2c772fa7d5772_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Timestamp_a71e46e0dc3ff552a361dfe7dc32847b5}\label{classmuduo_1_1Timestamp_a71e46e0dc3ff552a361dfe7dc32847b5}} 
+\index{muduo\+::\+Timestamp@{muduo\+::\+Timestamp}!seconds\+Since\+Epoch@{seconds\+Since\+Epoch}}
+\index{seconds\+Since\+Epoch@{seconds\+Since\+Epoch}!muduo\+::\+Timestamp@{muduo\+::\+Timestamp}}
+\subsubsection{\texorpdfstring{seconds\+Since\+Epoch()}{secondsSinceEpoch()}}
+{\footnotesize\ttfamily time\+\_\+t seconds\+Since\+Epoch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Timestamp.\+h 第 59 行定义.
+
+
+
+参考 Timestamp\+::k\+Micro\+Seconds\+Per\+Second, Timestamp\+::micro\+Seconds\+Since\+Epoch\+\_\+ , 以及 Timestamp\+::now().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{classmuduo_1_1Timestamp_a71e46e0dc3ff552a361dfe7dc32847b5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Timestamp_aa405c6fb7c29a07e1924fa0b4d846638}\label{classmuduo_1_1Timestamp_aa405c6fb7c29a07e1924fa0b4d846638}} 
+\index{muduo\+::\+Timestamp@{muduo\+::\+Timestamp}!swap@{swap}}
+\index{swap@{swap}!muduo\+::\+Timestamp@{muduo\+::\+Timestamp}}
+\subsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void swap (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Timestamp}{Timestamp} \&}]{that }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Timestamp.\+h 第 45 行定义.
+
+
+
+参考 Timestamp\+::micro\+Seconds\+Since\+Epoch\+\_\+, Timestamp\+::to\+Formatted\+String() , 以及 Timestamp\+::to\+String().
+
+
+
+参考自 Http\+Request\+::swap().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{classmuduo_1_1Timestamp_aa405c6fb7c29a07e1924fa0b4d846638_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Timestamp_aa405c6fb7c29a07e1924fa0b4d846638_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Timestamp_ac8bf4663993962a4d68d4a6c44588e97}\label{classmuduo_1_1Timestamp_ac8bf4663993962a4d68d4a6c44588e97}} 
+\index{muduo\+::\+Timestamp@{muduo\+::\+Timestamp}!to\+Formatted\+String@{to\+Formatted\+String}}
+\index{to\+Formatted\+String@{to\+Formatted\+String}!muduo\+::\+Timestamp@{muduo\+::\+Timestamp}}
+\subsubsection{\texorpdfstring{to\+Formatted\+String()}{toFormattedString()}}
+{\footnotesize\ttfamily string to\+Formatted\+String (\begin{DoxyParamCaption}\item[{bool}]{show\+Microseconds = {\ttfamily true} }\end{DoxyParamCaption}) const}
+
+
+
+参考自 on\+Message() , 以及 Timestamp\+::swap().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Timestamp_ac8bf4663993962a4d68d4a6c44588e97_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Timestamp_a133cf5030cda633035ca97147356f2f9}\label{classmuduo_1_1Timestamp_a133cf5030cda633035ca97147356f2f9}} 
+\index{muduo\+::\+Timestamp@{muduo\+::\+Timestamp}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!muduo\+::\+Timestamp@{muduo\+::\+Timestamp}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily string to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+参考自 muduo\+::detail\+::read\+Timerfd() , 以及 Timestamp\+::swap().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Timestamp_a133cf5030cda633035ca97147356f2f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Timestamp_a315419f26d3c59fa143b49b90a019049}\label{classmuduo_1_1Timestamp_a315419f26d3c59fa143b49b90a019049}} 
+\index{muduo\+::\+Timestamp@{muduo\+::\+Timestamp}!valid@{valid}}
+\index{valid@{valid}!muduo\+::\+Timestamp@{muduo\+::\+Timestamp}}
+\subsubsection{\texorpdfstring{valid()}{valid()}}
+{\footnotesize\ttfamily bool valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Timestamp.\+h 第 55 行定义.
+
+
+
+参考 Timestamp\+::micro\+Seconds\+Since\+Epoch\+\_\+.
+
+
+
+参考自 Timer\+Queue\+::reset().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Timestamp_a315419f26d3c59fa143b49b90a019049_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1Timestamp_a2659197720e28bf9db3631a73f16f7ff}\label{classmuduo_1_1Timestamp_a2659197720e28bf9db3631a73f16f7ff}} 
+\index{muduo\+::\+Timestamp@{muduo\+::\+Timestamp}!k\+Micro\+Seconds\+Per\+Second@{k\+Micro\+Seconds\+Per\+Second}}
+\index{k\+Micro\+Seconds\+Per\+Second@{k\+Micro\+Seconds\+Per\+Second}!muduo\+::\+Timestamp@{muduo\+::\+Timestamp}}
+\subsubsection{\texorpdfstring{k\+Micro\+Seconds\+Per\+Second}{kMicroSecondsPerSecond}}
+{\footnotesize\ttfamily const int k\+Micro\+Seconds\+Per\+Second = 1000 $\ast$ 1000\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+在文件 Timestamp.\+h 第 81 行定义.
+
+
+
+参考自 muduo\+::add\+Time(), Timestamp\+::from\+Unix\+Time(), muduo\+::detail\+::how\+Much\+Time\+From\+Now(), Timestamp\+::seconds\+Since\+Epoch() , 以及 muduo\+::time\+Difference().
+
+\mbox{\Hypertarget{classmuduo_1_1Timestamp_ad36b5d1f504a660a5e4386588d27346d}\label{classmuduo_1_1Timestamp_ad36b5d1f504a660a5e4386588d27346d}} 
+\index{muduo\+::\+Timestamp@{muduo\+::\+Timestamp}!micro\+Seconds\+Since\+Epoch\+\_\+@{micro\+Seconds\+Since\+Epoch\+\_\+}}
+\index{micro\+Seconds\+Since\+Epoch\+\_\+@{micro\+Seconds\+Since\+Epoch\+\_\+}!muduo\+::\+Timestamp@{muduo\+::\+Timestamp}}
+\subsubsection{\texorpdfstring{micro\+Seconds\+Since\+Epoch\+\_\+}{microSecondsSinceEpoch\_}}
+{\footnotesize\ttfamily int64\+\_\+t micro\+Seconds\+Since\+Epoch\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timestamp.\+h 第 84 行定义.
+
+
+
+参考自 Timestamp\+::micro\+Seconds\+Since\+Epoch(), Timestamp\+::seconds\+Since\+Epoch(), Timestamp\+::swap() , 以及 Timestamp\+::valid().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/muduo/base/\hyperlink{Timestamp_8h}{Timestamp.\+h}\end{DoxyCompactItemize}

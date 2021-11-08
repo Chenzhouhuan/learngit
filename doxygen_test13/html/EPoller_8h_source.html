@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: lib/EPoller.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('EPoller_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">EPoller.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="EPoller_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MUDUO_NET_EPOLLER_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MUDUO_NET_EPOLLER_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Timestamp_8h.html">muduo/base/Timestamp.h</a>&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="EventLoop_8h.html">EventLoop.h</a>&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">struct </span>epoll_event;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemuduo.html">muduo</a>{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>Channel;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classmuduo_1_1EPoller.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmuduo_1_1EPoller.html">EPoller</a>: boost::noncopyable{</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classmuduo_1_1EPoller.html#a0b74248ffee6df294563618187b52404">   22</a></span>&#160;    <span class="keyword">typedef</span> std::vector&lt;Channel*&gt; <a class="code" href="classmuduo_1_1EPoller.html#a0b74248ffee6df294563618187b52404">ChannelList</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classmuduo_1_1EPoller.html#ac03e04dfa659758294b0478a70b1df17">EPoller</a>(<a class="code" href="classmuduo_1_1EventLoop.html">EventLoop</a>* loop);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classmuduo_1_1EPoller.html#aca4e8d4bd83557de60a7bf8523299deb">~EPoller</a>();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classmuduo_1_1Timestamp.html">Timestamp</a> <a class="code" href="classmuduo_1_1EPoller.html#a0165aabf2721e39f87ad67b05ece9267">poll</a>(<span class="keywordtype">int</span> timeoutMs, ChannelList* activeChannels);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmuduo_1_1EPoller.html#acaa4a191936aacf608d279a6f343d533">updateChannel</a>(<a class="code" href="classmuduo_1_1Channel.html">Channel</a>* channel);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmuduo_1_1EPoller.html#ab10f76c92cb5269f8296e5b3e4dd0ef9">removeChannel</a>(<a class="code" href="classmuduo_1_1Channel.html">Channel</a>* channel);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classmuduo_1_1EPoller.html#a9e9c23193ece3ba25a1a2779fc7ebc2d">   38</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmuduo_1_1EPoller.html#a9e9c23193ece3ba25a1a2779fc7ebc2d">assertInLoopThread</a>(){ <a class="code" href="classmuduo_1_1EPoller.html#ab7cf856df3fd0f8496fcf3b59b8a24ab">ownerLoop_</a>-&gt;<a class="code" href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d">assertInLoopThread</a>(); }</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classmuduo_1_1EPoller.html#a926125e406052891f69477342de6275f">   41</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classmuduo_1_1EPoller.html#a926125e406052891f69477342de6275f">kInitEventListSize</a> = 16;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmuduo_1_1EPoller.html#a93b3d6d6cac94e92c2ddfd91e9b18cc0">fillActiveChannels</a>(<span class="keywordtype">int</span> numEvents, ChannelList* activeChannels) <span class="keyword">const</span>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmuduo_1_1EPoller.html#af32077955d1a8c910bde719cb636efd8">update</a>(<span class="keywordtype">int</span> operation, <a class="code" href="classmuduo_1_1Channel.html">Channel</a>* channel);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classmuduo_1_1EPoller.html#ac074005c5f2127640fb6a6e22aa58bae">   47</a></span>&#160;    <span class="keyword">typedef</span> std::vector&lt;struct epoll_event&gt; <a class="code" href="classmuduo_1_1EPoller.html#ac074005c5f2127640fb6a6e22aa58bae">EventList</a>;</div><div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classmuduo_1_1EPoller.html#a950db725d18ce33d8457ae784380a07e">   48</a></span>&#160;    <span class="keyword">typedef</span> std::map&lt;int, Channel*&gt; <a class="code" href="classmuduo_1_1EPoller.html#a950db725d18ce33d8457ae784380a07e">ChannelMap</a>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classmuduo_1_1EPoller.html#ab7cf856df3fd0f8496fcf3b59b8a24ab">   50</a></span>&#160;    <a class="code" href="classmuduo_1_1EventLoop.html">EventLoop</a>* <a class="code" href="classmuduo_1_1EPoller.html#ab7cf856df3fd0f8496fcf3b59b8a24ab">ownerLoop_</a>;</div><div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classmuduo_1_1EPoller.html#a942c2940f17cc0c7cbd918424bd6f263">   51</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classmuduo_1_1EPoller.html#a942c2940f17cc0c7cbd918424bd6f263">epollfd_</a>;</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classmuduo_1_1EPoller.html#a230adbff354741cf0b5d4af33c4fb2e3">   52</a></span>&#160;    EventList <a class="code" href="classmuduo_1_1EPoller.html#a230adbff354741cf0b5d4af33c4fb2e3">events_</a>;</div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classmuduo_1_1EPoller.html#aca6f39ba1cb9dbdd28edf2291d1b4fd5">   53</a></span>&#160;    ChannelMap <a class="code" href="classmuduo_1_1EPoller.html#aca6f39ba1cb9dbdd28edf2291d1b4fd5">channels_</a>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif //MUDUO_NET_EPOLLER_H</span></div><div class="ttc" id="classmuduo_1_1EPoller_html_aca6f39ba1cb9dbdd28edf2291d1b4fd5"><div class="ttname"><a href="classmuduo_1_1EPoller.html#aca6f39ba1cb9dbdd28edf2291d1b4fd5">muduo::EPoller::channels_</a></div><div class="ttdeci">ChannelMap channels_</div><div class="ttdef"><b>Definition:</b> <a href="EPoller_8h_source.html#l00053">EPoller.h:53</a></div></div>
+<div class="ttc" id="classmuduo_1_1EPoller_html_a93b3d6d6cac94e92c2ddfd91e9b18cc0"><div class="ttname"><a href="classmuduo_1_1EPoller.html#a93b3d6d6cac94e92c2ddfd91e9b18cc0">muduo::EPoller::fillActiveChannels</a></div><div class="ttdeci">void fillActiveChannels(int numEvents, ChannelList *activeChannels) const</div><div class="ttdef"><b>Definition:</b> <a href="EPoller_8cc_source.html#l00075">EPoller.cc:75</a></div></div>
+<div class="ttc" id="classmuduo_1_1EPoller_html_a942c2940f17cc0c7cbd918424bd6f263"><div class="ttname"><a href="classmuduo_1_1EPoller.html#a942c2940f17cc0c7cbd918424bd6f263">muduo::EPoller::epollfd_</a></div><div class="ttdeci">int epollfd_</div><div class="ttdef"><b>Definition:</b> <a href="EPoller_8h_source.html#l00051">EPoller.h:51</a></div></div>
+<div class="ttc" id="classmuduo_1_1EPoller_html_ac03e04dfa659758294b0478a70b1df17"><div class="ttname"><a href="classmuduo_1_1EPoller.html#ac03e04dfa659758294b0478a70b1df17">muduo::EPoller::EPoller</a></div><div class="ttdeci">EPoller(EventLoop *loop)</div><div class="ttdef"><b>Definition:</b> <a href="EPoller_8cc_source.html#l00044">EPoller.cc:44</a></div></div>
+<div class="ttc" id="classmuduo_1_1EPoller_html_a0b74248ffee6df294563618187b52404"><div class="ttname"><a href="classmuduo_1_1EPoller.html#a0b74248ffee6df294563618187b52404">muduo::EPoller::ChannelList</a></div><div class="ttdeci">std::vector&lt; Channel * &gt; ChannelList</div><div class="ttdef"><b>Definition:</b> <a href="EPoller_8h_source.html#l00022">EPoller.h:22</a></div></div>
+<div class="ttc" id="namespacemuduo_html"><div class="ttname"><a href="namespacemuduo.html">muduo</a></div><div class="ttdef"><b>Definition:</b> <a href="Acceptor_8h_source.html#l00010">Acceptor.h:10</a></div></div>
+<div class="ttc" id="classmuduo_1_1EPoller_html_af32077955d1a8c910bde719cb636efd8"><div class="ttname"><a href="classmuduo_1_1EPoller.html#af32077955d1a8c910bde719cb636efd8">muduo::EPoller::update</a></div><div class="ttdeci">void update(int operation, Channel *channel)</div><div class="ttdef"><b>Definition:</b> <a href="EPoller_8cc_source.html#l00140">EPoller.cc:140</a></div></div>
+<div class="ttc" id="classmuduo_1_1EventLoop_html"><div class="ttname"><a href="classmuduo_1_1EventLoop.html">muduo::EventLoop</a></div><div class="ttdef"><b>Definition:</b> <a href="EventLoop_8h_source.html#l00022">EventLoop.h:22</a></div></div>
+<div class="ttc" id="classmuduo_1_1EPoller_html_a9e9c23193ece3ba25a1a2779fc7ebc2d"><div class="ttname"><a href="classmuduo_1_1EPoller.html#a9e9c23193ece3ba25a1a2779fc7ebc2d">muduo::EPoller::assertInLoopThread</a></div><div class="ttdeci">void assertInLoopThread()</div><div class="ttdef"><b>Definition:</b> <a href="EPoller_8h_source.html#l00038">EPoller.h:38</a></div></div>
+<div class="ttc" id="classmuduo_1_1EPoller_html"><div class="ttname"><a href="classmuduo_1_1EPoller.html">muduo::EPoller</a></div><div class="ttdef"><b>Definition:</b> <a href="EPoller_8h_source.html#l00020">EPoller.h:20</a></div></div>
+<div class="ttc" id="classmuduo_1_1EPoller_html_a0165aabf2721e39f87ad67b05ece9267"><div class="ttname"><a href="classmuduo_1_1EPoller.html#a0165aabf2721e39f87ad67b05ece9267">muduo::EPoller::poll</a></div><div class="ttdeci">Timestamp poll(int timeoutMs, ChannelList *activeChannels)</div><div class="ttdef"><b>Definition:</b> <a href="EPoller_8cc_source.html#l00058">EPoller.cc:58</a></div></div>
+<div class="ttc" id="classmuduo_1_1EPoller_html_ab7cf856df3fd0f8496fcf3b59b8a24ab"><div class="ttname"><a href="classmuduo_1_1EPoller.html#ab7cf856df3fd0f8496fcf3b59b8a24ab">muduo::EPoller::ownerLoop_</a></div><div class="ttdeci">EventLoop * ownerLoop_</div><div class="ttdef"><b>Definition:</b> <a href="EPoller_8h_source.html#l00050">EPoller.h:50</a></div></div>
+<div class="ttc" id="classmuduo_1_1EPoller_html_ab10f76c92cb5269f8296e5b3e4dd0ef9"><div class="ttname"><a href="classmuduo_1_1EPoller.html#ab10f76c92cb5269f8296e5b3e4dd0ef9">muduo::EPoller::removeChannel</a></div><div class="ttdeci">void removeChannel(Channel *channel)</div><div class="ttdef"><b>Definition:</b> <a href="EPoller_8cc_source.html#l00122">EPoller.cc:122</a></div></div>
+<div class="ttc" id="classmuduo_1_1EPoller_html_acaa4a191936aacf608d279a6f343d533"><div class="ttname"><a href="classmuduo_1_1EPoller.html#acaa4a191936aacf608d279a6f343d533">muduo::EPoller::updateChannel</a></div><div class="ttdeci">void updateChannel(Channel *channel)</div><div class="ttdef"><b>Definition:</b> <a href="EPoller_8cc_source.html#l00090">EPoller.cc:90</a></div></div>
+<div class="ttc" id="classmuduo_1_1EPoller_html_ac074005c5f2127640fb6a6e22aa58bae"><div class="ttname"><a href="classmuduo_1_1EPoller.html#ac074005c5f2127640fb6a6e22aa58bae">muduo::EPoller::EventList</a></div><div class="ttdeci">std::vector&lt; struct epoll_event &gt; EventList</div><div class="ttdef"><b>Definition:</b> <a href="EPoller_8h_source.html#l00047">EPoller.h:47</a></div></div>
+<div class="ttc" id="classmuduo_1_1EPoller_html_aca4e8d4bd83557de60a7bf8523299deb"><div class="ttname"><a href="classmuduo_1_1EPoller.html#aca4e8d4bd83557de60a7bf8523299deb">muduo::EPoller::~EPoller</a></div><div class="ttdeci">~EPoller()</div><div class="ttdef"><b>Definition:</b> <a href="EPoller_8cc_source.html#l00054">EPoller.cc:54</a></div></div>
+<div class="ttc" id="EventLoop_8h_html"><div class="ttname"><a href="EventLoop_8h.html">EventLoop.h</a></div></div>
+<div class="ttc" id="classmuduo_1_1Channel_html"><div class="ttname"><a href="classmuduo_1_1Channel.html">muduo::Channel</a></div><div class="ttdef"><b>Definition:</b> <a href="Channel_8h_source.html#l00013">Channel.h:13</a></div></div>
+<div class="ttc" id="Timestamp_8h_html"><div class="ttname"><a href="Timestamp_8h.html">Timestamp.h</a></div></div>
+<div class="ttc" id="classmuduo_1_1EPoller_html_a230adbff354741cf0b5d4af33c4fb2e3"><div class="ttname"><a href="classmuduo_1_1EPoller.html#a230adbff354741cf0b5d4af33c4fb2e3">muduo::EPoller::events_</a></div><div class="ttdeci">EventList events_</div><div class="ttdef"><b>Definition:</b> <a href="EPoller_8h_source.html#l00052">EPoller.h:52</a></div></div>
+<div class="ttc" id="classmuduo_1_1EPoller_html_a926125e406052891f69477342de6275f"><div class="ttname"><a href="classmuduo_1_1EPoller.html#a926125e406052891f69477342de6275f">muduo::EPoller::kInitEventListSize</a></div><div class="ttdeci">static const int kInitEventListSize</div><div class="ttdef"><b>Definition:</b> <a href="EPoller_8h_source.html#l00041">EPoller.h:41</a></div></div>
+<div class="ttc" id="classmuduo_1_1EPoller_html_a950db725d18ce33d8457ae784380a07e"><div class="ttname"><a href="classmuduo_1_1EPoller.html#a950db725d18ce33d8457ae784380a07e">muduo::EPoller::ChannelMap</a></div><div class="ttdeci">std::map&lt; int, Channel * &gt; ChannelMap</div><div class="ttdef"><b>Definition:</b> <a href="EPoller_8h_source.html#l00048">EPoller.h:48</a></div></div>
+<div class="ttc" id="classmuduo_1_1Timestamp_html"><div class="ttname"><a href="classmuduo_1_1Timestamp.html">muduo::Timestamp</a></div><div class="ttdef"><b>Definition:</b> <a href="Timestamp_8h_source.html#l00023">Timestamp.h:23</a></div></div>
+<div class="ttc" id="classmuduo_1_1EventLoop_html_a9e9c23193ece3ba25a1a2779fc7ebc2d"><div class="ttname"><a href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d">muduo::EventLoop::assertInLoopThread</a></div><div class="ttdeci">void assertInLoopThread()</div><div class="ttdef"><b>Definition:</b> <a href="EventLoop_8h_source.html#l00069">EventLoop.h:69</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="EPoller_8h.html">EPoller.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

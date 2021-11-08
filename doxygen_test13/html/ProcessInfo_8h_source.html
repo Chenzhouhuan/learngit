@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: lib/muduo/base/ProcessInfo.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('ProcessInfo_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ProcessInfo.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ProcessInfo_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Use of this source code is governed by a BSD-style license</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// that can be found in the License file.</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Author: Shuo Chen (chenshuo at chenshuo dot com)</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// This is a public header file, it must only include public header files.</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef MUDUO_BASE_PROCESSINFO_H</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define MUDUO_BASE_PROCESSINFO_H</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="StringPiece_8h.html">muduo/base/StringPiece.h</a>&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Types_8h.html">muduo/base/Types.h</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Timestamp_8h.html">muduo/base/Timestamp.h</a>&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;sys/types.h&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemuduo.html">muduo</a></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="namespacemuduo_1_1ProcessInfo.html">   20</a></span>&#160;<span class="keyword">namespace </span>ProcessInfo</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  pid_t <a class="code" href="namespacemuduo_1_1ProcessInfo.html#a9b565d9cb6c35649f0feeeaa8b26dd7b">pid</a>();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordtype">string</span> <a class="code" href="namespacemuduo_1_1ProcessInfo.html#af54b6cc2e94622bf45a9ced0093b7dae">pidString</a>();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  uid_t <a class="code" href="namespacemuduo_1_1ProcessInfo.html#a056245f62bbe6e8abdcd42171a432aac">uid</a>();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">string</span> <a class="code" href="namespacemuduo_1_1ProcessInfo.html#a54e6907a19c94da2cf5db8dcad530262">username</a>();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  uid_t <a class="code" href="namespacemuduo_1_1ProcessInfo.html#a7313897d7ec7dc5bbdd8f3f88c449b7e">euid</a>();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="classmuduo_1_1Timestamp.html">Timestamp</a> <a class="code" href="namespacemuduo_1_1ProcessInfo.html#a3662fa984eef69a557c6d997aba58e18">startTime</a>();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="namespacemuduo_1_1ProcessInfo.html#af8d3ce061f87c1a208c8e164e9b69882">clockTicksPerSecond</a>();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="namespacemuduo_1_1ProcessInfo.html#a3aab01e3a27d7f88b7d8fffceb529c64">pageSize</a>();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="namespacemuduo_1_1ProcessInfo.html#aabe41272bf5623d260fe92399071ed4e">isDebugBuild</a>();  <span class="comment">// constexpr</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">string</span> <a class="code" href="namespacemuduo_1_1ProcessInfo.html#ac60f3a33a07318aa231cc3d07f6ee419">hostname</a>();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">string</span> <a class="code" href="namespacemuduo_1_1ProcessInfo.html#ac8a6ab8cb6657fc7ddba4a8be2f60e2b">procname</a>();</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="classmuduo_1_1StringPiece.html">StringPiece</a> <a class="code" href="namespacemuduo_1_1ProcessInfo.html#ac8a6ab8cb6657fc7ddba4a8be2f60e2b">procname</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; stat);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">string</span> <a class="code" href="namespacemuduo_1_1ProcessInfo.html#a930c5a6d17d6ba40f7011643f4442c41">procStatus</a>();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">string</span> <a class="code" href="namespacemuduo_1_1ProcessInfo.html#a8f557f94d9b8cdb55a8d21c5b6c70634">procStat</a>();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">string</span> <a class="code" href="namespacemuduo_1_1ProcessInfo.html#a7d3faa2d63f4cf7b8ba073a3daf7ffb1">threadStat</a>();</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">string</span> <a class="code" href="namespacemuduo_1_1ProcessInfo.html#acdf231e7f033258ea9e93f1a4d651c50">exePath</a>();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="namespacemuduo_1_1ProcessInfo.html#aa8e6192d04097a3864d8c07bf24e4ff9">openedFiles</a>();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="namespacemuduo_1_1ProcessInfo.html#a2bb52b7cbab50f7bc977048005845c67">maxOpenFiles</a>();</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structmuduo_1_1ProcessInfo_1_1CpuTime.html">   51</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structmuduo_1_1ProcessInfo_1_1CpuTime.html">CpuTime</a></div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  {</div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structmuduo_1_1ProcessInfo_1_1CpuTime.html#afa8d4e0eb7afbb352a903a1232687f4a">   53</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structmuduo_1_1ProcessInfo_1_1CpuTime.html#afa8d4e0eb7afbb352a903a1232687f4a">userSeconds</a>;</div><div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structmuduo_1_1ProcessInfo_1_1CpuTime.html#ab2589af68d8cd283041de10b63c6eb31">   54</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structmuduo_1_1ProcessInfo_1_1CpuTime.html#ab2589af68d8cd283041de10b63c6eb31">systemSeconds</a>;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structmuduo_1_1ProcessInfo_1_1CpuTime.html#a832b9a727992c901b09e084c145cd3a3">   56</a></span>&#160;    <a class="code" href="structmuduo_1_1ProcessInfo_1_1CpuTime.html#a832b9a727992c901b09e084c145cd3a3">CpuTime</a>() : userSeconds(0.0), systemSeconds(0.0) { }</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structmuduo_1_1ProcessInfo_1_1CpuTime.html#ae994bf616ecbe36d46839d0e62de0389">   58</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structmuduo_1_1ProcessInfo_1_1CpuTime.html#ae994bf616ecbe36d46839d0e62de0389">total</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> userSeconds + <a class="code" href="structmuduo_1_1ProcessInfo_1_1CpuTime.html#ab2589af68d8cd283041de10b63c6eb31">systemSeconds</a>; }</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  };</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="structmuduo_1_1ProcessInfo_1_1CpuTime.html">CpuTime</a> <a class="code" href="namespacemuduo_1_1ProcessInfo.html#a0e67cc8ad47ff86331b6d2a509d14648">cpuTime</a>();</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="namespacemuduo_1_1ProcessInfo.html#a120db223841da7c65566c1fb2a06befa">numThreads</a>();</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  std::vector&lt;pid_t&gt; <a class="code" href="namespacemuduo_1_1ProcessInfo.html#a360aafb2759971d7c8190b1a60f7dc03">threads</a>();</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}  <span class="comment">// namespace ProcessInfo</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}  <span class="comment">// namespace muduo</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif  // MUDUO_BASE_PROCESSINFO_H</span></div><div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_a120db223841da7c65566c1fb2a06befa"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#a120db223841da7c65566c1fb2a06befa">muduo::ProcessInfo::numThreads</a></div><div class="ttdeci">int numThreads()</div></div>
+<div class="ttc" id="Types_8h_html"><div class="ttname"><a href="Types_8h.html">Types.h</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_aa8e6192d04097a3864d8c07bf24e4ff9"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#aa8e6192d04097a3864d8c07bf24e4ff9">muduo::ProcessInfo::openedFiles</a></div><div class="ttdeci">int openedFiles()</div></div>
+<div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_a9b565d9cb6c35649f0feeeaa8b26dd7b"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#a9b565d9cb6c35649f0feeeaa8b26dd7b">muduo::ProcessInfo::pid</a></div><div class="ttdeci">pid_t pid()</div></div>
+<div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_a056245f62bbe6e8abdcd42171a432aac"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#a056245f62bbe6e8abdcd42171a432aac">muduo::ProcessInfo::uid</a></div><div class="ttdeci">uid_t uid()</div></div>
+<div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_a54e6907a19c94da2cf5db8dcad530262"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#a54e6907a19c94da2cf5db8dcad530262">muduo::ProcessInfo::username</a></div><div class="ttdeci">string username()</div></div>
+<div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_a8f557f94d9b8cdb55a8d21c5b6c70634"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#a8f557f94d9b8cdb55a8d21c5b6c70634">muduo::ProcessInfo::procStat</a></div><div class="ttdeci">string procStat()</div><div class="ttdoc">read /proc/self/stat </div></div>
+<div class="ttc" id="structmuduo_1_1ProcessInfo_1_1CpuTime_html_ae994bf616ecbe36d46839d0e62de0389"><div class="ttname"><a href="structmuduo_1_1ProcessInfo_1_1CpuTime.html#ae994bf616ecbe36d46839d0e62de0389">muduo::ProcessInfo::CpuTime::total</a></div><div class="ttdeci">double total() const</div><div class="ttdef"><b>Definition:</b> <a href="ProcessInfo_8h_source.html#l00058">ProcessInfo.h:58</a></div></div>
+<div class="ttc" id="classmuduo_1_1StringPiece_html"><div class="ttname"><a href="classmuduo_1_1StringPiece.html">muduo::StringPiece</a></div><div class="ttdef"><b>Definition:</b> <a href="StringPiece_8h_source.html#l00069">StringPiece.h:69</a></div></div>
+<div class="ttc" id="structmuduo_1_1ProcessInfo_1_1CpuTime_html_ab2589af68d8cd283041de10b63c6eb31"><div class="ttname"><a href="structmuduo_1_1ProcessInfo_1_1CpuTime.html#ab2589af68d8cd283041de10b63c6eb31">muduo::ProcessInfo::CpuTime::systemSeconds</a></div><div class="ttdeci">double systemSeconds</div><div class="ttdef"><b>Definition:</b> <a href="ProcessInfo_8h_source.html#l00054">ProcessInfo.h:54</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_a2bb52b7cbab50f7bc977048005845c67"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#a2bb52b7cbab50f7bc977048005845c67">muduo::ProcessInfo::maxOpenFiles</a></div><div class="ttdeci">int maxOpenFiles()</div></div>
+<div class="ttc" id="StringPiece_8h_html"><div class="ttname"><a href="StringPiece_8h.html">StringPiece.h</a></div></div>
+<div class="ttc" id="namespacemuduo_html"><div class="ttname"><a href="namespacemuduo.html">muduo</a></div><div class="ttdef"><b>Definition:</b> <a href="Acceptor_8h_source.html#l00010">Acceptor.h:10</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_a7d3faa2d63f4cf7b8ba073a3daf7ffb1"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#a7d3faa2d63f4cf7b8ba073a3daf7ffb1">muduo::ProcessInfo::threadStat</a></div><div class="ttdeci">string threadStat()</div><div class="ttdoc">read /proc/self/task/tid/stat </div></div>
+<div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_a7313897d7ec7dc5bbdd8f3f88c449b7e"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#a7313897d7ec7dc5bbdd8f3f88c449b7e">muduo::ProcessInfo::euid</a></div><div class="ttdeci">uid_t euid()</div></div>
+<div class="ttc" id="structmuduo_1_1ProcessInfo_1_1CpuTime_html_afa8d4e0eb7afbb352a903a1232687f4a"><div class="ttname"><a href="structmuduo_1_1ProcessInfo_1_1CpuTime.html#afa8d4e0eb7afbb352a903a1232687f4a">muduo::ProcessInfo::CpuTime::userSeconds</a></div><div class="ttdeci">double userSeconds</div><div class="ttdef"><b>Definition:</b> <a href="ProcessInfo_8h_source.html#l00053">ProcessInfo.h:53</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_a3662fa984eef69a557c6d997aba58e18"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#a3662fa984eef69a557c6d997aba58e18">muduo::ProcessInfo::startTime</a></div><div class="ttdeci">Timestamp startTime()</div></div>
+<div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_a360aafb2759971d7c8190b1a60f7dc03"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#a360aafb2759971d7c8190b1a60f7dc03">muduo::ProcessInfo::threads</a></div><div class="ttdeci">std::vector&lt; pid_t &gt; threads()</div></div>
+<div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_a930c5a6d17d6ba40f7011643f4442c41"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#a930c5a6d17d6ba40f7011643f4442c41">muduo::ProcessInfo::procStatus</a></div><div class="ttdeci">string procStatus()</div><div class="ttdoc">read /proc/self/status </div></div>
+<div class="ttc" id="Timestamp_8h_html"><div class="ttname"><a href="Timestamp_8h.html">Timestamp.h</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_af8d3ce061f87c1a208c8e164e9b69882"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#af8d3ce061f87c1a208c8e164e9b69882">muduo::ProcessInfo::clockTicksPerSecond</a></div><div class="ttdeci">int clockTicksPerSecond()</div></div>
+<div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_a0e67cc8ad47ff86331b6d2a509d14648"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#a0e67cc8ad47ff86331b6d2a509d14648">muduo::ProcessInfo::cpuTime</a></div><div class="ttdeci">CpuTime cpuTime()</div></div>
+<div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_ac8a6ab8cb6657fc7ddba4a8be2f60e2b"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#ac8a6ab8cb6657fc7ddba4a8be2f60e2b">muduo::ProcessInfo::procname</a></div><div class="ttdeci">string procname()</div></div>
+<div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_a3aab01e3a27d7f88b7d8fffceb529c64"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#a3aab01e3a27d7f88b7d8fffceb529c64">muduo::ProcessInfo::pageSize</a></div><div class="ttdeci">int pageSize()</div></div>
+<div class="ttc" id="structmuduo_1_1ProcessInfo_1_1CpuTime_html"><div class="ttname"><a href="structmuduo_1_1ProcessInfo_1_1CpuTime.html">muduo::ProcessInfo::CpuTime</a></div><div class="ttdef"><b>Definition:</b> <a href="ProcessInfo_8h_source.html#l00051">ProcessInfo.h:51</a></div></div>
+<div class="ttc" id="structmuduo_1_1ProcessInfo_1_1CpuTime_html_a832b9a727992c901b09e084c145cd3a3"><div class="ttname"><a href="structmuduo_1_1ProcessInfo_1_1CpuTime.html#a832b9a727992c901b09e084c145cd3a3">muduo::ProcessInfo::CpuTime::CpuTime</a></div><div class="ttdeci">CpuTime()</div><div class="ttdef"><b>Definition:</b> <a href="ProcessInfo_8h_source.html#l00056">ProcessInfo.h:56</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_af54b6cc2e94622bf45a9ced0093b7dae"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#af54b6cc2e94622bf45a9ced0093b7dae">muduo::ProcessInfo::pidString</a></div><div class="ttdeci">string pidString()</div></div>
+<div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_acdf231e7f033258ea9e93f1a4d651c50"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#acdf231e7f033258ea9e93f1a4d651c50">muduo::ProcessInfo::exePath</a></div><div class="ttdeci">string exePath()</div><div class="ttdoc">readlink /proc/self/exe </div></div>
+<div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_aabe41272bf5623d260fe92399071ed4e"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#aabe41272bf5623d260fe92399071ed4e">muduo::ProcessInfo::isDebugBuild</a></div><div class="ttdeci">bool isDebugBuild()</div></div>
+<div class="ttc" id="classmuduo_1_1Timestamp_html"><div class="ttname"><a href="classmuduo_1_1Timestamp.html">muduo::Timestamp</a></div><div class="ttdef"><b>Definition:</b> <a href="Timestamp_8h_source.html#l00023">Timestamp.h:23</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1ProcessInfo_html_ac60f3a33a07318aa231cc3d07f6ee419"><div class="ttname"><a href="namespacemuduo_1_1ProcessInfo.html#ac60f3a33a07318aa231cc3d07f6ee419">muduo::ProcessInfo::hostname</a></div><div class="ttdeci">string hostname()</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_e3b32e68f04aa7e841009dd52d1d0488.html">muduo</a></li><li class="navelem"><a class="el" href="dir_9dc812d0f010bb69297de7069e5ca985.html">base</a></li><li class="navelem"><a class="el" href="ProcessInfo_8h.html">ProcessInfo.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

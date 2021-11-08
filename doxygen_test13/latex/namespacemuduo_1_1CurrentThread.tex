@@ -1,0 +1,234 @@
+\hypertarget{namespacemuduo_1_1CurrentThread}{}\section{muduo\+:\+:Current\+Thread 命名空间参考}
+\label{namespacemuduo_1_1CurrentThread}\index{muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespacemuduo_1_1CurrentThread_a09cc852243e579266304c5e31f744929}{cache\+Tid} ()
+\item 
+int \hyperlink{namespacemuduo_1_1CurrentThread_a27129392a2d642e96188636257bf13ca}{tid} ()
+\item 
+const char $\ast$ \hyperlink{namespacemuduo_1_1CurrentThread_a66a1e1728583966e9568ae57562a6e93}{tid\+String} ()
+\item 
+int \hyperlink{namespacemuduo_1_1CurrentThread_a8f000c3381de23423f1c582b116f8b81}{tid\+String\+Length} ()
+\item 
+const char $\ast$ \hyperlink{namespacemuduo_1_1CurrentThread_adc8b0cfe3a876d8edf272f982ea2c014}{name} ()
+\item 
+bool \hyperlink{namespacemuduo_1_1CurrentThread_ad8869cd6e09d4440fae5d6698558b3a5}{is\+Main\+Thread} ()
+\item 
+void \hyperlink{namespacemuduo_1_1CurrentThread_ab625c2286c356d09b66b9ab043946fd1}{sleep\+Usec} (int64\+\_\+t usec)
+\item 
+string \hyperlink{namespacemuduo_1_1CurrentThread_adb3a86b79370bd58610e2b8942980edf}{stack\+Trace} (bool demangle)
+\end{DoxyCompactItemize}
+\subsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+thread int \hyperlink{namespacemuduo_1_1CurrentThread_a0ac6156a2e940999b6e5079f74aed168}{t\+\_\+cached\+Tid}
+\item 
+\+\_\+\+\_\+thread char \hyperlink{namespacemuduo_1_1CurrentThread_a2d20a2a5e4356ebe49586292d41e6194}{t\+\_\+tid\+String} \mbox{[}32\mbox{]}
+\item 
+\+\_\+\+\_\+thread int \hyperlink{namespacemuduo_1_1CurrentThread_a9c737bf86b45092ffa7d2eba19767a50}{t\+\_\+tid\+String\+Length}
+\item 
+\+\_\+\+\_\+thread const char $\ast$ \hyperlink{namespacemuduo_1_1CurrentThread_a34c6e52202ddb3c43a4af8ad4b36e3f9}{t\+\_\+thread\+Name}
+\end{DoxyCompactItemize}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{namespacemuduo_1_1CurrentThread_a09cc852243e579266304c5e31f744929}\label{namespacemuduo_1_1CurrentThread_a09cc852243e579266304c5e31f744929}} 
+\index{muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}!cache\+Tid@{cache\+Tid}}
+\index{cache\+Tid@{cache\+Tid}!muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}}
+\subsubsection{\texorpdfstring{cache\+Tid()}{cacheTid()}}
+{\footnotesize\ttfamily void muduo\+::\+Current\+Thread\+::cache\+Tid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+参考自 tid().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1CurrentThread_a09cc852243e579266304c5e31f744929_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1CurrentThread_ad8869cd6e09d4440fae5d6698558b3a5}\label{namespacemuduo_1_1CurrentThread_ad8869cd6e09d4440fae5d6698558b3a5}} 
+\index{muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}!is\+Main\+Thread@{is\+Main\+Thread}}
+\index{is\+Main\+Thread@{is\+Main\+Thread}!muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}}
+\subsubsection{\texorpdfstring{is\+Main\+Thread()}{isMainThread()}}
+{\footnotesize\ttfamily bool muduo\+::\+Current\+Thread\+::is\+Main\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+参考自 name().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{namespacemuduo_1_1CurrentThread_ad8869cd6e09d4440fae5d6698558b3a5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1CurrentThread_adc8b0cfe3a876d8edf272f982ea2c014}\label{namespacemuduo_1_1CurrentThread_adc8b0cfe3a876d8edf272f982ea2c014}} 
+\index{muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}!name@{name}}
+\index{name@{name}!muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}}
+\subsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily const char$\ast$ muduo\+::\+Current\+Thread\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Current\+Thread.\+h 第 41 行定义.
+
+
+
+参考 is\+Main\+Thread(), sleep\+Usec(), stack\+Trace() , 以及 t\+\_\+thread\+Name.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{namespacemuduo_1_1CurrentThread_adc8b0cfe3a876d8edf272f982ea2c014_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1CurrentThread_ab625c2286c356d09b66b9ab043946fd1}\label{namespacemuduo_1_1CurrentThread_ab625c2286c356d09b66b9ab043946fd1}} 
+\index{muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}!sleep\+Usec@{sleep\+Usec}}
+\index{sleep\+Usec@{sleep\+Usec}!muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}}
+\subsubsection{\texorpdfstring{sleep\+Usec()}{sleepUsec()}}
+{\footnotesize\ttfamily void muduo\+::\+Current\+Thread\+::sleep\+Usec (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{usec }\end{DoxyParamCaption})}
+
+
+
+参考自 name().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{namespacemuduo_1_1CurrentThread_ab625c2286c356d09b66b9ab043946fd1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1CurrentThread_adb3a86b79370bd58610e2b8942980edf}\label{namespacemuduo_1_1CurrentThread_adb3a86b79370bd58610e2b8942980edf}} 
+\index{muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}!stack\+Trace@{stack\+Trace}}
+\index{stack\+Trace@{stack\+Trace}!muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}}
+\subsubsection{\texorpdfstring{stack\+Trace()}{stackTrace()}}
+{\footnotesize\ttfamily string muduo\+::\+Current\+Thread\+::stack\+Trace (\begin{DoxyParamCaption}\item[{bool}]{demangle }\end{DoxyParamCaption})}
+
+
+
+参考自 name().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{namespacemuduo_1_1CurrentThread_adb3a86b79370bd58610e2b8942980edf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1CurrentThread_a27129392a2d642e96188636257bf13ca}\label{namespacemuduo_1_1CurrentThread_a27129392a2d642e96188636257bf13ca}} 
+\index{muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}!tid@{tid}}
+\index{tid@{tid}!muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}}
+\subsubsection{\texorpdfstring{tid()}{tid()}}
+{\footnotesize\ttfamily int muduo\+::\+Current\+Thread\+::tid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Current\+Thread.\+h 第 22 行定义.
+
+
+
+参考 cache\+Tid() , 以及 t\+\_\+cached\+Tid.
+
+
+
+参考自 Event\+Loop\+::abort\+Not\+In\+Loop\+Thread(), Event\+Loop\+::is\+In\+Loop\+Thread(), on\+Connection() , 以及 on\+Message().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{namespacemuduo_1_1CurrentThread_a27129392a2d642e96188636257bf13ca_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1CurrentThread_a27129392a2d642e96188636257bf13ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1CurrentThread_a66a1e1728583966e9568ae57562a6e93}\label{namespacemuduo_1_1CurrentThread_a66a1e1728583966e9568ae57562a6e93}} 
+\index{muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}!tid\+String@{tid\+String}}
+\index{tid\+String@{tid\+String}!muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}}
+\subsubsection{\texorpdfstring{tid\+String()}{tidString()}}
+{\footnotesize\ttfamily const char$\ast$ muduo\+::\+Current\+Thread\+::tid\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Current\+Thread.\+h 第 31 行定义.
+
+
+
+参考 t\+\_\+tid\+String.
+
+\mbox{\Hypertarget{namespacemuduo_1_1CurrentThread_a8f000c3381de23423f1c582b116f8b81}\label{namespacemuduo_1_1CurrentThread_a8f000c3381de23423f1c582b116f8b81}} 
+\index{muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}!tid\+String\+Length@{tid\+String\+Length}}
+\index{tid\+String\+Length@{tid\+String\+Length}!muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}}
+\subsubsection{\texorpdfstring{tid\+String\+Length()}{tidStringLength()}}
+{\footnotesize\ttfamily int muduo\+::\+Current\+Thread\+::tid\+String\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Current\+Thread.\+h 第 36 行定义.
+
+
+
+参考 t\+\_\+tid\+String\+Length.
+
+
+
+\subsection{变量说明}
+\mbox{\Hypertarget{namespacemuduo_1_1CurrentThread_a0ac6156a2e940999b6e5079f74aed168}\label{namespacemuduo_1_1CurrentThread_a0ac6156a2e940999b6e5079f74aed168}} 
+\index{muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}!t\+\_\+cached\+Tid@{t\+\_\+cached\+Tid}}
+\index{t\+\_\+cached\+Tid@{t\+\_\+cached\+Tid}!muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}}
+\subsubsection{\texorpdfstring{t\+\_\+cached\+Tid}{t\_cachedTid}}
+{\footnotesize\ttfamily \+\_\+\+\_\+thread int t\+\_\+cached\+Tid}
+
+
+
+参考自 tid().
+
+\mbox{\Hypertarget{namespacemuduo_1_1CurrentThread_a34c6e52202ddb3c43a4af8ad4b36e3f9}\label{namespacemuduo_1_1CurrentThread_a34c6e52202ddb3c43a4af8ad4b36e3f9}} 
+\index{muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}!t\+\_\+thread\+Name@{t\+\_\+thread\+Name}}
+\index{t\+\_\+thread\+Name@{t\+\_\+thread\+Name}!muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}}
+\subsubsection{\texorpdfstring{t\+\_\+thread\+Name}{t\_threadName}}
+{\footnotesize\ttfamily \+\_\+\+\_\+thread const char$\ast$ t\+\_\+thread\+Name}
+
+
+
+参考自 name().
+
+\mbox{\Hypertarget{namespacemuduo_1_1CurrentThread_a2d20a2a5e4356ebe49586292d41e6194}\label{namespacemuduo_1_1CurrentThread_a2d20a2a5e4356ebe49586292d41e6194}} 
+\index{muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}!t\+\_\+tid\+String@{t\+\_\+tid\+String}}
+\index{t\+\_\+tid\+String@{t\+\_\+tid\+String}!muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}}
+\subsubsection{\texorpdfstring{t\+\_\+tid\+String}{t\_tidString}}
+{\footnotesize\ttfamily \+\_\+\+\_\+thread char t\+\_\+tid\+String\mbox{[}32\mbox{]}}
+
+
+
+参考自 tid\+String().
+
+\mbox{\Hypertarget{namespacemuduo_1_1CurrentThread_a9c737bf86b45092ffa7d2eba19767a50}\label{namespacemuduo_1_1CurrentThread_a9c737bf86b45092ffa7d2eba19767a50}} 
+\index{muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}!t\+\_\+tid\+String\+Length@{t\+\_\+tid\+String\+Length}}
+\index{t\+\_\+tid\+String\+Length@{t\+\_\+tid\+String\+Length}!muduo\+::\+Current\+Thread@{muduo\+::\+Current\+Thread}}
+\subsubsection{\texorpdfstring{t\+\_\+tid\+String\+Length}{t\_tidStringLength}}
+{\footnotesize\ttfamily \+\_\+\+\_\+thread int t\+\_\+tid\+String\+Length}
+
+
+
+参考自 tid\+String\+Length().
+

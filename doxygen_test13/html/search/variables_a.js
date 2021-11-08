@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['kbuffersize',['kBufferSize',['../classmuduo_1_1FileUtil_1_1ReadSmallFile.html#a8b423a805589152d71009c594ad25ab3',1,'muduo::FileUtil::ReadSmallFile']]],
+  ['kcheapprepend',['kCheapPrepend',['../classmuduo_1_1Buffer.html#a7c7e801837b45cd542d00cc5ec88dcb1',1,'muduo::Buffer::kCheapPrepend()'],['../classmuduo_1_1net_1_1Buffer.html#a7c7e801837b45cd542d00cc5ec88dcb1',1,'muduo::net::Buffer::kCheapPrepend()']]],
+  ['kcrlf',['kCRLF',['../classmuduo_1_1net_1_1Buffer.html#aba43e9a92549451389054f6cd4aec2b4',1,'muduo::net::Buffer']]],
+  ['kdaysperweek',['kDaysPerWeek',['../classmuduo_1_1Date.html#af827c6ba7aa684c3b7b969e412cdaf62',1,'muduo::Date']]],
+  ['kinaddrany',['kInaddrAny',['../InetAddress_8cc.html#a5d7bee25b99b4514b5f278c1515cbe3f',1,'InetAddress.cc']]],
+  ['kiniteventlistsize',['kInitEventListSize',['../classmuduo_1_1EPoller.html#a926125e406052891f69477342de6275f',1,'muduo::EPoller']]],
+  ['kinitialsize',['kInitialSize',['../classmuduo_1_1Buffer.html#a50181a12c6e534352c6c3cf9e0d8b331',1,'muduo::Buffer::kInitialSize()'],['../classmuduo_1_1net_1_1Buffer.html#a50181a12c6e534352c6c3cf9e0d8b331',1,'muduo::net::Buffer::kInitialSize()']]],
+  ['kinitretrydelayms',['kInitRetryDelayMs',['../classmuduo_1_1Connector.html#abaa28ed649f43db991c045b039984aa2',1,'muduo::Connector']]],
+  ['kjuliandayof1970_5f01_5f01',['kJulianDayOf1970_01_01',['../classmuduo_1_1Date.html#a49e2c65ade1eb84c87543cb878f5ae13',1,'muduo::Date']]],
+  ['klargebuffer',['kLargeBuffer',['../namespacemuduo_1_1detail.html#a72d89caa2e467f089bb6cc480d73b884',1,'muduo::detail']]],
+  ['kmaxnumericsize',['kMaxNumericSize',['../classmuduo_1_1LogStream.html#a4f13d0c6eced96a9efd6622c16498cef',1,'muduo::LogStream']]],
+  ['kmaxretrydelayms',['kMaxRetryDelayMs',['../classmuduo_1_1Connector.html#a4238c23fd75230d429c3273ef4a91bef',1,'muduo::Connector']]],
+  ['kmicrosecondspersecond',['kMicroSecondsPerSecond',['../classmuduo_1_1Timestamp.html#a2659197720e28bf9db3631a73f16f7ff',1,'muduo::Timestamp']]],
+  ['knoneevent',['kNoneEvent',['../classmuduo_1_1Channel.html#a7873ae2887674cb643986d9f04745444',1,'muduo::Channel::kNoneEvent()'],['../classmuduo_1_1net_1_1Channel.html#a7873ae2887674cb643986d9f04745444',1,'muduo::net::Channel::kNoneEvent()']]],
+  ['kpolltimems',['kPollTimeMs',['../EventLoop_8cc.html#aadf64cafb3b17c5f9fd42db3c481210d',1,'EventLoop.cc']]],
+  ['kreadevent',['kReadEvent',['../classmuduo_1_1Channel.html#a7a33491041233f79f0686805e1844694',1,'muduo::Channel::kReadEvent()'],['../classmuduo_1_1net_1_1Channel.html#a7a33491041233f79f0686805e1844694',1,'muduo::net::Channel::kReadEvent()']]],
+  ['krollperseconds_5f',['kRollPerSeconds_',['../classmuduo_1_1LogFile.html#aaabf583843acb84a712a959bc753a1df',1,'muduo::LogFile']]],
+  ['ksmallbuffer',['kSmallBuffer',['../namespacemuduo_1_1detail.html#a01441c3dba82e5d4bad1ce2b39ff576b',1,'muduo::detail']]],
+  ['kwriteevent',['kWriteEvent',['../classmuduo_1_1Channel.html#a050e3f1da6130199bfa2619a60e43f3b',1,'muduo::Channel::kWriteEvent()'],['../classmuduo_1_1net_1_1Channel.html#a050e3f1da6130199bfa2619a60e43f3b',1,'muduo::net::Channel::kWriteEvent()']]]
+];

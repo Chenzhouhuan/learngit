@@ -1,0 +1,218 @@
+\hypertarget{classmuduo_1_1Condition}{}\section{Condition类 参考}
+\label{classmuduo_1_1Condition}\index{Condition@{Condition}}
+
+
+{\ttfamily \#include $<$Condition.\+h$>$}
+
+
+
+类 Condition 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classmuduo_1_1Condition__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Condition 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classmuduo_1_1Condition__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1Condition_a001aec23fe5b8a6bc3b6ec4b6b895142}{Condition} (Mutex\+Lock \&mutex)
+\item 
+\hyperlink{classmuduo_1_1Condition_a4fdcd7a3b5f12ae38bd90bb95adf8388}{$\sim$\+Condition} ()
+\item 
+void \hyperlink{classmuduo_1_1Condition_aa3b21853f890838c88d047d6c2786917}{wait} ()
+\item 
+bool \hyperlink{classmuduo_1_1Condition_a73adc43213ab6f784ca7c47923907ac2}{wait\+For\+Seconds} (double seconds)
+\item 
+void \hyperlink{classmuduo_1_1Condition_a7ff19734eb024bd6f3e2ad95647b1b27}{notify} ()
+\item 
+void \hyperlink{classmuduo_1_1Condition_ae01f53e9933a1e6e4742d8d889ead690}{notify\+All} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+Mutex\+Lock \& \hyperlink{classmuduo_1_1Condition_a06a4780af4c6dd060869c14027ee8055}{mutex\+\_\+}
+\item 
+pthread\+\_\+cond\+\_\+t \hyperlink{classmuduo_1_1Condition_a092da37dcd38b596795e369da99d2b82}{pcond\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+
+
+在文件 Condition.\+h 第 16 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Condition_a001aec23fe5b8a6bc3b6ec4b6b895142}\label{classmuduo_1_1Condition_a001aec23fe5b8a6bc3b6ec4b6b895142}} 
+\index{muduo\+::\+Condition@{muduo\+::\+Condition}!Condition@{Condition}}
+\index{Condition@{Condition}!muduo\+::\+Condition@{muduo\+::\+Condition}}
+\subsubsection{\texorpdfstring{Condition()}{Condition()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Condition}{Condition} (\begin{DoxyParamCaption}\item[{Mutex\+Lock \&}]{mutex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+在文件 Condition.\+h 第 19 行定义.
+
+
+
+参考 M\+C\+H\+E\+CK , 以及 Condition\+::pcond\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1Condition_a4fdcd7a3b5f12ae38bd90bb95adf8388}\label{classmuduo_1_1Condition_a4fdcd7a3b5f12ae38bd90bb95adf8388}} 
+\index{muduo\+::\+Condition@{muduo\+::\+Condition}!````~Condition@{$\sim$\+Condition}}
+\index{````~Condition@{$\sim$\+Condition}!muduo\+::\+Condition@{muduo\+::\+Condition}}
+\subsubsection{\texorpdfstring{$\sim$\+Condition()}{~Condition()}}
+{\footnotesize\ttfamily $\sim$\hyperlink{classmuduo_1_1Condition}{Condition} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Condition.\+h 第 25 行定义.
+
+
+
+参考 M\+C\+H\+E\+CK , 以及 Condition\+::pcond\+\_\+.
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Condition_a7ff19734eb024bd6f3e2ad95647b1b27}\label{classmuduo_1_1Condition_a7ff19734eb024bd6f3e2ad95647b1b27}} 
+\index{muduo\+::\+Condition@{muduo\+::\+Condition}!notify@{notify}}
+\index{notify@{notify}!muduo\+::\+Condition@{muduo\+::\+Condition}}
+\subsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily void notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Condition.\+h 第 39 行定义.
+
+
+
+参考 M\+C\+H\+E\+CK , 以及 Condition\+::pcond\+\_\+.
+
+
+
+参考自 Event\+Loop\+Thread\+::thread\+Func().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{classmuduo_1_1Condition_a7ff19734eb024bd6f3e2ad95647b1b27_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Condition_ae01f53e9933a1e6e4742d8d889ead690}\label{classmuduo_1_1Condition_ae01f53e9933a1e6e4742d8d889ead690}} 
+\index{muduo\+::\+Condition@{muduo\+::\+Condition}!notify\+All@{notify\+All}}
+\index{notify\+All@{notify\+All}!muduo\+::\+Condition@{muduo\+::\+Condition}}
+\subsubsection{\texorpdfstring{notify\+All()}{notifyAll()}}
+{\footnotesize\ttfamily void notify\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Condition.\+h 第 44 行定义.
+
+
+
+参考 M\+C\+H\+E\+CK , 以及 Condition\+::pcond\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1Condition_aa3b21853f890838c88d047d6c2786917}\label{classmuduo_1_1Condition_aa3b21853f890838c88d047d6c2786917}} 
+\index{muduo\+::\+Condition@{muduo\+::\+Condition}!wait@{wait}}
+\index{wait@{wait}!muduo\+::\+Condition@{muduo\+::\+Condition}}
+\subsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily void wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Condition.\+h 第 30 行定义.
+
+
+
+参考 M\+C\+H\+E\+CK, Condition\+::mutex\+\_\+, Condition\+::pcond\+\_\+ , 以及 Condition\+::wait\+For\+Seconds().
+
+
+
+参考自 Event\+Loop\+Thread\+::start\+Loop().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classmuduo_1_1Condition_aa3b21853f890838c88d047d6c2786917_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Condition_aa3b21853f890838c88d047d6c2786917_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Condition_a73adc43213ab6f784ca7c47923907ac2}\label{classmuduo_1_1Condition_a73adc43213ab6f784ca7c47923907ac2}} 
+\index{muduo\+::\+Condition@{muduo\+::\+Condition}!wait\+For\+Seconds@{wait\+For\+Seconds}}
+\index{wait\+For\+Seconds@{wait\+For\+Seconds}!muduo\+::\+Condition@{muduo\+::\+Condition}}
+\subsubsection{\texorpdfstring{wait\+For\+Seconds()}{waitForSeconds()}}
+{\footnotesize\ttfamily bool wait\+For\+Seconds (\begin{DoxyParamCaption}\item[{double}]{seconds }\end{DoxyParamCaption})}
+
+
+
+参考自 Condition\+::wait().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Condition_a73adc43213ab6f784ca7c47923907ac2_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1Condition_a06a4780af4c6dd060869c14027ee8055}\label{classmuduo_1_1Condition_a06a4780af4c6dd060869c14027ee8055}} 
+\index{muduo\+::\+Condition@{muduo\+::\+Condition}!mutex\+\_\+@{mutex\+\_\+}}
+\index{mutex\+\_\+@{mutex\+\_\+}!muduo\+::\+Condition@{muduo\+::\+Condition}}
+\subsubsection{\texorpdfstring{mutex\+\_\+}{mutex\_}}
+{\footnotesize\ttfamily Mutex\+Lock\& mutex\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Condition.\+h 第 50 行定义.
+
+
+
+参考自 Condition\+::wait().
+
+\mbox{\Hypertarget{classmuduo_1_1Condition_a092da37dcd38b596795e369da99d2b82}\label{classmuduo_1_1Condition_a092da37dcd38b596795e369da99d2b82}} 
+\index{muduo\+::\+Condition@{muduo\+::\+Condition}!pcond\+\_\+@{pcond\+\_\+}}
+\index{pcond\+\_\+@{pcond\+\_\+}!muduo\+::\+Condition@{muduo\+::\+Condition}}
+\subsubsection{\texorpdfstring{pcond\+\_\+}{pcond\_}}
+{\footnotesize\ttfamily pthread\+\_\+cond\+\_\+t pcond\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Condition.\+h 第 51 行定义.
+
+
+
+参考自 Condition\+::\+Condition(), Condition\+::notify(), Condition\+::notify\+All(), Condition\+::wait() , 以及 Condition\+::$\sim$\+Condition().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/muduo/base/\hyperlink{Condition_8h}{Condition.\+h}\end{DoxyCompactItemize}

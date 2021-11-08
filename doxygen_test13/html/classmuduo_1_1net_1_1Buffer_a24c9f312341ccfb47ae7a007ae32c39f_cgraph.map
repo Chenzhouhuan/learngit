@@ -1,0 +1,9 @@
+<map id="readInt8" name="readInt8">
+<area shape="rect" id="node2" href="$classmuduo_1_1net_1_1Buffer.html#a28a767d788ebbb53bef6c939cfa8b5fb" title="peekInt8" alt="" coords="139,56,218,83"/>
+<area shape="rect" id="node6" href="$classmuduo_1_1net_1_1Buffer.html#a4605c83f07f06cc12d0ab3a2d54be43e" title="retrieveInt8" alt="" coords="129,107,228,133"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1net_1_1Buffer.html#ad1339d8b1a42e9762ae6cd3add003706" title="peek" alt="" coords="285,5,340,32"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1net_1_1Buffer.html#afba1d23196411daa43950fdbbff6d724" title="readableBytes" alt="" coords="397,56,513,83"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1net_1_1Buffer.html#ad431daee7daddf53f8aca682ddf3c940" title="begin" alt="" coords="426,5,485,32"/>
+<area shape="rect" id="node7" href="$classmuduo_1_1net_1_1Buffer.html#a25a9cdb4fcb89f6e3ff071517bdc09e8" title="retrieve" alt="" coords="276,107,349,133"/>
+<area shape="rect" id="node8" href="$classmuduo_1_1net_1_1Buffer.html#af505ce71f8935bcfaa932d304c295173" title="retrieveAll" alt="" coords="410,107,501,133"/>
+</map>

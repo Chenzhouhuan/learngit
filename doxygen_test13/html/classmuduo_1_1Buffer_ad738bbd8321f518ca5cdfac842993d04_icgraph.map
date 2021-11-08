@@ -1,0 +1,7 @@
+<map id="prependableBytes" name="prependableBytes">
+<area shape="rect" id="node2" href="$classmuduo_1_1Buffer.html#a47587d18a394fb4b9508c61e3d5f0260" title="Buffer" alt="" coords="212,5,273,32"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1Buffer.html#a83d5a5ce302569b35df7743314578791" title="makeSpace" alt="" coords="193,56,292,83"/>
+<area shape="rect" id="node6" href="$classmuduo_1_1Buffer.html#a3099092e4d4138f55fb825a50f50f24b" title="prepend" alt="" coords="205,107,280,133"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1Buffer.html#a1185aa5bbe069f50c8d46a9f8d5aac32" title="ensureWritableBytes" alt="" coords="340,56,497,83"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1Buffer.html#adece1d853752b95184d19c78228a0c39" title="append" alt="" coords="545,56,616,83"/>
+</map>

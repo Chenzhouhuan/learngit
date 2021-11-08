@@ -1,0 +1,8 @@
+<map id="writableBytes" name="writableBytes">
+<area shape="rect" id="node2" href="$classmuduo_1_1net_1_1Buffer.html#a3189a466a75c249c9371b74325e4fc53" title="Buffer" alt="" coords="184,5,245,32"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1net_1_1Buffer.html#a1185aa5bbe069f50c8d46a9f8d5aac32" title="ensureWritableBytes" alt="" coords="312,107,469,133"/>
+<area shape="rect" id="node6" href="$classmuduo_1_1net_1_1Buffer.html#ae29d7ca8954d0ec7da6363221c80a245" title="hasWritten" alt="" coords="345,157,437,184"/>
+<area shape="rect" id="node7" href="$classmuduo_1_1net_1_1Buffer.html#a83d5a5ce302569b35df7743314578791" title="makeSpace" alt="" coords="165,107,264,133"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1net_1_1Buffer.html#adece1d853752b95184d19c78228a0c39" title="append" alt="" coords="517,157,588,184"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1net_1_1Buffer.html#a69095875ff26fe7eff163afde6eb7c9e" title="shrink" alt="" coords="521,107,584,133"/>
+</map>

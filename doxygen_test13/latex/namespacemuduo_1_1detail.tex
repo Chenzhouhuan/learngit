@@ -1,0 +1,231 @@
+\hypertarget{namespacemuduo_1_1detail}{}\section{muduo\+:\+:detail 命名空间参考}
+\label{namespacemuduo_1_1detail}\index{muduo\+::detail@{muduo\+::detail}}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmuduo_1_1detail_1_1AtomicIntegerT}{Atomic\+IntegerT}
+\item 
+class \hyperlink{classmuduo_1_1detail_1_1FixedBuffer}{Fixed\+Buffer}
+\item 
+struct \hyperlink{structmuduo_1_1detail_1_1has__no__destroy}{has\+\_\+no\+\_\+destroy}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespacemuduo_1_1detail_ae3e6bfc20f665df13eeb2ebc3c91abce}{remove\+Connection} (\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$loop, const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{Tcp\+Connection\+Ptr} \&conn)
+\item 
+void \hyperlink{namespacemuduo_1_1detail_ab9f5e26fda4b27382acd5a0740a83137}{remove\+Connector} (const \hyperlink{namespacemuduo_a144f8adea97b4c9ac75c439f6d87ae29}{Connector\+Ptr} \&connector)
+\item 
+int \hyperlink{namespacemuduo_1_1detail_af278c30c3aaaf596fb0d2211bac2ff52}{create\+Timerfd} ()
+\item 
+struct timespec \hyperlink{namespacemuduo_1_1detail_a14924335d79da967a69c650af3002c77}{how\+Much\+Time\+From\+Now} (\hyperlink{classmuduo_1_1Timestamp}{Timestamp} when)
+\item 
+void \hyperlink{namespacemuduo_1_1detail_a08d79eafe298b7df1941adb4105bf75a}{read\+Timerfd} (int timerfd, \hyperlink{classmuduo_1_1Timestamp}{Timestamp} now)
+\item 
+void \hyperlink{namespacemuduo_1_1detail_a2a30bb501e8d9bb2da91ab353d1bc6fd}{reset\+Timerfd} (int timerfd, \hyperlink{classmuduo_1_1Timestamp}{Timestamp} expiration)
+\end{DoxyCompactItemize}
+\subsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{namespacemuduo_1_1detail_a01441c3dba82e5d4bad1ce2b39ff576b}{k\+Small\+Buffer} = 4000
+\item 
+const int \hyperlink{namespacemuduo_1_1detail_a72d89caa2e467f089bb6cc480d73b884}{k\+Large\+Buffer} = 4000$\ast$1000
+\end{DoxyCompactItemize}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{namespacemuduo_1_1detail_af278c30c3aaaf596fb0d2211bac2ff52}\label{namespacemuduo_1_1detail_af278c30c3aaaf596fb0d2211bac2ff52}} 
+\index{muduo\+::detail@{muduo\+::detail}!create\+Timerfd@{create\+Timerfd}}
+\index{create\+Timerfd@{create\+Timerfd}!muduo\+::detail@{muduo\+::detail}}
+\subsubsection{\texorpdfstring{create\+Timerfd()}{createTimerfd()}}
+{\footnotesize\ttfamily int muduo\+::detail\+::create\+Timerfd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 Timer\+Queue.\+cc 第 17 行定义.
+
+
+
+参考 L\+O\+G\+\_\+\+S\+Y\+S\+F\+A\+T\+AL.
+
+\mbox{\Hypertarget{namespacemuduo_1_1detail_a14924335d79da967a69c650af3002c77}\label{namespacemuduo_1_1detail_a14924335d79da967a69c650af3002c77}} 
+\index{muduo\+::detail@{muduo\+::detail}!how\+Much\+Time\+From\+Now@{how\+Much\+Time\+From\+Now}}
+\index{how\+Much\+Time\+From\+Now@{how\+Much\+Time\+From\+Now}!muduo\+::detail@{muduo\+::detail}}
+\subsubsection{\texorpdfstring{how\+Much\+Time\+From\+Now()}{howMuchTimeFromNow()}}
+{\footnotesize\ttfamily struct timespec muduo\+::detail\+::how\+Much\+Time\+From\+Now (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Timestamp}{Timestamp}}]{when }\end{DoxyParamCaption})}
+
+
+
+在文件 Timer\+Queue.\+cc 第 26 行定义.
+
+
+
+参考 Timestamp\+::k\+Micro\+Seconds\+Per\+Second, Timestamp\+::micro\+Seconds\+Since\+Epoch() , 以及 Timestamp\+::now().
+
+
+
+参考自 reset\+Timerfd().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1detail_a14924335d79da967a69c650af3002c77_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1detail_a14924335d79da967a69c650af3002c77_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1detail_a08d79eafe298b7df1941adb4105bf75a}\label{namespacemuduo_1_1detail_a08d79eafe298b7df1941adb4105bf75a}} 
+\index{muduo\+::detail@{muduo\+::detail}!read\+Timerfd@{read\+Timerfd}}
+\index{read\+Timerfd@{read\+Timerfd}!muduo\+::detail@{muduo\+::detail}}
+\subsubsection{\texorpdfstring{read\+Timerfd()}{readTimerfd()}}
+{\footnotesize\ttfamily void muduo\+::detail\+::read\+Timerfd (\begin{DoxyParamCaption}\item[{int}]{timerfd,  }\item[{\hyperlink{classmuduo_1_1Timestamp}{Timestamp}}]{now }\end{DoxyParamCaption})}
+
+
+
+在文件 Timer\+Queue.\+cc 第 37 行定义.
+
+
+
+参考 L\+O\+G\+\_\+\+E\+R\+R\+OR, L\+O\+G\+\_\+\+T\+R\+A\+CE , 以及 Timestamp\+::to\+String().
+
+
+
+参考自 Timer\+Queue\+::handle\+Read().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{namespacemuduo_1_1detail_a08d79eafe298b7df1941adb4105bf75a_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1detail_a08d79eafe298b7df1941adb4105bf75a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1detail_ae3e6bfc20f665df13eeb2ebc3c91abce}\label{namespacemuduo_1_1detail_ae3e6bfc20f665df13eeb2ebc3c91abce}} 
+\index{muduo\+::detail@{muduo\+::detail}!remove\+Connection@{remove\+Connection}}
+\index{remove\+Connection@{remove\+Connection}!muduo\+::detail@{muduo\+::detail}}
+\subsubsection{\texorpdfstring{remove\+Connection()}{removeConnection()}}
+{\footnotesize\ttfamily void muduo\+::detail\+::remove\+Connection (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1EventLoop}{Event\+Loop} $\ast$}]{loop,  }\item[{const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{Tcp\+Connection\+Ptr} \&}]{conn }\end{DoxyParamCaption})}
+
+
+
+在文件 Tcp\+Client.\+cc 第 19 行定义.
+
+
+
+参考 Tcp\+Connection\+::connect\+Destoryed() , 以及 Event\+Loop\+::queue\+In\+Loop().
+
+
+
+参考自 Tcp\+Client\+::$\sim$\+Tcp\+Client().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1detail_ae3e6bfc20f665df13eeb2ebc3c91abce_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{namespacemuduo_1_1detail_ae3e6bfc20f665df13eeb2ebc3c91abce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1detail_ab9f5e26fda4b27382acd5a0740a83137}\label{namespacemuduo_1_1detail_ab9f5e26fda4b27382acd5a0740a83137}} 
+\index{muduo\+::detail@{muduo\+::detail}!remove\+Connector@{remove\+Connector}}
+\index{remove\+Connector@{remove\+Connector}!muduo\+::detail@{muduo\+::detail}}
+\subsubsection{\texorpdfstring{remove\+Connector()}{removeConnector()}}
+{\footnotesize\ttfamily void muduo\+::detail\+::remove\+Connector (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemuduo_a144f8adea97b4c9ac75c439f6d87ae29}{Connector\+Ptr} \&}]{connector }\end{DoxyParamCaption})}
+
+
+
+在文件 Tcp\+Client.\+cc 第 23 行定义.
+
+
+
+参考自 Tcp\+Client\+::$\sim$\+Tcp\+Client().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{namespacemuduo_1_1detail_ab9f5e26fda4b27382acd5a0740a83137_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1detail_a2a30bb501e8d9bb2da91ab353d1bc6fd}\label{namespacemuduo_1_1detail_a2a30bb501e8d9bb2da91ab353d1bc6fd}} 
+\index{muduo\+::detail@{muduo\+::detail}!reset\+Timerfd@{reset\+Timerfd}}
+\index{reset\+Timerfd@{reset\+Timerfd}!muduo\+::detail@{muduo\+::detail}}
+\subsubsection{\texorpdfstring{reset\+Timerfd()}{resetTimerfd()}}
+{\footnotesize\ttfamily void muduo\+::detail\+::reset\+Timerfd (\begin{DoxyParamCaption}\item[{int}]{timerfd,  }\item[{\hyperlink{classmuduo_1_1Timestamp}{Timestamp}}]{expiration }\end{DoxyParamCaption})}
+
+
+
+在文件 Timer\+Queue.\+cc 第 46 行定义.
+
+
+
+参考 how\+Much\+Time\+From\+Now() , 以及 L\+O\+G\+\_\+\+S\+Y\+S\+E\+RR.
+
+
+
+参考自 Timer\+Queue\+::add\+Timer\+In\+Loop() , 以及 Timer\+Queue\+::reset().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1detail_a2a30bb501e8d9bb2da91ab353d1bc6fd_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1detail_a2a30bb501e8d9bb2da91ab353d1bc6fd_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{变量说明}
+\mbox{\Hypertarget{namespacemuduo_1_1detail_a72d89caa2e467f089bb6cc480d73b884}\label{namespacemuduo_1_1detail_a72d89caa2e467f089bb6cc480d73b884}} 
+\index{muduo\+::detail@{muduo\+::detail}!k\+Large\+Buffer@{k\+Large\+Buffer}}
+\index{k\+Large\+Buffer@{k\+Large\+Buffer}!muduo\+::detail@{muduo\+::detail}}
+\subsubsection{\texorpdfstring{k\+Large\+Buffer}{kLargeBuffer}}
+{\footnotesize\ttfamily const int k\+Large\+Buffer = 4000$\ast$1000}
+
+
+
+在文件 Log\+Stream.\+h 第 22 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_1_1detail_a01441c3dba82e5d4bad1ce2b39ff576b}\label{namespacemuduo_1_1detail_a01441c3dba82e5d4bad1ce2b39ff576b}} 
+\index{muduo\+::detail@{muduo\+::detail}!k\+Small\+Buffer@{k\+Small\+Buffer}}
+\index{k\+Small\+Buffer@{k\+Small\+Buffer}!muduo\+::detail@{muduo\+::detail}}
+\subsubsection{\texorpdfstring{k\+Small\+Buffer}{kSmallBuffer}}
+{\footnotesize\ttfamily const int k\+Small\+Buffer = 4000}
+
+
+
+在文件 Log\+Stream.\+h 第 21 行定义.
+

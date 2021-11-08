@@ -1,0 +1,55 @@
+\hypertarget{LogStream_8h}{}\section{lib/muduo/base/\+Log\+Stream.h 文件参考}
+\label{LogStream_8h}\index{lib/muduo/base/\+Log\+Stream.\+h@{lib/muduo/base/\+Log\+Stream.\+h}}
+{\ttfamily \#include \char`\"{}muduo/base/noncopyable.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}muduo/base/\+String\+Piece.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}muduo/base/\+Types.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Log\+Stream.\+h 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{LogStream_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{LogStream_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmuduo_1_1detail_1_1FixedBuffer}{Fixed\+Buffer$<$ S\+I\+Z\+E $>$}
+\item 
+class \hyperlink{classmuduo_1_1LogStream}{Log\+Stream}
+\item 
+class \hyperlink{classmuduo_1_1Fmt}{Fmt}
+\end{DoxyCompactItemize}
+\subsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemuduo}{muduo}
+\item 
+ \hyperlink{namespacemuduo_1_1detail}{muduo\+::detail}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+Log\+Stream \& \hyperlink{namespacemuduo_a8306fbe1f821ddb82e4c161f936695b2}{operator$<$$<$} (Log\+Stream \&s, const Fmt \&fmt)
+\item 
+string \hyperlink{namespacemuduo_a2530c171cac6dda7399a9eb5805e01fa}{format\+SI} (int64\+\_\+t n)
+\item 
+string \hyperlink{namespacemuduo_a2ad8a8650556c05bae4c4f449ac6d106}{format\+I\+EC} (int64\+\_\+t n)
+\end{DoxyCompactItemize}
+\subsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{namespacemuduo_1_1detail_a01441c3dba82e5d4bad1ce2b39ff576b}{k\+Small\+Buffer} = 4000
+\item 
+const int \hyperlink{namespacemuduo_1_1detail_a72d89caa2e467f089bb6cc480d73b884}{k\+Large\+Buffer} = 4000$\ast$1000
+\end{DoxyCompactItemize}

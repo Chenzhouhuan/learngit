@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: src/Acceptor.cc 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Acceptor_8cc_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Acceptor.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Acceptor_8cc.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../lib/Acceptor.h&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../lib/muduo/base/Logging.h&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../lib/EventLoop.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../lib/InetAddress.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../lib/SocketsOps.h&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;boost/bind.hpp&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacemuduo.html">muduo</a>;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classmuduo_1_1Acceptor.html#a034c2e4c8c39c67bcaa4a47a6fa906fd">   12</a></span>&#160;<a class="code" href="classmuduo_1_1Acceptor.html#a034c2e4c8c39c67bcaa4a47a6fa906fd">Acceptor::Acceptor</a>(<a class="code" href="classmuduo_1_1EventLoop.html">EventLoop</a>* loop, <span class="keyword">const</span> <a class="code" href="classmuduo_1_1InetAddress.html">InetAddress</a>&amp; listenAddr)</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    : loop_(loop),</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;      acceptSocket_(sockets::<a class="code" href="namespacemuduo_1_1sockets.html#a91269e56d86b2e78e693b330e5c665aa">createNonblockingOrDie</a>()),</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      acceptChannel_(loop, acceptSocket_.fd()),</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      listenning_(false){</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;          <a class="code" href="classmuduo_1_1Acceptor.html#a5b8432787de199c64a25108a26d4690d">acceptSocket_</a>.<a class="code" href="classmuduo_1_1Socket.html#add291e612aa85998f66e8dd002a942ff">setReuseAddr</a>(<span class="keyword">true</span>);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;          <a class="code" href="classmuduo_1_1Acceptor.html#a5b8432787de199c64a25108a26d4690d">acceptSocket_</a>.<a class="code" href="classmuduo_1_1Socket.html#a5676ae95e49d9927ccf9cf7255521689">bindAddress</a>(listenAddr);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;          <a class="code" href="classmuduo_1_1Acceptor.html#a32c277ec09ca9c780ddc51b21278c317">acceptChannel_</a>.<a class="code" href="classmuduo_1_1Channel.html#a98320338d5a728a36dd017a9c083c129">setReadCallback</a>(boost::bind(&amp;<a class="code" href="classmuduo_1_1Acceptor.html#a3459892d34c1eb51b40a53b8062237ca">Acceptor::handlRead</a>, <span class="keyword">this</span>));</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      }</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classmuduo_1_1Acceptor.html#a458bbe4cf81360301586b2e62a7f9dd2">   22</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classmuduo_1_1Acceptor.html#a458bbe4cf81360301586b2e62a7f9dd2">Acceptor::listen</a>(){</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classmuduo_1_1Acceptor.html#a19968f50018d32ac31f5cba0195591ac">loop_</a>-&gt;<a class="code" href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d">assertInLoopThread</a>();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classmuduo_1_1Acceptor.html#af4e1fb2da4efe5a7bcfff6c2434f966d">listenning_</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classmuduo_1_1Acceptor.html#a5b8432787de199c64a25108a26d4690d">acceptSocket_</a>.<a class="code" href="classmuduo_1_1Socket.html#a458bbe4cf81360301586b2e62a7f9dd2">listen</a>();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classmuduo_1_1Acceptor.html#a32c277ec09ca9c780ddc51b21278c317">acceptChannel_</a>.<a class="code" href="classmuduo_1_1Channel.html#ad31f735a6d5ad83203d977ad8eafb223">enableReading</a>();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classmuduo_1_1Acceptor.html#a3459892d34c1eb51b40a53b8062237ca">   29</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classmuduo_1_1Acceptor.html#a3459892d34c1eb51b40a53b8062237ca">Acceptor::handlRead</a>(){</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classmuduo_1_1Acceptor.html#a19968f50018d32ac31f5cba0195591ac">loop_</a>-&gt;<a class="code" href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d">assertInLoopThread</a>();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classmuduo_1_1InetAddress.html">InetAddress</a> peerAddr(0);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">//FIXME loop until no more</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> connfd = <a class="code" href="classmuduo_1_1Acceptor.html#a5b8432787de199c64a25108a26d4690d">acceptSocket_</a>.<a class="code" href="classmuduo_1_1Socket.html#a4f91f07f92cd51f6d6d4214af1e9b73f">accept</a>(&amp;peerAddr);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span>(connfd &gt;= 0){</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classmuduo_1_1Acceptor.html#a315d8356d0420fe5a89dc67f49c82617">newConnectionCallback_</a>){</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="classmuduo_1_1Acceptor.html#a315d8356d0420fe5a89dc67f49c82617">newConnectionCallback_</a>(connfd, peerAddr);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }<span class="keywordflow">else</span>{</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="namespacemuduo_1_1sockets.html#acb275b6d8b5979229bae664cb7ee14da">sockets::close</a>(connfd);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div><div class="ttc" id="classmuduo_1_1Acceptor_html_a32c277ec09ca9c780ddc51b21278c317"><div class="ttname"><a href="classmuduo_1_1Acceptor.html#a32c277ec09ca9c780ddc51b21278c317">muduo::Acceptor::acceptChannel_</a></div><div class="ttdeci">Channel acceptChannel_</div><div class="ttdef"><b>Definition:</b> <a href="Acceptor_8h_source.html#l00039">Acceptor.h:39</a></div></div>
+<div class="ttc" id="classmuduo_1_1Socket_html_a5676ae95e49d9927ccf9cf7255521689"><div class="ttname"><a href="classmuduo_1_1Socket.html#a5676ae95e49d9927ccf9cf7255521689">muduo::Socket::bindAddress</a></div><div class="ttdeci">void bindAddress(const InetAddress &amp;localaddr)</div><div class="ttdoc">abort if address in use </div><div class="ttdef"><b>Definition:</b> <a href="Socket_8cc_source.html#l00016">Socket.cc:16</a></div></div>
+<div class="ttc" id="classmuduo_1_1InetAddress_html"><div class="ttname"><a href="classmuduo_1_1InetAddress.html">muduo::InetAddress</a></div><div class="ttdef"><b>Definition:</b> <a href="InetAddress_8h_source.html#l00016">InetAddress.h:16</a></div></div>
+<div class="ttc" id="classmuduo_1_1Socket_html_a4f91f07f92cd51f6d6d4214af1e9b73f"><div class="ttname"><a href="classmuduo_1_1Socket.html#a4f91f07f92cd51f6d6d4214af1e9b73f">muduo::Socket::accept</a></div><div class="ttdeci">int accept(InetAddress *peeraddr)</div><div class="ttdef"><b>Definition:</b> <a href="Socket_8cc_source.html#l00024">Socket.cc:24</a></div></div>
+<div class="ttc" id="classmuduo_1_1Channel_html_ad31f735a6d5ad83203d977ad8eafb223"><div class="ttname"><a href="classmuduo_1_1Channel.html#ad31f735a6d5ad83203d977ad8eafb223">muduo::Channel::enableReading</a></div><div class="ttdeci">void enableReading()</div><div class="ttdef"><b>Definition:</b> <a href="Channel_8h_source.html#l00032">Channel.h:32</a></div></div>
+<div class="ttc" id="classmuduo_1_1Acceptor_html_a19968f50018d32ac31f5cba0195591ac"><div class="ttname"><a href="classmuduo_1_1Acceptor.html#a19968f50018d32ac31f5cba0195591ac">muduo::Acceptor::loop_</a></div><div class="ttdeci">EventLoop * loop_</div><div class="ttdef"><b>Definition:</b> <a href="Acceptor_8h_source.html#l00037">Acceptor.h:37</a></div></div>
+<div class="ttc" id="classmuduo_1_1Acceptor_html_a3459892d34c1eb51b40a53b8062237ca"><div class="ttname"><a href="classmuduo_1_1Acceptor.html#a3459892d34c1eb51b40a53b8062237ca">muduo::Acceptor::handlRead</a></div><div class="ttdeci">void handlRead()</div><div class="ttdef"><b>Definition:</b> <a href="Acceptor_8cc_source.html#l00029">Acceptor.cc:29</a></div></div>
+<div class="ttc" id="namespacemuduo_html"><div class="ttname"><a href="namespacemuduo.html">muduo</a></div><div class="ttdef"><b>Definition:</b> <a href="Acceptor_8h_source.html#l00010">Acceptor.h:10</a></div></div>
+<div class="ttc" id="classmuduo_1_1EventLoop_html"><div class="ttname"><a href="classmuduo_1_1EventLoop.html">muduo::EventLoop</a></div><div class="ttdef"><b>Definition:</b> <a href="EventLoop_8h_source.html#l00022">EventLoop.h:22</a></div></div>
+<div class="ttc" id="classmuduo_1_1Acceptor_html_a034c2e4c8c39c67bcaa4a47a6fa906fd"><div class="ttname"><a href="classmuduo_1_1Acceptor.html#a034c2e4c8c39c67bcaa4a47a6fa906fd">muduo::Acceptor::Acceptor</a></div><div class="ttdeci">Acceptor(EventLoop *loop, const InetAddress &amp;listenAddr)</div><div class="ttdef"><b>Definition:</b> <a href="Acceptor_8cc_source.html#l00012">Acceptor.cc:12</a></div></div>
+<div class="ttc" id="classmuduo_1_1Socket_html_a458bbe4cf81360301586b2e62a7f9dd2"><div class="ttname"><a href="classmuduo_1_1Socket.html#a458bbe4cf81360301586b2e62a7f9dd2">muduo::Socket::listen</a></div><div class="ttdeci">void listen()</div><div class="ttdoc">abort if address in use </div><div class="ttdef"><b>Definition:</b> <a href="Socket_8cc_source.html#l00020">Socket.cc:20</a></div></div>
+<div class="ttc" id="classmuduo_1_1Acceptor_html_a458bbe4cf81360301586b2e62a7f9dd2"><div class="ttname"><a href="classmuduo_1_1Acceptor.html#a458bbe4cf81360301586b2e62a7f9dd2">muduo::Acceptor::listen</a></div><div class="ttdeci">void listen()</div><div class="ttdef"><b>Definition:</b> <a href="Acceptor_8cc_source.html#l00022">Acceptor.cc:22</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_a91269e56d86b2e78e693b330e5c665aa"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#a91269e56d86b2e78e693b330e5c665aa">muduo::sockets::createNonblockingOrDie</a></div><div class="ttdeci">int createNonblockingOrDie()</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8cc_source.html#l00042">SocketsOps.cc:42</a></div></div>
+<div class="ttc" id="classmuduo_1_1Socket_html_add291e612aa85998f66e8dd002a942ff"><div class="ttname"><a href="classmuduo_1_1Socket.html#add291e612aa85998f66e8dd002a942ff">muduo::Socket::setReuseAddr</a></div><div class="ttdeci">void setReuseAddr(bool on)</div><div class="ttdef"><b>Definition:</b> <a href="Socket_8cc_source.html#l00034">Socket.cc:34</a></div></div>
+<div class="ttc" id="classmuduo_1_1Acceptor_html_af4e1fb2da4efe5a7bcfff6c2434f966d"><div class="ttname"><a href="classmuduo_1_1Acceptor.html#af4e1fb2da4efe5a7bcfff6c2434f966d">muduo::Acceptor::listenning_</a></div><div class="ttdeci">bool listenning_</div><div class="ttdef"><b>Definition:</b> <a href="Acceptor_8h_source.html#l00041">Acceptor.h:41</a></div></div>
+<div class="ttc" id="classmuduo_1_1Acceptor_html_a5b8432787de199c64a25108a26d4690d"><div class="ttname"><a href="classmuduo_1_1Acceptor.html#a5b8432787de199c64a25108a26d4690d">muduo::Acceptor::acceptSocket_</a></div><div class="ttdeci">Socket acceptSocket_</div><div class="ttdef"><b>Definition:</b> <a href="Acceptor_8h_source.html#l00038">Acceptor.h:38</a></div></div>
+<div class="ttc" id="classmuduo_1_1Acceptor_html_a315d8356d0420fe5a89dc67f49c82617"><div class="ttname"><a href="classmuduo_1_1Acceptor.html#a315d8356d0420fe5a89dc67f49c82617">muduo::Acceptor::newConnectionCallback_</a></div><div class="ttdeci">NewConnectionCallback newConnectionCallback_</div><div class="ttdef"><b>Definition:</b> <a href="Acceptor_8h_source.html#l00040">Acceptor.h:40</a></div></div>
+<div class="ttc" id="classmuduo_1_1Channel_html_a98320338d5a728a36dd017a9c083c129"><div class="ttname"><a href="classmuduo_1_1Channel.html#a98320338d5a728a36dd017a9c083c129">muduo::Channel::setReadCallback</a></div><div class="ttdeci">void setReadCallback(const ReadEventCallback &amp;cb)</div><div class="ttdef"><b>Definition:</b> <a href="Channel_8h_source.html#l00022">Channel.h:22</a></div></div>
+<div class="ttc" id="namespacemuduo_1_1sockets_html_acb275b6d8b5979229bae664cb7ee14da"><div class="ttname"><a href="namespacemuduo_1_1sockets.html#acb275b6d8b5979229bae664cb7ee14da">muduo::sockets::close</a></div><div class="ttdeci">void close(int sockfd)</div><div class="ttdef"><b>Definition:</b> <a href="SocketsOps_8cc_source.html#l00125">SocketsOps.cc:125</a></div></div>
+<div class="ttc" id="classmuduo_1_1EventLoop_html_a9e9c23193ece3ba25a1a2779fc7ebc2d"><div class="ttname"><a href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d">muduo::EventLoop::assertInLoopThread</a></div><div class="ttdeci">void assertInLoopThread()</div><div class="ttdef"><b>Definition:</b> <a href="EventLoop_8h_source.html#l00069">EventLoop.h:69</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="Acceptor_8cc.html">Acceptor.cc</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

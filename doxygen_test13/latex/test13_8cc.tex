@@ -1,0 +1,134 @@
+\hypertarget{test13_8cc}{}\section{test13.\+cc 文件参考}
+\label{test13_8cc}\index{test13.\+cc@{test13.\+cc}}
+{\ttfamily \#include \char`\"{}lib/\+Event\+Loop.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lib/\+Inet\+Address.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lib/\+Tcp\+Client.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lib/muduo/base/\+Logging.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$boost/bind.\+hpp$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+test13.\+cc 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test13_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{test13_8cc_a6eb66d9a7a41230486568c4e0b65e095}{on\+Connection} (const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{muduo\+::\+Tcp\+Connection\+Ptr} \&conn)
+\item 
+void \hyperlink{test13_8cc_af33efd842a41b80c31e25f49b91bba72}{on\+Message} (const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{muduo\+::\+Tcp\+Connection\+Ptr} \&conn, \hyperlink{classmuduo_1_1Buffer}{muduo\+::\+Buffer} $\ast$buf, \hyperlink{classmuduo_1_1Timestamp}{muduo\+::\+Timestamp} receive\+Time)
+\item 
+int \hyperlink{test13_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{test13_8cc_a36bd74109f547f7f8198faf5a12d2879}{message} = \char`\"{}Hello\textbackslash{}n\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{test13_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{test13_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{test13.\+cc@{test13.\+cc}!main@{main}}
+\index{main@{main}!test13.\+cc@{test13.\+cc}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 test13.\+cc 第 30 行定义.
+
+
+
+参考 Tcp\+Client\+::connect(), Tcp\+Client\+::enable\+Retry(), Event\+Loop\+::loop(), on\+Connection(), on\+Message(), Tcp\+Client\+::set\+Connection\+Callback() , 以及 Tcp\+Client\+::set\+Message\+Callback().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test13_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{test13_8cc_a6eb66d9a7a41230486568c4e0b65e095}\label{test13_8cc_a6eb66d9a7a41230486568c4e0b65e095}} 
+\index{test13.\+cc@{test13.\+cc}!on\+Connection@{on\+Connection}}
+\index{on\+Connection@{on\+Connection}!test13.\+cc@{test13.\+cc}}
+\subsubsection{\texorpdfstring{on\+Connection()}{onConnection()}}
+{\footnotesize\ttfamily void on\+Connection (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{muduo\+::\+Tcp\+Connection\+Ptr} \&}]{conn }\end{DoxyParamCaption})}
+
+
+
+在文件 test13.\+cc 第 16 行定义.
+
+
+
+参考 message.
+
+
+
+参考自 main().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{test13_8cc_a6eb66d9a7a41230486568c4e0b65e095_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{test13_8cc_af33efd842a41b80c31e25f49b91bba72}\label{test13_8cc_af33efd842a41b80c31e25f49b91bba72}} 
+\index{test13.\+cc@{test13.\+cc}!on\+Message@{on\+Message}}
+\index{on\+Message@{on\+Message}!test13.\+cc@{test13.\+cc}}
+\subsubsection{\texorpdfstring{on\+Message()}{onMessage()}}
+{\footnotesize\ttfamily void on\+Message (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemuduo_a40c45128e9700d337d92f3cbb8dd4a0a}{muduo\+::\+Tcp\+Connection\+Ptr} \&}]{conn,  }\item[{\hyperlink{classmuduo_1_1Buffer}{muduo\+::\+Buffer} $\ast$}]{buf,  }\item[{\hyperlink{classmuduo_1_1Timestamp}{muduo\+::\+Timestamp}}]{receive\+Time }\end{DoxyParamCaption})}
+
+
+
+在文件 test13.\+cc 第 25 行定义.
+
+
+
+参考 Buffer\+::readable\+Bytes(), Buffer\+::retrieve\+As\+String() , 以及 Timestamp\+::to\+Formatted\+String().
+
+
+
+参考自 main().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test13_8cc_af33efd842a41b80c31e25f49b91bba72_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{test13_8cc_af33efd842a41b80c31e25f49b91bba72_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{变量说明}
+\mbox{\Hypertarget{test13_8cc_a36bd74109f547f7f8198faf5a12d2879}\label{test13_8cc_a36bd74109f547f7f8198faf5a12d2879}} 
+\index{test13.\+cc@{test13.\+cc}!message@{message}}
+\index{message@{message}!test13.\+cc@{test13.\+cc}}
+\subsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily std\+::string message = \char`\"{}Hello\textbackslash{}n\char`\"{}}
+
+
+
+在文件 test13.\+cc 第 14 行定义.
+
+
+
+参考自 Tcp\+Connection\+::connected(), Tcp\+Connection\+::disconnected(), on\+Connection() , 以及 Http\+Response\+::set\+Status\+Message().
+

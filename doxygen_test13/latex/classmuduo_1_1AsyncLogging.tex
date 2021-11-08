@@ -1,0 +1,358 @@
+\hypertarget{classmuduo_1_1AsyncLogging}{}\section{Async\+Logging类 参考}
+\label{classmuduo_1_1AsyncLogging}\index{Async\+Logging@{Async\+Logging}}
+
+
+{\ttfamily \#include $<$Async\+Logging.\+h$>$}
+
+
+
+类 Async\+Logging 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{classmuduo_1_1AsyncLogging__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Async\+Logging 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmuduo_1_1AsyncLogging__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1AsyncLogging_a6ef9864cb4ac325e919c449e1dd76224}{Async\+Logging} (const string \&basename, off\+\_\+t roll\+Size, int flush\+Interval=3)
+\item 
+\hyperlink{classmuduo_1_1AsyncLogging_aa008935e7ad96a6ade750a9c5ec984b7}{$\sim$\+Async\+Logging} ()
+\item 
+void \hyperlink{classmuduo_1_1AsyncLogging_a14dd7b692df8633d1e5053d3499a24d3}{append} (const char $\ast$logline, int len)
+\item 
+void \hyperlink{classmuduo_1_1AsyncLogging_a60de64d75454385b23995437f1d72669}{start} ()
+\item 
+void \hyperlink{classmuduo_1_1AsyncLogging_a849302529291497f64017bf57efb5606}{stop} () \hyperlink{Mutex_8h_ab8ec653d80c013941ef73e4c80cd44cf}{N\+O\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+S\+A\+F\+E\+T\+Y\+\_\+\+A\+N\+A\+L\+Y\+S\+IS}
+\end{DoxyCompactItemize}
+\subsection*{Private 类型}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classmuduo_1_1detail_1_1FixedBuffer}{muduo\+::detail\+::\+Fixed\+Buffer}$<$ \hyperlink{namespacemuduo_1_1detail_a72d89caa2e467f089bb6cc480d73b884}{muduo\+::detail\+::k\+Large\+Buffer} $>$ \hyperlink{classmuduo_1_1AsyncLogging_a663de001c958343ca7cdf3d35a77159a}{Buffer}
+\item 
+typedef std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \hyperlink{classmuduo_1_1AsyncLogging_a663de001c958343ca7cdf3d35a77159a}{Buffer} $>$ $>$ \hyperlink{classmuduo_1_1AsyncLogging_ab5cac8d284abaa58e906d90e6dbc11e3}{Buffer\+Vector}
+\item 
+typedef Buffer\+Vector\+::value\+\_\+type \hyperlink{classmuduo_1_1AsyncLogging_adf677569f52d645909db59d5f982ef6e}{Buffer\+Ptr}
+\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmuduo_1_1AsyncLogging_a539feb3c59a20db3b260b312fa7dea34}{thread\+Func} ()
+\item 
+\hyperlink{classmuduo_1_1Condition}{muduo\+::\+Condition} cond\+\_\+ \hyperlink{classmuduo_1_1AsyncLogging_a7694d2aa52febdbd279ce6207c536326}{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY} (\hyperlink{classmuduo_1_1AsyncLogging_ab9ed43ba5a78211f8947e85d98e1dffb}{mutex\+\_\+})
+\item 
+\hyperlink{classmuduo_1_1AsyncLogging_adf677569f52d645909db59d5f982ef6e}{Buffer\+Ptr} current\+Buffer\+\_\+ \hyperlink{classmuduo_1_1AsyncLogging_a36269f3557b70644fd592ddf5c1e40ad}{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY} (\hyperlink{classmuduo_1_1AsyncLogging_ab9ed43ba5a78211f8947e85d98e1dffb}{mutex\+\_\+})
+\item 
+\hyperlink{classmuduo_1_1AsyncLogging_adf677569f52d645909db59d5f982ef6e}{Buffer\+Ptr} next\+Buffer\+\_\+ \hyperlink{classmuduo_1_1AsyncLogging_a1f75ebf898f57f54a653518e4f16de54}{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY} (\hyperlink{classmuduo_1_1AsyncLogging_ab9ed43ba5a78211f8947e85d98e1dffb}{mutex\+\_\+})
+\item 
+\hyperlink{classmuduo_1_1AsyncLogging_ab5cac8d284abaa58e906d90e6dbc11e3}{Buffer\+Vector} buffers\+\_\+ \hyperlink{classmuduo_1_1AsyncLogging_af92ef4052420619356f3f69e33a852d4}{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY} (\hyperlink{classmuduo_1_1AsyncLogging_ab9ed43ba5a78211f8947e85d98e1dffb}{mutex\+\_\+})
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{classmuduo_1_1AsyncLogging_a5014f30709157722cd5b45a4096add3b}{flush\+Interval\+\_\+}
+\item 
+std\+::atomic$<$ bool $>$ \hyperlink{classmuduo_1_1AsyncLogging_aa9620a15c76ada2388bf678e373a6463}{running\+\_\+}
+\item 
+const string \hyperlink{classmuduo_1_1AsyncLogging_a13e75d6811d8c75146c98ff19a60aaa2}{basename\+\_\+}
+\item 
+const off\+\_\+t \hyperlink{classmuduo_1_1AsyncLogging_a72b49897d1dce777946cab0186c07b3b}{roll\+Size\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1Thread}{muduo\+::\+Thread} \hyperlink{classmuduo_1_1AsyncLogging_aa0093f2535e4d8943878c3a5b626f730}{thread\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1CountDownLatch}{muduo\+::\+Count\+Down\+Latch} \hyperlink{classmuduo_1_1AsyncLogging_a5f6680165faf06c40899d9cc24c5bcd0}{latch\+\_\+}
+\item 
+muduo\+::\+Mutex\+Lock \hyperlink{classmuduo_1_1AsyncLogging_ab9ed43ba5a78211f8947e85d98e1dffb}{mutex\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 Async\+Logging.\+h 第 22 行定义.
+
+
+
+\subsection{成员类型定义说明}
+\mbox{\Hypertarget{classmuduo_1_1AsyncLogging_a663de001c958343ca7cdf3d35a77159a}\label{classmuduo_1_1AsyncLogging_a663de001c958343ca7cdf3d35a77159a}} 
+\index{muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}}
+\subsubsection{\texorpdfstring{Buffer}{Buffer}}
+{\footnotesize\ttfamily typedef \hyperlink{classmuduo_1_1detail_1_1FixedBuffer}{muduo\+::detail\+::\+Fixed\+Buffer}$<$\hyperlink{namespacemuduo_1_1detail_a72d89caa2e467f089bb6cc480d73b884}{muduo\+::detail\+::k\+Large\+Buffer}$>$ \hyperlink{classmuduo_1_1AsyncLogging_a663de001c958343ca7cdf3d35a77159a}{Buffer}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Async\+Logging.\+h 第 58 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1AsyncLogging_adf677569f52d645909db59d5f982ef6e}\label{classmuduo_1_1AsyncLogging_adf677569f52d645909db59d5f982ef6e}} 
+\index{muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}!Buffer\+Ptr@{Buffer\+Ptr}}
+\index{Buffer\+Ptr@{Buffer\+Ptr}!muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}}
+\subsubsection{\texorpdfstring{Buffer\+Ptr}{BufferPtr}}
+{\footnotesize\ttfamily typedef Buffer\+Vector\+::value\+\_\+type \hyperlink{classmuduo_1_1AsyncLogging_adf677569f52d645909db59d5f982ef6e}{Buffer\+Ptr}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Async\+Logging.\+h 第 60 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1AsyncLogging_ab5cac8d284abaa58e906d90e6dbc11e3}\label{classmuduo_1_1AsyncLogging_ab5cac8d284abaa58e906d90e6dbc11e3}} 
+\index{muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}!Buffer\+Vector@{Buffer\+Vector}}
+\index{Buffer\+Vector@{Buffer\+Vector}!muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}}
+\subsubsection{\texorpdfstring{Buffer\+Vector}{BufferVector}}
+{\footnotesize\ttfamily typedef std\+::vector$<$std\+::unique\+\_\+ptr$<$\hyperlink{classmuduo_1_1AsyncLogging_a663de001c958343ca7cdf3d35a77159a}{Buffer}$>$ $>$ \hyperlink{classmuduo_1_1AsyncLogging_ab5cac8d284abaa58e906d90e6dbc11e3}{Buffer\+Vector}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Async\+Logging.\+h 第 59 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1AsyncLogging_a6ef9864cb4ac325e919c449e1dd76224}\label{classmuduo_1_1AsyncLogging_a6ef9864cb4ac325e919c449e1dd76224}} 
+\index{muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}!Async\+Logging@{Async\+Logging}}
+\index{Async\+Logging@{Async\+Logging}!muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}}
+\subsubsection{\texorpdfstring{Async\+Logging()}{AsyncLogging()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1AsyncLogging}{Async\+Logging} (\begin{DoxyParamCaption}\item[{const string \&}]{basename,  }\item[{off\+\_\+t}]{roll\+Size,  }\item[{int}]{flush\+Interval = {\ttfamily 3} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmuduo_1_1AsyncLogging_aa008935e7ad96a6ade750a9c5ec984b7}\label{classmuduo_1_1AsyncLogging_aa008935e7ad96a6ade750a9c5ec984b7}} 
+\index{muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}!````~Async\+Logging@{$\sim$\+Async\+Logging}}
+\index{````~Async\+Logging@{$\sim$\+Async\+Logging}!muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}}
+\subsubsection{\texorpdfstring{$\sim$\+Async\+Logging()}{~AsyncLogging()}}
+{\footnotesize\ttfamily $\sim$\hyperlink{classmuduo_1_1AsyncLogging}{Async\+Logging} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Async\+Logging.\+h 第 30 行定义.
+
+
+
+参考 Async\+Logging\+::append(), Async\+Logging\+::running\+\_\+ , 以及 Async\+Logging\+::stop().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1AsyncLogging_aa008935e7ad96a6ade750a9c5ec984b7_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1AsyncLogging_a14dd7b692df8633d1e5053d3499a24d3}\label{classmuduo_1_1AsyncLogging_a14dd7b692df8633d1e5053d3499a24d3}} 
+\index{muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}!append@{append}}
+\index{append@{append}!muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}}
+\subsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily void append (\begin{DoxyParamCaption}\item[{const char $\ast$}]{logline,  }\item[{int}]{len }\end{DoxyParamCaption})}
+
+
+
+参考自 Async\+Logging\+::$\sim$\+Async\+Logging().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classmuduo_1_1AsyncLogging_a14dd7b692df8633d1e5053d3499a24d3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1AsyncLogging_a7694d2aa52febdbd279ce6207c536326}\label{classmuduo_1_1AsyncLogging_a7694d2aa52febdbd279ce6207c536326}} 
+\index{muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}!G\+U\+A\+R\+D\+E\+D\+\_\+\+BY@{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}}
+\index{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY@{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}!muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}}
+\subsubsection{\texorpdfstring{G\+U\+A\+R\+D\+E\+D\+\_\+\+B\+Y()}{GUARDED\_BY()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Condition}{muduo\+::\+Condition} cond\+\_\+ G\+U\+A\+R\+D\+E\+D\+\_\+\+BY (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1AsyncLogging_ab9ed43ba5a78211f8947e85d98e1dffb}{mutex\+\_\+}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmuduo_1_1AsyncLogging_a36269f3557b70644fd592ddf5c1e40ad}\label{classmuduo_1_1AsyncLogging_a36269f3557b70644fd592ddf5c1e40ad}} 
+\index{muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}!G\+U\+A\+R\+D\+E\+D\+\_\+\+BY@{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}}
+\index{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY@{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}!muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}}
+\subsubsection{\texorpdfstring{G\+U\+A\+R\+D\+E\+D\+\_\+\+B\+Y()}{GUARDED\_BY()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1AsyncLogging_adf677569f52d645909db59d5f982ef6e}{Buffer\+Ptr} current\+Buffer\+\_\+ G\+U\+A\+R\+D\+E\+D\+\_\+\+BY (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1AsyncLogging_ab9ed43ba5a78211f8947e85d98e1dffb}{mutex\+\_\+}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmuduo_1_1AsyncLogging_a1f75ebf898f57f54a653518e4f16de54}\label{classmuduo_1_1AsyncLogging_a1f75ebf898f57f54a653518e4f16de54}} 
+\index{muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}!G\+U\+A\+R\+D\+E\+D\+\_\+\+BY@{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}}
+\index{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY@{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}!muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}}
+\subsubsection{\texorpdfstring{G\+U\+A\+R\+D\+E\+D\+\_\+\+B\+Y()}{GUARDED\_BY()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1AsyncLogging_adf677569f52d645909db59d5f982ef6e}{Buffer\+Ptr} next\+Buffer\+\_\+ G\+U\+A\+R\+D\+E\+D\+\_\+\+BY (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1AsyncLogging_ab9ed43ba5a78211f8947e85d98e1dffb}{mutex\+\_\+}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmuduo_1_1AsyncLogging_af92ef4052420619356f3f69e33a852d4}\label{classmuduo_1_1AsyncLogging_af92ef4052420619356f3f69e33a852d4}} 
+\index{muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}!G\+U\+A\+R\+D\+E\+D\+\_\+\+BY@{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}}
+\index{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY@{G\+U\+A\+R\+D\+E\+D\+\_\+\+BY}!muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}}
+\subsubsection{\texorpdfstring{G\+U\+A\+R\+D\+E\+D\+\_\+\+B\+Y()}{GUARDED\_BY()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1AsyncLogging_ab5cac8d284abaa58e906d90e6dbc11e3}{Buffer\+Vector} buffers\+\_\+ G\+U\+A\+R\+D\+E\+D\+\_\+\+BY (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1AsyncLogging_ab9ed43ba5a78211f8947e85d98e1dffb}{mutex\+\_\+}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmuduo_1_1AsyncLogging_a60de64d75454385b23995437f1d72669}\label{classmuduo_1_1AsyncLogging_a60de64d75454385b23995437f1d72669}} 
+\index{muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}!start@{start}}
+\index{start@{start}!muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Async\+Logging.\+h 第 40 行定义.
+
+
+
+参考 Async\+Logging\+::latch\+\_\+, Async\+Logging\+::running\+\_\+, Thread\+::start(), Async\+Logging\+::thread\+\_\+ , 以及 Count\+Down\+Latch\+::wait().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{classmuduo_1_1AsyncLogging_a60de64d75454385b23995437f1d72669_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1AsyncLogging_a849302529291497f64017bf57efb5606}\label{classmuduo_1_1AsyncLogging_a849302529291497f64017bf57efb5606}} 
+\index{muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}!stop@{stop}}
+\index{stop@{stop}!muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Async\+Logging.\+h 第 47 行定义.
+
+
+
+参考 Thread\+::join(), Async\+Logging\+::running\+\_\+, Async\+Logging\+::thread\+\_\+ , 以及 Async\+Logging\+::thread\+Func().
+
+
+
+参考自 Async\+Logging\+::$\sim$\+Async\+Logging().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classmuduo_1_1AsyncLogging_a849302529291497f64017bf57efb5606_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classmuduo_1_1AsyncLogging_a849302529291497f64017bf57efb5606_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1AsyncLogging_a539feb3c59a20db3b260b312fa7dea34}\label{classmuduo_1_1AsyncLogging_a539feb3c59a20db3b260b312fa7dea34}} 
+\index{muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}!thread\+Func@{thread\+Func}}
+\index{thread\+Func@{thread\+Func}!muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}}
+\subsubsection{\texorpdfstring{thread\+Func()}{threadFunc()}}
+{\footnotesize\ttfamily void thread\+Func (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+参考自 Async\+Logging\+::stop().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1AsyncLogging_a539feb3c59a20db3b260b312fa7dea34_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1AsyncLogging_a13e75d6811d8c75146c98ff19a60aaa2}\label{classmuduo_1_1AsyncLogging_a13e75d6811d8c75146c98ff19a60aaa2}} 
+\index{muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}!basename\+\_\+@{basename\+\_\+}}
+\index{basename\+\_\+@{basename\+\_\+}!muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}}
+\subsubsection{\texorpdfstring{basename\+\_\+}{basename\_}}
+{\footnotesize\ttfamily const string basename\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Async\+Logging.\+h 第 64 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1AsyncLogging_a5014f30709157722cd5b45a4096add3b}\label{classmuduo_1_1AsyncLogging_a5014f30709157722cd5b45a4096add3b}} 
+\index{muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}!flush\+Interval\+\_\+@{flush\+Interval\+\_\+}}
+\index{flush\+Interval\+\_\+@{flush\+Interval\+\_\+}!muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}}
+\subsubsection{\texorpdfstring{flush\+Interval\+\_\+}{flushInterval\_}}
+{\footnotesize\ttfamily const int flush\+Interval\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Async\+Logging.\+h 第 62 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1AsyncLogging_a5f6680165faf06c40899d9cc24c5bcd0}\label{classmuduo_1_1AsyncLogging_a5f6680165faf06c40899d9cc24c5bcd0}} 
+\index{muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}!latch\+\_\+@{latch\+\_\+}}
+\index{latch\+\_\+@{latch\+\_\+}!muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}}
+\subsubsection{\texorpdfstring{latch\+\_\+}{latch\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1CountDownLatch}{muduo\+::\+Count\+Down\+Latch} latch\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Async\+Logging.\+h 第 67 行定义.
+
+
+
+参考自 Async\+Logging\+::start().
+
+\mbox{\Hypertarget{classmuduo_1_1AsyncLogging_ab9ed43ba5a78211f8947e85d98e1dffb}\label{classmuduo_1_1AsyncLogging_ab9ed43ba5a78211f8947e85d98e1dffb}} 
+\index{muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}!mutex\+\_\+@{mutex\+\_\+}}
+\index{mutex\+\_\+@{mutex\+\_\+}!muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}}
+\subsubsection{\texorpdfstring{mutex\+\_\+}{mutex\_}}
+{\footnotesize\ttfamily muduo\+::\+Mutex\+Lock mutex\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Async\+Logging.\+h 第 68 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1AsyncLogging_a72b49897d1dce777946cab0186c07b3b}\label{classmuduo_1_1AsyncLogging_a72b49897d1dce777946cab0186c07b3b}} 
+\index{muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}!roll\+Size\+\_\+@{roll\+Size\+\_\+}}
+\index{roll\+Size\+\_\+@{roll\+Size\+\_\+}!muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}}
+\subsubsection{\texorpdfstring{roll\+Size\+\_\+}{rollSize\_}}
+{\footnotesize\ttfamily const off\+\_\+t roll\+Size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Async\+Logging.\+h 第 65 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1AsyncLogging_aa9620a15c76ada2388bf678e373a6463}\label{classmuduo_1_1AsyncLogging_aa9620a15c76ada2388bf678e373a6463}} 
+\index{muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}!running\+\_\+@{running\+\_\+}}
+\index{running\+\_\+@{running\+\_\+}!muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}}
+\subsubsection{\texorpdfstring{running\+\_\+}{running\_}}
+{\footnotesize\ttfamily std\+::atomic$<$bool$>$ running\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Async\+Logging.\+h 第 63 行定义.
+
+
+
+参考自 Async\+Logging\+::start(), Async\+Logging\+::stop() , 以及 Async\+Logging\+::$\sim$\+Async\+Logging().
+
+\mbox{\Hypertarget{classmuduo_1_1AsyncLogging_aa0093f2535e4d8943878c3a5b626f730}\label{classmuduo_1_1AsyncLogging_aa0093f2535e4d8943878c3a5b626f730}} 
+\index{muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}!thread\+\_\+@{thread\+\_\+}}
+\index{thread\+\_\+@{thread\+\_\+}!muduo\+::\+Async\+Logging@{muduo\+::\+Async\+Logging}}
+\subsubsection{\texorpdfstring{thread\+\_\+}{thread\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Thread}{muduo\+::\+Thread} thread\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Async\+Logging.\+h 第 66 行定义.
+
+
+
+参考自 Async\+Logging\+::start() , 以及 Async\+Logging\+::stop().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/muduo/base/\hyperlink{AsyncLogging_8h}{Async\+Logging.\+h}\end{DoxyCompactItemize}

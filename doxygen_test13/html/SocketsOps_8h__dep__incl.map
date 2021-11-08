@@ -1,0 +1,11 @@
+<map id="lib/SocketsOps.h" name="lib/SocketsOps.h">
+<area shape="rect" id="node2" href="$Acceptor_8cc.html" title="src/Acceptor.cc" alt="" coords="5,80,124,107"/>
+<area shape="rect" id="node3" href="$Buffer_8cc.html" title="src/Buffer.cc" alt="" coords="149,80,250,107"/>
+<area shape="rect" id="node4" href="$Connector_8cc.html" title="src/Connector.cc" alt="" coords="274,80,402,107"/>
+<area shape="rect" id="node5" href="$InetAddress_8cc.html" title="src/InetAddress.cc" alt="" coords="427,80,567,107"/>
+<area shape="rect" id="node6" href="$Socket_8cc.html" title="src/Socket.cc" alt="" coords="591,80,698,107"/>
+<area shape="rect" id="node7" href="$SocketsOps_8cc.html" title="src/SocketsOps.cc" alt="" coords="722,80,861,107"/>
+<area shape="rect" id="node8" href="$TcpClient_8cc.html" title="src/TcpClient.cc" alt="" coords="885,80,1007,107"/>
+<area shape="rect" id="node9" href="$TcpConnection_8cc.html" title="src/TcpConnection.cc" alt="" coords="1031,80,1189,107"/>
+<area shape="rect" id="node10" href="$TcpServer_8cc.html" title="src/TcpServer.cc" alt="" coords="1213,80,1338,107"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="src/SocketsOps.cc" name="src/SocketsOps.cc">
+<area shape="rect" id="node2" href="$SocketsOps_8h.html" title="../lib/SocketsOps.h" alt="" coords="157,80,300,107"/>
+<area shape="rect" id="node5" href="$Logging_8h.html" title="../lib/muduo/base/Logging.h" alt="" coords="324,80,525,107"/>
+<area shape="rect" id="node6" href="$LogStream_8h.html" title="muduo/base/LogStream.h" alt="" coords="321,155,509,181"/>
+<area shape="rect" id="node15" href="$Timestamp_8h.html" title="muduo/base/Timestamp.h" alt="" coords="609,155,801,181"/>
+<area shape="rect" id="node7" href="$noncopyable_8h.html" title="muduo/base/noncopyable.h" alt="" coords="5,229,207,256"/>
+<area shape="rect" id="node8" href="$StringPiece_8h.html" title="muduo/base/StringPiece.h" alt="" coords="283,229,473,256"/>
+<area shape="rect" id="node11" href="$Types_8h.html" title="muduo/base/Types.h" alt="" coords="423,304,578,331"/>
+<area shape="rect" id="node16" href="$copyable_8h.html" title="muduo/base/copyable.h" alt="" coords="653,229,831,256"/>
+</map>

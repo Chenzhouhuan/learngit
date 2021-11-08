@@ -1,0 +1,4 @@
+<map id="getAndAdd" name="getAndAdd">
+<area shape="rect" id="node2" href="$classmuduo_1_1detail_1_1AtomicIntegerT.html#a280f2f21d67cb0811ccc97df80f1291e" title="muduo::detail::AtomicInteger\lT\&lt; int32_t \&gt;::add" alt="" coords="147,5,359,47"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1detail_1_1AtomicIntegerT.html#afccedf3c9d81833307c02958c2b52f1d" title="muduo::detail::AtomicInteger\lT\&lt; int32_t \&gt;::addAndGet" alt="" coords="147,71,359,112"/>
+</map>

@@ -1,0 +1,245 @@
+\hypertarget{namespacemuduo_1_1ProcessInfo}{}\section{muduo\+:\+:Process\+Info 命名空间参考}
+\label{namespacemuduo_1_1ProcessInfo}\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmuduo_1_1ProcessInfo_1_1CpuTime}{Cpu\+Time}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+pid\+\_\+t \hyperlink{namespacemuduo_1_1ProcessInfo_a9b565d9cb6c35649f0feeeaa8b26dd7b}{pid} ()
+\item 
+string \hyperlink{namespacemuduo_1_1ProcessInfo_af54b6cc2e94622bf45a9ced0093b7dae}{pid\+String} ()
+\item 
+uid\+\_\+t \hyperlink{namespacemuduo_1_1ProcessInfo_a056245f62bbe6e8abdcd42171a432aac}{uid} ()
+\item 
+string \hyperlink{namespacemuduo_1_1ProcessInfo_a54e6907a19c94da2cf5db8dcad530262}{username} ()
+\item 
+uid\+\_\+t \hyperlink{namespacemuduo_1_1ProcessInfo_a7313897d7ec7dc5bbdd8f3f88c449b7e}{euid} ()
+\item 
+\hyperlink{classmuduo_1_1Timestamp}{Timestamp} \hyperlink{namespacemuduo_1_1ProcessInfo_a3662fa984eef69a557c6d997aba58e18}{start\+Time} ()
+\item 
+int \hyperlink{namespacemuduo_1_1ProcessInfo_af8d3ce061f87c1a208c8e164e9b69882}{clock\+Ticks\+Per\+Second} ()
+\item 
+int \hyperlink{namespacemuduo_1_1ProcessInfo_a3aab01e3a27d7f88b7d8fffceb529c64}{page\+Size} ()
+\item 
+bool \hyperlink{namespacemuduo_1_1ProcessInfo_aabe41272bf5623d260fe92399071ed4e}{is\+Debug\+Build} ()
+\item 
+string \hyperlink{namespacemuduo_1_1ProcessInfo_ac60f3a33a07318aa231cc3d07f6ee419}{hostname} ()
+\item 
+string \hyperlink{namespacemuduo_1_1ProcessInfo_ac8a6ab8cb6657fc7ddba4a8be2f60e2b}{procname} ()
+\item 
+\hyperlink{classmuduo_1_1StringPiece}{String\+Piece} \hyperlink{namespacemuduo_1_1ProcessInfo_acb222d923a768bc8e9ecceaf21ac4ba3}{procname} (const string \&stat)
+\item 
+string \hyperlink{namespacemuduo_1_1ProcessInfo_a930c5a6d17d6ba40f7011643f4442c41}{proc\+Status} ()
+\begin{DoxyCompactList}\small\item\em read /proc/self/status \end{DoxyCompactList}\item 
+string \hyperlink{namespacemuduo_1_1ProcessInfo_a8f557f94d9b8cdb55a8d21c5b6c70634}{proc\+Stat} ()
+\begin{DoxyCompactList}\small\item\em read /proc/self/stat \end{DoxyCompactList}\item 
+string \hyperlink{namespacemuduo_1_1ProcessInfo_a7d3faa2d63f4cf7b8ba073a3daf7ffb1}{thread\+Stat} ()
+\begin{DoxyCompactList}\small\item\em read /proc/self/task/tid/stat \end{DoxyCompactList}\item 
+string \hyperlink{namespacemuduo_1_1ProcessInfo_acdf231e7f033258ea9e93f1a4d651c50}{exe\+Path} ()
+\begin{DoxyCompactList}\small\item\em readlink /proc/self/exe \end{DoxyCompactList}\item 
+int \hyperlink{namespacemuduo_1_1ProcessInfo_aa8e6192d04097a3864d8c07bf24e4ff9}{opened\+Files} ()
+\item 
+int \hyperlink{namespacemuduo_1_1ProcessInfo_a2bb52b7cbab50f7bc977048005845c67}{max\+Open\+Files} ()
+\item 
+\hyperlink{structmuduo_1_1ProcessInfo_1_1CpuTime}{Cpu\+Time} \hyperlink{namespacemuduo_1_1ProcessInfo_a0e67cc8ad47ff86331b6d2a509d14648}{cpu\+Time} ()
+\item 
+int \hyperlink{namespacemuduo_1_1ProcessInfo_a120db223841da7c65566c1fb2a06befa}{num\+Threads} ()
+\item 
+std\+::vector$<$ pid\+\_\+t $>$ \hyperlink{namespacemuduo_1_1ProcessInfo_a360aafb2759971d7c8190b1a60f7dc03}{threads} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_af8d3ce061f87c1a208c8e164e9b69882}\label{namespacemuduo_1_1ProcessInfo_af8d3ce061f87c1a208c8e164e9b69882}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!clock\+Ticks\+Per\+Second@{clock\+Ticks\+Per\+Second}}
+\index{clock\+Ticks\+Per\+Second@{clock\+Ticks\+Per\+Second}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{clock\+Ticks\+Per\+Second()}{clockTicksPerSecond()}}
+{\footnotesize\ttfamily int muduo\+::\+Process\+Info\+::clock\+Ticks\+Per\+Second (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_a0e67cc8ad47ff86331b6d2a509d14648}\label{namespacemuduo_1_1ProcessInfo_a0e67cc8ad47ff86331b6d2a509d14648}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!cpu\+Time@{cpu\+Time}}
+\index{cpu\+Time@{cpu\+Time}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{cpu\+Time()}{cpuTime()}}
+{\footnotesize\ttfamily \hyperlink{structmuduo_1_1ProcessInfo_1_1CpuTime}{Cpu\+Time} muduo\+::\+Process\+Info\+::cpu\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+参考自 Cpu\+Time\+::total().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{namespacemuduo_1_1ProcessInfo_a0e67cc8ad47ff86331b6d2a509d14648_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_a7313897d7ec7dc5bbdd8f3f88c449b7e}\label{namespacemuduo_1_1ProcessInfo_a7313897d7ec7dc5bbdd8f3f88c449b7e}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!euid@{euid}}
+\index{euid@{euid}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{euid()}{euid()}}
+{\footnotesize\ttfamily uid\+\_\+t muduo\+::\+Process\+Info\+::euid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_acdf231e7f033258ea9e93f1a4d651c50}\label{namespacemuduo_1_1ProcessInfo_acdf231e7f033258ea9e93f1a4d651c50}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!exe\+Path@{exe\+Path}}
+\index{exe\+Path@{exe\+Path}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{exe\+Path()}{exePath()}}
+{\footnotesize\ttfamily string muduo\+::\+Process\+Info\+::exe\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+readlink /proc/self/exe 
+
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_ac60f3a33a07318aa231cc3d07f6ee419}\label{namespacemuduo_1_1ProcessInfo_ac60f3a33a07318aa231cc3d07f6ee419}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!hostname@{hostname}}
+\index{hostname@{hostname}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{hostname()}{hostname()}}
+{\footnotesize\ttfamily string muduo\+::\+Process\+Info\+::hostname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+参考自 Inet\+Address\+::port\+Net\+Endian().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{namespacemuduo_1_1ProcessInfo_ac60f3a33a07318aa231cc3d07f6ee419_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_aabe41272bf5623d260fe92399071ed4e}\label{namespacemuduo_1_1ProcessInfo_aabe41272bf5623d260fe92399071ed4e}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!is\+Debug\+Build@{is\+Debug\+Build}}
+\index{is\+Debug\+Build@{is\+Debug\+Build}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{is\+Debug\+Build()}{isDebugBuild()}}
+{\footnotesize\ttfamily bool muduo\+::\+Process\+Info\+::is\+Debug\+Build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_a2bb52b7cbab50f7bc977048005845c67}\label{namespacemuduo_1_1ProcessInfo_a2bb52b7cbab50f7bc977048005845c67}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!max\+Open\+Files@{max\+Open\+Files}}
+\index{max\+Open\+Files@{max\+Open\+Files}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{max\+Open\+Files()}{maxOpenFiles()}}
+{\footnotesize\ttfamily int muduo\+::\+Process\+Info\+::max\+Open\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_a120db223841da7c65566c1fb2a06befa}\label{namespacemuduo_1_1ProcessInfo_a120db223841da7c65566c1fb2a06befa}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!num\+Threads@{num\+Threads}}
+\index{num\+Threads@{num\+Threads}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{num\+Threads()}{numThreads()}}
+{\footnotesize\ttfamily int muduo\+::\+Process\+Info\+::num\+Threads (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+参考自 Tcp\+Server\+::get\+Loop(), Thread\+Pool\+::set\+Thread\+Init\+Callback(), Event\+Loop\+Thread\+Pool\+::set\+Thread\+Num() , 以及 Cpu\+Time\+::total().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemuduo_1_1ProcessInfo_a120db223841da7c65566c1fb2a06befa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_aa8e6192d04097a3864d8c07bf24e4ff9}\label{namespacemuduo_1_1ProcessInfo_aa8e6192d04097a3864d8c07bf24e4ff9}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!opened\+Files@{opened\+Files}}
+\index{opened\+Files@{opened\+Files}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{opened\+Files()}{openedFiles()}}
+{\footnotesize\ttfamily int muduo\+::\+Process\+Info\+::opened\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_a3aab01e3a27d7f88b7d8fffceb529c64}\label{namespacemuduo_1_1ProcessInfo_a3aab01e3a27d7f88b7d8fffceb529c64}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!page\+Size@{page\+Size}}
+\index{page\+Size@{page\+Size}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{page\+Size()}{pageSize()}}
+{\footnotesize\ttfamily int muduo\+::\+Process\+Info\+::page\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_a9b565d9cb6c35649f0feeeaa8b26dd7b}\label{namespacemuduo_1_1ProcessInfo_a9b565d9cb6c35649f0feeeaa8b26dd7b}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!pid@{pid}}
+\index{pid@{pid}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{pid()}{pid()}}
+{\footnotesize\ttfamily pid\+\_\+t muduo\+::\+Process\+Info\+::pid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_af54b6cc2e94622bf45a9ced0093b7dae}\label{namespacemuduo_1_1ProcessInfo_af54b6cc2e94622bf45a9ced0093b7dae}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!pid\+String@{pid\+String}}
+\index{pid\+String@{pid\+String}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{pid\+String()}{pidString()}}
+{\footnotesize\ttfamily string muduo\+::\+Process\+Info\+::pid\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_ac8a6ab8cb6657fc7ddba4a8be2f60e2b}\label{namespacemuduo_1_1ProcessInfo_ac8a6ab8cb6657fc7ddba4a8be2f60e2b}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!procname@{procname}}
+\index{procname@{procname}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{procname()}{procname()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily string muduo\+::\+Process\+Info\+::procname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_acb222d923a768bc8e9ecceaf21ac4ba3}\label{namespacemuduo_1_1ProcessInfo_acb222d923a768bc8e9ecceaf21ac4ba3}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!procname@{procname}}
+\index{procname@{procname}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{procname()}{procname()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1StringPiece}{String\+Piece} muduo\+::\+Process\+Info\+::procname (\begin{DoxyParamCaption}\item[{const string \&}]{stat }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_a8f557f94d9b8cdb55a8d21c5b6c70634}\label{namespacemuduo_1_1ProcessInfo_a8f557f94d9b8cdb55a8d21c5b6c70634}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!proc\+Stat@{proc\+Stat}}
+\index{proc\+Stat@{proc\+Stat}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{proc\+Stat()}{procStat()}}
+{\footnotesize\ttfamily string muduo\+::\+Process\+Info\+::proc\+Stat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+read /proc/self/stat 
+
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_a930c5a6d17d6ba40f7011643f4442c41}\label{namespacemuduo_1_1ProcessInfo_a930c5a6d17d6ba40f7011643f4442c41}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!proc\+Status@{proc\+Status}}
+\index{proc\+Status@{proc\+Status}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{proc\+Status()}{procStatus()}}
+{\footnotesize\ttfamily string muduo\+::\+Process\+Info\+::proc\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+read /proc/self/status 
+
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_a3662fa984eef69a557c6d997aba58e18}\label{namespacemuduo_1_1ProcessInfo_a3662fa984eef69a557c6d997aba58e18}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!start\+Time@{start\+Time}}
+\index{start\+Time@{start\+Time}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{start\+Time()}{startTime()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Timestamp}{Timestamp} muduo\+::\+Process\+Info\+::start\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_a360aafb2759971d7c8190b1a60f7dc03}\label{namespacemuduo_1_1ProcessInfo_a360aafb2759971d7c8190b1a60f7dc03}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!threads@{threads}}
+\index{threads@{threads}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{threads()}{threads()}}
+{\footnotesize\ttfamily std\+::vector$<$pid\+\_\+t$>$ muduo\+::\+Process\+Info\+::threads (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+参考自 Cpu\+Time\+::total().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{namespacemuduo_1_1ProcessInfo_a360aafb2759971d7c8190b1a60f7dc03_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_a7d3faa2d63f4cf7b8ba073a3daf7ffb1}\label{namespacemuduo_1_1ProcessInfo_a7d3faa2d63f4cf7b8ba073a3daf7ffb1}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!thread\+Stat@{thread\+Stat}}
+\index{thread\+Stat@{thread\+Stat}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{thread\+Stat()}{threadStat()}}
+{\footnotesize\ttfamily string muduo\+::\+Process\+Info\+::thread\+Stat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+read /proc/self/task/tid/stat 
+
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_a056245f62bbe6e8abdcd42171a432aac}\label{namespacemuduo_1_1ProcessInfo_a056245f62bbe6e8abdcd42171a432aac}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!uid@{uid}}
+\index{uid@{uid}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{uid()}{uid()}}
+{\footnotesize\ttfamily uid\+\_\+t muduo\+::\+Process\+Info\+::uid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemuduo_1_1ProcessInfo_a54e6907a19c94da2cf5db8dcad530262}\label{namespacemuduo_1_1ProcessInfo_a54e6907a19c94da2cf5db8dcad530262}} 
+\index{muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}!username@{username}}
+\index{username@{username}!muduo\+::\+Process\+Info@{muduo\+::\+Process\+Info}}
+\subsubsection{\texorpdfstring{username()}{username()}}
+{\footnotesize\ttfamily string muduo\+::\+Process\+Info\+::username (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

@@ -1,0 +1,6 @@
+<map id="TimerId" name="TimerId">
+<area shape="rect" id="node2" href="$classmuduo_1_1copyable.html" title="{copyable\n||# copyable()\l# ~copyable()\l}" alt="" coords="5,5,123,97"/>
+<area shape="rect" id="node7" href="$classmuduo_1_1Timestamp.html" title="{Timestamp\n|+ kMicroSecondsPerSecond\l&#45; microSecondsSinceEpoch_\l|+ Timestamp()\l+ Timestamp()\l+ swap()\l+ toString()\l+ toFormattedString()\l+ valid()\l+ microSecondsSinceEpoch()\l+ secondsSinceEpoch()\l+ now()\l+ invalid()\l+ fromUnixTime()\l+ fromUnixTime()\l}" alt="" coords="149,160,361,413"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1Timer.html" title="{Timer\n|&#45; callback_\l&#45; interval_\l&#45; repeat_\l&#45; sequence_\l|+ Timer()\l+ run()\l+ expiration()\l+ repeat()\l+ sequence()\l+ restart()\l}" alt="" coords="365,476,478,671"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1detail_1_1AtomicIntegerT.html" title="{AtomicIntegerT\&lt; T \&gt;\n||+ AtomicIntegerT()\l+ get()\l+ getAndAdd()\l+ addAndGet()\l+ incrementAndGet()\l+ decrementAndGet()\l+ add()\l+ increment()\l+ decrement()\l+ getAndSet()\l}" alt="" coords="492,182,657,391"/>
+</map>

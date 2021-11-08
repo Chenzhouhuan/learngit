@@ -1,0 +1,8 @@
+<map id="howMuchTimeFromNow" name="howMuchTimeFromNow">
+<area shape="rect" id="node2" href="$namespacemuduo_1_1detail.html#a2a30bb501e8d9bb2da91ab353d1bc6fd" title="resetTimerfd" alt="" coords="231,46,337,73"/>
+<area shape="rect" id="node3" href="$classmuduo_1_1TimerQueue.html#adff791c94ab893d2adae1eafe03713ad" title="muduo::TimerQueue::\laddTimerInLoop" alt="" coords="385,5,548,47"/>
+<area shape="rect" id="node5" href="$classmuduo_1_1TimerQueue.html#ac59fd8ddc045aae320982a0913993237" title="muduo::TimerQueue::\lreset" alt="" coords="385,71,548,112"/>
+<area shape="rect" id="node4" href="$classmuduo_1_1TimerQueue.html#af1bd2f1010adf1a82120c708b7a1ba22" title="muduo::TimerQueue::\laddTimer" alt="" coords="596,5,759,47"/>
+<area shape="rect" id="node6" href="$classmuduo_1_1TimerQueue.html#a231ec0ec0313193a59b3f1326328ae50" title="muduo::TimerQueue::\lhandleRead" alt="" coords="596,71,759,112"/>
+<area shape="rect" id="node7" href="$classmuduo_1_1TimerQueue.html#a7ad41aed2409f7d424fd9cf7c0c5eac8" title="muduo::TimerQueue::\lTimerQueue" alt="" coords="807,71,969,112"/>
+</map>

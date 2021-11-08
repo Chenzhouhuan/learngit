@@ -1,0 +1,126 @@
+\hypertarget{classmuduo_1_1ThreadLocalSingleton_1_1Deleter}{}\section{Thread\+Local\+Singleton$<$ T $>$\+:\+:Deleter类 参考}
+\label{classmuduo_1_1ThreadLocalSingleton_1_1Deleter}\index{Thread\+Local\+Singleton$<$ T $>$\+::\+Deleter@{Thread\+Local\+Singleton$<$ T $>$\+::\+Deleter}}
+
+
+Thread\+Local\+Singleton$<$ T $>$\+:\+:Deleter 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classmuduo_1_1ThreadLocalSingleton_1_1Deleter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1ThreadLocalSingleton_1_1Deleter_aaf39a259c3fafa94424594d8a628e168}{Deleter} ()
+\item 
+\hyperlink{classmuduo_1_1ThreadLocalSingleton_1_1Deleter_a1b98a9e8ffc0353ade7259f4fa205f12}{$\sim$\+Deleter} ()
+\item 
+void \hyperlink{classmuduo_1_1ThreadLocalSingleton_1_1Deleter_a7f9f5041a16baf883423c1ca895b5f46}{set} (T $\ast$new\+Obj)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+pthread\+\_\+key\+\_\+t \hyperlink{classmuduo_1_1ThreadLocalSingleton_1_1Deleter_a10ef6ab4122ca7977f07a8c475f54017}{pkey\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$typename T$>$\newline
+class muduo\+::\+Thread\+Local\+Singleton$<$ T $>$\+::\+Deleter}
+
+
+
+在文件 Thread\+Local\+Singleton.\+h 第 49 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1ThreadLocalSingleton_1_1Deleter_aaf39a259c3fafa94424594d8a628e168}\label{classmuduo_1_1ThreadLocalSingleton_1_1Deleter_aaf39a259c3fafa94424594d8a628e168}} 
+\index{muduo\+::\+Thread\+Local\+Singleton\+::\+Deleter@{muduo\+::\+Thread\+Local\+Singleton\+::\+Deleter}!Deleter@{Deleter}}
+\index{Deleter@{Deleter}!muduo\+::\+Thread\+Local\+Singleton\+::\+Deleter@{muduo\+::\+Thread\+Local\+Singleton\+::\+Deleter}}
+\subsubsection{\texorpdfstring{Deleter()}{Deleter()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1ThreadLocalSingleton_1_1Deleter}{Deleter} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Thread\+Local\+Singleton.\+h 第 52 行定义.
+
+
+
+参考 Thread\+Local\+Singleton$<$ T $>$\+::destructor() , 以及 Thread\+Local\+Singleton$<$ T $>$\+::\+Deleter\+::pkey\+\_\+.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classmuduo_1_1ThreadLocalSingleton_1_1Deleter_aaf39a259c3fafa94424594d8a628e168_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1ThreadLocalSingleton_1_1Deleter_a1b98a9e8ffc0353ade7259f4fa205f12}\label{classmuduo_1_1ThreadLocalSingleton_1_1Deleter_a1b98a9e8ffc0353ade7259f4fa205f12}} 
+\index{muduo\+::\+Thread\+Local\+Singleton\+::\+Deleter@{muduo\+::\+Thread\+Local\+Singleton\+::\+Deleter}!````~Deleter@{$\sim$\+Deleter}}
+\index{````~Deleter@{$\sim$\+Deleter}!muduo\+::\+Thread\+Local\+Singleton\+::\+Deleter@{muduo\+::\+Thread\+Local\+Singleton\+::\+Deleter}}
+\subsubsection{\texorpdfstring{$\sim$\+Deleter()}{~Deleter()}}
+{\footnotesize\ttfamily $\sim$\hyperlink{classmuduo_1_1ThreadLocalSingleton_1_1Deleter}{Deleter} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Thread\+Local\+Singleton.\+h 第 57 行定义.
+
+
+
+参考 Thread\+Local\+Singleton$<$ T $>$\+::\+Deleter\+::pkey\+\_\+.
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1ThreadLocalSingleton_1_1Deleter_a7f9f5041a16baf883423c1ca895b5f46}\label{classmuduo_1_1ThreadLocalSingleton_1_1Deleter_a7f9f5041a16baf883423c1ca895b5f46}} 
+\index{muduo\+::\+Thread\+Local\+Singleton\+::\+Deleter@{muduo\+::\+Thread\+Local\+Singleton\+::\+Deleter}!set@{set}}
+\index{set@{set}!muduo\+::\+Thread\+Local\+Singleton\+::\+Deleter@{muduo\+::\+Thread\+Local\+Singleton\+::\+Deleter}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void set (\begin{DoxyParamCaption}\item[{T $\ast$}]{new\+Obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Thread\+Local\+Singleton.\+h 第 62 行定义.
+
+
+
+参考 Thread\+Local\+Singleton$<$ T $>$\+::\+Deleter\+::pkey\+\_\+.
+
+
+
+参考自 Thread\+Local\+Singleton$<$ T $>$\+::instance().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classmuduo_1_1ThreadLocalSingleton_1_1Deleter_a7f9f5041a16baf883423c1ca895b5f46_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1ThreadLocalSingleton_1_1Deleter_a10ef6ab4122ca7977f07a8c475f54017}\label{classmuduo_1_1ThreadLocalSingleton_1_1Deleter_a10ef6ab4122ca7977f07a8c475f54017}} 
+\index{muduo\+::\+Thread\+Local\+Singleton\+::\+Deleter@{muduo\+::\+Thread\+Local\+Singleton\+::\+Deleter}!pkey\+\_\+@{pkey\+\_\+}}
+\index{pkey\+\_\+@{pkey\+\_\+}!muduo\+::\+Thread\+Local\+Singleton\+::\+Deleter@{muduo\+::\+Thread\+Local\+Singleton\+::\+Deleter}}
+\subsubsection{\texorpdfstring{pkey\+\_\+}{pkey\_}}
+{\footnotesize\ttfamily pthread\+\_\+key\+\_\+t pkey\+\_\+}
+
+
+
+在文件 Thread\+Local\+Singleton.\+h 第 68 行定义.
+
+
+
+参考自 Thread\+Local\+Singleton$<$ T $>$\+::\+Deleter\+::\+Deleter(), Thread\+Local\+Singleton$<$ T $>$\+::\+Deleter\+::set() , 以及 Thread\+Local\+Singleton$<$ T $>$\+::\+Deleter\+::$\sim$\+Deleter().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/muduo/base/\hyperlink{ThreadLocalSingleton_8h}{Thread\+Local\+Singleton.\+h}\end{DoxyCompactItemize}

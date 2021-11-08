@@ -1,0 +1,605 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: Poller类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmuduo_1_1Poller.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-types">Private 类型</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classmuduo_1_1Poller-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Poller类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Poller_8h_source.html">Poller.h</a>&gt;</code></p>
+<div class="dynheader">
+类 Poller 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Poller__inherit__graph.png" border="0" usemap="#Poller_inherit__map" alt="Inheritance graph"/></div>
+<map name="Poller_inherit__map" id="Poller_inherit__map">
+</map>
+</div>
+<div class="dynheader">
+Poller 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Poller__coll__graph.png" border="0" usemap="#Poller_coll__map" alt="Collaboration graph"/></div>
+<map name="Poller_coll__map" id="Poller_coll__map">
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoop.html" title="{EventLoop\n|&#45; looping_\l&#45; quit_\l&#45; callingPendingFunctors_\l&#45; threadId_\l&#45; poller_\l&#45; timerQueue_\l&#45; wakeupFd_\l&#45; wakeupChannel_\l&#45; activeChannels_\l&#45; mutex_\l&#45; pendingFunctors_\l|+ EventLoop()\l+ ~EventLoop()\l+ loop()\l+ quit()\l+ pollReturnTime()\l+ runInLoop()\l+ queueInLoop()\l+ runAt()\l+ runAfter()\l+ runEvery()\l和 6 更多...\l&#45; abortNotInLoopThread()\l&#45; handleRead()\l&#45; doPendingFunctors()\l}" alt="" coords="109,463,295,877"/>
+<area shape="rect" id="node4" href="classmuduo_1_1Timestamp.html" title="{Timestamp\n|+ kMicroSecondsPerSecond\l&#45; microSecondsSinceEpoch_\l|+ Timestamp()\l+ Timestamp()\l+ swap()\l+ toString()\l+ toFormattedString()\l+ valid()\l+ microSecondsSinceEpoch()\l+ secondsSinceEpoch()\l+ now()\l+ invalid()\l+ fromUnixTime()\l+ fromUnixTime()\l}" alt="" coords="148,147,360,400"/>
+<area shape="rect" id="node5" href="classmuduo_1_1copyable.html" title="{copyable\n||# copyable()\l# ~copyable()\l}" alt="" coords="33,5,150,97"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a0b74248ffee6df294563618187b52404"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="classmuduo_1_1Channel.html">Channel</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Poller.html#a0b74248ffee6df294563618187b52404">ChannelList</a></td></tr>
+<tr class="separator:a0b74248ffee6df294563618187b52404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ad1445448c7a54f569eb9d6c6163ca7bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Poller.html#ad1445448c7a54f569eb9d6c6163ca7bc">Poller</a> (<a class="el" href="classmuduo_1_1EventLoop.html">EventLoop</a> *loop)</td></tr>
+<tr class="separator:ad1445448c7a54f569eb9d6c6163ca7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a057f5fb0e9594deb1fd4b46f0e930557"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Poller.html#a057f5fb0e9594deb1fd4b46f0e930557">~Poller</a> ()</td></tr>
+<tr class="separator:a057f5fb0e9594deb1fd4b46f0e930557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0165aabf2721e39f87ad67b05ece9267"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1Timestamp.html">Timestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Poller.html#a0165aabf2721e39f87ad67b05ece9267">poll</a> (int timeoutMs, <a class="el" href="classmuduo_1_1Poller.html#a0b74248ffee6df294563618187b52404">ChannelList</a> *activeChannels)</td></tr>
+<tr class="separator:a0165aabf2721e39f87ad67b05ece9267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa4a191936aacf608d279a6f343d533"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Poller.html#acaa4a191936aacf608d279a6f343d533">updateChannel</a> (<a class="el" href="classmuduo_1_1Channel.html">Channel</a> *channel)</td></tr>
+<tr class="separator:acaa4a191936aacf608d279a6f343d533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab10f76c92cb5269f8296e5b3e4dd0ef9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Poller.html#ab10f76c92cb5269f8296e5b3e4dd0ef9">removeChannel</a> (<a class="el" href="classmuduo_1_1Channel.html">Channel</a> *channel)</td></tr>
+<tr class="separator:ab10f76c92cb5269f8296e5b3e4dd0ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e9c23193ece3ba25a1a2779fc7ebc2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Poller.html#a9e9c23193ece3ba25a1a2779fc7ebc2d">assertInLoopThread</a> ()</td></tr>
+<tr class="separator:a9e9c23193ece3ba25a1a2779fc7ebc2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private 类型</h2></td></tr>
+<tr class="memitem:a0cf1be2f572740022edada139cacfb12"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; struct pollfd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Poller.html#a0cf1be2f572740022edada139cacfb12">PollFdList</a></td></tr>
+<tr class="separator:a0cf1be2f572740022edada139cacfb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a950db725d18ce33d8457ae784380a07e"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, <a class="el" href="classmuduo_1_1Channel.html">Channel</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Poller.html#a950db725d18ce33d8457ae784380a07e">ChannelMap</a></td></tr>
+<tr class="separator:a950db725d18ce33d8457ae784380a07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a93b3d6d6cac94e92c2ddfd91e9b18cc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Poller.html#a93b3d6d6cac94e92c2ddfd91e9b18cc0">fillActiveChannels</a> (int numEvents, <a class="el" href="classmuduo_1_1Poller.html#a0b74248ffee6df294563618187b52404">ChannelList</a> *activeChannels) const</td></tr>
+<tr class="separator:a93b3d6d6cac94e92c2ddfd91e9b18cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ab7cf856df3fd0f8496fcf3b59b8a24ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1EventLoop.html">EventLoop</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Poller.html#ab7cf856df3fd0f8496fcf3b59b8a24ab">ownerLoop_</a></td></tr>
+<tr class="separator:ab7cf856df3fd0f8496fcf3b59b8a24ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbd39d01f8545e75e218de725997abc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1Poller.html#a0cf1be2f572740022edada139cacfb12">PollFdList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Poller.html#abbd39d01f8545e75e218de725997abc3">pollfds_</a></td></tr>
+<tr class="separator:abbd39d01f8545e75e218de725997abc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca6f39ba1cb9dbdd28edf2291d1b4fd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmuduo_1_1Poller.html#a950db725d18ce33d8457ae784380a07e">ChannelMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuduo_1_1Poller.html#aca6f39ba1cb9dbdd28edf2291d1b4fd5">channels_</a></td></tr>
+<tr class="separator:aca6f39ba1cb9dbdd28edf2291d1b4fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="Poller_8h_source.html">Poller.h</a> 第 <a class="el" href="Poller_8h_source.html#l00017">17</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a0b74248ffee6df294563618187b52404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b74248ffee6df294563618187b52404">&#9670;&nbsp;</a></span>ChannelList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="classmuduo_1_1Channel.html">Channel</a>*&gt; <a class="el" href="classmuduo_1_1Poller.html#a0b74248ffee6df294563618187b52404">ChannelList</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Poller_8h_source.html">Poller.h</a> 第 <a class="el" href="Poller_8h_source.html#l00019">19</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a950db725d18ce33d8457ae784380a07e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a950db725d18ce33d8457ae784380a07e">&#9670;&nbsp;</a></span>ChannelMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;int, <a class="el" href="classmuduo_1_1Channel.html">Channel</a>*&gt; <a class="el" href="classmuduo_1_1Poller.html#a950db725d18ce33d8457ae784380a07e">ChannelMap</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Poller_8h_source.html">Poller.h</a> 第 <a class="el" href="Poller_8h_source.html#l00035">35</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0cf1be2f572740022edada139cacfb12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cf1be2f572740022edada139cacfb12">&#9670;&nbsp;</a></span>PollFdList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;struct pollfd&gt; <a class="el" href="classmuduo_1_1Poller.html#a0cf1be2f572740022edada139cacfb12">PollFdList</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Poller_8h_source.html">Poller.h</a> 第 <a class="el" href="Poller_8h_source.html#l00034">34</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ad1445448c7a54f569eb9d6c6163ca7bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1445448c7a54f569eb9d6c6163ca7bc">&#9670;&nbsp;</a></span>Poller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1Poller.html">Poller</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1EventLoop.html">EventLoop</a> *&#160;</td>
+          <td class="paramname"><em>loop</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Poller_8cc_source.html">Poller.cc</a> 第 <a class="el" href="Poller_8cc_source.html#l00011">11</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a057f5fb0e9594deb1fd4b46f0e930557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a057f5fb0e9594deb1fd4b46f0e930557">&#9670;&nbsp;</a></span>~Poller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="classmuduo_1_1Poller.html">Poller</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Poller_8cc_source.html">Poller.cc</a> 第 <a class="el" href="Poller_8cc_source.html#l00014">14</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a9e9c23193ece3ba25a1a2779fc7ebc2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e9c23193ece3ba25a1a2779fc7ebc2d">&#9670;&nbsp;</a></span>assertInLoopThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void assertInLoopThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Poller_8h_source.html">Poller.h</a> 第 <a class="el" href="Poller_8h_source.html#l00029">29</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="EventLoop_8h_source.html#l00069">EventLoop::assertInLoopThread()</a>, <a class="el" href="Poller_8cc_source.html#l00030">Poller::fillActiveChannels()</a> , 以及 <a class="el" href="Poller_8h_source.html#l00037">Poller::ownerLoop_</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="Poller_8cc_source.html#l00073">Poller::removeChannel()</a> , 以及 <a class="el" href="Poller_8cc_source.html#l00045">Poller::updateChannel()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Poller_a9e9c23193ece3ba25a1a2779fc7ebc2d_cgraph.png" border="0" usemap="#classmuduo_1_1Poller_a9e9c23193ece3ba25a1a2779fc7ebc2d_cgraph" alt=""/></div>
+<map name="classmuduo_1_1Poller_a9e9c23193ece3ba25a1a2779fc7ebc2d_cgraph" id="classmuduo_1_1Poller_a9e9c23193ece3ba25a1a2779fc7ebc2d_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::EventLoop::assert\lInLoopThread" alt="" coords="204,64,395,105"/>
+<area shape="rect" id="node9" href="classmuduo_1_1Poller.html#a93b3d6d6cac94e92c2ddfd91e9b18cc0" title="fillActiveChannels" alt="" coords="230,133,369,159"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="muduo::EventLoop::abortNot\lInLoopThread" alt="" coords="705,5,913,47"/>
+<area shape="rect" id="node6" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="muduo::EventLoop::isInLoop\lThread" alt="" coords="443,64,648,105"/>
+<area shape="rect" id="node4" href="namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="971,42,1164,69"/>
+<area shape="rect" id="node5" href="namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="1212,35,1380,76"/>
+<area shape="rect" id="node7" href="classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="muduo::EventLoop::doPending\lFunctors" alt="" coords="700,123,919,164"/>
+<area shape="rect" id="node8" href="classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="muduo::EventLoop::handleRead" alt="" coords="696,189,923,215"/>
+<area shape="rect" id="node10" href="classmuduo_1_1Channel.html#ac155f87f8dc6f7bdf9559d4d2e5a9a4b" title="muduo::Channel::set\l_revents" alt="" coords="467,129,623,171"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Poller_a9e9c23193ece3ba25a1a2779fc7ebc2d_icgraph.png" border="0" usemap="#classmuduo_1_1Poller_a9e9c23193ece3ba25a1a2779fc7ebc2d_icgraph" alt=""/></div>
+<map name="classmuduo_1_1Poller_a9e9c23193ece3ba25a1a2779fc7ebc2d_icgraph" id="classmuduo_1_1Poller_a9e9c23193ece3ba25a1a2779fc7ebc2d_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1Poller.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="removeChannel" alt="" coords="204,5,329,32"/>
+<area shape="rect" id="node3" href="classmuduo_1_1Poller.html#acaa4a191936aacf608d279a6f343d533" title="updateChannel" alt="" coords="207,56,327,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a93b3d6d6cac94e92c2ddfd91e9b18cc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93b3d6d6cac94e92c2ddfd91e9b18cc0">&#9670;&nbsp;</a></span>fillActiveChannels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fillActiveChannels </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numEvents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1Poller.html#a0b74248ffee6df294563618187b52404">ChannelList</a> *&#160;</td>
+          <td class="paramname"><em>activeChannels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Poller_8cc_source.html">Poller.cc</a> 第 <a class="el" href="Poller_8cc_source.html#l00030">30</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Poller_8h_source.html#l00039">Poller::channels_</a>, <a class="el" href="Poller_8h_source.html#l00038">Poller::pollfds_</a> , 以及 <a class="el" href="Channel_8h_source.html#l00029">Channel::set_revents()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="Poller_8h_source.html#l00029">Poller::assertInLoopThread()</a> , 以及 <a class="el" href="Poller_8cc_source.html#l00016">Poller::poll()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Poller_a93b3d6d6cac94e92c2ddfd91e9b18cc0_cgraph.png" border="0" usemap="#classmuduo_1_1Poller_a93b3d6d6cac94e92c2ddfd91e9b18cc0_cgraph" alt=""/></div>
+<map name="classmuduo_1_1Poller_a93b3d6d6cac94e92c2ddfd91e9b18cc0_cgraph" id="classmuduo_1_1Poller_a93b3d6d6cac94e92c2ddfd91e9b18cc0_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1Channel.html#ac155f87f8dc6f7bdf9559d4d2e5a9a4b" title="muduo::Channel::set\l_revents" alt="" coords="192,5,348,47"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Poller_a93b3d6d6cac94e92c2ddfd91e9b18cc0_icgraph.png" border="0" usemap="#classmuduo_1_1Poller_a93b3d6d6cac94e92c2ddfd91e9b18cc0_icgraph" alt=""/></div>
+<map name="classmuduo_1_1Poller_a93b3d6d6cac94e92c2ddfd91e9b18cc0_icgraph" id="classmuduo_1_1Poller_a93b3d6d6cac94e92c2ddfd91e9b18cc0_icgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1Poller.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="assertInLoopThread" alt="" coords="192,31,343,57"/>
+<area shape="rect" id="node5" href="classmuduo_1_1Poller.html#a0165aabf2721e39f87ad67b05ece9267" title="poll" alt="" coords="244,81,291,108"/>
+<area shape="rect" id="node3" href="classmuduo_1_1Poller.html#ab10f76c92cb5269f8296e5b3e4dd0ef9" title="removeChannel" alt="" coords="391,5,516,32"/>
+<area shape="rect" id="node4" href="classmuduo_1_1Poller.html#acaa4a191936aacf608d279a6f343d533" title="updateChannel" alt="" coords="393,56,513,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0165aabf2721e39f87ad67b05ece9267"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0165aabf2721e39f87ad67b05ece9267">&#9670;&nbsp;</a></span>poll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1Timestamp.html">Timestamp</a> poll </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeoutMs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1Poller.html#a0b74248ffee6df294563618187b52404">ChannelList</a> *&#160;</td>
+          <td class="paramname"><em>activeChannels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Poller_8cc_source.html">Poller.cc</a> 第 <a class="el" href="Poller_8cc_source.html#l00016">16</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Poller_8cc_source.html#l00030">Poller::fillActiveChannels()</a>, <a class="el" href="Logging_8h_source.html#l00133">LOG_SYSERR</a>, <a class="el" href="Logging_8h_source.html#l00124">LOG_TRACE</a>, <a class="el" href="classmuduo_1_1Timestamp.html#a3bca3b2a36424e36b3d2c772fa7d5772">Timestamp::now()</a> , 以及 <a class="el" href="Poller_8h_source.html#l00038">Poller::pollfds_</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Poller_a0165aabf2721e39f87ad67b05ece9267_cgraph.png" border="0" usemap="#classmuduo_1_1Poller_a0165aabf2721e39f87ad67b05ece9267_cgraph" alt=""/></div>
+<map name="classmuduo_1_1Poller_a0165aabf2721e39f87ad67b05ece9267_cgraph" id="classmuduo_1_1Poller_a0165aabf2721e39f87ad67b05ece9267_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1Poller.html#a93b3d6d6cac94e92c2ddfd91e9b18cc0" title="fillActiveChannels" alt="" coords="123,13,261,39"/>
+<area shape="rect" id="node4" href="classmuduo_1_1Timestamp.html#a3bca3b2a36424e36b3d2c772fa7d5772" title="muduo::Timestamp::now" alt="" coords="100,63,284,90"/>
+<area shape="rect" id="node3" href="classmuduo_1_1Channel.html#ac155f87f8dc6f7bdf9559d4d2e5a9a4b" title="muduo::Channel::set\l_revents" alt="" coords="332,5,488,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab10f76c92cb5269f8296e5b3e4dd0ef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab10f76c92cb5269f8296e5b3e4dd0ef9">&#9670;&nbsp;</a></span>removeChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void removeChannel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1Channel.html">Channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Poller_8cc_source.html">Poller.cc</a> 第 <a class="el" href="Poller_8cc_source.html#l00073">73</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Poller_8h_source.html#l00029">Poller::assertInLoopThread()</a>, <a class="el" href="Poller_8h_source.html#l00039">Poller::channels_</a>, <a class="el" href="Channel_8h_source.html#l00028">Channel::events()</a>, <a class="el" href="Channel_8h_source.html#l00027">Channel::fd()</a>, <a class="el" href="Channel_8h_source.html#l00039">Channel::index()</a>, <a class="el" href="Channel_8h_source.html#l00030">Channel::isNoneEvent()</a>, <a class="el" href="Logging_8h_source.html#l00124">LOG_TRACE</a> , 以及 <a class="el" href="Poller_8h_source.html#l00038">Poller::pollfds_</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Poller_ab10f76c92cb5269f8296e5b3e4dd0ef9_cgraph.png" border="0" usemap="#classmuduo_1_1Poller_ab10f76c92cb5269f8296e5b3e4dd0ef9_cgraph" alt=""/></div>
+<map name="classmuduo_1_1Poller_ab10f76c92cb5269f8296e5b3e4dd0ef9_cgraph" id="classmuduo_1_1Poller_ab10f76c92cb5269f8296e5b3e4dd0ef9_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1Poller.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="assertInLoopThread" alt="" coords="213,102,363,129"/>
+<area shape="rect" id="node12" href="classmuduo_1_1Channel.html#ae4f693c8725a3c04d41dee8bb4266f7e" title="muduo::Channel::events" alt="" coords="198,153,378,179"/>
+<area shape="rect" id="node13" href="classmuduo_1_1Channel.html#ace5c4071ee8893901bb818bbcab739b2" title="muduo::Channel::fd" alt="" coords="213,203,363,230"/>
+<area shape="rect" id="node14" href="classmuduo_1_1Channel.html#a019749328da42c4814af71d3e3b647ad" title="muduo::Channel::index" alt="" coords="202,254,374,281"/>
+<area shape="rect" id="node15" href="classmuduo_1_1Channel.html#af586af8cbcc49b563969f6c8356b3c9a" title="muduo::Channel::isNoneEvent" alt="" coords="179,305,397,331"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::EventLoop::assert\lInLoopThread" alt="" coords="445,64,636,105"/>
+<area shape="rect" id="node10" href="classmuduo_1_1Poller.html#a93b3d6d6cac94e92c2ddfd91e9b18cc0" title="fillActiveChannels" alt="" coords="471,133,610,159"/>
+<area shape="rect" id="node4" href="classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="muduo::EventLoop::abortNot\lInLoopThread" alt="" coords="947,5,1155,47"/>
+<area shape="rect" id="node7" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="muduo::EventLoop::isInLoop\lThread" alt="" coords="684,64,889,105"/>
+<area shape="rect" id="node5" href="namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="1212,42,1405,69"/>
+<area shape="rect" id="node6" href="namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="1453,35,1621,76"/>
+<area shape="rect" id="node8" href="classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="muduo::EventLoop::doPending\lFunctors" alt="" coords="941,123,1160,164"/>
+<area shape="rect" id="node9" href="classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="muduo::EventLoop::handleRead" alt="" coords="937,189,1164,215"/>
+<area shape="rect" id="node11" href="classmuduo_1_1Channel.html#ac155f87f8dc6f7bdf9559d4d2e5a9a4b" title="muduo::Channel::set\l_revents" alt="" coords="709,129,865,171"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acaa4a191936aacf608d279a6f343d533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaa4a191936aacf608d279a6f343d533">&#9670;&nbsp;</a></span>updateChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateChannel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmuduo_1_1Channel.html">Channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Poller_8cc_source.html">Poller.cc</a> 第 <a class="el" href="Poller_8cc_source.html#l00045">45</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="Poller_8h_source.html#l00029">Poller::assertInLoopThread()</a>, <a class="el" href="Poller_8h_source.html#l00039">Poller::channels_</a>, <a class="el" href="Channel_8h_source.html#l00028">Channel::events()</a>, <a class="el" href="Channel_8h_source.html#l00027">Channel::fd()</a>, <a class="el" href="Channel_8h_source.html#l00039">Channel::index()</a>, <a class="el" href="Channel_8h_source.html#l00030">Channel::isNoneEvent()</a>, <a class="el" href="Logging_8h_source.html#l00124">LOG_TRACE</a>, <a class="el" href="Poller_8h_source.html#l00038">Poller::pollfds_</a> , 以及 <a class="el" href="Channel_8h_source.html#l00040">Channel::set_index()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmuduo_1_1Poller_acaa4a191936aacf608d279a6f343d533_cgraph.png" border="0" usemap="#classmuduo_1_1Poller_acaa4a191936aacf608d279a6f343d533_cgraph" alt=""/></div>
+<map name="classmuduo_1_1Poller_acaa4a191936aacf608d279a6f343d533_cgraph" id="classmuduo_1_1Poller_acaa4a191936aacf608d279a6f343d533_cgraph">
+<area shape="rect" id="node2" href="classmuduo_1_1Poller.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="assertInLoopThread" alt="" coords="207,102,358,129"/>
+<area shape="rect" id="node12" href="classmuduo_1_1Channel.html#ae4f693c8725a3c04d41dee8bb4266f7e" title="muduo::Channel::events" alt="" coords="193,153,373,179"/>
+<area shape="rect" id="node13" href="classmuduo_1_1Channel.html#ace5c4071ee8893901bb818bbcab739b2" title="muduo::Channel::fd" alt="" coords="208,203,357,230"/>
+<area shape="rect" id="node14" href="classmuduo_1_1Channel.html#a019749328da42c4814af71d3e3b647ad" title="muduo::Channel::index" alt="" coords="197,254,369,281"/>
+<area shape="rect" id="node15" href="classmuduo_1_1Channel.html#af586af8cbcc49b563969f6c8356b3c9a" title="muduo::Channel::isNoneEvent" alt="" coords="173,305,392,331"/>
+<area shape="rect" id="node16" href="classmuduo_1_1Channel.html#ac9a4cd0efc3148a6fee45b2ab4f61cb6" title="muduo::Channel::set\l_index" alt="" coords="205,356,361,397"/>
+<area shape="rect" id="node3" href="classmuduo_1_1EventLoop.html#a9e9c23193ece3ba25a1a2779fc7ebc2d" title="muduo::EventLoop::assert\lInLoopThread" alt="" coords="440,64,631,105"/>
+<area shape="rect" id="node10" href="classmuduo_1_1Poller.html#a93b3d6d6cac94e92c2ddfd91e9b18cc0" title="fillActiveChannels" alt="" coords="466,133,605,159"/>
+<area shape="rect" id="node4" href="classmuduo_1_1EventLoop.html#a6375a5e33170fe1ee0fcb82c68b684ba" title="muduo::EventLoop::abortNot\lInLoopThread" alt="" coords="941,5,1149,47"/>
+<area shape="rect" id="node7" href="classmuduo_1_1EventLoop.html#a1da5ae1e094c0136136b5344ef7a3b66" title="muduo::EventLoop::isInLoop\lThread" alt="" coords="679,64,884,105"/>
+<area shape="rect" id="node5" href="namespacemuduo_1_1CurrentThread.html#a27129392a2d642e96188636257bf13ca" title="muduo::CurrentThread::tid" alt="" coords="1207,42,1400,69"/>
+<area shape="rect" id="node6" href="namespacemuduo_1_1CurrentThread.html#a09cc852243e579266304c5e31f744929" title="muduo::CurrentThread\l::cacheTid" alt="" coords="1448,35,1616,76"/>
+<area shape="rect" id="node8" href="classmuduo_1_1EventLoop.html#a52b9d01f6df5ea016514b924abda1299" title="muduo::EventLoop::doPending\lFunctors" alt="" coords="936,123,1155,164"/>
+<area shape="rect" id="node9" href="classmuduo_1_1EventLoop.html#a231ec0ec0313193a59b3f1326328ae50" title="muduo::EventLoop::handleRead" alt="" coords="932,189,1159,215"/>
+<area shape="rect" id="node11" href="classmuduo_1_1Channel.html#ac155f87f8dc6f7bdf9559d4d2e5a9a4b" title="muduo::Channel::set\l_revents" alt="" coords="703,129,859,171"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="aca6f39ba1cb9dbdd28edf2291d1b4fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca6f39ba1cb9dbdd28edf2291d1b4fd5">&#9670;&nbsp;</a></span>channels_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1Poller.html#a950db725d18ce33d8457ae784380a07e">ChannelMap</a> channels_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Poller_8h_source.html">Poller.h</a> 第 <a class="el" href="Poller_8h_source.html#l00039">39</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="Poller_8cc_source.html#l00030">Poller::fillActiveChannels()</a>, <a class="el" href="Poller_8cc_source.html#l00073">Poller::removeChannel()</a> , 以及 <a class="el" href="Poller_8cc_source.html#l00045">Poller::updateChannel()</a>.</p>
+
+</div>
+</div>
+<a id="ab7cf856df3fd0f8496fcf3b59b8a24ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7cf856df3fd0f8496fcf3b59b8a24ab">&#9670;&nbsp;</a></span>ownerLoop_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1EventLoop.html">EventLoop</a>* ownerLoop_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Poller_8h_source.html">Poller.h</a> 第 <a class="el" href="Poller_8h_source.html#l00037">37</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="Poller_8h_source.html#l00029">Poller::assertInLoopThread()</a>.</p>
+
+</div>
+</div>
+<a id="abbd39d01f8545e75e218de725997abc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbd39d01f8545e75e218de725997abc3">&#9670;&nbsp;</a></span>pollfds_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmuduo_1_1Poller.html#a0cf1be2f572740022edada139cacfb12">PollFdList</a> pollfds_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Poller_8h_source.html">Poller.h</a> 第 <a class="el" href="Poller_8h_source.html#l00038">38</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="Poller_8cc_source.html#l00030">Poller::fillActiveChannels()</a>, <a class="el" href="Poller_8cc_source.html#l00016">Poller::poll()</a>, <a class="el" href="Poller_8cc_source.html#l00073">Poller::removeChannel()</a> , 以及 <a class="el" href="Poller_8cc_source.html#l00045">Poller::updateChannel()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>lib/<a class="el" href="Poller_8h_source.html">Poller.h</a></li>
+<li>src/<a class="el" href="Poller_8cc_source.html">Poller.cc</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemuduo.html">muduo</a></li><li class="navelem"><a class="el" href="classmuduo_1_1Poller.html">Poller</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,293 @@
+\hypertarget{classmuduo_1_1Timer}{}\section{Timer类 参考}
+\label{classmuduo_1_1Timer}\index{Timer@{Timer}}
+
+
+{\ttfamily \#include $<$Timer.\+h$>$}
+
+
+
+类 Timer 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{classmuduo_1_1Timer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Timer 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Timer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1Timer_a302c3f4c56839e86ec39f308d167fcb9}{Timer} (const \hyperlink{namespacemuduo_a5f7453c2a15825e79bddf5deaec707bf}{Timer\+Callback} \&cb, \hyperlink{classmuduo_1_1Timestamp}{Timestamp} when, double interval)
+\item 
+void \hyperlink{classmuduo_1_1Timer_aa6b7bb009af6cd63f442559d3b8d1ab2}{run} () const
+\item 
+\hyperlink{classmuduo_1_1Timestamp}{Timestamp} \hyperlink{classmuduo_1_1Timer_afa0ac5aa813b96802d509cf972054108}{expiration} () const
+\item 
+bool \hyperlink{classmuduo_1_1Timer_a24898cae728c6bc6d1a3c3e6bdd977b2}{repeat} () const
+\item 
+int64\+\_\+t \hyperlink{classmuduo_1_1Timer_a99f306fa27f00a90b51f028787651b30}{sequence} () const
+\item 
+void \hyperlink{classmuduo_1_1Timer_af96f08cc8d7b3f18df9ce1a305d56ae9}{restart} (\hyperlink{classmuduo_1_1Timestamp}{Timestamp} now)
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{namespacemuduo_a5f7453c2a15825e79bddf5deaec707bf}{Timer\+Callback} \hyperlink{classmuduo_1_1Timer_ad0ec9bf1f19da5ffee08ad1832e0e3fa}{callback\+\_\+}
+\item 
+\hyperlink{classmuduo_1_1Timestamp}{Timestamp} \hyperlink{classmuduo_1_1Timer_ae09cd3f6f1b94265e9414fc517d41bd2}{expiration\+\_\+}
+\item 
+const double \hyperlink{classmuduo_1_1Timer_a9a47d57fe28bd4e5d35c713c98673caa}{interval\+\_\+}
+\item 
+const bool \hyperlink{classmuduo_1_1Timer_ad8f33a2a7d75058460b05e91e14bf3c9}{repeat\+\_\+}
+\item 
+const int64\+\_\+t \hyperlink{classmuduo_1_1Timer_a65bda86585a5579d40126ea80735008f}{sequence\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{namespacemuduo_aa79d31350742dfc80edb0d9a5df0e7e7}{Atomic\+Int64} \hyperlink{classmuduo_1_1Timer_ad38839cdf944546950365d3812d717b7}{s\+\_\+num\+Created\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 Timer.\+h 第 12 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Timer_a302c3f4c56839e86ec39f308d167fcb9}\label{classmuduo_1_1Timer_a302c3f4c56839e86ec39f308d167fcb9}} 
+\index{muduo\+::\+Timer@{muduo\+::\+Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!muduo\+::\+Timer@{muduo\+::\+Timer}}
+\subsubsection{\texorpdfstring{Timer()}{Timer()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Timer}{Timer} (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemuduo_a5f7453c2a15825e79bddf5deaec707bf}{Timer\+Callback} \&}]{cb,  }\item[{\hyperlink{classmuduo_1_1Timestamp}{Timestamp}}]{when,  }\item[{double}]{interval }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Timer.\+h 第 14 行定义.
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Timer_afa0ac5aa813b96802d509cf972054108}\label{classmuduo_1_1Timer_afa0ac5aa813b96802d509cf972054108}} 
+\index{muduo\+::\+Timer@{muduo\+::\+Timer}!expiration@{expiration}}
+\index{expiration@{expiration}!muduo\+::\+Timer@{muduo\+::\+Timer}}
+\subsubsection{\texorpdfstring{expiration()}{expiration()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Timestamp}{Timestamp} expiration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Timer.\+h 第 25 行定义.
+
+
+
+参考 Timer\+::expiration\+\_\+.
+
+
+
+参考自 Timer\+Queue\+::add\+Timer\+In\+Loop() , 以及 Timer\+Queue\+::insert().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Timer_afa0ac5aa813b96802d509cf972054108_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Timer_a24898cae728c6bc6d1a3c3e6bdd977b2}\label{classmuduo_1_1Timer_a24898cae728c6bc6d1a3c3e6bdd977b2}} 
+\index{muduo\+::\+Timer@{muduo\+::\+Timer}!repeat@{repeat}}
+\index{repeat@{repeat}!muduo\+::\+Timer@{muduo\+::\+Timer}}
+\subsubsection{\texorpdfstring{repeat()}{repeat()}}
+{\footnotesize\ttfamily bool repeat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Timer.\+h 第 29 行定义.
+
+
+
+参考 Timer\+::repeat\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1Timer_af96f08cc8d7b3f18df9ce1a305d56ae9}\label{classmuduo_1_1Timer_af96f08cc8d7b3f18df9ce1a305d56ae9}} 
+\index{muduo\+::\+Timer@{muduo\+::\+Timer}!restart@{restart}}
+\index{restart@{restart}!muduo\+::\+Timer@{muduo\+::\+Timer}}
+\subsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily void restart (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Timestamp}{Timestamp}}]{now }\end{DoxyParamCaption})}
+
+
+
+在文件 Timer.\+cc 第 7 行定义.
+
+
+
+参考 muduo\+::add\+Time(), Timer\+::expiration\+\_\+, Timer\+::interval\+\_\+, Timestamp\+::invalid() , 以及 Timer\+::repeat\+\_\+.
+
+
+
+参考自 Timer\+::sequence().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Timer_af96f08cc8d7b3f18df9ce1a305d56ae9_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Timer_af96f08cc8d7b3f18df9ce1a305d56ae9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Timer_aa6b7bb009af6cd63f442559d3b8d1ab2}\label{classmuduo_1_1Timer_aa6b7bb009af6cd63f442559d3b8d1ab2}} 
+\index{muduo\+::\+Timer@{muduo\+::\+Timer}!run@{run}}
+\index{run@{run}!muduo\+::\+Timer@{muduo\+::\+Timer}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Timer.\+h 第 21 行定义.
+
+
+
+参考 Timer\+::callback\+\_\+.
+
+\mbox{\Hypertarget{classmuduo_1_1Timer_a99f306fa27f00a90b51f028787651b30}\label{classmuduo_1_1Timer_a99f306fa27f00a90b51f028787651b30}} 
+\index{muduo\+::\+Timer@{muduo\+::\+Timer}!sequence@{sequence}}
+\index{sequence@{sequence}!muduo\+::\+Timer@{muduo\+::\+Timer}}
+\subsubsection{\texorpdfstring{sequence()}{sequence()}}
+{\footnotesize\ttfamily int64\+\_\+t sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Timer.\+h 第 33 行定义.
+
+
+
+参考 Timer\+::restart() , 以及 Timer\+::sequence\+\_\+.
+
+
+
+参考自 Timer\+Queue\+::add\+Timer() , 以及 Timer\+Queue\+::insert().
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Timer_a99f306fa27f00a90b51f028787651b30_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmuduo_1_1Timer_a99f306fa27f00a90b51f028787651b30_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1Timer_ad0ec9bf1f19da5ffee08ad1832e0e3fa}\label{classmuduo_1_1Timer_ad0ec9bf1f19da5ffee08ad1832e0e3fa}} 
+\index{muduo\+::\+Timer@{muduo\+::\+Timer}!callback\+\_\+@{callback\+\_\+}}
+\index{callback\+\_\+@{callback\+\_\+}!muduo\+::\+Timer@{muduo\+::\+Timer}}
+\subsubsection{\texorpdfstring{callback\+\_\+}{callback\_}}
+{\footnotesize\ttfamily const \hyperlink{namespacemuduo_a5f7453c2a15825e79bddf5deaec707bf}{Timer\+Callback} callback\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer.\+h 第 40 行定义.
+
+
+
+参考自 Timer\+::run().
+
+\mbox{\Hypertarget{classmuduo_1_1Timer_ae09cd3f6f1b94265e9414fc517d41bd2}\label{classmuduo_1_1Timer_ae09cd3f6f1b94265e9414fc517d41bd2}} 
+\index{muduo\+::\+Timer@{muduo\+::\+Timer}!expiration\+\_\+@{expiration\+\_\+}}
+\index{expiration\+\_\+@{expiration\+\_\+}!muduo\+::\+Timer@{muduo\+::\+Timer}}
+\subsubsection{\texorpdfstring{expiration\+\_\+}{expiration\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Timestamp}{Timestamp} expiration\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer.\+h 第 41 行定义.
+
+
+
+参考自 Timer\+::expiration() , 以及 Timer\+::restart().
+
+\mbox{\Hypertarget{classmuduo_1_1Timer_a9a47d57fe28bd4e5d35c713c98673caa}\label{classmuduo_1_1Timer_a9a47d57fe28bd4e5d35c713c98673caa}} 
+\index{muduo\+::\+Timer@{muduo\+::\+Timer}!interval\+\_\+@{interval\+\_\+}}
+\index{interval\+\_\+@{interval\+\_\+}!muduo\+::\+Timer@{muduo\+::\+Timer}}
+\subsubsection{\texorpdfstring{interval\+\_\+}{interval\_}}
+{\footnotesize\ttfamily const double interval\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer.\+h 第 42 行定义.
+
+
+
+参考自 Timer\+::restart().
+
+\mbox{\Hypertarget{classmuduo_1_1Timer_ad8f33a2a7d75058460b05e91e14bf3c9}\label{classmuduo_1_1Timer_ad8f33a2a7d75058460b05e91e14bf3c9}} 
+\index{muduo\+::\+Timer@{muduo\+::\+Timer}!repeat\+\_\+@{repeat\+\_\+}}
+\index{repeat\+\_\+@{repeat\+\_\+}!muduo\+::\+Timer@{muduo\+::\+Timer}}
+\subsubsection{\texorpdfstring{repeat\+\_\+}{repeat\_}}
+{\footnotesize\ttfamily const bool repeat\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer.\+h 第 43 行定义.
+
+
+
+参考自 Timer\+::repeat() , 以及 Timer\+::restart().
+
+\mbox{\Hypertarget{classmuduo_1_1Timer_ad38839cdf944546950365d3812d717b7}\label{classmuduo_1_1Timer_ad38839cdf944546950365d3812d717b7}} 
+\index{muduo\+::\+Timer@{muduo\+::\+Timer}!s\+\_\+num\+Created\+\_\+@{s\+\_\+num\+Created\+\_\+}}
+\index{s\+\_\+num\+Created\+\_\+@{s\+\_\+num\+Created\+\_\+}!muduo\+::\+Timer@{muduo\+::\+Timer}}
+\subsubsection{\texorpdfstring{s\+\_\+num\+Created\+\_\+}{s\_numCreated\_}}
+{\footnotesize\ttfamily \hyperlink{namespacemuduo_aa79d31350742dfc80edb0d9a5df0e7e7}{Atomic\+Int64} s\+\_\+num\+Created\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 Timer.\+h 第 46 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1Timer_a65bda86585a5579d40126ea80735008f}\label{classmuduo_1_1Timer_a65bda86585a5579d40126ea80735008f}} 
+\index{muduo\+::\+Timer@{muduo\+::\+Timer}!sequence\+\_\+@{sequence\+\_\+}}
+\index{sequence\+\_\+@{sequence\+\_\+}!muduo\+::\+Timer@{muduo\+::\+Timer}}
+\subsubsection{\texorpdfstring{sequence\+\_\+}{sequence\_}}
+{\footnotesize\ttfamily const int64\+\_\+t sequence\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Timer.\+h 第 44 行定义.
+
+
+
+参考自 Timer\+::sequence().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{Timer_8h}{Timer.\+h}\item 
+src/\hyperlink{Timer_8cc}{Timer.\+cc}\end{DoxyCompactItemize}

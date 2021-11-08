@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>myMuduoLearning: lib/muduo/base/Types.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">myMuduoLearning
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Types_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">Types.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Types.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="Types_8h__incl.png" border="0" usemap="#lib_2muduo_2base_2Types_8h" alt=""/></div>
+<map name="lib_2muduo_2base_2Types_8h" id="lib_2muduo_2base_2Types_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="Types_8h__dep__incl.png" border="0" usemap="#lib_2muduo_2base_2Types_8hdep" alt=""/></div>
+<map name="lib_2muduo_2base_2Types_8hdep" id="lib_2muduo_2base_2Types_8hdep">
+<area shape="rect" id="node2" href="Timestamp_8h.html" title="lib/muduo/base/Timestamp.h" alt="" coords="1120,87,1332,114"/>
+<area shape="rect" id="node21" href="ProcessInfo_8h.html" title="lib/muduo/base/ProcessInfo.h" alt="" coords="1819,177,2032,203"/>
+<area shape="rect" id="node24" href="muduo_2net_2TcpConnection_8h.html" title="lib/muduo/net/TcpConnection.h" alt="" coords="3386,266,3609,293"/>
+<area shape="rect" id="node26" href="muduo_2net_2TcpServer_8h.html" title="lib/muduo/net/TcpServer.h" alt="" coords="3253,348,3444,375"/>
+<area shape="rect" id="node30" href="HttpRequest_8h.html" title="lib/muduo/net/http\l/HttpRequest.h" alt="" coords="1378,169,1521,211"/>
+<area shape="rect" id="node32" href="Thread_8h.html" title="lib/muduo/base/Thread.h" alt="" coords="2553,177,2736,203"/>
+<area shape="rect" id="node36" href="ThreadPool_8h.html" title="lib/muduo/base/ThreadPool.h" alt="" coords="2539,266,2750,293"/>
+<area shape="rect" id="node38" href="CurrentThread_8h.html" title="lib/muduo/base/CurrentThread.h" alt="" coords="2081,87,2312,114"/>
+<area shape="rect" id="node40" href="LogFile_8h.html" title="lib/muduo/base/LogFile.h" alt="" coords="2825,266,3008,293"/>
+<area shape="rect" id="node41" href="Date_8h.html" title="lib/muduo/base/Date.h" alt="" coords="2924,87,3093,114"/>
+<area shape="rect" id="node42" href="Exception_8h.html" title="lib/muduo/base/Exception.h" alt="" coords="3118,87,3320,114"/>
+<area shape="rect" id="node43" href="LogStream_8h.html" title="lib/muduo/base/LogStream.h" alt="" coords="2811,177,3019,203"/>
+<area shape="rect" id="node44" href="StringPiece_8h.html" title="lib/muduo/base/StringPiece.h" alt="" coords="3344,87,3555,114"/>
+<area shape="rect" id="node47" href="muduo_2net_2Buffer_8h.html" title="lib/muduo/net/Buffer.h" alt="" coords="3796,177,3962,203"/>
+<area shape="rect" id="node49" href="muduo_2net_2EventLoopThreadPool_8h.html" title="lib/muduo/net/EventLoopThread\lPool.h" alt="" coords="4038,80,4267,121"/>
+<area shape="rect" id="node50" href="HttpResponse_8h.html" title="lib/muduo/net/http\l/HttpResponse.h" alt="" coords="4292,80,4434,121"/>
+<area shape="rect" id="node3" href="Channel_8h.html" title="lib/Channel.h" alt="" coords="643,177,750,203"/>
+<area shape="rect" id="node6" href="TimerQueue_8h.html" title="lib/TimerQueue.h" alt="" coords="810,266,945,293"/>
+<area shape="rect" id="node7" href="EventLoop_8h.html" title="lib/EventLoop.h" alt="" coords="860,348,983,375"/>
+<area shape="rect" id="node8" href="EPoller_8h.html" title="lib/EPoller.h" alt="" coords="1211,430,1310,457"/>
+<area shape="rect" id="node11" href="Poller_8h.html" title="lib/Poller.h" alt="" coords="306,430,396,457"/>
+<area shape="rect" id="node16" href="Callbacks_8h.html" title="lib/Callbacks.h" alt="" coords="251,177,368,203"/>
+<area shape="rect" id="node19" href="Timer_8h.html" title="lib/Timer.h" alt="" coords="306,266,396,293"/>
+<area shape="rect" id="node20" href="Logging_8h.html" title="lib/muduo/base/Logging.h" alt="" coords="1007,348,1196,375"/>
+<area shape="rect" id="node22" href="muduo_2net_2Callbacks_8h.html" title="lib/muduo/net/Callbacks.h" alt="" coords="1597,177,1788,203"/>
+<area shape="rect" id="node23" href="muduo_2net_2EventLoop_8h.html" title="lib/muduo/net/EventLoop.h" alt="" coords="1490,266,1686,293"/>
+<area shape="rect" id="node29" href="muduo_2net_2Channel_8h.html" title="lib/muduo/net/Channel.h" alt="" coords="1071,177,1252,203"/>
+<area shape="rect" id="node4" href="Acceptor_8h.html" title="lib/Acceptor.h" alt="" coords="573,348,684,375"/>
+<area shape="rect" id="node9" href="EPoller_8cc.html" title="src/EPoller.cc" alt="" coords="1207,519,1314,546"/>
+<area shape="rect" id="node10" href="EventLoop_8cc.html" title="src/EventLoop.cc" alt="" coords="855,519,986,546"/>
+<area shape="rect" id="node12" href="Poller_8cc.html" title="src/Poller.cc" alt="" coords="384,519,483,546"/>
+<area shape="rect" id="node13" href="Channel_8cc.html" title="src/Channel.cc" alt="" coords="766,430,882,457"/>
+<area shape="rect" id="node14" href="Connector_8cc.html" title="src/Connector.cc" alt="" coords="958,430,1086,457"/>
+<area shape="rect" id="node5" href="Acceptor_8cc.html" title="src/Acceptor.cc" alt="" coords="624,430,742,457"/>
+<area shape="rect" id="node15" href="EventLoopThread_8cc.html" title="src/EventLoopThread.cc" alt="" coords="1384,430,1560,457"/>
+<area shape="rect" id="node17" href="TcpConnection_8h.html" title="lib/TcpConnection.h" alt="" coords="32,266,180,293"/>
+<area shape="rect" id="node18" href="TcpServer_8h.html" title="lib/TcpServer.h" alt="" coords="104,348,220,375"/>
+<area shape="rect" id="node25" href="muduo_2net_2TcpClient_8h.html" title="lib/muduo/net/TcpClient.h" alt="" coords="2604,348,2791,375"/>
+<area shape="rect" id="node27" href="HttpServer_8h.html" title="lib/muduo/net/http\l/HttpServer.h" alt="" coords="2545,423,2688,464"/>
+<area shape="rect" id="node28" href="Inspector_8h.html" title="lib/muduo/net/inspect\l/Inspector.h" alt="" coords="1694,512,1856,553"/>
+<area shape="rect" id="node31" href="HttpContext_8h.html" title="lib/muduo/net/http\l/HttpContext.h" alt="" coords="1272,259,1414,300"/>
+<area shape="rect" id="node33" href="EventLoopThread_8h.html" title="lib/EventLoopThread.h" alt="" coords="2348,266,2514,293"/>
+<area shape="rect" id="node34" href="EventLoopThreadPool_8h.html" title="lib/EventLoopThreadPool.h" alt="" coords="1863,266,2058,293"/>
+<area shape="rect" id="node35" href="AsyncLogging_8h.html" title="lib/muduo/base/AsyncLogging.h" alt="" coords="3032,266,3260,293"/>
+<area shape="rect" id="node37" href="muduo_2net_2EventLoopThread_8h.html" title="lib/muduo/net/EventLoopThread.h" alt="" coords="2082,266,2324,293"/>
+<area shape="rect" id="node39" href="Mutex_8h.html" title="lib/muduo/base/Mutex.h" alt="" coords="2107,177,2286,203"/>
+<area shape="rect" id="node45" href="FileUtil_8h.html" title="lib/muduo/base/FileUtil.h" alt="" coords="3358,177,3541,203"/>
+<area shape="rect" id="node46" href="GzipFile_8h.html" title="lib/muduo/base/GzipFile.h" alt="" coords="3144,177,3334,203"/>
+<area shape="rect" id="node48" href="muduo_2net_2InetAddress_8h.html" title="lib/muduo/net/InetAddress.h" alt="" coords="3566,177,3771,203"/>
+</map>
+</div>
+</div>
+<p><a href="Types_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:namespacemuduo"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemuduo.html">muduo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a8f6d784bddb9d3e0774a665b147758bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemuduo.html#a8f6d784bddb9d3e0774a665b147758bc">memZero</a> (void *p, size_t n)</td></tr>
+<tr class="separator:a8f6d784bddb9d3e0774a665b147758bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72cbcf425db108335295456e8ff9c12b"><td class="memTemplParams" colspan="2">template&lt;typename To , typename From &gt; </td></tr>
+<tr class="memitem:a72cbcf425db108335295456e8ff9c12b"><td class="memTemplItemLeft" align="right" valign="top">To&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemuduo.html#a72cbcf425db108335295456e8ff9c12b">implicit_cast</a> (From const &amp;f)</td></tr>
+<tr class="separator:a72cbcf425db108335295456e8ff9c12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5610d86660bbd28e059ebb1ffc8316"><td class="memTemplParams" colspan="2">template&lt;typename To , typename From &gt; </td></tr>
+<tr class="memitem:a4a5610d86660bbd28e059ebb1ffc8316"><td class="memTemplItemLeft" align="right" valign="top">To&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemuduo.html#a4a5610d86660bbd28e059ebb1ffc8316">down_cast</a> (From *f)</td></tr>
+<tr class="separator:a4a5610d86660bbd28e059ebb1ffc8316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_e3b32e68f04aa7e841009dd52d1d0488.html">muduo</a></li><li class="navelem"><a class="el" href="dir_9dc812d0f010bb69297de7069e5ca985.html">base</a></li><li class="navelem"><a class="el" href="Types_8h.html">Types.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

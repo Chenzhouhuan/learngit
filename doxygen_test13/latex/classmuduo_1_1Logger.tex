@@ -1,0 +1,301 @@
+\hypertarget{classmuduo_1_1Logger}{}\section{Logger类 参考}
+\label{classmuduo_1_1Logger}\index{Logger@{Logger}}
+
+
+{\ttfamily \#include $<$Logging.\+h$>$}
+
+
+
+Logger 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmuduo_1_1Logger__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmuduo_1_1Logger_1_1Impl}{Impl}
+\item 
+class \hyperlink{classmuduo_1_1Logger_1_1SourceFile}{Source\+File}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level} \{ \newline
+\hyperlink{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a7fa27e82c6c4f69434225ed81e5d151e}{T\+R\+A\+CE}, 
+\hyperlink{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f}{D\+E\+B\+UG}, 
+\hyperlink{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806}{I\+N\+FO}, 
+\hyperlink{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a74dac7ac23d5b810db6d4067f14e8676}{W\+A\+RN}, 
+\newline
+\hyperlink{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90}{E\+R\+R\+OR}, 
+\hyperlink{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a651d8a47a6976d6fe05c0e03fb4cd2d0}{F\+A\+T\+AL}, 
+\hyperlink{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a4ffba60acdbb6fe4c6acf32b06d065d0}{N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+LS}
+ \}
+\item 
+typedef void($\ast$ \hyperlink{classmuduo_1_1Logger_a34167efc62501fda5dcd3e2c81a3497b}{Output\+Func}) (const char $\ast$msg, int len)
+\item 
+typedef void($\ast$ \hyperlink{classmuduo_1_1Logger_a355919f024ed4b42a85a6ddd28aede29}{Flush\+Func}) ()
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1Logger_a16db484462eb24f5c3bfb697fcf47175}{Logger} (\hyperlink{classmuduo_1_1Logger_1_1SourceFile}{Source\+File} file, int line)
+\item 
+\hyperlink{classmuduo_1_1Logger_aa956cff693fd7f5b5e27f80161d7064f}{Logger} (\hyperlink{classmuduo_1_1Logger_1_1SourceFile}{Source\+File} file, int line, \hyperlink{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level} level)
+\item 
+\hyperlink{classmuduo_1_1Logger_a62af35d852c8b5642f517f5c07740cc0}{Logger} (\hyperlink{classmuduo_1_1Logger_1_1SourceFile}{Source\+File} file, int line, \hyperlink{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level} level, const char $\ast$func)
+\item 
+\hyperlink{classmuduo_1_1Logger_a267d5d8e87b3c87a06cde3e8d6f5e8ee}{Logger} (\hyperlink{classmuduo_1_1Logger_1_1SourceFile}{Source\+File} file, int line, bool to\+Abort)
+\item 
+\hyperlink{classmuduo_1_1Logger_a0d77f27eb95c246d555904aaf08018eb}{$\sim$\+Logger} ()
+\item 
+\hyperlink{classmuduo_1_1LogStream}{Log\+Stream} \& \hyperlink{classmuduo_1_1Logger_af35f1ce6f7021612044983efed7fc89e}{stream} ()
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level} \hyperlink{classmuduo_1_1Logger_a0cf9854e69e225406d284d66ebaf9dfe}{log\+Level} ()
+\item 
+static void \hyperlink{classmuduo_1_1Logger_afdf5e54919991319a042cc6ad56c68ff}{set\+Log\+Level} (\hyperlink{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level} level)
+\item 
+static void \hyperlink{classmuduo_1_1Logger_a665e9bd6827c71419e511203aa38b722}{set\+Output} (\hyperlink{classmuduo_1_1Logger_a34167efc62501fda5dcd3e2c81a3497b}{Output\+Func})
+\item 
+static void \hyperlink{classmuduo_1_1Logger_af1e4b6b611cd983fa68ec4038d45b621}{set\+Flush} (\hyperlink{classmuduo_1_1Logger_a355919f024ed4b42a85a6ddd28aede29}{Flush\+Func})
+\item 
+static void \hyperlink{classmuduo_1_1Logger_a621b7814fdc22f8982ddc5325ba646f6}{set\+Time\+Zone} (const \hyperlink{classmuduo_1_1TimeZone}{Time\+Zone} \&tz)
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmuduo_1_1Logger_1_1Impl}{Impl} \hyperlink{classmuduo_1_1Logger_a21911ce5df42a8fac765ff5c446bee64}{impl\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 Logging.\+h 第 17 行定义.
+
+
+
+\subsection{成员类型定义说明}
+\mbox{\Hypertarget{classmuduo_1_1Logger_a355919f024ed4b42a85a6ddd28aede29}\label{classmuduo_1_1Logger_a355919f024ed4b42a85a6ddd28aede29}} 
+\index{muduo\+::\+Logger@{muduo\+::\+Logger}!Flush\+Func@{Flush\+Func}}
+\index{Flush\+Func@{Flush\+Func}!muduo\+::\+Logger@{muduo\+::\+Logger}}
+\subsubsection{\texorpdfstring{Flush\+Func}{FlushFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ Flush\+Func) ()}
+
+
+
+在文件 Logging.\+h 第 75 行定义.
+
+\mbox{\Hypertarget{classmuduo_1_1Logger_a34167efc62501fda5dcd3e2c81a3497b}\label{classmuduo_1_1Logger_a34167efc62501fda5dcd3e2c81a3497b}} 
+\index{muduo\+::\+Logger@{muduo\+::\+Logger}!Output\+Func@{Output\+Func}}
+\index{Output\+Func@{Output\+Func}!muduo\+::\+Logger@{muduo\+::\+Logger}}
+\subsubsection{\texorpdfstring{Output\+Func}{OutputFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ Output\+Func) (const char $\ast$msg, int len)}
+
+
+
+在文件 Logging.\+h 第 74 行定义.
+
+
+
+\subsection{成员枚举类型说明}
+\mbox{\Hypertarget{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9}\label{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9}} 
+\index{muduo\+::\+Logger@{muduo\+::\+Logger}!Log\+Level@{Log\+Level}}
+\index{Log\+Level@{Log\+Level}!muduo\+::\+Logger@{muduo\+::\+Logger}}
+\subsubsection{\texorpdfstring{Log\+Level}{LogLevel}}
+{\footnotesize\ttfamily enum \hyperlink{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+R\+A\+CE@{T\+R\+A\+CE}!muduo\+::\+Logger@{muduo\+::\+Logger}}\index{muduo\+::\+Logger@{muduo\+::\+Logger}!T\+R\+A\+CE@{T\+R\+A\+CE}}}\mbox{\Hypertarget{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a7fa27e82c6c4f69434225ed81e5d151e}\label{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a7fa27e82c6c4f69434225ed81e5d151e}} 
+T\+R\+A\+CE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+E\+B\+UG@{D\+E\+B\+UG}!muduo\+::\+Logger@{muduo\+::\+Logger}}\index{muduo\+::\+Logger@{muduo\+::\+Logger}!D\+E\+B\+UG@{D\+E\+B\+UG}}}\mbox{\Hypertarget{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f}\label{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f}} 
+D\+E\+B\+UG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+N\+FO@{I\+N\+FO}!muduo\+::\+Logger@{muduo\+::\+Logger}}\index{muduo\+::\+Logger@{muduo\+::\+Logger}!I\+N\+FO@{I\+N\+FO}}}\mbox{\Hypertarget{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806}\label{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806}} 
+I\+N\+FO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{W\+A\+RN@{W\+A\+RN}!muduo\+::\+Logger@{muduo\+::\+Logger}}\index{muduo\+::\+Logger@{muduo\+::\+Logger}!W\+A\+RN@{W\+A\+RN}}}\mbox{\Hypertarget{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a74dac7ac23d5b810db6d4067f14e8676}\label{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a74dac7ac23d5b810db6d4067f14e8676}} 
+W\+A\+RN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+R\+R\+OR@{E\+R\+R\+OR}!muduo\+::\+Logger@{muduo\+::\+Logger}}\index{muduo\+::\+Logger@{muduo\+::\+Logger}!E\+R\+R\+OR@{E\+R\+R\+OR}}}\mbox{\Hypertarget{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90}\label{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90}} 
+E\+R\+R\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+A\+T\+AL@{F\+A\+T\+AL}!muduo\+::\+Logger@{muduo\+::\+Logger}}\index{muduo\+::\+Logger@{muduo\+::\+Logger}!F\+A\+T\+AL@{F\+A\+T\+AL}}}\mbox{\Hypertarget{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a651d8a47a6976d6fe05c0e03fb4cd2d0}\label{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a651d8a47a6976d6fe05c0e03fb4cd2d0}} 
+F\+A\+T\+AL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+LS@{N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+LS}!muduo\+::\+Logger@{muduo\+::\+Logger}}\index{muduo\+::\+Logger@{muduo\+::\+Logger}!N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+LS@{N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+LS}}}\mbox{\Hypertarget{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a4ffba60acdbb6fe4c6acf32b06d065d0}\label{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9a4ffba60acdbb6fe4c6acf32b06d065d0}} 
+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+LS&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 Logging.\+h 第 20 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Logger_a16db484462eb24f5c3bfb697fcf47175}\label{classmuduo_1_1Logger_a16db484462eb24f5c3bfb697fcf47175}} 
+\index{muduo\+::\+Logger@{muduo\+::\+Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!muduo\+::\+Logger@{muduo\+::\+Logger}}
+\subsubsection{\texorpdfstring{Logger()}{Logger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Logger}{Logger} (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Logger_1_1SourceFile}{Source\+File}}]{file,  }\item[{int}]{line }\end{DoxyParamCaption})}
+
+
+
+参考自 muduo\+::\+Check\+Not\+Null().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{classmuduo_1_1Logger_a16db484462eb24f5c3bfb697fcf47175_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Logger_aa956cff693fd7f5b5e27f80161d7064f}\label{classmuduo_1_1Logger_aa956cff693fd7f5b5e27f80161d7064f}} 
+\index{muduo\+::\+Logger@{muduo\+::\+Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!muduo\+::\+Logger@{muduo\+::\+Logger}}
+\subsubsection{\texorpdfstring{Logger()}{Logger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Logger}{Logger} (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Logger_1_1SourceFile}{Source\+File}}]{file,  }\item[{int}]{line,  }\item[{\hyperlink{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}}]{level }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmuduo_1_1Logger_a62af35d852c8b5642f517f5c07740cc0}\label{classmuduo_1_1Logger_a62af35d852c8b5642f517f5c07740cc0}} 
+\index{muduo\+::\+Logger@{muduo\+::\+Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!muduo\+::\+Logger@{muduo\+::\+Logger}}
+\subsubsection{\texorpdfstring{Logger()}{Logger()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Logger}{Logger} (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Logger_1_1SourceFile}{Source\+File}}]{file,  }\item[{int}]{line,  }\item[{\hyperlink{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}}]{level,  }\item[{const char $\ast$}]{func }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmuduo_1_1Logger_a267d5d8e87b3c87a06cde3e8d6f5e8ee}\label{classmuduo_1_1Logger_a267d5d8e87b3c87a06cde3e8d6f5e8ee}} 
+\index{muduo\+::\+Logger@{muduo\+::\+Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!muduo\+::\+Logger@{muduo\+::\+Logger}}
+\subsubsection{\texorpdfstring{Logger()}{Logger()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Logger}{Logger} (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Logger_1_1SourceFile}{Source\+File}}]{file,  }\item[{int}]{line,  }\item[{bool}]{to\+Abort }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmuduo_1_1Logger_a0d77f27eb95c246d555904aaf08018eb}\label{classmuduo_1_1Logger_a0d77f27eb95c246d555904aaf08018eb}} 
+\index{muduo\+::\+Logger@{muduo\+::\+Logger}!````~Logger@{$\sim$\+Logger}}
+\index{````~Logger@{$\sim$\+Logger}!muduo\+::\+Logger@{muduo\+::\+Logger}}
+\subsubsection{\texorpdfstring{$\sim$\+Logger()}{~Logger()}}
+{\footnotesize\ttfamily $\sim$\hyperlink{classmuduo_1_1Logger}{Logger} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmuduo_1_1Logger_a0cf9854e69e225406d284d66ebaf9dfe}\label{classmuduo_1_1Logger_a0cf9854e69e225406d284d66ebaf9dfe}} 
+\index{muduo\+::\+Logger@{muduo\+::\+Logger}!log\+Level@{log\+Level}}
+\index{log\+Level@{log\+Level}!muduo\+::\+Logger@{muduo\+::\+Logger}}
+\subsubsection{\texorpdfstring{log\+Level()}{logLevel()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9}{Logger\+::\+Log\+Level} log\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+在文件 Logging.\+h 第 103 行定义.
+
+
+
+参考 muduo\+::g\+\_\+log\+Level.
+
+
+
+参考自 Logger\+::stream().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classmuduo_1_1Logger_a0cf9854e69e225406d284d66ebaf9dfe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Logger_af1e4b6b611cd983fa68ec4038d45b621}\label{classmuduo_1_1Logger_af1e4b6b611cd983fa68ec4038d45b621}} 
+\index{muduo\+::\+Logger@{muduo\+::\+Logger}!set\+Flush@{set\+Flush}}
+\index{set\+Flush@{set\+Flush}!muduo\+::\+Logger@{muduo\+::\+Logger}}
+\subsubsection{\texorpdfstring{set\+Flush()}{setFlush()}}
+{\footnotesize\ttfamily static void set\+Flush (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Logger_a355919f024ed4b42a85a6ddd28aede29}{Flush\+Func}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classmuduo_1_1Logger_afdf5e54919991319a042cc6ad56c68ff}\label{classmuduo_1_1Logger_afdf5e54919991319a042cc6ad56c68ff}} 
+\index{muduo\+::\+Logger@{muduo\+::\+Logger}!set\+Log\+Level@{set\+Log\+Level}}
+\index{set\+Log\+Level@{set\+Log\+Level}!muduo\+::\+Logger@{muduo\+::\+Logger}}
+\subsubsection{\texorpdfstring{set\+Log\+Level()}{setLogLevel()}}
+{\footnotesize\ttfamily static void set\+Log\+Level (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Logger_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+参考自 Logger\+::stream().
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classmuduo_1_1Logger_afdf5e54919991319a042cc6ad56c68ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmuduo_1_1Logger_a665e9bd6827c71419e511203aa38b722}\label{classmuduo_1_1Logger_a665e9bd6827c71419e511203aa38b722}} 
+\index{muduo\+::\+Logger@{muduo\+::\+Logger}!set\+Output@{set\+Output}}
+\index{set\+Output@{set\+Output}!muduo\+::\+Logger@{muduo\+::\+Logger}}
+\subsubsection{\texorpdfstring{set\+Output()}{setOutput()}}
+{\footnotesize\ttfamily static void set\+Output (\begin{DoxyParamCaption}\item[{\hyperlink{classmuduo_1_1Logger_a34167efc62501fda5dcd3e2c81a3497b}{Output\+Func}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classmuduo_1_1Logger_a621b7814fdc22f8982ddc5325ba646f6}\label{classmuduo_1_1Logger_a621b7814fdc22f8982ddc5325ba646f6}} 
+\index{muduo\+::\+Logger@{muduo\+::\+Logger}!set\+Time\+Zone@{set\+Time\+Zone}}
+\index{set\+Time\+Zone@{set\+Time\+Zone}!muduo\+::\+Logger@{muduo\+::\+Logger}}
+\subsubsection{\texorpdfstring{set\+Time\+Zone()}{setTimeZone()}}
+{\footnotesize\ttfamily static void set\+Time\+Zone (\begin{DoxyParamCaption}\item[{const \hyperlink{classmuduo_1_1TimeZone}{Time\+Zone} \&}]{tz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classmuduo_1_1Logger_af35f1ce6f7021612044983efed7fc89e}\label{classmuduo_1_1Logger_af35f1ce6f7021612044983efed7fc89e}} 
+\index{muduo\+::\+Logger@{muduo\+::\+Logger}!stream@{stream}}
+\index{stream@{stream}!muduo\+::\+Logger@{muduo\+::\+Logger}}
+\subsubsection{\texorpdfstring{stream()}{stream()}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1LogStream}{Log\+Stream}\& stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Logging.\+h 第 69 行定义.
+
+
+
+参考 Logger\+::impl\+\_\+, Logger\+::log\+Level(), Logger\+::set\+Log\+Level() , 以及 Logger\+::\+Impl\+::stream\+\_\+.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classmuduo_1_1Logger_af35f1ce6f7021612044983efed7fc89e_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classmuduo_1_1Logger_a21911ce5df42a8fac765ff5c446bee64}\label{classmuduo_1_1Logger_a21911ce5df42a8fac765ff5c446bee64}} 
+\index{muduo\+::\+Logger@{muduo\+::\+Logger}!impl\+\_\+@{impl\+\_\+}}
+\index{impl\+\_\+@{impl\+\_\+}!muduo\+::\+Logger@{muduo\+::\+Logger}}
+\subsubsection{\texorpdfstring{impl\+\_\+}{impl\_}}
+{\footnotesize\ttfamily \hyperlink{classmuduo_1_1Logger_1_1Impl}{Impl} impl\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 Logging.\+h 第 97 行定义.
+
+
+
+参考自 Logger\+::stream().
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+lib/muduo/base/\hyperlink{Logging_8h}{Logging.\+h}\end{DoxyCompactItemize}

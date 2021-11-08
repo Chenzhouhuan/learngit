@@ -1,0 +1,170 @@
+\hypertarget{namespacemuduo_1_1net}{}\section{muduo\+:\+:net 命名空间参考}
+\label{namespacemuduo_1_1net}\index{muduo\+::net@{muduo\+::net}}
+\subsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemuduo_1_1net_1_1sockets}{sockets}
+\end{DoxyCompactItemize}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmuduo_1_1net_1_1Buffer}{Buffer}
+\item 
+class \hyperlink{classmuduo_1_1net_1_1Channel}{Channel}
+\item 
+class \hyperlink{classmuduo_1_1net_1_1EventLoop}{Event\+Loop}
+\item 
+class \hyperlink{classmuduo_1_1net_1_1EventLoopThread}{Event\+Loop\+Thread}
+\item 
+class \hyperlink{classmuduo_1_1net_1_1EventLoopThreadPool}{Event\+Loop\+Thread\+Pool}
+\item 
+class \hyperlink{classmuduo_1_1net_1_1HttpContext}{Http\+Context}
+\item 
+class \hyperlink{classmuduo_1_1net_1_1HttpRequest}{Http\+Request}
+\item 
+class \hyperlink{classmuduo_1_1net_1_1HttpResponse}{Http\+Response}
+\item 
+class \hyperlink{classmuduo_1_1net_1_1HttpServer}{Http\+Server}
+\item 
+class \hyperlink{classmuduo_1_1net_1_1InetAddress}{Inet\+Address}
+\item 
+class \hyperlink{classmuduo_1_1net_1_1Inspector}{Inspector}
+\item 
+class \hyperlink{classmuduo_1_1net_1_1PerformanceInspector}{Performance\+Inspector}
+\item 
+class \hyperlink{classmuduo_1_1net_1_1ProcessInspector}{Process\+Inspector}
+\item 
+class \hyperlink{classmuduo_1_1net_1_1SystemInspector}{System\+Inspector}
+\item 
+class \hyperlink{classmuduo_1_1net_1_1TcpClient}{Tcp\+Client}
+\item 
+class \hyperlink{classmuduo_1_1net_1_1TcpConnection}{Tcp\+Connection}
+\item 
+class \hyperlink{classmuduo_1_1net_1_1TcpServer}{Tcp\+Server}
+\item 
+class \hyperlink{classmuduo_1_1net_1_1TimerId}{Timer\+Id}
+\end{DoxyCompactItemize}
+\subsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classmuduo_1_1net_1_1TcpConnection}{Tcp\+Connection} $>$ \hyperlink{namespacemuduo_1_1net_ab91a46e9290926aa692450e46cfc9039}{Tcp\+Connection\+Ptr}
+\item 
+typedef std\+::function$<$ void()$>$ \hyperlink{namespacemuduo_1_1net_ad4bd8788fd4c609b90c78920572bec50}{Timer\+Callback}
+\item 
+typedef std\+::function$<$ void(const \hyperlink{namespacemuduo_1_1net_ab91a46e9290926aa692450e46cfc9039}{Tcp\+Connection\+Ptr} \&)$>$ \hyperlink{namespacemuduo_1_1net_a78754792e997a13cb10908eb7ec508b2}{Connection\+Callback}
+\item 
+typedef std\+::function$<$ void(const \hyperlink{namespacemuduo_1_1net_ab91a46e9290926aa692450e46cfc9039}{Tcp\+Connection\+Ptr} \&)$>$ \hyperlink{namespacemuduo_1_1net_a5a393be65a093bad5f5a6b8340ce8c88}{Close\+Callback}
+\item 
+typedef std\+::function$<$ void(const \hyperlink{namespacemuduo_1_1net_ab91a46e9290926aa692450e46cfc9039}{Tcp\+Connection\+Ptr} \&)$>$ \hyperlink{namespacemuduo_1_1net_a525c3730bfefb763975b035ebc88a63d}{Write\+Complete\+Callback}
+\item 
+typedef std\+::function$<$ void(const \hyperlink{namespacemuduo_1_1net_ab91a46e9290926aa692450e46cfc9039}{Tcp\+Connection\+Ptr} \&, size\+\_\+t)$>$ \hyperlink{namespacemuduo_1_1net_a503c5e91d2e84874e83e9a6cbfb4a47b}{High\+Water\+Mark\+Callback}
+\item 
+typedef std\+::function$<$ void(const \hyperlink{namespacemuduo_1_1net_ab91a46e9290926aa692450e46cfc9039}{Tcp\+Connection\+Ptr} \&, \hyperlink{classmuduo_1_1net_1_1Buffer}{Buffer} $\ast$, \hyperlink{classmuduo_1_1Timestamp}{Timestamp})$>$ \hyperlink{namespacemuduo_1_1net_acaa802028467a41738aeb49699e85285}{Message\+Callback}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classmuduo_1_1Connector}{Connector} $>$ \hyperlink{namespacemuduo_1_1net_adaac8e7754cfd0ac9c5a680eec411eba}{Connector\+Ptr}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespacemuduo_1_1net_a74d4cd57249902f889bfecb4bad7847d}{default\+Connection\+Callback} (const \hyperlink{namespacemuduo_1_1net_ab91a46e9290926aa692450e46cfc9039}{Tcp\+Connection\+Ptr} \&conn)
+\item 
+void \hyperlink{namespacemuduo_1_1net_abea01f500af8f956edd6649639937508}{default\+Message\+Callback} (const \hyperlink{namespacemuduo_1_1net_ab91a46e9290926aa692450e46cfc9039}{Tcp\+Connection\+Ptr} \&conn, \hyperlink{classmuduo_1_1net_1_1Buffer}{Buffer} $\ast$buffer, \hyperlink{classmuduo_1_1Timestamp}{Timestamp} receive\+Time)
+\end{DoxyCompactItemize}
+
+
+\subsection{类型定义说明}
+\mbox{\Hypertarget{namespacemuduo_1_1net_a5a393be65a093bad5f5a6b8340ce8c88}\label{namespacemuduo_1_1net_a5a393be65a093bad5f5a6b8340ce8c88}} 
+\index{muduo\+::net@{muduo\+::net}!Close\+Callback@{Close\+Callback}}
+\index{Close\+Callback@{Close\+Callback}!muduo\+::net@{muduo\+::net}}
+\subsubsection{\texorpdfstring{Close\+Callback}{CloseCallback}}
+{\footnotesize\ttfamily typedef std\+::function$<$void (const \hyperlink{namespacemuduo_1_1net_ab91a46e9290926aa692450e46cfc9039}{Tcp\+Connection\+Ptr}\&)$>$ \hyperlink{namespacemuduo_1_1net_a5a393be65a093bad5f5a6b8340ce8c88}{Close\+Callback}}
+
+
+
+在文件 Callbacks.\+h 第 65 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_1_1net_a78754792e997a13cb10908eb7ec508b2}\label{namespacemuduo_1_1net_a78754792e997a13cb10908eb7ec508b2}} 
+\index{muduo\+::net@{muduo\+::net}!Connection\+Callback@{Connection\+Callback}}
+\index{Connection\+Callback@{Connection\+Callback}!muduo\+::net@{muduo\+::net}}
+\subsubsection{\texorpdfstring{Connection\+Callback}{ConnectionCallback}}
+{\footnotesize\ttfamily typedef std\+::function$<$void (const \hyperlink{namespacemuduo_1_1net_ab91a46e9290926aa692450e46cfc9039}{Tcp\+Connection\+Ptr}\&)$>$ \hyperlink{namespacemuduo_1_1net_a78754792e997a13cb10908eb7ec508b2}{Connection\+Callback}}
+
+
+
+在文件 Callbacks.\+h 第 64 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_1_1net_adaac8e7754cfd0ac9c5a680eec411eba}\label{namespacemuduo_1_1net_adaac8e7754cfd0ac9c5a680eec411eba}} 
+\index{muduo\+::net@{muduo\+::net}!Connector\+Ptr@{Connector\+Ptr}}
+\index{Connector\+Ptr@{Connector\+Ptr}!muduo\+::net@{muduo\+::net}}
+\subsubsection{\texorpdfstring{Connector\+Ptr}{ConnectorPtr}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\hyperlink{classmuduo_1_1Connector}{Connector}$>$ \hyperlink{namespacemuduo_1_1net_adaac8e7754cfd0ac9c5a680eec411eba}{Connector\+Ptr}}
+
+
+
+在文件 Tcp\+Client.\+h 第 22 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_1_1net_a503c5e91d2e84874e83e9a6cbfb4a47b}\label{namespacemuduo_1_1net_a503c5e91d2e84874e83e9a6cbfb4a47b}} 
+\index{muduo\+::net@{muduo\+::net}!High\+Water\+Mark\+Callback@{High\+Water\+Mark\+Callback}}
+\index{High\+Water\+Mark\+Callback@{High\+Water\+Mark\+Callback}!muduo\+::net@{muduo\+::net}}
+\subsubsection{\texorpdfstring{High\+Water\+Mark\+Callback}{HighWaterMarkCallback}}
+{\footnotesize\ttfamily typedef std\+::function$<$void (const \hyperlink{namespacemuduo_1_1net_ab91a46e9290926aa692450e46cfc9039}{Tcp\+Connection\+Ptr}\&, size\+\_\+t)$>$ \hyperlink{namespacemuduo_1_1net_a503c5e91d2e84874e83e9a6cbfb4a47b}{High\+Water\+Mark\+Callback}}
+
+
+
+在文件 Callbacks.\+h 第 67 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_1_1net_acaa802028467a41738aeb49699e85285}\label{namespacemuduo_1_1net_acaa802028467a41738aeb49699e85285}} 
+\index{muduo\+::net@{muduo\+::net}!Message\+Callback@{Message\+Callback}}
+\index{Message\+Callback@{Message\+Callback}!muduo\+::net@{muduo\+::net}}
+\subsubsection{\texorpdfstring{Message\+Callback}{MessageCallback}}
+{\footnotesize\ttfamily typedef std\+::function$<$void (const \hyperlink{namespacemuduo_1_1net_ab91a46e9290926aa692450e46cfc9039}{Tcp\+Connection\+Ptr}\&, \hyperlink{classmuduo_1_1net_1_1Buffer}{Buffer}$\ast$, \hyperlink{classmuduo_1_1Timestamp}{Timestamp})$>$ \hyperlink{namespacemuduo_1_1net_acaa802028467a41738aeb49699e85285}{Message\+Callback}}
+
+
+
+在文件 Callbacks.\+h 第 72 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_1_1net_ab91a46e9290926aa692450e46cfc9039}\label{namespacemuduo_1_1net_ab91a46e9290926aa692450e46cfc9039}} 
+\index{muduo\+::net@{muduo\+::net}!Tcp\+Connection\+Ptr@{Tcp\+Connection\+Ptr}}
+\index{Tcp\+Connection\+Ptr@{Tcp\+Connection\+Ptr}!muduo\+::net@{muduo\+::net}}
+\subsubsection{\texorpdfstring{Tcp\+Connection\+Ptr}{TcpConnectionPtr}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classmuduo_1_1net_1_1TcpConnection}{Tcp\+Connection} $>$ \hyperlink{namespacemuduo_1_1net_ab91a46e9290926aa692450e46cfc9039}{Tcp\+Connection\+Ptr}}
+
+
+
+在文件 Callbacks.\+h 第 61 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_1_1net_ad4bd8788fd4c609b90c78920572bec50}\label{namespacemuduo_1_1net_ad4bd8788fd4c609b90c78920572bec50}} 
+\index{muduo\+::net@{muduo\+::net}!Timer\+Callback@{Timer\+Callback}}
+\index{Timer\+Callback@{Timer\+Callback}!muduo\+::net@{muduo\+::net}}
+\subsubsection{\texorpdfstring{Timer\+Callback}{TimerCallback}}
+{\footnotesize\ttfamily typedef std\+::function$<$void()$>$ \hyperlink{namespacemuduo_1_1net_ad4bd8788fd4c609b90c78920572bec50}{Timer\+Callback}}
+
+
+
+在文件 Callbacks.\+h 第 63 行定义.
+
+\mbox{\Hypertarget{namespacemuduo_1_1net_a525c3730bfefb763975b035ebc88a63d}\label{namespacemuduo_1_1net_a525c3730bfefb763975b035ebc88a63d}} 
+\index{muduo\+::net@{muduo\+::net}!Write\+Complete\+Callback@{Write\+Complete\+Callback}}
+\index{Write\+Complete\+Callback@{Write\+Complete\+Callback}!muduo\+::net@{muduo\+::net}}
+\subsubsection{\texorpdfstring{Write\+Complete\+Callback}{WriteCompleteCallback}}
+{\footnotesize\ttfamily typedef std\+::function$<$void (const \hyperlink{namespacemuduo_1_1net_ab91a46e9290926aa692450e46cfc9039}{Tcp\+Connection\+Ptr}\&)$>$ \hyperlink{namespacemuduo_1_1net_a525c3730bfefb763975b035ebc88a63d}{Write\+Complete\+Callback}}
+
+
+
+在文件 Callbacks.\+h 第 66 行定义.
+
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{namespacemuduo_1_1net_a74d4cd57249902f889bfecb4bad7847d}\label{namespacemuduo_1_1net_a74d4cd57249902f889bfecb4bad7847d}} 
+\index{muduo\+::net@{muduo\+::net}!default\+Connection\+Callback@{default\+Connection\+Callback}}
+\index{default\+Connection\+Callback@{default\+Connection\+Callback}!muduo\+::net@{muduo\+::net}}
+\subsubsection{\texorpdfstring{default\+Connection\+Callback()}{defaultConnectionCallback()}}
+{\footnotesize\ttfamily void muduo\+::net\+::default\+Connection\+Callback (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemuduo_1_1net_ab91a46e9290926aa692450e46cfc9039}{Tcp\+Connection\+Ptr} \&}]{conn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemuduo_1_1net_abea01f500af8f956edd6649639937508}\label{namespacemuduo_1_1net_abea01f500af8f956edd6649639937508}} 
+\index{muduo\+::net@{muduo\+::net}!default\+Message\+Callback@{default\+Message\+Callback}}
+\index{default\+Message\+Callback@{default\+Message\+Callback}!muduo\+::net@{muduo\+::net}}
+\subsubsection{\texorpdfstring{default\+Message\+Callback()}{defaultMessageCallback()}}
+{\footnotesize\ttfamily void muduo\+::net\+::default\+Message\+Callback (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemuduo_1_1net_ab91a46e9290926aa692450e46cfc9039}{Tcp\+Connection\+Ptr} \&}]{conn,  }\item[{\hyperlink{classmuduo_1_1net_1_1Buffer}{Buffer} $\ast$}]{buffer,  }\item[{\hyperlink{classmuduo_1_1Timestamp}{Timestamp}}]{receive\+Time }\end{DoxyParamCaption})}
+
