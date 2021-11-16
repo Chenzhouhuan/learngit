@@ -1,0 +1,3 @@
+/home/czh/mysql/test1/build/CMakeFiles/rebuild_cache.dir
+/home/czh/mysql/test1/build/CMakeFiles/test1.dir
+/home/czh/mysql/test1/build/CMakeFiles/edit_cache.dir

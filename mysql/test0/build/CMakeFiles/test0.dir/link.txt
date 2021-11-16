@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/test0.dir/test0.cc.o -o test0  -lmysqlcppconn 
