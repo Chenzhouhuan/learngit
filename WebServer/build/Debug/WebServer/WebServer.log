@@ -1,0 +1,431 @@
+2021-11-17 22:33:53
+New connection from 127.0.0.1:56954 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-17 22:33:53
+Request:   -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-17 22:33:53
+FD = 12, ****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-17 22:33:55
+New connection from 127.0.0.1:56956 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-17 22:33:55
+Request: GET  HTTP/1.1 -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-17 22:33:55
+FD = 12,GET  HTTP/1.1****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-17 22:33:57
+New connection from 127.0.0.1:56958 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-17 22:33:57
+Request: GET / HTTP/1.1
+Host: 192.168.52.135:8888
+Content-Type: application/x-www-form-urlencoded
+Connection: Keep-Alive
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-20 10:50:51
+New connection from 127.0.0.1:57560 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-20 10:50:51
+Request:   -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-20 10:50:51
+FD = 14, ****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-20 10:50:53
+New connection from 127.0.0.1:57562 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-20 10:50:53
+Request: GET  HTTP/1.1 -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-20 10:50:53
+FD = 14,GET  HTTP/1.1****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-20 10:50:55
+New connection from 127.0.0.1:57564 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-20 10:50:55
+Request: GET / HTTP/1.1
+Host: 192.168.52.135:8888
+Content-Type: application/x-www-form-urlencoded
+Connection: Keep-Alive
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 13:36:18
+New connection from 127.0.0.1:58154 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 13:36:18
+Request:   -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 13:36:18
+FD = 14, ****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-21 13:36:20
+New connection from 127.0.0.1:58156 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 13:36:20
+Request: GET  HTTP/1.1 -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 13:36:20
+FD = 14,GET  HTTP/1.1****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-21 13:36:22
+New connection from 127.0.0.1:58158 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 13:36:22
+Request: GET / HTTP/1.1
+Host: 192.168.52.135:8888
+Content-Type: application/x-www-form-urlencoded
+Connection: Keep-Alive
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 13:40:29
+New connection from 127.0.0.1:58164 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 13:40:29
+Request:   -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 13:40:29
+FD = 34, ****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-21 13:40:31
+New connection from 127.0.0.1:58166 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 13:40:31
+Request: GET  HTTP/1.1 -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 13:40:31
+FD = 34,GET  HTTP/1.1****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-21 13:40:33
+New connection from 127.0.0.1:58168 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 13:40:33
+Request: GET / HTTP/1.1
+Host: 192.168.52.135:8888
+Content-Type: application/x-www-form-urlencoded
+Connection: Keep-Alive
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 13:44:16
+New connection from 127.0.0.1:58182 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 13:44:16
+Request:   -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 13:44:16
+FD = 14, ****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-21 13:44:18
+New connection from 127.0.0.1:58184 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 13:44:18
+Request: GET  HTTP/1.1 -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 13:44:18
+FD = 14,GET  HTTP/1.1****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-21 13:44:20
+New connection from 127.0.0.1:58186 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 13:44:20
+Request: GET / HTTP/1.1
+Host: 192.168.52.135:8888
+Content-Type: application/x-www-form-urlencoded
+Connection: Keep-Alive
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 14:42:12
+New connection from 127.0.0.1:58320 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 14:42:12
+Request:   -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 14:42:12
+FD = 14, ****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-21 14:42:14
+New connection from 127.0.0.1:58322 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 14:42:14
+Request: GET  HTTP/1.1 -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 14:42:14
+FD = 14,GET  HTTP/1.1****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-21 14:42:16
+New connection from 127.0.0.1:58324 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 14:42:16
+Request: GET / HTTP/1.1
+Host: 127.0.0.1:8888
+Content-Type: application/x-www-form-urlencoded
+Connection: Keep-Alive
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 14:45:18
+New connection from 127.0.0.1:58358 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 14:45:18
+Request:   -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 14:45:18
+FD = 14, ****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-21 14:45:20
+New connection from 127.0.0.1:58360 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 14:45:20
+Request: GET  HTTP/1.1 -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 14:45:20
+FD = 14,GET  HTTP/1.1****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-21 14:45:22
+New connection from 127.0.0.1:58362 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 14:45:22
+Request: GET / HTTP/1.1
+Host: 127.0.0.1:8888
+Content-Type: application/x-www-form-urlencoded
+Connection: Keep-Alive
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 14:57:36
+New connection from 127.0.0.1:58440 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 14:57:36
+Request:   -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 14:57:36
+FD = 14, ****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-21 14:57:38
+New connection from 127.0.0.1:58442 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 14:57:38
+Request: GET  HTTP/1.1 -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 14:57:38
+FD = 14,GET  HTTP/1.1****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-21 14:57:40
+New connection from 127.0.0.1:58444 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 14:57:40
+Request: GET / HTTP/1.1
+Host: 192.168.52.135:8888
+Content-Type: application/x-www-form-urlencoded
+Connection: Keep-Alive
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 20:38:08
+New connection from 127.0.0.1:58550 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 20:38:08
+Request: GET / HTTP/1.1
+Host: 127.0.0.1:8888
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 20:38:08
+New connection from 127.0.0.1:58552 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 20:38:08
+Request: GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:8888
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+Accept: image/webp,*/*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 20:39:10
+New connection from 127.0.0.1:58574 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 20:39:10
+Request:   ��>�b�C�=���?>��Q2��/�ei ��{ �:�%�>F�cA���e���Ν�z�HH3�:F "�+�/̨̩�,�0�
+�	�� � � / 5 �   �   
+           #     h2http/1.1       3 k i   ���:WA(:!�V�9�o���k���7{ o�  A�:]��ӱ�,����Ԫ�E��%;���MJ��#$����%�é-��l�j)��$V_rqB#� +     -   @  �                                                                                                                                                                              -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 20:39:10
+FD = 16,:!�V�9�o���k���7{ o�  A�:]��ӱ�,����Ԫ�E��%;���MJ��#$����%�é-��l�j)��$V_rqB#� +     -   @  �                                                                                                                                                                             ****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-21 20:39:23
+Request: GET / HTTP/1.1
+Host: 127.0.0.1:8888
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 20:39:41
+New connection from 127.0.0.1:58586 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 20:39:41
+Request: GET / HTTP/1.1
+Host: 127.0.0.1:8888
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 21:41:10
+New connection from 127.0.0.1:58854 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 21:41:10
+Request: GET / HTTP/1.1
+Host: 127.0.0.1:8888
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 21:41:10
+New connection from 127.0.0.1:58856 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 21:41:10
+Request: GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:8888
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+Accept: image/webp,*/*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 21:41:15
+Request:  -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 22:17:03
+New connection from 127.0.0.1:59012 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 22:17:03
+Request:   -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 22:17:03
+FD = 14, ****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-21 22:17:05
+New connection from 127.0.0.1:59014 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 22:17:05
+Request: GET  HTTP/1.1 -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 22:17:05
+FD = 14,GET  HTTP/1.1****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-21 22:17:07
+New connection from 127.0.0.1:59016 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 22:17:07
+Request: GET / HTTP/1.1
+Host: 192.168.52.135:8888
+Content-Type: application/x-www-form-urlencoded
+Connection: Keep-Alive
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 22:20:35
+New connection from 127.0.0.1:59022 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 22:20:35
+Request:   -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 22:20:35
+FD = 14, ****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-21 22:20:37
+New connection from 127.0.0.1:59026 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 22:20:37
+Request: GET  HTTP/1.1 -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 22:20:37
+FD = 14,GET  HTTP/1.1****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-21 22:20:39
+New connection from 127.0.0.1:59028 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 22:20:39
+Request: GET / HTTP/1.1
+Host: 192.168.52.135:8888
+Content-Type: application/x-www-form-urlencoded
+Connection: Keep-Alive
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 22:21:31
+New connection from 127.0.0.1:59036 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 22:21:31
+Request:   -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 22:21:31
+FD = 14, ****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-21 22:21:33
+New connection from 127.0.0.1:59040 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 22:21:33
+Request: GET  HTTP/1.1 -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 22:21:33
+FD = 14,GET  HTTP/1.1****** -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:196
+2021-11-21 22:21:35
+New connection from 127.0.0.1:59042 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 22:21:35
+Request: GET / HTTP/1.1
+Host: 192.168.52.135:8888
+Content-Type: application/x-www-form-urlencoded
+Connection: Keep-Alive
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 22:37:55
+New connection from 127.0.0.1:59102 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 22:37:55
+Request: GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:8888
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 22:48:33
+Request: GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:8888
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 22:58:22
+New connection from 127.0.0.1:59140 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 22:58:23
+Request: GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:8888
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 23:02:29
+New connection from 127.0.0.1:59196 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 23:02:29
+Request: GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:8888
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 23:02:42
+Request: GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:8888
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 23:03:33
+New connection from 127.0.0.1:59212 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 23:03:33
+Request: GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:8888
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 23:03:35
+Request: GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:8888
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 23:03:37
+Request: GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:8888
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 23:03:47
+New connection from 127.0.0.1:59220 -- /home/czh/下载/master/WebServer-master/WebServer/Server.cpp:45
+2021-11-21 23:03:47
+Request: GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:8888
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+ -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
+2021-11-21 23:06:20
+Request:  -- /home/czh/下载/master/WebServer-master/WebServer/HttpData.cpp:160
