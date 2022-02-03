@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/test1_new.exe.dir/test1.cc.o CMakeFiles/test1_new.exe.dir/src/EventLoop.cc.o -o test1_new.exe  -Wl,-Bstatic -lmuduo_net -lmuduo_base -Wl,-Bdynamic -lpthread -lrt 

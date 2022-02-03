@@ -1,0 +1,27 @@
+#最低版本
+CMAKE_MINIMUM_REQUIRED(VERSION 3.0)
+ 
+#项目信息
+PROJECT(TimerQueue_test4)
+ 
+#头文件目录
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/lib)
+LINK_DIRECTORIES(${PROJECT_SOURCE_DIR}/lib)
+# LINK_DIRECTORIES(/home/czh/build/release-install-cpp11/lib)
+ 
+#查找当前目录下所有源文件
+#并将文件名保存在DIR_SOURECE
+# AUX_SOURCE_DIRECTORY(. DIR_SOURCE)
+ 
+#添加math子目录
+# ADD_SUBDIRECTORY()
+ 
+ 
+#指定生成目标
+# ADD_EXECUTABLE(test1 ${DIR_SOURCE})
+ADD_EXECUTABLE(test4 test4.cc src/Channel.cc src/Poller.cc src/EventLoop.cc src/Timer.cc src/TimerQueue.cc)
+ 
+#添加链接库
+TARGET_LINK_LIBRARIES(test4 muduo_net.a)
+TARGET_LINK_LIBRARIES(test4 muduo_base.a)
+target_link_libraries(test4 pthread rt)
